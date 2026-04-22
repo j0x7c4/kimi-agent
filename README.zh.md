@@ -56,7 +56,7 @@
 ### 1. 克隆与配置
 
 ```bash
-git clone <仓库地址>
+git clone --recurse-submodules git@github.com:j0x7c4/kimi-agent.git
 cd kimi-agent
 
 cp .env.example .env
