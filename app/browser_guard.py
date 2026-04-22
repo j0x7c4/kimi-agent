@@ -85,9 +85,6 @@ class BrowserGuard:
 
     async def start(self):
         try:
-            # import this after x11 server is ready
-            import pyautogui
-
             logger.info("Starting browser initialization...")
             playwright = await async_playwright().start()
             logger.info("Playwright started, launching browser...")
@@ -160,10 +157,11 @@ class BrowserGuard:
                     )
 
                     logger.info("Browser launched successfully")
-                    x, y = pyautogui.position()
                     width, _ = get_screensize()
-                    pyautogui.click(width - 25, 115)
-                    pyautogui.moveTo(x, y)
+                    subprocess.run(
+                        ["xdotool", "mousemove", str(width - 25), "115", "click", "1"],
+                        check=False,
+                    )
                     # await self.browser.pages[0].reload()
                     await self.browser.pages[0].goto(init_url)
                     break
@@ -324,8 +322,6 @@ class BrowserCDPGuard:
     ):
         """启动 Chromium 浏览器进程"""
         try:
-            import pyautogui
-
             self.debugging_port = debugging_port
             self.cdp_url = f"http://localhost:{debugging_port}"
             url = os.getenv("CHROME_INIT_URL", "chrome://newtab/")
@@ -384,10 +380,11 @@ class BrowserCDPGuard:
                     continue
                 break
 
-            x, y = pyautogui.position()
             width, _ = get_screensize()
-            pyautogui.click(width - 25, 115)
-            pyautogui.moveTo(x, y)
+            subprocess.run(
+                ["xdotool", "mousemove", str(width - 25), "115", "click", "1"],
+                check=False,
+            )
 
             logger.info("Chromium 已启动并连接")
             return True

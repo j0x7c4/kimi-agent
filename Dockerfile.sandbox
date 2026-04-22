@@ -27,6 +27,7 @@ RUN apt-get update \
         curl \
         wget \
         ca-certificates \
+        xdotool \
     && rm -rf /var/lib/apt/lists/*
 
 # -----------------------------------------------------------
@@ -54,8 +55,7 @@ RUN pip install --no-cache-dir \
     psutil \
     pillow \
     playwright \
-    brotli \
-    pyautogui
+    brotli
 
 # 安装 Playwright 浏览器驱动
 RUN playwright install chromium \
