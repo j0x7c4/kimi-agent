@@ -1,0 +1,3 @@
+[submodule "kimi-cli"]
+	path = kimi-cli
+	url = git@github.com:j0x7c4/kimi-cli.git
