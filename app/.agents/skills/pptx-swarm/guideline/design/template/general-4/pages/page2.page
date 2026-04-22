@@ -1,0 +1,59 @@
+pageType: chapter
+background:
+  type: solid
+  color: "#10B981"
+elements:
+# --- Decorative: gradient overlay + accent shapes ---
+- elementId: deco_gradient
+  elementType: shape
+  bounds: [0, 0, 1920, 1080]
+  shapeName: rect
+  fill:
+    type: gradient
+    gradientType: linear
+    angle: 135
+    stops:
+      - {position: 0, color: "#10B98100"}
+      - {position: 1, color: "#1A1A1A30"}
+- elementId: deco_circle1
+  elementType: shape
+  bounds: [1500, 100, 350, 350]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF10"
+- elementId: deco_circle2
+  elementType: shape
+  bounds: [100, 700, 250, 250]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF08"
+- elementId: deco_line
+  elementType: shape
+  bounds: [400, 560, 1120, 3]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#FFFFFF30"
+# --- Content ---
+- elementId: text_title
+  elementType: text
+  bounds: [395.76, 424.61, 1128.47, 131.44]
+  content:
+    align: [center, top]
+    fontSize: 100
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 124.99
+    text: Welcome!
+- elementId: text_sub
+  elementType: text
+  bounds: [395.76, 594.21, 1128.47, 58.93]
+  content:
+    align: [center, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 49.99
+    text: Let's get you started.

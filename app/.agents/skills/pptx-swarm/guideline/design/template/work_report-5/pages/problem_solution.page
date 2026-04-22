@@ -1,0 +1,224 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$title"
+      text: |
+        <p><strong>识别关键挑战，制定针对性解决方案</strong></p>
+  
+  # 中间分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [640, 140, 1, 320]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+  
+  # 左侧问题区域标题
+  - elementId: problem-title
+    elementType: text
+    bounds: [80, 140, 500, 40]
+    content:
+      style: "$subtitle"
+      text: |
+        <p>当前面临问题</p>
+  
+  # 问题1
+  - elementId: problem1-icon
+    elementType: icon
+    bounds: [80, 200, 24, 24]
+    iconName: "fas:exclamation-triangle"
+    fill:
+      type: solid
+      color: "#E74C3C"
+  
+  - elementId: problem1-text
+    elementType: text
+    bounds: [120, 190, 480, 80]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>技术债务累积</strong></p>
+        <p style="font-size:14px; color:$secondary">老旧系统维护成本高，影响新功能开发速度，技术栈需要升级</p>
+  
+  # 问题2
+  - elementId: problem2-icon
+    elementType: icon
+    bounds: [80, 290, 24, 24]
+    iconName: "fas:users-slash"
+    fill:
+      type: solid
+      color: "#E74C3C"
+  
+  - elementId: problem2-text
+    elementType: text
+    bounds: [120, 280, 480, 80]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>人才缺口扩大</strong></p>
+        <p style="font-size:14px; color:$secondary">高级工程师流失率15%，关键岗位招聘周期长达2个月</p>
+  
+  # 问题3
+  - elementId: problem3-icon
+    elementType: icon
+    bounds: [80, 380, 24, 24]
+    iconName: "fas:chart-line"
+    fill:
+      type: solid
+      color: "#E74C3C"
+  
+  - elementId: problem3-text
+    elementType: text
+    bounds: [120, 370, 480, 80]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>增长放缓压力</strong></p>
+        <p style="font-size:14px; color:$secondary">市场竞争加剧，获客成本上升35%，需要寻找新增长点</p>
+  
+  # 右侧解决方案标题
+  - elementId: solution-title
+    elementType: text
+    bounds: [680, 140, 500, 40]
+    content:
+      style: "$subtitle"
+      text: |
+        <p>解决方案与行动</p>
+  
+  # 方案1
+  - elementId: solution1-icon
+    elementType: icon
+    bounds: [680, 200, 24, 24]
+    iconName: "fas:check-circle"
+    fill:
+      type: solid
+      color: "$accent"
+  
+  - elementId: solution1-text
+    elementType: text
+    bounds: [720, 190, 460, 80]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>技术架构升级计划</strong></p>
+        <p style="font-size:14px; color:$secondary">Q4启动微服务改造，预计6个月完成核心系统重构</p>
+  
+  # 方案2
+  - elementId: solution2-icon
+    elementType: icon
+    bounds: [680, 290, 24, 24]
+    iconName: "fas:check-circle"
+    fill:
+      type: solid
+      color: "$accent"
+  
+  - elementId: solution2-text
+    elementType: text
+    bounds: [720, 280, 460, 80]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>人才培养与激励机制</strong></p>
+        <p style="font-size:14px; color:$secondary">建立技术导师制度，调整薪酬结构，设立技术创新奖励</p>
+  
+  # 方案3
+  - elementId: solution3-icon
+    elementType: icon
+    bounds: [680, 380, 24, 24]
+    iconName: "fas:check-circle"
+    fill:
+      type: solid
+      color: "$accent"
+  
+  - elementId: solution3-text
+    elementType: text
+    bounds: [720, 370, 460, 80]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>多元化增长策略</strong></p>
+        <p style="font-size:14px; color:$secondary">开拓B端市场，推出增值服务，预计新增营收20%</p>
+  
+  # 底部风险提示
+  - elementId: risk-bg
+    elementType: shape
+    bounds: [80, 490, 1120, 110]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$background"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: risk-accent
+    elementType: shape
+    bounds: [80, 490, 4, 110]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: risk-icon
+    elementType: icon
+    bounds: [105, 510, 24, 24]
+    iconName: "fas:shield-halved"
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: risk-title
+    elementType: text
+    bounds: [140, 510, 200, 24]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p><strong>风险提示</strong></p>
+
+  - elementId: risk-text
+    elementType: text
+    bounds: [105, 542, 1075, 50]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      text: |
+        <p>• 技术改造期间需确保系统稳定性，建立灰度发布机制</p>
+        <p>• 人才激励方案需要财务支持，预计增加15%人力成本</p>
+  
+  # 底部导航
+  - elementId: nav-line
+    elementType: shape
+    bounds: [80, 660, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+  
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 670, 100, 30]
+    content:
+      fontSize: 12
+      color: "$tertiary"
+      fontFamily: "Liter, MiSans"
+      align: [right, middle]
+      text: |
+        <p>7</p>

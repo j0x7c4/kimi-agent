@@ -1,0 +1,58 @@
+title: 工作汇报 - 咨询锋锐风
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#0A3161"      # 咨询深蓝
+    secondary: "#E2E8F0"    # 冰川灰
+    accent: "#0066CC"       # 洞察亮蓝
+    background: "#FFFFFF"   # 极简白
+    text: "#1A202C"         # 碳素黑
+    light_text: "#718096"   # 辅助文字
+    success: "#38A169"      # 上涨绿
+    danger: "#E53E3E"       # 下跌红
+    white: "#FFFFFF"        # 纯白
+    light_blue: "#A0AEC0"   # 浅蓝文字
+  textStyles:
+    cover_title:
+      fontSize: 42
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+    page_title:
+      fontSize: 30
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+    kpi_number:
+      fontSize: 48
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+    body:
+      fontSize: 20
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: "Liter, MiSans"
+    footnote:
+      fontSize: 14
+      color: "$light_text"
+      fontFamily: "Liter, MiSans"
+  tableStyles:
+    default:
+      fontSize: 18
+      fontFamily: "Liter, MiSans"
+      headerFill: "$secondary"
+      headerColor: "$text"
+      headerBold: true
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$secondary"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter1.page
+  - pages/kpi_dashboard.page
+  - pages/attribution_analysis.page
+  - pages/timeline.page
+  - pages/matrix_analysis.page
+  - pages/action_plan.page
+  - pages/final.page

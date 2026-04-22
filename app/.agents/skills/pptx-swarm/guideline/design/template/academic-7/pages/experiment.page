@@ -1,0 +1,285 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深紫导航色带
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  - elementId: nav-left-accent
+    elementType: shape
+    bounds: [0, 0, 4, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB550"}
+
+  - elementId: nav-chapter-text
+    elementType: text
+    bounds: [20, 0, 900, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 04 实验设计与结果分析 / 4.1 实验设置
+
+  - elementId: nav-page-num
+    elementType: text
+    bounds: [1200, 0, 60, 50]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "07"
+
+  # 标题
+  - elementId: title-accent-mark
+    elementType: shape
+    bounds: [12, 68, 4, 40]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB5"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [24, 68, 1000, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>实验设置与数据集描述</strong></p>
+
+  - elementId: title-sep
+    elementType: shape
+    bounds: [24, 116, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E0D4F0"
+
+  # 上方：三列实验设置信息
+  - elementId: setup-1-bg
+    elementType: shape
+    bounds: [24, 130, 380, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: setup-1-header-bg
+    elementType: shape
+    bounds: [24, 130, 380, 38]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: setup-1-header
+    elementType: text
+    bounds: [24, 130, 380, 38]
+    content:
+      fontSize: 15
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>数据集配置</strong></p>
+
+  - elementId: setup-1-content
+    elementType: text
+    bounds: [36, 176, 356, 140]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• 训练集：80% (8,000张)</p>
+        <p>• 验证集：10% (1,000张)</p>
+        <p>• 测试集：10% (1,000张)</p>
+        <p>• 数据集：5个公开基准</p>
+
+  - elementId: setup-2-bg
+    elementType: shape
+    bounds: [450, 130, 380, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: setup-2-header-bg
+    elementType: shape
+    bounds: [450, 130, 380, 38]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: setup-2-header
+    elementType: text
+    bounds: [450, 130, 380, 38]
+    content:
+      fontSize: 15
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>训练配置</strong></p>
+
+  - elementId: setup-2-content
+    elementType: text
+    bounds: [462, 176, 356, 140]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• GPU：NVIDIA A100 × 4</p>
+        <p>• Batch Size：64</p>
+        <p>• 学习率：1e-4（cosine）</p>
+        <p>• 训练轮数：200 epochs</p>
+
+  - elementId: setup-3-bg
+    elementType: shape
+    bounds: [876, 130, 380, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: setup-3-header-bg
+    elementType: shape
+    bounds: [876, 130, 380, 38]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: setup-3-header
+    elementType: text
+    bounds: [876, 130, 380, 38]
+    content:
+      fontSize: 15
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>评估指标</strong></p>
+
+  - elementId: setup-3-content
+    elementType: text
+    bounds: [888, 176, 356, 140]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• Accuracy / F1-Score</p>
+        <p>• AUC-ROC</p>
+        <p>• 参数量 / FLOPs</p>
+        <p>• 推理时延（ms）</p>
+
+  # 下方图表区
+  - elementId: chart-area
+    elementType: shape
+    bounds: [24, 352, 780, 280]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: chart-label
+    elementType: text
+    bounds: [24, 352, 780, 280]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Figure 3. 训练/验证损失曲线与各数据集准确率对比</p>
+
+  # 右侧基线方法对比表
+  - elementId: baseline-title
+    elementType: text
+    bounds: [830, 358, 420, 28]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>基线对比方法</strong></p>
+
+  - elementId: baseline-list
+    elementType: text
+    bounds: [830, 394, 420, 220]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>① ResNet-50 [He et al., 2016]</p>
+        <p>② BERT [Devlin et al., 2019]</p>
+        <p>③ ViT [Dosovitskiy et al., 2021]</p>
+        <p>④ DINOv2 [Oquab et al., 2023]</p>
+        <p>⑤ Ours (Full Model)</p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "7"

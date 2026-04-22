@@ -1,0 +1,98 @@
+pageType: final
+background:
+  type: solid
+  color: "$darkGray"
+elements:
+  # 顶部线
+  - elementId: final-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$accent"
+
+  # 校徽占位
+  - elementId: final-logo
+    elementType: shape
+    bounds: [590, 170, 100, 100]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF10"
+    border:
+      style: solid
+      width: 2
+      color: "#FFFFFF30"
+
+  # 感谢标题
+  - elementId: final-title
+    elementType: text
+    bounds: [240, 300, 800, 55]
+    content:
+      fontSize: 42
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>感谢聆听 恳请指导</strong></p>
+
+  - elementId: final-title-en
+    elementType: text
+    bounds: [240, 365, 800, 28]
+    content:
+      fontSize: 18
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 3
+      align: [center, middle]
+      wrap: false
+      text: THANK YOU FOR YOUR ATTENTION
+
+  # 分隔线
+  - elementId: final-divider
+    elementType: shape
+    bounds: [500, 415, 280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  # 信息
+  - elementId: final-info
+    elementType: text
+    bounds: [240, 440, 800, 70]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      lineHeight: 1.8
+      text: |
+        <p>答辩人：XXX    指导教师：XXX教授</p>
+        <p>XX学院 · 化学信息学专业    xxx@xx.edu.cn</p>
+
+  # 底部线
+  - elementId: final-bottom-line
+    elementType: shape
+    bounds: [0, 716, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$accent"
+
+  # 页码
+  - elementId: final-page-num
+    elementType: text
+    bounds: [1150, 680, 80, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "09 / 09"

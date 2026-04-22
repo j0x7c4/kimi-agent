@@ -1,0 +1,759 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深青绿色带
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题区域背景
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 4, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 10, 1100, 44]
+    content:
+      fontSize: 20
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Consumer tech and IT/ITES drove a significant portion of 2023's growth, with other sectors maintaining strength</strong></p>
+  # 图表标题
+  - elementId: chart-title
+    elementType: text
+    bounds: [50, 68, 400, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#333333;"><strong>Total PE investment ($B)</strong></span></p>
+
+  # Y轴标签 - 加宽到40px
+  - elementId: ylabel-70
+    elementType: text
+    bounds: [45, 100, 40, 16]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:10px; color:#999999;">70</span></p>
+
+  - elementId: ylabel-60
+    elementType: text
+    bounds: [45, 160, 40, 16]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:10px; color:#999999;">60</span></p>
+
+  - elementId: ylabel-50
+    elementType: text
+    bounds: [45, 220, 40, 16]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:10px; color:#999999;">50</span></p>
+
+  - elementId: ylabel-40
+    elementType: text
+    bounds: [45, 280, 40, 16]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:10px; color:#999999;">40</span></p>
+
+  - elementId: ylabel-30
+    elementType: text
+    bounds: [45, 340, 40, 16]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:10px; color:#999999;">30</span></p>
+
+  - elementId: ylabel-20
+    elementType: text
+    bounds: [45, 400, 40, 16]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:10px; color:#999999;">20</span></p>
+
+  - elementId: ylabel-10
+    elementType: text
+    bounds: [45, 460, 40, 16]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:10px; color:#999999;">10</span></p>
+
+  - elementId: ylabel-0
+    elementType: text
+    bounds: [45, 520, 40, 16]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:10px; color:#999999;">0</span></p>
+
+  # 网格线
+  - elementId: grid-70
+    elementType: shape
+    bounds: [95, 108, 1140, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "#EEEEEE"}
+
+  - elementId: grid-60
+    elementType: shape
+    bounds: [95, 168, 1140, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "#EEEEEE"}
+
+  - elementId: grid-50
+    elementType: shape
+    bounds: [95, 228, 1140, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "#EEEEEE"}
+
+  - elementId: grid-40
+    elementType: shape
+    bounds: [95, 288, 1140, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "#EEEEEE"}
+
+  - elementId: grid-30
+    elementType: shape
+    bounds: [95, 348, 1140, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "#EEEEEE"}
+
+  - elementId: grid-20
+    elementType: shape
+    bounds: [95, 408, 1140, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "#EEEEEE"}
+
+  - elementId: grid-10
+    elementType: shape
+    bounds: [95, 468, 1140, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "#EEEEEE"}
+
+  # X轴基线
+  - elementId: x-axis
+    elementType: shape
+    bounds: [95, 528, 1140, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # ===== 2020起始柱 =====
+  - elementId: bar-2020
+    elementType: shape
+    bounds: [105, 288, 50, 240]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bar-2020-val
+    elementType: text
+    bounds: [105, 268, 50, 18]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#333333;"><strong>36</strong></span></p>
+
+  - elementId: bar-2020-label
+    elementType: text
+    bounds: [95, 532, 70, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#666666;"><strong>2020</strong></span></p>
+
+  # 连接线 2020->中间段
+  - elementId: conn-line-1
+    elementType: shape
+    bounds: [155, 288, 940, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "$primary"}
+
+  # ===== 中间变化柱 - 间距75px =====
+
+  # Telecom +2
+  - elementId: bar-telecom
+    elementType: shape
+    bounds: [185, 276, 40, 12]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#66B2A8"
+
+  - elementId: bar-telecom-val
+    elementType: text
+    bounds: [185, 260, 40, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">2</span></p>
+
+  - elementId: bar-telecom-label
+    elementType: text
+    bounds: [175, 532, 60, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Telecom</span></p>
+
+  # RE & Infra +2
+  - elementId: bar-reinfra
+    elementType: shape
+    bounds: [255, 276, 40, 12]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#66B2A8"
+
+  - elementId: bar-reinfra-val
+    elementType: text
+    bounds: [255, 260, 40, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">2</span></p>
+
+  - elementId: bar-reinfra-label
+    elementType: text
+    bounds: [238, 548, 74, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">RE & Infra</span></p>
+
+  # Energy +1
+  - elementId: bar-energy
+    elementType: shape
+    bounds: [325, 282, 40, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#66B2A8"
+
+  - elementId: bar-energy-val
+    elementType: text
+    bounds: [325, 266, 40, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">1</span></p>
+
+  - elementId: bar-energy-label
+    elementType: text
+    bounds: [315, 532, 60, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Energy</span></p>
+
+  # Manufacturing 0
+  - elementId: bar-mfg-circle
+    elementType: shape
+    bounds: [402, 284, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B8DDD8"
+    border: {style: solid, width: 1, color: "$primary"}
+
+  - elementId: bar-mfg-val
+    elementType: text
+    bounds: [395, 268, 26, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">0</span></p>
+
+  - elementId: bar-mfg-label
+    elementType: text
+    bounds: [378, 548, 60, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Mfg</span></p>
+
+  # Media 0
+  - elementId: bar-media-circle
+    elementType: shape
+    bounds: [470, 284, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B8DDD8"
+    border: {style: solid, width: 1, color: "$primary"}
+
+  - elementId: bar-media-val
+    elementType: text
+    bounds: [463, 268, 26, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">0</span></p>
+
+  - elementId: bar-media-label
+    elementType: text
+    bounds: [450, 532, 60, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Media</span></p>
+
+  # Eng & Construction 0
+  - elementId: bar-eng-circle
+    elementType: shape
+    bounds: [538, 284, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B8DDD8"
+    border: {style: solid, width: 1, color: "$primary"}
+
+  - elementId: bar-eng-val
+    elementType: text
+    bounds: [531, 268, 26, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">0</span></p>
+
+  - elementId: bar-eng-label
+    elementType: text
+    bounds: [517, 548, 60, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Eng&Con</span></p>
+
+  # Others 0
+  - elementId: bar-others-circle
+    elementType: shape
+    bounds: [608, 284, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B8DDD8"
+    border: {style: solid, width: 1, color: "$primary"}
+
+  - elementId: bar-others-val
+    elementType: text
+    bounds: [601, 268, 26, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">0</span></p>
+
+  - elementId: bar-others-label
+    elementType: text
+    bounds: [590, 532, 50, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Others</span></p>
+
+  # Shipping +1
+  - elementId: bar-shipping
+    elementType: shape
+    bounds: [665, 282, 40, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#66B2A8"
+
+  - elementId: bar-shipping-val
+    elementType: text
+    bounds: [665, 266, 40, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">1</span></p>
+
+  - elementId: bar-shipping-label
+    elementType: text
+    bounds: [645, 548, 80, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Ship&Log</span></p>
+
+  # Healthcare +1
+  - elementId: bar-health
+    elementType: shape
+    bounds: [740, 282, 40, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#66B2A8"
+
+  - elementId: bar-health-val
+    elementType: text
+    bounds: [740, 266, 40, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">1</span></p>
+
+  - elementId: bar-health-label
+    elementType: text
+    bounds: [720, 532, 80, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Healthcare</span></p>
+
+  # BFSI +1
+  - elementId: bar-bfsi
+    elementType: shape
+    bounds: [815, 282, 40, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#66B2A8"
+
+  - elementId: bar-bfsi-val
+    elementType: text
+    bounds: [815, 266, 40, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">1</span></p>
+
+  - elementId: bar-bfsi-label
+    elementType: text
+    bounds: [805, 548, 60, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">BFSI</span></p>
+
+  # SaaS +2
+  - elementId: bar-saas
+    elementType: shape
+    bounds: [885, 276, 40, 12]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#66B2A8"
+
+  - elementId: bar-saas-val
+    elementType: text
+    bounds: [885, 260, 40, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">2</span></p>
+
+  - elementId: bar-saas-label
+    elementType: text
+    bounds: [878, 532, 54, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">SaaS</span></p>
+
+  # Consumer/retail +3
+  - elementId: bar-consumer
+    elementType: shape
+    bounds: [950, 270, 40, 18]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#66B2A8"
+
+  - elementId: bar-consumer-val
+    elementType: text
+    bounds: [950, 254, 40, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#333333;">3</span></p>
+
+  - elementId: bar-consumer-label
+    elementType: text
+    bounds: [932, 548, 76, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">Consumer</span></p>
+
+  # IT/ITES +10 (大柱)
+  - elementId: bar-ites
+    elementType: shape
+    bounds: [1020, 228, 48, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bar-ites-val
+    elementType: text
+    bounds: [1020, 208, 48, 18]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#333333;"><strong>10</strong></span></p>
+
+  - elementId: bar-ites-label
+    elementType: text
+    bounds: [1010, 532, 68, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">IT/ITES</span></p>
+
+  # Consumer tech +22 (最大柱)
+  - elementId: bar-constech
+    elementType: shape
+    bounds: [1090, 156, 48, 132]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bar-constech-val
+    elementType: text
+    bounds: [1090, 136, 48, 18]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#333333;"><strong>22</strong></span></p>
+
+  - elementId: bar-constech-label
+    elementType: text
+    bounds: [1075, 548, 78, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:7px; color:#666666;">ConsTech</span></p>
+
+  # ===== 2023终止柱 =====
+  - elementId: bar-2023
+    elementType: shape
+    bounds: [1160, 108, 55, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bar-2023-val
+    elementType: text
+    bounds: [1160, 88, 55, 18]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#333333;"><strong>70</strong></span></p>
+
+  - elementId: bar-2023-label
+    elementType: text
+    bounds: [1155, 532, 65, 14]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#666666;"><strong>2023</strong></span></p>
+
+  # ===== Callout标注框 =====
+
+  # Callout 1: 2020 deal value
+  - elementId: callout-1-bg
+    elementType: shape
+    bounds: [100, 170, 165, 58]
+    shapeName: roundRect
+    adjustments: [5000]
+    fill:
+      type: solid
+      color: "#ffffff"
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: callout-1-text
+    elementType: text
+    bounds: [105, 173, 155, 52]
+    content:
+      fontSize: 9
+      color: "$text"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:9px;">2020 deal value (excluding Jio) driven by Airtel's $2B deal</span></p>
+
+  # Callout 2: Drop due to absence
+  - elementId: callout-2-bg
+    elementType: shape
+    bounds: [200, 410, 175, 56]
+    shapeName: roundRect
+    adjustments: [5000]
+    fill:
+      type: solid
+      color: "#ffffff"
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: callout-2-text
+    elementType: text
+    bounds: [205, 413, 165, 50]
+    content:
+      fontSize: 9
+      color: "$text"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:9px;">Drop due to absence of large deals in 2021 unlike two $1B+ deals in 2020</span></p>
+
+  # -67% 标注
+  - elementId: pct-drop-circle
+    elementType: shape
+    bounds: [362, 300, 46, 22]
+    shapeName: roundRect
+    adjustments: [30000]
+    border: {style: solid, width: 1, color: "$primary"}
+
+  - elementId: pct-drop-text
+    elementType: text
+    bounds: [362, 300, 46, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:9px; color:#0D8B7D;"><strong>-67%</strong></span></p>
+
+  # Callout 3: Healthcare 3x growth
+  - elementId: callout-3-bg
+    elementType: shape
+    bounds: [650, 410, 185, 56]
+    shapeName: roundRect
+    adjustments: [5000]
+    fill:
+      type: solid
+      color: "#ffffff"
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: callout-3-text
+    elementType: text
+    bounds: [655, 413, 175, 50]
+    content:
+      fontSize: 9
+      color: "$text"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:9px;">Healthcare saw 3x growth in provider deals, and Pharma maintained strength</span></p>
+
+  # Callout 4: IT expansion
+  - elementId: callout-4-bg
+    elementType: shape
+    bounds: [770, 175, 210, 52]
+    shapeName: roundRect
+    adjustments: [5000]
+    fill:
+      type: solid
+      color: "#ffffff"
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: callout-4-text
+    elementType: text
+    bounds: [775, 178, 200, 49]
+    content:
+      fontSize: 9
+      color: "$text"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:9px;">IT saw expansion on the back of large deals. Top 5 deals in 2021 accounted for ~$10B</span></p>
+
+  # Callout 5: Consumer tech vertical
+  - elementId: callout-5-bg
+    elementType: shape
+    bounds: [770, 110, 265, 56]
+    shapeName: roundRect
+    adjustments: [5000]
+    fill:
+      type: solid
+      color: "#ffffff"
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: callout-5-text
+    elementType: text
+    bounds: [775, 113, 255, 50]
+    content:
+      fontSize: 9
+      color: "$text"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:9px;">Verticalised e-commerce, fintech, and gaming within Consumer tech caught huge VC interest and grew more than 5x</span></p>
+
+  # 底部来源
+  - elementId: source-line
+    elementType: shape
+    bounds: [40, 575, 1200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [40, 582, 700, 30]
+    content:
+      fontSize: 9
+      color: "$medgray"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:9px;">Notes: Only deals with a known deal value are included excluding Jio and Reliance Retail deals (2020) Source: Bain PE deals database</span></p>

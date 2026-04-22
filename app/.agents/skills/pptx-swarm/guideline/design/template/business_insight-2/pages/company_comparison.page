@@ -1,0 +1,296 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 28, 1160, 40]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:26px; color:#263238; font-family:SortsMillGoudy, MiSans;"><strong>比亚迪市占率超25%，特斯拉中国市场份额持续承压</strong></span></p>
+
+  # 标题下方细线
+  - elementId: title-line
+    elementType: shape
+    bounds: [60, 72, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 公司对比表
+  - elementId: company-table
+    elementType: table
+    bounds: [60, 86, 1160, 340]
+    columnWidths: [0.16, 0.14, 0.14, 0.14, 0.14, 0.14, 0.14]
+    rowHeights: [0.10, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15]
+    style: "$default"
+    rows:
+      - - content:
+            text: |
+              <p><strong>指标</strong></p>
+        - content:
+            text: |
+              <p><strong>比亚迪</strong></p>
+        - content:
+            text: |
+              <p><strong>特斯拉(中国)</strong></p>
+        - content:
+            text: |
+              <p><strong>吉利</strong></p>
+        - content:
+            text: |
+              <p><strong>理想</strong></p>
+        - content:
+            text: |
+              <p><strong>蔚来</strong></p>
+        - content:
+            text: |
+              <p><strong>小鹏</strong></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>2025E销量(万辆)</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#37474F;"><strong>450</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">95</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">85</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">68</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">32</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">28</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>市占率</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#37474F;"><strong>25.8%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">5.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">4.9%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">3.9%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">1.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">1.6%</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>毛利率</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#37474F;"><strong>21.5%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">18.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">15.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">22.3%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">12.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">14.1%</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>净利润(亿元)</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#37474F;"><strong>420</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">185</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">82</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">145</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">-48</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">-22</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>研发投入(%)</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">6.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">8.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">5.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">12.1%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">22.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">18.3%</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>核心优势</strong></span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px;">垂直整合，成本领先</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px;">品牌力，自动驾驶</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px;">多品牌矩阵，全球化</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px;">增程路线，高ASP</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px;">换电生态，高端定位</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px;">智驾技术，性价比</span></p>
+
+  # 分析文字 - 带左侧强调线
+  - elementId: insight-accent-bar
+    elementType: shape
+    bounds: [60, 444, 4, 90]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#37474F"
+
+  - elementId: comparison-insight-title
+    elementType: text
+    bounds: [76, 444, 1140, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:Liter, MiSans;"><strong>竞争格局分析</strong></span></p>
+
+  - elementId: comparison-insight
+    elementType: text
+    bounds: [76, 472, 1140, 68]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.5
+      text: |
+        <p><span style="font-size:16px; color:#333333; font-family:Liter, MiSans;">比亚迪凭借垂直整合的成本优势和全价格带覆盖策略，2025年市占率预计突破25%，稳居国内第一。特斯拉中国市场份额从2021年的10.2%下降至5.4%，受国产品牌在15-30万元价格带的挤压。理想汽车凭借增程路线差异化，成为新势力中盈利能力最强的企业。</span></p>
+
+  - elementId: insight-highlight-bg
+    elementType: shape
+    bounds: [60, 548, 1160, 44]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#ECEFF1"
+
+  - elementId: insight-highlight-text
+    elementType: text
+    bounds: [76, 548, 1130, 44]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#37474F; font-family:Liter, MiSans;"><strong>核心判断：</strong>行业已进入淘汰赛阶段，2025-2026年尾部品牌加速退出，资源向比亚迪、吉利、理想等头部企业集中。</span></p>
+
+  # 来源线
+  - elementId: source-line
+    elementType: shape
+    bounds: [60, 672, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 来源
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 678, 800, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">Source: 乘联会, 公司公告, Bloomberg, XX证券研究所</span></p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 678, 120, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">6</span></p>

@@ -1,0 +1,254 @@
+pageType: unknown
+elements:
+- elementId: line0
+  elementType: shape
+  bounds: [108, 109, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: shape1
+  elementType: shape
+  bounds: [1391.66, 552.44, 420.34, 382.71]
+  shapeName: custom
+  path: 1054485,960070;M19337 0L1035148 0C1045828 0 1054485 8657 1054485 19337L1054485 940734C1054485 951413 1045828 960070 1035148 960070L19337 960070C8657 960070 0 951413 0 940734L0 19337C0 8657 8657 0 19337 0Z
+  fill:
+    type: gradient
+    gradientType: linear
+    angle: 0
+    stops:
+    - position: 0
+      color: "#001A4300"
+    - position: 1
+      color: "#004DE600"
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text2
+  elementType: text
+  bounds: [1387.39, 537.78, 428.87, 396.82]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 32
+    text: ' '
+- elementId: text3
+  elementType: text
+  bounds: [1401.88, 580.22, 399.9, 98.6]
+  content:
+    align: [left, top]
+    fontSize: 37.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 44.79
+    text: Competitive landscape
+- elementId: text4
+  elementType: text
+  bounds: [1401.88, 696.35, 399.9, 211.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 41.05
+    text: Elaborate on this market research highlight. This will provide a foundation for the product launch and its success.
+- elementId: shape5
+  elementType: shape
+  bounds: [109, 552.44, 420.34, 382.71]
+  shapeName: custom
+  path: 1054485,960070;M19337 0L1035148 0C1045828 0 1054485 8657 1054485 19337L1054485 940734C1054485 951413 1045828 960070 1035148 960070L19337 960070C8657 960070 0 951413 0 940734L0 19337C0 8657 8657 0 19337 0Z
+  fill:
+    type: gradient
+    gradientType: linear
+    angle: 0
+    stops:
+    - position: 0
+      color: "#001A4300"
+    - position: 1
+      color: "#004DE600"
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text6
+  elementType: text
+  bounds: [104.73, 537.78, 428.87, 396.82]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 32
+    text: ' '
+- elementId: text7
+  elementType: text
+  bounds: [119.22, 580.22, 399.9, 98.6]
+  content:
+    align: [left, top]
+    fontSize: 37.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 44.79
+    text: Current market size
+- elementId: text8
+  elementType: text
+  bounds: [119.22, 696.35, 399.9, 211.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 41.05
+    text: Elaborate on this market research highlight. This will provide a foundation for the product launch and its success.
+- elementId: shape9
+  elementType: shape
+  bounds: [536.55, 552.44, 420.34, 382.71]
+  shapeName: custom
+  path: 1054485,960070;M19337 0L1035148 0C1045828 0 1054485 8657 1054485 19337L1054485 940734C1054485 951413 1045828 960070 1035148 960070L19337 960070C8657 960070 0 951413 0 940734L0 19337C0 8657 8657 0 19337 0Z
+  fill:
+    type: gradient
+    gradientType: linear
+    angle: 0
+    stops:
+    - position: 0
+      color: "#001A4300"
+    - position: 1
+      color: "#004DE600"
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text10
+  elementType: text
+  bounds: [532.28, 537.78, 428.87, 396.82]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 32
+    text: ' '
+- elementId: text11
+  elementType: text
+  bounds: [546.77, 580.22, 399.9, 98.6]
+  content:
+    align: [left, top]
+    fontSize: 37.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 44.79
+    text: Projected growth rate
+- elementId: text12
+  elementType: text
+  bounds: [546.77, 696.35, 399.9, 211.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 41.05
+    text: Elaborate on this market research highlight. This will provide a foundation for the product launch and its success.
+- elementId: shape13
+  elementType: shape
+  bounds: [964.11, 552.44, 420.34, 382.21]
+  shapeName: custom
+  path: 1054485,958816;M19337 0L1035148 0C1045828 0 1054485 8657 1054485 19337L1054485 939479C1054485 950159 1045828 958816 1035148 958816L19337 958816C8657 958816 0 950159 0 939479L0 19337C0 8657 8657 0 19337 0Z
+  fill:
+    type: gradient
+    gradientType: linear
+    angle: 0
+    stops:
+    - position: 0
+      color: "#001A4300"
+    - position: 1
+      color: "#004DE600"
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text14
+  elementType: text
+  bounds: [959.84, 537.78, 428.87, 396.32]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 32
+    text: ' '
+- elementId: text15
+  elementType: text
+  bounds: [974.33, 580.22, 399.9, 98.1]
+  content:
+    align: [left, top]
+    fontSize: 37.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 44.79
+    text: |
+      <p>Trends</p>
+      <p> </p>
+- elementId: text16
+  elementType: text
+  bounds: [974.33, 695.85, 399.9, 211.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 41.05
+    text: Elaborate on this market research highlight. This will provide a foundation for the product launch and its success.
+- elementId: shape17
+  elementType: shape
+  bounds: [108, 276.52, 1705, 290]
+  shapeName: custom
+  path: 4277235,543895;M4767 0L4272468 0C4273732 0 4274944 502 4275838 1396C4276732 2290 4277235 3503 4277235 4767L4277235 539128C4277235 541760 4275100 543895 4272468 543895L4767 543895C2134 543895 0 541760 0 539128L0 4767C0 2134 2134 0 4767 0Z
+  fill:
+    type: solid
+    color: "#4361EE"
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text18
+  elementType: text
+  bounds: [103.73, 271.87, 1713.53, 300]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 32
+    text: ' '
+- elementId: text19
+  elementType: text
+  bounds: [147.1, 295.3, 1618.58, 270]
+  content:
+    align: [center, top]
+    fontSize: 133.3
+    fontFamily: "Coda, deyihei"
+    color: "#0F1B3D"
+    lineHeightPx: 133.32
+    text: |
+      <p>MARKET RESEARCH<span style="color:$light"> </span><span style="color:$light; font-family:Coda, deyihei">HIGHLIGHTS</span></p>
+- elementId: text21
+  elementType: text
+  bounds: [159.85, 129.42, 172.82, 71.28]
+  content:
+    align: [left, top]
+    fontSize: 30
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#0F1B3D"
+    lineHeightPx: 30.03
+    letterSpacing: -1.2
+    text: |
+      <p>Launch</p>
+      <p>Studio</p>
+- elementId: logo_diamond
+  elementType: shape
+  bounds: [108, 138.93, 52.49, 52.49]
+  shapeName: custom
+  path: 666605,666605;M333302 0L666605 333302L333302 666605L0 333302Z
+  fill:
+    type: solid
+    color: "#0F1B3D"

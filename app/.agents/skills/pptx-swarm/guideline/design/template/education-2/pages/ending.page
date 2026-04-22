@@ -1,0 +1,108 @@
+pageType: final
+background:
+  type: gradient
+  gradientType: radial
+  stops:
+    - {position: 0, color: "$primary"}
+    - {position: 1, color: "$dark"}
+elements:
+  # 背景装饰圆
+  - elementId: bg-circle-1
+    elementType: shape
+    bounds: [-200, -100, 600, 600]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF05"
+
+  - elementId: bg-circle-2
+    elementType: shape
+    bounds: [880, 220, 500, 500]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF03"
+
+  # 感谢语
+  - elementId: thank-you
+    elementType: text
+    bounds: [240, 230, 800, 70]
+    content:
+      fontSize: 46
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>本节课到此结束</p>
+
+  # 行动号召
+  - elementId: cta
+    elementType: text
+    bounds: [290, 320, 700, 50]
+    content:
+      fontSize: 28
+      color: "#D8D8D8"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>勤学善思，举一反三</p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [440, 390, 400, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF30"
+
+  # 作业信息
+  - elementId: contact
+    elementType: text
+    bounds: [340, 420, 600, 100]
+    content:
+      fontSize: 22
+      color: "#D8D8D8"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      lineHeight: 1.8
+      text: |
+        <p>课后作业：课本 P85 习题 1-8 题</p>
+        <p>选做：P86 拓展提高 第1题</p>
+
+  # 图标
+  - elementId: social-linkedin
+    elementType: icon
+    bounds: [540, 540, 34, 34]
+    iconName: "fas:book"
+    fill:
+      type: solid
+      color: "#D8D8D8"
+
+  - elementId: social-twitter
+    elementType: icon
+    bounds: [625, 540, 34, 34]
+    iconName: "fas:pen"
+    fill:
+      type: solid
+      color: "#D8D8D8"
+
+  - elementId: social-youtube
+    elementType: icon
+    bounds: [710, 540, 34, 34]
+    iconName: "fas:calculator"
+    fill:
+      type: solid
+      color: "#D8D8D8"
+
+  # 版权信息
+  - elementId: copyright
+    elementType: text
+    bounds: [340, 640, 600, 36]
+    content:
+      fontSize: 16
+      color: "#A0A0A0"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>八年级数学组 · 函数与方程专题</p>

@@ -1,0 +1,340 @@
+pageType: content
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: title-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 60
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: title-icon
+    elementType: icon
+    bounds:
+      - 24
+      - 14
+      - 32
+      - 32
+    iconName: fas:lightbulb
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 70
+      - 0
+      - 1000
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:28px; color:#FFFFFF; font-family:MiSans;"><strong>结论与启示：四点核心建议</strong></span></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1200
+      - 0
+      - 60
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#D9E8F5; font-family:MiSans;">08</span></p>
+  - elementId: card-tl-bg
+    elementType: shape
+    bounds:
+      - 60
+      - 90
+      - 556
+      - 270
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#DADADA"
+  - elementId: card-tl-topborder
+    elementType: shape
+    bounds:
+      - 60
+      - 90
+      - 556
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card-tl-icon
+    elementType: icon
+    bounds:
+      - 84
+      - 116
+      - 32
+      - 32
+    iconName: fas:brain
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card-tl-title
+    elementType: text
+    bounds:
+      - 130
+      - 112
+      - 470
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>理论贡献</strong></span></p>
+  - elementId: card-tl-content
+    elementType: text
+    bounds:
+      - 84
+      - 162
+      - 516
+      - 180
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">本研究验证并扩展了XX理论在YY情境下的适用性，填补了现有文献在ZZ方面的研究空白</span></p>
+  - elementId: card-tr-bg
+    elementType: shape
+    bounds:
+      - 664
+      - 90
+      - 556
+      - 270
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#DADADA"
+  - elementId: card-tr-topborder
+    elementType: shape
+    bounds:
+      - 664
+      - 90
+      - 556
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card-tr-icon
+    elementType: icon
+    bounds:
+      - 688
+      - 116
+      - 32
+      - 32
+    iconName: fas:gears
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card-tr-title
+    elementType: text
+    bounds:
+      - 734
+      - 112
+      - 470
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>实践启示</strong></span></p>
+  - elementId: card-tr-content
+    elementType: text
+    bounds:
+      - 688
+      - 162
+      - 516
+      - 180
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">建议相关机构在制定政策时充分考虑XX因素的调节作用，分群体、分层次开展精准干预</span></p>
+  - elementId: card-bl-bg
+    elementType: shape
+    bounds:
+      - 60
+      - 388
+      - 556
+      - 270
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#DADADA"
+  - elementId: card-bl-topborder
+    elementType: shape
+    bounds:
+      - 60
+      - 388
+      - 556
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card-bl-icon
+    elementType: icon
+    bounds:
+      - 84
+      - 414
+      - 32
+      - 32
+    iconName: fas:triangle-exclamation
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card-bl-title
+    elementType: text
+    bounds:
+      - 130
+      - 410
+      - 470
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>研究局限</strong></span></p>
+  - elementId: card-bl-content
+    elementType: text
+    bounds:
+      - 84
+      - 460
+      - 516
+      - 180
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">样本来源单一，横截面数据无法推断因果关系，未来研究可采用纵向设计进一步验证</span></p>
+  - elementId: card-br-bg
+    elementType: shape
+    bounds:
+      - 664
+      - 388
+      - 556
+      - 270
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#DADADA"
+  - elementId: card-br-topborder
+    elementType: shape
+    bounds:
+      - 664
+      - 388
+      - 556
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card-br-icon
+    elementType: icon
+    bounds:
+      - 688
+      - 414
+      - 32
+      - 32
+    iconName: fas:compass
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card-br-title
+    elementType: text
+    bounds:
+      - 734
+      - 410
+      - 470
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>未来展望</strong></span></p>
+  - elementId: card-br-content
+    elementType: text
+    bounds:
+      - 688
+      - 460
+      - 516
+      - 180
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">后续研究可引入更多控制变量，扩大样本规模，并探索跨文化情境下的研究结论适用性</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"

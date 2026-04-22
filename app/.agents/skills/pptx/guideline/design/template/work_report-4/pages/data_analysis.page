@@ -1,0 +1,137 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 48]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: |
+        <p><strong>销售数据趋势分析</strong></p>
+  
+  # 图表区域
+  - elementId: chart-main
+    elementType: chart
+    bounds: [80, 140, 720, 400]
+    type: combo
+    title:
+      text: "月度销售额与增长率"
+      fontSize: 20
+      color: "$primary"
+    data:
+      - {month: "7月", revenue: 0.98, growthRate: 0.12}
+      - {month: "8月", revenue: 1.05, growthRate: 0.15}
+      - {month: "9月", revenue: 0.92, growthRate: 0.08}
+      - {month: "10月", revenue: 1.08, growthRate: 0.18}
+      - {month: "11月", revenue: 1.12, growthRate: 0.22}
+      - {month: "12月", revenue: 1.05, growthRate: 0.20}
+    x: month
+    y: [revenue, growthRate]
+    names: ["销售额(亿)", "增长率"]
+    colors: ["$accent", "$accent2"]
+    options:
+      fontFamily: "Liter, MiSans"
+    seriesStyle:
+      revenue:
+        type: bar
+        fill:
+          type: solid
+          color: "$accent"
+      growthRate:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 8
+          fill:
+            type: solid
+            color: "$accent2"
+    xAxis:
+      label:
+        color: "$secondary"
+        fontSize: 14
+      gridLine: false
+    yAxis:
+      title: "销售额（亿元）"
+      numberFormat: "0.0"
+      label:
+        color: "$secondary"
+        fontSize: 14
+      gridLine:
+        color: "$border"
+        style: solid
+        width: 1
+    secondaryAxis:
+      title: "增长率"
+      numberFormat: "0%"
+      label:
+        color: "$secondary"
+        fontSize: 14
+    legend:
+      position: top
+      color: "$secondary"
+      fontSize: 14
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+  
+  # 右侧分析要点
+  - elementId: analysis-bg
+    elementType: shape
+    bounds: [840, 140, 360, 430]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+
+  - elementId: analysis-title
+    elementType: text
+    bounds: [860, 160, 320, 40]
+    content:
+      fontSize: 20
+      color: "$primary"
+      align: [left, middle]
+      text: |
+        <p><strong>数据洞察</strong></p>
+
+  - elementId: analysis-content
+    elementType: text
+    bounds: [860, 210, 320, 350]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>增长动力</strong></p>
+        <p style="color:$secondary;">• 新产品贡献35%增量</p>
+        <p style="color:$secondary;">• 渠道拓展带来20%增长</p>
+        <p></p>
+        <p><strong>季节性特征</strong></p>
+        <p style="color:$secondary;">• 11月达到销售高峰</p>
+        <p style="color:$secondary;">• 9月为传统淡季</p>
+        <p></p>
+        <p><strong>下季度预测</strong></p>
+        <p style="color:$secondary;">• 预计Q1增长15-18%</p>
+        <p style="color:$secondary;">• 重点关注春节市场</p>
+  
+  # 数据来源
+  - elementId: data-source
+    elementType: text
+    bounds: [80, 560, 400, 30]
+    content:
+      style: "$small"
+      align: [left, middle]
+      text: |
+        <p>数据来源：销售管理系统 | 更新时间：2024-12-20</p>

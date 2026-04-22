@@ -1,0 +1,51 @@
+pageType: final
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: final-deco-line
+    elementType: shape
+    bounds: [580, 280, 120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E2E8F0"
+
+  - elementId: final-statement
+    elementType: text
+    bounds: [180, 300, 920, 56]
+    content:
+      fontSize: 36
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>Capitalize on the next decade.</strong></p>
+
+  - elementId: final-sub
+    elementType: text
+    bounds: [280, 368, 720, 28]
+    content:
+      fontSize: 18
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>把握未来十年的战略窗口期</p>
+
+  - elementId: final-contact
+    elementType: text
+    bounds: [340, 480, 600, 60]
+    content:
+      fontSize: 14
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>xxx@company.com · Confidential</p>
+        <p>XX科技集团 · 战略发展部</p>

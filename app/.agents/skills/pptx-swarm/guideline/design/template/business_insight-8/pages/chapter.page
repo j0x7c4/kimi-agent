@@ -1,0 +1,62 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$lightpanel"
+elements:
+  # 顶部accent装饰线
+  - elementId: top-accent-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 章节编号
+  - elementId: chapter-number
+    elementType: text
+    bounds: [100, 200, 400, 80]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:72px; color:#ffffff22; font-family:Times New Roman, SimSun, MiSans;"><strong>01</strong></span></p>
+
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [100, 290, 800, 60]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:40px; color:#ffffff; font-family:Times New Roman, SimSun, MiSans;"><strong>行业概览与宏观环境</strong></span></p>
+
+  # accent装饰线
+  - elementId: chapter-line
+    elementType: shape
+    bounds: [100, 370, 200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  # 章节描述
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [100, 395, 700, 80]
+    content:
+      align: [left, top]
+      fontSize: 18
+      color: "#ffffffbb"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-family:Calibri, Microsoft YaHei, MiSans;">从宏观经济周期、产业政策、技术变革三个维度审视行业所处发展阶段，定量评估市场规模与增长空间</span></p>
+
+  # 底部accent装饰线
+  - elementId: bottom-bar
+    elementType: shape
+    bounds: [0, 716, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"

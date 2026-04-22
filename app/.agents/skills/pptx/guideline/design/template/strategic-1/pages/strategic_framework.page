@@ -1,0 +1,616 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 52
+    shapeName: rect
+    fill:
+      type: solid
+      color: $primary
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 64
+      - 10
+      - 1050
+      - 32
+    wrap: false
+    content:
+      fontSize: 22
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>战略框架：目标 → 支柱 → 预期收益</strong></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1190
+      - 10
+      - 60
+      - 32
+    wrap: false
+    content:
+      fontSize: 13
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        04
+  - elementId: goal-bg
+    elementType: shape
+    bounds:
+      - 64
+      - 72
+      - 1152
+      - 90
+    shapeName: rect
+    fill:
+      type: solid
+      color: $primary
+  - elementId: goal-title
+    elementType: text
+    bounds:
+      - 84
+      - 78
+      - 300
+      - 32
+    wrap: false
+    content:
+      fontSize: 20
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>战略目标</strong></p>
+  - elementId: goal-desc
+    elementType: text
+    bounds:
+      - 84
+      - 112
+      - 700
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: "#FFFFFFCC"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p>2028年实现集团营收突破 ¥50B，全球市场份额提升至 15%</p>
+  - elementId: goal-number
+    elementType: text
+    bounds:
+      - 1000
+      - 82
+      - 200
+      - 60
+    wrap: false
+    content:
+      fontSize: 42
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><strong>¥50B</strong></p>
+  - elementId: arrow-1
+    elementType: text
+    bounds:
+      - 600
+      - 164
+      - 80
+      - 28
+    wrap: false
+    content:
+      fontSize: 22
+      color: $secondary
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        ↓
+  - elementId: pillar1-bg
+    elementType: shape
+    bounds:
+      - 64
+      - 196
+      - 272
+      - 280
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: pillar1-topbar
+    elementType: shape
+    bounds:
+      - 64
+      - 196
+      - 272
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: pillar1-title
+    elementType: text
+    bounds:
+      - 78
+      - 210
+      - 244
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $secondary
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>支柱一：产品创新</strong></p>
+  - elementId: pillar1-items
+    elementType: text
+    bounds:
+      - 78
+      - 246
+      - 244
+      - 140
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.7
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 核心技术自主研发投入提升至营收12%</p>
+        <p>&#9632; 建立三大全球研发中心</p>
+        <p>&#9632; 专利申报数量增长200%</p>
+  - elementId: pillar1-target
+    elementType: text
+    bounds:
+      - 78
+      - 398
+      - 244
+      - 28
+    wrap: false
+    content:
+      fontSize: 16
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>目标：¥6B 研发投入</strong></p>
+  - elementId: pillar2-bg
+    elementType: shape
+    bounds:
+      - 356
+      - 196
+      - 272
+      - 280
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: pillar2-topbar
+    elementType: shape
+    bounds:
+      - 356
+      - 196
+      - 272
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: pillar2-title
+    elementType: text
+    bounds:
+      - 370
+      - 210
+      - 244
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $secondary
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>支柱二：全球化扩张</strong></p>
+  - elementId: pillar2-items
+    elementType: text
+    bounds:
+      - 370
+      - 246
+      - 244
+      - 140
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.7
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 进入北美、欧洲、东南亚三大市场</p>
+        <p>&#9632; 海外营收占比提升至35%</p>
+        <p>&#9632; 建立本地化运营团队</p>
+  - elementId: pillar2-target
+    elementType: text
+    bounds:
+      - 370
+      - 398
+      - 244
+      - 28
+    wrap: false
+    content:
+      fontSize: 16
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>目标：35% 海外营收</strong></p>
+  - elementId: pillar3-bg
+    elementType: shape
+    bounds:
+      - 648
+      - 196
+      - 272
+      - 280
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: pillar3-topbar
+    elementType: shape
+    bounds:
+      - 648
+      - 196
+      - 272
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: pillar3-title
+    elementType: text
+    bounds:
+      - 662
+      - 210
+      - 244
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $secondary
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>支柱三：数字化转型</strong></p>
+  - elementId: pillar3-items
+    elementType: text
+    bounds:
+      - 662
+      - 246
+      - 244
+      - 140
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.7
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 全链路数字化覆盖率95%</p>
+        <p>&#9632; AI驱动决策体系全面落地</p>
+        <p>&#9632; 运营效率提升40%</p>
+  - elementId: pillar3-target
+    elementType: text
+    bounds:
+      - 662
+      - 398
+      - 244
+      - 28
+    wrap: false
+    content:
+      fontSize: 16
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>目标：95% 数字化率</strong></p>
+  - elementId: pillar4-bg
+    elementType: shape
+    bounds:
+      - 940
+      - 196
+      - 276
+      - 280
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: pillar4-topbar
+    elementType: shape
+    bounds:
+      - 940
+      - 196
+      - 276
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: pillar4-title
+    elementType: text
+    bounds:
+      - 954
+      - 210
+      - 248
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $secondary
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>支柱四：并购整合</strong></p>
+  - elementId: pillar4-items
+    elementType: text
+    bounds:
+      - 954
+      - 246
+      - 248
+      - 140
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.7
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 完成3-5宗战略并购</p>
+        <p>&#9632; 补全供应链关键环节</p>
+        <p>&#9632; 协同效应释放¥2B+</p>
+  - elementId: pillar4-target
+    elementType: text
+    bounds:
+      - 954
+      - 398
+      - 248
+      - 28
+    wrap: false
+    content:
+      fontSize: 16
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>目标：¥8B 并购规模</strong></p>
+  - elementId: arrow-2
+    elementType: text
+    bounds:
+      - 600
+      - 478
+      - 80
+      - 28
+    wrap: false
+    content:
+      fontSize: 22
+      color: $secondary
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        ↓
+  - elementId: result-bg
+    elementType: shape
+    bounds:
+      - 64
+      - 510
+      - 1152
+      - 100
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: result-label
+    elementType: text
+    bounds:
+      - 78
+      - 516
+      - 200
+      - 24
+    wrap: false
+    content:
+      fontSize: 14
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>预期收益</strong></p>
+  - elementId: result-num1
+    elementType: text
+    bounds:
+      - 78
+      - 540
+      - 340
+      - 56
+    wrap: false
+    content:
+      fontSize: 48
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>¥50B</strong></p>
+  - elementId: result-label1
+    elementType: text
+    bounds:
+      - 240
+      - 560
+      - 200
+      - 22
+    wrap: false
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        目标营收规模
+  - elementId: result-num2
+    elementType: text
+    bounds:
+      - 460
+      - 540
+      - 300
+      - 56
+    wrap: false
+    content:
+      fontSize: 48
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>18%</strong></p>
+  - elementId: result-label2
+    elementType: text
+    bounds:
+      - 570
+      - 560
+      - 200
+      - 22
+    wrap: false
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        净利率目标
+  - elementId: result-num3
+    elementType: text
+    bounds:
+      - 820
+      - 540
+      - 340
+      - 56
+    wrap: false
+    content:
+      fontSize: 48
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>15%</strong></p>
+  - elementId: result-label3
+    elementType: text
+    bounds:
+      - 930
+      - 560
+      - 200
+      - 22
+    wrap: false
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        全球市场份额
+  - elementId: source-text
+    elementType: text
+    bounds:
+      - 64
+      - 680
+      - 600
+      - 20
+    wrap: false
+    content:
+      fontSize: 12
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p>Source: 集团战略规划委员会, 2025年度规划纲要</p>

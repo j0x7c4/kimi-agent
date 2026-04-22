@@ -1,0 +1,229 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: img_decor
+    elementType: shape
+    bounds:
+      - 98.4
+      - 400
+      - 900
+      - 500
+    shapeName: custom
+    path: 8573400,4762500;M0 0L8573400 0L8573400 4762500L0 4762500L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200
+      fit:
+        mode: fill
+  - elementId: shape0
+    elementType: shape
+    bounds:
+      - 1244.6
+      - 546.66
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 98.4
+      - 102.2
+      - 1128.66
+      - 246.6
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>5G Technology: </strong></p>
+        <p><strong>What You Need to Know</strong></p>
+  - elementId: text2
+    elementType: text
+    bounds:
+      - 98.4
+      - 906.59
+      - 820.5
+      - 62.4
+    content:
+      fontSize: 37.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 56
+      align:
+        - left
+        - top
+      text: |
+        Understand how the new network works
+  - elementId: text3
+    elementType: text
+    bounds:
+      - 1315.03
+      - 520.27
+      - 506.57
+      - 58.8
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        5G Defined
+  - elementId: text4
+    elementType: text
+    bounds:
+      - 1315.03
+      - 599.81
+      - 506.57
+      - 58.8
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        The Difference in Communication
+  - elementId: text5
+    elementType: text
+    bounds:
+      - 1315.03
+      - 679.36
+      - 506.57
+      - 58.8
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        Where 5G Is Used
+  - elementId: text6
+    elementType: text
+    bounds:
+      - 1315.03
+      - 758.91
+      - 506.57
+      - 58.8
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        Speed and Efficiency
+  - elementId: text7
+    elementType: text
+    bounds:
+      - 1315.03
+      - 838.45
+      - 506.57
+      - 58.8
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        Accessibility
+  - elementId: text8
+    elementType: text
+    bounds:
+      - 1315.03
+      - 918
+      - 506.57
+      - 58.8
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        Economic Impact
+  - elementId: shape9
+    elementType: shape
+    bounds:
+      - 1244.6
+      - 626.21
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape10
+    elementType: shape
+    bounds:
+      - 1244.6
+      - 705.75
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape11
+    elementType: shape
+    bounds:
+      - 1244.6
+      - 785.3
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape12
+    elementType: shape
+    bounds:
+      - 1244.6
+      - 864.85
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape13
+    elementType: shape
+    bounds:
+      - 1244.6
+      - 944.39
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"

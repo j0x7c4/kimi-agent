@@ -1,0 +1,122 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧细竖线
+  - elementId: final-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 下方蓝色区域
+  - elementId: final-bottom-band
+    elementType: shape
+    bounds: [0, 400, 1280, 320]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 标题区（白色背景）
+  - elementId: final-title
+    elementType: text
+    bounds: [80, 100, 1100, 96]
+    content:
+      fontSize: 72
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>感谢聆听</strong></p>
+
+  - elementId: final-thanks-en
+    elementType: text
+    bounds: [80, 206, 900, 32]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 5
+      wrap: false
+      text: THANK YOU FOR YOUR ATTENTION
+
+  # 分隔线
+  - elementId: final-separator
+    elementType: shape
+    bounds: [80, 256, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  # 联系信息（白色背景区，蓝色底部前）
+  - elementId: final-contact-name
+    elementType: text
+    bounds: [80, 278, 700, 30]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>XXX</strong>　|　XX大学 · XX学院</p>
+
+  - elementId: final-contact-email
+    elementType: text
+    bounds: [80, 318, 500, 26]
+    content:
+      fontSize: 16
+      color: "#666666"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: email@xx.edu.cn
+
+  - elementId: final-contact-advisor
+    elementType: text
+    bounds: [80, 352, 600, 26]
+    content:
+      fontSize: 16
+      color: "#666666"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 指导教师：XXX 教授
+
+  # 蓝色区域内文字
+  - elementId: final-qa-prompt
+    elementType: text
+    bounds: [80, 438, 800, 56]
+    content:
+      fontSize: 36
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>Q & A</p>
+
+  - elementId: final-qa-sub
+    elementType: text
+    bounds: [80, 504, 800, 28]
+    content:
+      fontSize: 18
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 敬请各位老师批评指正
+
+  # 页码
+  - elementId: final-page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "10"

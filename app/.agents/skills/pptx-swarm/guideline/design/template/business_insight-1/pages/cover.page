@@ -1,0 +1,94 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深青绿色带
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 左侧大色块
+  - elementId: left-block
+    elementType: shape
+    bounds: [0, 6, 640, 714]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 左侧标题
+  - elementId: cover-title
+    elementType: text
+    bounds: [70, 240, 500, 130]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.3
+      text: |
+        <p><span style="font-size:44px; color:#ffffff;"><strong>Business Insight</strong></span></p>
+        <p><span style="font-size:44px; color:#ffffff;"><strong>Template</strong></span></p>
+
+  # 左侧副标题
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [70, 390, 500, 40]
+    content:
+      align: [left, middle]
+      fontSize: 20
+      color: "#ffffffcc"
+      text: |
+        <p>Commercial Strategy & Market Analysis</p>
+
+  # 左侧装饰线
+  - elementId: cover-line
+    elementType: shape
+    bounds: [70, 450, 140, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "#ffffff80"}
+
+  # 左侧日期
+  - elementId: cover-date
+    elementType: text
+    bounds: [70, 470, 300, 30]
+    content:
+      align: [left, middle]
+      fontSize: 16
+      color: "#ffffffaa"
+      wrap: false
+      text: |
+        <p>March 2026 | Confidential</p>
+
+  # 右侧装饰 - 大数字
+  - elementId: right-deco-num
+    elementType: text
+    bounds: [720, 180, 480, 100]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:72px; color:#F0F0F0;"><strong>INSIGHTS</strong></span></p>
+
+  # 右侧装饰线
+  - elementId: right-deco-line
+    elementType: shape
+    bounds: [840, 340, 200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # 右侧说明文字
+  - elementId: right-desc
+    elementType: text
+    bounds: [740, 370, 460, 80]
+    content:
+      align: [center, top]
+      fontSize: 16
+      color: "$medgray"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>Data-driven analysis and strategic recommendations for business growth and market expansion</p>

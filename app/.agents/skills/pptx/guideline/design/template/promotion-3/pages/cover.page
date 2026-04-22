@@ -1,0 +1,52 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Hero title — huge display, upper left
+  - elementId: hero-title
+    elementType: text
+    bounds: [17, 6, 817, 259]
+    content:
+      style: "$heroTitle"
+      align: [left, top]
+      lineHeight: 0.9
+      text: |
+        <p>EMILY</p>
+        <p>JOHNSON</p>
+
+  # Subtitle — right side, below title midpoint
+  - elementId: hero-subtitle
+    elementType: text
+    bounds: [872, 187, 370, 56]
+    content:
+      style: "$subtitle"
+      align: [left, top]
+      wrap: false
+      text: Architectural Photographer
+
+  # Large image — lower left
+  - elementId: photo-main
+    elementType: image
+    bounds: [31, 273, 803, 395]
+    src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80"
+    fit:
+      mode: cover
+
+  # Smaller image — lower right
+  - elementId: photo-secondary
+    elementType: image
+    bounds: [872, 273, 377, 395]
+    src: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80"
+    fit:
+      mode: cover
+
+  # Bottom rule
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [31, 703, 1219, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$gray"

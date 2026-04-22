@@ -1,0 +1,247 @@
+pageType: content
+background:
+  type: solid
+  color: "#F4F1EA"
+elements:
+  - elementId: breadcrumb
+    elementType: text
+    bounds: [72, 16, 400, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Strategic Roadmap / Timeline
+
+  - elementId: page-title
+    elementType: text
+    bounds: [72, 48, 1136, 36]
+    content:
+      fontSize: 28
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>三阶段路线图：从验证到规模化再到全球化</strong></p>
+
+  # Overview card
+  - elementId: overview-bg
+    elementType: shape
+    bounds: [72, 100, 1136, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: overview-text
+    elementType: text
+    bounds: [96, 112, 1088, 76]
+    content:
+      fontSize: 18
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><strong>战略目标：</strong>三年内完成从<span style="color:#D97706;"><strong>$3.8M ARR</strong></span>到<span style="color:#D97706;"><strong>$25M ARR</strong></span>的跨越式增长，18个月达成盈亏平衡，建立行业绝对领导地位。</p>
+
+  # Timeline axis
+  - elementId: timeline-axis
+    elementType: shape
+    bounds: [72, 290, 1136, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#1A3632"
+
+  # Phase 1 block
+  - elementId: phase-1-block
+    elementType: shape
+    bounds: [72, 310, 350, 300]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1A3632"
+
+  - elementId: phase-1-time
+    elementType: text
+    bounds: [72, 260, 350, 24]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: Q1-Q2 2025
+
+  - elementId: phase-1-title
+    elementType: text
+    bounds: [88, 320, 318, 28]
+    content:
+      fontSize: 20
+      color: "#F4F1EA"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Phase 1: 验证</strong></p>
+
+  - elementId: phase-1-target
+    elementType: text
+    bounds: [88, 352, 318, 32]
+    content:
+      fontSize: 24
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>$1M ARR</strong></p>
+
+  - elementId: phase-1-body
+    elementType: text
+    bounds: [88, 392, 318, 200]
+    content:
+      fontSize: 16
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>&#8226; 核心产品MVP交付</p>
+        <p>&#8226; 首批10家付费客户</p>
+        <p>&#8226; 产品市场匹配验证</p>
+
+  # Phase 2 block
+  - elementId: phase-2-block
+    elementType: shape
+    bounds: [465, 310, 350, 300]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#24524B"
+
+  - elementId: phase-2-time
+    elementType: text
+    bounds: [465, 260, 350, 24]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: Q3 2025 - Q2 2026
+
+  - elementId: phase-2-title
+    elementType: text
+    bounds: [481, 320, 318, 28]
+    content:
+      fontSize: 20
+      color: "#F4F1EA"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Phase 2: 规模化</strong></p>
+
+  - elementId: phase-2-target
+    elementType: text
+    bounds: [481, 352, 318, 32]
+    content:
+      fontSize: 24
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>$5M ARR</strong></p>
+
+  - elementId: phase-2-body
+    elementType: text
+    bounds: [481, 392, 318, 200]
+    content:
+      fontSize: 16
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>&#8226; 渠道伙伴体系建立</p>
+        <p>&#8226; 客户数扩至100+</p>
+        <p>&#8226; 18个月盈亏平衡</p>
+
+  # Phase 3 block
+  - elementId: phase-3-block
+    elementType: shape
+    bounds: [858, 310, 350, 300]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E1E7E5"
+
+  - elementId: phase-3-time
+    elementType: text
+    bounds: [858, 260, 350, 24]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: Q3 2026 - 2027
+
+  - elementId: phase-3-title
+    elementType: text
+    bounds: [874, 320, 318, 28]
+    content:
+      fontSize: 20
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Phase 3: 全球化</strong></p>
+
+  - elementId: phase-3-target
+    elementType: text
+    bounds: [874, 352, 318, 32]
+    content:
+      fontSize: 24
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>$25M ARR</strong></p>
+
+  - elementId: phase-3-body
+    elementType: text
+    bounds: [874, 392, 318, 200]
+    content:
+      fontSize: 16
+      color: "#1A3632"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>&#8226; 东南亚市场拓展</p>
+        <p>&#8226; 客户数突破800+</p>
+        <p>&#8226; IPO准备就绪</p>
+
+  - elementId: source-text
+    elementType: text
+    bounds: [72, 668, 600, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Source: 内部战略规划, 2025</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 56, 24]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "05"

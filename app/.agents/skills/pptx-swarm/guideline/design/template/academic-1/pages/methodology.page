@@ -1,0 +1,145 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部细线
+  - elementId: top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  # 章节标记
+  - elementId: section-marker
+    elementType: text
+    bounds: [80, 20, 224, 20]
+    content:
+      fontSize: 12
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: "CHAPTER 03 — 模型设计与算法实现"
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 35]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>3.1 图神经网络模型设计</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 90, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  # 上方架构图区域
+  - elementId: arch-bg
+    elementType: shape
+    bounds: [80, 110, 1120, 280]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: arch-placeholder
+    elementType: text
+    bounds: [80, 110, 1120, 50]
+    content:
+      fontSize: 18
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      text: |
+        <p>[Figure 2: MolGNN模型架构图]</p>
+        <p>分子图输入 → 原子嵌入 → GNN消息传递 → 读出层 → 性质预测</p>
+
+  - elementId: arch-caption
+    elementType: text
+    bounds: [80, 400, 1120, 24]
+    content:
+      style: "$caption"
+      text: |
+        <p><strong>Figure 2.</strong> MolGNN模型架构：基于消息传递机制的分子图神经网络，包含3层MPNN + 注意力读出层 + 多任务预测头。</p>
+
+  # 下方文字说明 - 两栏
+  - elementId: col-1-title
+    elementType: text
+    bounds: [80, 445, 540, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>消息传递层（MPNN）</strong></p>
+
+  - elementId: col-1-content
+    elementType: text
+    bounds: [80, 478, 540, 130]
+    content:
+      style: "$body"
+      lineHeight: 1.7
+      text: |
+        <p>每层MPNN包含：(1) 边特征更新函数，融合原子对距离和键类型信息；(2) 节点聚合函数，采用注意力加权的邻居消息聚合；(3) 节点更新函数，使用GRU门控机制保留历史信息。</p>
+
+  - elementId: col-divider
+    elementType: shape
+    bounds: [640, 445, 0, 160]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  - elementId: col-2-title
+    elementType: text
+    bounds: [660, 445, 540, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>注意力读出与多任务预测</strong></p>
+
+  - elementId: col-2-content
+    elementType: text
+    bounds: [660, 478, 540, 130]
+    content:
+      style: "$body"
+      lineHeight: 1.7
+      text: |
+        <p>读出层采用Set2Set注意力机制，对所有原子的隐藏状态进行自适应加权求和，生成固定维度的分子级表示。预测头支持回归（溶解度、毒性等）和分类（药物活性等）双任务。</p>
+
+  # 底部线
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [0, 716, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 80, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "04 / 09"

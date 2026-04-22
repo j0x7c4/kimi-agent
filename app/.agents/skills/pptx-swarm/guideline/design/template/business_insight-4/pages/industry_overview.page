@@ -1,0 +1,132 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 28, 1160, 40]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:26px; color:#263238; font-family:Georgia, MiSans;"><strong>全球新能源汽车渗透率突破20%，中国市场领跑增长</strong></span></p>
+
+  # 标题下方细线
+  - elementId: title-line
+    elementType: shape
+    bounds: [60, 72, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 左侧：柱状图 - 全球渗透率
+  - elementId: chart-title
+    elementType: text
+    bounds: [60, 84, 560, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>全球新能源汽车渗透率 (%)</strong></span></p>
+
+  - elementId: penetration-chart
+    elementType: chart
+    bounds: [60, 116, 560, 280]
+    type: bar
+    options:
+      fontFamily: "Arial, MiSans"
+    data:
+      - {year: "2019", rate: 2.5}
+      - {year: "2020", rate: 4.1}
+      - {year: "2021", rate: 8.3}
+      - {year: "2022", rate: 13.0}
+      - {year: "2023", rate: 17.8}
+      - {year: "2024", rate: 21.2}
+      - {year: "2025E", rate: 26.5}
+    x: year
+    y: [rate]
+    names: ["渗透率"]
+    colors: ["$primary"]
+    legend: {position: none}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 12
+      numberFormat: "0.0%"
+    xAxis:
+      label: {fontSize: 12, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 11, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      axisLine: false
+
+  # 右侧：核心数据与分析
+  - elementId: analysis-title
+    elementType: text
+    bounds: [660, 84, 560, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>核心增长驱动因素</strong></span></p>
+
+  - elementId: analysis-text
+    elementType: text
+    bounds: [660, 118, 560, 296]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>1. 政策驱动：</strong>中国新能源购置税减免延至2027年，欧盟2035年禁售燃油车。2025年全球补贴规模预计4,200亿元。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>2. 成本下降：</strong>碳酸锂从高点60万元/吨回落至8-10万元/吨，电池包成本较2020年降超50%。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>3. 技术迭代：</strong>800V高压平台普及，充电10分钟续航400公里；固态电池商业化加速。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>4. 消费升级：</strong>智能座舱、高阶辅助驾驶成核心购买因素，L2+渗透率超45%。</span></p>
+
+  # 底部分隔线
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 420, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 底部数据要点
+  - elementId: data-summary
+    elementType: text
+    bounds: [60, 432, 1160, 230]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>关键数据：</strong>2025年全球新能源汽车销量预计达1,850万辆（+28% YoY），其中中国市场约1,100万辆，占全球份额59.5%。欧洲市场约350万辆（+18%），北美市场约220万辆（+32%）。从车型结构看，纯电动（BEV）占比约65%，插电混动（PHEV）占比约35%，PHEV增速高于BEV主要受中国市场增程式车型放量拉动。分价格带看，15-25万元区间竞争最为激烈，占据国内新能源销量的42%，是各品牌必争的核心价格带。值得关注的是，20万元以上市场中国品牌份额已从2020年的12%提升至2025年的38%，品牌力持续向上突破。</span></p>
+
+  # 底部来源线
+  - elementId: source-line
+    elementType: shape
+    bounds: [60, 672, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 来源
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 678, 800, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Arial, MiSans;">Source: 乘联会, 2025; IEA Global EV Outlook; XX证券研究所</span></p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 678, 120, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Arial, MiSans;">4</span></p>

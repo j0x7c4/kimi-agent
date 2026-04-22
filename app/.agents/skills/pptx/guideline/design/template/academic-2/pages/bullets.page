@@ -1,0 +1,265 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部导航条（各章节标题均匀分布）
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  - elementId: nav-active
+    elementType: shape
+    bounds: [0, 0, 256, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 01 研究背景
+
+  - elementId: nav-div1
+    elementType: shape
+    bounds: [256, 6, 0, 32]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [256, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 02 文献综述
+
+  - elementId: nav-div2
+    elementType: shape
+    bounds: [512, 6, 0, 32]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [512, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 03 研究方法
+
+  - elementId: nav-div3
+    elementType: shape
+    bounds: [768, 6, 0, 32]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [768, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 04 实验结果
+
+  - elementId: nav-div4
+    elementType: shape
+    bounds: [1024, 6, 0, 32]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: nav-ch5
+    elementType: text
+    bounds: [1024, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 05 结论展望
+
+  # 标题区 - 左侧暗红竖线
+  - elementId: title-deco-line
+    elementType: shape
+    bounds: [50, 62, 0, 36]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [68, 60, 900, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>国内外研究现状综述</strong></p>
+
+  # 标题下金色分隔线
+  - elementId: title-gold-line
+    elementType: shape
+    bounds: [50, 108, 1180, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#B8860B60"
+
+  # 内容区 - 要点列表（浅红底卡片）
+  - elementId: content-card
+    elementType: shape
+    bounds: [50, 122, 1180, 500]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightRed"
+
+  # Bullet 1
+  - elementId: bullet-dot-1
+    elementType: shape
+    bounds: [72, 158, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bullet-1
+    elementType: text
+    bounds: [96, 148, 1100, 50]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p><strong>国内研究现状：</strong>近年来，国内相关领域已发表大量高水平论文，研究重点集中在方法论创新与应用落地两个方向。</p>
+
+  # Bullet 2
+  - elementId: bullet-dot-2
+    elementType: shape
+    bounds: [72, 238, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bullet-2
+    elementType: text
+    bounds: [96, 228, 1100, 50]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p><strong>国外研究进展：</strong>国际顶会（如NeurIPS、ICML等）持续涌现突破性成果，主要集中在算法效率提升与跨场景泛化能力研究。</p>
+
+  # Bullet 3
+  - elementId: bullet-dot-3
+    elementType: shape
+    bounds: [72, 318, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bullet-3
+    elementType: text
+    bounds: [96, 308, 1100, 50]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p><strong>现有方法局限：</strong>当前主流方法在数据稀缺场景下表现不稳定，且计算成本较高，难以在资源受限设备上部署。</p>
+
+  # Bullet 4
+  - elementId: bullet-dot-4
+    elementType: shape
+    bounds: [72, 398, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bullet-4
+    elementType: text
+    bounds: [96, 388, 1100, 50]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p><strong>研究空白识别：</strong>面向特定垂直领域的自适应方法研究尚不充分，存在显著的研究空白与应用需求。</p>
+
+  # 结论强调框（金色边框）
+  - elementId: conclusion-box
+    elementType: shape
+    bounds: [68, 470, 1144, 56]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 2
+      color: "$gold"
+
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [84, 470, 1112, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><strong>核心结论：</strong>现有研究为本文提供了重要基础，但在 [关键研究维度] 上仍存在不足，本文拟从该角度展开深入研究。</p>
+
+  # 底部装饰
+  - elementId: bottom-gold-line
+    elementType: shape
+    bounds: [0, 706, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#B8860B"

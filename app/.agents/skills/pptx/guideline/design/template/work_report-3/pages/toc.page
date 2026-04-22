@@ -1,0 +1,178 @@
+pageType: table_of_contents
+background:
+  type: gradient
+  gradientType: linear
+  angle: 180
+  stops:
+    - {position: 0, color: "#F0F3F5"}
+    - {position: 1, color: "#F8FAFB"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 400, 50]
+    content:
+      style: "$pageTitle"
+      fontSize: 36
+      text: |
+        <p><strong>目录</strong></p>
+  
+  # 章节1
+  - elementId: chapter1-num
+    elementType: shape
+    bounds: [120, 180, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: chapter1-num-text
+    elementType: text
+    bounds: [120, 180, 40, 40]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "1"
+
+  - elementId: chapter1-title
+    elementType: text
+    bounds: [180, 180, 600, 40]
+    content:
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>年度工作回顾</strong></p>
+  
+  # 章节2
+  - elementId: chapter2-num
+    elementType: shape
+    bounds: [120, 260, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: chapter2-num-text
+    elementType: text
+    bounds: [120, 260, 40, 40]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "2"
+
+  - elementId: chapter2-title
+    elementType: text
+    bounds: [180, 260, 600, 40]
+    content:
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>核心成果展示</strong></p>
+  
+  # 章节3
+  - elementId: chapter3-num
+    elementType: shape
+    bounds: [120, 340, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: chapter3-num-text
+    elementType: text
+    bounds: [120, 340, 40, 40]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "3"
+
+  - elementId: chapter3-title
+    elementType: text
+    bounds: [180, 340, 600, 40]
+    content:
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>数据分析与洞察</strong></p>
+  
+  # 章节4
+  - elementId: chapter4-num
+    elementType: shape
+    bounds: [120, 420, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: chapter4-num-text
+    elementType: text
+    bounds: [120, 420, 40, 40]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "4"
+
+  - elementId: chapter4-title
+    elementType: text
+    bounds: [180, 420, 600, 40]
+    content:
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>挑战与应对策略</strong></p>
+  
+  # 章节5
+  - elementId: chapter5-num
+    elementType: shape
+    bounds: [120, 500, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: chapter5-num-text
+    elementType: text
+    bounds: [120, 500, 40, 40]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "5"
+
+  - elementId: chapter5-title
+    elementType: text
+    bounds: [180, 500, 600, 40]
+    content:
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>未来工作规划</strong></p>
+  
+  # 装饰性元素
+  - elementId: deco-line
+    elementType: shape
+    bounds: [800, 180, 2, 360]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+    opacity: 0.3

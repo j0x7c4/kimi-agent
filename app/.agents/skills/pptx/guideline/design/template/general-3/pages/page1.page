@@ -1,0 +1,133 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: radial
+  stops:
+  - position: 0
+    color: "#FFFFFFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#C7E2FFFF"
+elements:
+- elementId: shape0
+  elementType: shape
+  bounds: [108, 705.29, 448.43, 81.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: text1
+  elementType: text
+  bounds: [103.73, 691.95, 456.96, 93.95]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape2
+  elementType: shape
+  bounds: [605.59, 704.81, 448.43, 81.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: text3
+  elementType: text
+  bounds: [601.32, 691.48, 456.96, 93.95]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape4
+  elementType: shape
+  bounds: [108, 705.76, 18.12, 81.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: text5
+  elementType: text
+  bounds: [103.73, 692.43, 26.65, 93.95]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape6
+  elementType: shape
+  bounds: [605.59, 705.29, 18.12, 81.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: text7
+  elementType: text
+  bounds: [601.32, 691.95, 26.65, 93.95]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: text10
+  elementType: text
+  bounds: [98.4, 525.3, 1319.78, 136.26]
+  content:
+    align: [left, top]
+    fontSize: 94.1
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 131.68
+    letterSpacing: 10.53
+    text: 如何科学管理睡眠
+- elementId: text11
+  elementType: text
+  bounds: [150.88, 709.53, 470, 66.63]
+  content:
+    align: [left, top]
+    fontSize: 36
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 50.4
+    text: 主讲人：社区健康中心
+- elementId: text12
+  elementType: text
+  bounds: [643.79, 709.05, 401.02, 66.63]
+  content:
+    align: [left, top]
+    fontSize: 42
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 58.8
+    text: 日期：2025年4月
+- elementId: text13
+  elementType: text
+  bounds: [98.4, 225.19, 1723.2, 319.61]
+  content:
+    align: [left, top]
+    fontSize: 152.2
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 147.64
+    letterSpacing: 1.67
+    text: |
+      <p>HEALTH SCIENCE</p>
+      <p>LECTURE</p>
+- elementId: line14
+  elementType: shape
+  bounds: [108, 947.43, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 1.5
+    color: "$dark"

@@ -1,0 +1,130 @@
+pageType: cover
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: deco-block
+    elementType: shape
+    bounds:
+      - 840
+      - 0
+      - 440
+      - 720
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: school-label
+    elementType: text
+    bounds:
+      - 80
+      - 100
+      - 600
+      - 28
+    wrap: false
+    content:
+      fontSize: 15
+      color: "#8D8D8D"
+      fontFamily: Liter, MiSans
+      letterSpacing: 1
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>XX大学 · XX学院 · 课程名称</p>
+  - elementId: cover-title
+    elementType: text
+    bounds:
+      - 80
+      - 168
+      - 660
+      - 140
+    content:
+      fontSize: 55
+      color: "#2C5F8A"
+      fontFamily: Liter, MiSans
+      lineHeight: 1.25
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>课题研究汇报</strong></p>
+  - elementId: cover-subtitle-en
+    elementType: text
+    bounds:
+      - 80
+      - 318
+      - 660
+      - 36
+    wrap: false
+    content:
+      fontSize: 22
+      color: "#6A9BC7"
+      fontFamily: Liter, MiSans
+      letterSpacing: 1
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>Research Report Presentation</p>
+  - elementId: title-divider
+    elementType: shape
+    bounds:
+      - 80
+      - 390
+      - 180
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2.5
+      color: "#E07B54"
+  - elementId: presenter-info
+    elementType: text
+    bounds:
+      - 80
+      - 416
+      - 600
+      - 80
+    content:
+      fontSize: 18
+      color: "#8D8D8D"
+      fontFamily: Liter, MiSans
+      lineHeight: 1.8
+      align:
+        - left
+        - top
+      text: |
+        <p>汇报者：张三　|　学号：2024001</p>
+        <p>日期：2026年3月26日</p>
+  - elementId: deco-term
+    elementType: text
+    bounds:
+      - 821
+      - 651
+      - 440
+      - 28
+    wrap: false
+    content:
+      fontSize: 13
+      color: "#FFFFFF99"
+      fontFamily: Liter, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p>2025-2026  SPRING SEMESTER</p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"

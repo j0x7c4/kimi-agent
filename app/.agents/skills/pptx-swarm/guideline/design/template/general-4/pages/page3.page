@@ -1,0 +1,82 @@
+pageType: content
+elements:
+# --- Decorative accents ---
+- elementId: deco_circle
+  elementType: shape
+  bounds: [1550, 600, 300, 300]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#10B98110"
+- elementId: deco_hline
+  elementType: shape
+  bounds: [117, 400, 870, 2]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B98130"
+# --- Label bar ---
+- elementId: label_bg
+  elementType: shape
+  bounds: [1528, 922, 283, 62]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "$light"
+- elementId: text_label
+  elementType: text
+  bounds: [1533.53, 934.6, 272.19, 35.14]
+  content:
+    align: [right, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING
+# --- Image ---
+- elementId: shape_img
+  elementType: shape
+  bounds: [1188.69, 123.65, 604.22, 400.71]
+  shapeName: rect
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200
+    fit:
+      mode: contain
+# --- Content ---
+- elementId: text_title
+  elementType: text
+  bounds: [117.48, 115.85, 866.99, 256.77]
+  content:
+    align: [left, top]
+    fontSize: 100
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 125
+    text: The Different Teams
+- elementId: text_subtitle
+  elementType: text
+  bounds: [117.48, 615.1, 866.99, 58.93]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "#10B981"
+    lineHeightPx: 50
+    text: Roles and Tasks
+- elementId: text_body
+  elementType: text
+  bounds: [117.48, 713.5, 866.99, 247.65]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 35.45
+    text: |
+      <p>Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience.</p>
+      <p> </p>
+      <p>It serves a variety of purposes, making presentations powerful tools</p>
+      <p>for convincing and teaching. To create a stunning presentation,</p>
+      <p>it's best to simplify your thoughts.</p>

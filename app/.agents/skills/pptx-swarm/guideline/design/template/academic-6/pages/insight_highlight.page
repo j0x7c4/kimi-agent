@@ -1,0 +1,273 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧细竖线
+  - elementId: content-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 顶部细蓝线
+  - elementId: content-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 章节名右上角
+  - elementId: content-section-name
+    elementType: text
+    bounds: [900, 16, 340, 22]
+    content:
+      fontSize: 12
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: 05 结论与研究展望
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [40, 24, 840, 36]
+    content:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>核心研究贡献与未来展望</strong></p>
+
+  - elementId: title-separator
+    elementType: shape
+    bounds: [40, 68, 1200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 三个核心贡献横向展示
+  - elementId: contrib-1-bg
+    elementType: shape
+    bounds: [40, 86, 366, 220]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: contrib-1-icon-area
+    elementType: shape
+    bounds: [40, 86, 366, 64]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#123960"
+
+  - elementId: contrib-1-icon-label
+    elementType: text
+    bounds: [40, 86, 366, 64]
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: CONTRIBUTION 01
+
+  - elementId: contrib-1-text
+    elementType: text
+    bounds: [56, 162, 334, 126]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>提出了首个适用于XX场景的轻量化模型，将参数量降低40%的同时保持SOTA级别精度</p>
+
+  - elementId: contrib-2-bg
+    elementType: shape
+    bounds: [457, 86, 366, 220]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: contrib-2-icon-area
+    elementType: shape
+    bounds: [457, 86, 366, 64]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#3A6A9A"
+
+  - elementId: contrib-2-icon-label
+    elementType: text
+    bounds: [457, 86, 366, 64]
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: CONTRIBUTION 02
+
+  - elementId: contrib-2-text
+    elementType: text
+    bounds: [473, 162, 334, 126]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>构建了包含10K+样本的高质量标注数据集，已开源并被多个后续工作引用</p>
+
+  - elementId: contrib-3-bg
+    elementType: shape
+    bounds: [874, 86, 366, 220]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: contrib-3-icon-area
+    elementType: shape
+    bounds: [874, 86, 366, 64]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#1E6A7E"
+
+  - elementId: contrib-3-icon-label
+    elementType: text
+    bounds: [874, 86, 366, 64]
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: CONTRIBUTION 03
+
+  - elementId: contrib-3-text
+    elementType: text
+    bounds: [890, 162, 334, 126]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>在AA企业完成工业级部署验证，系统稳定运行超过6个月，效果达到预期</p>
+
+  # 未来展望区域
+  - elementId: future-title
+    elementType: text
+    bounds: [40, 336, 400, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>未来研究方向</strong></p>
+
+  - elementId: future-sep
+    elementType: shape
+    bounds: [40, 370, 1200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  - elementId: future-1
+    elementType: shape
+    bounds: [40, 386, 370, 74]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: future-1-text
+    elementType: text
+    bounds: [56, 396, 338, 54]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>探索少样本/零样本场景下的适应性方法</p>
+
+  - elementId: future-2
+    elementType: shape
+    bounds: [455, 386, 370, 74]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: future-2-text
+    elementType: text
+    bounds: [471, 396, 338, 54]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>引入多模态信息进一步提升模型表征能力</p>
+
+  - elementId: future-3
+    elementType: shape
+    bounds: [870, 386, 370, 74]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: future-3-text
+    elementType: text
+    bounds: [886, 396, 338, 54]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>研究模型在更多垂直行业场景中的迁移能力</p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "9"

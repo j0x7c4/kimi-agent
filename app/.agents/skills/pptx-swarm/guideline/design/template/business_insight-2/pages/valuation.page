@@ -1,0 +1,272 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 28, 1160, 40]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:26px; color:#263238; font-family:SortsMillGoudy, MiSans;"><strong>当前估值处于历史中位数偏低水平，安全边际充足</strong></span></p>
+
+  # 标题下方细线
+  - elementId: title-line
+    elementType: shape
+    bounds: [60, 72, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # KPI大数字区域 - 4个关键指标横排
+  # KPI 1: PE
+  - elementId: kpi1-number
+    elementType: text
+    bounds: [60, 90, 260, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#37474F; font-family:Liter, MiSans;"><strong>22.8x</strong></span></p>
+
+  - elementId: kpi1-label
+    elementType: text
+    bounds: [60, 148, 260, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>2025E PE</strong></span></p>
+
+  - elementId: kpi1-context
+    elementType: text
+    bounds: [60, 176, 260, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;">历史均值 28.5x | 行业 25.2x</span></p>
+
+  # KPI 2: PB
+  - elementId: kpi2-number
+    elementType: text
+    bounds: [340, 90, 260, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#37474F; font-family:Liter, MiSans;"><strong>4.8x</strong></span></p>
+
+  - elementId: kpi2-label
+    elementType: text
+    bounds: [340, 148, 260, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>2025E PB</strong></span></p>
+
+  - elementId: kpi2-context
+    elementType: text
+    bounds: [340, 176, 260, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;">历史均值 6.2x | 行业 3.8x</span></p>
+
+  # KPI 3: 目标价
+  - elementId: kpi3-number
+    elementType: text
+    bounds: [620, 90, 280, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#37474F; font-family:Liter, MiSans;"><strong>388元</strong></span></p>
+
+  - elementId: kpi3-label
+    elementType: text
+    bounds: [620, 148, 280, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>目标价格</strong></span></p>
+
+  - elementId: kpi3-context
+    elementType: text
+    bounds: [620, 176, 280, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;">当前价 312元 | 上涨空间 24.4%</span></p>
+
+  # KPI 4: 评级
+  - elementId: kpi4-number
+    elementType: text
+    bounds: [920, 90, 300, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#37474F; font-family:Liter, MiSans;"><strong>强烈推荐</strong></span></p>
+
+  - elementId: kpi4-label
+    elementType: text
+    bounds: [920, 148, 300, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>投资评级</strong></span></p>
+
+  - elementId: kpi4-context
+    elementType: text
+    bounds: [920, 176, 300, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;">首次覆盖 | 12个月目标</span></p>
+
+  # 分隔线
+  - elementId: kpi-divider
+    elementType: shape
+    bounds: [60, 210, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 估值方法标题
+  - elementId: val-section-title
+    elementType: text
+    bounds: [60, 226, 1160, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#263238; font-family:SortsMillGoudy, MiSans;"><strong>估值方法与目标价推导</strong></span></p>
+
+  # PE估值法
+  - elementId: pe-method-bg
+    elementType: shape
+    bounds: [60, 270, 560, 140]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#ECEFF1"
+
+  - elementId: pe-method-label
+    elementType: text
+    bounds: [76, 278, 200, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#37474F; font-family:Liter, MiSans;"><strong>PE估值法（权重60%）</strong></span></p>
+
+  - elementId: pe-method-text
+    elementType: text
+    bounds: [76, 308, 530, 90]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.5
+      text: |
+        <p><span style="font-size:15px; color:#333333; font-family:Liter, MiSans;">基于2026年预测EPS 17.89元，给予25x PE（PEG约0.9x），目标市值约5,200亿元，对应股价447元。考虑市场情绪折价10%，PE法目标价 <strong>402元</strong>。</span></p>
+
+  # DCF估值法
+  - elementId: dcf-method-bg
+    elementType: shape
+    bounds: [660, 270, 560, 140]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#ECEFF1"
+
+  - elementId: dcf-method-label
+    elementType: text
+    bounds: [676, 278, 200, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#37474F; font-family:Liter, MiSans;"><strong>DCF估值法（权重40%）</strong></span></p>
+
+  - elementId: dcf-method-text
+    elementType: text
+    bounds: [676, 308, 530, 90]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.5
+      text: |
+        <p><span style="font-size:15px; color:#333333; font-family:Liter, MiSans;">WACC 9.5%，永续增长率3.0%，2025-2027年FCF预测280/380/490亿元，企业价值约10,800亿元。扣除净债务后对应股价 <strong>367元</strong>。</span></p>
+
+  # 综合目标价高亮框
+  - elementId: target-highlight-bg
+    elementType: shape
+    bounds: [60, 430, 1160, 56]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#37474F"
+
+  - elementId: target-highlight-text
+    elementType: text
+    bounds: [80, 430, 1120, 56]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#FFFFFF; font-family:Liter, MiSans;"><strong>综合目标价：402 × 60% + 367 × 40% = 388元</strong>　｜　当前价312元　｜　上涨空间 +24.4%</span></p>
+
+  # 敏感性分析
+  - elementId: sensitivity-text
+    elementType: text
+    bounds: [60, 504, 1160, 100]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:16px; color:#333333; font-family:Liter, MiSans;"><strong>敏感性分析：</strong>在WACC 8.5%-10.5%、PE 22-28x的假设区间内，目标价范围为340-440元。即使在最悲观情景下（WACC 10.5%, PE 22x），目标价340元仍高于当前价9%，下行风险有限。</span></p>
+
+  # 来源线
+  - elementId: source-line
+    elementType: shape
+    bounds: [60, 672, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 来源
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 678, 800, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">Source: Wind, Bloomberg, XX证券研究所</span></p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 678, 120, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">8</span></p>

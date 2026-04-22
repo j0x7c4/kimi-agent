@@ -1,0 +1,247 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "#F4F1EA"
+elements:
+  - elementId: toc-title
+    elementType: text
+    bounds: [72, 52, 400, 40]
+    content:
+      fontSize: 28
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>CONTENTS</strong></p>
+
+  - elementId: toc-accent-line
+    elementType: shape
+    bounds: [72, 96, 60, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#D97706"
+
+  # Item 1
+  - elementId: toc-num-1
+    elementType: text
+    bounds: [72, 140, 56, 36]
+    content:
+      fontSize: 24
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>01</strong></p>
+
+  - elementId: toc-item-1
+    elementType: text
+    bounds: [136, 140, 500, 28]
+    content:
+      fontSize: 22
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>战略愿景与核心支柱</strong></p>
+
+  - elementId: toc-sub-1
+    elementType: text
+    bounds: [136, 170, 500, 22]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Strategic Vision & Core Pillars
+
+  - elementId: toc-line-1
+    elementType: shape
+    bounds: [72, 208, 1136, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E1E7E5"
+
+  # Item 2
+  - elementId: toc-num-2
+    elementType: text
+    bounds: [72, 228, 56, 36]
+    content:
+      fontSize: 24
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>02</strong></p>
+
+  - elementId: toc-item-2
+    elementType: text
+    bounds: [136, 228, 500, 28]
+    content:
+      fontSize: 22
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>市场现状与差距分析</strong></p>
+
+  - elementId: toc-sub-2
+    elementType: text
+    bounds: [136, 258, 500, 22]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Market Analysis & Gap Assessment
+
+  - elementId: toc-line-2
+    elementType: shape
+    bounds: [72, 296, 1136, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E1E7E5"
+
+  # Item 3
+  - elementId: toc-num-3
+    elementType: text
+    bounds: [72, 316, 56, 36]
+    content:
+      fontSize: 24
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>03</strong></p>
+
+  - elementId: toc-item-3
+    elementType: text
+    bounds: [136, 316, 500, 28]
+    content:
+      fontSize: 22
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>战略执行路线图</strong></p>
+
+  - elementId: toc-sub-3
+    elementType: text
+    bounds: [136, 346, 500, 22]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Strategic Roadmap & Milestones
+
+  - elementId: toc-line-3
+    elementType: shape
+    bounds: [72, 384, 1136, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E1E7E5"
+
+  # Item 4
+  - elementId: toc-num-4
+    elementType: text
+    bounds: [72, 404, 56, 36]
+    content:
+      fontSize: 24
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04</strong></p>
+
+  - elementId: toc-item-4
+    elementType: text
+    bounds: [136, 404, 500, 28]
+    content:
+      fontSize: 22
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>投入产出模型</strong></p>
+
+  - elementId: toc-sub-4
+    elementType: text
+    bounds: [136, 434, 500, 22]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Unit Economics & Financial Model
+
+  - elementId: toc-line-4
+    elementType: shape
+    bounds: [72, 472, 1136, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E1E7E5"
+
+  # Item 5
+  - elementId: toc-num-5
+    elementType: text
+    bounds: [72, 492, 56, 36]
+    content:
+      fontSize: 24
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>05</strong></p>
+
+  - elementId: toc-item-5
+    elementType: text
+    bounds: [136, 492, 500, 28]
+    content:
+      fontSize: 22
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>组织治理与竞争格局</strong></p>
+
+  - elementId: toc-sub-5
+    elementType: text
+    bounds: [136, 522, 500, 22]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Governance & Competitive Landscape
+
+  - elementId: toc-page-num
+    elementType: text
+    bounds: [1150, 680, 56, 24]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "02"

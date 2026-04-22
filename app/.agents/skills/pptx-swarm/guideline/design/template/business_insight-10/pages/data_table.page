@@ -1,0 +1,362 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # ALL CAPS page title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 18, 900, 42]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:22px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>TOP PLAYERS WIDEN MARGIN GAP VERSUS LAGGARDS</strong></span></p>
+
+  # Chinese subtitle
+  - elementId: page-subtitle
+    elementType: text
+    bounds: [50, 62, 900, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">头部企业与尾部企业盈利能力差距持续拉大</span></p>
+
+  # 2px red line
+  - elementId: title-red-line
+    elementType: shape
+    bounds: [50, 88, 800, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Main data table
+  - elementId: main-table
+    elementType: table
+    bounds: [50, 100, 1180, 460]
+    columnWidths: [0.22, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.18]
+    rowHeights: [0.10, 0.1125, 0.1125, 0.1125, 0.1125, 0.1125, 0.1125, 0.1125, 0.1125]
+    style: "$default"
+    rows:
+      - - content:
+            text: |
+              <p><strong>企业 / Company</strong></p>
+        - content:
+            text: |
+              <p><strong>营收(亿元)</strong></p>
+        - content:
+            text: |
+              <p><strong>YoY增速</strong></p>
+        - content:
+            text: |
+              <p><strong>毛利率</strong></p>
+        - content:
+            text: |
+              <p><strong>净利率</strong></p>
+        - content:
+            text: |
+              <p><strong>市占率</strong></p>
+        - content:
+            text: |
+              <p><strong>R&amp;D占比</strong></p>
+        - content:
+            text: |
+              <p><strong>评级 / Rating</strong></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><strong>龙头A (Leader A)</strong></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#D91E18;"><strong>856</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#D91E18;">+23.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>42.1%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>28.6%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>22.3%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>18.2%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#D91E18;"><strong>★★★★★</strong></span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><strong>龙头B (Leader B)</strong></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>742</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#D91E18;">+18.7%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>38.6%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>24.2%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>19.1%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>15.8%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>★★★★</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>挑战者C (Challenger C)</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>435</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>+12.3%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>31.4%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>16.8%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>11.2%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>11.4%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>★★★</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>挑战者D (Challenger D)</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>318</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>+8.6%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>28.9%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>13.5%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>8.6%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>9.8%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>★★★</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>跟随者E (Follower E)</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>187</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>+4.2%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>22.3%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>8.7%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>4.8%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>7.2%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>★★</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>跟随者F (Follower F)</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>156</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>+2.1%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>19.8%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>6.4%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>4.0%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>6.1%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>★★</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="color:#888888;">尾部G (Laggard G)</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">98</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">-3.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">15.6%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">2.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">2.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">4.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">★</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="color:#888888;">尾部H (Laggard H)</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">72</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">-8.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">12.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">-1.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">1.9%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">3.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#888888;">—</span></p>
+
+  # Conclusion text below table
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [50, 572, 1180, 76]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>关键结论：</strong></span><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">前两大龙头企业毛利率较尾部企业高出约29pp，净利率差距超30pp。头部集中效应显著——CR2市占率合计41.4%，且增长动能仍强劲。建议重点关注龙头A与龙头B，两者均具备持续扩大竞争优势的能力；回避尾部企业，盈利能力下行风险加剧。</span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Source
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 662, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：各公司年报、Wind金融终端、Bain研究团队整理</p>
+
+  # Page number
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 662, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>06</p>

@@ -1,0 +1,128 @@
+pageType: content
+elements:
+# --- Decorative ---
+- elementId: deco_circle
+  elementType: shape
+  bounds: [1600, 800, 250, 250]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#10B98110"
+- elementId: deco_vline
+  elementType: shape
+  bounds: [970, 140, 2, 820]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#1A1A1A15"
+# --- Label ---
+- elementId: label_bg
+  elementType: shape
+  bounds: [60, 925, 340, 50]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "$light"
+- elementId: text_label
+  elementType: text
+  bounds: [92.85, 939.25, 266.11, 35.14]
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING
+# --- Content ---
+- elementId: text_subtitle
+  elementType: text
+  bounds: [102.16, 138.09, 672.37, 59.43]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 50
+    text: The Schedule
+- elementId: text_num_big
+  elementType: text
+  bounds: [506.76, 288.46, 267.78, 206.21]
+  content:
+    align: [right, top]
+    fontSize: 160
+    fontFamily: "Liter, deyihei"
+    color: "#10B981"
+    lineHeightPx: 199.99
+    text: '09'
+- elementId: text_num4
+  elementType: text
+  bounds: [1019.68, 170.07, 77.18, 45.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 36.67
+    text: '04'
+- elementId: text_item4
+  elementType: text
+  bounds: [1105.25, 157.83, 655.8, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 41.67
+    text: HR Meeting
+- elementId: text_desc4
+  elementType: text
+  bounds: [1105.25, 215.91, 655.8, 223.27]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 31.73
+    text: |
+      <p>Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience.</p>
+      <p> </p>
+      <p style="line-height:31.72px">It serves a variety of purposes, making presentations powerful tools for convincing and teaching. To create a stunning presentation, it's best to simplify your thoughts.</p>
+- elementId: text_num5
+  elementType: text
+  bounds: [1019.68, 597.43, 77.18, 45.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 36.67
+    text: '05'
+- elementId: text_item5
+  elementType: text
+  bounds: [1105.25, 588.07, 655.8, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 41.67
+    text: Sign Paperwork
+- elementId: text_desc5
+  elementType: text
+  bounds: [1105.25, 646.14, 655.8, 284.97]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 31.73
+    text: |
+      <p>Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p>It is mostly presented before an audience. It serves a</p>
+      <p>variety of purposes, making presentations powerful tools</p>
+      <p>for convincing and teaching.</p>
+      <p> </p>
+      <p>To create a stunning presentation, it's best to simplify</p>
+      <p>your thoughts.</p>

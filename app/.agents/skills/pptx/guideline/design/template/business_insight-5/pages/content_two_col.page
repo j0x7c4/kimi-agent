@@ -1,0 +1,198 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Action title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 12, 1100, 60]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>高端市场出现结构性分化——超奢侈品类逆势增长18%，中高端传统品牌承压跌幅达12%</strong></span></p>
+
+  - elementId: title-underline
+    elementType: shape
+    bounds: [60, 78, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Left section: Bubble chart (market position map)
+  - elementId: left-label
+    elementType: text
+    bounds: [60, 88, 590, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#1A1A1A; font-family:Liter, MiSans;"><strong>市场定位图谱：价格带 × 增速 × 市场规模（气泡大小=市场规模）</strong></span></p>
+
+  - elementId: left-chart
+    elementType: chart
+    bounds: [60, 112, 590, 500]
+    type: bubble
+    options:
+      fontFamily: "Liter, MiSans"
+    data:
+      - {priceIndex: 95, growth: 18, size: 45, label: "超奢侈品"}
+      - {priceIndex: 72, growth: 8, size: 68, label: "高端品牌"}
+      - {priceIndex: 55, growth: -4, size: 120, label: "中高端传统"}
+      - {priceIndex: 38, growth: -12, size: 95, label: "大众轻奢"}
+      - {priceIndex: 20, growth: 22, size: 85, label: "平价替代"}
+      - {priceIndex: 10, growth: 30, size: 60, label: "极致平替"}
+    x: priceIndex
+    y: [growth]
+    size: size
+    colors: ["#8C1515"]
+    legend: false
+    dataLabels:
+      show: true
+      content: category
+      fontSize: 10
+    xAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      title: "价格指数（100=最高端）"
+    yAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      title: "同比增速（%）"
+
+  # Bubble chart annotation
+  - elementId: chart-note
+    elementType: text
+    bounds: [60, 618, 590, 22]
+    content:
+      fontSize: 11
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>注：气泡大小代表市场规模；数据为2024年全年；平价替代口径含白牌及代工品牌</p>
+
+  # Vertical divider
+  - elementId: col-divider
+    elementType: shape
+    bounds: [672, 78, 0, 574]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Right section: analysis
+  - elementId: right-label
+    elementType: text
+    bounds: [692, 88, 548, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:1px"><strong>ANALYSIS · 深度分析</strong></span></p>
+
+  - elementId: right-section1
+    elementType: text
+    bounds: [692, 114, 548, 130]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>超奢侈品：稀缺性溢价逻辑重估</strong></span></p>
+        <p style="margin-top:4px"><span style="font-size:14px; font-family:Liter, MiSans;">爱马仕、劳力士等品类同比增速达<strong>18-25%</strong>，核心驱动来自供给侧的刻意稀缺策略与需求端的资产化趋势。富裕阶层将奢侈品视为<strong>抗通胀资产</strong>，购买逻辑已由消费转向投资。</span></p>
+
+  - elementId: right-sep1
+    elementType: shape
+    bounds: [692, 256, 548, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: right-section2
+    elementType: text
+    bounds: [692, 266, 548, 130]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>中高端传统品牌：夹层危机加剧</strong></span></p>
+        <p style="margin-top:4px"><span style="font-size:14px; font-family:Liter, MiSans;">以轻奢品牌为代表的<strong>中间价格带承压最大</strong>，面临双向挤压：上方超奢逻辑无法复制，下方性价比竞争激烈。2024年该价格带SKU存货周转天数上升至<strong>128天</strong>（同比+32天）。</span></p>
+
+  - elementId: right-sep2
+    elementType: shape
+    bounds: [692, 408, 548, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: right-section3
+    elementType: text
+    bounds: [692, 418, 548, 100]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>平价替代：结构性机会窗口</strong></span></p>
+        <p style="margin-top:4px"><span style="font-size:14px; font-family:Liter, MiSans;">极致平替赛道增速高达<strong>30%</strong>，以"同等品质、六折价格"为核心卖点，已逐步突破价格歧视边界，渗透至一二线城市中产消费者。</span></p>
+
+  - elementId: right-sep3
+    elementType: shape
+    bounds: [692, 528, 548, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: conclusion-label
+    elementType: text
+    bounds: [692, 538, 200, 18]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:1px"><strong>IMPLICATION · 启示</strong></span></p>
+
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [692, 558, 548, 90]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; font-family:Liter, MiSans;">消费市场正式进入"哑铃化"结构，两端增长，中间收缩。配置策略应遵循<strong>"两端超配、中间低配"</strong>原则，重点布局稀缺性资产属性品牌及极致性价比赛道龙头。</span></p>
+
+  # Footer
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 658, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 662, 960, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：<a href="https://www.bain.com/insights/luxury-goods-worldwide-market-study/">Bain Luxury Goods Market Study, 2025</a>；LVMH/Hermès年报；第三方渠道调研</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 666, 60, 18]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>05</p>

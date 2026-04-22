@@ -1,0 +1,238 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Left panel: large image with dark red overlay (straight-cut Bain cover style)
+  - elementId: cover-img-bg
+    elementType: image
+    bounds: [0, 0, 800, 720]
+    src: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80"
+    fit:
+      mode: cover
+
+  - elementId: cover-overlay
+    elementType: shape
+    bounds: [0, 0, 800, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#1A0A0A99"}
+        - {position: 0.6, color: "#8C151590"}
+        - {position: 1, color: "#8C1515CC"}
+
+  # Red vertical accent bar at cut line
+  - elementId: cut-line
+    elementType: shape
+    bounds: [796, 0, 4, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Right white panel
+  - elementId: right-panel
+    elementType: shape
+    bounds: [800, 0, 480, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$background"
+
+  # Top red bar
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 800, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Category label on image
+  - elementId: category-label
+    elementType: text
+    bounds: [50, 50, 660, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#ffffff; font-family:Liter, MiSans; letter-spacing:3px">XX CONSULTING · STRATEGY CONSULTING</span></p>
+
+  # Main title on image
+  - elementId: cover-title
+    elementType: text
+    bounds: [50, 110, 700, 200]
+    content:
+      align: [left, top]
+      lineHeight: 1.15
+      wrap: true
+      text: |
+        <p><span style="font-size:46px; color:#ffffff; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>战略洞察报告</strong></span></p>
+        <p><span style="font-size:26px; color:#FFB3B3; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>Strategic Insights Report</strong></span></p>
+
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [50, 330, 660, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:15px; color:#FFFFFFcc; font-family:Liter, MiSans;">行业深度研究 · 市场机遇 · 增长战略</span></p>
+
+  - elementId: cover-divider
+    elementType: shape
+    bounds: [50, 374, 180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$accent"}
+
+  - elementId: cover-date
+    elementType: text
+    bounds: [50, 390, 400, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#FFFFFFaa; font-family:Liter, MiSans;">2026年3月 · Confidential</span></p>
+
+  - elementId: cover-org
+    elementType: text
+    bounds: [50, 416, 400, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#FFFFFF88; font-family:Liter, MiSans;">战略咨询部门 · Strategy &amp; Consulting</span></p>
+
+  # Right panel content - Key findings
+  - elementId: kf-label
+    elementType: text
+    bounds: [828, 60, 430, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:2px"><strong>KEY FINDINGS · 核心发现</strong></span></p>
+
+  - elementId: kf-line
+    elementType: shape
+    bounds: [828, 88, 220, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  - elementId: stat1-num
+    elementType: text
+    bounds: [828, 104, 420, 64]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:52px; color:#8C1515; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>$X.X万亿</strong></span></p>
+
+  - elementId: stat1-label
+    elementType: text
+    bounds: [828, 170, 420, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#8A8A8A; font-family:Liter, MiSans;">关键指标一（市场规模/GMV）</span></p>
+
+  - elementId: sep1
+    elementType: shape
+    bounds: [828, 200, 400, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: stat2-num
+    elementType: text
+    bounds: [828, 214, 420, 64]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:52px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>+XX%</strong></span></p>
+
+  - elementId: stat2-label
+    elementType: text
+    bounds: [828, 280, 420, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#8A8A8A; font-family:Liter, MiSans;">关键指标二（同比增速/市占率）</span></p>
+
+  - elementId: sep2
+    elementType: shape
+    bounds: [828, 310, 400, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: stat3-num
+    elementType: text
+    bounds: [828, 324, 420, 64]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:52px; color:#8C1515; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>XX个</strong></span></p>
+
+  - elementId: stat3-label
+    elementType: text
+    bounds: [828, 390, 420, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#8A8A8A; font-family:Liter, MiSans;">关键指标三（细分/机会数量）</span></p>
+
+  - elementId: sep3
+    elementType: shape
+    bounds: [828, 420, 400, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Executive summary
+  - elementId: exec-title
+    elementType: text
+    bounds: [828, 436, 420, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:1px"><strong>EXECUTIVE SUMMARY · 执行摘要</strong></span></p>
+
+  - elementId: exec-text
+    elementType: text
+    bounds: [828, 462, 420, 180]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; <strong>核心洞察一</strong>：此处填写第一条核心洞察，应包含具体数据支撑</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; <strong>核心洞察二</strong>：此处填写第二条核心洞察，体现结构性变化趋势</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; <strong>战略建议</strong>：基于以上分析的核心战略行动建议</span></p>
+
+  # Disclaimer
+  - elementId: disclaimer
+    elementType: text
+    bounds: [828, 660, 420, 36]
+    content:
+      fontSize: 10
+      color: "#AAAAAA"
+      wrap: true
+      text: |
+        <p><span style="font-size:10px; font-family:Liter, MiSans;">本报告仅供内部参考，不构成投资建议。数据来源于公开市场资料及自有研究模型。</span></p>
+
+  # Bottom red bar
+  - elementId: bottom-bar
+    elementType: shape
+    bounds: [800, 716, 480, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"

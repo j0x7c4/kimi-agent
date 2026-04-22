@@ -1,0 +1,250 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深青绿色带
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题区域背景
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 5, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 15, 1100, 40]
+    content:
+      fontSize: 20
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Competitive landscape analysis reveals clear differentiation opportunities in pricing and distribution</strong></p>
+  # ===== 左侧：饼图 =====
+  - elementId: pie-title
+    elementType: text
+    bounds: [50, 85, 400, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Market Share by Segment (2023)</strong></span></p>
+
+  - elementId: pie-chart
+    elementType: chart
+    bounds: [50, 118, 380, 310]
+    type: pie
+    options:
+      innerRadius: 0.45
+      fontFamily: "Liter, MiSans"
+    data:
+      - {segment: "Enterprise", value: 38}
+      - {segment: "Mid-market", value: 27}
+      - {segment: "SMB", value: 20}
+      - {segment: "Consumer", value: 15}
+    x: segment
+    y: [value]
+    colors: ["$primary", "#66B2A8", "#B8DDD8", "$dark"]
+    legend: {position: bottom, fontSize: 12}
+    dataLabels:
+      show: true
+      content: percentage
+      fontSize: 13
+      numberFormat: "0%"
+
+  # ===== 左下角总结 =====
+  - elementId: pie-insight
+    elementType: text
+    bounds: [50, 440, 380, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px;"><strong>Key Insight:</strong> Enterprise segment dominates with 38% share, but SMB segment shows fastest growth at 32% CAGR</span></p>
+
+  # ===== 右侧：竞品对比表 =====
+  - elementId: table-title
+    elementType: text
+    bounds: [470, 85, 400, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Competitive Benchmarking</strong></span></p>
+
+  - elementId: comp-table
+    elementType: table
+    bounds: [470, 118, 770, 400]
+    columnWidths: [0.18, 0.18, 0.18, 0.18, 0.28]
+    rowHeights: [0.10, 0.18, 0.18, 0.18, 0.18, 0.18]
+    style: "$default"
+    rows:
+      - - content:
+            text: |
+              <p><strong>Metric</strong></p>
+        - content:
+            text: |
+              <p><strong>Our Company</strong></p>
+        - content:
+            text: |
+              <p><strong>Competitor A</strong></p>
+        - content:
+            text: |
+              <p><strong>Competitor B</strong></p>
+        - content:
+            text: |
+              <p><strong>Assessment</strong></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>Revenue ($B)</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#0D8B7D;"><strong>12.8</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">9.2</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">7.5</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;">Market leader by revenue</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>Gross Margin</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#0D8B7D;"><strong>34.2%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">31.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">36.1%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px;">Comp B leads on margin</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>Market Share</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#0D8B7D;"><strong>28%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">21%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">18%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;">7pp lead over nearest rival</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>R&D Spend (%)</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">12.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#0D8B7D;"><strong>15.2%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">10.8%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px;">Comp A invests most in R&D</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>NPS Score</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#0D8B7D;"><strong>87</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">72</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">78</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;">Best-in-class satisfaction</span></p>
+
+  # 底部来源
+  - elementId: source-line
+    elementType: shape
+    bounds: [50, 540, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 右下角关键要点
+  - elementId: takeaway-title
+    elementType: text
+    bounds: [470, 555, 400, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#0D8B7D;"><strong>Key Takeaways</strong></span></p>
+
+  - elementId: takeaway-text
+    elementType: text
+    bounds: [470, 585, 770, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px;">&#9632; Revenue leadership with 39% premium over nearest competitor</span></p>
+        <p><span style="font-size:14px;">&#9632; NPS advantage suggests strong moat and brand loyalty</span></p>
+        <p><span style="font-size:14px;">&#9632; Opportunity to increase R&D investment to sustain technology differentiation</span></p>
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 548, 400, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>Source: Company reports, industry surveys (2023)</p>

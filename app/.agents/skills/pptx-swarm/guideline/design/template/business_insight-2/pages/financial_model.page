@@ -1,0 +1,495 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 28, 1160, 40]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:26px; color:#263238; font-family:SortsMillGoudy, MiSans;"><strong>比亚迪2025-2027年营收CAGR预计达22%，净利润率稳步提升</strong></span></p>
+
+  # 标题下方细线
+  - elementId: title-line
+    elementType: shape
+    bounds: [60, 72, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 财务模型表
+  - elementId: financial-table
+    elementType: table
+    bounds: [60, 86, 1160, 480]
+    columnWidths: [0.24, 0.095, 0.095, 0.095, 0.095, 0.095, 0.095, 0.095, 0.095]
+    rowHeights: [0.065, 0.078, 0.078, 0.078, 0.078, 0.078, 0.078, 0.078, 0.078, 0.078, 0.078, 0.078, 0.078]
+    style: "$default"
+    rows:
+      - - content:
+            text: |
+              <p><strong>财务指标（亿元）</strong></p>
+        - content:
+            text: |
+              <p><strong>2021A</strong></p>
+        - content:
+            text: |
+              <p><strong>2022A</strong></p>
+        - content:
+            text: |
+              <p><strong>2023A</strong></p>
+        - content:
+            text: |
+              <p><strong>2024A</strong></p>
+        - content:
+            text: |
+              <p><strong>2025E</strong></p>
+        - content:
+            text: |
+              <p><strong>2026E</strong></p>
+        - content:
+            text: |
+              <p><strong>2027E</strong></p>
+        - content:
+            text: |
+              <p><strong>CAGR</strong></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>营业收入</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">2,161</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">4,241</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">6,023</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">7,680</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>9,850</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>11,820</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>14,180</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">22.6%</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">YoY增速</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">38.0%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">96.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">42.0%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">27.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">28.3%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">20.0%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">20.0%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">-</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>毛利润</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">264</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">739</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">1,214</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">1,613</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>2,118</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>2,600</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>3,190</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">25.5%</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">毛利率</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">12.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">17.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">20.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">21.0%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">21.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">22.0%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">22.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">-</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>研发费用</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">106</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">186</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">399</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">502</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">670</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">780</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">910</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">-</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">研发费用率</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">4.9%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">4.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">6.6%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">6.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">6.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">6.6%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">6.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">-</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>归母净利润</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">30</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">166</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">300</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">360</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>420</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>520</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>650</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">29.8%</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">净利率</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">1.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">3.9%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">5.0%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">4.7%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">4.3%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">4.4%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">4.6%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">-</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>销量（万辆）</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">74</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">186</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">302</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">380</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>450</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>530</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>620</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">24.2%</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>单车均价（万元）</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">15.8</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">17.2</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">15.4</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">14.8</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">15.2</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">15.5</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">15.8</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">-</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>EPS（元）</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">1.03</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">5.71</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">10.32</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">12.38</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>14.45</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>17.89</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px; color:#37474F;"><strong>22.36</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:12px;">29.5%</span></p>
+
+  # 来源线
+  - elementId: source-line
+    elementType: shape
+    bounds: [60, 672, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 来源
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 678, 800, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">Source: 公司公告, Wind, XX证券研究所（2025E-2027E为预测值）</span></p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 678, 120, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">7</span></p>
+
+  # 底部关键假设说明
+  - elementId: assumption-text
+    elementType: text
+    bounds: [60, 580, 1160, 80]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.5
+      text: |
+        <p><span style="font-size:13px; color:#78909C; font-family:Liter, MiSans;"><strong>核心假设：</strong>1）销量假设：2025-2027年新能源汽车销量分别为450/530/620万辆，对应市占率25.8%/27.2%/28.5%；2）ASP假设：随高端车型占比提升，单车均价企稳回升；3）毛利率假设：规模效应+垂直整合持续降本，毛利率稳步提升至22.5%；4）费用率假设：研发投入保持高强度，但收入增长摊薄费用率。</span></p>

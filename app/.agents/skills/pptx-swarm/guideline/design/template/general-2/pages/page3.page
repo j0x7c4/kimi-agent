@@ -1,0 +1,54 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: shape0
+    elementType: shape
+    bounds:
+      - 1248
+      - 0
+      - 672
+      - 1080
+    shapeName: custom
+    path: 6400800,10287000;M0 0L6400800 0L6400800 10287000L0 10287000L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200
+      fit:
+        mode: contain
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 98.4
+      - 507.45
+      - 836.53
+      - 128.35
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>5G Defined</strong></p>
+  - elementId: text2
+    elementType: text
+    bounds:
+      - 98.4
+      - 696.65
+      - 836.53
+      - 280.15
+    content:
+      fontSize: 37.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 56
+      align:
+        - left
+        - top
+      text: |
+        5G is short for the 5th generation mobile network. The latest global wireless standard following 1G to 4G networks, 5G technology enhances communication through seamless virtual connections: people, machines, objects, devices.

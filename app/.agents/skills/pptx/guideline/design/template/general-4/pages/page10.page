@@ -1,0 +1,101 @@
+pageType: content
+background:
+  type: solid
+  color: "#10B981"
+elements:
+# --- Decorative ---
+- elementId: deco_circle
+  elementType: shape
+  bounds: [1600, 50, 280, 280]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF0A"
+- elementId: deco_hline
+  elementType: shape
+  bounds: [159, 670, 872, 2]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#FFFFFF25"
+# --- Sidebar ---
+- elementId: sidebar_bg
+  elementType: shape
+  bounds: [1640, 825, 50, 268]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B981"
+- elementId: text_sidebar
+  elementType: text
+  bounds: [1641.25, 825.47, 267.94, 35.14]
+  rotation: -90
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING
+# --- Content ---
+- elementId: text_num
+  elementType: text
+  bounds: [1111.29, 184.17, 215.7, 206.21]
+  content:
+    align: [right, top]
+    fontSize: 160
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 199.99
+    text: '10'
+- elementId: text_title
+  elementType: text
+  bounds: [159.53, 187.92, 871.2, 256.02]
+  content:
+    align: [left, top]
+    fontSize: 100
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 125
+    text: First Week Schedule
+- elementId: text_subtitle
+  elementType: text
+  bounds: [159.53, 475.49, 871.2, 58.93]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 50
+    text: Overview
+- elementId: text_days
+  elementType: text
+  bounds: [159.53, 698.48, 332.03, 217.08]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 41.65
+    text: |
+      <p>Monday</p>
+      <p>Tuesday</p>
+      <p>Wednesday</p>
+      <p>Thursday</p>
+      <p style="line-height:41.67px">Friday</p>
+- elementId: text_activities
+  elementType: text
+  bounds: [562.17, 698.48, 468.56, 217.08]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 41.65
+    text: |
+      <p>Training Day 1</p>
+      <p>Training Day 2</p>
+      <p>First Project Brief</p>
+      <p>HR Discussion</p>
+      <p>Team Meeting</p>

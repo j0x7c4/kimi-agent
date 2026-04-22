@@ -1,0 +1,438 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 52px 午夜蓝页眉条
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 52]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [64, 10, 1050, 32]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>三年里程碑路线图：2025–2028 关键节点与投资回报</strong></p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1190, 10, 60, 32]
+    content:
+      fontSize: 13
+      color: "#FFFFFF88"
+      fontFamily: "Inter, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "08"
+
+  # ===== 时间轴主线（3px午夜蓝） =====
+  - elementId: timeline-main
+    elementType: shape
+    bounds: [100, 230, 1080, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 3
+      color: "$primary"
+    arrow: [null, "arrow"]
+
+  # ===== 年份标记：方形16x16 =====
+  # 2025
+  - elementId: year1-marker
+    elementType: shape
+    bounds: [190, 222, 16, 16]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: year1-label
+    elementType: text
+    bounds: [160, 196, 76, 22]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>2025</strong></p>
+
+  # 2026
+  - elementId: year2-marker
+    elementType: shape
+    bounds: [460, 222, 16, 16]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: year2-label
+    elementType: text
+    bounds: [430, 196, 76, 22]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>2026</strong></p>
+
+  # 2027
+  - elementId: year3-marker
+    elementType: shape
+    bounds: [730, 222, 16, 16]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: year3-label
+    elementType: text
+    bounds: [700, 196, 76, 22]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>2027</strong></p>
+
+  # 2028
+  - elementId: year4-marker
+    elementType: shape
+    bounds: [1000, 222, 16, 16]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: year4-label
+    elementType: text
+    bounds: [970, 196, 76, 22]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>2028</strong></p>
+
+  # ===== 关键里程碑：铜色菱形标记（在时间轴上方） =====
+  - elementId: milestone1
+    elementType: text
+    bounds: [230, 100, 200, 20]
+    content:
+      fontSize: 13
+      color: "$accent"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>&#9670; 全球化战略启动</strong></p>
+
+  - elementId: milestone2
+    elementType: text
+    bounds: [500, 128, 200, 20]
+    content:
+      fontSize: 13
+      color: "$accent"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>&#9670; 北美市场突破</strong></p>
+
+  - elementId: milestone3
+    elementType: text
+    bounds: [770, 100, 200, 20]
+    content:
+      fontSize: 13
+      color: "$accent"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>&#9670; 海外营收破35%</strong></p>
+
+  - elementId: milestone4
+    elementType: text
+    bounds: [1020, 128, 200, 20]
+    content:
+      fontSize: 13
+      color: "$accent"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>&#9670; ¥50B营收达成</strong></p>
+
+  # ===== 年度卡片（时间轴下方） =====
+  # 2025 卡片
+  - elementId: card1-bg
+    elementType: shape
+    bounds: [100, 258, 240, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: card1-title
+    elementType: text
+    bounds: [112, 266, 216, 26]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>基础构建</strong></p>
+
+  - elementId: card1-items
+    elementType: text
+    bounds: [112, 296, 216, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p>&#9632; 组织架构重塑完成</p>
+        <p>&#9632; 全球化事业部组建</p>
+        <p>&#9632; 数字化转型办公室成立</p>
+
+  - elementId: card1-target
+    elementType: text
+    bounds: [112, 416, 216, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>¥32B 营收</strong></p>
+
+  # 2026 卡片
+  - elementId: card2-bg
+    elementType: shape
+    bounds: [370, 258, 240, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: card2-title
+    elementType: text
+    bounds: [382, 266, 216, 26]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>规模扩张</strong></p>
+
+  - elementId: card2-items
+    elementType: text
+    bounds: [382, 296, 216, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p>&#9632; 北美办公室运营</p>
+        <p>&#9632; 3宗战略并购完成</p>
+        <p>&#9632; AI平台全面上线</p>
+
+  - elementId: card2-target
+    elementType: text
+    bounds: [382, 416, 216, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>¥38B 营收</strong></p>
+
+  # 2027 卡片
+  - elementId: card3-bg
+    elementType: shape
+    bounds: [640, 258, 240, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: card3-title
+    elementType: text
+    bounds: [652, 266, 216, 26]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>全球化深耕</strong></p>
+
+  - elementId: card3-items
+    elementType: text
+    bounds: [652, 296, 216, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p>&#9632; 欧洲市场全面铺开</p>
+        <p>&#9632; 供应链本地化完成</p>
+        <p>&#9632; 海外营收占比30%</p>
+
+  - elementId: card3-target
+    elementType: text
+    bounds: [652, 416, 216, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>¥44B 营收</strong></p>
+
+  # 2028 卡片
+  - elementId: card4-bg
+    elementType: shape
+    bounds: [910, 258, 240, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: card4-title
+    elementType: text
+    bounds: [922, 266, 216, 26]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>战略达成</strong></p>
+
+  - elementId: card4-items
+    elementType: text
+    bounds: [922, 296, 216, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p>&#9632; 全球市场份额15%</p>
+        <p>&#9632; 净利率18%达标</p>
+        <p>&#9632; 行业领导者地位确立</p>
+
+  - elementId: card4-target
+    elementType: text
+    bounds: [922, 416, 216, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>¥50B 营收</strong></p>
+
+  # ===== 底部：总投资 vs 总回报 =====
+  - elementId: bottom-divider
+    elementType: shape
+    bounds: [64, 510, 1152, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$warmGray"
+
+  - elementId: invest-label
+    elementType: text
+    bounds: [64, 530, 300, 20]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 三年累计战略投入
+
+  - elementId: invest-num
+    elementType: text
+    bounds: [64, 554, 400, 56]
+    content:
+      fontSize: 48
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>¥18.5B</strong></p>
+
+  - elementId: return-label
+    elementType: text
+    bounds: [700, 530, 300, 20]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 三年累计预期回报
+
+  - elementId: return-num
+    elementType: text
+    bounds: [700, 554, 400, 56]
+    content:
+      fontSize: 48
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>¥50B+ 营收 / 3.2x ROI</strong></p>
+
+  # 数据来源
+  - elementId: source-text
+    elementType: text
+    bounds: [64, 680, 600, 20]
+    content:
+      fontSize: 12
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: |
+        <p>Source: 战略规划委员会, 董事会审批路线图 v3.0</p>

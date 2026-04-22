@@ -1,0 +1,329 @@
+pageType: content
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: title-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 60
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: title-icon
+    elementType: icon
+    bounds:
+      - 24
+      - 14
+      - 32
+      - 32
+    iconName: fas:chart-line
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 70
+      - 0
+      - 1000
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:28px; color:#FFFFFF; font-family:MiSans;"><strong>关键数据：研究成果一览</strong></span></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1200
+      - 0
+      - 60
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#D9E8F5; font-family:MiSans;">07</span></p>
+  - elementId: card1-bg
+    elementType: shape
+    bounds:
+      - 60
+      - 90
+      - 360
+      - 560
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#D9E8F5"
+  - elementId: card1-icon
+    elementType: icon
+    bounds:
+      - 196
+      - 130
+      - 50
+      - 50
+    iconName: fas:users
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card1-num
+    elementType: text
+    bounds:
+      - 60
+      - 200
+      - 360
+      - 80
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:56px; color:#E07B54; font-family:MiSans;"><strong>318</strong></span><span style="font-size:24px; color:#8D8D8D; font-family:MiSans;"> 份</span></p>
+  - elementId: card1-label
+    elementType: text
+    bounds:
+      - 60
+      - 296
+      - 360
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;"><strong>有效问卷数量</strong></span></p>
+  - elementId: card1-desc
+    elementType: text
+    bounds:
+      - 80
+      - 348
+      - 320
+      - 120
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#8D8D8D; font-family:MiSans;">覆盖5个城市，回收率达 87.3%，样本具有良好代表性</span></p>
+  - elementId: card1-detail
+    elementType: text
+    bounds:
+      - 80
+      - 478
+      - 320
+      - 80
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#2C5F8A; font-family:MiSans;">年龄分布均衡，男女比例 1:1.2</span></p>
+  - elementId: card2-bg
+    elementType: shape
+    bounds:
+      - 460
+      - 90
+      - 360
+      - 560
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#D9E8F5"
+  - elementId: card2-icon
+    elementType: icon
+    bounds:
+      - 596
+      - 130
+      - 50
+      - 50
+    iconName: fas:arrow-trend-up
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card2-num
+    elementType: text
+    bounds:
+      - 460
+      - 200
+      - 360
+      - 80
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:56px; color:#E07B54; font-family:MiSans;"><strong>67%</strong></span></p>
+  - elementId: card2-label
+    elementType: text
+    bounds:
+      - 460
+      - 296
+      - 360
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;"><strong>相关系数（r值）</strong></span></p>
+  - elementId: card2-desc
+    elementType: text
+    bounds:
+      - 480
+      - 348
+      - 320
+      - 120
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#8D8D8D; font-family:MiSans;">XX与YY之间呈显著正相关，置信度 p&lt;0.001</span></p>
+  - elementId: card2-detail
+    elementType: text
+    bounds:
+      - 480
+      - 478
+      - 320
+      - 80
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#2C5F8A; font-family:MiSans;">效应量 Cohen's d=0.82，属大效应</span></p>
+  - elementId: card3-bg
+    elementType: shape
+    bounds:
+      - 860
+      - 90
+      - 360
+      - 560
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#D9E8F5"
+  - elementId: card3-icon
+    elementType: icon
+    bounds:
+      - 996
+      - 130
+      - 50
+      - 50
+    iconName: fas:star
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: card3-num
+    elementType: text
+    bounds:
+      - 860
+      - 200
+      - 360
+      - 80
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:56px; color:#E07B54; font-family:MiSans;"><strong>4.2</strong></span><span style="font-size:24px; color:#8D8D8D; font-family:MiSans;"> 分</span></p>
+  - elementId: card3-label
+    elementType: text
+    bounds:
+      - 860
+      - 296
+      - 360
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;"><strong>满意度均值（满分5）</strong></span></p>
+  - elementId: card3-desc
+    elementType: text
+    bounds:
+      - 880
+      - 348
+      - 320
+      - 120
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#8D8D8D; font-family:MiSans;">受访者对干预措施的满意程度整体偏高，效果积极</span></p>
+  - elementId: card3-detail
+    elementType: text
+    bounds:
+      - 880
+      - 478
+      - 320
+      - 80
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#2C5F8A; font-family:MiSans;">标准差 SD=0.68，数据集中度高</span></p>
+  - elementId: data-source
+    elementType: text
+    bounds:
+      - 60
+      - 690
+      - 1160
+      - 22
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:14px; color:#8D8D8D; font-family:MiSans; font-style:italic;">数据来源：本研究团队自主收集，调查时间2025年9月—12月；统计分析采用SPSS 26.0</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"

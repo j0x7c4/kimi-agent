@@ -1,0 +1,241 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧侧边栏
+  - elementId: sidebar-bg
+    elementType: shape
+    bounds: [0, 0, 180, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$sidebarBg"
+
+  - elementId: sidebar-logo
+    elementType: shape
+    bounds: [14, 14, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: sidebar-active-bg
+    elementType: shape
+    bounds: [0, 264, 180, 92]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-item-1
+    elementType: text
+    bounds: [8, 80, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        01 研究背景
+
+  - elementId: sidebar-item-2
+    elementType: text
+    bounds: [8, 172, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        02 文献综述
+
+  - elementId: sidebar-item-3
+    elementType: text
+    bounds: [8, 264, 164, 92]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>03 研究方法</strong></p>
+
+  - elementId: sidebar-item-4
+    elementType: text
+    bounds: [8, 356, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        04 实验结果
+
+  - elementId: sidebar-item-5
+    elementType: text
+    bounds: [8, 448, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        05 结论展望
+
+  - elementId: sidebar-deco
+    elementType: shape
+    bounds: [84, 590, 12, 12]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+  # 顶部次级标题栏
+  - elementId: breadcrumb-bg
+    elementType: shape
+    bounds: [180, 0, 1100, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: breadcrumb-text
+    elementType: text
+    bounds: [200, 0, 1010, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>03 研究方法</strong>　›　3.1 方法设计与架构</p>
+
+  - elementId: breadcrumb-page-num
+    elementType: text
+    bounds: [1230, 0, 50, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "05"
+
+  # 主内容区
+  - elementId: content-title
+    elementType: text
+    bounds: [200, 68, 1040, 36]
+    content:
+      style: "$pageTitle"
+      fontSize: 24
+      wrap: false
+      text: |
+        <p><strong>提出方法与基线方法对比</strong></p>
+
+  - elementId: content-title-sep
+    elementType: shape
+    bounds: [200, 110, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B0BEC5"
+
+  # 左栏
+  - elementId: left-header-bg
+    elementType: shape
+    bounds: [200, 124, 500, 38]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$grayBlue"
+
+  - elementId: left-header-text
+    elementType: text
+    bounds: [200, 124, 500, 38]
+    content:
+      fontSize: 15
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>现有方法局限</strong></p>
+
+  - elementId: left-content-bg
+    elementType: shape
+    bounds: [200, 162, 500, 440]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: left-content
+    elementType: text
+    bounds: [218, 178, 464, 400]
+    content:
+      fontSize: 17
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>◆ 依赖大量有标注样本</p>
+        <p>◆ 跨域泛化能力不足</p>
+        <p>◆ 实时推理速度慢</p>
+        <p>◆ 对噪声数据鲁棒性差</p>
+        <p>◆ 模型可解释性有限</p>
+
+  # 右栏
+  - elementId: right-header-bg
+    elementType: shape
+    bounds: [720, 124, 500, 38]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: right-header-text
+    elementType: text
+    bounds: [720, 124, 500, 38]
+    content:
+      fontSize: 15
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>本文方法优势</strong></p>
+
+  - elementId: right-content-bg
+    elementType: shape
+    bounds: [720, 162, 500, 440]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E8F4F8"
+
+  - elementId: right-content
+    elementType: text
+    bounds: [738, 178, 464, 400]
+    content:
+      fontSize: 17
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>◆ 支持弱监督/自监督训练</p>
+        <p>◆ 跨域自适应学习机制</p>
+        <p>◆ 轻量化设计，实时推理</p>
+        <p>◆ 鲁棒特征表示模块</p>
+        <p>◆ 梯度可视化解释工具</p>

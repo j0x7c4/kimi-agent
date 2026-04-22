@@ -1,0 +1,310 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部导航栏
+  - elementId: nav_bg
+    elementType: shape
+    bounds: [0, 0, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: nav1
+    elementType: text
+    bounds: [0, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>年度目标完成情况</p>
+
+  - elementId: nav2
+    elementType: text
+    bounds: [256, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>核心业务增长归因</p>
+
+  - elementId: nav3
+    elementType: text
+    bounds: [512, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$accent"
+      align: [center, middle]
+      text: |
+        <p><strong>重点项目进展</strong></p>
+
+  - elementId: nav4
+    elementType: text
+    bounds: [768, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>竞争态势分析</p>
+
+  - elementId: nav5
+    elementType: text
+    bounds: [1024, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>2025年计划</p>
+  
+  # 页面标题
+  - elementId: page_title
+    elementType: text
+    bounds: [80, 80, 1120, 50]
+    content:
+      style: "$page_title"
+      text: |
+        <p><strong>5个战略项目全部按期交付，数字化转型项目超预期完成</strong></p>
+  
+  # 时间轴主线
+  - elementId: timeline_main
+    elementType: shape
+    bounds: [140, 300, 1000, 2]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+  
+  # Q1节点
+  - elementId: q1_node
+    elementType: shape
+    bounds: [135, 295, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 2
+      color: "$white"
+  
+  - elementId: q1_label
+    elementType: text
+    bounds: [120, 250, 50, 30]
+    content:
+      fontSize: 16
+      color: "$text"
+      align: [center, middle]
+      text: Q1
+  
+  - elementId: q1_card
+    elementType: shape
+    bounds: [80, 160, 200, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+  
+  - elementId: q1_content
+    elementType: text
+    bounds: [90, 170, 180, 60]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p><strong>数字化平台立项</strong></p>
+        <p style="font-size:14px; color:$light_text;">完成技术选型</p>
+  
+  # Q2节点
+  - elementId: q2_node
+    elementType: shape
+    bounds: [435, 295, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 2
+      color: "$white"
+  
+  - elementId: q2_label
+    elementType: text
+    bounds: [420, 320, 50, 30]
+    content:
+      fontSize: 16
+      color: "$text"
+      align: [center, middle]
+      text: Q2
+  
+  - elementId: q2_card
+    elementType: shape
+    bounds: [340, 360, 240, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+  
+  - elementId: q2_content
+    elementType: text
+    bounds: [350, 370, 220, 80]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p><strong>供应链优化启动</strong></p>
+        <p style="font-size:14px; color:$light_text;">• 3个试点仓库上线</p>
+        <p style="font-size:14px; color:$light_text;">• 库存周转提升20%</p>
+  
+  # Q3节点
+  - elementId: q3_node
+    elementType: shape
+    bounds: [735, 295, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 2
+      color: "$white"
+  
+  - elementId: q3_label
+    elementType: text
+    bounds: [720, 250, 50, 30]
+    content:
+      fontSize: 16
+      color: "$text"
+      align: [center, middle]
+      text: Q3
+  
+  - elementId: q3_card
+    elementType: shape
+    bounds: [640, 160, 240, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+  
+  - elementId: q3_content
+    elementType: text
+    bounds: [650, 170, 220, 60]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p><strong>新产品线发布</strong></p>
+        <p style="font-size:14px; color:$success;">首月GMV破千万</p>
+  
+  # Q4节点
+  - elementId: q4_node
+    elementType: shape
+    bounds: [1035, 295, 12, 12]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$success"
+    border:
+      style: solid
+      width: 2
+      color: "$white"
+  
+  - elementId: q4_label
+    elementType: text
+    bounds: [1020, 320, 50, 30]
+    content:
+      fontSize: 16
+      color: "$text"
+      align: [center, middle]
+      text: Q4
+  
+  - elementId: q4_card
+    elementType: shape
+    bounds: [920, 360, 280, 140]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 2
+      color: "$success"
+
+  - elementId: q4_content
+    elementType: text
+    bounds: [930, 370, 260, 120]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p><strong>数字化转型完成</strong></p>
+        <p style="font-size:14px; color:$success;">• 全流程线上化100%</p>
+        <p style="font-size:14px; color:$success;">• 效率提升35%</p>
+        <p style="font-size:14px; color:$success;">• ROI达到320%</p>
+  
+  # 底部统计
+  - elementId: stats_bg
+    elementType: shape
+    bounds: [80, 530, 1120, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: stat1
+    elementType: text
+    bounds: [120, 535, 240, 90]
+    content:
+      align: [center, middle]
+      text: |
+        <p><span style="font-size:32px; color:$accent;">5</span></p>
+        <p style="font-size:16px;">战略项目完成</p>
+
+  - elementId: stat2
+    elementType: text
+    bounds: [400, 535, 240, 90]
+    content:
+      align: [center, middle]
+      text: |
+        <p><span style="font-size:32px; color:$accent;">100%</span></p>
+        <p style="font-size:16px;">按期交付率</p>
+
+  - elementId: stat3
+    elementType: text
+    bounds: [680, 535, 240, 90]
+    content:
+      align: [center, middle]
+      text: |
+        <p><span style="font-size:32px; color:$accent;">2.8亿</span></p>
+        <p style="font-size:16px;">项目创造价值</p>
+
+  - elementId: stat4
+    elementType: text
+    bounds: [960, 535, 240, 90]
+    content:
+      align: [center, middle]
+      text: |
+        <p><span style="font-size:32px; color:$success;">35%</span></p>
+        <p style="font-size:16px;">效率提升</p>

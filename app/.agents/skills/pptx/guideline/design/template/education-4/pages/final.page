@@ -1,0 +1,151 @@
+pageType: final
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: top-accent
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 6
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: thank-you-zh
+    elementType: text
+    bounds:
+      - 240
+      - 150
+      - 800
+      - 70
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:40px; color:#2C5F8A; font-family:MiSans;"><strong>谢谢聆听</strong></span></p>
+  - elementId: thank-you-en
+    elementType: text
+    bounds:
+      - 240
+      - 230
+      - 800
+      - 46
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:28px; color:#8D8D8D; font-family:MiSans;">Thank You for Your Attention</span></p>
+  - elementId: center-bg
+    elementType: shape
+    bounds:
+      - 0
+      - 286
+      - 1280
+      - 240
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#F5F9FD"
+  - elementId: center-divider
+    elementType: shape
+    bounds:
+      - 440
+      - 270
+      - 400
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#E07B54"
+  - elementId: presenter-text
+    elementType: text
+    bounds:
+      - 240
+      - 328
+      - 800
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#8D8D8D; font-family:MiSans;">汇报小组：张三、李四、王五  |  课程：XX课程  |  2026年3月</span></p>
+  - elementId: qa-box
+    elementType: shape
+    bounds:
+      - 437
+      - 419
+      - 400
+      - 80
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 2
+      color: "#2C5F8A"
+  - elementId: qa-icon
+    elementType: icon
+    bounds:
+      - 465
+      - 442
+      - 32
+      - 32
+    iconName: fas:comments
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: qa-text
+    elementType: text
+    bounds:
+      - 519
+      - 431
+      - 314
+      - 56
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>欢迎提问  Q&amp;A</strong></span></p>
+  - elementId: contact-info
+    elementType: text
+    bounds:
+      - 799
+      - 648
+      - 441
+      - 40
+    content:
+      align:
+        - right
+        - middle
+      text: |
+        <p><span style="font-size:14px; color:#8D8D8D; font-family:MiSans;">联系：zhangsan@university.edu.cn  |  学号：2024001</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"

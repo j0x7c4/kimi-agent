@@ -1,0 +1,241 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部细线
+  - elementId: top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  - elementId: section-marker
+    elementType: text
+    bounds: [80, 20, 200, 20]
+    content:
+      fontSize: 12
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: "CHAPTER 05 — 结论与未来工作"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 35]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>5.1 研究总结与主要贡献</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 90, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  # 三栏贡献卡片
+  - elementId: card-1-bg
+    elementType: shape
+    bounds: [80, 115, 350, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: card-1-top
+    elementType: shape
+    bounds: [80, 115, 350, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card-1-num
+    elementType: text
+    bounds: [100, 135, 60, 30]
+    content:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>01</strong></p>
+
+  - elementId: card-1-title
+    elementType: text
+    bounds: [100, 170, 310, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>MolGNN模型框架</strong></p>
+
+  - elementId: card-1-content
+    elementType: text
+    bounds: [100, 203, 310, 155]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.6
+      text: |
+        <p>提出了融合边特征、GRU门控更新和注意力读出的图神经网络模型，在MoleculeNet基准上6/8个分类任务达到SOTA，平均ROC-AUC 0.842。</p>
+
+  - elementId: card-2-bg
+    elementType: shape
+    bounds: [465, 115, 350, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: card-2-top
+    elementType: shape
+    bounds: [465, 115, 350, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card-2-num
+    elementType: text
+    bounds: [485, 135, 60, 30]
+    content:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>02</strong></p>
+
+  - elementId: card-2-title
+    elementType: text
+    bounds: [485, 170, 310, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>可解释性分析</strong></p>
+
+  - elementId: card-2-content
+    elementType: text
+    bounds: [485, 203, 310, 155]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.6
+      text: |
+        <p>通过注意力权重可视化揭示了模型的决策依据，发现模型能自动识别药效团结构，与化学领域知识高度吻合，增强了模型的可信度。</p>
+
+  - elementId: card-3-bg
+    elementType: shape
+    bounds: [850, 115, 350, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: card-3-top
+    elementType: shape
+    bounds: [850, 115, 350, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card-3-num
+    elementType: text
+    bounds: [870, 135, 60, 30]
+    content:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>03</strong></p>
+
+  - elementId: card-3-title
+    elementType: text
+    bounds: [870, 170, 310, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>系统消融研究</strong></p>
+
+  - elementId: card-3-content
+    elementType: text
+    bounds: [870, 203, 310, 155]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.6
+      text: |
+        <p>通过系统的消融实验量化了各模块的贡献度，为分子性质预测领域的GNN模型设计提供了有价值的实证指导。</p>
+
+  # 未来工作
+  - elementId: future-line
+    elementType: shape
+    bounds: [80, 400, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  - elementId: future-title
+    elementType: text
+    bounds: [80, 420, 300, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>未来研究方向</strong></p>
+
+  - elementId: future-content
+    elementType: text
+    bounds: [80, 455, 1120, 170]
+    content:
+      style: "$body"
+      lineHeight: 1.8
+      text: |
+        <p><strong>方向一：</strong>引入3D分子构象信息（原子坐标、二面角），构建几何感知的GNN模型，提升构象敏感性质的预测精度。</p>
+        <p><strong>方向二：</strong>探索预训练策略（分子级对比学习 + 原子级自监督），利用大规模无标注分子数据提升小样本场景的预测能力。</p>
+        <p><strong>方向三：</strong>将MolGNN扩展至分子生成任务（药物设计），实现从性质预测到分子逆设计的闭环。</p>
+
+  # 底部线
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [0, 716, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 80, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "08 / 09"

@@ -1,0 +1,45 @@
+title: MIU MIU Brand Template
+size:
+  - 1280
+  - 720
+theme:
+  colors:
+    primary: "#1A1A1A"
+    secondary: "#8B7355"
+    accent: "#C4A87C"
+    background: "#F0EBE3"
+    surface: "#E8E0D5"
+    white: "#FFFFFF"
+    darkbg: "#2A2420"
+  textStyles:
+    title:
+      fontSize: 48
+      color: $primary
+      fontFamily: Oranienbaum, siyuanSongti
+    subtitle:
+      fontSize: 28
+      color: $secondary
+      fontFamily: Oranienbaum, siyuanSongti
+      lineHeight: 1.5
+    body:
+      fontSize: 18
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.8
+    caption:
+      fontSize: 14
+      color: $secondary
+      fontFamily: Liter, MiSans
+    label:
+      fontSize: 16
+      color: $accent
+      fontFamily: Liter, MiSans
+      letterSpacing: 2
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/brand_intro.page
+  - pages/brand_philosophy.page
+  - pages/brand_story.page
+  - pages/gallery.page

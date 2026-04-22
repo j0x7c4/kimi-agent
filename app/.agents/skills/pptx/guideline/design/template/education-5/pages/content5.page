@@ -1,0 +1,298 @@
+pageType: content
+background:
+  type: solid
+  color: "#F9F7F4"
+elements:
+  # Top 4px navy header line
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  # Chapter name header (left)
+  - elementId: header-chapter
+    elementType: text
+    bounds: [60, 12, 700, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">第五章 · 学科发展历程</span></p>
+
+  # Page number
+  - elementId: header-pagenum
+    elementType: text
+    bounds: [1200, 12, 60, 22]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">08</span></p>
+
+  # Main title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 50, 1160, 44]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>学科发展时间轴：理论演进与里程碑事件</strong></span></p>
+
+  # Gold line under title
+  - elementId: title-gold-line
+    elementType: shape
+    bounds: [60, 100, 400, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  # Timeline gold horizontal line (y = 400)
+  - elementId: timeline-line
+    elementType: shape
+    bounds: [60, 400, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#D4956A"
+
+  # ── Node 1: 1950s (desc BELOW line) ──
+  - elementId: node1-circle
+    elementType: shape
+    bounds: [92, 391, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  - elementId: node1-year
+    elementType: text
+    bounds: [72, 370, 60, 20]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>1950s</strong></span></p>
+
+  - elementId: node1-desc
+    elementType: text
+    bounds: [55, 418, 155, 100]
+    content:
+      fontSize: 18
+      color: "#5E8B9E"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;"><strong>奠基阶段</strong></span></p>
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;">经典模型提出，奠定学科基础</span></p>
+
+  # ── Node 2: 1970s (desc ABOVE line) ──
+  - elementId: node2-circle
+    elementType: shape
+    bounds: [288, 391, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  - elementId: node2-desc
+    elementType: text
+    bounds: [252, 150, 150, 118]
+    content:
+      fontSize: 18
+      color: "#5E8B9E"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;"><strong>批判反思</strong></span></p>
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;">范式挑战与多元理论流派兴起</span></p>
+
+  - elementId: node2-vline
+    elementType: shape
+    bounds: [297, 272, 0, 126]
+    shapeName: straightConnector1
+    border:
+      style: dot
+      width: 1
+      color: "#D4956A"
+
+  - elementId: node2-year
+    elementType: text
+    bounds: [268, 416, 60, 18]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>1970s</strong></span></p>
+
+  # ── Node 3: 1990s (desc BELOW line) ──
+  - elementId: node3-circle
+    elementType: shape
+    bounds: [488, 391, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  - elementId: node3-year
+    elementType: text
+    bounds: [468, 370, 60, 20]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>1990s</strong></span></p>
+
+  - elementId: node3-desc
+    elementType: text
+    bounds: [452, 418, 155, 100]
+    content:
+      fontSize: 18
+      color: "#5E8B9E"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;"><strong>实证转向</strong></span></p>
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;">量化方法引入，大规模数据研究</span></p>
+
+  # ── Node 4: 2005 (desc ABOVE line) ──
+  - elementId: node4-circle
+    elementType: shape
+    bounds: [688, 391, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  - elementId: node4-desc
+    elementType: text
+    bounds: [652, 150, 150, 118]
+    content:
+      fontSize: 18
+      color: "#5E8B9E"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;"><strong>综合整合</strong></span></p>
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;">跨学科融合，新综合框架形成</span></p>
+
+  - elementId: node4-vline
+    elementType: shape
+    bounds: [697, 272, 0, 126]
+    shapeName: straightConnector1
+    border:
+      style: dot
+      width: 1
+      color: "#D4956A"
+
+  - elementId: node4-year
+    elementType: text
+    bounds: [668, 416, 60, 18]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>2005</strong></span></p>
+
+  # ── Node 5: 2015 (desc BELOW line) ──
+  - elementId: node5-circle
+    elementType: shape
+    bounds: [888, 391, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  - elementId: node5-year
+    elementType: text
+    bounds: [868, 370, 60, 20]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>2015</strong></span></p>
+
+  - elementId: node5-desc
+    elementType: text
+    bounds: [852, 418, 155, 100]
+    content:
+      fontSize: 18
+      color: "#5E8B9E"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;"><strong>数字转型</strong></span></p>
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#5E8B9E;">大数据重塑研究范式</span></p>
+
+  # ── Node 6: 2024 (desc ABOVE line, gold node) ──
+  - elementId: node6-circle
+    elementType: shape
+    bounds: [1090, 391, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#D4956A"
+
+  - elementId: node6-desc
+    elementType: text
+    bounds: [1054, 150, 150, 118]
+    content:
+      fontSize: 18
+      color: "#2B6777"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2B6777;"><strong>前沿突破</strong></span></p>
+        <p style="text-align:center"><span style="font-size:18px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2B6777;">AI辅助研究开启新纪元</span></p>
+
+  - elementId: node6-vline
+    elementType: shape
+    bounds: [1099, 272, 0, 126]
+    shapeName: straightConnector1
+    border:
+      style: dot
+      width: 1
+      color: "#D4956A"
+
+  - elementId: node6-year
+    elementType: text
+    bounds: [1070, 416, 60, 18]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>2024</strong></span></p>
+
+  # Footer reference
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 620, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D6CFC4"
+
+  - elementId: footer-ref
+    elementType: text
+    bounds: [60, 628, 1100, 28]
+    content:
+      fontSize: 13
+      color: "#5E8B9E"
+      fontFamily: "Liter, MiSans, MiSans"
+      lineHeight: 1.3
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; font-style:italic; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">参考：学科发展史综述，详见 Turner &amp; Smith (2024). Annual Review of XXX.</span></p>

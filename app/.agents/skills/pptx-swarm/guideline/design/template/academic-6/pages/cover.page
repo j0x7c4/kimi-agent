@@ -1,0 +1,148 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部细蓝竖线（左侧视觉锚定）
+  - elementId: cover-left-accent
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 右上角学校/机构标识区
+  - elementId: cover-logo-circle
+    elementType: shape
+    bounds: [1140, 30, 50, 50]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$lightGray"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+
+  - elementId: cover-university
+    elementType: text
+    bounds: [820, 36, 308, 24]
+    content:
+      fontSize: 14
+      color: "#888888"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: XX大学 · XX学院
+
+  # 白色区域（约60%）- 标题区
+  - elementId: cover-paper-type
+    elementType: text
+    bounds: [60, 140, 400, 28]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 3
+      wrap: false
+      text: |
+        <p>GRADUATE THESIS DEFENSE</p>
+
+  # 主标题
+  - elementId: cover-main-title
+    elementType: text
+    bounds: [60, 182, 1100, 76]
+    content:
+      fontSize: 44
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, top]
+      wrap: false
+      text: |
+        <p><strong>基于深度学习的图像分割方法研究</strong></p>
+
+  - elementId: cover-subtitle-en
+    elementType: text
+    bounds: [60, 268, 1000, 30]
+    content:
+      fontSize: 18
+      color: "#888888"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Research on Image Segmentation Methods Based on Deep Learning
+
+  # 分隔线
+  - elementId: cover-separator
+    elementType: shape
+    bounds: [60, 316, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 下方蓝色信息区（约40%）
+  - elementId: cover-bottom-band
+    elementType: shape
+    bounds: [0, 430, 1280, 290]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 信息文字（白色）
+  - elementId: cover-info-author
+    elementType: text
+    bounds: [60, 478, 400, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>答辩人：XXX</p>
+
+  - elementId: cover-info-advisor
+    elementType: text
+    bounds: [60, 516, 500, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>指导教师：XXX 教授</p>
+
+  - elementId: cover-info-dept
+    elementType: text
+    bounds: [60, 556, 600, 28]
+    content:
+      fontSize: 16
+      color: "#FFFFFFBB"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>XX学院 · 计算机科学与技术专业</p>
+
+  - elementId: cover-info-date
+    elementType: text
+    bounds: [60, 596, 300, 24]
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 2025年X月
+
+  # 右下角英文水印
+  - elementId: cover-watermark
+    elementType: text
+    bounds: [800, 626, 420, 60]
+    content:
+      fontSize: 48
+      color: "#FFFFFF08"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: THESIS

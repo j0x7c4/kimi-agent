@@ -1,0 +1,295 @@
+pageType: content
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: title-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 60
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: title-icon
+    elementType: icon
+    bounds:
+      - 24
+      - 14
+      - 32
+      - 32
+    iconName: fas:magnifying-glass-chart
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 70
+      - 0
+      - 1000
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:28px; color:#FFFFFF; font-family:MiSans;"><strong>核心发现：数据揭示的规律</strong></span></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1200
+      - 0
+      - 60
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#D9E8F5; font-family:MiSans;">06</span></p>
+  - elementId: data-chart
+    elementType: chart
+    bounds:
+      - 60
+      - 86
+      - 568
+      - 560
+    type: bar
+    x: group
+    "y":
+      - score
+      - participation
+    names:
+      - 满意度评分
+      - 参与率(%)
+    colors:
+      - $primary
+      - $accent
+    data:
+      - group: 年龄18-25
+        score: 4.5
+        participation: 82
+      - group: 年龄26-35
+        score: 4.1
+        participation: 75
+      - group: 年龄36-45
+        score: 3.8
+        participation: 63
+      - group: 年龄46-55
+        score: 3.5
+        participation: 48
+      - group: 年龄56+
+        score: 3.2
+        participation: 35
+    options:
+      barWidth: 0.6
+      fontFamily: Liter, MiSans
+    xAxis:
+      label:
+        color: $text
+        fontSize: 14
+    yAxis:
+      label:
+        color: $secondary
+        fontSize: 13
+      gridLine:
+        style: dash
+        color: "#D9E8F5"
+    legend:
+      position: top
+      fontSize: 14
+    fill:
+      type: solid
+      color: "#D9E8F5"
+    border:
+      style: solid
+      width: 1
+      color: "#2C5F8A22"
+  - elementId: chart-caption
+    elementType: text
+    bounds:
+      - 60
+      - 654
+      - 568
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:14px; color:#8D8D8D; font-family:MiSans; font-style:italic;">图2：问卷数据分布与关键变量相关性分析（n=318）</span></p>
+  - elementId: finding1-title
+    elementType: text
+    bounds:
+      - 660
+      - 86
+      - 560
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>发现一：显著正相关关系</strong></span></p>
+  - elementId: finding1-line
+    elementType: shape
+    bounds:
+      - 660
+      - 126
+      - 560
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D9E8F5"
+  - elementId: finding1-text
+    elementType: text
+    bounds:
+      - 660
+      - 136
+      - 560
+      - 100
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">XX因素与YY结果呈显著正相关（r=0.67, p&lt;0.001），表明两者之间存在较强的线性关联</span></p>
+  - elementId: finding2-title
+    elementType: text
+    bounds:
+      - 660
+      - 260
+      - 560
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>发现二：群体差异显著</strong></span></p>
+  - elementId: finding2-line
+    elementType: shape
+    bounds:
+      - 660
+      - 300
+      - 560
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D9E8F5"
+  - elementId: finding2-text
+    elementType: text
+    bounds:
+      - 660
+      - 310
+      - 560
+      - 100
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">不同年龄群体之间存在显著差异（F=8.23, p&lt;0.01），年轻群体的参与度明显高于其他群体</span></p>
+  - elementId: finding3-title
+    elementType: text
+    bounds:
+      - 660
+      - 434
+      - 560
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>发现三：调节效应存在</strong></span></p>
+  - elementId: finding3-line
+    elementType: shape
+    bounds:
+      - 660
+      - 474
+      - 560
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D9E8F5"
+  - elementId: finding3-text
+    elementType: text
+    bounds:
+      - 660
+      - 484
+      - 560
+      - 100
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">ZZ因素在XX与YY关系中起到显著调节作用（&#946;=0.23, p&lt;0.05），高ZZ组效应更为明显</span></p>
+  - elementId: insight-bg
+    elementType: shape
+    bounds:
+      - 660
+      - 608
+      - 560
+      - 74
+    shapeName: roundRect
+    adjustments:
+      - 5000
+    fill:
+      type: solid
+      color: "#D9E8F5"
+    border:
+      style: solid
+      width: 1
+      color: "#2C5F8A22"
+  - elementId: insight-text
+    elementType: text
+    bounds:
+      - 680
+      - 616
+      - 520
+      - 58
+    content:
+      lineHeight: 1.4
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#2C5F8A; font-family:MiSans;"><strong>关键结论：</strong>三项发现均支持研究假设，验证了理论模型的有效性</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"

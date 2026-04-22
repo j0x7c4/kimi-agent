@@ -1,0 +1,99 @@
+pageType: final
+background:
+  type: solid
+  color: "#10B981"
+elements:
+# --- Decorative ---
+- elementId: deco_gradient
+  elementType: shape
+  bounds: [0, 0, 1920, 1080]
+  shapeName: rect
+  fill:
+    type: gradient
+    gradientType: linear
+    angle: 180
+    stops:
+      - {position: 0, color: "#10B98100"}
+      - {position: 1, color: "#1A1A1A20"}
+- elementId: deco_circle1
+  elementType: shape
+  bounds: [1500, 700, 350, 350]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF10"
+- elementId: deco_circle2
+  elementType: shape
+  bounds: [100, 100, 200, 200]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF08"
+# --- Images ---
+- elementId: shape_img1
+  elementType: shape
+  bounds: [108, 110.43, 518.88, 411.62]
+  shapeName: rect
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200
+    fit:
+      mode: contain
+- elementId: shape_img2
+  elementType: shape
+  bounds: [660.08, 108, 299.92, 414.05]
+  shapeName: rect
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200
+    fit:
+      mode: contain
+- elementId: shape_img3
+  elementType: shape
+  bounds: [441.12, 560.38, 518.88, 411.62]
+  shapeName: rect
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200
+    fit:
+      mode: contain
+# --- Content ---
+- elementId: text_title
+  elementType: text
+  bounds: [1162.48, 278.35, 547.78, 108.77]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 49.99
+    text: |
+      <p>We're so excited</p>
+      <p style="line-height:50px">to have you!</p>
+- elementId: text_body
+  elementType: text
+  bounds: [1162.48, 414.87, 547.78, 385.29]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 35.45
+    text: |
+      <p>Presentations are tools that can be used as demonstrations, lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p>It serves a variety of purposes, making presentations powerful tools for convincing and teaching.</p>
+      <p> </p>
+      <p>Start with an outline of topics and identify highlights, which can be applied to whatever subject you plan on discussing. </p>
+- elementId: text_sidebar
+  elementType: text
+  bounds: [-23.15, 817.28, 270.16, 35.14]
+  rotation: 270
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING

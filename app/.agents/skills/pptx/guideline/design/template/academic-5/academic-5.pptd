@@ -1,0 +1,67 @@
+title: 学术研究报告模板（湖蓝导航版）
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#005C82"
+    secondary: "#007AA8"
+    accent: "#00ACC1"
+    background: "#F4FAFE"
+    text: "#333333"
+    navBg: "#004060"
+    lightBlue: "#E0F4FA"
+    white: "#FFFFFF"
+    sidebarBg: "#004060"
+    grayBlue: "#B0BEC5"
+  textStyles:
+    title:
+      fontSize: 44
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+    pageTitle:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    subtitle:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    body:
+      fontSize: 19
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+    caption:
+      fontSize: 15
+      color: "#666666"
+      fontFamily: "QuattrocentoSans, MiSans"
+    sidebarNav:
+      fontSize: 12
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+    label:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+  tableStyles:
+    default:
+      headerFill: "$primary"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$lightBlue"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "#B0BEC5"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/bullets.page
+  - pages/two_column.page
+  - pages/sidebar_content.page
+  - pages/chart_analysis.page
+  - pages/data_highlight.page
+  - pages/flow_process.page
+  - pages/matrix.page
+  - pages/final.page

@@ -1,0 +1,294 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [64, 32, 1100, 40]
+    content:
+      fontSize: 24
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>目标企业估值分析：$2.8B–$3.2B 合理区间</strong></p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1190, 36, 60, 32]
+    content:
+      fontSize: 13
+      color: "#FFFFFF55"
+      fontFamily: "Inter, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "09"
+
+  # ===== 核心估值数字（巨大铜色） =====
+  - elementId: valuation-number
+    elementType: text
+    bounds: [340, 90, 600, 80]
+    content:
+      fontSize: 64
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>$3.0B</strong></p>
+
+  - elementId: valuation-label
+    elementType: text
+    bounds: [440, 172, 400, 28]
+    content:
+      fontSize: 18
+      color: "#FFFFFFCC"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>综合估值中位数（三法平均）</p>
+
+  # ===== 三列对比：DCF / 可比公司 / 可比交易 =====
+  # 列1：DCF
+  - elementId: col1-title
+    elementType: text
+    bounds: [64, 230, 370, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>DCF 现金流折现法</strong></p>
+
+  - elementId: col1-number
+    elementType: text
+    bounds: [64, 268, 370, 50]
+    content:
+      fontSize: 40
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>$2.8B – $3.1B</strong></p>
+
+  - elementId: col1-assumptions
+    elementType: text
+    bounds: [84, 330, 330, 120]
+    content:
+      fontSize: 14
+      color: "$lightCopper"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p>&#9632; WACC: 9.5%–10.5%</p>
+        <p>&#9632; 永续增长率: 2.5%</p>
+        <p>&#9632; 预测期: 10年</p>
+        <p>&#9632; 终值占比: 62%</p>
+
+  # 分隔线 1
+  - elementId: col-divider-1
+    elementType: shape
+    bounds: [454, 230, 0, 240]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "$accent"
+
+  # 列2：可比公司法
+  - elementId: col2-title
+    elementType: text
+    bounds: [474, 230, 330, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>可比公司法</strong></p>
+
+  - elementId: col2-number
+    elementType: text
+    bounds: [474, 268, 330, 50]
+    content:
+      fontSize: 40
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>$2.9B – $3.3B</strong></p>
+
+  - elementId: col2-assumptions
+    elementType: text
+    bounds: [494, 330, 290, 120]
+    content:
+      fontSize: 14
+      color: "$lightCopper"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p>&#9632; EV/EBITDA: 14x–16x</p>
+        <p>&#9632; P/E: 22x–26x</p>
+        <p>&#9632; 可比公司: 6家</p>
+        <p>&#9632; 流动性折价: 15%</p>
+
+  # 分隔线 2
+  - elementId: col-divider-2
+    elementType: shape
+    bounds: [824, 230, 0, 240]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "$accent"
+
+  # 列3：可比交易法
+  - elementId: col3-title
+    elementType: text
+    bounds: [844, 230, 372, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>可比交易法</strong></p>
+
+  - elementId: col3-number
+    elementType: text
+    bounds: [844, 268, 372, 50]
+    content:
+      fontSize: 40
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>$2.7B – $3.2B</strong></p>
+
+  - elementId: col3-assumptions
+    elementType: text
+    bounds: [864, 330, 332, 120]
+    content:
+      fontSize: 14
+      color: "$lightCopper"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p>&#9632; 近3年同行业交易: 8宗</p>
+        <p>&#9632; 交易溢价: 25%–35%</p>
+        <p>&#9632; 控制权溢价: 20%</p>
+        <p>&#9632; 中位数倍数: 15.2x</p>
+
+  # ===== 底部：推荐区间条 =====
+  - elementId: range-label
+    elementType: text
+    bounds: [64, 490, 400, 24]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>推荐估值区间</strong></p>
+
+  # 白色底条（完整范围 $2.0B – $4.0B）
+  - elementId: range-bar-bg
+    elementType: shape
+    bounds: [64, 524, 1152, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+
+  # 铜色填充区间（$2.8B – $3.2B，对应的比例位置）
+  - elementId: range-bar-fill
+    elementType: shape
+    bounds: [525, 524, 346, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 区间标注
+  - elementId: range-low
+    elementType: text
+    bounds: [64, 552, 100, 20]
+    content:
+      fontSize: 12
+      color: "#FFFFFF88"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: "$2.0B"
+
+  - elementId: range-start
+    elementType: text
+    bounds: [500, 552, 100, 20]
+    content:
+      fontSize: 13
+      color: "$accent"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>$2.8B</strong></p>
+
+  - elementId: range-end
+    elementType: text
+    bounds: [820, 552, 100, 20]
+    content:
+      fontSize: 13
+      color: "$accent"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>$3.2B</strong></p>
+
+  - elementId: range-high
+    elementType: text
+    bounds: [1116, 552, 100, 20]
+    content:
+      fontSize: 12
+      color: "#FFFFFF88"
+      fontFamily: "Inter, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "$4.0B"
+
+  # 底部假设
+  - elementId: assumption-line
+    elementType: shape
+    bounds: [64, 600, 1152, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: assumption-text
+    elementType: text
+    bounds: [64, 614, 1152, 48]
+    content:
+      fontSize: 13
+      color: "#FFFFFF88"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><strong>关键假设：</strong>&#9632; 标的公司FY2024 EBITDA $200M，YoY +22% &#9632; 行业平均EV/EBITDA 15x &#9632; 协同效应预计释放 $50M/年（第3年起） &#9632; 交易结构：70%现金 + 30%换股</p>

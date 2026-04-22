@@ -1,0 +1,122 @@
+pageType: chapter
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#0F172A"}
+    - {position: 1, color: "#1E293B"}
+elements:
+  # Decorative large circle (top-right, very low alpha)
+  - elementId: ch-deco-circle
+    elementType: shape
+    bounds: [880, 0, 400, 400]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B4530915"
+
+  # Decorative small diamond (bottom-left)
+  - elementId: ch-deco-diamond
+    elementType: shape
+    bounds: [100, 600, 20, 20]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "#B4530940"
+
+  # Accent bar (decorative)
+  - elementId: ch-accent-bar
+    elementType: shape
+    bounds: [80, 350, 120, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # "CHAPTER 01" label
+  - elementId: ch-label
+    elementType: text
+    bounds: [80, 310, 400, 24]
+    content:
+      fontSize: 14
+      color: "#FFFFFF60"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="letter-spacing:4px;">CHAPTER 01</span></p>
+
+  # Ghost number "01" (large, very transparent)
+  - elementId: ch-ghost-number
+    elementType: text
+    bounds: [400, 160, 480, 260]
+    content:
+      fontSize: 200
+      color: "#FFFFFF10"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>01</strong></p>
+
+  # Chapter title
+  - elementId: ch-title
+    elementType: text
+    bounds: [80, 370, 900, 70]
+    content:
+      fontSize: 44
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>战略背景与市场机遇</strong></p>
+
+  # English subtitle
+  - elementId: ch-subtitle-en
+    elementType: text
+    bounds: [80, 450, 900, 36]
+    content:
+      fontSize: 22
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>Strategic Context & Market Opportunity</p>
+
+  # Brief description
+  - elementId: ch-description
+    elementType: text
+    bounds: [80, 500, 800, 80]
+    content:
+      fontSize: 18
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.5
+      text: |
+        <p>全球数字化转型市场规模将达 $3.4 万亿，窗口期仅剩 3 年，本章节系统梳理行业趋势与核心机遇。</p>
+
+  # Bottom accent bar (full width)
+  - elementId: ch-bottom-bar
+    elementType: shape
+    bounds: [0, 716, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # Page number
+  - elementId: ch-page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#FFFFFF60"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "03"

@@ -1,0 +1,222 @@
+pageType: content
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 40, 1120, 40]
+    content:
+      fontSize: 32
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>三阶段路线图：18个月达成盈亏平衡</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 86, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E2E8F0"
+
+  # Vertical timeline
+  - elementId: timeline-line
+    elementType: shape
+    bounds: [220, 110, 0, 540]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E2E8F0"
+
+  # Phase 1
+  - elementId: p1-time
+    elementType: text
+    bounds: [80, 120, 130, 24]
+    content:
+      fontSize: 16
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><strong>Q1 2025</strong></p>
+
+  - elementId: p1-dot
+    elementType: shape
+    bounds: [215, 126, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: p1-title
+    elementType: text
+    bounds: [250, 116, 900, 28]
+    content:
+      fontSize: 20
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Phase 1 — 产品市场验证</strong></p>
+
+  - elementId: p1-body
+    elementType: text
+    bounds: [250, 148, 900, 80]
+    content:
+      fontSize: 16
+      color: "#475569"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>完成核心产品MVP交付，获取首批10家付费客户。月活用户突破500。目标：<span style="color:#B45309;"><strong>$1M ARR</strong></span></p>
+
+  # Phase 2
+  - elementId: p2-time
+    elementType: text
+    bounds: [80, 250, 130, 24]
+    content:
+      fontSize: 16
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><strong>Q2-Q3 2025</strong></p>
+
+  - elementId: p2-dot
+    elementType: shape
+    bounds: [215, 256, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: p2-title
+    elementType: text
+    bounds: [250, 246, 900, 28]
+    content:
+      fontSize: 20
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Phase 2 — 规模化增长</strong></p>
+
+  - elementId: p2-body
+    elementType: text
+    bounds: [250, 278, 900, 80]
+    content:
+      fontSize: 16
+      color: "#475569"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>建立渠道合作伙伴体系，客户数扩展至100+。完成SOC2认证。目标：<span style="color:#B45309;"><strong>$5M ARR</strong></span>，毛利率突破60%</p>
+
+  # Phase 3
+  - elementId: p3-time
+    elementType: text
+    bounds: [80, 380, 130, 24]
+    content:
+      fontSize: 16
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><strong>Q4 2025-2026</strong></p>
+
+  - elementId: p3-dot
+    elementType: shape
+    bounds: [215, 386, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: p3-title
+    elementType: text
+    bounds: [250, 376, 900, 28]
+    content:
+      fontSize: 20
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Phase 3 — 市场领导地位</strong></p>
+
+  - elementId: p3-body
+    elementType: text
+    bounds: [250, 408, 900, 80]
+    content:
+      fontSize: 16
+      color: "#475569"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>国际化拓展东南亚市场，客户数突破800+。IPO准备就绪。目标：<span style="color:#B45309;"><strong>$25M ARR</strong></span>，净利润率22%</p>
+
+  # Phase 4 (Breakeven marker)
+  - elementId: p4-time
+    elementType: text
+    bounds: [80, 510, 130, 24]
+    content:
+      fontSize: 16
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><strong>2027+</strong></p>
+
+  - elementId: p4-dot
+    elementType: shape
+    bounds: [215, 516, 10, 10]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: p4-title
+    elementType: text
+    bounds: [250, 506, 900, 28]
+    content:
+      fontSize: 20
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>持续盈利 — 资本市场就绪</strong></p>
+
+  - elementId: p4-body
+    elementType: text
+    bounds: [250, 538, 900, 80]
+    content:
+      fontSize: 16
+      color: "#475569"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>年营收突破$38M，毛利率72%，Magic Number > 1.2。估值预期<span style="color:#B45309;"><strong>$200M+</strong></span></p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "06"

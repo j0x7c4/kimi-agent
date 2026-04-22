@@ -1,0 +1,197 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 52px 午夜蓝页眉条
+  - elementId: header-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 52]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [64, 10, 1050, 32]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>财务分析：当前状况与三年预测对照</strong></p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1190, 10, 60, 32]
+    content:
+      fontSize: 13
+      color: "#FFFFFF88"
+      fontFamily: "Inter, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "05"
+
+  # ===== 左栏：当前财务状况 =====
+  - elementId: left-title
+    elementType: text
+    bounds: [64, 72, 560, 32]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>当前财务状况</strong></p>
+
+  - elementId: left-table
+    elementType: table
+    bounds: [64, 114, 560, 240]
+    data:
+      headers: ["指标", "FY2024", "同比变化"]
+      rows:
+        - ["营业收入", "¥28.6B", "+12.4%"]
+        - ["毛利率", "42.3%", "+1.8pp"]
+        - ["EBITDA", "¥5.2B", "+8.6%"]
+        - ["净利润", "¥3.1B", "+6.2%"]
+        - ["自由现金流", "¥2.8B", "+15.3%"]
+        - ["资产负债率", "38.5%", "-2.1pp"]
+    style:
+      fontSize: 14
+      fontFamily: "Inter, MiSans"
+      headerFill: "$secondary"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$cardBg"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 0.5
+        color: "$warmGray"
+
+  # 左栏图表占位
+  - elementId: left-chart-bg
+    elementType: shape
+    bounds: [64, 368, 560, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: left-chart-label
+    elementType: text
+    bounds: [84, 438, 520, 24]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>[营收趋势图 Revenue Trend Chart]</p>
+
+  # ===== 中间分隔线 =====
+  - elementId: center-divider
+    elementType: shape
+    bounds: [640, 72, 0, 486]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$warmGray"
+
+  # ===== 右栏：三年预测 =====
+  - elementId: right-title
+    elementType: text
+    bounds: [656, 72, 560, 32]
+    content:
+      fontSize: 20
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>三年预测（FY2025–2028）</strong></p>
+
+  - elementId: right-table
+    elementType: table
+    bounds: [656, 114, 560, 240]
+    data:
+      headers: ["指标", "FY2026E", "FY2028E"]
+      rows:
+        - ["营业收入", "¥35.2B", "¥50.0B"]
+        - ["毛利率", "44.5%", "48.0%"]
+        - ["EBITDA", "¥7.4B", "¥12.5B"]
+        - ["净利润", "¥4.8B", "¥9.0B"]
+        - ["自由现金流", "¥4.2B", "¥8.5B"]
+        - ["资产负债率", "35.0%", "30.0%"]
+    style:
+      fontSize: 14
+      fontFamily: "Inter, MiSans"
+      headerFill: "$accent"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$cardBg"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 0.5
+        color: "$warmGray"
+
+  # 右栏增长图表占位
+  - elementId: right-chart-bg
+    elementType: shape
+    bounds: [656, 368, 560, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: right-chart-label
+    elementType: text
+    bounds: [676, 438, 520, 24]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>[增长预测图 Growth Forecast Chart]</p>
+
+  # ===== 底部关键假设条 =====
+  - elementId: assumption-bar
+    elementType: shape
+    bounds: [64, 572, 1152, 56]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: assumption-text
+    elementType: text
+    bounds: [80, 578, 1120, 44]
+    content:
+      fontSize: 13
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><strong>关键假设：</strong>&#9632; GDP增速维持在5%以上 &#9632; 行业复合增长率15%，集团增速高于行业均值 &#9632; 并购标的估值倍数控制在12x EBITDA以内</p>
+
+  # 数据来源
+  - elementId: source-text
+    elementType: text
+    bounds: [64, 680, 600, 20]
+    content:
+      fontSize: 12
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: |
+        <p>Source: 集团财务部, FY2024年报; 战略规划部三年预测模型</p>

@@ -1,0 +1,81 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Full-width 2px red top line
+  - elementId: top-red-line
+    elementType: shape
+    bounds: [0, 0, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Ghost chapter number (very transparent red, large)
+  - elementId: ghost-number
+    elementType: text
+    bounds: [970, 150, 290, 220]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:140px; color:#D91E1808; font-family:Liter, MiSans;"><strong>01</strong></span></p>
+
+  # Chapter label ALL CAPS small
+  - elementId: chapter-label
+    elementType: text
+    bounds: [60, 200, 300, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Liter, MiSans;"><strong>CHAPTER 01 / 章节</strong></span></p>
+
+  # Chapter title ALL CAPS large
+  - elementId: chapter-title
+    elementType: text
+    bounds: [60, 240, 900, 84]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:42px; color:#2C2C2C; font-family:Liter, MiSans;"><strong>MARKET OVERVIEW</strong></span></p>
+
+  # Chinese chapter title
+  - elementId: chapter-title-cn
+    elementType: text
+    bounds: [60, 330, 900, 38]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:24px; color:#2C2C2C; font-family:Liter, MiSans;">市场总览与行业规模</span></p>
+
+  # 2px red line below titles
+  - elementId: chapter-red-line
+    elementType: shape
+    bounds: [60, 378, 160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Description paragraph
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [60, 398, 800, 80]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#888888; font-family:Liter, MiSans;">本章节对目标行业的整体规模、增长轨迹及结构性变化进行系统性梳理，为后续竞争格局与战略分析奠定数据基础。</span></p>
+
+  # Full-width 2px red bottom line
+  - elementId: bottom-red-line
+    elementType: shape
+    bounds: [0, 718, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"

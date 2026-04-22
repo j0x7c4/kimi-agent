@@ -1,0 +1,263 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  - elementId: nav-left-accent
+    elementType: shape
+    bounds: [0, 0, 4, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB550"}
+
+  - elementId: nav-chapter-text
+    elementType: text
+    bounds: [20, 0, 900, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 02 理论基础与相关工作 / 2.1 相关工作综述
+
+  - elementId: nav-page-num
+    elementType: text
+    bounds: [1200, 0, 60, 50]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "05"
+
+  - elementId: title-accent-mark
+    elementType: shape
+    bounds: [12, 68, 4, 40]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB5"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [24, 68, 1000, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>相关工作综述与本文定位</strong></p>
+
+  - elementId: title-sep
+    elementType: shape
+    bounds: [24, 116, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#C8BEE0"
+
+  # Bullet 1
+  - elementId: b1-mark
+    elementType: shape
+    bounds: [24, 136, 6, 36]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: b1-title
+    elementType: text
+    bounds: [44, 136, 1200, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>监督学习方法（2015–2020）</strong></p>
+
+  - elementId: b1-content
+    elementType: text
+    bounds: [44, 170, 1200, 40]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>以 ResNet、VGG 为代表的深度卷积网络取得了里程碑式突破，但高度依赖大规模标注数据，标注成本极高。</p>
+
+  - elementId: sep1
+    elementType: shape
+    bounds: [24, 230, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#EEE8F4"
+
+  # Bullet 2
+  - elementId: b2-mark
+    elementType: shape
+    bounds: [24, 256, 6, 36]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: b2-title
+    elementType: text
+    bounds: [44, 256, 1200, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>自监督预训练方法（2020–2022）</strong></p>
+
+  - elementId: b2-content
+    elementType: text
+    bounds: [44, 290, 1200, 40]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>BERT、SimCLR、MAE 等自监督方法缓解了标注瓶颈，但在特定垂直领域微调时仍面临域偏移问题。</p>
+
+  - elementId: sep2
+    elementType: shape
+    bounds: [24, 350, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#EEE8F4"
+
+  # Bullet 3
+  - elementId: b3-mark
+    elementType: shape
+    bounds: [24, 376, 6, 36]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: b3-title
+    elementType: text
+    bounds: [44, 376, 1200, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>大模型 + 提示学习（2022–至今）</strong></p>
+
+  - elementId: b3-content
+    elementType: text
+    bounds: [44, 410, 1200, 40]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>以 GPT-4、LLaVA 为代表的大模型涌现出强大的零样本能力，但部署成本极高且推理延迟难以满足实时需求。</p>
+
+  - elementId: sep3
+    elementType: shape
+    bounds: [24, 470, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#EEE8F4"
+
+  # Bullet 4
+  - elementId: b4-mark
+    elementType: shape
+    bounds: [24, 496, 6, 36]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: b4-title
+    elementType: text
+    bounds: [44, 496, 1200, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>研究空白与本文切入点</strong></p>
+
+  - elementId: b4-content
+    elementType: text
+    bounds: [44, 530, 1200, 40]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>如何在轻量化约束下实现跨域自适应，是当前尚未被充分解决的问题，也是本文研究的核心切入点。</p>
+
+  # 结论强调框
+  - elementId: insight-bg
+    elementType: shape
+    bounds: [24, 620, 1232, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: insight-text
+    elementType: text
+    bounds: [40, 626, 1196, 38]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><strong>本文定位：</strong>在现有方法基础上，提出兼顾效率与跨域适应性的轻量化方案，填补上述研究空白。</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "5"

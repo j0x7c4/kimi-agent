@@ -1,0 +1,319 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top structural bar
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Gold vertical accent bar left of title
+  - elementId: title-accent-bar
+    elementType: shape
+    bounds: [50, 10, 4, 54]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Page action title
+  - elementId: page-title
+    elementType: text
+    bounds: [62, 12, 1150, 50]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#0F2647; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>利润率持续改善与研发投入加速，行业进入质量驱动阶段</strong></span></p>
+
+  # Horizontal divider
+  - elementId: title-divider
+    elementType: shape
+    bounds: [50, 68, 1180, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # ─── TOP-LEFT: COMPARISON CHART 1 ───
+
+  # Panel 1 header bg
+  - elementId: p1-header-bg
+    elementType: shape
+    bounds: [50, 76, 590, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: p1-header-accent
+    elementType: shape
+    bounds: [50, 76, 3, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: p1-header-text
+    elementType: text
+    bounds: [58, 76, 580, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0F2647; font-family:Liter, MiSans;"><strong>头部企业毛利率对比（2022–2024A）</strong></span></p>
+
+  - elementId: p1-chart
+    elementType: chart
+    bounds: [55, 100, 580, 248]
+    type: line
+    options:
+      fontFamily: "Liter, MiSans"
+    data:
+      - {year: "2022", byd: 15.8, catl: 20.3, lixiang: 19.4}
+      - {year: "2023", byd: 18.2, catl: 22.8, lixiang: 21.2}
+      - {year: "2024A", byd: 19.8, catl: 24.1, lixiang: 22.3}
+    x: year
+    y: [byd, catl, lixiang]
+    names: ["比亚迪", "宁德时代", "理想汽车"]
+    colors: ["$primary", "$accent", "#5C8EC9"]
+    seriesStyle:
+      byd:
+        type: line
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 5
+          fill:
+            type: solid
+            color: "$primary"
+          border: {style: solid, width: 2, color: "$primary"}
+      catl:
+        type: line
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 5
+          fill:
+            type: solid
+            color: "$accent"
+          border: {style: solid, width: 2, color: "$accent"}
+      lixiang:
+        type: line
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 5
+          fill:
+            type: solid
+            color: "#5C8EC9"
+          border: {style: solid, width: 2, color: "#5C8EC9"}
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 10
+    xAxis:
+      label: {fontSize: 11, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      axisLine: false
+
+  # ─── TOP-RIGHT: COMPARISON CHART 2 ───
+
+  # Panel 2 header bg
+  - elementId: p2-header-bg
+    elementType: shape
+    bounds: [650, 76, 580, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: p2-header-accent
+    elementType: shape
+    bounds: [650, 76, 3, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: p2-header-text
+    elementType: text
+    bounds: [658, 76, 570, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0F2647; font-family:Liter, MiSans;"><strong>研发投入费用率趋势（2022–2024A）</strong></span></p>
+
+  - elementId: p2-chart
+    elementType: chart
+    bounds: [655, 100, 570, 248]
+    type: bar
+    options:
+      fontFamily: "Liter, MiSans"
+    data:
+      - {company: "比亚迪", r2022: 3.2, r2023: 4.1, r2024: 5.0}
+      - {company: "宁德时代", r2022: 7.8, r2023: 8.2, r2024: 8.6}
+      - {company: "理想", r2022: 10.2, r2023: 11.8, r2024: 13.4}
+      - {company: "蔚来", r2022: 28.5, r2023: 24.0, r2024: 20.3}
+    x: company
+    y: [r2022, r2023, r2024]
+    names: ["2022", "2023", "2024A"]
+    colors: ["#B8C8DC", "#6D98C4", "$primary"]
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: false
+    xAxis:
+      label: {fontSize: 10, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      axisLine: false
+
+  # ─── BOTTOM-LEFT: ANALYSIS TEXT 1 ───
+
+  # Panel 3 header bg
+  - elementId: p3-header-bg
+    elementType: shape
+    bounds: [50, 362, 590, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: p3-header-accent
+    elementType: shape
+    bounds: [50, 362, 3, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: p3-header-text
+    elementType: text
+    bounds: [58, 362, 580, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0F2647; font-family:Liter, MiSans;"><strong>毛利率趋势解读</strong></span></p>
+
+  - elementId: p3-text
+    elementType: text
+    bounds: [58, 390, 572, 250]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; font-family:Liter, MiSans;"><strong>改善核心驱动</strong></span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 电池成本2年内下降35%，整车盈利模型根本改善</span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 产品结构上移，高端车型占比提升支撑ASP</span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 规模效应显现，固定成本摊薄效果明显</span></p>
+        <p style="margin-top:6px"><span style="font-size:14px; font-family:Liter, MiSans;"><strong>未来展望</strong></span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 预计2025E整车毛利率中枢达20-22%，接近传统燃油车水平</span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 软件收入占比提升将进一步推高综合毛利率至25%+</span></p>
+
+  # ─── BOTTOM-RIGHT: ANALYSIS TEXT 2 ───
+
+  # Panel 4 header bg
+  - elementId: p4-header-bg
+    elementType: shape
+    bounds: [650, 362, 580, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: p4-header-accent
+    elementType: shape
+    bounds: [650, 362, 3, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: p4-header-text
+    elementType: text
+    bounds: [658, 362, 570, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0F2647; font-family:Liter, MiSans;"><strong>研发投入策略分析</strong></span></p>
+
+  - elementId: p4-text
+    elementType: text
+    bounds: [658, 390, 562, 250]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; font-family:Liter, MiSans;"><strong>龙头策略分化</strong></span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 比亚迪绝对金额领先，垂直整合模式降低外部依赖</span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 宁德时代聚焦电池材料与固态电池代际突破</span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 新势力以高费用率换取技术溢价，变现节奏是关键</span></p>
+        <p style="margin-top:6px"><span style="font-size:14px; font-family:Liter, MiSans;"><strong>投资启示</strong></span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Liter, MiSans;">&#9632; 研发效率（研发产出/投入）优于绝对费用率，是判断壁垒的核心指标</span></p>
+        <p><span style="font-size:13px; color:#C9963B; font-family:Liter, MiSans;">&#9632; 建议重点关注技术落地进度及专利授权收入趋势</span></p>
+
+  # ─── FOOTER ───
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 664, 400, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：公司年报、Wind数据库，2024A为经审计财务数据</p>
+
+  - elementId: disclaimer-text
+    elementType: text
+    bounds: [460, 664, 600, 22]
+    content:
+      align: [right, middle]
+      fontSize: 11
+      color: "$medgray"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p>分析仅供参考，不构成投资建议</p>
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1200, 664, 60, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>08</p>

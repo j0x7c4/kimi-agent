@@ -1,0 +1,82 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: chart0
+    elementType: chart
+    bounds: [30, 281.85, 1320, 700]
+    type: bar
+    options:
+      fontFamily: "Liter, MiSans"
+      direction: horizontal
+    data:
+      - {region: "North America", subscribers: 110, coverage: 155, investment: 72}
+      - {region: "Europe", subscribers: 152, coverage: 140, investment: 125}
+      - {region: "Asia Pacific", subscribers: 220, coverage: 170, investment: 125}
+      - {region: "Global Total", subscribers: 265, coverage: 200, investment: 130}
+    x: region
+    y: [subscribers, coverage, investment]
+    names: ["5G Subscribers (M)", "5G Coverage (%)", "5G Investment ($B)"]
+    colors: ["#7EC0DA", "#5A6C7D", "#3D7C8E"]
+    legend:
+      position: top
+      fontSize: 14
+      fontColor: "#FFFFFF"
+    dataLabels:
+      show: false
+    xAxis:
+      label:
+        fontSize: 14
+        color: "#FFFFFF"
+      gridLine: false
+      axisLine:
+        color: "#555555"
+    yAxis:
+      label:
+        fontSize: 12
+        color: "#AAAAAA"
+      gridLine:
+        color: "#444444"
+        style: dash
+      axisLine: false
+  - elementId: text1
+    elementType: text
+    bounds: [98.4, 102.2, 1570.13, 128.6]
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>5G Technology Adoption in the World</strong></p>
+  - elementId: text2
+    elementType: text
+    bounds: [1377.07, 719.09, 444.53, 60.15]
+    content:
+      fontSize: 37.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 56
+      align:
+        - left
+        - top
+      text: |
+        As of January 2021
+  - elementId: text3
+    elementType: text
+    bounds: [1377.07, 814.55, 444.53, 158.05]
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        5G technology adoption continues to rise in more countries and cities.

@@ -1,0 +1,185 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 28, 1160, 40]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:26px; color:#263238; font-family:Georgia, MiSans;"><strong>当前估值处于历史中位数偏低水平，安全边际充足</strong></span></p>
+
+  # 标题下方细线
+  - elementId: title-line
+    elementType: shape
+    bounds: [60, 72, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # KPI大数字区域 - 4个关键指标横排
+  # KPI 1: PE
+  - elementId: kpi1-number
+    elementType: text
+    bounds: [60, 90, 260, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#37474F; font-family:Arial, MiSans;"><strong>22.8x</strong></span></p>
+
+  - elementId: kpi1-label
+    elementType: text
+    bounds: [60, 148, 260, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>2025E PE</strong></span></p>
+
+  - elementId: kpi1-context
+    elementType: text
+    bounds: [60, 176, 260, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Arial, MiSans;">历史均值 28.5x | 行业 25.2x</span></p>
+
+  # KPI 2: PB
+  - elementId: kpi2-number
+    elementType: text
+    bounds: [340, 90, 260, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#37474F; font-family:Arial, MiSans;"><strong>4.8x</strong></span></p>
+
+  - elementId: kpi2-label
+    elementType: text
+    bounds: [340, 148, 260, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>2025E PB</strong></span></p>
+
+  - elementId: kpi2-context
+    elementType: text
+    bounds: [340, 176, 260, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Arial, MiSans;">历史均值 6.2x | 行业 3.8x</span></p>
+
+  # KPI 3: 目标价
+  - elementId: kpi3-number
+    elementType: text
+    bounds: [620, 90, 280, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#37474F; font-family:Arial, MiSans;"><strong>388元</strong></span></p>
+
+  - elementId: kpi3-label
+    elementType: text
+    bounds: [620, 148, 280, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>目标价格</strong></span></p>
+
+  - elementId: kpi3-context
+    elementType: text
+    bounds: [620, 176, 280, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Arial, MiSans;">当前价 312元 | 上涨空间 24.4%</span></p>
+
+  # KPI 4: 评级
+  - elementId: kpi4-number
+    elementType: text
+    bounds: [920, 90, 300, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#37474F; font-family:Arial, MiSans;"><strong>强烈推荐</strong></span></p>
+
+  - elementId: kpi4-label
+    elementType: text
+    bounds: [920, 148, 300, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>投资评级</strong></span></p>
+
+  - elementId: kpi4-context
+    elementType: text
+    bounds: [920, 176, 300, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Arial, MiSans;">首次覆盖 | 12个月目标</span></p>
+
+  # 分隔线
+  - elementId: kpi-divider
+    elementType: shape
+    bounds: [60, 210, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 估值方法论文字
+  - elementId: valuation-method
+    elementType: text
+    bounds: [60, 222, 1160, 420]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>估值方法与目标价推导</strong></span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>方法一：PE估值法（权重60%）</strong></span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;">基于2026年预测EPS 17.89元，给予25x PE（对应PEG约0.9x，考虑30%+盈利增速合理），目标市值约5,200亿元，对应股价447元。考虑市场情绪折价10%，PE法目标价402元。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>方法二：DCF估值法（权重40%）</strong></span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;">WACC假设9.5%，永续增长率3.0%，2025-2027年自由现金流预测为280/380/490亿元，终值计算得企业价值约10,800亿元。扣除净债务后股权价值约10,200亿元，对应股价367元。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>综合目标价：</strong>402 x 60% + 367 x 40% = 388元，较当前价312元有24.4%上涨空间。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>敏感性分析：</strong>在WACC 8.5%-10.5%、PE 22-28x的假设区间内，目标价范围为340-440元。即使在最悲观情景下（WACC 10.5%, PE 22x），目标价340元仍高于当前价9%，下行风险有限。</span></p>
+
+  # 来源线
+  - elementId: source-line
+    elementType: shape
+    bounds: [60, 672, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 来源
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 678, 800, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Arial, MiSans;">Source: Wind, Bloomberg, XX证券研究所</span></p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 678, 120, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Arial, MiSans;">8</span></p>

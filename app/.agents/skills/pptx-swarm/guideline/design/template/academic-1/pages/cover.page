@@ -1,0 +1,145 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部细线
+  - elementId: cover-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  # 校徽占位
+  - elementId: cover-logo
+    elementType: shape
+    bounds: [80, 50, 45, 45]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$lightGray"
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  - elementId: cover-university
+    elementType: text
+    bounds: [135, 50, 300, 26]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>XX大学</strong></p>
+
+  - elementId: cover-university-en
+    elementType: text
+    bounds: [135, 76, 300, 20]
+    content:
+      fontSize: 12
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: XX University
+
+  # 中央标题区 - 极简风格
+  - elementId: cover-title-line-top
+    elementType: shape
+    bounds: [80, 230, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: cover-main-title
+    elementType: text
+    bounds: [80, 255, 1000, 60]
+    content:
+      fontSize: 38
+      color: "$darkGray"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>基于图神经网络的分子性质预测方法研究</strong></p>
+
+  - elementId: cover-subtitle-en
+    elementType: text
+    bounds: [80, 325, 1000, 28]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 1
+      wrap: false
+      text: |
+        <p>Research on Molecular Property Prediction Methods Based on Graph Neural Networks</p>
+
+  - elementId: cover-title-line-bottom
+    elementType: shape
+    bounds: [80, 375, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  # 信息区
+  - elementId: cover-author
+    elementType: text
+    bounds: [80, 420, 500, 26]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>答辩人：XXX    指导教师：XXX教授</p>
+
+  - elementId: cover-dept
+    elementType: text
+    bounds: [80, 455, 500, 26]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>XX学院 · 化学信息学专业</p>
+
+  - elementId: cover-date
+    elementType: text
+    bounds: [80, 490, 200, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 2025年X月
+
+  # 底部粗线
+  - elementId: cover-bottom-line
+    elementType: shape
+    bounds: [0, 716, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  # 右下角页面标识
+  - elementId: cover-type-label
+    elementType: text
+    bounds: [1050, 650, 180, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: THESIS DEFENSE

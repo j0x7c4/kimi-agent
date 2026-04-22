@@ -1,0 +1,225 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Action title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 12, 1100, 60]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>行业整合加速已从结构趋势转为现实——前五大玩家市占率三年累计提升19pp，尾部出清周期正式开启</strong></span></p>
+
+  - elementId: title-underline
+    elementType: shape
+    bounds: [60, 78, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Main combined chart (combo: bar + line)
+  - elementId: chart-label
+    elementType: text
+    bounds: [60, 88, 800, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#1A1A1A; font-family:Liter, MiSans;"><strong>行业集中度演变：CR5市占率（左轴，%）× 新增玩家数量（右轴，家）× 出清比率（折线，右轴）</strong></span></p>
+
+  - elementId: main-chart
+    elementType: chart
+    bounds: [60, 112, 830, 340]
+    type: combo
+    options:
+      fontFamily: "Liter, MiSans"
+    data:
+      - {year: "2020", cr5: 38, newplayer: 280, exitrate: 0.08}
+      - {year: "2021", cr5: 42, newplayer: 320, exitrate: 0.11}
+      - {year: "2022", cr5: 47, newplayer: 195, exitrate: 0.18}
+      - {year: "2023", cr5: 53, newplayer: 120, exitrate: 0.24}
+      - {year: "2024", cr5: 57, newplayer: 68, exitrate: 0.31}
+      - {year: "2025E", cr5: 61, newplayer: 42, exitrate: 0.38}
+    x: year
+    y: [cr5, newplayer, exitrate]
+    names: ["CR5市占率（%）", "新增玩家数（家）", "出清比率"]
+    colors: ["#8C1515", "#CCCCCC", "#1A1A1A"]
+    seriesStyle:
+      cr5: {type: bar, fill: {type: solid, color: "#8C1515"}}
+      newplayer: {type: bar, axis: secondary, fill: {type: solid, color: "#CCCCCC"}}
+      exitrate:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 5
+          fill: {type: solid, color: "#1A1A1A"}
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: false
+    xAxis:
+      label: {fontSize: 11, color: "$medgray"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 10, color: "#8C1515"}
+      gridLine: {color: "#F0F0F0", style: dash}
+      axisLine: false
+      numberFormat: "0"
+      title: {text: "CR5市占率（%）", fontSize: 11, color: "#8C1515"}
+    secondaryAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      title: {text: "新增玩家/出清比率", fontSize: 11, color: "$medgray"}
+
+  # Right side analysis panel
+  - elementId: analysis-panel-top
+    elementType: text
+    bounds: [914, 88, 326, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:2px"><strong>KEY OBSERVATIONS</strong></span></p>
+
+  - elementId: obs-line
+    elementType: shape
+    bounds: [914, 112, 180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  - elementId: obs1
+    elementType: text
+    bounds: [914, 120, 326, 116]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#8C1515; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>①  整合加速拐点</strong></span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">2022年是关键拐点年，新进入者骤降38%，出清比率首次突破15%阈值，行业从分散竞争进入集中整合阶段</span></p>
+
+  - elementId: obs1-sep
+    elementType: shape
+    bounds: [914, 244, 326, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: obs2
+    elementType: text
+    bounds: [914, 252, 326, 116]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#8C1515; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>②  资本效率分化</strong></span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">头部玩家单位资本产出（ROIC）达<strong>22%</strong>，尾部平均<strong>4%</strong>，差距是2020年的3倍，资本向头部集中趋势不可逆</span></p>
+
+  - elementId: obs2-sep
+    elementType: shape
+    bounds: [914, 376, 326, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: obs3
+    elementType: text
+    bounds: [914, 384, 326, 92]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#8C1515; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>③  并购窗口打开</strong></span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">估值洼地显现，优质资产折价率达<strong>40-60%</strong>，头部企业并购整合的性价比处于五年最高水位</span></p>
+
+  # Bottom analysis table
+  - elementId: table-label
+    elementType: text
+    bounds: [60, 464, 600, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#1A1A1A; font-family:Liter, MiSans;"><strong>头部玩家核心指标对比（2024年）</strong></span></p>
+
+  - elementId: competitor-table
+    elementType: table
+    bounds: [60, 490, 1160, 152]
+    style: "$default"
+    columnWidths: [0.18, 0.13, 0.13, 0.14, 0.14, 0.14, 0.14]
+    rowHeights: [0.22, 0.26, 0.26, 0.26]
+    rows:
+      - - content: {text: "公司"}
+        - content: {text: "市占率（%）"}
+        - content: {text: "收入增速（%）"}
+        - content: {text: "EBITDA利润率"}
+        - content: {text: "客户留存率"}
+        - content: {text: "R&D投入占比"}
+        - content: {text: "战略评级"}
+      - - content: {text: "领导者A", align: [left, middle]}
+          fill: {type: solid, color: "#FFFFFF"}
+        - content: {text: "22.4%"}
+        - content: {text: "+18%"}
+        - content: {text: "28.3%"}
+        - content: {text: "94%"}
+        - content: {text: "12.1%"}
+        - content: {text: "★★★★★", align: [center, middle]}
+          fill: {type: solid, color: "#FFF5F5"}
+      - - content: {text: "挑战者B", align: [left, middle]}
+          fill: {type: solid, color: "#F5F5F5"}
+        - content: {text: "15.8%"}
+        - content: {text: "+11%"}
+        - content: {text: "22.7%"}
+        - content: {text: "89%"}
+        - content: {text: "9.4%"}
+        - content: {text: "★★★★☆", align: [center, middle]}
+      - - content: {text: "跟随者C", align: [left, middle]}
+          fill: {type: solid, color: "#FFFFFF"}
+        - content: {text: "10.2%"}
+        - content: {text: "+4%"}
+        - content: {text: "16.8%"}
+        - content: {text: "82%"}
+        - content: {text: "6.2%"}
+        - content: {text: "★★★☆☆", align: [center, middle]}
+
+  # Footer
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 654, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 660, 960, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：<a href="https://www.bain.com">Bain Industry Consolidation Monitor, 2025</a>；Bloomberg行业数据；公司年报及贝恩自有测算模型</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 662, 60, 18]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>06</p>

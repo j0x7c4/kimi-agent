@@ -1,0 +1,342 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧侧边栏
+  - elementId: sidebar-bg
+    elementType: shape
+    bounds: [0, 0, 180, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$sidebarBg"
+
+  - elementId: sidebar-logo
+    elementType: shape
+    bounds: [14, 14, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: sidebar-active-bg
+    elementType: shape
+    bounds: [0, 356, 180, 92]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-item-1
+    elementType: text
+    bounds: [8, 80, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        01 研究背景
+
+  - elementId: sidebar-item-2
+    elementType: text
+    bounds: [8, 172, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        02 文献综述
+
+  - elementId: sidebar-item-3
+    elementType: text
+    bounds: [8, 264, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        03 研究方法
+
+  - elementId: sidebar-item-4
+    elementType: text
+    bounds: [8, 356, 164, 92]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04 实验结果</strong></p>
+
+  - elementId: sidebar-item-5
+    elementType: text
+    bounds: [8, 448, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        05 结论展望
+
+  - elementId: sidebar-deco
+    elementType: shape
+    bounds: [84, 590, 12, 12]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+  # 顶部面包屑
+  - elementId: breadcrumb-bg
+    elementType: shape
+    bounds: [180, 0, 1100, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: breadcrumb-text
+    elementType: text
+    bounds: [200, 0, 1020, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04 实验结果与讨论</strong>　›　4.3 关键性能指标</p>
+
+  - elementId: breadcrumb-page-num
+    elementType: text
+    bounds: [1230, 0, 50, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "09"
+
+  # 标题
+  - elementId: content-title
+    elementType: text
+    bounds: [200, 68, 1040, 36]
+    content:
+      style: "$pageTitle"
+      fontSize: 24
+      wrap: false
+      text: |
+        <p><strong>核心性能指标一览</strong></p>
+
+  - elementId: content-title-sep
+    elementType: shape
+    bounds: [200, 110, 1040, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#B0BEC5"
+
+  # 4个数据卡片
+  - elementId: kpi-1-bg
+    elementType: shape
+    bounds: [200, 128, 238, 150]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kpi-1-num
+    elementType: text
+    bounds: [200, 144, 238, 74]
+    content:
+      fontSize: 46
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>94.3%</strong></p>
+
+  - elementId: kpi-1-label
+    elementType: text
+    bounds: [200, 220, 238, 38]
+    content:
+      fontSize: 14
+      color: "$lightBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: Top-1 Accuracy
+
+  - elementId: kpi-2-bg
+    elementType: shape
+    bounds: [456, 128, 238, 150]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: kpi-2-num
+    elementType: text
+    bounds: [456, 144, 238, 74]
+    content:
+      fontSize: 46
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>+5.4%</strong></p>
+
+  - elementId: kpi-2-label
+    elementType: text
+    bounds: [456, 220, 238, 38]
+    content:
+      fontSize: 14
+      color: "$lightBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 相对基线提升
+
+  - elementId: kpi-3-bg
+    elementType: shape
+    bounds: [712, 128, 238, 150]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: kpi-3-num
+    elementType: text
+    bounds: [712, 144, 238, 74]
+    content:
+      fontSize: 46
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>2.8×</strong></p>
+
+  - elementId: kpi-3-label
+    elementType: text
+    bounds: [712, 220, 238, 38]
+    content:
+      fontSize: 14
+      color: "$lightBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 推理速度提升
+
+  - elementId: kpi-4-bg
+    elementType: shape
+    bounds: [968, 128, 252, 150]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+    border:
+      style: solid
+      width: 2
+      color: "$primary"
+
+  - elementId: kpi-4-num
+    elementType: text
+    bounds: [968, 144, 252, 74]
+    content:
+      fontSize: 46
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>31M</strong></p>
+
+  - elementId: kpi-4-label
+    elementType: text
+    bounds: [968, 220, 252, 38]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 模型参数量
+
+  # 图表区
+  - elementId: chart-area
+    elementType: shape
+    bounds: [200, 300, 630, 290]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+    border:
+      style: solid
+      width: 1
+      color: "#B0BEC5"
+
+  - elementId: chart-label
+    elementType: text
+    bounds: [200, 300, 630, 290]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Figure 5. 各数据集性能对比柱状图</p>
+
+  # 右侧文字分析
+  - elementId: analysis-title
+    elementType: text
+    bounds: [856, 308, 364, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>核心发现</strong></p>
+
+  - elementId: analysis-sep
+    elementType: shape
+    bounds: [856, 340, 180, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  - elementId: analysis-content
+    elementType: text
+    bounds: [856, 356, 364, 220]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>◆ 5/5数据集全面超越基线</p>
+        <p>◆ 小样本场景提升最显著</p>
+        <p>◆ 参数量仅为 ViT-L 的1/4</p>
+        <p>◆ p &lt; 0.001，统计显著</p>

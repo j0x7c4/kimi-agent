@@ -1,0 +1,291 @@
+pageType: content
+background:
+  type: solid
+  color: "#F4F1EA"
+elements:
+  # Left half: dark green
+  - elementId: left-bg
+    elementType: shape
+    bounds: [0, 0, 640, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1A3632"
+
+  - elementId: left-title
+    elementType: text
+    bounds: [72, 56, 520, 32]
+    content:
+      fontSize: 22
+      color: "#F4F1EA"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>成本结构拆解</strong></p>
+
+  # CAC
+  - elementId: cac-num
+    elementType: text
+    bounds: [72, 120, 520, 56]
+    content:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>$150</strong></p>
+
+  - elementId: cac-label
+    elementType: text
+    bounds: [72, 180, 520, 24]
+    content:
+      fontSize: 16
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Customer Acquisition Cost
+
+  - elementId: cac-detail
+    elementType: text
+    bounds: [72, 210, 520, 22]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Payback Period: 4.2 months</p>
+
+  # R&D
+  - elementId: rd-num
+    elementType: text
+    bounds: [72, 280, 520, 56]
+    content:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>28%</strong></p>
+
+  - elementId: rd-label
+    elementType: text
+    bounds: [72, 340, 520, 24]
+    content:
+      fontSize: 16
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: R&D as % of Revenue
+
+  - elementId: rd-detail
+    elementType: text
+    bounds: [72, 370, 520, 22]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Target: 25% by 2027 with scale leverage</p>
+
+  # OpEx
+  - elementId: opex-num
+    elementType: text
+    bounds: [72, 440, 520, 56]
+    content:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>$5.2M</strong></p>
+
+  - elementId: opex-label
+    elementType: text
+    bounds: [72, 500, 520, 24]
+    content:
+      fontSize: 16
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Annual Operating Expense (2024)
+
+  - elementId: opex-detail
+    elementType: text
+    bounds: [72, 530, 520, 22]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Efficiency ratio improving 15% YoY</p>
+
+  # Right half: oat background (already the page background)
+  - elementId: breadcrumb
+    elementType: text
+    bounds: [672, 16, 400, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Financial Model / Unit Economics
+
+  - elementId: right-title
+    elementType: text
+    bounds: [672, 56, 520, 32]
+    content:
+      fontSize: 22
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>利润率趋势预测</strong></p>
+
+  # 3 amber numbers
+  - elementId: margin-num-1
+    elementType: text
+    bounds: [672, 110, 180, 44]
+    content:
+      fontSize: 36
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>72%</strong></p>
+
+  - elementId: margin-label-1
+    elementType: text
+    bounds: [672, 156, 180, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: Gross Margin 2028E
+
+  - elementId: margin-num-2
+    elementType: text
+    bounds: [862, 110, 160, 44]
+    content:
+      fontSize: 36
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>30%</strong></p>
+
+  - elementId: margin-label-2
+    elementType: text
+    bounds: [862, 156, 160, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: Net Margin 2028E
+
+  - elementId: margin-num-3
+    elementType: text
+    bounds: [1032, 110, 160, 44]
+    content:
+      fontSize: 36
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>5.2x</strong></p>
+
+  - elementId: margin-label-3
+    elementType: text
+    bounds: [1032, 156, 160, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 3-Year ROI
+
+  # Margin trend chart
+  - elementId: margin-chart
+    elementType: chart
+    bounds: [672, 190, 520, 350]
+    type: combo
+    options:
+      fontFamily: "QuattrocentoSans, MiSans"
+    data:
+      - {year: "2024", revenue: 3.8, margin: -0.25}
+      - {year: "2025E", revenue: 8.5, margin: -0.08}
+      - {year: "2026E", revenue: 16.2, margin: 0.12}
+      - {year: "2027E", revenue: 25.0, margin: 0.22}
+      - {year: "2028E", revenue: 38.0, margin: 0.30}
+    x: year
+    y: [revenue, margin]
+    names: ["Revenue ($M)", "Net Margin"]
+    colors: ["#1A3632", "#D97706"]
+    seriesStyle:
+      revenue: {type: bar}
+      margin:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        fill:
+          type: solid
+          color: "#D97706"
+        marker:
+          shape: circle
+          size: 5
+          fill:
+            type: solid
+            color: "#D97706"
+          border: {style: solid, width: 2, color: "#D97706"}
+    legend: {position: top, fontSize: 12}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 11
+    xAxis:
+      label: {fontSize: 12, color: "#292524"}
+      gridLine: false
+      axisLine: {color: "#E1E7E5"}
+    yAxis:
+      label: {fontSize: 11, color: "#78716C"}
+      gridLine: {color: "#E1E7E5", style: dash}
+      axisLine: false
+    secondaryAxis:
+      label: {fontSize: 11, color: "#D97706"}
+      numberFormat: "0%"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [672, 568, 520, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Source: Internal financial model, 2025</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 56, 24]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "06"

@@ -1,0 +1,118 @@
+pageType: chapter
+background:
+  type: solid
+  color: "#F9F7F4"
+elements:
+  # Left navy vertical bar (15% = 192px)
+  - elementId: left-navy-bar
+    elementType: shape
+    bounds: [0, 0, 192, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  # Chapter number rotated text on left bar
+  - elementId: chapter-num-rotated
+    elementType: text
+    bounds: [16, 220, 160, 280]
+    rotation: -90
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:80px; color:#FFFFFF26; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>01</strong></span></p>
+
+  # Chapter label text on left bar
+  - elementId: chapter-label
+    elementType: text
+    bounds: [16, 560, 160, 100]
+    rotation: -90
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#D4956A99; font-family:SortsMillGoudy, MiSans, MiSans; letter-spacing:3px">CHAPTER ONE</span></p>
+
+  # Right area - chapter title
+  - elementId: section-title
+    elementType: text
+    bounds: [232, 160, 900, 140]
+    content:
+      align: [left, top]
+      lineHeight: 1.2
+      wrap: true
+      text: |
+        <p><span style="font-size:48px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>章节标题</strong></span></p>
+        <p><span style="font-size:24px; color:#5E8B9E; font-family:SortsMillGoudy, siyuanSongti, MiSans;">Section Title · Subtitle</span></p>
+
+  # Gold decorative line under title
+  - elementId: title-gold-line
+    elementType: shape
+    bounds: [232, 318, 300, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#D4956A"
+
+  # Section overview bullets
+  - elementId: bullet-1
+    elementType: text
+    bounds: [232, 350, 960, 50]
+    content:
+      align: [left, middle]
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">&#8226;  <strong>核心议题一</strong>：本章将深入探讨该研究方向的核心理论基础与学术脉络</span></p>
+
+  - elementId: bullet-2
+    elementType: text
+    bounds: [232, 420, 960, 50]
+    content:
+      align: [left, middle]
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">&#8226;  <strong>核心议题二</strong>：结合实证数据与案例分析，验证理论假设的适用边界</span></p>
+
+  - elementId: bullet-3
+    elementType: text
+    bounds: [232, 490, 960, 50]
+    content:
+      align: [left, middle]
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">&#8226;  <strong>核心议题三</strong>：提出政策启示与未来研究方向，推动学科前沿发展</span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [232, 660, 1008, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D6CFC4"
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 668, 60, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">03</span></p>
+
+  # Quotation mark watermark (bottom right, placed last for correct z-order)
+  - elementId: quote-watermark
+    elementType: text
+    bounds: [1000, 550, 220, 100]
+    opacity: 0.05
+    content:
+      align: [right, bottom]
+      wrap: false
+      text: |
+        <p><span style="font-size:80px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;">"</span></p>

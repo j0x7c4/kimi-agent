@@ -1,0 +1,165 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$title"
+      text: |
+        <p><strong>用户增长趋势分析：移动端成为主要增长引擎</strong></p>
+  
+  # 左侧分析文字
+  - elementId: analysis-title
+    elementType: text
+    bounds: [80, 140, 400, 30]
+    content:
+      style: "$subtitle"
+      text: |
+        <p>关键发现</p>
+  
+  - elementId: analysis-content
+    elementType: text
+    bounds: [80, 180, 400, 220]
+    content:
+      style: "$body"
+      text: |
+        <p>• <strong>移动端占比提升</strong>：从Q2的65%提升至73%，成为主要流量来源</p>
+        <p>• <strong>用户留存改善</strong>：30天留存率达到42%，环比提升8个百分点</p>
+        <p>• <strong>转化率优化</strong>：付费转化率从3.2%提升至4.1%，带来营收增长</p>
+        <p>• <strong>区域分布变化</strong>：二三线城市用户占比提升至58%</p>
+  
+  # 右侧图表区域
+  - elementId: chart-bg
+    elementType: shape
+    bounds: [520, 140, 680, 490]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+
+  - elementId: chart-title
+    elementType: text
+    bounds: [540, 155, 640, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>月度活跃用户增长趋势（百万）</strong></p>
+
+  - elementId: main-chart
+    elementType: chart
+    bounds: [540, 200, 640, 400]
+    type: line
+    data:
+      - {month: "1月", mobile: 0.95, pc: 0.55, total: 1.50}
+      - {month: "2月", mobile: 1.02, pc: 0.53, total: 1.55}
+      - {month: "3月", mobile: 1.10, pc: 0.52, total: 1.62}
+      - {month: "4月", mobile: 1.18, pc: 0.52, total: 1.70}
+      - {month: "5月", mobile: 1.28, pc: 0.50, total: 1.78}
+      - {month: "6月", mobile: 1.35, pc: 0.50, total: 1.85}
+      - {month: "7月", mobile: 1.42, pc: 0.48, total: 1.90}
+      - {month: "8月", mobile: 1.48, pc: 0.47, total: 1.95}
+      - {month: "9月", mobile: 1.53, pc: 0.47, total: 2.00}
+    x: month
+    y: [mobile, pc, total]
+    names: ["移动端", "PC端", "总计"]
+    colors: ["$accent", "$secondary", "$primary"]
+    seriesStyle:
+      "*":
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 6
+      total:
+        line: solid
+        width: 4
+    legend:
+      show: true
+      position: bottom
+    yAxis:
+      min: 0
+      max: 2.5
+      gridLine:
+        color: "$border"
+    xAxis:
+      label:
+        fontSize: 12
+  
+  # 底部洞察
+  - elementId: insight-bg
+    elementType: shape
+    bounds: [80, 420, 400, 210]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "#6AC06F10"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: insight-icon
+    elementType: icon
+    bounds: [100, 440, 24, 24]
+    iconName: "fas:lightbulb"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: insight-title
+    elementType: text
+    bounds: [130, 440, 330, 24]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p><strong>业务洞察</strong></p>
+
+  - elementId: insight-text
+    elementType: text
+    bounds: [100, 480, 360, 140]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      text: |
+        <p>移动端用户体验优化带来显著成效，建议Q4继续加大移动端功能投入，同时关注PC端用户流失原因。</p>
+  
+  # 底部导航
+  - elementId: nav-line
+    elementType: shape
+    bounds: [80, 660, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+  
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 670, 100, 30]
+    content:
+      fontSize: 12
+      color: "$tertiary"
+      fontFamily: "Liter, MiSans"
+      align: [right, middle]
+      text: |
+        <p>5</p>

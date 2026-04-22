@@ -1,0 +1,291 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深紫导航色带
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  - elementId: nav-left-accent
+    elementType: shape
+    bounds: [0, 0, 4, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB550"}
+
+  - elementId: nav-chapter-text
+    elementType: text
+    bounds: [20, 0, 900, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 03 模型设计与方法论 / 3.1 整体架构
+
+  - elementId: nav-page-num
+    elementType: text
+    bounds: [1200, 0, 60, 50]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "06"
+
+  # 标题区
+  - elementId: title-accent-mark
+    elementType: shape
+    bounds: [12, 68, 4, 40]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB5"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [24, 68, 1000, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>模型整体架构设计</strong></p>
+
+  - elementId: title-sep
+    elementType: shape
+    bounds: [24, 116, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E0D4F0"
+
+  # 三模块架构展示（横向）
+  # 模块1：输入编码
+  - elementId: module-1-bg
+    elementType: shape
+    bounds: [24, 130, 360, 380]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 2
+      color: "$primary"
+
+  - elementId: module-1-header
+    elementType: shape
+    bounds: [24, 130, 360, 48]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: module-1-header-text
+    elementType: text
+    bounds: [24, 130, 360, 48]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>模块 A：特征提取器</strong></p>
+
+  - elementId: module-1-content
+    elementType: text
+    bounds: [40, 194, 328, 300]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• 多尺度卷积核设计</p>
+        <p>• 跳跃连接机制</p>
+        <p>• 归一化层优化</p>
+        <p>• 输出维度：512-d</p>
+
+  # 箭头1
+  - elementId: arrow-1
+    elementType: shape
+    bounds: [394, 308, 50, 24]
+    shapeName: rightArrow
+    adjustments: [50000, 50000]
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 模块2：核心处理
+  - elementId: module-2-bg
+    elementType: shape
+    bounds: [454, 130, 360, 380]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 2
+      color: "$secondary"
+
+  - elementId: module-2-header
+    elementType: shape
+    bounds: [454, 130, 360, 48]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: module-2-header-text
+    elementType: text
+    bounds: [454, 130, 360, 48]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>模块 B：注意力机制</strong></p>
+
+  - elementId: module-2-content
+    elementType: text
+    bounds: [470, 194, 328, 300]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• 自注意力计算</p>
+        <p>• 跨模态融合</p>
+        <p>• 动态权重调整</p>
+        <p>• 位置编码增强</p>
+
+  # 箭头2
+  - elementId: arrow-2
+    elementType: shape
+    bounds: [824, 308, 50, 24]
+    shapeName: rightArrow
+    adjustments: [50000, 50000]
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 模块3：输出解码
+  - elementId: module-3-bg
+    elementType: shape
+    bounds: [884, 130, 360, 380]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  - elementId: module-3-header
+    elementType: shape
+    bounds: [884, 130, 360, 48]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: module-3-header-text
+    elementType: text
+    bounds: [884, 130, 360, 48]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>模块 C：预测解码器</strong></p>
+
+  - elementId: module-3-content
+    elementType: text
+    bounds: [900, 194, 328, 300]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• 多任务输出头</p>
+        <p>• 后处理优化</p>
+        <p>• 不确定性估计</p>
+        <p>• 可解释性模块</p>
+
+  # 底部训练策略描述
+  - elementId: training-bg
+    elementType: shape
+    bounds: [24, 530, 1232, 140]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#2D1B55"}
+        - {position: 1, color: "#432879"}
+
+  - elementId: training-title
+    elementType: text
+    bounds: [40, 544, 400, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>端到端训练策略</strong></p>
+
+  - elementId: training-content
+    elementType: text
+    bounds: [40, 580, 1180, 76]
+    content:
+      fontSize: 16
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>采用联合损失函数 L = αL_cls + βL_reg + γL_contrast，通过交替训练策略稳定优化三个模块，在保证各子任务精度的前提下实现全局最优。</p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "6"

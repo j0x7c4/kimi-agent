@@ -1,0 +1,142 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 60, 800, 50]
+    content:
+      style: "$title"
+      align: [left, middle]
+      text: |
+        <p><strong>全球主要产茶国产量对比</strong></p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 120, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 主图表区域
+  - elementId: main-chart
+    elementType: chart
+    bounds: [100, 160, 780, 380]
+    type: combo
+    title:
+      text: "主要产茶国年产量（千吨）"
+      fontSize: 24
+      color: "$text"
+    data:
+      - {country: "中国", production: 3100, growth: 0.06}
+      - {country: "印度", production: 1400, growth: 0.04}
+      - {country: "肯尼亚", production: 570, growth: 0.08}
+      - {country: "斯里兰卡", production: 300, growth: 0.02}
+      - {country: "土耳其", production: 280, growth: 0.05}
+    x: country
+    y: [production, growth]
+    names: ["年产量", "增长率"]
+    colors: ["$primary", "$accent"]
+    options:
+      fontFamily: "Liter, MiSans"
+      barWidth: 0.5
+    seriesStyle:
+      production:
+        type: bar
+        fill:
+          type: gradient
+          gradientType: linear
+          angle: -90
+          stops:
+            - {position: 0, color: "$primary"}
+            - {position: 1, color: "#2E5E8A80"}
+      growth:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        marker:
+          size: 8
+          fill: {type: solid, color: "$accent"}
+          border: {style: solid, width: 2, color: "#FFFFFF"}
+    xAxis:
+      label:
+        fontSize: 16
+        color: "$text"
+    yAxis:
+      title: "产量（千吨）"
+      numberFormat: "0"
+      gridLine:
+        color: "#F0F0F0"
+    secondaryAxis:
+      title: "同比增长率"
+      numberFormat: "0%"
+      min: 0
+      max: 0.25
+    legend:
+      position: top
+      fontSize: 14
+    dataLabels:
+      show: true
+      fontSize: 14
+
+  # 右侧洞察卡片
+  - elementId: insight-card
+    elementType: shape
+    bounds: [920, 160, 260, 380]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 10
+      color: "#00000008"
+      offset: [0, 4]
+
+  - elementId: insight-title
+    elementType: text
+    bounds: [940, 180, 220, 40]
+    content:
+      fontSize: 22
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>关键洞察</strong></p>
+
+  - elementId: insight-content
+    elementType: text
+    bounds: [940, 240, 220, 280]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p><strong>产量格局</strong></p>
+        <p>• 中国 <span style="color:$accent;">绝对领跑</span></p>
+        <p>• 印度紧随其后</p>
+        <p style="margin-top:16px;"><strong>新兴力量</strong></p>
+        <p>• 肯尼亚异军突起</p>
+
+  # 底部补充说明
+  - elementId: footer-note
+    elementType: text
+    bounds: [100, 560, 800, 30]
+    content:
+      style: "$caption"
+      align: [left, middle]
+      text: |
+        <p>数据来源：国际茶叶委员会（ITC）| 2025年统计数据</p>
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 670, 80, 30]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      text: |
+        <p>08</p>

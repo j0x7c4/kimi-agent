@@ -1,0 +1,142 @@
+pageType: content
+background:
+  type: solid
+  color: "#F9F7F4"
+elements:
+  # Top 4px navy header line
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  # Chapter name header (left)
+  - elementId: header-chapter
+    elementType: text
+    bounds: [60, 12, 700, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">第一章 · 研究背景与问题提出</span></p>
+
+  # Page number (right header)
+  - elementId: header-pagenum
+    elementType: text
+    bounds: [1200, 12, 60, 22]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">04</span></p>
+
+  # Main page title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 50, 1160, 56]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>知识陈述页：研究背景的多维解析</strong></span></p>
+
+  # Gold line under title
+  - elementId: title-gold-line
+    elementType: shape
+    bounds: [60, 112, 400, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  # Left column (45% width = ~558px, starts at x=60)
+  - elementId: left-col-text
+    elementType: text
+    bounds: [60, 130, 558, 420]
+    content:
+      fontSize: 20
+      color: "#2C3E50"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>概念界定与研究范畴</strong></span></p>
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">本研究聚焦于【研究领域】的核心问题，通过系统梳理国内外文献，构建理论分析框架。</span></p>
+        <p style="margin-top:16px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>研究问题的提出</strong></span></p>
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">随着全球化进程加速，【具体现象】引发了学术界对传统理论模型的反思与重构。</span></p>
+        <p style="margin-top:16px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>现有研究的局限</strong></span></p>
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">已有研究多停留于描述层面，缺乏对机制路径的深入探讨，本文尝试填补这一空白。</span></p>
+
+  # Right column (45% width = ~558px, starts at x=662)
+  - elementId: right-col-text
+    elementType: text
+    bounds: [662, 130, 558, 210]
+    content:
+      fontSize: 20
+      color: "#2C3E50"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>研究意义</strong></span></p>
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">本研究具有重要理论价值与现实意义，对推动学科发展、指导政策实践有积极贡献。</span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>研究方法概述</strong></span></p>
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">采用混合研究方法，结合定量数据分析与定性案例研究。</span></p>
+
+  # Highlighted key point block (gold left border + light gold background)
+  - elementId: highlight-bg
+    elementType: shape
+    bounds: [662, 350, 558, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFF0E6"
+    border:
+      style: none
+      width: 0
+      color: "#FFF0E6"
+
+  - elementId: highlight-border
+    elementType: shape
+    bounds: [662, 350, 4, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#D4956A"
+
+  - elementId: highlight-text
+    elementType: text
+    bounds: [674, 352, 538, 96]
+    content:
+      fontSize: 20
+      color: "#2C3E50"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, siyuanSongti, MiSans; color:#2B6777;"><strong>核心命题</strong>：【研究的核心命题或假设，用一句话清晰表达，字体衬线体突显学术性】</span></p>
+
+  # Footer reference area
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 620, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D6CFC4"
+
+  - elementId: footer-ref
+    elementType: text
+    bounds: [60, 628, 1100, 60]
+    content:
+      fontSize: 13
+      color: "#5E8B9E"
+      fontFamily: "Liter, MiSans, MiSans"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-style:italic; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">参考文献：[1] Author, A. B. (2024). Title of the article. <em>Journal Name</em>, Vol(Issue), pp-pp.  [2] 作者（2023）. 《文献标题》. 期刊名称，卷期，页码.</span></p>

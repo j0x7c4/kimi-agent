@@ -1,0 +1,385 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top structural bar
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Gold vertical accent bar left of title
+  - elementId: title-accent-bar
+    elementType: shape
+    bounds: [50, 10, 4, 54]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Page action title
+  - elementId: page-title
+    elementType: text
+    bounds: [62, 12, 1150, 50]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#0F2647; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>市场份额向头部集中加速，竞争维度从价格战转向技术与生态壁垒</strong></span></p>
+
+  # Horizontal divider
+  - elementId: title-divider
+    elementType: shape
+    bounds: [50, 68, 1180, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # ─── LEFT PANEL: PIE/DONUT CHART ───
+
+  # Left panel header bg
+  - elementId: left-header-bg
+    elementType: shape
+    bounds: [50, 76, 560, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: left-header-accent
+    elementType: shape
+    bounds: [50, 76, 3, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: left-header-text
+    elementType: text
+    bounds: [58, 76, 550, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0F2647; font-family:Liter, MiSans;"><strong>市场份额分布（2024年全年）</strong></span></p>
+
+  # Pie/donut chart
+  - elementId: market-share-chart
+    elementType: chart
+    bounds: [55, 102, 550, 430]
+    type: pie
+    options:
+      fontFamily: "Liter, MiSans"
+      innerRadius: 0.45
+    data:
+      - {company: "比亚迪", share: 28.4}
+      - {company: "特斯拉", share: 12.1}
+      - {company: "理想汽车", share: 7.6}
+      - {company: "蔚来", share: 3.2}
+      - {company: "小鹏", share: 2.8}
+      - {company: "合资品牌", share: 15.8}
+      - {company: "其他", share: 30.1}
+    x: company
+    y: [share]
+    colors: ["$primary", "$accent", "#2E6BC4", "#7BA3D0", "#A8C4E0", "#8899AA", "#D0D8E4"]
+    legend: {position: right, fontSize: 13}
+    dataLabels:
+      show: true
+      content: percentage
+      numberFormat: "0.0%"
+      fontSize: 12
+
+  # Left panel analysis note
+  - elementId: left-analysis-note
+    elementType: text
+    bounds: [55, 540, 550, 50]
+    content:
+      fontSize: 12
+      color: "$medgray"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; color:#8899AA; font-family:Liter, MiSans;">注：CR5较2022年提升18pp，头部集中趋势明显；合资品牌整体份额同比下降6.2pp</span></p>
+
+  # ─── RIGHT PANEL: COMPETITIVE DIMENSIONS ───
+
+  # Right panel header bg
+  - elementId: right-header-bg
+    elementType: shape
+    bounds: [630, 76, 600, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: right-header-accent
+    elementType: shape
+    bounds: [630, 76, 3, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: right-header-text
+    elementType: text
+    bounds: [638, 76, 590, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0F2647; font-family:Liter, MiSans;"><strong>竞争维度分析框架</strong></span></p>
+
+  # Dimension 1: Technology
+  - elementId: dim1-bg
+    elementType: shape
+    bounds: [635, 102, 590, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: dim1-accent
+    elementType: shape
+    bounds: [635, 102, 4, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: dim1-title
+    elementType: text
+    bounds: [648, 108, 570, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>01 技术壁垒 / Technology Moat</strong></span></p>
+
+  - elementId: dim1-text
+    elementType: text
+    bounds: [648, 132, 568, 44]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">电池能量密度、智能驾驶算法、垂直整合供应链已成核心差异化要素，研发投入占比成胜负手</span></p>
+
+  # Dimension 2: Ecosystem
+  - elementId: dim2-bg
+    elementType: shape
+    bounds: [635, 192, 590, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: dim2-accent
+    elementType: shape
+    bounds: [635, 192, 4, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: dim2-title
+    elementType: text
+    bounds: [648, 198, 570, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>02 生态系统 / Ecosystem Lock-in</strong></span></p>
+
+  - elementId: dim2-text
+    elementType: text
+    bounds: [648, 222, 568, 44]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">充电网络、OTA服务、车主社区构成用户粘性，换购率指标是生态强弱的最佳验证</span></p>
+
+  # Dimension 3: Scale
+  - elementId: dim3-bg
+    elementType: shape
+    bounds: [635, 282, 590, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: dim3-accent
+    elementType: shape
+    bounds: [635, 282, 4, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: dim3-title
+    elementType: text
+    bounds: [648, 288, 570, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>03 规模效应 / Economies of Scale</strong></span></p>
+
+  - elementId: dim3-text
+    elementType: text
+    bounds: [648, 312, 568, 44]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">年销量超50万辆为关键规模门槛，电池采购成本优化空间超18%，龙头优势不断扩大</span></p>
+
+  # Dimension 4: Globalization
+  - elementId: dim4-bg
+    elementType: shape
+    bounds: [635, 372, 590, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: dim4-accent
+    elementType: shape
+    bounds: [635, 372, 4, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: dim4-title
+    elementType: text
+    bounds: [648, 378, 570, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>04 全球化布局 / Global Expansion</strong></span></p>
+
+  - elementId: dim4-text
+    elementType: text
+    bounds: [648, 402, 568, 44]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">东南亚、欧洲市场成为第二增长曲线，出口量占国内销量比重从5%升至14%，关税风险需关注</span></p>
+
+  # Dimension 5: Policy
+  - elementId: dim5-bg
+    elementType: shape
+    bounds: [635, 462, 590, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: dim5-accent
+    elementType: shape
+    bounds: [635, 462, 4, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: dim5-title
+    elementType: text
+    bounds: [648, 468, 570, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>05 政策敏感度 / Policy Sensitivity</strong></span></p>
+
+  - elementId: dim5-text
+    elementType: text
+    bounds: [648, 492, 568, 24]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">国补退出后市场验证消费内生动力，政策红利边际递减，基本面驱动成为主线</span></p>
+
+  # Bottom insight bar
+  - elementId: bottom-insight-bg
+    elementType: shape
+    bounds: [50, 600, 1180, 48]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bottom-insight-text
+    elementType: text
+    bounds: [66, 600, 1150, 48]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#ffffff; font-family:Liter, MiSans;"><strong>核心判断：</strong>行业竞争已从单一价格维度升级为技术+生态+规模的多维博弈，具备全方位优势的企业将持续扩大领先地位</span></p>
+
+  # ─── FOOTER ───
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 660, 600, 30]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：乘联会、中汽协，统计口径为国内批发销量，2024全年累计</p>
+
+  - elementId: disclaimer-text
+    elementType: text
+    bounds: [460, 664, 600, 22]
+    content:
+      align: [right, middle]
+      fontSize: 11
+      color: "$medgray"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p>分析仅供参考，不构成投资建议</p>
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1200, 664, 60, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>07</p>

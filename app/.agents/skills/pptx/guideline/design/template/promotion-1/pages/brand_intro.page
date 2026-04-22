@@ -1,0 +1,159 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: header-line
+    elementType: shape
+    bounds:
+      - 60
+      - 90
+      - 580
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#C4A87C60"
+  - elementId: headline
+    elementType: text
+    bounds:
+      - 60
+      - 110
+      - 580
+      - 70
+    wrap: false
+    content:
+      fontSize: 40
+      color: $primary
+      fontFamily: Oranienbaum, siyuanSongti
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>Always New, Always Miu.</p>
+  - elementId: feature-1
+    elementType: text
+    bounds:
+      - 60
+      - 220
+      - 580
+      - 55
+    content:
+      fontSize: 16
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>褶皱与荷叶边</strong><span style="color:#8B7355;">　｜　</span>混合浪漫与少女气息<span style="color:#8B7355;">　　　　　</span><span style="color:#C4A87C;">Pleats and Ruffles</span></p>
+  - elementId: line-1
+    elementType: shape
+    bounds:
+      - 60
+      - 280
+      - 580
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#E8E0D5"
+  - elementId: feature-2
+    elementType: text
+    bounds:
+      - 60
+      - 295
+      - 580
+      - 55
+    content:
+      fontSize: 16
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>华丽的纽扣与装饰</strong><span style="color:#8B7355;">　｜　</span>世纪精致做工<span style="color:#8B7355;">　　</span><span style="color:#C4A87C;">Ornate Buttons</span></p>
+  - elementId: line-2
+    elementType: shape
+    bounds:
+      - 60
+      - 355
+      - 580
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#E8E0D5"
+  - elementId: feature-3
+    elementType: text
+    bounds:
+      - 60
+      - 370
+      - 580
+      - 55
+    content:
+      fontSize: 16
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>大胆的色彩碰撞</strong><span style="color:#8B7355;">　｜　</span>从粉红与深红、宝蓝与翠绿的撞色<span style="color:#8B7355;">　</span><span style="color:#C4A87C;">Bold Color Clashes</span></p>
+  - elementId: line-3
+    elementType: shape
+    bounds:
+      - 60
+      - 430
+      - 580
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#E8E0D5"
+  - elementId: feature-4
+    elementType: text
+    bounds:
+      - 60
+      - 445
+      - 580
+      - 55
+    content:
+      fontSize: 16
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>复古印花</strong><span style="color:#8B7355;">　｜　</span>呼唤复古老电影或古典油画中的图案<span style="color:#8B7355;">　　　</span><span style="color:#C4A87C;">Vintage Prints</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 60
+      - 660
+      - 580
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#E8E0D5"
+  - elementId: right-image
+    elementType: image
+    bounds:
+      - 680
+      - 0
+      - 600
+      - 720
+    src: https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1200&q=80

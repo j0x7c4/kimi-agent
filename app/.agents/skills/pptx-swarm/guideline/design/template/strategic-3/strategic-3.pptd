@@ -1,0 +1,65 @@
+title: 战略规划模板（The Dark Matter）
+size:
+  - 1280
+  - 720
+theme:
+  colors:
+    background: "#0A0A0A"
+    cardBg: "#171717"
+    cardBg2: "#262626"
+    text: "#F8FAFC"
+    green: "#10B981"
+    blue: "#3B82F6"
+    dim: "#A3A3A3"
+    white: "#F8FAFC"
+  textStyles:
+    title:
+      fontSize: 48
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+    pageTitle:
+      fontSize: 34
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+    subtitle:
+      fontSize: 24
+      color: $dim
+      fontFamily: QuattrocentoSans, MiSans
+    body:
+      fontSize: 22
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+    caption:
+      fontSize: 13
+      color: $dim
+      fontFamily: QuattrocentoSans, MiSans
+    bignum:
+      fontSize: 60
+      color: $green
+      fontFamily: QuattrocentoSans, MiSans
+  tableStyles:
+    default:
+      fontSize: 16
+      fontFamily: QuattrocentoSans, MiSans
+      headerFill: $cardBg2
+      headerColor: $white
+      headerBold: true
+      bodyFill:
+        - $cardBg
+        - $background
+      bodyColor: $white
+      border:
+        style: none
+        width: 1
+        color: "#00000000"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/problem.page
+  - pages/solution.page
+  - pages/traction.page
+  - pages/moat.page
+  - pages/the_ask.page
+  - pages/final.page

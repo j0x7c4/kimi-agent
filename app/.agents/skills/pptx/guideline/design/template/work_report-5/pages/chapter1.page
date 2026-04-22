@@ -1,0 +1,62 @@
+pageType: chapter
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 深色背景块
+  - elementId: bg-block
+    elementType: shape
+    bounds: [0, 200, 1280, 320]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+  
+  # 章节编号
+  - elementId: chapter-num
+    elementType: text
+    bounds: [80, 280, 200, 80]
+    content:
+      fontSize: 72
+      color: "#FDFDFD20"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p>01</p>
+  
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [320, 300, 640, 60]
+    content:
+      fontSize: 40
+      color: "#FDFDFD"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>核心成果概览</strong></p>
+  
+  # 章节描述
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [320, 370, 640, 40]
+    content:
+      fontSize: 18
+      color: "#ABB9C3"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p>Q3关键指标达成情况与业务亮点</p>
+  
+  # 装饰线条
+  - elementId: deco-line
+    elementType: shape
+    bounds: [320, 440, 200, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"

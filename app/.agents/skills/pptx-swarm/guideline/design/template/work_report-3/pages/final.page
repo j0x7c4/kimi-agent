@@ -1,0 +1,71 @@
+pageType: final
+background:
+  type: gradient
+  gradientType: linear
+  angle: 180
+  stops:
+    - {position: 0, color: "$darkBg"}
+    - {position: 0.6, color: "$primary"}
+    - {position: 1, color: "$secondary"}
+elements:
+  # 装饰性形状
+  - elementId: deco-circle1
+    elementType: shape
+    bounds: [50, 50, 160, 160]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF08"
+  
+  - elementId: deco-circle2
+    elementType: shape
+    bounds: [980, 420, 300, 300]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF05"
+  
+  # 感谢语
+  - elementId: thank-you
+    elementType: text
+    bounds: [140, 240, 1000, 80]
+    content:
+      fontSize: 56
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>谢谢聆听</p>
+  
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [440, 360, 400, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+  
+  # 联系信息
+  - elementId: contact-info
+    elementType: text
+    bounds: [340, 390, 600, 140]
+    content:
+      fontSize: 16
+      color: "#F5F8F7"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      lineHeight: 1.6
+      text: |
+        <p>如有任何问题，欢迎随时沟通</p>
+        <p style="margin-top:16px;">Email: xxx@company.com</p>
+        <p>Tel: 400-XXX-XXXX</p>
+  
+  # Logo
+  - elementId: logo-final
+    elementType: shape
+    bounds: [580, 560, 120, 32]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF20"

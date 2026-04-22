@@ -1,0 +1,301 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 60, 800, 50]
+    content:
+      style: "$title"
+      align: [left, middle]
+      text: |
+        <p><strong>茶叶制作工艺流程</strong></p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 120, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 流程节点1 - 采摘
+  - elementId: node1-circle
+    elementType: shape
+    bounds: [140, 220, 80, 80]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: node1-number
+    elementType: text
+    bounds: [140, 220, 80, 80]
+    content:
+      fontSize: 32
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p><strong>01</strong></p>
+
+  - elementId: node1-title
+    elementType: text
+    bounds: [100, 320, 160, 30]
+    content:
+      fontSize: 20
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>采摘</strong></p>
+
+  - elementId: node1-desc
+    elementType: text
+    bounds: [80, 360, 200, 120]
+    content:
+      style: "$body"
+      align: [center, top]
+      text: |
+        <p>选取嫩芽</p>
+        <p>春茶为上品</p>
+        <p><span style="color:$textLight;">清晨采摘最佳</span></p>
+
+  # 连接线1-2
+  - elementId: line1-2
+    elementType: shape
+    bounds: [220, 260, 140, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border:
+      style: solid
+      width: 3
+      color: "$secondary"
+
+  # 流程节点2 - 萎凋
+  - elementId: node2-circle
+    elementType: shape
+    bounds: [360, 220, 80, 80]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: node2-number
+    elementType: text
+    bounds: [360, 220, 80, 80]
+    content:
+      fontSize: 32
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p><strong>02</strong></p>
+
+  - elementId: node2-title
+    elementType: text
+    bounds: [320, 320, 160, 30]
+    content:
+      fontSize: 20
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>萎凋</strong></p>
+
+  - elementId: node2-desc
+    elementType: text
+    bounds: [300, 360, 200, 120]
+    content:
+      style: "$body"
+      align: [center, top]
+      text: |
+        <p>鲜叶摊放</p>
+        <p>降低含水量</p>
+        <p><span style="color:$textLight;">时长因茶而异</span></p>
+
+  # 连接线2-3
+  - elementId: line2-3
+    elementType: shape
+    bounds: [440, 260, 140, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border:
+      style: solid
+      width: 3
+      color: "$secondary"
+
+  # 流程节点3 - 揉捻
+  - elementId: node3-circle
+    elementType: shape
+    bounds: [580, 220, 80, 80]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: node3-number
+    elementType: text
+    bounds: [580, 220, 80, 80]
+    content:
+      fontSize: 32
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p><strong>03</strong></p>
+
+  - elementId: node3-title
+    elementType: text
+    bounds: [540, 320, 160, 30]
+    content:
+      fontSize: 20
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>揉捻</strong></p>
+
+  - elementId: node3-desc
+    elementType: text
+    bounds: [520, 360, 200, 120]
+    content:
+      style: "$body"
+      align: [center, top]
+      text: |
+        <p>破坏细胞</p>
+        <p>释放茶汁</p>
+        <p><span style="color:$textLight;">塑造条形</span></p>
+
+  # 连接线3-4
+  - elementId: line3-4
+    elementType: shape
+    bounds: [660, 260, 140, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border:
+      style: solid
+      width: 3
+      color: "$secondary"
+
+  # 流程节点4 - 发酵
+  - elementId: node4-circle
+    elementType: shape
+    bounds: [800, 220, 80, 80]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: node4-number
+    elementType: text
+    bounds: [800, 220, 80, 80]
+    content:
+      fontSize: 32
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p><strong>04</strong></p>
+
+  - elementId: node4-title
+    elementType: text
+    bounds: [760, 320, 160, 30]
+    content:
+      fontSize: 20
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>发酵</strong></p>
+
+  - elementId: node4-desc
+    elementType: text
+    bounds: [740, 360, 200, 120]
+    content:
+      style: "$body"
+      align: [center, top]
+      text: |
+        <p>氧化反应</p>
+        <p>决定茶类</p>
+        <p><span style="color:$textLight;">绿茶不发酵</span></p>
+
+  # 连接线4-5
+  - elementId: line4-5
+    elementType: shape
+    bounds: [880, 260, 140, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border:
+      style: solid
+      width: 3
+      color: "$secondary"
+
+  # 流程节点5 - 干燥
+  - elementId: node5-circle
+    elementType: shape
+    bounds: [1020, 220, 80, 80]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: node5-number
+    elementType: text
+    bounds: [1020, 220, 80, 80]
+    content:
+      fontSize: 32
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p><strong>05</strong></p>
+
+  - elementId: node5-title
+    elementType: text
+    bounds: [980, 320, 160, 30]
+    content:
+      fontSize: 20
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>干燥</strong></p>
+
+  - elementId: node5-desc
+    elementType: text
+    bounds: [960, 360, 200, 120]
+    content:
+      style: "$body"
+      align: [center, top]
+      text: |
+        <p>高温烘焙</p>
+        <p>固定品质</p>
+        <p><span style="color:$accent;">便于储存</span></p>
+
+  # 底部总结
+  - elementId: summary-bg
+    elementType: shape
+    bounds: [100, 480, 1080, 80]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#F5F5F010"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+
+  - elementId: summary-text
+    elementType: text
+    bounds: [140, 490, 1000, 60]
+    content:
+      fontSize: 20
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p>六大茶类：<span style="color:$accent; font-size:24px;"><strong>绿·白·黄·青·红·黑</strong></span> | 发酵程度从 <span style="color:$accent;"><strong>0%</strong></span> 到 <span style="color:$accent;"><strong>100%</strong></span> | 工艺决定风味</p>
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 670, 80, 30]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      text: |
+        <p>07</p>

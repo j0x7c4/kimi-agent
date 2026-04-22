@@ -1,0 +1,64 @@
+title: 大学/教育讲座模板
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#2B6777"
+    secondary: "#5E8B9E"
+    accent: "#D4956A"
+    rose: "#C17050"
+    background: "#F9F7F4"
+    text: "#2C3E50"
+    white: "#FFFFFF"
+    lightgold: "#FFF0E6"
+    border: "#D6CFC4"
+    lightgray: "#EDE9E3"
+  textStyles:
+    coverTitle:
+      fontSize: 44
+      color: "#FFFFFF"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.2
+    pageTitle:
+      fontSize: 32
+      color: "#2B6777"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.2
+    sectionTitle:
+      fontSize: 48
+      color: "#2B6777"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.2
+    body:
+      fontSize: 20
+      color: "#2C3E50"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.5
+    caption:
+      fontSize: 13
+      color: "#5E8B9E"
+      fontFamily: "Liter, MiSans, MiSans"
+      lineHeight: 1.3
+  tableStyles:
+    default:
+      fontSize: 18
+      fontFamily: "Liter, MiSans, MiSans"
+      headerFill: "#2B6777"
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill: ["#F9F7F4", "#EDE9E3"]
+      bodyColor: "#2C3E50"
+      firstColumnBold: true
+      border:
+        style: solid
+        width: 1
+        color: "#D4956A"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/section.page
+  - pages/content1.page
+  - pages/content2.page
+  - pages/content3.page
+  - pages/content4.page
+  - pages/content5.page
+  - pages/final.page

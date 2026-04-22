@@ -1,0 +1,261 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # ALL CAPS page title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 18, 900, 42]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:22px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>STRUCTURAL FRAGMENTATION CREATES CLEAR CONSOLIDATION OPPORTUNITY</strong></span></p>
+
+  # Chinese subtitle
+  - elementId: page-subtitle
+    elementType: text
+    bounds: [50, 62, 900, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">市场结构性分散创造明确整合机会，龙头战略卡位至关重要</span></p>
+
+  # 2px red line
+  - elementId: title-red-line
+    elementType: shape
+    bounds: [50, 88, 800, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Left: pie/donut chart
+  - elementId: market-pie-chart
+    elementType: chart
+    bounds: [50, 94, 560, 340]
+    type: pie
+    options:
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      innerRadius: 0.55
+    data:
+      - {name: "龙头A", value: 22.3}
+      - {name: "龙头B", value: 19.1}
+      - {name: "挑战者C", value: 11.2}
+      - {name: "挑战者D", value: 8.6}
+      - {name: "跟随者E+F", value: 8.8}
+      - {name: "其他", value: 30.0}
+    colors: ["$primary", "$secondary", "$chartcolor1", "$chartcolor2", "$chartcolor3", "$border"]
+    legend: {position: right, fontSize: 11}
+    dataLabels:
+      show: true
+      content: percent
+      fontSize: 11
+
+  # Below left chart: 3 callout stats with red numbers
+  - elementId: pie-stat1-num
+    elementType: text
+    bounds: [50, 446, 170, 46]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#D91E18; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>CR2 41%</strong></span></p>
+
+  - elementId: pie-stat1-label
+    elementType: text
+    bounds: [50, 494, 170, 48]
+    content:
+      align: [center, top]
+      wrap: true
+      lineHeight: 1.4
+      text: |
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">前二名合计</span></p>
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">Top-2 Share</span></p>
+
+  - elementId: pie-stat2-num
+    elementType: text
+    bounds: [240, 446, 170, 46]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#D91E18; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>+8pp</strong></span></p>
+
+  - elementId: pie-stat2-label
+    elementType: text
+    bounds: [240, 494, 170, 48]
+    content:
+      align: [center, top]
+      wrap: true
+      lineHeight: 1.4
+      text: |
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">5年集中度提升</span></p>
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">5Y Concentration Gain</span></p>
+
+  - elementId: pie-stat3-num
+    elementType: text
+    bounds: [430, 446, 170, 46]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#2C2C2C; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>30%</strong></span></p>
+
+  - elementId: pie-stat3-label
+    elementType: text
+    bounds: [430, 494, 170, 48]
+    content:
+      align: [center, top]
+      wrap: true
+      lineHeight: 1.4
+      text: |
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">尾部其他合计</span></p>
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">Long Tail Others</span></p>
+
+  # Right: 4 competitive dimension blocks with red left-border headers
+  # Block 1
+  - elementId: comp-border1
+    elementType: shape
+    bounds: [640, 94, 3, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: comp-label1
+    elementType: text
+    bounds: [648, 94, 592, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;"><strong>VALUE PROPOSITION 价值主张</strong></span></p>
+
+  - elementId: comp-content1
+    elementType: text
+    bounds: [648, 124, 582, 80]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">龙头企业以"品质+服务+规模"构建差异化价值体系；挑战者以价格竞争为主；尾部企业价值定位模糊，客户黏性低，面临出清压力。</span></p>
+
+  # Block 2
+  - elementId: comp-border2
+    elementType: shape
+    bounds: [640, 212, 3, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: comp-label2
+    elementType: text
+    bounds: [648, 212, 592, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;"><strong>CHANNEL STRATEGY 渠道策略</strong></span></p>
+
+  - elementId: comp-content2
+    elementType: text
+    bounds: [648, 242, 582, 80]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">龙头已完成线上线下一体化布局，直销占比超60%；中小企业仍依赖传统经销商，渠道成本高、响应慢，数字化转型滞后。</span></p>
+
+  # Block 3
+  - elementId: comp-border3
+    elementType: shape
+    bounds: [640, 330, 3, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: comp-label3
+    elementType: text
+    bounds: [648, 330, 592, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;"><strong>TECHNOLOGY MOAT 技术壁垒</strong></span></p>
+
+  - elementId: comp-content3
+    elementType: text
+    bounds: [648, 360, 582, 80]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">龙头研发投入占营收18%+，AI与数字化能力已形成竞争壁垒；中小企业研发费用率仅6-10%，难以在技术维度实现突破。</span></p>
+
+  # Block 4
+  - elementId: comp-border4
+    elementType: shape
+    bounds: [640, 448, 3, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: comp-label4
+    elementType: text
+    bounds: [648, 448, 592, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;"><strong>STRATEGIC OUTLOOK 战略展望</strong></span></p>
+
+  - elementId: comp-content4
+    elementType: text
+    bounds: [648, 478, 582, 80]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">建议聚焦龙头A与龙头B的核心赛道，把握市场整合窗口期；关注技术壁垒高、现金流稳健的标的；规避尾部高风险企业。</span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Source
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 662, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：行业协会、公司年报、Bain市场研究数据库</p>
+
+  # Page number
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 662, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>07</p>

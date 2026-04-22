@@ -1,0 +1,70 @@
+title: 灵感方舟 - 成人学习模板
+size:
+  - 1280
+  - 720
+theme:
+  colors:
+    primary: "#1C4D5F"
+    secondary: "#8A857D"
+    accent: "#E07A5F"
+    accent2: "#6B8E23"
+    background: "#F5F5F0"
+    card: "#FFFFFF"
+    text: "#333333"
+    textLight: "#777777"
+    textWhite: "#FFFFFF"
+    textGray: "#A0A0A0"
+  textStyles:
+    mainTitle:
+      fontSize: 48
+      color: $textWhite
+      fontFamily: Liter, MiSans
+    title:
+      fontSize: 36
+      color: $primary
+      fontFamily: Liter, MiSans
+    subtitle:
+      fontSize: 20
+      color: "#E0E0E0"
+      fontFamily: Liter, MiSans
+    body:
+      fontSize: 18
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+    emphasis:
+      fontSize: 24
+      color: $accent
+      fontFamily: Liter, MiSans
+    caption:
+      fontSize: 14
+      color: $textLight
+      fontFamily: Liter, MiSans
+    number:
+      fontSize: 32
+      color: $accent
+      fontFamily: Liter, MiSans
+  tableStyles:
+    default:
+      headerFill: $primary
+      headerColor: $textWhite
+      headerBold: true
+      bodyFill:
+        - $card
+        - $background
+      bodyColor: $text
+      border:
+        style: solid
+        width: 1
+        color: "#D0D0D0"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/concept.page
+  - pages/process.page
+  - pages/comparison.page
+  - pages/case_study.page
+  - pages/framework.page
+  - pages/practice.page
+  - pages/final.page

@@ -1,0 +1,142 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: toc-title
+    elementType: text
+    bounds: [80, 50, 400, 40]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#263238; font-family:SortsMillGoudy, MiSans;"><strong>目录</strong></span></p>
+
+  # 标题下方细线
+  - elementId: toc-title-line
+    elementType: shape
+    bounds: [80, 95, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 目录项1
+  - elementId: toc-item-1
+    elementType: text
+    bounds: [80, 120, 1120, 70]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:22px; color:#37474F; font-family:SortsMillGoudy, MiSans;"><strong>01</strong></span><span style="font-size:22px; color:#37474F; font-family:Liter, MiSans;">&#12288;&#12288;行业趋势：全球新能源汽车市场格局与增长驱动</span></p>
+
+  # 分隔线1
+  - elementId: toc-line-1
+    elementType: shape
+    bounds: [80, 195, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  # 目录项2
+  - elementId: toc-item-2
+    elementType: text
+    bounds: [80, 210, 1120, 70]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:22px; color:#37474F; font-family:SortsMillGoudy, MiSans;"><strong>02</strong></span><span style="font-size:22px; color:#37474F; font-family:Liter, MiSans;">&#12288;&#12288;产业链分析：上中下游竞争格局与利润分布</span></p>
+
+  # 分隔线2
+  - elementId: toc-line-2
+    elementType: shape
+    bounds: [80, 285, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  # 目录项3
+  - elementId: toc-item-3
+    elementType: text
+    bounds: [80, 300, 1120, 70]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:22px; color:#37474F; font-family:SortsMillGoudy, MiSans;"><strong>03</strong></span><span style="font-size:22px; color:#37474F; font-family:Liter, MiSans;">&#12288;&#12288;重点公司：核心标的经营分析与竞争优势拆解</span></p>
+
+  # 分隔线3
+  - elementId: toc-line-3
+    elementType: shape
+    bounds: [80, 375, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  # 目录项4
+  - elementId: toc-item-4
+    elementType: text
+    bounds: [80, 390, 1120, 70]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:22px; color:#37474F; font-family:SortsMillGoudy, MiSans;"><strong>04</strong></span><span style="font-size:22px; color:#37474F; font-family:Liter, MiSans;">&#12288;&#12288;财务模型：盈利预测与敏感性分析</span></p>
+
+  # 分隔线4
+  - elementId: toc-line-4
+    elementType: shape
+    bounds: [80, 465, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  # 目录项5
+  - elementId: toc-item-5
+    elementType: text
+    bounds: [80, 480, 1120, 70]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:22px; color:#37474F; font-family:SortsMillGoudy, MiSans;"><strong>05</strong></span><span style="font-size:22px; color:#37474F; font-family:Liter, MiSans;">&#12288;&#12288;估值与建议：目标价推导与投资评级</span></p>
+
+  # 分隔线5
+  - elementId: toc-line-5
+    elementType: shape
+    bounds: [80, 555, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  # 底部细线
+  - elementId: toc-footer-line
+    elementType: shape
+    bounds: [80, 668, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 页码
+  - elementId: toc-page-num
+    elementType: text
+    bounds: [1100, 672, 100, 22]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">2</span></p>

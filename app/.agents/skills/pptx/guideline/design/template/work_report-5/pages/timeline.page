@@ -1,0 +1,264 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$title"
+      text: |
+        <p><strong>重点项目进度追踪：15个项目全部按期交付</strong></p>
+  
+  # 时间轴主线
+  - elementId: timeline-main
+    elementType: shape
+    bounds: [120, 300, 1040, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$tertiary"
+  
+  # Q1节点
+  - elementId: q1-dot
+    elementType: shape
+    bounds: [200, 290, 20, 20]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 3
+      color: "#FFFFFF"
+  
+  - elementId: q1-line
+    elementType: shape
+    bounds: [210, 220, 1, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$tertiary"
+
+  - elementId: q1-card
+    elementType: shape
+    bounds: [130, 130, 160, 90]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 4
+      color: "#00000005"
+      offset: [0, 2]
+  
+  - elementId: q1-text
+    elementType: text
+    bounds: [140, 138, 140, 75]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      lineHeight: 1.4
+      text: |
+        <p><strong>Q1</strong></p>
+        <p style="font-size:12px">项目启动</p>
+        <p style="font-size:12px; color:$accent">3个项目</p>
+  
+  # Q2节点
+  - elementId: q2-dot
+    elementType: shape
+    bounds: [480, 290, 20, 20]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 3
+      color: "#FFFFFF"
+  
+  - elementId: q2-line
+    elementType: shape
+    bounds: [490, 310, 1, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$tertiary"
+
+  - elementId: q2-card
+    elementType: shape
+    bounds: [410, 375, 160, 120]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 4
+      color: "#00000005"
+      offset: [0, 2]
+  
+  - elementId: q2-text
+    elementType: text
+    bounds: [420, 383, 140, 105]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      lineHeight: 1.4
+      text: |
+        <p><strong>Q2</strong></p>
+        <p style="font-size:12px">开发阶段</p>
+        <p style="font-size:12px; color:$accent">5个项目</p>
+        <p style="font-size:12px">2个延期风险</p>
+  
+  # Q3节点
+  - elementId: q3-dot
+    elementType: shape
+    bounds: [760, 290, 20, 20]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+    border:
+      style: solid
+      width: 3
+      color: "#FFFFFF"
+  
+  - elementId: q3-line
+    elementType: shape
+    bounds: [770, 220, 1, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$tertiary"
+
+  - elementId: q3-card
+    elementType: shape
+    bounds: [690, 130, 160, 90]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$accent"
+    shadow:
+      blur: 4
+      color: "#00000005"
+      offset: [0, 2]
+  
+  - elementId: q3-text
+    elementType: text
+    bounds: [700, 138, 140, 75]
+    content:
+      fontSize: 14
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      lineHeight: 1.4
+      text: |
+        <p><strong>Q3</strong></p>
+        <p style="font-size:12px">全部交付</p>
+        <p style="font-size:12px">15个项目</p>
+  
+  # Q4节点
+  - elementId: q4-dot
+    elementType: shape
+    bounds: [1040, 290, 20, 20]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$secondary"
+    border:
+      style: solid
+      width: 3
+      color: "#FFFFFF"
+  
+  - elementId: q4-line
+    elementType: shape
+    bounds: [1050, 310, 1, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$tertiary"
+
+  - elementId: q4-card
+    elementType: shape
+    bounds: [970, 375, 160, 100]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 4
+      color: "#00000005"
+      offset: [0, 2]
+  
+  - elementId: q4-text
+    elementType: text
+    bounds: [980, 383, 140, 85]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      lineHeight: 1.4
+      text: |
+        <p><strong>Q4</strong></p>
+        <p style="font-size:12px">计划中</p>
+        <p style="font-size:12px; color:$secondary">8个项目</p>
+  
+  # 项目详情表格
+  - elementId: detail-table
+    elementType: table
+    bounds: [80, 520, 1120, 130]
+    columnWidths: [0.4, 0.2, 0.2, 0.2]
+    rowHeights: [0.25, 0.25, 0.25, 0.25]
+    style: "$default"
+    rows:
+      - - content: {text: "重点项目", align: [center, middle]}
+        - content: {text: "负责人", align: [center, middle]}
+        - content: {text: "状态", align: [center, middle]}
+        - content: {text: "完成度", align: [center, middle]}
+      - - content: {text: "移动端2.0改版"}
+        - content: {text: "产品组"}
+        - content: {text: "已完成", color: "$accent"}
+        - content: {text: "100%"}
+      - - content: {text: "数据中台建设"}
+        - content: {text: "技术组"}
+        - content: {text: "已完成", color: "$accent"}
+        - content: {text: "100%"}
+      - - content: {text: "营销自动化系统"}
+        - content: {text: "运营组"}
+        - content: {text: "已完成", color: "$accent"}
+        - content: {text: "100%"}
+  
+  # 底部导航
+  - elementId: nav-line
+    elementType: shape
+    bounds: [80, 660, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+  
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 670, 100, 30]
+    content:
+      fontSize: 12
+      color: "$tertiary"
+      fontFamily: "Liter, MiSans"
+      align: [right, middle]
+      text: |
+        <p>6</p>

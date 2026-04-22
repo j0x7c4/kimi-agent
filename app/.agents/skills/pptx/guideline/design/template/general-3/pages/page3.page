@@ -1,0 +1,73 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: radial
+  stops:
+  - position: 0
+    color: "#FFFFFFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#C7E2FFFF"
+elements:
+- elementId: text8
+  elementType: text
+  bounds: [726.93, 222.39, 466.14, 349.34]
+  content:
+    align: [center, top]
+    fontSize: 244.5
+    fontFamily: QuattrocentoSans Bold, alimamashuheiti
+    color: "#004AAD"
+    lineHeightPx: 342.27
+    text: '01'
+- elementId: line9
+  elementType: shape
+  bounds: [660.28, 666.27, 599.45, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 2.25
+    color: "#004AAD"
+- elementId: text10
+  elementType: text
+  bounds: [517.27, 521.08, 885.45, 124.57]
+  content:
+    align: [center, top]
+    fontSize: 85
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 118.96
+    text: 睡眠的重要性
+- elementId: text11
+  elementType: text
+  bounds: [650.68, 689.57, 618.65, 109.8]
+  content:
+    align: [center, top]
+    fontSize: 40
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "#737373"
+    lineHeightPx: 50.8
+    text: Why sleep matters for your health
+- elementId: text12
+  elementType: text
+  bounds: [1429.83, 63.07, 409.77, 49.73]
+  content:
+    align: [right, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 4.16
+    text: PART 01
+- elementId: text13
+  elementType: text
+  bounds: [80.4, 63.07, 868.56, 49.73]
+  content:
+    align: [justify, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 4.16
+    text: HEALTH SCIENCE LECTURE

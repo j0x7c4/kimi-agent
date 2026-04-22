@@ -1,0 +1,123 @@
+pageType: content
+elements:
+# --- Decorative accents ---
+- elementId: deco_vline
+  elementType: shape
+  bounds: [740, 430, 2, 550]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B98125"
+- elementId: deco_circle
+  elementType: shape
+  bounds: [1600, 100, 250, 250]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#10B98110"
+# --- Content ---
+- elementId: text_title
+  elementType: text
+  bounds: [98.4, 100.2, 976.68, 132.19]
+  content:
+    align: [left, top]
+    fontSize: 100
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 125
+    text: Main Objectives
+- elementId: text_topic1
+  elementType: text
+  bounds: [98.4, 430.21, 511.52, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 41.67
+    text: Online Expansion
+- elementId: text_body1
+  elementType: text
+  bounds: [98.4, 488.28, 511.52, 144.42]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 35.45
+    text: |
+      <p>Presentations are tools that can be used as lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p>It is mostly presented before an audience.  </p>
+- elementId: text_topic2
+  elementType: text
+  bounds: [792.86, 430.21, 409.01, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 41.67
+    text: Sales Growth
+- elementId: text_body2
+  elementType: text
+  bounds: [792.86, 488.28, 409.01, 488.52]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 35.45
+    text: |
+      <p>Presentations are tools that can be used as lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p> It serves a variety of purposes, making presentations powerful tools for convincing and teaching. </p>
+      <p> </p>
+      <p>Make sure you do enough research to support your points.</p>
+      <p> </p>
+      <p>It's also a good idea to pair data with visual aids like charts, graphs, or images. </p>
+- elementId: text_topic3
+  elementType: text
+  bounds: [98.4, 774.3, 511.52, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 41.67
+    text: Financial Allocation
+- elementId: text_body3
+  elementType: text
+  bounds: [98.4, 832.38, 511.52, 144.42]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 35.45
+    text: |
+      <p>Presentations are tools that can be used as lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p>It is mostly presented before an audience.  </p>
+- elementId: text_num
+  elementType: text
+  bounds: [1354.95, 97.2, 240.61, 206.21]
+  content:
+    align: [right, top]
+    fontSize: 160
+    fontFamily: "Liter, deyihei"
+    color: "#10B981"
+    lineHeightPx: 199.99
+    text: '05'
+- elementId: text_sidebar
+  elementType: text
+  bounds: [1641.25, 822.47, 267.94, 35.14]
+  rotation: -90
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING

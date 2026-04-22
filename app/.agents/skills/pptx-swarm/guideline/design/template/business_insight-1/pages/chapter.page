@@ -1,0 +1,61 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧装饰色条
+  - elementId: left-accent
+    elementType: shape
+    bounds: [0, 0, 8, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 章节编号
+  - elementId: chapter-num
+    elementType: text
+    bounds: [80, 240, 200, 80]
+    content:
+      fontSize: 72
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>01</strong></p>
+
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [80, 330, 800, 50]
+    content:
+      fontSize: 36
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Market Overview & Key Findings</strong></p>
+
+  # 装饰线
+  - elementId: chapter-line
+    elementType: shape
+    bounds: [80, 400, 200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  # 副标题
+  - elementId: chapter-subtitle
+    elementType: text
+    bounds: [80, 420, 600, 30]
+    content:
+      fontSize: 16
+      color: "$medgray"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: "Strategic analysis of market dynamics and competitive positioning"

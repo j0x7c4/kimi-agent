@@ -1,0 +1,94 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 400, 48]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: |
+        <p><strong>目录</strong></p>
+  
+  # 装饰线
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 120, 60, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+  
+  # 目录项容器背景
+  - elementId: toc-bg
+    elementType: shape
+    bounds: [80, 180, 620, 440]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+
+  # 目录项1
+  - elementId: toc-1
+    elementType: text
+    bounds: [120, 210, 540, 70]
+    content:
+      fontSize: 26
+      color: "$primary"
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p><span style="font-size:36px; color:$accent; font-family:Liter;">01.</span>  核心成果概览</p>
+
+  # 目录项2
+  - elementId: toc-2
+    elementType: text
+    bounds: [120, 310, 540, 70]
+    content:
+      fontSize: 26
+      color: "$primary"
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p><span style="font-size:36px; color:$accent; font-family:Liter;">02.</span>  数据分析与洞察</p>
+
+  # 目录项3
+  - elementId: toc-3
+    elementType: text
+    bounds: [120, 410, 540, 70]
+    content:
+      fontSize: 26
+      color: "$primary"
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p><span style="font-size:36px; color:$accent; font-family:Liter;">03.</span>  项目进度与里程碑</p>
+
+  # 目录项4
+  - elementId: toc-4
+    elementType: text
+    bounds: [120, 510, 540, 70]
+    content:
+      fontSize: 26
+      color: "$primary"
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p><span style="font-size:36px; color:$accent; font-family:Liter;">04.</span>  问题分析与解决方案</p>
+  
+  # 右侧装饰图形
+  - elementId: deco-shape
+    elementType: shape
+    bounds: [800, 200, 360, 360]
+    shapeName: donut
+    adjustments: [30000]
+    fill:
+      type: gradient
+      gradientType: radial
+      stops:
+        - {position: 0, color: "#5C8E8F20"}
+        - {position: 1, color: "#5C8E8F05"}

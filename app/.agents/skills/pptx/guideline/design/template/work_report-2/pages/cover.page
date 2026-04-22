@@ -1,0 +1,59 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 公司LOGO占位
+  - elementId: logo
+    elementType: shape
+    bounds: [100, 80, 80, 40]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 主标题
+  - elementId: main-title
+    elementType: text
+    bounds: [100, 250, 720, 110]
+    content:
+      text: |
+        <p><strong><span style="font-size:52px; letter-spacing:3px">2025 ANNUAL REVIEW</span></strong></p>
+      color: "$accent"
+      fontFamily: "Oranienbaum, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [100, 370, 600, 44]
+    content:
+      text: |
+        <p><strong>Sustainable Growth in Uncertain Times</strong></p>
+      fontSize: 24
+      color: "$lightText"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 分割线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 424, 360, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 署名
+  - elementId: author
+    elementType: text
+    bounds: [940, 600, 240, 70]
+    content:
+      text: |
+        <p style="text-align:right"><strong>XXX</strong></p>
+        <p style="text-align:right"><span style="font-size:16px; color:#9CA3AF">Chief Executive Officer</span></p>
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [right, bottom]

@@ -1,0 +1,430 @@
+pageType: content
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 56
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 24
+      - 0
+      - 800
+      - 56
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:32px; color:#FFFFFF; font-family:MiSans;"><strong>例题解析</strong></span><span style="font-size:24px; color:#FFE082; font-family:MiSans;">  · 例题 3.2</span></p>
+  - elementId: example-tag-bg
+    elementType: shape
+    bounds:
+      - 1096
+      - 12
+      - 160
+      - 32
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: example-tag-text
+    elementType: text
+    bounds:
+      - 1096
+      - 12
+      - 160
+      - 32
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#FFFFFF; font-family:MiSans;"><strong>EXAMPLE · 例题</strong></span></p>
+  - elementId: question-bg
+    elementType: shape
+    bounds:
+      - 32
+      - 72
+      - 1216
+      - 100
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FFF8E1"
+    border:
+      style: solid
+      width: 2
+      color: "#FFB300"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: question-label
+    elementType: text
+    bounds:
+      - 52
+      - 76
+      - 80
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#FF8F00; font-family:MiSans;"><strong>题目</strong></span></p>
+  - elementId: question-text
+    elementType: text
+    bounds:
+      - 140
+      - 78
+      - 1092
+      - 84
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;"><strong>已知</strong>：直角三角形ABC中，∠C=90°，AC=3，BC=4，求斜边AB的长度及∠A的大小（结果保留两位有效数字）。</span></p>
+  - elementId: step1-bg
+    elementType: shape
+    bounds:
+      - 32
+      - 192
+      - 580
+      - 120
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: step1-left-bar
+    elementType: shape
+    bounds:
+      - 32
+      - 192
+      - 4
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: step1-label
+    elementType: text
+    bounds:
+      - 48
+      - 196
+      - 140
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#1565C0; font-family:MiSans;"><strong>Step 1 · 已知</strong></span></p>
+  - elementId: step1-text
+    elementType: text
+    bounds:
+      - 48
+      - 228
+      - 556
+      - 76
+    content:
+      fontSize: 36
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;">∠C=90°，AC=3，BC=4</span></p>
+  - elementId: arrow1
+    elementType: shape
+    bounds:
+      - 296
+      - 316
+      - 0
+      - 32
+    shapeName: straightConnector1
+    arrow:
+      - none
+      - arrow
+    border:
+      style: solid
+      width: 2
+      color: "#FF8F00"
+  - elementId: step2-bg
+    elementType: shape
+    bounds:
+      - 32
+      - 352
+      - 580
+      - 120
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: step2-left-bar
+    elementType: shape
+    bounds:
+      - 32
+      - 352
+      - 4
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: step2-label
+    elementType: text
+    bounds:
+      - 48
+      - 356
+      - 100
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#1565C0; font-family:MiSans;"><strong>Step 2 · 求</strong></span></p>
+  - elementId: step2-text
+    elementType: text
+    bounds:
+      - 48
+      - 388
+      - 556
+      - 76
+    content:
+      fontSize: 28
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;">由勾股定理：\(AB^2 = AC^2 + BC^2 = 9 + 16 = 25\)</span></p>
+  - elementId: arrow2
+    elementType: shape
+    bounds:
+      - 296
+      - 476
+      - 0
+      - 32
+    shapeName: straightConnector1
+    arrow:
+      - none
+      - arrow
+    border:
+      style: solid
+      width: 2
+      color: "#FF8F00"
+  - elementId: step3-bg
+    elementType: shape
+    bounds:
+      - 32
+      - 512
+      - 580
+      - 120
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: step3-left-bar
+    elementType: shape
+    bounds:
+      - 32
+      - 512
+      - 4
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: step3-label
+    elementType: text
+    bounds:
+      - 48
+      - 516
+      - 100
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#1565C0; font-family:MiSans;"><strong>Step 3 · 解</strong></span></p>
+  - elementId: step3-text
+    elementType: text
+    bounds:
+      - 48
+      - 548
+      - 556
+      - 76
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;">\(AB = 5\)，\(\tan A = \frac{BC}{AC} = \frac{4}{3}\)，∠A ≈ 53°</span></p>
+  - elementId: answer-bg
+    elementType: shape
+    bounds:
+      - 648
+      - 192
+      - 600
+      - 440
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#1565C0"
+    shadow:
+      blur: 12
+      color: "#1565C040"
+      offset:
+        - 0
+        - 4
+  - elementId: answer-title
+    elementType: text
+    bounds:
+      - 672
+      - 212
+      - 552
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#FFE082; font-family:MiSans;"><strong>答案解析</strong></span></p>
+  - elementId: answer-line
+    elementType: shape
+    bounds:
+      - 672
+      - 256
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#FF8F00"
+  - elementId: answer-text
+    elementType: text
+    bounds:
+      - 672
+      - 272
+      - 556
+      - 120
+    content:
+      lineHeight: 1.7
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#FFFFFF; font-family:MiSans;"><strong>答：</strong>斜边 \(AB = 5\)</span></p>
+        <p><span style="font-size:18px; color:#FFFFFF; font-family:MiSans;">∠A ≈ <strong style="color:#FFE082;">53°</strong></span></p>
+  - elementId: answer-tip
+    elementType: text
+    bounds:
+      - 672
+      - 410
+      - 556
+      - 100
+    content:
+      fontSize: 26
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#B3D9FF; font-family:MiSans;">本题考查勾股定理与三角函数的综合运用，注意角度近似的计算方法。</span></p>
+  - elementId: progress-done
+    elementType: shape
+    bounds:
+      - 0
+      - 708
+      - 853
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: progress-rest
+    elementType: shape
+    bounds:
+      - 853
+      - 708
+      - 427
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#CFD8DC"

@@ -1,0 +1,172 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Left panel dark navy background
+  - elementId: left-panel
+    elementType: shape
+    bounds: [0, 0, 768, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # Top gold accent bar on left panel
+  - elementId: top-gold-bar
+    elementType: shape
+    bounds: [0, 0, 768, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Report type label
+  - elementId: report-type
+    elementType: text
+    bounds: [60, 50, 400, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#ffffff; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:1px;">EQUITY RESEARCH · 股票研究报告</span></p>
+
+  # Gold decorative line
+  - elementId: gold-deco-line
+    elementType: shape
+    bounds: [60, 90, 100, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$accent"}
+
+  # Main title
+  - elementId: cover-title
+    elementType: text
+    bounds: [60, 110, 640, 150]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.3
+      text: |
+        <p><span style="font-size:48px; color:#ffffff; font-family:Palatino Linotype, SimSun, MiSans;"><strong>行业深度研究报告</strong></span></p>
+
+  # Subtitle
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [60, 265, 640, 36]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#ffffffcc; font-family:Arial, Microsoft YaHei, MiSans;">商业战略与市场深度分析</span></p>
+
+  # Gold line divider
+  - elementId: gold-line-mid
+    elementType: shape
+    bounds: [60, 315, 180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$accent"}
+
+  # Date
+  - elementId: cover-date
+    elementType: text
+    bounds: [60, 332, 400, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:15px; color:#ffffffaa; font-family:Arial, Microsoft YaHei, MiSans;">2026年3月 · 机密文件</span></p>
+
+  # Institution
+  - elementId: cover-institution
+    elementType: text
+    bounds: [60, 362, 400, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#ffffff88; font-family:Arial, Microsoft YaHei, MiSans;">战略研究部 · 行业研究团队</span></p>
+
+  # Bottom disclaimer
+  - elementId: cover-disclaimer
+    elementType: text
+    bounds: [60, 663, 640, 20]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:11px; color:#ffffff55; font-family:Arial, Microsoft YaHei, MiSans;">本报告仅供内部参考，不构成投资建议 · For internal use only, not investment advice</span></p>
+
+  # Right image placeholder rect
+  - elementId: image-placeholder
+    elementType: shape
+    bounds: [768, 0, 512, 500]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1A2B40"
+
+  # Gold corner accent top on image area
+  - elementId: image-top-accent
+    elementType: shape
+    bounds: [768, 0, 512, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Image label
+  - elementId: image-label
+    elementType: text
+    bounds: [900, 220, 270, 30]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#ffffff66; font-family:Arial, Microsoft YaHei, MiSans;">[ 行业主题图 ]</span></p>
+
+  # Stat 1 number
+  - elementId: stat1-num
+    elementType: text
+    bounds: [800, 520, 200, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:34px; color:#1B3A6B; font-family:Georgia, SimSun, MiSans;"><strong>¥2.8万亿</strong></span></p>
+
+  # Stat 2 number
+  - elementId: stat2-num
+    elementType: text
+    bounds: [1000, 520, 200, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:34px; color:#C9963B; font-family:Georgia, SimSun, MiSans;"><strong>+18.6%</strong></span></p>
+
+  # Stat labels
+  - elementId: stat3-label
+    elementType: text
+    bounds: [800, 610, 420, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#2D2D2D; font-family:Arial, Microsoft YaHei, MiSans;">市场总规模 · Market Size ｜ 同比增速 · YoY Growth</span></p>
+
+  # Stat bottom line
+  - elementId: stat-bottom-line
+    elementType: shape
+    bounds: [800, 668, 420, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # CR5 text
+  - elementId: cr5-text
+    elementType: text
+    bounds: [800, 675, 420, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#8899AA; font-family:Arial, Microsoft YaHei, MiSans;">CR5 行业集中度：62%</span></p>

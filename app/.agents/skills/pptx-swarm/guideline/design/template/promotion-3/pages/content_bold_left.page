@@ -1,0 +1,88 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # Top nav bar
+  - elementId: nav-left
+    elementType: text
+    bounds: [120, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [left, top]
+      text: |
+        <p>Marketing</p>
+        <p>Approach</p>
+
+  - elementId: nav-right
+    elementType: text
+    bounds: [900, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [right, top]
+      text: |
+        <p>Bilson's</p>
+        <p>Supermarkets</p>
+
+  - elementId: nav-divider
+    elementType: shape
+    bounds: [120, 88, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Left: large bold title + body
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 150, 560, 240]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p><strong>AN INTRODUCTION</strong></p>
+        <p><strong>TO BILSON</strong></p>
+
+  - elementId: left-subtitle
+    elementType: text
+    bounds: [100, 400, 480, 80]
+    content:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "HedvigLettersSans"
+      lineHeight: 1.3
+      align: [left, top]
+      text: From farmers' markets to a national chain
+
+  # Arrow
+  - elementId: arrow
+    elementType: icon
+    bounds: [100, 502, 100, 28]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"
+
+  # Right: body text
+  - elementId: right-body
+    elementType: text
+    bounds: [700, 280, 460, 220]
+    content:
+      style: "$body"
+      align: [left, top]
+      lineHeight: 1.65
+      text: |
+        <p>Presentations are communication tools that can be used</p>
+        <p>as demonstrations, lectures, speeches, reports, and more.</p>
+        <p>It is mostly presented before an audience.</p>
+
+  - elementId: right-body-2
+    elementType: text
+    bounds: [700, 520, 460, 140]
+    content:
+      style: "$body"
+      align: [left, top]
+      lineHeight: 1.65
+      text: |
+        <p>It serves a variety of purposes, making presentations</p>
+        <p>powerful tools for convincing and teaching.</p>

@@ -1,0 +1,54 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Page number top center
+  - elementId: page-num
+    elementType: text
+    bounds: [590, 56, 100, 48]
+    content:
+      style: "$pageNum"
+      align: [center, middle]
+      wrap: false
+      text: 01
+
+  # Large ghosted serif watermark text (name)
+  - elementId: watermark-text
+    elementType: text
+    bounds: [138, 160, 1004, 400]
+    content:
+      fontSize: 160
+      color: "#FFFFFF55"
+      fontFamily: "Oranienbaum"
+      align: [center, top]
+      lineHeight: 1.05
+      text: |
+        <p>CAHAYA</p>
+        <p>DEWI</p>
+
+  # Script overlay title
+  - elementId: script-title
+    elementType: text
+    bounds: [138, 280, 1004, 200]
+    content:
+      fontSize: 80
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      align: [center, middle]
+      lineHeight: 1.15
+      text: |
+        <p><em>Creative Portfolio</em></p>
+
+  # Version text at bottom
+  - elementId: version-text
+    elementType: text
+    bounds: [420, 634, 440, 32]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      align: [center, middle]
+      letterSpacing: 2
+      wrap: false
+      text: VERSION 2.0  -  2024

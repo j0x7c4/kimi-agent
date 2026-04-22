@@ -1,0 +1,148 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 导航栏背景
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 56]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 1
+      color: "#EAE8E3"
+
+  # 选中项指示条
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [100, 52, 190, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: nav-item1
+    elementType: text
+    bounds: [100, 10, 190, 36]
+    content:
+      text: |
+        <p><strong>Performance Overview</strong></p>
+      fontSize: 15
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item2
+    elementType: text
+    bounds: [310, 10, 170, 36]
+    content:
+      text: "Strategic Initiatives"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item3
+    elementType: text
+    bounds: [500, 10, 195, 36]
+    content:
+      text: "Organization & Talent"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item4
+    elementType: text
+    bounds: [715, 10, 175, 36]
+    content:
+      text: "Reflection & Forward"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  # 页面标题（中文→英文）
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 90, 900, 50]
+    content:
+      text: |
+        <p><strong>Steady Growth: 15% Net Profit Increase Amid Uncertainty</strong></p>
+      fontSize: 32
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 分割线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 155, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 左侧大数字
+  - elementId: big-number
+    elementType: text
+    bounds: [100, 200, 400, 130]
+    content:
+      text: |
+        <p><strong>1.2M</strong></p>
+      style: "$bigNumber"
+      align: [left, top]
+
+  - elementId: number-label
+    elementType: text
+    bounds: [100, 340, 400, 30]
+    content:
+      text: "Active Users Growth"
+      fontSize: 20
+      color: "$lightText"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+
+  # 右侧说明文字
+  - elementId: description1
+    elementType: text
+    bounds: [580, 200, 600, 120]
+    content:
+      text: |
+        <p>Despite market headwinds, we achieved sustainable growth through strategic focus on core customer retention and value creation.</p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      align: [left, top]
+
+  - elementId: description2
+    elementType: text
+    bounds: [580, 330, 600, 120]
+    content:
+      text: |
+        <p>• Customer retention rate improved by <strong>23%</strong></p>
+        <p>• Average revenue per user increased <strong>$45</strong></p>
+        <p>• Operational efficiency gains of <strong>18%</strong></p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      align: [left, top]
+
+  # 底部页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 660, 80, 30]
+    content:
+      text: "04"
+      style: "$caption"
+      align: [right, bottom]

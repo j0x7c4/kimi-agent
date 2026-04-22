@@ -1,0 +1,259 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Title ALL CAPS
+  - elementId: toc-title
+    elementType: text
+    bounds: [60, 50, 500, 46]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>CONTENTS / 目录</strong></span></p>
+
+  # 2px red underline below title
+  - elementId: toc-title-line
+    elementType: shape
+    bounds: [60, 100, 200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Entry 1
+  - elementId: toc-num1
+    elementType: text
+    bounds: [60, 115, 80, 52]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#2C2C2C; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>01</strong></span></p>
+
+  - elementId: toc-entry1-title
+    elementType: text
+    bounds: [150, 122, 880, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>MARKET OVERVIEW</strong></span></p>
+
+  - elementId: toc-entry1-cn
+    elementType: text
+    bounds: [150, 148, 580, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">市场总览与行业规模</span></p>
+
+  - elementId: toc-entry1-page
+    elementType: text
+    bounds: [1150, 128, 80, 26]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#D91E18; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>03</strong></span></p>
+
+  - elementId: toc-div1
+    elementType: shape
+    bounds: [60, 204, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Entry 2
+  - elementId: toc-num2
+    elementType: text
+    bounds: [60, 208, 80, 52]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#2C2C2C; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>02</strong></span></p>
+
+  - elementId: toc-entry2-title
+    elementType: text
+    bounds: [150, 215, 880, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>COMPETITIVE LANDSCAPE</strong></span></p>
+
+  - elementId: toc-entry2-cn
+    elementType: text
+    bounds: [150, 241, 580, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">竞争格局与市场份额分析</span></p>
+
+  - elementId: toc-entry2-page
+    elementType: text
+    bounds: [1150, 220, 80, 26]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#D91E18; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>05</strong></span></p>
+
+  - elementId: toc-div2
+    elementType: shape
+    bounds: [60, 296, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Entry 3
+  - elementId: toc-num3
+    elementType: text
+    bounds: [60, 300, 80, 52]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#2C2C2C; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>03</strong></span></p>
+
+  - elementId: toc-entry3-title
+    elementType: text
+    bounds: [150, 307, 880, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>GROWTH DRIVERS</strong></span></p>
+
+  - elementId: toc-entry3-cn
+    elementType: text
+    bounds: [150, 333, 580, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">增长驱动因素与趋势分析</span></p>
+
+  - elementId: toc-entry3-page
+    elementType: text
+    bounds: [1150, 312, 80, 26]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#D91E18; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>07</strong></span></p>
+
+  - elementId: toc-div3
+    elementType: shape
+    bounds: [60, 388, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Entry 4
+  - elementId: toc-num4
+    elementType: text
+    bounds: [60, 392, 80, 52]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#2C2C2C; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>04</strong></span></p>
+
+  - elementId: toc-entry4-title
+    elementType: text
+    bounds: [150, 399, 880, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>FINANCIAL PERFORMANCE</strong></span></p>
+
+  - elementId: toc-entry4-cn
+    elementType: text
+    bounds: [150, 425, 580, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">核心财务指标与业绩表现</span></p>
+
+  - elementId: toc-entry4-page
+    elementType: text
+    bounds: [1150, 404, 80, 26]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#D91E18; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>09</strong></span></p>
+
+  - elementId: toc-div4
+    elementType: shape
+    bounds: [60, 480, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Entry 5
+  - elementId: toc-num5
+    elementType: text
+    bounds: [60, 484, 80, 52]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#2C2C2C; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>05</strong></span></p>
+
+  - elementId: toc-entry5-title
+    elementType: text
+    bounds: [150, 491, 880, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>STRATEGIC RECOMMENDATIONS</strong></span></p>
+
+  - elementId: toc-entry5-cn
+    elementType: text
+    bounds: [150, 517, 580, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">战略建议与行动路径</span></p>
+
+  - elementId: toc-entry5-page
+    elementType: text
+    bounds: [1150, 496, 80, 26]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#D91E18; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>11</strong></span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 656, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Footer source
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 662, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>Bain &amp; Company Internal Research | 贝恩公司内部研究报告</p>
+
+  # Page number
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 662, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>02</p>

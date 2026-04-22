@@ -1,0 +1,185 @@
+pageType: cover
+background:
+  type: solid
+  color: "#1565C0"
+elements:
+  - elementId: geo-block-main
+    elementType: shape
+    bounds:
+      - 780
+      - 0
+      - 500
+      - 720
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1976D2"
+  - elementId: geo-triangle
+    elementType: shape
+    bounds:
+      - 680
+      - 0
+      - 280
+      - 720
+    shapeName: custom
+    path: 280,720;M280 0 L0 720 L280 720 Z
+    fill:
+      type: solid
+      color: "#1976D2"
+  - elementId: geo-iceblue
+    elementType: shape
+    bounds:
+      - 900
+      - 0
+      - 380
+      - 720
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0D47A1"
+  - elementId: axis-x
+    elementType: shape
+    bounds: [880, 420, 320, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border:
+      style: solid
+      width: 2
+      color: "#FFFFFF40"
+  - elementId: axis-y
+    elementType: shape
+    bounds: [880, 140, 0, 280]
+    shapeName: straightConnector1
+    arrow: ["arrow", null]
+    border:
+      style: solid
+      width: 2
+      color: "#FFFFFF40"
+  - elementId: symbol-pi
+    elementType: text
+    bounds:
+      - 980
+      - 180
+      - 120
+      - 80
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:72px; color:#FFFFFF18; font-family:MiSans;">π</span></p>
+  - elementId: symbol-sigma
+    elementType: text
+    bounds:
+      - 1080
+      - 450
+      - 100
+      - 80
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:56px; color:#FFFFFF18; font-family:MiSans;">∑</span></p>
+  - elementId: geo-tri-small
+    elementType: text
+    bounds:
+      - 1100
+      - 180
+      - 80
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:40px; color:#FFFFFF20; font-family:MiSans;">△</span></p>
+  - elementId: subject-label
+    elementType: text
+    bounds:
+      - 60
+      - 120
+      - 500
+      - 24
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#90CAF9; font-family:MiSans; letter-spacing:3px">MIDDLE SCHOOL · 中学课堂教学</span></p>
+  - elementId: cover-title
+    elementType: text
+    bounds:
+      - 60
+      - 160
+      - 600
+      - 160
+    content:
+      lineHeight: 1.2
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:48px; color:#FFFFFF; font-family:MiSans;"><strong>课程标题</strong></span></p>
+        <p><span style="font-size:48px; color:#FFFFFF; font-family:MiSans;"><strong>知识点讲解</strong></span></p>
+  - elementId: orange-line
+    elementType: shape
+    bounds:
+      - 60
+      - 330
+      - 120
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "#FF8F00"
+  - elementId: cover-subject
+    elementType: text
+    bounds:
+      - 60
+      - 350
+      - 560
+      - 30
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#B3D9FF; font-family:MiSans;">数学 · 八年级 · 上学期</span></p>
+  - elementId: cover-info
+    elementType: text
+    bounds:
+      - 60
+      - 396
+      - 560
+      - 24
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#90CAF980; font-family:MiSans;">授课教师：[姓名] · 2026年春季学期</span></p>
+  - elementId: progress-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 708
+      - 1280
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"

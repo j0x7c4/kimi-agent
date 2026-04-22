@@ -1,0 +1,84 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Large serif title (top aligned, fills most of page)
+  - elementId: section-title
+    elementType: text
+    bounds: [80, 50, 1060, 280]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: EDUCATION
+
+  # Three columns at bottom
+  - elementId: col1-title
+    elementType: text
+    bounds: [80, 420, 340, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: HIGH SCHOOL
+
+  - elementId: col1-body
+    elementType: text
+    bounds: [80, 462, 340, 210]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Presentations are communication</p>
+        <p>tools that can be used as</p>
+        <p>demonstrations, lectures,</p>
+        <p>speeches, reports, and more.</p>
+
+  - elementId: col2-title
+    elementType: text
+    bounds: [460, 420, 340, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: COLLEGE
+
+  - elementId: col2-body
+    elementType: text
+    bounds: [460, 462, 340, 210]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Presentations are communication</p>
+        <p>tools that can be used as</p>
+        <p>demonstrations, lectures,</p>
+        <p>speeches, reports, and more.</p>
+
+  - elementId: col3-title
+    elementType: text
+    bounds: [840, 420, 340, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: HIGHER EDUCATION
+
+  - elementId: col3-body
+    elementType: text
+    bounds: [840, 462, 340, 210]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Presentations are communication</p>
+        <p>tools that can be used as</p>
+        <p>demonstrations, lectures,</p>
+        <p>speeches, reports, and more.</p>
+
+  # Page number bottom right
+  - elementId: page-num
+    elementType: text
+    bounds: [1160, 680, 80, 36]
+    content:
+      style: "$pageNum"
+      align: [right, middle]
+      wrap: false
+      text: 03

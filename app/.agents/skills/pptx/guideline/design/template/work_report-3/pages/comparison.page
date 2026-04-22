@@ -1,0 +1,112 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 180
+  stops:
+    - {position: 0, color: "#F0F3F5"}
+    - {position: 1, color: "#F8FAFB"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p><strong>年度目标达成情况 - 全面超额完成</strong></p>
+  
+  # 对比表格
+  - elementId: comparison-table
+    elementType: table
+    bounds: [80, 140, 1120, 320]
+    columnWidths: [0.25, 0.2, 0.2, 0.15, 0.2]
+    rowHeights: [0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
+    style: "$default"
+    rows:
+      - - content: {text: "关键指标", align: [center, middle]}
+        - content: {text: "年初目标", align: [center, middle]}
+        - content: {text: "实际完成", align: [center, middle]}
+        - content: {text: "完成率", align: [center, middle]}
+        - content: {text: "同比增长", align: [center, middle]}
+      - - content: {text: "营业收入（亿元）"}
+        - content: {text: "10.0", align: [center, middle]}
+        - content: {text: "<strong>11.2</strong>", align: [center, middle]}
+        - content: {text: "<span style='color:$accent;'>112%</span>", align: [center, middle]}
+        - content: {text: "+23%", align: [center, middle]}
+      - - content: {text: "净利润（亿元）"}
+        - content: {text: "1.5", align: [center, middle]}
+        - content: {text: "<strong>1.8</strong>", align: [center, middle]}
+        - content: {text: "<span style='color:$accent;'>120%</span>", align: [center, middle]}
+        - content: {text: "+35%", align: [center, middle]}
+      - - content: {text: "新增客户数"}
+        - content: {text: "500", align: [center, middle]}
+        - content: {text: "<strong>628</strong>", align: [center, middle]}
+        - content: {text: "<span style='color:$accent;'>126%</span>", align: [center, middle]}
+        - content: {text: "+42%", align: [center, middle]}
+      - - content: {text: "客户满意度"}
+        - content: {text: "90%", align: [center, middle]}
+        - content: {text: "<strong>96%</strong>", align: [center, middle]}
+        - content: {text: "<span style='color:$accent;'>107%</span>", align: [center, middle]}
+        - content: {text: "+8pp", align: [center, middle]}
+      - - content: {text: "员工满意度"}
+        - content: {text: "85%", align: [center, middle]}
+        - content: {text: "<strong>92%</strong>", align: [center, middle]}
+        - content: {text: "<span style='color:$accent;'>108%</span>", align: [center, middle]}
+        - content: {text: "+10pp", align: [center, middle]}
+      - - content: {text: "研发投入占比"}
+        - content: {text: "15%", align: [center, middle]}
+        - content: {text: "<strong>18%</strong>", align: [center, middle]}
+        - content: {text: "<span style='color:$accent;'>120%</span>", align: [center, middle]}
+        - content: {text: "+3pp", align: [center, middle]}
+      - - content: {text: "市场份额"}
+        - content: {text: "12%", align: [center, middle]}
+        - content: {text: "<strong>15.5%</strong>", align: [center, middle]}
+        - content: {text: "<span style='color:$accent;'>129%</span>", align: [center, middle]}
+        - content: {text: "+3.5pp", align: [center, middle]}
+  
+  # 底部总结
+  - elementId: summary-bg
+    elementType: shape
+    bounds: [80, 500, 1120, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+  
+  - elementId: summary-icon
+    elementType: icon
+    bounds: [120, 530, 48, 48]
+    iconName: "fas:trophy"
+    fill:
+      type: solid
+      color: "$accent"
+  
+  - elementId: summary-text
+    elementType: text
+    bounds: [200, 520, 960, 80]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      align: [left, middle]
+      text: |
+        <p><strong>总体评价</strong>：2024年度各项核心指标全面超额完成，平均完成率达到118%</p>
+        <p style="margin-top:8px;">特别是在市场份额和净利润方面取得了突破性进展，为明年发展奠定了坚实基础</p>
+  
+  # 页脚
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 680, 80, 20]
+    content:
+      fontSize: 12
+      color: "$textSecondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, bottom]
+      text: "7"

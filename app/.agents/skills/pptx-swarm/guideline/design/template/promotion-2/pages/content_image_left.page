@@ -1,0 +1,138 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top nav bar
+  - elementId: nav-left
+    elementType: text
+    bounds: [120, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [left, top]
+      text: |
+        <p>Marketing</p>
+        <p>Approach</p>
+
+  - elementId: nav-right
+    elementType: text
+    bounds: [900, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [right, top]
+      text: |
+        <p>Bilson's</p>
+        <p>Supermarkets</p>
+
+  - elementId: nav-divider
+    elementType: shape
+    bounds: [120, 88, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Left: large photo
+  - elementId: left-photo
+    elementType: image
+    bounds: [120, 116, 470, 566]
+    src: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&q=80"
+    fit:
+      mode: cover
+
+  # Right: title + bullet list with arrow icons
+  - elementId: page-title
+    elementType: text
+    bounds: [640, 116, 560, 200]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p><strong>CURRENT SERVICES</strong></p>
+        <p><strong>WE OFFER</strong></p>
+
+  - elementId: page-subtitle
+    elementType: text
+    bounds: [640, 320, 540, 36]
+    content:
+      style: "$subtitle"
+      align: [left, middle]
+      text: The top services our shoppers avail
+
+  - elementId: divider-1
+    elementType: shape
+    bounds: [640, 368, 560, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  - elementId: svc-1-title
+    elementType: text
+    bounds: [640, 380, 540, 32]
+    content:
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "HedvigLettersSans, MiSans"
+      align: [left, middle]
+      text: Online retail
+
+  - elementId: svc-1-body
+    elementType: text
+    bounds: [640, 414, 540, 28]
+    content:
+      style: "$body"
+      align: [left, middle]
+      text: In-app shopping and payment system
+
+  - elementId: divider-2
+    elementType: shape
+    bounds: [640, 452, 560, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  - elementId: svc-2-title
+    elementType: text
+    bounds: [640, 464, 540, 32]
+    content:
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "HedvigLettersSans, MiSans"
+      align: [left, middle]
+      text: Doorstep delivery
+
+  - elementId: svc-2-body
+    elementType: text
+    bounds: [640, 498, 540, 28]
+    content:
+      style: "$body"
+      align: [left, middle]
+      text: Free delivery with a minimum purchase fee
+
+  - elementId: divider-3
+    elementType: shape
+    bounds: [640, 536, 560, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  - elementId: svc-3-title
+    elementType: text
+    bounds: [640, 548, 540, 32]
+    content:
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "HedvigLettersSans, MiSans"
+      align: [left, middle]
+      text: Personal shopping
+
+  - elementId: svc-3-body
+    elementType: text
+    bounds: [640, 582, 540, 28]
+    content:
+      style: "$body"
+      align: [left, middle]
+      text: A personalized supermarket shopping experience

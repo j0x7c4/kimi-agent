@@ -1,0 +1,71 @@
+title: Handwritten Creative Portfolio Template
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#9F7866"
+    background: "#EFD9D5"
+    text: "#9F7866"
+    lightbrown: "#C8A696"
+    white: "#FFFFFF"
+    ghostwhite: "#FFFFFF44"
+    darkbrown: "#7A5A4A"
+  textStyles:
+    heroTitle:
+      fontSize: 80
+      color: "$ghostwhite"
+      fontFamily: "Oranienbaum, MiSans"
+      lineHeight: 1.05
+    coverScript:
+      fontSize: 72
+      color: "$primary"
+      fontFamily: "Oranienbaum, MiSans"
+      fontStyle: italic
+      lineHeight: 1.15
+    pageTitle:
+      fontSize: 60
+      color: "$primary"
+      fontFamily: "Oranienbaum, MiSans"
+      lineHeight: 1.1
+    sectionLabel:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "Oranienbaum, MiSans"
+      letterSpacing: 3
+      lineHeight: 1.4
+    heading:
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "Oranienbaum, MiSans"
+      lineHeight: 1.4
+    body:
+      fontSize: 18
+      color: "$lightbrown"
+      fontFamily: "SortsMillGoudy, MiSans"
+      lineHeight: 1.65
+    pageNum:
+      fontSize: 28
+      color: "$primary"
+      fontFamily: "Oranienbaum, MiSans"
+      lineHeight: 1.2
+  tableStyles:
+    default:
+      fontSize: 15
+      fontFamily: "SortsMillGoudy, MiSans"
+      headerFill: "$primary"
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill: ["#FFFFFF", "$background"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$lightbrown"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/profile.page
+  - pages/section.page
+  - pages/content_three_col.page
+  - pages/content_two_col.page
+  - pages/content_image_right.page
+  - pages/final.page

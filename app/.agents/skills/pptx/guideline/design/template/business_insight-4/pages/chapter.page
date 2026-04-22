@@ -1,0 +1,84 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$secondary"
+elements:
+  # Top accent bar
+  - elementId: top-accent
+    elementType: shape
+    bounds: [0, 0, 1280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Large ghost number
+  - elementId: ghost-number
+    elementType: text
+    bounds: [820, 220, 440, 200]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:180px; color:#ffffff1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>01</strong></span></p>
+
+  # Chapter label
+  - elementId: chapter-label
+    elementType: text
+    bounds: [80, 200, 600, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#ffffff88; font-family:Liter, MiSans; letter-spacing:2px;">CHAPTER 01</span></p>
+
+  # Gold divider
+  - elementId: gold-divider
+    elementType: shape
+    bounds: [80, 240, 120, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Chapter title
+  - elementId: chapter-title
+    elementType: text
+    bounds: [80, 260, 900, 70]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:40px; color:#ffffff; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>行业概览与宏观环境</strong></span></p>
+
+  # English subtitle
+  - elementId: chapter-subtitle
+    elementType: text
+    bounds: [80, 340, 700, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#ffffffbb; font-family:Liter, MiSans;">Industry Overview &amp; Macro Environment</span></p>
+
+  # Description
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [80, 390, 780, 90]
+    content:
+      fontSize: 17
+      color: "#ffffffaa"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:17px; color:#ffffffaa; font-family:Liter, MiSans;">从宏观经济周期、产业政策、技术变革三个维度审视行业发展阶段，定量评估市场规模与增长空间</span></p>
+
+  # Bottom accent bar
+  - elementId: bottom-accent
+    elementType: shape
+    bounds: [0, 715, 1280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"

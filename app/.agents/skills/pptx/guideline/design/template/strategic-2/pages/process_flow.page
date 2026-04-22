@@ -1,0 +1,408 @@
+pageType: content
+background:
+  type: solid
+  color: "#F8F9FB"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: accent-stripe
+    elementType: shape
+    bounds: [0, 4, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # Title accent mark
+  - elementId: title-accent
+    elementType: shape
+    bounds: [80, 32, 6, 32]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # Page title
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 28, 1080, 40]
+    content:
+      fontSize: 28
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>战略实施路径：四阶段推进计划</strong></p>
+
+  # Title separator line
+  - elementId: title-separator
+    elementType: shape
+    bounds: [80, 78, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  # ── Step 1 Card (#0F172A dark bg) ──
+  - elementId: step1-card
+    elementType: shape
+    bounds: [80, 108, 260, 360]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: step1-number
+    elementType: text
+    bounds: [96, 120, 228, 36]
+    content:
+      fontSize: 26
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>01 验证期</strong></p>
+
+  - elementId: step1-target-label
+    elementType: text
+    bounds: [96, 164, 228, 24]
+    content:
+      fontSize: 13
+      color: "#94A3B8"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>TARGET</p>
+
+  - elementId: step1-target-value
+    elementType: text
+    bounds: [96, 188, 228, 32]
+    content:
+      fontSize: 22
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>$1M ARR</strong></p>
+
+  - elementId: step1-divider
+    elementType: shape
+    bounds: [96, 228, 228, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#334155"
+
+  - elementId: step1-items
+    elementType: text
+    bounds: [96, 240, 228, 210]
+    content:
+      fontSize: 14
+      color: "#CBD5E1"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p>&#9642; 产品MVP验证</p>
+        <p>&#9642; 种子客户获取</p>
+        <p>&#9642; PMF确认</p>
+        <p>&#9642; 团队核心搭建</p>
+
+  # Arrow 1→2
+  - elementId: arrow-1-2
+    elementType: shape
+    bounds: [350, 275, 40, 20]
+    shapeName: rightArrow
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # ── Step 2 Card (#475569 bg) ──
+  - elementId: step2-card
+    elementType: shape
+    bounds: [400, 108, 260, 360]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#475569"
+
+  - elementId: step2-number
+    elementType: text
+    bounds: [416, 120, 228, 36]
+    content:
+      fontSize: 26
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>02 增长期</strong></p>
+
+  - elementId: step2-target-label
+    elementType: text
+    bounds: [416, 164, 228, 24]
+    content:
+      fontSize: 13
+      color: "#94A3B8"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>TARGET</p>
+
+  - elementId: step2-target-value
+    elementType: text
+    bounds: [416, 188, 228, 32]
+    content:
+      fontSize: 22
+      color: "#FCD34D"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>$5M ARR</strong></p>
+
+  - elementId: step2-divider
+    elementType: shape
+    bounds: [416, 228, 228, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#64748B"
+
+  - elementId: step2-items
+    elementType: text
+    bounds: [416, 240, 228, 210]
+    content:
+      fontSize: 14
+      color: "#CBD5E1"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p>&#9642; 销售体系构建</p>
+        <p>&#9642; 渠道合作拓展</p>
+        <p>&#9642; 产品标准化</p>
+        <p>&#9642; 毛利率>60%</p>
+
+  # Arrow 2→3
+  - elementId: arrow-2-3
+    elementType: shape
+    bounds: [670, 275, 40, 20]
+    shapeName: rightArrow
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # ── Step 3 Card (#B45309 accent bg) ──
+  - elementId: step3-card
+    elementType: shape
+    bounds: [720, 108, 260, 360]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: step3-number
+    elementType: text
+    bounds: [736, 120, 228, 36]
+    content:
+      fontSize: 26
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>03 规模期</strong></p>
+
+  - elementId: step3-target-label
+    elementType: text
+    bounds: [736, 164, 228, 24]
+    content:
+      fontSize: 13
+      color: "#FDE68A"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>TARGET</p>
+
+  - elementId: step3-target-value
+    elementType: text
+    bounds: [736, 188, 228, 32]
+    content:
+      fontSize: 22
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>$25M ARR</strong></p>
+
+  - elementId: step3-divider
+    elementType: shape
+    bounds: [736, 228, 228, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#D97706"
+
+  - elementId: step3-items
+    elementType: text
+    bounds: [736, 240, 228, 210]
+    content:
+      fontSize: 14
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p>&#9642; 市场领导地位</p>
+        <p>&#9642; 生态平台搭建</p>
+        <p>&#9642; 国际化试水</p>
+        <p>&#9642; 净利率>20%</p>
+
+  # Arrow 3→4
+  - elementId: arrow-3-4
+    elementType: shape
+    bounds: [990, 275, 40, 20]
+    shapeName: rightArrow
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # ── Step 4 Card (#F1F5F9 light bg with border) ──
+  - elementId: step4-card
+    elementType: shape
+    bounds: [1040, 108, 160, 360]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#F1F5F9"
+    border:
+      style: solid
+      width: 2
+      color: "#0F172A"
+
+  - elementId: step4-number
+    elementType: text
+    bounds: [1054, 120, 152, 36]
+    content:
+      fontSize: 26
+      color: "#0F172A"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04 收获期</strong></p>
+
+  - elementId: step4-target-label
+    elementType: text
+    bounds: [1054, 164, 132, 24]
+    content:
+      fontSize: 13
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>TARGET</p>
+
+  - elementId: step4-target-value
+    elementType: text
+    bounds: [1054, 188, 152, 32]
+    content:
+      fontSize: 22
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>$38M+ Rev</strong></p>
+
+  - elementId: step4-divider
+    elementType: shape
+    bounds: [1054, 228, 132, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#CBD5E1"
+
+  - elementId: step4-items
+    elementType: text
+    bounds: [1054, 240, 132, 210]
+    content:
+      fontSize: 14
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p>&#9642; 持续盈利增长</p>
+        <p>&#9642; IPO/战略退出</p>
+        <p>&#9642; 行业标准制定</p>
+        <p>&#9642; 估值$200M+</p>
+
+  # ── Bottom conclusion bar ──
+  - elementId: conclusion-bar
+    elementType: shape
+    bounds: [80, 494, 1120, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [100, 498, 1080, 52]
+    content:
+      fontSize: 14
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="color:#B45309;"><strong>核心路径：</strong></span>从产品验证到资本收获，四阶段递进式推进。每阶段设置明确里程碑与退出标准，确保战略执行的节奏感与确定性。关键成功要素——PMF验证速度、毛利率健康度、规模化可复制性。</p>
+
+  # ── Footer ──
+  - elementId: footer-line
+    elementType: shape
+    bounds: [80, 656, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [80, 664, 700, 22]
+    content:
+      fontSize: 11
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>Source: 战略规划部内部研究 | Strategic Implementation Roadmap</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 664, 50, 22]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "10"

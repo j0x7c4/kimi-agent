@@ -1,0 +1,251 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # ALL CAPS page title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 18, 900, 42]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:22px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>MARKET SHARE CONCENTRATION IS ACCELERATING</strong></span></p>
+
+  # Chinese subtitle
+  - elementId: page-subtitle
+    elementType: text
+    bounds: [50, 62, 900, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">市场集中度加速提升，头部效应持续强化</span></p>
+
+  # 2px red line below title area
+  - elementId: title-red-line
+    elementType: shape
+    bounds: [50, 88, 800, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Chart title
+  - elementId: chart-title
+    elementType: text
+    bounds: [50, 100, 500, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>行业集中度趋势与头部市场份额（2020-2025）</strong></span></p>
+
+  # Main combo chart (left area)
+  - elementId: main-chart
+    elementType: chart
+    bounds: [50, 126, 800, 300]
+    type: combo
+    options:
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+    data:
+      - {year: "2020", cr5: 45, cr10: 62, growth: 0.12}
+      - {year: "2021", cr5: 49, cr10: 65, growth: 0.15}
+      - {year: "2022", cr5: 53, cr10: 68, growth: 0.18}
+      - {year: "2023", cr5: 57, cr10: 71, growth: 0.14}
+      - {year: "2024", cr5: 60, cr10: 74, growth: 0.16}
+      - {year: "2025E", cr5: 62, cr10: 76, growth: 0.19}
+    x: year
+    y: [cr5, cr10, growth]
+    names: ["CR5份额(%)", "CR10份额(%)", "行业增速"]
+    colors: ["$primary", "$secondary", "$chartcolor1"]
+    seriesStyle:
+      cr5: {type: bar}
+      cr10: {type: bar}
+      growth:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 6
+          fill:
+            type: solid
+            color: "$chartcolor1"
+          border: {style: solid, width: 2, color: "$chartcolor1"}
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 10
+    xAxis:
+      label: {fontSize: 11, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 11, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      axisLine: false
+    secondaryAxis:
+      label: {fontSize: 11, color: "$chartcolor1"}
+      numberFormat: "0%"
+
+  # RIGHT SIDEBAR section label 1 - red left border
+  - elementId: sidebar-border1
+    elementType: shape
+    bounds: [870, 100, 3, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-label1
+    elementType: text
+    bounds: [878, 100, 352, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;"><strong>KEY DRIVERS 驱动因素</strong></span></p>
+
+  - elementId: sidebar-content1
+    elementType: text
+    bounds: [878, 130, 346, 102]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 头部企业规模优势持续扩大，采购、制造、渠道成本全面领先</span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 资本投入加速，并购整合提速，中小企业生存空间收窄</span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 监管趋严推动行业出清，合规壁垒抬高</span></p>
+
+  # Sidebar section label 2
+  - elementId: sidebar-border2
+    elementType: shape
+    bounds: [870, 240, 3, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-label2
+    elementType: text
+    bounds: [878, 240, 352, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;"><strong>DEMAND SHIFTS 需求变化</strong></span></p>
+
+  - elementId: sidebar-content2
+    elementType: text
+    bounds: [878, 268, 346, 128]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 消费者品牌忠诚度向头部迁移，换购意愿集中于龙头品牌</span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; B端客户倾向与更少供应商签订长期协议以降低管理成本</span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 平台化采购模式普及，中间商份额持续压缩</span></p>
+
+  # Sidebar section label 3
+  - elementId: sidebar-border3
+    elementType: shape
+    bounds: [870, 400, 3, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-label3
+    elementType: text
+    bounds: [878, 400, 352, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;"><strong>COMPETITIVE IMPACT 竞争影响</strong></span></p>
+
+  - elementId: sidebar-content3
+    elementType: text
+    bounds: [878, 428, 346, 120]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 排名前3企业ROE平均高出行业均值18个百分点</span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 二梯队企业面临利润率持续下滑压力，战略分化加剧</span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 预计2026年末，CR3将突破45%，竞争格局基本锁定</span></p>
+
+  # Bottom 3-column analysis (y=445)
+  - elementId: analysis-col1
+    elementType: text
+    bounds: [50, 445, 250, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>供给侧</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">规模效应驱动头部企业单位成本下降12%，产能利用率高出行业均值15pp</span></p>
+
+  - elementId: analysis-col2
+    elementType: text
+    bounds: [320, 445, 250, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>需求侧</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">品牌溢价显著，前5品牌净推荐值NPS均值达72，远超尾部品牌的38</span></p>
+
+  - elementId: analysis-col3
+    elementType: text
+    bounds: [590, 445, 250, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>监管侧</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">新合规标准2026年落地，预计淘汰尾部30%产能，加速集中度提升</span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Source
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 662, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：国家统计局、行业协会、Bain研究团队分析</p>
+
+  # Page number
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 662, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>04</p>

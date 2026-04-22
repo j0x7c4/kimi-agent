@@ -1,0 +1,148 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Page number top center（高于 watermark）
+  - elementId: page-num
+    elementType: text
+    bounds: [590, 16, 100, 36]
+    content:
+      style: "$pageNum"
+      align: [center, middle]
+      wrap: false
+      text: 02
+
+  # Ghosted watermark title（装饰性底层，覆盖上半区域）
+  - elementId: watermark-text
+    elementType: text
+    bounds: [138, 60, 1004, 300]
+    content:
+      fontSize: 130
+      color: "#FFFFFF55"
+      fontFamily: "Oranienbaum"
+      align: [center, top]
+      lineHeight: 1.05
+      text: |
+        <p>CONTENTS</p>
+
+  # Script overlay（叠在 watermark 上，为设计意图）
+  - elementId: script-title
+    elementType: text
+    bounds: [138, 130, 1004, 120]
+    content:
+      fontSize: 64
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      align: [center, middle]
+      lineHeight: 1.15
+      text: |
+        <p><em>Index</em></p>
+
+  # 分隔线（watermark 结束后）
+  - elementId: divider
+    elementType: shape
+    bounds: [400, 378, 480, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 0.5, color: "$lightbrown"}
+
+  # 章节列表（从 y=392 开始，watermark 下方）
+  - elementId: item-1
+    elementType: text
+    bounds: [300, 390, 680, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01  ·  Chapter Title One</p>
+
+  - elementId: rule-1
+    elementType: shape
+    bounds: [400, 430, 480, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 0.5, color: "#C8A69640"}
+
+  - elementId: item-2
+    elementType: text
+    bounds: [300, 438, 680, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02  ·  Chapter Title Two</p>
+
+  - elementId: rule-2
+    elementType: shape
+    bounds: [400, 478, 480, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 0.5, color: "#C8A69640"}
+
+  - elementId: item-3
+    elementType: text
+    bounds: [300, 486, 680, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03  ·  Chapter Title Three</p>
+
+  - elementId: rule-3
+    elementType: shape
+    bounds: [400, 526, 480, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 0.5, color: "#C8A69640"}
+
+  - elementId: item-4
+    elementType: text
+    bounds: [300, 534, 680, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04  ·  Chapter Title Four</p>
+
+  - elementId: rule-4
+    elementType: shape
+    bounds: [400, 574, 480, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 0.5, color: "#C8A69640"}
+
+  - elementId: item-5
+    elementType: text
+    bounds: [300, 582, 680, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>05  ·  Chapter Title Five</p>
+
+  - elementId: bottom-divider
+    elementType: shape
+    bounds: [400, 622, 480, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 0.5, color: "$lightbrown"}
+
+  # Page number bottom right
+  - elementId: page-num-br
+    elementType: text
+    bounds: [1160, 680, 80, 36]
+    content:
+      style: "$pageNum"
+      align: [right, middle]
+      wrap: false
+      text: 02

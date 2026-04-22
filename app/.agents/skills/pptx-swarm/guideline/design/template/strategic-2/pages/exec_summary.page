@@ -1,0 +1,217 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: accent-stripe
+    elementType: shape
+    bounds: [0, 4, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: title-accent
+    elementType: shape
+    bounds: [56, 32, 4, 36]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 40, 1120, 40]
+    content:
+      fontSize: 32
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>亚太区复合增长率达15%，24个月内跨越盈亏平衡点</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 86, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  # Vertical divider
+  - elementId: grid-v-line
+    elementType: shape
+    bounds: [640, 106, 1, 540]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  # Horizontal divider
+  - elementId: grid-h-line
+    elementType: shape
+    bounds: [80, 376, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  # Q1: Context (top-left)
+  - elementId: q1-label
+    elementType: text
+    bounds: [80, 112, 200, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: CONTEXT
+
+  - elementId: q1-number
+    elementType: text
+    bounds: [80, 140, 520, 56]
+    content:
+      fontSize: 48
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>$2,320B</p>
+
+  - elementId: q1-body
+    elementType: text
+    bounds: [80, 206, 520, 140]
+    content:
+      fontSize: 18
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>全球SaaS市场2024年规模达$2,320亿，中国渗透率仅10%，对比美国62%存在巨大追赶空间。政策驱动+技术拐点双重催化。</p>
+
+  # Q2: Objective (top-right)
+  - elementId: q2-label
+    elementType: text
+    bounds: [680, 112, 200, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: OBJECTIVE
+
+  - elementId: q2-number
+    elementType: text
+    bounds: [680, 140, 520, 56]
+    content:
+      fontSize: 48
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>$25M ARR</p>
+
+  - elementId: q2-body
+    elementType: text
+    bounds: [680, 206, 500, 140]
+    content:
+      fontSize: 18
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>三年内实现ARR从$3.8M增长至$25M。客户数从200+扩展至800+。净收入留存率维持128%以上。</p>
+
+  # Q3: Path (bottom-left)
+  - elementId: q3-label
+    elementType: text
+    bounds: [80, 396, 200, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: PATH
+
+  - elementId: q3-number
+    elementType: text
+    bounds: [80, 424, 520, 56]
+    content:
+      fontSize: 48
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>3 Phases</p>
+
+  - elementId: q3-body
+    elementType: text
+    bounds: [80, 490, 520, 140]
+    content:
+      fontSize: 18
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>Phase 1: 产品市场验证（$1M ARR）。Phase 2: 规模化增长（$5M ARR）。Phase 3: 市场领导地位（$25M ARR）。</p>
+
+  # Q4: ROI (bottom-right)
+  - elementId: q4-label
+    elementType: text
+    bounds: [680, 396, 200, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: EXPECTED ROI
+
+  - elementId: q4-number
+    elementType: text
+    bounds: [680, 424, 520, 56]
+    content:
+      fontSize: 48
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>5.2x Return</p>
+
+  - elementId: q4-body
+    elementType: text
+    bounds: [680, 490, 500, 140]
+    content:
+      fontSize: 18
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>本轮融资$8M，18个月达成盈亏平衡。预计3年投资回报5.2倍。毛利率从55%提升至72%。</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "04"

@@ -1,0 +1,181 @@
+pageType: chapter
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: orange-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 8
+      - 720
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: chapter-watermark
+    elementType: text
+    bounds:
+      - 400
+      - 620
+      - 840
+      - 80
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><span style="font-size:80px; color:#1565C014; font-family:MiSans;"><strong>CHAPTER 01</strong></span></p>
+  - elementId: chapter-badge-bg
+    elementType: shape
+    bounds:
+      - 48
+      - 200
+      - 80
+      - 32
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: chapter-badge-text
+    elementType: text
+    bounds:
+      - 48
+      - 200
+      - 80
+      - 32
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#FFFFFF; font-family:MiSans;"><strong>第一章</strong></span></p>
+  - elementId: section-title
+    elementType: text
+    bounds:
+      - 48
+      - 248
+      - 900
+      - 80
+    content:
+      lineHeight: 1.2
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:44px; color:#1565C0; font-family:MiSans;"><strong>核心概念导入</strong></span></p>
+  - elementId: section-desc
+    elementType: text
+    bounds:
+      - 48
+      - 344
+      - 760
+      - 104
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:24px; color:#546E7A; font-family:MiSans;">本章将系统介绍本节课的核心概念与基本原理，通过典型例题帮助同学们建立清晰的知识框架。</span></p>
+  - elementId: section-line
+    elementType: shape
+    bounds:
+      - 48
+      - 460
+      - 120
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 3
+      color: "#FF8F00"
+  - elementId: preview-label
+    elementType: text
+    bounds:
+      - 48
+      - 476
+      - 300
+      - 24
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans; letter-spacing:2px">本章要点 · KEY POINTS</span></p>
+  - elementId: preview-item1
+    elementType: text
+    bounds:
+      - 48
+      - 512
+      - 700
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;">· 概念定义与核心性质</span></p>
+  - elementId: preview-item2
+    elementType: text
+    bounds:
+      - 48
+      - 548
+      - 700
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;">· 典型例题解析（共3题）</span></p>
+  - elementId: preview-item3
+    elementType: text
+    bounds:
+      - 48
+      - 584
+      - 700
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;">· 课后思考与拓展训练</span></p>
+  - elementId: progress-done
+    elementType: shape
+    bounds:
+      - 0
+      - 708
+      - 427
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: progress-rest
+    elementType: shape
+    bounds:
+      - 427
+      - 708
+      - 853
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#CFD8DC"

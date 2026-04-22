@@ -1,0 +1,248 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "#F9F7F4"
+elements:
+  # Top header bar (4px navy line)
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  # Left watermark "CONTENTS"
+  - elementId: watermark-text
+    elementType: text
+    bounds: [20, 240, 340, 160]
+    opacity: 0.10
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p style="text-align:center"><span style="font-size:56px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>CONTENTS</strong></span></p>
+
+  # Left vertical gold divider line
+  - elementId: left-divider
+    elementType: shape
+    bounds: [360, 60, 0, 600]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  # Page header label
+  - elementId: header-label
+    elementType: text
+    bounds: [400, 40, 840, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans; letter-spacing:2px">目录 · TABLE OF CONTENTS</span></p>
+
+  # TOC Item 1
+  - elementId: toc-num-1
+    elementType: text
+    bounds: [400, 100, 60, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>01</strong></span></p>
+
+  - elementId: toc-vline-1
+    elementType: shape
+    bounds: [468, 108, 0, 34]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  - elementId: toc-title-1
+    elementType: text
+    bounds: [484, 100, 580, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>研究背景与问题提出</strong></span></p>
+
+  - elementId: toc-time-1
+    elementType: text
+    bounds: [1080, 100, 160, 50]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">~15 min</span></p>
+
+  # TOC Item 2
+  - elementId: toc-num-2
+    elementType: text
+    bounds: [400, 220, 60, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>02</strong></span></p>
+
+  - elementId: toc-vline-2
+    elementType: shape
+    bounds: [468, 228, 0, 34]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  - elementId: toc-title-2
+    elementType: text
+    bounds: [484, 220, 580, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>理论框架与文献综述</strong></span></p>
+
+  - elementId: toc-time-2
+    elementType: text
+    bounds: [1080, 220, 160, 50]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">~20 min</span></p>
+
+  # TOC Item 3
+  - elementId: toc-num-3
+    elementType: text
+    bounds: [400, 340, 60, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>03</strong></span></p>
+
+  - elementId: toc-vline-3
+    elementType: shape
+    bounds: [468, 348, 0, 34]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  - elementId: toc-title-3
+    elementType: text
+    bounds: [484, 340, 580, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>研究方法与数据来源</strong></span></p>
+
+  - elementId: toc-time-3
+    elementType: text
+    bounds: [1080, 340, 160, 50]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">~15 min</span></p>
+
+  # TOC Item 4
+  - elementId: toc-num-4
+    elementType: text
+    bounds: [400, 460, 60, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>04</strong></span></p>
+
+  - elementId: toc-vline-4
+    elementType: shape
+    bounds: [468, 468, 0, 34]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  - elementId: toc-title-4
+    elementType: text
+    bounds: [484, 460, 580, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>实证分析与主要发现</strong></span></p>
+
+  - elementId: toc-time-4
+    elementType: text
+    bounds: [1080, 460, 160, 50]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">~25 min</span></p>
+
+  # TOC Item 5
+  - elementId: toc-num-5
+    elementType: text
+    bounds: [400, 580, 60, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>05</strong></span></p>
+
+  - elementId: toc-vline-5
+    elementType: shape
+    bounds: [468, 588, 0, 34]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  - elementId: toc-title-5
+    elementType: text
+    bounds: [484, 580, 580, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>结论与政策启示</strong></span></p>
+
+  - elementId: toc-time-5
+    elementType: text
+    bounds: [1080, 580, 160, 50]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">~15 min</span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 660, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D6CFC4"
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 668, 60, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">02</span></p>

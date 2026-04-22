@@ -1,0 +1,238 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 导航栏背景
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 56]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 1
+      color: "#EAE8E3"
+
+  # 选中项指示条
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [500, 52, 195, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: nav-item1
+    elementType: text
+    bounds: [100, 10, 190, 36]
+    content:
+      text: "Performance Overview"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item2
+    elementType: text
+    bounds: [310, 10, 170, 36]
+    content:
+      text: "Strategic Initiatives"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item3
+    elementType: text
+    bounds: [500, 10, 195, 36]
+    content:
+      text: |
+        <p><strong>Organization & Talent</strong></p>
+      fontSize: 15
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item4
+    elementType: text
+    bounds: [715, 10, 175, 36]
+    content:
+      text: "Reflection & Forward"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 90, 900, 50]
+    content:
+      text: |
+        <p><strong>Transformation Journey: Key Milestones</strong></p>
+      fontSize: 32
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 分割线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 155, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 时间轴主线
+  - elementId: timeline-main
+    elementType: shape
+    bounds: [100, 350, 1080, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 里程碑1
+  - elementId: milestone1-dot
+    elementType: shape
+    bounds: [200, 342, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: milestone1-date
+    elementType: text
+    bounds: [150, 300, 120, 30]
+    content:
+      text: |
+        <p><strong>Q1 2024</strong></p>
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, bottom]
+
+  - elementId: milestone1-text
+    elementType: text
+    bounds: [120, 380, 180, 130]
+    content:
+      text: |
+        <p><strong>Foundation</strong></p>
+        <p style="font-size:16px; color:#9CA3AF">Strategic planning and team alignment completed</p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+
+  # 里程碑2
+  - elementId: milestone2-dot
+    elementType: shape
+    bounds: [480, 342, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: milestone2-date
+    elementType: text
+    bounds: [430, 300, 120, 30]
+    content:
+      text: |
+        <p><strong>Q2 2024</strong></p>
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, bottom]
+
+  - elementId: milestone2-text
+    elementType: text
+    bounds: [400, 380, 180, 130]
+    content:
+      text: |
+        <p><strong>Execution</strong></p>
+        <p style="font-size:16px; color:#9CA3AF">Core initiatives launch and early wins achieved</p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+
+  # 里程碑3
+  - elementId: milestone3-dot
+    elementType: shape
+    bounds: [760, 342, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: milestone3-date
+    elementType: text
+    bounds: [710, 300, 120, 30]
+    content:
+      text: |
+        <p><strong>Q3 2024</strong></p>
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, bottom]
+
+  - elementId: milestone3-text
+    elementType: text
+    bounds: [680, 380, 180, 130]
+    content:
+      text: |
+        <p><strong>Acceleration</strong></p>
+        <p style="font-size:16px; color:#9CA3AF">Scale success and optimize processes across teams</p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+
+  # 里程碑4
+  - elementId: milestone4-dot
+    elementType: shape
+    bounds: [1040, 342, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: milestone4-date
+    elementType: text
+    bounds: [990, 300, 120, 30]
+    content:
+      text: |
+        <p><strong>Q4 2024</strong></p>
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, bottom]
+
+  - elementId: milestone4-text
+    elementType: text
+    bounds: [960, 380, 180, 130]
+    content:
+      text: |
+        <p><strong>Excellence</strong></p>
+        <p style="font-size:16px; color:#9CA3AF">Sustainable growth model fully established</p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 660, 80, 30]
+    content:
+      text: "07"
+      style: "$caption"
+      align: [right, bottom]

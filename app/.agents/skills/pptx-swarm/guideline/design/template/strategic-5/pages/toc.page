@@ -1,0 +1,344 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 52px 午夜蓝页眉条
+  - elementId: toc-header-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 52]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: toc-header-title
+    elementType: text
+    bounds: [64, 10, 400, 32]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>目录 CONTENTS</strong></p>
+
+  # ===== 2x4 网格卡片 =====
+  # 卡片 1
+  - elementId: toc-card1-bg
+    elementType: shape
+    bounds: [64, 80, 564, 130]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: toc-card1-topbar
+    elementType: shape
+    bounds: [64, 80, 564, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: toc-card1-num
+    elementType: text
+    bounds: [80, 94, 60, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>01</strong></p>
+
+  - elementId: toc-card1-title
+    elementType: text
+    bounds: [80, 130, 520, 28]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>战略背景与市场研判</strong></p>
+
+  - elementId: toc-card1-desc
+    elementType: text
+    bounds: [80, 162, 520, 22]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: 宏观环境、行业趋势与竞争格局分析
+
+  # 卡片 2
+  - elementId: toc-card2-bg
+    elementType: shape
+    bounds: [652, 80, 564, 130]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: toc-card2-topbar
+    elementType: shape
+    bounds: [652, 80, 564, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: toc-card2-num
+    elementType: text
+    bounds: [668, 94, 60, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>02</strong></p>
+
+  - elementId: toc-card2-title
+    elementType: text
+    bounds: [668, 130, 520, 28]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>战略目标与核心框架</strong></p>
+
+  - elementId: toc-card2-desc
+    elementType: text
+    bounds: [668, 162, 520, 22]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: 三年愿景、战略支柱与关键指标体系
+
+  # 卡片 3
+  - elementId: toc-card3-bg
+    elementType: shape
+    bounds: [64, 226, 564, 130]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: toc-card3-topbar
+    elementType: shape
+    bounds: [64, 226, 564, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: toc-card3-num
+    elementType: text
+    bounds: [80, 240, 60, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>03</strong></p>
+
+  - elementId: toc-card3-title
+    elementType: text
+    bounds: [80, 276, 520, 28]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>财务分析与三年预测</strong></p>
+
+  - elementId: toc-card3-desc
+    elementType: text
+    bounds: [80, 308, 520, 22]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: 当前财务状况、收入预测与投资回报
+
+  # 卡片 4
+  - elementId: toc-card4-bg
+    elementType: shape
+    bounds: [652, 226, 564, 130]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: toc-card4-topbar
+    elementType: shape
+    bounds: [652, 226, 564, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: toc-card4-num
+    elementType: text
+    bounds: [668, 240, 60, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04</strong></p>
+
+  - elementId: toc-card4-title
+    elementType: text
+    bounds: [668, 276, 520, 28]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>组织架构与人才部署</strong></p>
+
+  - elementId: toc-card4-desc
+    elementType: text
+    bounds: [668, 308, 520, 22]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: 治理结构重塑与关键岗位配置方案
+
+  # 卡片 5
+  - elementId: toc-card5-bg
+    elementType: shape
+    bounds: [64, 372, 564, 130]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: toc-card5-topbar
+    elementType: shape
+    bounds: [64, 372, 564, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: toc-card5-num
+    elementType: text
+    bounds: [80, 386, 60, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>05</strong></p>
+
+  - elementId: toc-card5-title
+    elementType: text
+    bounds: [80, 422, 520, 28]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>风险矩阵与应对策略</strong></p>
+
+  - elementId: toc-card5-desc
+    elementType: text
+    bounds: [80, 454, 520, 22]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: 关键风险识别、评估与缓释措施
+
+  # 卡片 6
+  - elementId: toc-card6-bg
+    elementType: shape
+    bounds: [652, 372, 564, 130]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  - elementId: toc-card6-topbar
+    elementType: shape
+    bounds: [652, 372, 564, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: toc-card6-num
+    elementType: text
+    bounds: [668, 386, 60, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>06</strong></p>
+
+  - elementId: toc-card6-title
+    elementType: text
+    bounds: [668, 422, 520, 28]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>里程碑路线图与估值分析</strong></p>
+
+  - elementId: toc-card6-desc
+    elementType: text
+    bounds: [668, 454, 520, 22]
+    content:
+      fontSize: 14
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: 关键节点规划、目标企业估值与战略总结
+
+  # 底部页码
+  - elementId: toc-page-num
+    elementType: text
+    bounds: [1190, 680, 60, 24]
+    content:
+      fontSize: 13
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "02 / 10"

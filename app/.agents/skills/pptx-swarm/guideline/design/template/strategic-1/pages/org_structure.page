@@ -1,0 +1,644 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 52
+    shapeName: rect
+    fill:
+      type: solid
+      color: $primary
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 64
+      - 10
+      - 1050
+      - 32
+    wrap: false
+    content:
+      fontSize: 22
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>组织架构升级：面向全球化的治理体系重塑</strong></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1190
+      - 10
+      - 60
+      - 32
+    wrap: false
+    content:
+      fontSize: 13
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        06
+  - elementId: ceo-bg
+    elementType: shape
+    bounds:
+      - 490
+      - 174
+      - 300
+      - 60
+    shapeName: rect
+    fill:
+      type: solid
+      color: $primary
+  - elementId: ceo-copper-bar
+    elementType: shape
+    bounds:
+      - 490
+      - 234
+      - 300
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: ceo-text
+    elementType: text
+    bounds:
+      - 490
+      - 180
+      - 300
+      - 48
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>集团CEO / 董事长</strong></p>
+  - elementId: line-ceo-down
+    elementType: shape
+    bounds:
+      - 640
+      - 237
+      - 0
+      - 33
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: line-vp-horizontal
+    elementType: shape
+    bounds:
+      - 220
+      - 270
+      - 840
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: line-vp1-down
+    elementType: shape
+    bounds:
+      - 220
+      - 270
+      - 0
+      - 20
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: line-vp2-down
+    elementType: shape
+    bounds:
+      - 640
+      - 270
+      - 0
+      - 20
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: line-vp3-down
+    elementType: shape
+    bounds:
+      - 1060
+      - 270
+      - 0
+      - 20
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: vp1-bg
+    elementType: shape
+    bounds:
+      - 80
+      - 290
+      - 280
+      - 52
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: vp1-text
+    elementType: text
+    bounds:
+      - 80
+      - 296
+      - 280
+      - 40
+    wrap: false
+    content:
+      fontSize: 16
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>战略与投资 EVP</strong></p>
+  - elementId: vp2-bg
+    elementType: shape
+    bounds:
+      - 500
+      - 290
+      - 280
+      - 52
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: vp2-text
+    elementType: text
+    bounds:
+      - 500
+      - 296
+      - 280
+      - 40
+    wrap: false
+    content:
+      fontSize: 16
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>运营与技术 COO/CTO</strong></p>
+  - elementId: vp3-bg
+    elementType: shape
+    bounds:
+      - 920
+      - 290
+      - 280
+      - 52
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: vp3-text
+    elementType: text
+    bounds:
+      - 920
+      - 296
+      - 280
+      - 40
+    wrap: false
+    content:
+      fontSize: 16
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>财务与风控 CFO</strong></p>
+  - elementId: line-t1-down
+    elementType: shape
+    bounds:
+      - 220
+      - 342
+      - 0
+      - 28
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: line-t2-down
+    elementType: shape
+    bounds:
+      - 538
+      - 342
+      - 0
+      - 28
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: line-t3-down
+    elementType: shape
+    bounds:
+      - 742
+      - 342
+      - 0
+      - 28
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: line-t4-down
+    elementType: shape
+    bounds:
+      - 1060
+      - 342
+      - 0
+      - 28
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: team1-bg
+    elementType: shape
+    bounds:
+      - 64
+      - 370
+      - 220
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: team1-title
+    elementType: text
+    bounds:
+      - 74
+      - 378
+      - 200
+      - 24
+    wrap: false
+    content:
+      fontSize: 15
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>战略规划部</strong></p>
+  - elementId: team1-desc
+    elementType: text
+    bounds:
+      - 74
+      - 406
+      - 200
+      - 70
+    content:
+      fontSize: 13
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 市场研究与洞察</p>
+        <p>&#9632; 战略规划与执行</p>
+        <p>&#9632; 竞争情报分析</p>
+  - elementId: team2-bg
+    elementType: shape
+    bounds:
+      - 304
+      - 370
+      - 220
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+    border:
+      style: solid
+      width: 2
+      color: $accent
+  - elementId: team2-badge
+    elementType: shape
+    bounds:
+      - 480
+      - 370
+      - 40
+      - 20
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: team2-badge-text
+    elementType: text
+    bounds:
+      - 480
+      - 370
+      - 40
+      - 20
+    wrap: false
+    content:
+      fontSize: 10
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        New
+  - elementId: team2-title
+    elementType: text
+    bounds:
+      - 314
+      - 378
+      - 200
+      - 24
+    wrap: false
+    content:
+      fontSize: 15
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>全球化事业部</strong></p>
+  - elementId: team2-desc
+    elementType: text
+    bounds:
+      - 314
+      - 406
+      - 200
+      - 70
+    content:
+      fontSize: 13
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 北美市场开拓</p>
+        <p>&#9632; 欧洲市场开拓</p>
+        <p>&#9632; 东南亚市场开拓</p>
+  - elementId: team3-bg
+    elementType: shape
+    bounds:
+      - 544
+      - 370
+      - 220
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: team3-title
+    elementType: text
+    bounds:
+      - 554
+      - 378
+      - 200
+      - 24
+    wrap: false
+    content:
+      fontSize: 15
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>技术研发中心</strong></p>
+  - elementId: team3-desc
+    elementType: text
+    bounds:
+      - 554
+      - 406
+      - 200
+      - 70
+    content:
+      fontSize: 13
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 核心产品研发</p>
+        <p>&#9632; AI与大数据平台</p>
+        <p>&#9632; 基础架构建设</p>
+  - elementId: team4-bg
+    elementType: shape
+    bounds:
+      - 784
+      - 370
+      - 220
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+    border:
+      style: solid
+      width: 2
+      color: $accent
+  - elementId: team4-badge
+    elementType: shape
+    bounds:
+      - 960
+      - 370
+      - 40
+      - 20
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: team4-badge-text
+    elementType: text
+    bounds:
+      - 960
+      - 370
+      - 40
+      - 20
+    wrap: false
+    content:
+      fontSize: 10
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        New
+  - elementId: team4-title
+    elementType: text
+    bounds:
+      - 794
+      - 378
+      - 200
+      - 24
+    wrap: false
+    content:
+      fontSize: 15
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>数字化转型办公室</strong></p>
+  - elementId: team4-desc
+    elementType: text
+    bounds:
+      - 794
+      - 406
+      - 200
+      - 70
+    content:
+      fontSize: 13
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 数字化战略落地</p>
+        <p>&#9632; 数据治理体系</p>
+        <p>&#9632; 业务流程再造</p>
+  - elementId: team5-bg
+    elementType: shape
+    bounds:
+      - 1024
+      - 370
+      - 196
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: team5-title
+    elementType: text
+    bounds:
+      - 1034
+      - 378
+      - 176
+      - 24
+    wrap: false
+    content:
+      fontSize: 15
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>财务与风控部</strong></p>
+  - elementId: team5-desc
+    elementType: text
+    bounds:
+      - 1034
+      - 406
+      - 176
+      - 70
+    content:
+      fontSize: 13
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 集团财务管理</p>
+        <p>&#9632; 投融资管理</p>
+        <p>&#9632; 风险合规管理</p>
+  - elementId: legend-copper
+    elementType: shape
+    bounds:
+      - 64
+      - 530
+      - 16
+      - 16
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF00"
+    border:
+      style: solid
+      width: 2
+      color: $accent
+  - elementId: legend-text
+    elementType: text
+    bounds:
+      - 88
+      - 530
+      - 300
+      - 20
+    wrap: false
+    content:
+      fontSize: 13
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>= 本轮战略新设部门 / 岗位</p>
+  - elementId: source-text
+    elementType: text
+    bounds:
+      - 64
+      - 680
+      - 600
+      - 20
+    wrap: false
+    content:
+      fontSize: 12
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p>Source: 集团人力资源部, 2025年度组织架构调整方案（董事会已批准）</p>

@@ -1,0 +1,280 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 50]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p>典型例题：将知识运用到解题中</p>
+
+  # 左侧例题
+  - elementId: framework-bg
+    elementType: shape
+    bounds: [80, 130, 540, 490]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$white"
+    shadow:
+      blur: 8
+      color: "#00000006"
+      offset: [0, 2]
+
+  - elementId: framework-title
+    elementType: text
+    bounds: [120, 160, 460, 36]
+    content:
+      style: "$emphasis"
+      text: |
+        <p>例题解析：一次函数应用</p>
+
+  # 题目
+  - elementId: q-box
+    elementType: shape
+    bounds: [120, 210, 460, 100]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$highlightBg"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: q-text
+    elementType: text
+    bounds: [140, 218, 420, 92]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      lineHeight: 1.6
+      text: |
+        <p><strong>题目：</strong>甲乙两人从A地出发去B地，甲骑车速度为15km/h，乙步行速度为5km/h。求两人相距20km时经过的时间。</p>
+
+  # 解题步骤
+  - elementId: step1-box
+    elementType: shape
+    bounds: [120, 325, 460, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    border:
+      style: solid
+      width: 1
+      color: "$primary"
+
+  - elementId: step1-letter
+    elementType: text
+    bounds: [140, 333, 40, 48]
+    content:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "1"
+
+  - elementId: step1-text
+    elementType: text
+    bounds: [190, 333, 370, 44]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>设未知数</strong>：设经过 t 小时</p>
+
+  # 步骤2
+  - elementId: step2-box
+    elementType: shape
+    bounds: [120, 395, 460, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+
+  - elementId: step2-letter
+    elementType: text
+    bounds: [140, 403, 40, 48]
+    content:
+      fontSize: 26
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "2"
+
+  - elementId: step2-text
+    elementType: text
+    bounds: [190, 403, 370, 44]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>列方程</strong>：15t − 5t = 20</p>
+
+  # 步骤3
+  - elementId: step3-box
+    elementType: shape
+    bounds: [120, 465, 460, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: step3-letter
+    elementType: text
+    bounds: [140, 473, 40, 48]
+    content:
+      fontSize: 26
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "3"
+
+  - elementId: step3-text
+    elementType: text
+    bounds: [190, 473, 370, 44]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>解方程</strong>：10t = 20，t = 2小时</p>
+
+  # 步骤4
+  - elementId: step4-box
+    elementType: shape
+    bounds: [120, 535, 460, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    border:
+      style: solid
+      width: 1
+      color: "$primary"
+
+  - elementId: step4-letter
+    elementType: text
+    bounds: [140, 543, 40, 48]
+    content:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "4"
+
+  - elementId: step4-text
+    elementType: text
+    bounds: [190, 543, 370, 44]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>验证</strong>：甲走30km，乙走10km，差20km</p>
+
+  # 右侧练习区
+  - elementId: practice-bg
+    elementType: shape
+    bounds: [660, 130, 540, 490]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$highlightBg"
+
+  - elementId: practice-title
+    elementType: text
+    bounds: [700, 160, 460, 36]
+    content:
+      style: "$emphasis"
+      text: |
+        <p>课堂练习</p>
+
+  # 练习题
+  - elementId: example-card
+    elementType: shape
+    bounds: [700, 215, 460, 350]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: dash
+      width: 2
+      color: "$primary"
+
+  - elementId: example-icon
+    elementType: icon
+    bounds: [730, 240, 34, 34]
+    iconName: "fas:edit"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: example-text
+    elementType: text
+    bounds: [730, 285, 400, 260]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      lineHeight: 1.8
+      text: |
+        <p><strong>练习1：</strong>已知一次函数 y = kx + 3 的图像过点 (2, 7)，求 k 的值。</p>
+        <p><strong>练习2：</strong>解方程 2x² − 7x + 3 = 0。</p>
+        <p><strong>练习3：</strong>某商品原价100元，连续两次降价后售价为81元，求每次降价百分率。</p>
+
+  # 底部行动号召
+  - elementId: cta-bg
+    elementType: shape
+    bounds: [80, 640, 1120, 60]
+    shapeName: roundRect
+    adjustments: [30000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "$primary"}
+        - {position: 1, color: "$accent"}
+
+  - elementId: cta-text
+    elementType: text
+    bounds: [100, 650, 1080, 40]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>动手练一练：</strong>先独立完成，再和同桌对答案！</p>

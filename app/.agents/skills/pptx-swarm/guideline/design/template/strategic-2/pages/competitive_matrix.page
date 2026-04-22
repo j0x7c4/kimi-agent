@@ -1,0 +1,176 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: accent-stripe
+    elementType: shape
+    bounds: [0, 4, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: title-accent
+    elementType: shape
+    bounds: [56, 32, 4, 36]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 40, 1120, 40]
+    content:
+      fontSize: 32
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>差异化定位：唯一兼具行业深度与平台能力的玩家</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 86, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  - elementId: matrix-table
+    elementType: table
+    bounds: [80, 110, 1120, 400]
+    style: "$default"
+    columnWidths: [0.24, 0.19, 0.19, 0.19, 0.19]
+    rowHeights: [0.111, 0.111, 0.111, 0.111, 0.111, 0.111, 0.111, 0.111, 0.111]
+    rows:
+      - - content:
+            text: |
+              <p><strong>竞争维度</strong></p>
+        - content:
+            text: |
+              <p><strong>我们 (Us)</strong></p>
+        - content:
+            text: |
+              <p><strong>竞品A (国际)</strong></p>
+        - content:
+            text: |
+              <p><strong>竞品B (大厂)</strong></p>
+        - content:
+            text: |
+              <p><strong>竞品C (垂直)</strong></p>
+      - - content:
+            text: "行业Know-How深度"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★☆☆"
+        - content:
+            text: "★★☆☆☆"
+        - content:
+            text: "★★★★☆"
+      - - content:
+            text: "端到端平台能力"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★☆☆☆"
+      - - content:
+            text: "部署灵活性"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★☆☆☆"
+        - content:
+            text: "★★★☆☆"
+        - content:
+            text: "★★★☆☆"
+      - - content:
+            text: "定价竞争力"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★★☆☆"
+        - content:
+            text: "★★☆☆☆"
+        - content:
+            text: "★★★★☆"
+      - - content:
+            text: "客户成功体系"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★☆☆"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★☆☆☆"
+      - - content:
+            text: "数据安全合规"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★★☆☆"
+      - - content:
+            text: "AI集成能力"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★☆☆☆"
+
+  # Key insight
+  - elementId: insight-text
+    elementType: text
+    bounds: [80, 540, 1120, 80]
+    content:
+      fontSize: 18
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="color:#B45309;"><strong>核心壁垒：</strong></span>500+客户数据反哺模型精度持续提升（数据飞轮）· 深度嵌入客户工作流年留存率98%（切换成本）· 30+ ISV合作伙伴渠道复购贡献40%收入（生态网络）</p>
+
+  - elementId: source-text
+    elementType: text
+    bounds: [80, 668, 600, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Source: 内部竞品分析, 客户调研 N=200, 2024Q4</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "08"

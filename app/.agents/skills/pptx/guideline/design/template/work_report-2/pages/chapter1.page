@@ -1,0 +1,23 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [340, 300, 600, 60]
+    content:
+      text: "Performance Overview"
+      fontSize: 40
+      color: "$white"
+      align: [center, middle]
+  
+  # 装饰线
+  - elementId: decoration-line
+    elementType: shape
+    bounds: [540, 380, 200, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"

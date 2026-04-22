@@ -1,0 +1,206 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部白色区域
+  - elementId: cover-top-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$background"
+
+  # 顶部校标与校名
+  - elementId: cover-logo-circle
+    elementType: shape
+    bounds: [50, 24, 50, 50]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$lightBlue"
+    border:
+      style: solid
+      width: 2
+      color: "$primary"
+
+  - elementId: cover-university
+    elementType: text
+    bounds: [114, 28, 320, 28]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>XX大学</strong></p>
+
+  - elementId: cover-university-en
+    elementType: text
+    bounds: [114, 58, 320, 20]
+    content:
+      fontSize: 12
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: XX University
+
+  # 中间贯穿式湖蓝色带（核心 DNA 特征）
+  - elementId: cover-center-band
+    elementType: shape
+    bounds: [0, 108, 1280, 260]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#004060"}
+        - {position: 0.5, color: "#005C82"}
+        - {position: 1, color: "#007AA8"}
+
+  # 色带内：主标题
+  - elementId: cover-main-title
+    elementType: text
+    bounds: [60, 138, 1100, 70]
+    content:
+      style: "$title"
+      fontSize: 44
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>论文答辩/组会汇报PPT模板</strong></p>
+
+  - elementId: cover-subtitle-en
+    elementType: text
+    bounds: [60, 218, 1000, 28]
+    content:
+      fontSize: 16
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 2
+      wrap: false
+      text: |
+        <p>ACADEMIC REPORT / THESIS DEFENSE</p>
+
+  # 底部白色区域：信息标签
+  - elementId: cover-info-section
+    elementType: shape
+    bounds: [0, 368, 1280, 352]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$background"
+
+  # 信息区菱形标签（DNA特征：菱形引导符）
+  - elementId: cover-diamond-1
+    elementType: shape
+    bounds: [52, 400, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: cover-info-name
+    elementType: text
+    bounds: [80, 394, 400, 28]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>汇报人：XXX</strong></p>
+
+  - elementId: cover-diamond-2
+    elementType: shape
+    bounds: [52, 440, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: cover-info-advisor
+    elementType: text
+    bounds: [80, 434, 500, 28]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>指导教师：XXX 教授</p>
+
+  - elementId: cover-diamond-3
+    elementType: shape
+    bounds: [52, 480, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: cover-info-dept
+    elementType: text
+    bounds: [80, 474, 600, 28]
+    content:
+      fontSize: 16
+      color: "#555555"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: XX学院 · XX专业
+
+  - elementId: cover-diamond-4
+    elementType: shape
+    bounds: [52, 520, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$grayBlue"
+
+  - elementId: cover-info-date
+    elementType: text
+    bounds: [80, 514, 400, 28]
+    content:
+      fontSize: 14
+      color: "#888888"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 2025年X月
+
+  # 右侧重叠线框几何装饰（DNA特征）
+  - elementId: cover-geo-outer
+    elementType: shape
+    bounds: [960, 390, 280, 280]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#005C8208"
+    border:
+      style: solid
+      width: 1
+      color: "#005C8230"
+
+  - elementId: cover-geo-inner
+    elementType: shape
+    bounds: [1000, 430, 200, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#005C8205"
+    border:
+      style: solid
+      width: 1
+      color: "#005C8245"
+
+  - elementId: cover-geo-innermost
+    elementType: shape
+    bounds: [1040, 470, 120, 120]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#005C820A"
+    border:
+      style: solid
+      width: 2
+      color: "#005C8260"

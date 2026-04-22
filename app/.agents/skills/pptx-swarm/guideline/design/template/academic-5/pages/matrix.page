@@ -1,0 +1,366 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧侧边栏
+  - elementId: sidebar-bg
+    elementType: shape
+    bounds: [0, 0, 180, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$sidebarBg"
+
+  - elementId: sidebar-logo
+    elementType: shape
+    bounds: [14, 14, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: sidebar-active-bg
+    elementType: shape
+    bounds: [0, 356, 180, 92]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-item-1
+    elementType: text
+    bounds: [8, 80, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        01 研究背景
+
+  - elementId: sidebar-item-2
+    elementType: text
+    bounds: [8, 172, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        02 文献综述
+
+  - elementId: sidebar-item-3
+    elementType: text
+    bounds: [8, 264, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        03 研究方法
+
+  - elementId: sidebar-item-4
+    elementType: text
+    bounds: [8, 356, 164, 92]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04 实验结果</strong></p>
+
+  - elementId: sidebar-item-5
+    elementType: text
+    bounds: [8, 448, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        05 结论展望
+
+  - elementId: sidebar-deco
+    elementType: shape
+    bounds: [84, 590, 12, 12]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+  # 顶部次级标题栏
+  - elementId: breadcrumb-bg
+    elementType: shape
+    bounds: [180, 0, 1100, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: breadcrumb-text
+    elementType: text
+    bounds: [200, 0, 1010, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04 实验结果与讨论</strong>　›　4.2 方法特性分析</p>
+
+  - elementId: breadcrumb-page-num
+    elementType: text
+    bounds: [1230, 0, 50, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "08"
+
+  # 标题
+  - elementId: content-title
+    elementType: text
+    bounds: [200, 68, 1040, 36]
+    content:
+      style: "$pageTitle"
+      fontSize: 24
+      wrap: false
+      text: |
+        <p><strong>方法特性四象限分析</strong></p>
+
+  - elementId: content-title-sep
+    elementType: shape
+    bounds: [200, 110, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B0BEC5"
+
+  # 四象限矩阵（DNA特征）
+  # 象限背景（先绘制，避免遮挡轴标签）
+  - elementId: quadrant-q1-bg
+    elementType: shape
+    bounds: [592, 126, 388, 292]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E8F4F8"
+
+  - elementId: q1-label
+    elementType: text
+    bounds: [720, 134, 252, 22]
+    content:
+      fontSize: 12
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 理想区域（高精度 · 高效率）
+
+  # 坐标轴
+  - elementId: x-axis
+    elementType: shape
+    bounds: [200, 420, 780, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: y-axis
+    elementType: shape
+    bounds: [590, 124, 2, 490]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 轴标签
+  - elementId: x-axis-right-label
+    elementType: text
+    bounds: [910, 424, 80, 28]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 高精度 →
+
+  - elementId: x-axis-left-label
+    elementType: text
+    bounds: [200, 424, 100, 28]
+    content:
+      fontSize: 14
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: ← 低精度
+
+  - elementId: y-axis-top-label
+    elementType: text
+    bounds: [596, 126, 120, 22]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: ↑ 高效率
+
+  - elementId: y-axis-bottom-label
+    elementType: text
+    bounds: [596, 590, 120, 28]
+    content:
+      fontSize: 14
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: ↓ 低效率
+
+  # 方法气泡散点
+  - elementId: dot-our-method
+    elementType: shape
+    bounds: [826, 198, 26, 26]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  - elementId: dot-our-method-label
+    elementType: text
+    bounds: [756, 172, 180, 22]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Ours ★</strong></p>
+
+  - elementId: dot-baseline-1
+    elementType: shape
+    bounds: [756, 328, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$grayBlue"
+
+  - elementId: dot-b1-label
+    elementType: text
+    bounds: [658, 330, 94, 20]
+    content:
+      fontSize: 13
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: ResNet-50
+
+  - elementId: dot-baseline-2
+    elementType: shape
+    bounds: [850, 352, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$grayBlue"
+
+  - elementId: dot-b2-label
+    elementType: text
+    bounds: [872, 354, 80, 20]
+    content:
+      fontSize: 13
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: DINOv2
+
+  - elementId: dot-baseline-3
+    elementType: shape
+    bounds: [646, 256, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$grayBlue"
+
+  - elementId: dot-b3-label
+    elementType: text
+    bounds: [500, 260, 86, 20]
+    content:
+      fontSize: 13
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: ViT-Large
+
+  - elementId: dot-baseline-4
+    elementType: shape
+    bounds: [448, 458, 18, 18]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B0BEC5"
+
+  - elementId: dot-b4-label
+    elementType: text
+    bounds: [372, 462, 72, 20]
+    content:
+      fontSize: 13
+      color: "#B0BEC5"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Baseline
+
+  # 右侧说明文字
+  - elementId: right-analysis-title
+    elementType: text
+    bounds: [1010, 130, 230, 28]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>分析结论</strong></p>
+
+  - elementId: right-analysis-sep
+    elementType: shape
+    bounds: [1010, 162, 160, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: right-analysis-content
+    elementType: text
+    bounds: [1010, 178, 230, 530]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>本方法（★）唯一位于理想象限（右上角），在精度和效率两个维度上均优于所有对比方法。</p>
+        <p> </p>
+        <p><strong>定量对比：</strong></p>
+        <p>◆ vs DINOv2：精度 +4.1%，效率 ×2.3</p>
+        <p>◆ vs ViT-L：参数量减少 75%</p>
+        <p>◆ vs ResNet-50：精度 +10.1%</p>
+        <p>◆ vs Baseline：全面超越</p>
+        <p> </p>
+        <p><strong>帕累托最优分析：</strong></p>
+        <p>本方法在 Acc-FLOPs 帕累托前沿上显著优于现有方法，是唯一同时满足高精度（&gt;94%）和低延迟（&lt;10ms）要求的方案。</p>

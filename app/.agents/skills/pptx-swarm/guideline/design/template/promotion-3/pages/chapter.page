@@ -1,0 +1,54 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Chapter number — huge display, upper left
+  - elementId: chapter-num
+    elementType: text
+    bounds: [17, 6, 600, 259]
+    content:
+      style: "$heroTitle"
+      align: [left, top]
+      text: |
+        <p>01</p>
+        <p>——</p>
+
+  # Chapter title
+  - elementId: chapter-title
+    elementType: text
+    bounds: [31, 280, 560, 200]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p>CHAPTER</p>
+        <p>TITLE</p>
+
+  # Brief description
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [31, 500, 560, 54]
+    content:
+      style: "$subtitle"
+      align: [left, top]
+      wrap: true
+      text: Brief description of what this chapter covers
+
+  # Right: full-height photo
+  - elementId: photo-right
+    elementType: image
+    bounds: [648, 0, 632, 720]
+    src: "https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=1200&q=80"
+    fit:
+      mode: cover
+
+  # Bottom rule (left side only)
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [31, 710, 580, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$gray"

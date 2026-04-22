@@ -1,0 +1,84 @@
+pageType: content
+elements:
+# --- Decorative ---
+- elementId: deco_circle
+  elementType: shape
+  bounds: [1500, 100, 200, 200]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#10B98112"
+- elementId: deco_hline
+  elementType: shape
+  bounds: [117, 460, 883, 2]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B98125"
+# --- Logo badge ---
+- elementId: logo_bg
+  elementType: shape
+  bounds: [1430, 142, 200, 80]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B981"
+- elementId: text_logo
+  elementType: text
+  bounds: [1465.37, 166.71, 133.41, 49.62]
+  content:
+    align: [center, top]
+    fontSize: 30.7
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 42.92
+    text: A/X
+# --- Sidebar ---
+- elementId: text_sidebar
+  elementType: text
+  bounds: [1649.25, 816.47, 267.94, 35.14]
+  rotation: -90
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING
+# --- Content ---
+- elementId: text_title
+  elementType: text
+  bounds: [117.48, 115.85, 866.99, 132.19]
+  content:
+    align: [left, top]
+    fontSize: 100
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 125
+    text: Your Role
+- elementId: text_subtitle
+  elementType: text
+  bounds: [117.48, 477.46, 882.84, 58.93]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "#10B981"
+    lineHeightPx: 50
+    text: Company Expectations
+- elementId: text_body
+  elementType: text
+  bounds: [117.48, 575.87, 882.84, 385.29]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 35.45
+    text: |
+      <p>Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience.</p>
+      <p> </p>
+      <p>It serves a variety of purposes, making presentations powerful tools for convincing and teaching. To create a stunning presentation, it's best to simplify your thoughts.</p>
+      <p> </p>
+      <p>Start with an outline of topics and identify highlights, which can be applied to whatever subject you plan on discussing. You can then organize them into your introduction, your main content, and your conclusion.</p>

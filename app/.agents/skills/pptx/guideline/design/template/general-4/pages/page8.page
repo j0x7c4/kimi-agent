@@ -1,0 +1,160 @@
+pageType: content
+background:
+  type: solid
+  color: "#10B981"
+elements:
+# --- Decorative ---
+- elementId: deco_circle
+  elementType: shape
+  bounds: [50, 50, 200, 200]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF08"
+- elementId: deco_vline
+  elementType: shape
+  bounds: [1070, 140, 2, 820]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#FFFFFF20"
+# --- Label ---
+- elementId: label_bg
+  elementType: shape
+  bounds: [60, 930, 340, 50]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B981"
+- elementId: text_label
+  elementType: text
+  bounds: [95.97, 948, 268.13, 34.39]
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 27.99
+    letterSpacing: 0.99
+    text: NEW HIRE ONBOARDING
+# --- Left: Big title ---
+- elementId: text_subtitle
+  elementType: text
+  bounds: [102.16, 138.59, 768.37, 58.93]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 50
+    text: The Schedule
+- elementId: text_title
+  elementType: text
+  bounds: [98.4, 232.54, 768.37, 380.61]
+  content:
+    align: [left, top]
+    fontSize: 100
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 125
+    text: Physical Onboarding Session
+# --- Right: 3 items ---
+- elementId: text_num1
+  elementType: text
+  bounds: [1019.68, 170.07, 77.18, 45.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 36.67
+    text: '01'
+- elementId: text_item1
+  elementType: text
+  bounds: [1105.25, 157.83, 655.8, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 41.67
+    text: Workstation Overview
+- elementId: text_desc1
+  elementType: text
+  bounds: [1105.25, 215.91, 655.8, 130.72]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 31.73
+    text: |
+      <p>Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p style="line-height:31.72px">It is mostly presented before an audience.  </p>
+- elementId: text_num2
+  elementType: text
+  bounds: [1019.68, 464.57, 77.18, 45.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 36.67
+    text: '02'
+- elementId: text_item2
+  elementType: text
+  bounds: [1105.25, 455.21, 655.8, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 41.67
+    text: Lead Introduction
+- elementId: text_desc2
+  elementType: text
+  bounds: [1105.25, 513.28, 655.8, 130.72]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 31.73
+    text: |
+      <p>Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p style="line-height:31.72px">It is mostly presented before an audience.</p>
+- elementId: text_num3
+  elementType: text
+  bounds: [1019.68, 764.81, 77.18, 45.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 36.67
+    text: '03'
+- elementId: text_item3
+  elementType: text
+  bounds: [1105.25, 752.58, 655.8, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 41.67
+    text: Team Introductions
+- elementId: text_desc3
+  elementType: text
+  bounds: [1105.25, 810.65, 655.8, 130.72]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 31.73
+    text: |
+      <p>Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p style="line-height:31.72px">It is mostly presented before an audience.</p>

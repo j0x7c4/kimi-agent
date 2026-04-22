@@ -1,0 +1,83 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#4361EE"
+elements:
+- elementId: image0
+  elementType: image
+  bounds: [997.36, 0, 922.64, 1080]
+  src: https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200
+  fit:
+    mode: cover
+  crop:
+    top: 0.1098
+    bottom: 0.1098
+- elementId: line1
+  elementType: shape
+  bounds: [108, 109, 889.36, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: line2
+  elementType: shape
+  bounds: [997.86, 0, 0, 1080]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: line5
+  elementType: shape
+  bounds: [108, 971.5, 889.36, 0.5]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text6
+  elementType: text
+  bounds: [98.4, 268.57, 732.06, 317.27]
+  content:
+    align: [left, top]
+    fontSize: 133.3
+    fontFamily: "Coda, deyihei"
+    color: "$dark"
+    lineHeightPx: 133.32
+    text: |
+      <p>PRODUCT <span style="color:$light">OVERVIEW</span></p>
+- elementId: text7
+  elementType: text
+  bounds: [98.4, 596.23, 732.06, 228.2]
+  content:
+    align: [left, top]
+    fontSize: 32
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 44.79
+    text: A description of the product you’re launching goes here. Include key features, unique selling propositions (USPs), and proposed benefits to explain the product and why it matters.
+- elementId: text9
+  elementType: text
+  bounds: [159.85, 129.42, 172.82, 71.28]
+  content:
+    align: [left, top]
+    fontSize: 30
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#0F1B3D"
+    lineHeightPx: 30.03
+    letterSpacing: -1.2
+    text: |
+      <p>Launch</p>
+      <p>Studio</p>
+- elementId: logo_diamond
+  elementType: shape
+  bounds: [108, 138.93, 52.49, 52.49]
+  shapeName: custom
+  path: 666605,666605;M333302 0L666605 333302L333302 666605L0 333302Z
+  fill:
+    type: solid
+    color: "#0F1B3D"

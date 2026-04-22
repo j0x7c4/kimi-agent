@@ -1,0 +1,93 @@
+pageType: final
+elements:
+  # Left: white panel
+  - elementId: left-bg
+    elementType: shape
+    bounds: [0, 0, 640, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  # Right: photo
+  - elementId: right-photo
+    elementType: image
+    bounds: [640, 0, 640, 720]
+    src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80"
+    fit:
+      mode: cover
+
+  # Page number (top right, on photo)
+  - elementId: page-num
+    elementType: text
+    bounds: [1140, 46, 100, 48]
+    content:
+      fontSize: 28
+      color: "$white"
+      fontFamily: "Oranienbaum"
+      align: [right, middle]
+      wrap: false
+      text: 17
+
+  # Left: closing title
+  - elementId: final-title
+    elementType: text
+    bounds: [60, 80, 540, 240]
+    content:
+      fontSize: 56
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      lineHeight: 1.1
+      align: [left, top]
+      text: |
+        <p><strong>LET'S WORK</strong></p>
+        <p><strong>TOGETHER</strong></p>
+
+  # Contact details
+  - elementId: contact-email-label
+    elementType: text
+    bounds: [60, 360, 540, 30]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: EMAIL
+
+  - elementId: contact-email
+    elementType: text
+    bounds: [60, 394, 540, 36]
+    content:
+      style: "$body"
+      align: [left, middle]
+      text: hello@reallygreatsite.com
+
+  - elementId: contact-phone-label
+    elementType: text
+    bounds: [60, 446, 540, 30]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: MOBILE
+
+  - elementId: contact-phone
+    elementType: text
+    bounds: [60, 480, 540, 36]
+    content:
+      style: "$body"
+      align: [left, middle]
+      text: 123-456-7890
+
+  - elementId: contact-addr-label
+    elementType: text
+    bounds: [60, 532, 540, 30]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: MAILING ADDRESS
+
+  - elementId: contact-addr
+    elementType: text
+    bounds: [60, 566, 540, 36]
+    content:
+      style: "$body"
+      align: [left, middle]
+      text: 123 Anywhere St., Any City, ST 12345

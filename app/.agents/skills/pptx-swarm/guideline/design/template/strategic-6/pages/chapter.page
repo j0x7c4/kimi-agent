@@ -1,0 +1,57 @@
+pageType: chapter
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: ch-watermark
+    elementType: text
+    bounds: [880, 200, 320, 140]
+    content:
+      fontSize: 96
+      color: "#E2E8F0"
+      fontFamily: "Liter, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "01"
+
+  - elementId: ch-deco-line
+    elementType: shape
+    bounds: [80, 290, 80, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E2E8F0"
+
+  - elementId: ch-title
+    elementType: text
+    bounds: [80, 310, 800, 48]
+    content:
+      fontSize: 36
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>战略背景与市场机遇</strong></p>
+
+  - elementId: ch-summary
+    elementType: text
+    bounds: [80, 370, 700, 28]
+    content:
+      fontSize: 18
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>全球数字化转型市场规模将达 $3.4 万亿，窗口期仅剩 3 年</p>
+
+  - elementId: ch-page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "03"

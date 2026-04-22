@@ -1,0 +1,122 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧细竖线（主色调）
+  - elementId: chapter-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 中心竖向分隔线
+  - elementId: chapter-center-line
+    elementType: shape
+    bounds: [480, 140, 1, 440]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  # 左侧大号章节数字（蓝色）
+  - elementId: chapter-num
+    elementType: text
+    bounds: [60, 200, 380, 200]
+    content:
+      fontSize: 120
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01</p>
+
+  # 左侧章节英文标签
+  - elementId: chapter-section-label
+    elementType: text
+    bounds: [60, 400, 380, 28]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      letterSpacing: 4
+      wrap: false
+      text: CHAPTER ONE
+
+  # 右侧章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [520, 236, 700, 56]
+    content:
+      fontSize: 36
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究背景与问题提出</strong></p>
+
+  - elementId: chapter-title-en
+    elementType: text
+    bounds: [520, 302, 700, 28]
+    content:
+      fontSize: 18
+      color: "#AAAAAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Background and Problem Statement
+
+  # 右侧子章节（简洁无前缀）
+  - elementId: chapter-sub-separator
+    elementType: shape
+    bounds: [520, 360, 320, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  - elementId: chapter-sub-1
+    elementType: text
+    bounds: [520, 380, 700, 28]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.1　研究背景与意义
+
+  - elementId: chapter-sub-2
+    elementType: text
+    bounds: [520, 416, 700, 28]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.2　国内外研究现状
+
+  - elementId: chapter-sub-3
+    elementType: text
+    bounds: [520, 452, 700, 28]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.3　研究目标与技术路线
+
+  # 页码
+  - elementId: chapter-page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "3"

@@ -1,0 +1,110 @@
+pageType: content
+elements:
+  # Left half: blush background
+  - elementId: left-bg
+    elementType: shape
+    bounds: [0, 0, 640, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$background"
+
+  # Right half: white background
+  - elementId: right-bg
+    elementType: shape
+    bounds: [640, 0, 640, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  # Left: large section title
+  - elementId: left-title
+    elementType: text
+    bounds: [80, 100, 500, 200]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p>SKILLS &amp;</p>
+        <p>EXPERTISE</p>
+
+  # Left: ghosted number accent
+  - elementId: left-accent-num
+    elementType: text
+    bounds: [80, 340, 500, 200]
+    content:
+      fontSize: 160
+      color: "#9F786618"
+      fontFamily: "Oranienbaum"
+      align: [left, top]
+      wrap: false
+      text: 06
+
+  # Page number
+  - elementId: page-num
+    elementType: text
+    bounds: [80, 650, 120, 40]
+    content:
+      style: "$pageNum"
+      align: [left, middle]
+      wrap: false
+      text: 06
+
+  # Right: heading + body sections
+  - elementId: right-head-1
+    elementType: text
+    bounds: [700, 100, 500, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: PHOTOGRAPHY
+
+  - elementId: right-body-1
+    elementType: text
+    bounds: [700, 140, 500, 130]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Presentations are communication tools that</p>
+        <p>can be used as demonstrations, lectures,</p>
+        <p>speeches, reports, and more.</p>
+
+  - elementId: right-head-2
+    elementType: text
+    bounds: [700, 296, 500, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: PHOTO EDITING
+
+  - elementId: right-body-2
+    elementType: text
+    bounds: [700, 336, 500, 130]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Presentations are communication tools that</p>
+        <p>can be used as demonstrations, lectures,</p>
+        <p>speeches, reports, and more.</p>
+
+  - elementId: right-head-3
+    elementType: text
+    bounds: [700, 490, 500, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: BRAND STRATEGY
+
+  - elementId: right-body-3
+    elementType: text
+    bounds: [700, 530, 500, 130]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Presentations are communication tools that</p>
+        <p>can be used as demonstrations, lectures,</p>
+        <p>speeches, reports, and more.</p>

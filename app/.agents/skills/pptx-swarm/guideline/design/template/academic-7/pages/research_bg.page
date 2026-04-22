@@ -1,0 +1,302 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深紫导航色带
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  # 左侧渐变紫色细竖线
+  - elementId: nav-left-accent
+    elementType: shape
+    bounds: [0, 0, 4, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB550"}
+
+  - elementId: nav-chapter-text
+    elementType: text
+    bounds: [20, 0, 900, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 01 研究背景 / 1.1 研究动机
+
+  - elementId: nav-page-num
+    elementType: text
+    bounds: [1200, 0, 60, 50]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "04"
+
+  # 标题区
+  - elementId: page-title
+    elementType: text
+    bounds: [24, 68, 1000, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>研究问题的提出与研究动机</strong></p>
+
+  # 左侧紫色小标记
+  - elementId: title-accent-mark
+    elementType: shape
+    bounds: [12, 68, 4, 40]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB5"}
+
+  - elementId: title-sep
+    elementType: shape
+    bounds: [24, 116, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E0D4F0"
+
+  # 左侧主要内容（约55%宽）
+  - elementId: main-content-title
+    elementType: text
+    bounds: [24, 132, 680, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>问题背景</strong></p>
+
+  - elementId: main-content-1
+    elementType: text
+    bounds: [24, 168, 680, 80]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>随着人工智能技术的快速发展，XX领域面临前所未有的挑战：传统方法在处理大规模、高维度、非结构化数据时存在明显瓶颈。</p>
+
+  - elementId: main-content-2-title
+    elementType: text
+    bounds: [24, 268, 680, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>核心挑战</strong></p>
+
+  # 三个挑战卡片（浅紫底）
+  - elementId: challenge-1-bg
+    elementType: shape
+    bounds: [24, 304, 200, 90]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: challenge-1-title
+    elementType: text
+    bounds: [36, 316, 176, 22]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>数据挑战</strong></p>
+
+  - elementId: challenge-1-text
+    elementType: text
+    bounds: [36, 342, 176, 44]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>标注稀缺、噪声大、分布不均</p>
+
+  - elementId: challenge-2-bg
+    elementType: shape
+    bounds: [250, 304, 200, 90]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: challenge-2-title
+    elementType: text
+    bounds: [262, 316, 176, 22]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>模型挑战</strong></p>
+
+  - elementId: challenge-2-text
+    elementType: text
+    bounds: [262, 342, 176, 44]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>泛化能力弱、可解释性差</p>
+
+  - elementId: challenge-3-bg
+    elementType: shape
+    bounds: [476, 304, 200, 90]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: challenge-3-title
+    elementType: text
+    bounds: [488, 316, 176, 22]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>部署挑战</strong></p>
+
+  - elementId: challenge-3-text
+    elementType: text
+    bounds: [488, 342, 176, 44]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>计算复杂度高、实时性不足</p>
+
+  # 右侧图表区（渐变紫色背景）
+  - elementId: figure-bg
+    elementType: shape
+    bounds: [730, 126, 526, 480]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "#EEE8F4"}
+        - {position: 1, color: "#EEE8F4"}
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: figure-label
+    elementType: text
+    bounds: [730, 126, 526, 480]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Figure 1. 研究问题示意图</p>
+
+  # 底部研究意义
+  - elementId: significance-bg
+    elementType: shape
+    bounds: [24, 424, 686, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: significance-label
+    elementType: shape
+    bounds: [24, 424, 100, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: significance-label-text
+    elementType: text
+    bounds: [24, 424, 100, 28]
+    content:
+      fontSize: 12
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 研究意义
+
+  - elementId: significance-text
+    elementType: text
+    bounds: [40, 462, 654, 36]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>本研究旨在从理论与实践层面攻克上述核心挑战，为XX领域的智能化发展提供新的思路与方法。</p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "4"

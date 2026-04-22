@@ -1,0 +1,71 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: shape0
+    elementType: shape
+    bounds:
+      - 1035.38
+      - 108
+      - 776.62
+      - 562.31
+    shapeName: custom
+    path: 7397326,5355966;M0 0L7397326 0L7397326 5355966L0 5355966L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200
+      fit:
+        mode: contain
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 98.4
+      - 118.38
+      - 721.51
+      - 246.35
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>Why 5G Is Better Than 4G</strong></p>
+  - elementId: text2
+    elementType: text
+    bounds:
+      - 98.4
+      - 434.31
+      - 587.1
+      - 170.15
+    content:
+      fontSize: 37.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 56
+      align:
+        - left
+        - top
+      text: |
+        The next generation of wireless technology that will transform life significantly
+  - elementId: text3
+    elementType: text
+    bounds:
+      - 1025.78
+      - 765
+      - 761.26
+      - 211.8
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        5G technology guarantees a faster and smoother transmission of data, no matter how high the amount. Users can look forward to faster downloads and better support for more connected devices.

@@ -1,0 +1,159 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: content-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: content-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: content-section-name
+    elementType: text
+    bounds: [900, 16, 340, 22]
+    content:
+      fontSize: 12
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: 03 研究方法与实验设计
+
+  - elementId: page-title
+    elementType: text
+    bounds: [40, 24, 840, 36]
+    content:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>本文方法与现有方法对比分析</strong></p>
+
+  - elementId: title-separator
+    elementType: shape
+    bounds: [40, 68, 1200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 左栏
+  - elementId: left-header
+    elementType: shape
+    bounds: [40, 82, 575, 42]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: left-header-text
+    elementType: text
+    bounds: [40, 82, 575, 42]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>现有主流方法</strong></p>
+
+  - elementId: left-body
+    elementType: shape
+    bounds: [40, 124, 575, 470]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: left-content
+    elementType: text
+    bounds: [60, 144, 535, 430]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>• 依赖大量有标注训练数据</p>
+        <p>• 模型结构复杂，参数量大</p>
+        <p>• 推理速度较慢，难以实时部署</p>
+        <p>• 跨域迁移效果不稳定</p>
+        <p>• 对分布外样本鲁棒性弱</p>
+        <p>• 可解释性有限</p>
+
+  # 右栏
+  - elementId: right-header
+    elementType: shape
+    bounds: [665, 82, 575, 42]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: right-header-text
+    elementType: text
+    bounds: [665, 82, 575, 42]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>本文提出方法</strong></p>
+
+  - elementId: right-body
+    elementType: shape
+    bounds: [665, 124, 575, 470]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: right-content
+    elementType: text
+    bounds: [685, 144, 535, 430]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>• 支持弱监督/自监督训练</p>
+        <p>• 轻量化设计，参数量减少60%</p>
+        <p>• 实时推理，延迟 &lt; 10ms</p>
+        <p>• 内置域自适应模块</p>
+        <p>• 鲁棒特征表示，OOD表现优异</p>
+        <p>• 集成梯度可视化解释工具</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "6"

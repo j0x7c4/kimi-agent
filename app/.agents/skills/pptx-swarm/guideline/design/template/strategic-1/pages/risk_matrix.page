@@ -1,0 +1,692 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 52
+    shapeName: rect
+    fill:
+      type: solid
+      color: $primary
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 64
+      - 10
+      - 1050
+      - 32
+    wrap: false
+    content:
+      fontSize: 22
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>风险矩阵与应对策略：五大核心风险管控</strong></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1190
+      - 10
+      - 60
+      - 32
+    wrap: false
+    content:
+      fontSize: 13
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        07
+  - elementId: yaxis-label
+    elementType: text
+    bounds:
+      - 64
+      - 280
+      - 20
+      - 180
+    wrap: false
+    content:
+      fontSize: 13
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        影响程度 →
+  - elementId: xaxis-label
+    elementType: text
+    bounds:
+      - 250
+      - 570
+      - 200
+      - 20
+    wrap: false
+    content:
+      fontSize: 13
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        发生概率 →
+  - elementId: quad-ll
+    elementType: shape
+    bounds:
+      - 100
+      - 360
+      - 260
+      - 200
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#ffffff"
+  - elementId: quad-rl
+    elementType: shape
+    bounds:
+      - 360
+      - 360
+      - 260
+      - 200
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#f2f2f2"
+  - elementId: quad-lh
+    elementType: shape
+    bounds:
+      - 100
+      - 160
+      - 260
+      - 200
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#f0f0f5"
+  - elementId: quad-rh
+    elementType: shape
+    bounds:
+      - 360
+      - 160
+      - 260
+      - 200
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#d9e2ec"
+  - elementId: quad-ll-label
+    elementType: text
+    bounds:
+      - 160
+      - 520
+      - 140
+      - 20
+    wrap: false
+    content:
+      fontSize: 11
+      color: "#000000"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        低风险 · 监控
+  - elementId: quad-rl-label
+    elementType: text
+    bounds:
+      - 420
+      - 520
+      - 140
+      - 20
+    wrap: false
+    content:
+      fontSize: 11
+      color: "#000000"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        中风险 · 关注
+  - elementId: quad-lh-label
+    elementType: text
+    bounds:
+      - 160
+      - 165
+      - 140
+      - 20
+    wrap: false
+    content:
+      fontSize: 11
+      color: "#0b1b33"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        高风险 · 预案
+  - elementId: quad-rh-label
+    elementType: text
+    bounds:
+      - 420
+      - 165
+      - 140
+      - 20
+    wrap: false
+    content:
+      fontSize: 11
+      color: "#b87334"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        极高风险 · 立即行动
+  - elementId: risk-dot-1
+    elementType: shape
+    bounds:
+      - 420
+      - 210
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: risk-label-1
+    elementType: text
+    bounds:
+      - 454
+      - 212
+      - 100
+      - 24
+    wrap: false
+    content:
+      fontSize: 12
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        R1 地缘政治
+  - elementId: risk-dot-2
+    elementType: shape
+    bounds:
+      - 500
+      - 260
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: risk-label-2
+    elementType: text
+    bounds:
+      - 534
+      - 262
+      - 100
+      - 24
+    wrap: false
+    content:
+      fontSize: 12
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        R2 汇率波动
+  - elementId: risk-dot-3
+    elementType: shape
+    bounds:
+      - 200
+      - 230
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: risk-label-3
+    elementType: text
+    bounds:
+      - 234
+      - 232
+      - 100
+      - 24
+    wrap: false
+    content:
+      fontSize: 12
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        R3 技术颠覆
+  - elementId: risk-dot-4
+    elementType: shape
+    bounds:
+      - 440
+      - 420
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: risk-label-4
+    elementType: text
+    bounds:
+      - 474
+      - 422
+      - 100
+      - 24
+    wrap: false
+    content:
+      fontSize: 12
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        R4 人才流失
+  - elementId: risk-dot-5
+    elementType: shape
+    bounds:
+      - 200
+      - 400
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#4CAF50"
+  - elementId: risk-label-5
+    elementType: text
+    bounds:
+      - 234
+      - 402
+      - 100
+      - 24
+    wrap: false
+    content:
+      fontSize: 12
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        R5 监管合规
+  - elementId: resp-num1
+    elementType: shape
+    bounds:
+      - 660
+      - 140
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: resp-num1-text
+    elementType: text
+    bounds:
+      - 660
+      - 140
+      - 28
+      - 28
+    wrap: false
+    content:
+      fontSize: 14
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        1
+  - elementId: resp-title1
+    elementType: text
+    bounds:
+      - 700
+      - 140
+      - 516
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>地缘政治风险</strong></p>
+  - elementId: resp-desc1
+    elementType: text
+    bounds:
+      - 700
+      - 166
+      - 516
+      - 44
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>应对：供应链多元化布局，建立区域化生产基地</p>
+        <p style="font-size:12px; color:#8B8C89;">责任人：EVP战略与投资 · 优先级：P0</p>
+  - elementId: resp-num2
+    elementType: shape
+    bounds:
+      - 660
+      - 228
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: resp-num2-text
+    elementType: text
+    bounds:
+      - 660
+      - 228
+      - 28
+      - 28
+    wrap: false
+    content:
+      fontSize: 14
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        2
+  - elementId: resp-title2
+    elementType: text
+    bounds:
+      - 700
+      - 228
+      - 516
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>汇率波动风险</strong></p>
+  - elementId: resp-desc2
+    elementType: text
+    bounds:
+      - 700
+      - 254
+      - 516
+      - 44
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>应对：远期外汇锁定+自然对冲（本地化收支匹配）</p>
+        <p style="font-size:12px; color:#8B8C89;">责任人：CFO · 优先级：P0</p>
+  - elementId: resp-num3
+    elementType: shape
+    bounds:
+      - 660
+      - 316
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: resp-num3-text
+    elementType: text
+    bounds:
+      - 660
+      - 316
+      - 28
+      - 28
+    wrap: false
+    content:
+      fontSize: 14
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        3
+  - elementId: resp-title3
+    elementType: text
+    bounds:
+      - 700
+      - 316
+      - 516
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>技术颠覆风险</strong></p>
+  - elementId: resp-desc3
+    elementType: text
+    bounds:
+      - 700
+      - 342
+      - 516
+      - 44
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>应对：研发投入占比提升至12%，建立技术前沿预警机制</p>
+        <p style="font-size:12px; color:#8B8C89;">责任人：CTO · 优先级：P1</p>
+  - elementId: resp-num4
+    elementType: shape
+    bounds:
+      - 660
+      - 404
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: resp-num4-text
+    elementType: text
+    bounds:
+      - 660
+      - 404
+      - 28
+      - 28
+    wrap: false
+    content:
+      fontSize: 14
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        4
+  - elementId: resp-title4
+    elementType: text
+    bounds:
+      - 700
+      - 404
+      - 516
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>核心人才流失风险</strong></p>
+  - elementId: resp-desc4
+    elementType: text
+    bounds:
+      - 700
+      - 430
+      - 516
+      - 44
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>应对：实施长期股权激励计划+全球人才竞争力薪酬体系</p>
+        <p style="font-size:12px; color:#8B8C89;">责任人：CHRO · 优先级：P1</p>
+  - elementId: resp-num5
+    elementType: shape
+    bounds:
+      - 660
+      - 492
+      - 28
+      - 28
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: resp-num5-text
+    elementType: text
+    bounds:
+      - 660
+      - 492
+      - 28
+      - 28
+    wrap: false
+    content:
+      fontSize: 14
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        5
+  - elementId: resp-title5
+    elementType: text
+    bounds:
+      - 700
+      - 492
+      - 516
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>监管合规风险</strong></p>
+  - elementId: resp-desc5
+    elementType: text
+    bounds:
+      - 700
+      - 518
+      - 516
+      - 44
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>应对：各区域合规团队前置审查+外部法律顾问常年服务</p>
+        <p style="font-size:12px; color:#8B8C89;">责任人：GC/CLO · 优先级：P2</p>
+  - elementId: source-text
+    elementType: text
+    bounds:
+      - 64
+      - 680
+      - 600
+      - 20
+    wrap: false
+    content:
+      fontSize: 12
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p>Source: 集团风险管理委员会, 2025Q1风险评估报告</p>

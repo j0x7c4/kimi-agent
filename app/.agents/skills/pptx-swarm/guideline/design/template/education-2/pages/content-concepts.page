@@ -1,0 +1,216 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 600, 50]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p>一次函数：从定义到图像的完整认识</p>
+
+  # 左侧图示
+  - elementId: pyramid-bg
+    elementType: shape
+    bounds: [80, 130, 480, 490]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$white"
+    shadow:
+      blur: 8
+      color: "#00000006"
+      offset: [0, 2]
+
+  # 函数层次 - 底层
+  - elementId: pyramid-base
+    elementType: shape
+    bounds: [120, 480, 400, 100]
+    shapeName: trapezoid
+    adjustments: [25000]
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: pyramid-base-text
+    elementType: text
+    bounds: [120, 480, 400, 100]
+    content:
+      fontSize: 20
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>y = kx + b</strong> 一次函数</p>
+
+  # 中层
+  - elementId: pyramid-mid
+    elementType: shape
+    bounds: [160, 380, 320, 80]
+    shapeName: trapezoid
+    adjustments: [20000]
+    fill:
+      type: solid
+      color: "#0A8B91"
+
+  - elementId: pyramid-mid-text
+    elementType: text
+    bounds: [160, 380, 320, 80]
+    content:
+      fontSize: 20
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>y = kx</strong> 正比例函数</p>
+
+  # 上层
+  - elementId: pyramid-top
+    elementType: shape
+    bounds: [200, 300, 240, 60]
+    shapeName: trapezoid
+    adjustments: [15000]
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: pyramid-top-text
+    elementType: text
+    bounds: [200, 300, 240, 60]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>y = b</strong> 常数函数</p>
+
+  # 顶部
+  - elementId: pyramid-peak
+    elementType: shape
+    bounds: [240, 240, 160, 40]
+    shapeName: triangle
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "#8E9AA8"
+
+  - elementId: pyramid-peak-text
+    elementType: text
+    bounds: [240, 200, 160, 40]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>函数关系</p>
+
+  # 右侧要点
+  - elementId: insights-bg
+    elementType: shape
+    bounds: [600, 130, 600, 490]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$cardBg"
+
+  # 要点标题
+  - elementId: insights-title
+    elementType: text
+    bounds: [640, 160, 520, 40]
+    content:
+      style: "$emphasis"
+      text: |
+        <p>核心知识点</p>
+
+  # 要点1
+  - elementId: point-1-icon
+    elementType: icon
+    bounds: [640, 225, 28, 28]
+    iconName: "fas:lightbulb"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: point-1-text
+    elementType: text
+    bounds: [682, 220, 480, 90]
+    content:
+      style: "$bodyText"
+      align: [left, top]
+      text: |
+        <p><strong>k 决定直线的倾斜方向</strong></p>
+        <p><span style="font-size:18px; color:$lightText;">k>0 时函数递增，k<0 时函数递减</span></p>
+
+  # 要点2
+  - elementId: point-2-icon
+    elementType: icon
+    bounds: [640, 335, 28, 28]
+    iconName: "fas:chart-line"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: point-2-text
+    elementType: text
+    bounds: [682, 330, 480, 90]
+    content:
+      style: "$bodyText"
+      align: [left, top]
+      text: |
+        <p><strong>b 决定直线与 y 轴的交点</strong></p>
+        <p><span style="font-size:18px; color:$lightText;">图像过点 (0, b)，即 y 轴截距</span></p>
+
+  # 要点3
+  - elementId: point-3-icon
+    elementType: icon
+    bounds: [640, 445, 28, 28]
+    iconName: "fas:pencil-alt"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: point-3-text
+    elementType: text
+    bounds: [682, 440, 480, 90]
+    content:
+      style: "$bodyText"
+      align: [left, top]
+      text: |
+        <p><strong>两点确定一条直线</strong></p>
+        <p><span style="font-size:18px; color:$lightText;">只需两组 (x, y) 即可画出一次函数图像</span></p>
+
+  # 底部提示
+  - elementId: tip-bg
+    elementType: shape
+    bounds: [80, 640, 1120, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$highlightBg"
+
+  - elementId: tip-icon
+    elementType: icon
+    bounds: [100, 655, 30, 30]
+    iconName: "fas:info-circle"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: tip-text
+    elementType: text
+    bounds: [150, 648, 1000, 44]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p>思考：正比例函数 y = kx 和一次函数 y = kx + b 的图像有什么关系？</p>

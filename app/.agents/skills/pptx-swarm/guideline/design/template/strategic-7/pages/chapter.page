@@ -1,0 +1,38 @@
+pageType: chapter
+background:
+  type: solid
+  color: "#0A0A0A"
+elements:
+  - elementId: ch-number
+    elementType: text
+    bounds: [80, 240, 200, 80]
+    content:
+      fontSize: 60
+      color: "#10B981"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>01</strong></p>
+
+  - elementId: ch-title
+    elementType: text
+    bounds: [80, 330, 800, 48]
+    content:
+      fontSize: 34
+      color: "#F8FAFC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>The Problem</strong></p>
+
+  - elementId: ch-page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 13
+      color: "#A3A3A3"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "03"

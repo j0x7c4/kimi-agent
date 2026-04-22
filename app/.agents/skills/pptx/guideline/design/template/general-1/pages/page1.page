@@ -1,0 +1,73 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#4361EE"
+elements:
+- elementId: line0
+  elementType: shape
+  bounds: [108, 109, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: line1
+  elementType: shape
+  bounds: [108, 971.5, 1704, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text2
+  elementType: text
+  bounds: [98.4, 301.36, 1219.67, 631.82]
+  content:
+    align: [left, top]
+    fontSize: 225.5
+    fontFamily: "Coda, deyihei"
+    color: "$light"
+    lineHeightPx: 180.43
+    text: |
+      <p>PRODUCT <span style="color:#0F1B3D; font-family:Coda, deyihei">LAUNCH</span> CAMPAIGN</p>
+- elementId: text3
+  elementType: text
+  bounds: [1618.76, 114.06, 204.84, 53.93]
+  content:
+    align: [right, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 46.65
+    text: April 2030
+- elementId: text4
+  elementType: text
+  bounds: [159.85, 129.42, 172.82, 71.28]
+  content:
+    align: [left, top]
+    fontSize: 30
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#0F1B3D"
+    lineHeightPx: 30.03
+    letterSpacing: -1.2
+    text: |
+      <p>Launch</p>
+      <p>Studio</p>
+- elementId: logo_diamond
+  elementType: shape
+  bounds: [108, 138.93, 52.49, 52.49]
+  shapeName: custom
+  path: 666605,666605;M333302 0L666605 333302L333302 666605L0 333302Z
+  fill:
+    type: solid
+    color: "#0F1B3D"
+- elementId: shape6
+  elementType: shape
+  bounds: [1584.84, 659.83, 229.16, 229.16]
+  shapeName: custom
+  path: 2182773,2182773;M1091386 0L2182773 1091386L1091386 2182773L0 1091386Z
+  fill:
+    type: solid
+    color: "#0F1B3D"

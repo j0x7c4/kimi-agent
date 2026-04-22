@@ -1,0 +1,264 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 48]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: |
+        <p><strong>问题分析与解决方案</strong></p>
+
+  # 左侧问题区域标题
+  - elementId: problems-title
+    elementType: text
+    bounds: [80, 140, 200, 40]
+    content:
+      fontSize: 20
+      color: "$primary"
+      align: [left, middle]
+      text: |
+        <p><strong>识别的问题</strong></p>
+
+  # 右侧解决方案标题
+  - elementId: solutions-title
+    elementType: text
+    bounds: [640, 140, 200, 40]
+    content:
+      fontSize: 20
+      color: "$primary"
+      align: [left, middle]
+      text: |
+        <p><strong>解决方案</strong></p>
+
+  # ====== 第1行 y=200 ======
+  - elementId: problem-1-icon
+    elementType: shape
+    bounds: [80, 200, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent2"
+
+  - elementId: problem-1-num
+    elementType: text
+    bounds: [80, 200, 40, 40]
+    content:
+      fontSize: 18
+      color: "#ffffff"
+      align: [center, middle]
+      text: |
+        <p><strong>1</strong></p>
+
+  - elementId: problem-1-text
+    elementType: text
+    bounds: [140, 200, 390, 60]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p><strong>用户转化率偏低</strong></p>
+        <p style="color:$secondary;">新用户注册后的付费转化率仅12%</p>
+
+  - elementId: arrow-1
+    elementType: icon
+    bounds: [555, 208, 30, 24]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: solution-1-bg
+    elementType: shape
+    bounds: [620, 190, 480, 80]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: solution-1-icon
+    elementType: icon
+    bounds: [640, 210, 40, 40]
+    iconName: "fas:lightbulb"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: solution-1-text
+    elementType: text
+    bounds: [700, 200, 380, 60]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p><strong>优化新手引导流程</strong></p>
+        <p style="color:$secondary;">预计提升转化率至18%</p>
+
+  # ====== 第2行 y=290 ======
+  - elementId: problem-2-icon
+    elementType: shape
+    bounds: [80, 290, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent2"
+
+  - elementId: problem-2-num
+    elementType: text
+    bounds: [80, 290, 40, 40]
+    content:
+      fontSize: 18
+      color: "#ffffff"
+      align: [center, middle]
+      text: |
+        <p><strong>2</strong></p>
+
+  - elementId: problem-2-text
+    elementType: text
+    bounds: [140, 290, 390, 60]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p><strong>技术债务累积</strong></p>
+        <p style="color:$secondary;">系统响应时间增加，影响用户体验</p>
+
+  - elementId: arrow-2
+    elementType: icon
+    bounds: [555, 298, 30, 24]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: solution-2-bg
+    elementType: shape
+    bounds: [620, 280, 480, 80]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: solution-2-icon
+    elementType: icon
+    bounds: [640, 300, 40, 40]
+    iconName: "fas:code"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: solution-2-text
+    elementType: text
+    bounds: [700, 290, 380, 60]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p><strong>技术架构重构计划</strong></p>
+        <p style="color:$secondary;">Q1完成核心模块优化</p>
+
+  # ====== 第3行 y=380 ======
+  - elementId: problem-3-icon
+    elementType: shape
+    bounds: [80, 380, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent2"
+
+  - elementId: problem-3-num
+    elementType: text
+    bounds: [80, 380, 40, 40]
+    content:
+      fontSize: 18
+      color: "#ffffff"
+      align: [center, middle]
+      text: |
+        <p><strong>3</strong></p>
+
+  - elementId: problem-3-text
+    elementType: text
+    bounds: [140, 380, 390, 60]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p><strong>团队协作效率</strong></p>
+        <p style="color:$secondary;">跨部门沟通成本高，项目延期频发</p>
+
+  - elementId: arrow-3
+    elementType: icon
+    bounds: [555, 388, 30, 24]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: solution-3-bg
+    elementType: shape
+    bounds: [620, 370, 480, 80]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: solution-3-icon
+    elementType: icon
+    bounds: [640, 390, 40, 40]
+    iconName: "fas:users"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: solution-3-text
+    elementType: text
+    bounds: [700, 380, 380, 60]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p><strong>建立敏捷工作机制</strong></p>
+        <p style="color:$secondary;">每周跨部门sync会议</p>
+
+  # 底部总结
+  - elementId: summary
+    elementType: text
+    bounds: [80, 500, 1120, 60]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      lineHeight: 1.8
+      align: [center, middle]
+      text: |
+        <p>通过系统性解决方案，预计Q1可解决80%以上识别问题，持续提升业务表现</p>

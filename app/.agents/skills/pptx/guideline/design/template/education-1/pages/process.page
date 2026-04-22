@@ -1,0 +1,534 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 80
+      - 60
+      - 800
+      - 50
+    content:
+      style: $title
+      align:
+        - left
+        - middle
+      text: |
+        <p>实践步骤：构建知识体系的方法</p>
+  - elementId: steps-container
+    elementType: shape
+    bounds:
+      - 80
+      - 140
+      - 520
+      - 500
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset:
+        - 0
+        - 2
+  - elementId: step1-number
+    elementType: shape
+    bounds:
+      - 110
+      - 170
+      - 44
+      - 44
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: step1-num-text
+    elementType: text
+    bounds:
+      - 110
+      - 170
+      - 44
+      - 44
+    content:
+      fontSize: 22
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        1
+  - elementId: step1-title
+    elementType: text
+    bounds:
+      - 170
+      - 168
+      - 400
+      - 40
+    content:
+      fontSize: 22
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>确定学习目标</strong></p>
+  - elementId: step1-desc
+    elementType: text
+    bounds:
+      - 170
+      - 210
+      - 400
+      - 40
+    content:
+      fontSize: 16
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - top
+      text: |
+        <p>明确你想要达到的具体成果，设定可衡量的里程碑</p>
+  - elementId: divider1
+    elementType: shape
+    bounds:
+      - 110
+      - 265
+      - 460
+      - 1
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0E0E0"
+  - elementId: step2-number
+    elementType: shape
+    bounds:
+      - 110
+      - 285
+      - 44
+      - 44
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: step2-num-text
+    elementType: text
+    bounds:
+      - 110
+      - 285
+      - 44
+      - 44
+    content:
+      fontSize: 22
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        2
+  - elementId: step2-title
+    elementType: text
+    bounds:
+      - 170
+      - 283
+      - 400
+      - 40
+    content:
+      fontSize: 22
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>收集核心资源</strong></p>
+  - elementId: step2-desc
+    elementType: text
+    bounds:
+      - 170
+      - 325
+      - 400
+      - 40
+    content:
+      fontSize: 16
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - top
+      text: |
+        <p>筛选高质量的学习材料，建立个人知识库</p>
+  - elementId: divider2
+    elementType: shape
+    bounds:
+      - 110
+      - 380
+      - 460
+      - 1
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0E0E0"
+  - elementId: step3-number
+    elementType: shape
+    bounds:
+      - 110
+      - 400
+      - 44
+      - 44
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: step3-num-text
+    elementType: text
+    bounds:
+      - 110
+      - 400
+      - 44
+      - 44
+    content:
+      fontSize: 22
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        3
+  - elementId: step3-title
+    elementType: text
+    bounds:
+      - 170
+      - 398
+      - 400
+      - 40
+    content:
+      fontSize: 22
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>主动实践应用</strong></p>
+  - elementId: step3-desc
+    elementType: text
+    bounds:
+      - 170
+      - 440
+      - 400
+      - 40
+    content:
+      fontSize: 16
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - top
+      text: |
+        <p>通过项目、练习或教学来巩固所学知识</p>
+  - elementId: divider3
+    elementType: shape
+    bounds:
+      - 110
+      - 495
+      - 460
+      - 1
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0E0E0"
+  - elementId: step4-number
+    elementType: shape
+    bounds:
+      - 110
+      - 515
+      - 44
+      - 44
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: step4-num-text
+    elementType: text
+    bounds:
+      - 110
+      - 515
+      - 44
+      - 44
+    content:
+      fontSize: 22
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        4
+  - elementId: step4-title
+    elementType: text
+    bounds:
+      - 170
+      - 513
+      - 400
+      - 40
+    content:
+      fontSize: 22
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>反思与迭代</strong></p>
+  - elementId: step4-desc
+    elementType: text
+    bounds:
+      - 170
+      - 555
+      - 400
+      - 40
+    content:
+      fontSize: 16
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - top
+      text: |
+        <p>定期回顾学习成果，优化知识结构和学习方法</p>
+  - elementId: diagram-area
+    elementType: shape
+    bounds:
+      - 640
+      - 140
+      - 560
+      - 500
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset:
+        - 0
+        - 2
+  - elementId: diagram-title
+    elementType: text
+    bounds:
+      - 680
+      - 170
+      - 480
+      - 40
+    content:
+      fontSize: 22
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>学习循环模型</strong></p>
+  - elementId: cycle-input
+    elementType: shape
+    bounds:
+      - 780
+      - 260
+      - 140
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: input-text
+    elementType: text
+    bounds:
+      - 780
+      - 260
+      - 140
+      - 70
+    content:
+      fontSize: 18
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>输入</strong></p>
+  - elementId: cycle-process
+    elementType: shape
+    bounds:
+      - 980
+      - 260
+      - 140
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $primary
+  - elementId: process-text
+    elementType: text
+    bounds:
+      - 980
+      - 260
+      - 140
+      - 70
+    content:
+      fontSize: 18
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>处理</strong></p>
+  - elementId: cycle-output
+    elementType: shape
+    bounds:
+      - 980
+      - 420
+      - 140
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: output-text
+    elementType: text
+    bounds:
+      - 980
+      - 420
+      - 140
+      - 70
+    content:
+      fontSize: 18
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>输出</strong></p>
+  - elementId: cycle-reflect
+    elementType: shape
+    bounds:
+      - 780
+      - 420
+      - 140
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: reflect-text
+    elementType: text
+    bounds:
+      - 780
+      - 420
+      - 140
+      - 70
+    content:
+      fontSize: 18
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>反思</strong></p>
+  - elementId: arrow1
+    elementType: shape
+    bounds:
+      - 920
+      - 295
+      - 60
+      - 0
+    shapeName: straightConnector1
+    arrow:
+      - none
+      - arrow
+    border:
+      style: solid
+      width: 2
+      color: $primary
+  - elementId: arrow2
+    elementType: shape
+    bounds:
+      - 1050
+      - 330
+      - 0
+      - 90
+    shapeName: straightConnector1
+    arrow:
+      - none
+      - arrow
+    border:
+      style: solid
+      width: 2
+      color: $primary
+  - elementId: arrow3
+    elementType: shape
+    bounds:
+      - 920
+      - 455
+      - 60
+      - 0
+    shapeName: straightConnector1
+    arrow:
+      - arrow
+      - none
+    border:
+      style: solid
+      width: 2
+      color: $primary
+  - elementId: arrow4
+    elementType: shape
+    bounds:
+      - 850
+      - 330
+      - 0
+      - 90
+    shapeName: straightConnector1
+    arrow:
+      - arrow
+      - none
+    border:
+      style: solid
+      width: 2
+      color: $primary
+  - elementId: cycle-center-text
+    elementType: text
+    bounds:
+      - 880
+      - 360
+      - 140
+      - 40
+    content:
+      fontSize: 14
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>持续循环</p>

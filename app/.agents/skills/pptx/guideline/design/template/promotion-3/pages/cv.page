@@ -1,0 +1,77 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # CV title — large display
+  - elementId: cv-title
+    elementType: text
+    bounds: [31, 59, 533, 72]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: CV
+
+  # Work Experience section title
+  - elementId: work-title
+    elementType: text
+    bounds: [31, 311, 533, 43]
+    content:
+      style: "$sectionTitle"
+      align: [left, top]
+      text: WORK EXPERIENCE
+
+  # Work Experience content
+  - elementId: work-content
+    elementType: text
+    bounds: [31, 372, 533, 135]
+    content:
+      style: "$body"
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.5
+      text: |
+        <p>• Associate Creative Director</p>
+        <p>Hobbes and Lowe Studio, 2023-present</p>
+        <p>• Field Photographer</p>
+        <p>Vivarily Creatives, 2019-2023</p>
+
+  # Education section title
+  - elementId: edu-title
+    elementType: text
+    bounds: [31, 551, 533, 43]
+    content:
+      style: "$sectionTitle"
+      align: [left, top]
+      text: EDUCATION
+
+  # Education content
+  - elementId: edu-content
+    elementType: text
+    bounds: [31, 614, 533, 82]
+    content:
+      style: "$body"
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.5
+      text: |
+        <p>• BA in Photography</p>
+        <p>2016-2019, Santa Solana Arts College</p>
+
+  # Right: portrait photo
+  - elementId: photo-right
+    elementType: image
+    bounds: [640, 43, 608, 605]
+    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+    fit:
+      mode: cover
+
+  # Bottom rule
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [31, 703, 1219, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$gray"

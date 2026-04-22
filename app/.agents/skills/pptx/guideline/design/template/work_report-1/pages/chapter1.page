@@ -1,0 +1,37 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 章节编号
+  - elementId: chapter_num
+    elementType: text
+    bounds: [80, 250, 200, 80]
+    content:
+      fontSize: 72
+      color: "$accent"
+      text: |
+        <p>01</p>
+  
+  # 章节标题
+  - elementId: chapter_title
+    elementType: text
+    bounds: [80, 350, 800, 50]
+    content:
+      fontSize: 36
+      color: "$white"
+      text: |
+        <p>年度目标完成情况</p>
+  
+  # 核心成果预览
+  - elementId: preview
+    elementType: text
+    bounds: [80, 420, 800, 120]
+    content:
+      fontSize: 20
+      color: "$light_blue"
+      lineHeight: 1.6
+      text: |
+        <p>• 全年营收达成率 112%，超额完成 12 个百分点</p>
+        <p>• 核心产品线实现 23% 同比增长</p>
+        <p>• 客户留存率提升至 87%，创历史新高</p>

@@ -1,0 +1,225 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部导航栏
+  - elementId: nav_bg
+    elementType: shape
+    bounds: [0, 0, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: nav1
+    elementType: text
+    bounds: [0, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>年度目标完成情况</p>
+
+  - elementId: nav2
+    elementType: text
+    bounds: [256, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$accent"
+      align: [center, middle]
+      text: |
+        <p><strong>核心业务增长归因</strong></p>
+
+  - elementId: nav3
+    elementType: text
+    bounds: [512, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>重点项目进展</p>
+
+  - elementId: nav4
+    elementType: text
+    bounds: [768, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>竞争态势分析</p>
+
+  - elementId: nav5
+    elementType: text
+    bounds: [1024, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>2025年计划</p>
+  
+  # 页面标题
+  - elementId: page_title
+    elementType: text
+    bounds: [80, 80, 1120, 50]
+    content:
+      style: "$page_title"
+      text: |
+        <p><strong>营收增长23%主要源于新产品线贡献和客单价提升</strong></p>
+  
+  # 左列 - 核心结论
+  - elementId: conclusion_bg
+    elementType: shape
+    bounds: [80, 170, 300, 390]
+    shapeName: rect
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+
+  - elementId: conclusion_title
+    elementType: text
+    bounds: [100, 185, 260, 35]
+    content:
+      fontSize: 20
+      color: "$text"
+      text: |
+        <p><strong>增长驱动力拆解</strong></p>
+
+  - elementId: conclusion_content
+    elementType: text
+    bounds: [100, 228, 260, 320]
+    content:
+      fontSize: 18
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p><strong>总增长：+23%</strong></p>
+        <p>• 新产品线贡献 <strong>+12pp</strong></p>
+        <p>• 客单价提升 <strong>+8pp</strong></p>
+        <p>• 存量客户扩展 <strong>+5pp</strong></p>
+        <p>• 传统业务萎缩 <strong>-2pp</strong></p>
+        <p style="color:$light_text; font-size:16px;">关键洞察：产品创新成为增长第一引擎，占总增长贡献的52%</p>
+
+  # 中列 - 瀑布图
+  - elementId: waterfall_chart
+    elementType: chart
+    bounds: [410, 170, 460, 390]
+    type: bar
+    data:
+      - {category: "2023基准", value: 127.4, type: "base"}
+      - {category: "新产品线", value: 15.3, type: "increase"}
+      - {category: "客单价提升", value: 10.2, type: "increase"}
+      - {category: "存量扩展", value: 6.4, type: "increase"}
+      - {category: "传统萎缩", value: -2.5, type: "decrease"}
+      - {category: "2024实际", value: 156.8, type: "total"}
+    x: category
+    y: [value]
+    colors: ["$primary", "$success", "$success", "$success", "$danger", "$accent"]
+    options:
+      fontFamily: "Liter, MiSans"
+      barWidth: 0.6
+    xAxis:
+      label:
+        fontSize: 14
+        color: "$text"
+      axisLine: false
+      gridLine: false
+    yAxis:
+      show: false
+    dataLabels:
+      show: true
+      fontSize: 16
+      color: "$text"
+      numberFormat: "0.0"
+
+  # 右列 - 行动要点
+  - elementId: actions_title
+    elementType: text
+    bounds: [900, 190, 280, 40]
+    content:
+      fontSize: 22
+      color: "$text"
+      text: |
+        <p><strong>关键行动</strong></p>
+
+  - elementId: action1_icon
+    elementType: icon
+    bounds: [900, 250, 24, 24]
+    iconName: "fas:rocket"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: action1_text
+    elementType: text
+    bounds: [930, 245, 250, 60]
+    content:
+      fontSize: 18
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p>加速新产品迭代</p>
+        <p style="font-size:14px; color:$light_text;">Q1启动3个创新项目</p>
+
+  - elementId: action2_icon
+    elementType: icon
+    bounds: [900, 330, 24, 24]
+    iconName: "fas:chart-line"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: action2_text
+    elementType: text
+    bounds: [930, 325, 250, 60]
+    content:
+      fontSize: 18
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p>优化定价策略</p>
+        <p style="font-size:14px; color:$light_text;">实施分层定价体系</p>
+
+  - elementId: action3_icon
+    elementType: icon
+    bounds: [900, 410, 24, 24]
+    iconName: "fas:users"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: action3_text
+    elementType: text
+    bounds: [930, 405, 250, 60]
+    content:
+      fontSize: 18
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p>深耕大客户</p>
+        <p style="font-size:14px; color:$light_text;">建立战略合作机制</p>
+  
+  # 底部结论条
+  - elementId: bottom_bar
+    elementType: shape
+    bounds: [80, 580, 1120, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: bottom_text
+    elementType: text
+    bounds: [100, 580, 1080, 60]
+    content:
+      fontSize: 18
+      color: "$text"
+      align: [left, middle]
+      text: |
+        <p><strong>结论：</strong>产品创新驱动的增长模式已被验证，2025年应继续加大研发投入，预计可贡献15pp增长</p>

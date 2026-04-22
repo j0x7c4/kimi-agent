@@ -1,0 +1,63 @@
+title: Bold Marketing Professional Template
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#3B7958"
+    background: "#EBEBE2"
+    text: "#1A1A1A"
+    white: "#FFFFFF"
+    darkgreen: "#2A5C40"
+    lightbg: "#F4F4ED"
+  textStyles:
+    coverTitle:
+      fontSize: 72
+      color: "$text"
+      fontFamily: "HedvigLettersSans, MiSans"
+      lineHeight: 1.1
+    pageTitle:
+      fontSize: 56
+      color: "$primary"
+      fontFamily: "HedvigLettersSans, MiSans"
+      lineHeight: 1.1
+    subtitle:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "HedvigLettersSans, MiSans"
+      lineHeight: 1.3
+    body:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+    nav:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+    caption:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+  tableStyles:
+    default:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans, MiSans"
+      headerFill: "$primary"
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill: ["#FFFFFF", "$background"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "#CCCCBC"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/content_bold_left.page
+  - pages/content_image_left.page
+  - pages/content_three_points.page
+  - pages/content_text_right.page
+  - pages/final.page

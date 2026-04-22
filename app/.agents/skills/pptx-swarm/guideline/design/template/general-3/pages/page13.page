@@ -1,0 +1,131 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: linear
+  angle: 45
+  stops:
+  - position: 0
+    color: "#C7E2FFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#FFFFFFFF"
+elements:
+- elementId: text1
+  elementType: text
+  bounds: [98.4, 101.2, 908.29, 176.88]
+  content:
+    align: [left, top]
+    fontSize: 68
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 84.35
+    text: SUMMARY AND Q&A
+- elementId: line2
+  elementType: shape
+  bounds: [981.67, 124.07, 675.97, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: shape3
+  elementType: shape
+  bounds: [620.5, 377.87, 376.59, 68.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: text4
+  elementType: text
+  bounds: [616.23, 366.75, 385.12, 78.73]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape5
+  elementType: shape
+  bounds: [620.5, 378.26, 15.21, 68.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: text6
+  elementType: text
+  bounds: [616.23, 367.15, 23.74, 78.73]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape7
+  elementType: shape
+  bounds: [113.29, 377.87, 463.13, 594.13]
+  shapeName: custom
+  path: 4411341,5659126;M0 0L4411341 0L4411341 5659126L0 5659126L0 0Z
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
+    fit:
+      mode: contain
+- elementId: text8
+  elementType: text
+  bounds: [98.4, 275.12, 460, 65.22]
+  content:
+    align: [left, top]
+    fontSize: 41.4
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 57.95
+    text: 总结与互动答疑
+- elementId: text9
+  elementType: text
+  bounds: [1429.83, 98.2, 409.77, 49.73]
+  content:
+    align: [right, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 4.16
+    text: PART 04
+- elementId: text10
+  elementType: text
+  bounds: [654.97, 381.53, 345.25, 55.67]
+  content:
+    align: [left, top]
+    fontSize: 34.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 48.53
+    text: 今日总结
+- elementId: text11
+  elementType: text
+  bounds: [610.9, 464.47, 1228.7, 133.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 今天我们学习了三个重点：一、充足睡眠对身体修复、记忆巩固和免疫力的重要作用；二、纠正了老年人不需要多睡、打鼾是好事、喝酒助眠等常见误区；三、掌握了规律作息、优化环境、睡前放松等实用改善方法。
+- elementId: text12
+  elementType: text
+  bounds: [610.9, 633.33, 1228.7, 343.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: |
+      <p>睡眠是健康的基石，希望大家从今天开始重视睡眠质量。建议每位听众回家后尝试以下三步：第一，固定每天的上床和起床时间；第二，睡前一小时远离手机屏幕；第三，营造安静、黑暗、凉爽的卧室环境。</p>
+      <p>坚持两周，您会明显感受到睡眠质量的改善。如有持续的睡眠困扰，请及时咨询社区健康中心或前往医院睡眠门诊。</p>

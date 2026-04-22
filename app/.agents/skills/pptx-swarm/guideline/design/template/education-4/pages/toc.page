@@ -1,0 +1,379 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: toc-title
+    elementType: text
+    bounds:
+      - 80
+      - 40
+      - 600
+      - 50
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:30px; color:#2C5F8A; font-family:MiSans;"><strong>目录</strong></span><span style="font-size:20px; color:#8D8D8D; font-family:MiSans;">  Contents</span></p>
+  - elementId: title-line
+    elementType: shape
+    bounds:
+      - 80
+      - 96
+      - 1120
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#2C5F8A"
+  - elementId: circle1
+    elementType: shape
+    bounds:
+      - 128
+      - 190
+      - 40
+      - 40
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: num1
+    elementType: text
+    bounds:
+      - 128
+      - 190
+      - 40
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#FFFFFF; font-family:MiSans;"><strong>1</strong></span></p>
+  - elementId: dash1
+    elementType: shape
+    bounds:
+      - 168
+      - 209
+      - 192
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: "#2C5F8A"
+  - elementId: circle2
+    elementType: shape
+    bounds:
+      - 360
+      - 190
+      - 40
+      - 40
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: num2
+    elementType: text
+    bounds:
+      - 360
+      - 190
+      - 40
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#FFFFFF; font-family:MiSans;"><strong>2</strong></span></p>
+  - elementId: dash2
+    elementType: shape
+    bounds:
+      - 400
+      - 209
+      - 192
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: "#2C5F8A"
+  - elementId: circle3
+    elementType: shape
+    bounds:
+      - 592
+      - 190
+      - 40
+      - 40
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: num3
+    elementType: text
+    bounds:
+      - 592
+      - 190
+      - 40
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#FFFFFF; font-family:MiSans;"><strong>3</strong></span></p>
+  - elementId: dash3
+    elementType: shape
+    bounds:
+      - 632
+      - 209
+      - 192
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: "#2C5F8A"
+  - elementId: circle4
+    elementType: shape
+    bounds:
+      - 824
+      - 190
+      - 40
+      - 40
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: num4
+    elementType: text
+    bounds:
+      - 824
+      - 190
+      - 40
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#FFFFFF; font-family:MiSans;"><strong>4</strong></span></p>
+  - elementId: dash4
+    elementType: shape
+    bounds:
+      - 864
+      - 209
+      - 192
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: "#2C5F8A"
+  - elementId: circle5
+    elementType: shape
+    bounds:
+      - 1056
+      - 190
+      - 40
+      - 40
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: num5
+    elementType: text
+    bounds:
+      - 1056
+      - 190
+      - 40
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#FFFFFF; font-family:MiSans;"><strong>5</strong></span></p>
+  - elementId: section1-title
+    elementType: text
+    bounds:
+      - 80
+      - 248
+      - 200
+      - 30
+    content:
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>研究背景</strong></span></p>
+  - elementId: section1-desc
+    elementType: text
+    bounds:
+      - 80
+      - 282
+      - 200
+      - 50
+    content:
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">问题来源与研究意义</span></p>
+  - elementId: section2-title
+    elementType: text
+    bounds:
+      - 312
+      - 248
+      - 200
+      - 30
+    content:
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>研究方法</strong></span></p>
+  - elementId: section2-desc
+    elementType: text
+    bounds:
+      - 312
+      - 282
+      - 200
+      - 50
+    content:
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">数据收集与分析方法</span></p>
+  - elementId: section3-title
+    elementType: text
+    bounds:
+      - 544
+      - 248
+      - 200
+      - 30
+    content:
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>核心发现</strong></span></p>
+  - elementId: section3-desc
+    elementType: text
+    bounds:
+      - 544
+      - 282
+      - 200
+      - 50
+    content:
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">主要数据与结果呈现</span></p>
+  - elementId: section4-title
+    elementType: text
+    bounds:
+      - 776
+      - 248
+      - 200
+      - 30
+    content:
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>分析讨论</strong></span></p>
+  - elementId: section4-desc
+    elementType: text
+    bounds:
+      - 776
+      - 282
+      - 200
+      - 50
+    content:
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">结果解读与深入探讨</span></p>
+  - elementId: section5-title
+    elementType: text
+    bounds:
+      - 1008
+      - 248
+      - 200
+      - 30
+    content:
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#2C5F8A; font-family:MiSans;"><strong>结论与展望</strong></span></p>
+  - elementId: section5-desc
+    elementType: text
+    bounds:
+      - 1008
+      - 282
+      - 200
+      - 50
+    content:
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">总结与后续研究方向</span></p>
+  - elementId: toc-note
+    elementType: text
+    bounds:
+      - 80
+      - 380
+      - 1120
+      - 100
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">本次汇报围绕<strong style="color:#2C5F8A;">研究课题</strong>展开，从背景出发，通过系统方法收集数据，呈现核心发现，并结合理论框架深入分析讨论，最终提出结论与建议。汇报时长约 <strong style="color:#E07B54;">15-20 分钟</strong>，欢迎在汇报结束后提问交流。</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"
+  - elementId: el-mnsoha28-0
+    elementType: text
+    bounds:
+      - 80
+      - 480
+      - 1120
+      - 100
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;">本次汇报围绕<strong style="color:#2C5F8A;">研究课题</strong>展开，从背景出发，通过系统方法收集数据，呈现核心发现，并结合理论框架深入分析讨论，最终提出结论与建议。汇报时长约 <strong style="color:#E07B54;">15-20 分钟</strong>，欢迎在汇报结束后提问交流。</span></p>

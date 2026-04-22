@@ -1,0 +1,27 @@
+size: [1920, 1080]
+theme:
+  colors:
+    primary: "#4F81BD"
+    secondary: "#C0504D"
+    dark: "#000000"
+    light: "#FFFFFF"
+    accent3: "#9BBB59"
+    accent4: "#8064A2"
+    accent5: "#4BACC6"
+    accent6: "#F79646"
+pages:
+- pages/page1.page
+- pages/page2.page
+- pages/page3.page
+- pages/page4.page
+- pages/page5.page
+- pages/page6.page
+- pages/page7.page
+- pages/page8.page
+- pages/page9.page
+- pages/page10.page
+- pages/page11.page
+- pages/page12.page
+- pages/page13.page
+- pages/page14.page
+- pages/page15.page

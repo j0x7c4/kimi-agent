@@ -1,0 +1,374 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 80
+      - 60
+      - 600
+      - 60
+    content:
+      fontSize: 40
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p>学习路径导航</p>
+  - elementId: module-container
+    elementType: shape
+    bounds:
+      - 80
+      - 150
+      - 680
+      - 500
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 10
+      color: "#00000010"
+      offset:
+        - 0
+        - 2
+  - elementId: module1-indicator
+    elementType: shape
+    bounds:
+      - 120
+      - 190
+      - 48
+      - 48
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: module1-number
+    elementType: text
+    bounds:
+      - 120
+      - 190
+      - 48
+      - 48
+    content:
+      fontSize: 24
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        1
+  - elementId: module1-title
+    elementType: text
+    bounds:
+      - 190
+      - 185
+      - 540
+      - 50
+    content:
+      fontSize: 28
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>核心概念构建</strong></p>
+  - elementId: module1-desc
+    elementType: text
+    bounds:
+      - 190
+      - 235
+      - 540
+      - 36
+    content:
+      fontSize: 18
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - top
+      text: |
+        <p>理解基础理论框架，建立知识体系</p>
+  - elementId: divider1
+    elementType: shape
+    bounds:
+      - 120
+      - 285
+      - 600
+      - 1
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0E0E0"
+  - elementId: module2-indicator
+    elementType: shape
+    bounds:
+      - 120
+      - 310
+      - 48
+      - 48
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: module2-number
+    elementType: text
+    bounds:
+      - 120
+      - 310
+      - 48
+      - 48
+    content:
+      fontSize: 24
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        2
+  - elementId: module2-title
+    elementType: text
+    bounds:
+      - 190
+      - 305
+      - 540
+      - 50
+    content:
+      fontSize: 28
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>方法论与流程</strong></p>
+  - elementId: module2-desc
+    elementType: text
+    bounds:
+      - 190
+      - 355
+      - 540
+      - 36
+    content:
+      fontSize: 18
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - top
+      text: |
+        <p>掌握实践步骤，形成操作规范</p>
+  - elementId: divider2
+    elementType: shape
+    bounds:
+      - 120
+      - 405
+      - 600
+      - 1
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0E0E0"
+  - elementId: module3-indicator
+    elementType: shape
+    bounds:
+      - 120
+      - 430
+      - 48
+      - 48
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: module3-number
+    elementType: text
+    bounds:
+      - 120
+      - 430
+      - 48
+      - 48
+    content:
+      fontSize: 24
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        3
+  - elementId: module3-title
+    elementType: text
+    bounds:
+      - 190
+      - 425
+      - 540
+      - 50
+    content:
+      fontSize: 28
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>案例与应用</strong></p>
+  - elementId: module3-desc
+    elementType: text
+    bounds:
+      - 190
+      - 475
+      - 540
+      - 36
+    content:
+      fontSize: 18
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - top
+      text: |
+        <p>通过实例深化理解，连接理论与实践</p>
+  - elementId: divider3
+    elementType: shape
+    bounds:
+      - 120
+      - 525
+      - 600
+      - 1
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0E0E0"
+  - elementId: module4-indicator
+    elementType: shape
+    bounds:
+      - 120
+      - 550
+      - 48
+      - 48
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: module4-number
+    elementType: text
+    bounds:
+      - 120
+      - 550
+      - 48
+      - 48
+    content:
+      fontSize: 24
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        4
+  - elementId: module4-title
+    elementType: text
+    bounds:
+      - 190
+      - 545
+      - 540
+      - 50
+    content:
+      fontSize: 28
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>实践与巩固</strong></p>
+  - elementId: module4-desc
+    elementType: text
+    bounds:
+      - 190
+      - 595
+      - 540
+      - 36
+    content:
+      fontSize: 18
+      color: $textLight
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - top
+      text: |
+        <p>将所学应用于真实情境，形成技能</p>
+  - elementId: deco-block
+    elementType: shape
+    bounds:
+      - 800
+      - 150
+      - 400
+      - 500
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - position: 0
+          color: $primary
+        - position: 1
+          color: "#2A6B80"
+  - elementId: deco-icon
+    elementType: icon
+    bounds:
+      - 940
+      - 280
+      - 120
+      - 120
+    opacity: 0.2
+    iconName: fas:route
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: deco-title
+    elementType: text
+    bounds:
+      - 840
+      - 420
+      - 320
+      - 60
+    content:
+      fontSize: 32
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>系统化学习</strong></p>
+  - elementId: deco-subtitle
+    elementType: text
+    bounds:
+      - 840
+      - 480
+      - 320
+      - 80
+    content:
+      fontSize: 18
+      color: "#E0E0E0"
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+      align:
+        - center
+        - middle
+      text: |
+        <p>四步构建完整知识体系</p>
+        <p>从理论到实践的进阶之路</p>

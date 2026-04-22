@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && esbuild api/boot.ts --platform=node --bundle --format=esm --outdir=dist --banner:js=\"import { createRequire } from 'module';const require = createRequire(import.meta.url);\"",
+    "start": "NODE_ENV=production node dist/boot.js",
+    "check": "tsc -b",
+    "format": "prettier --write .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.16",
+    "@trpc/client": "^11.8.1",
+    "@trpc/react-query": "^11.8.1",
+    "@trpc/server": "^11.8.1",
+    "dotenv": "^17.2.3",
+    "hono": "^4.8.3",
+    "@hono/node-server": "^1.14.3",
+    "superjson": "^2.2.6",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@hono/vite-dev-server": "^0.19.0",
+    "@types/node": "^25.0.3",
+    "esbuild": "^0.27.2",
+    "prettier": "^3.7.4",
+    "vitest": "^4.0.16"
+  }
+}

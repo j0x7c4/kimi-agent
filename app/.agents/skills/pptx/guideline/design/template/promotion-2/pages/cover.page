@@ -1,0 +1,73 @@
+pageType: cover
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # Top nav bar
+  - elementId: nav-left
+    elementType: text
+    bounds: [120, 64, 260, 52]
+    content:
+      style: "$nav"
+      align: [left, top]
+      text: |
+        <p>Marketing</p>
+        <p>Approach</p>
+
+  - elementId: nav-right
+    elementType: text
+    bounds: [900, 64, 260, 52]
+    content:
+      style: "$nav"
+      align: [right, top]
+      text: |
+        <p>Bilson's</p>
+        <p>Supermarkets</p>
+
+  - elementId: nav-divider
+    elementType: shape
+    bounds: [120, 122, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Large bold title
+  - elementId: cover-title
+    elementType: text
+    bounds: [100, 160, 900, 260]
+    content:
+      style: "$coverTitle"
+      align: [left, top]
+      text: |
+        <p><strong>PROJECT PROPOSAL:</strong></p>
+        <p><strong>IN-HOUSE KITCHEN</strong></p>
+
+  # Subtitle (within left half only, no overlap with photo)
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [100, 430, 520, 48]
+    content:
+      fontSize: 28
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.3
+      align: [left, middle]
+      text: Bilson's Supermarkets
+
+  # Arrow icon
+  - elementId: cover-arrow
+    elementType: icon
+    bounds: [100, 500, 90, 22]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"
+
+  # Right side photo (starts below subtitle area)
+  - elementId: cover-photo
+    elementType: image
+    bounds: [640, 490, 520, 192]
+    src: "https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=800&q=80"
+    fit:
+      mode: cover

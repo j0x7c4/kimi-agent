@@ -1,0 +1,80 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "#0A0A0A"
+elements:
+  - elementId: toc-label
+    elementType: text
+    bounds: [80, 64, 200, 28]
+    content:
+      fontSize: 13
+      color: "#A3A3A3"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: AGENDA
+
+  - elementId: toc-item-1
+    elementType: text
+    bounds: [80, 140, 800, 36]
+    content:
+      fontSize: 28
+      color: "#F8FAFC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><span style="color:#10B981;"><strong>01</strong></span>  The Problem</p>
+
+  - elementId: toc-item-2
+    elementType: text
+    bounds: [80, 210, 800, 36]
+    content:
+      fontSize: 28
+      color: "#F8FAFC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><span style="color:#10B981;"><strong>02</strong></span>  The Solution</p>
+
+  - elementId: toc-item-3
+    elementType: text
+    bounds: [80, 280, 800, 36]
+    content:
+      fontSize: 28
+      color: "#F8FAFC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><span style="color:#10B981;"><strong>03</strong></span>  Traction</p>
+
+  - elementId: toc-item-4
+    elementType: text
+    bounds: [80, 350, 800, 36]
+    content:
+      fontSize: 28
+      color: "#F8FAFC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><span style="color:#10B981;"><strong>04</strong></span>  Competitive Moat</p>
+
+  - elementId: toc-item-5
+    elementType: text
+    bounds: [80, 420, 800, 36]
+    content:
+      fontSize: 28
+      color: "#F8FAFC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><span style="color:#10B981;"><strong>05</strong></span>  The Ask</p>
+
+  - elementId: toc-page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 13
+      color: "#A3A3A3"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "02"

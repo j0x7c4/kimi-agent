@@ -1,0 +1,126 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 2px red top line
+  - elementId: top-red-line
+    elementType: shape
+    bounds: [0, 0, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Large centered "THANK YOU" title
+  - elementId: thank-you-title
+    elementType: text
+    bounds: [160, 160, 960, 100]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:56px; color:#2C2C2C; font-family:Liter, MiSans;"><strong>THANK YOU / 谢谢</strong></span></p>
+
+  # Red separator line
+  - elementId: red-separator
+    elementType: shape
+    bounds: [540, 272, 200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Tagline
+  - elementId: tagline
+    elementType: text
+    bounds: [160, 288, 960, 32]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#888888; font-family:Liter, MiSans;">Results Delivered. 实现成果。</span></p>
+
+  # Next steps section label
+  - elementId: nextsteps-border
+    elementType: shape
+    bounds: [160, 348, 3, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: nextsteps-label
+    elementType: text
+    bounds: [168, 348, 952, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#888888; font-family:Liter, MiSans;"><strong>RECOMMENDED NEXT STEPS 建议后续行动</strong></span></p>
+
+  # Next steps content
+  - elementId: nextsteps-col1
+    elementType: text
+    bounds: [168, 382, 290, 120]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Liter, MiSans;"><strong>第一步 / Step 1</strong></span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">组建跨职能战略落地团队，确定决策机制与汇报结构，2周内完成。</span></p>
+
+  - elementId: nextsteps-col2
+    elementType: text
+    bounds: [490, 382, 290, 120]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Liter, MiSans;"><strong>第二步 / Step 2</strong></span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">在优先级最高的2-3个细分市场启动试点项目，建立快速学习闭环，6周内可见初步成效。</span></p>
+
+  - elementId: nextsteps-col3
+    elementType: text
+    bounds: [812, 382, 308, 120]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Liter, MiSans;"><strong>第三步 / Step 3</strong></span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">建立季度回顾机制，追踪战略KPI进展，适时调整资源配置，确保持续交付价值。</span></p>
+
+  # Contact info block background
+  - elementId: contact-bg
+    elementType: shape
+    bounds: [160, 524, 960, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  # Contact info text
+  - elementId: contact-text
+    elementType: text
+    bounds: [200, 540, 880, 72]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#888888; font-family:Liter, MiSans;"><strong>联系人 / Contact：</strong></span><span style="font-size:13px; font-family:Liter, MiSans;">战略研究部高级合伙人 Senior Partner, Strategy Research Division</span></p>
+        <p><span style="font-size:13px; color:#888888; font-family:Liter, MiSans;"><strong>邮箱 / Email：</strong></span><span style="font-size:13px; font-family:Liter, MiSans;">strategy@xxconsulting.com</span><span style="font-size:13px; color:#888888; font-family:Liter, MiSans;">　　<strong>网站 / Web：</strong></span><span style="font-size:13px; font-family:Liter, MiSans;">www.xxconsulting.com</span></p>
+
+  # 2px red bottom line
+  - elementId: bottom-red-line
+    elementType: shape
+    bounds: [0, 718, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"

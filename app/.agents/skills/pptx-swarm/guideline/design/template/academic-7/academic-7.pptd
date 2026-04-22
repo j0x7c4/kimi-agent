@@ -1,0 +1,62 @@
+title: 学术研究报告模板（紫色沉稳版）
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#432879"
+    secondary: "#614F96"
+    accent: "#8A7BB5"
+    background: "#FFFFFF"
+    text: "#2C2C2C"
+    navBg: "#2D1B55"
+    lightPurple: "#EEE8F4"
+    white: "#FFFFFF"
+    midPurple: "#C8BEE0"
+    darkPurple: "#2D1B55"
+  textStyles:
+    title:
+      fontSize: 44
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+    pageTitle:
+      fontSize: 28
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    subtitle:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    body:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+    caption:
+      fontSize: 14
+      color: "#666666"
+      fontFamily: "QuattrocentoSans, MiSans"
+    label:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+  tableStyles:
+    default:
+      headerFill: "$primary"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$lightPurple"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$midPurple"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/bullets.page
+  - pages/two_column.page
+  - pages/research_bg.page
+  - pages/framework.page
+  - pages/results.page
+  - pages/conclusion.page
+  - pages/final.page

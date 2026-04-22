@@ -1,0 +1,61 @@
+title: 战略规划模板（The Architecture）
+size: [1280, 720]
+theme:
+  colors:
+    oat: "#F4F1EA"
+    darkGreen: "#1A3632"
+    text: "#292524"
+    accent: "#D97706"
+    lightGreen: "#E1E7E5"
+    caption: "#78716C"
+    white: "#FFFFFF"
+    background: "#F4F1EA"
+  textStyles:
+    title:
+      fontSize: 34
+      color: "$oat"
+      fontFamily: "Liter, MiSans"
+    pageTitle:
+      fontSize: 28
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+    subtitle:
+      fontSize: 20
+      color: "$caption"
+      fontFamily: "QuattrocentoSans, MiSans"
+    body:
+      fontSize: 22
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+    caption:
+      fontSize: 12
+      color: "$caption"
+      fontFamily: "QuattrocentoSans, MiSans"
+    bignum:
+      fontSize: 48
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+  tableStyles:
+    default:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans, MiSans"
+      headerFill: "$darkGreen"
+      headerColor: "$oat"
+      headerBold: true
+      bodyFill: ["$white", "$lightGreen"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 0.5
+        color: "$lightGreen"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/vision.page
+  - pages/gap_analysis.page
+  - pages/roadmap.page
+  - pages/unit_economics.page
+  - pages/governance.page
+  - pages/competitive.page
+  - pages/final.page

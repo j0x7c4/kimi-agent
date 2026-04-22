@@ -1,0 +1,403 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # ALL CAPS page title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 18, 900, 42]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:22px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>FIVE-STAGE GROWTH ACCELERATION FRAMEWORK</strong></span></p>
+
+  # Chinese subtitle
+  - elementId: page-subtitle
+    elementType: text
+    bounds: [50, 62, 900, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">五阶段增长加速框架：从战略定位到持续价值创造</span></p>
+
+  # 2px red line
+  - elementId: title-red-line
+    elementType: shape
+    bounds: [50, 88, 800, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Step boxes (5 steps, horizontal, each ~228px wide with gaps)
+  # Step 1 box (lightgray)
+  - elementId: step1-bg
+    elementType: shape
+    bounds: [50, 106, 220, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: step1-num
+    elementType: text
+    bounds: [58, 112, 55, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#D91E18; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>01</strong></span></p>
+
+  - elementId: step1-title
+    elementType: text
+    bounds: [118, 112, 144, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#2C2C2C; font-family:Arial, Microsoft YaHei, MiSans;"><strong>DIAGNOSE</strong></span></p>
+
+  - elementId: step1-cn
+    elementType: text
+    bounds: [58, 144, 204, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">诊断当前状态</span></p>
+
+  # Arrow 1
+  - elementId: arrow1
+    elementType: shape
+    bounds: [276, 140, 20, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Step 2 box (lightgray)
+  - elementId: step2-bg
+    elementType: shape
+    bounds: [302, 106, 220, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: step2-num
+    elementType: text
+    bounds: [310, 112, 55, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#D91E18; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>02</strong></span></p>
+
+  - elementId: step2-title
+    elementType: text
+    bounds: [370, 112, 144, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#2C2C2C; font-family:Arial, Microsoft YaHei, MiSans;"><strong>SEGMENT</strong></span></p>
+
+  - elementId: step2-cn
+    elementType: text
+    bounds: [310, 144, 204, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">细分市场定位</span></p>
+
+  # Arrow 2
+  - elementId: arrow2
+    elementType: shape
+    bounds: [528, 140, 20, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Step 3 box (lightgray)
+  - elementId: step3-bg
+    elementType: shape
+    bounds: [554, 106, 220, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: step3-num
+    elementType: text
+    bounds: [562, 112, 55, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#D91E18; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>03</strong></span></p>
+
+  - elementId: step3-title
+    elementType: text
+    bounds: [622, 112, 144, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#2C2C2C; font-family:Arial, Microsoft YaHei, MiSans;"><strong>PRIORITIZE</strong></span></p>
+
+  - elementId: step3-cn
+    elementType: text
+    bounds: [562, 144, 204, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">优先级排序</span></p>
+
+  # Arrow 3
+  - elementId: arrow3
+    elementType: shape
+    bounds: [780, 140, 20, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Step 4 box (lightgray)
+  - elementId: step4-bg
+    elementType: shape
+    bounds: [806, 106, 220, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: step4-num
+    elementType: text
+    bounds: [814, 112, 55, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#D91E18; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>04</strong></span></p>
+
+  - elementId: step4-title
+    elementType: text
+    bounds: [874, 112, 130, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#2C2C2C; font-family:Arial, Microsoft YaHei, MiSans;"><strong>EXECUTE</strong></span></p>
+
+  - elementId: step4-cn
+    elementType: text
+    bounds: [814, 144, 204, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">执行与落地</span></p>
+
+  # Arrow 4
+  - elementId: arrow4
+    elementType: shape
+    bounds: [1032, 140, 20, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Step 5 box (RED — final step)
+  - elementId: step5-bg
+    elementType: shape
+    bounds: [1058, 106, 172, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: step5-num
+    elementType: text
+    bounds: [1066, 112, 55, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#FFFFFF; font-family:Gill Sans MT, Arial Black, Microsoft YaHei, MiSans;"><strong>05</strong></span></p>
+
+  - elementId: step5-title
+    elementType: text
+    bounds: [1126, 112, 96, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#FFFFFF; font-family:Arial, Microsoft YaHei, MiSans;"><strong>SCALE</strong></span></p>
+
+  - elementId: step5-cn
+    elementType: text
+    bounds: [1066, 144, 156, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#FFD0CE; font-family:Arial, Microsoft YaHei, MiSans;">规模化复制</span></p>
+
+  # Description panels below each step
+  # Panel 1
+  - elementId: desc1-bg
+    elementType: shape
+    bounds: [50, 208, 220, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: desc1-text
+    elementType: text
+    bounds: [62, 218, 196, 162]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>诊断现状</strong></span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 竞争格局全景扫描</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 价值链利润池分析</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 核心能力差距识别</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 增长潜力评估</span></p>
+
+  # Panel 2
+  - elementId: desc2-bg
+    elementType: shape
+    bounds: [302, 208, 220, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: desc2-text
+    elementType: text
+    bounds: [314, 218, 196, 162]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>细分定位</strong></span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 客户需求深度分层</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 高价值细分识别</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 价值主张差异化</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 市场进入路径设计</span></p>
+
+  # Panel 3
+  - elementId: desc3-bg
+    elementType: shape
+    bounds: [554, 208, 220, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: desc3-text
+    elementType: text
+    bounds: [566, 218, 196, 162]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>资源优先级</strong></span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 战略举措筛选</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 投资回报率评估</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 时间轴与里程碑</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 资本配置优化</span></p>
+
+  # Panel 4
+  - elementId: desc4-bg
+    elementType: shape
+    bounds: [806, 208, 220, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: desc4-text
+    elementType: text
+    bounds: [818, 218, 196, 162]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>执行落地</strong></span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 跨职能项目管理</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; KPI体系建立</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 组织能力建设</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 快速迭代闭环</span></p>
+
+  # Panel 5 (red background)
+  - elementId: desc5-bg
+    elementType: shape
+    bounds: [1058, 208, 172, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#D91E180F"
+
+  - elementId: desc5-text
+    elementType: text
+    bounds: [1070, 218, 148, 162]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>规模化复制</strong></span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 成功模式标准化</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 跨市场扩张</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 持续价值创造</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9642; 竞争优势强化</span></p>
+
+  # Bottom insight text
+  - elementId: bottom-insight
+    elementType: text
+    bounds: [50, 408, 1180, 92]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>框架应用要点：</strong></span><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">此五阶段框架已在全球超过300个增长项目中验证，核心在于从"诊断"到"规模化"的闭环管理。成功关键在于：阶段一须建立坚实的市场事实基础；阶段三的优先级决策往往决定整体成败；阶段五的规模化需匹配组织能力建设。中国市场实践中，数字化能力建设贯穿全程，是差异化竞争的底层支撑。</span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Source
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 662, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>Bain &amp; Company Growth Framework | 贝恩公司增长加速框架（内部方法论）</p>
+
+  # Page number
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 662, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>09</p>

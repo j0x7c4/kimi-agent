@@ -1,0 +1,33 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Left: large quote text
+  - elementId: quote-text
+    elementType: text
+    bounds: [31, 136, 550, 449]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      lineHeightPx: 57
+      text: |
+        <p>"TAKING AN IMAGE, FREEZING A MOMENT, REVEALS HOW RICH REALITY TRULY IS."</p>
+
+  # Attribution
+  - elementId: quote-attribution
+    elementType: text
+    bounds: [31, 598, 300, 36]
+    content:
+      style: "$subtitle"
+      align: [left, middle]
+      text: |
+        <p>- Anonymous</p>
+
+  # Right: photo (full height)
+  - elementId: photo-right
+    elementType: image
+    bounds: [632, 72, 648, 574]
+    src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=800&q=80"
+    fit:
+      mode: cover

@@ -1,0 +1,73 @@
+title: 启迪之光 - 中学数学课程
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#0A6B70"      # 深海绿
+    secondary: "#6C7A89"    # 暮光灰
+    accent: "#FFC107"       # 琥珀金
+    background: "#F8F6F4"   # 暖调米白
+    dark: "#1A2E35"         # 极夜蓝
+    text: "#333333"         # 炭灰
+    lightText: "#8E8E8E"    # 浅灰
+    white: "#FFFFFF"
+    cardBg: "#FDFDFB"       # 卡片背景
+    highlightBg: "#FFFBEA"  # 高亮背景
+  textStyles:
+    mainTitle:
+      fontSize: 56
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      letterSpacing: 1
+    coverSubtitle:
+      fontSize: 28
+      color: "#D8D8D8"
+      fontFamily: "Liter, MiSans"
+    chapterTitle:
+      fontSize: 42
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+    pageTitle:
+      fontSize: 34
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+    bodyText:
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+    emphasis:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+    caption:
+      fontSize: 16
+      color: "$lightText"
+      fontFamily: "Liter, MiSans"
+    numberDisplay:
+      fontSize: 56
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+  tableStyles:
+    default:
+      fontSize: 18
+      fontFamily: "Liter, MiSans"
+      headerFill: "$primary"
+      headerColor: "$white"
+      headerBold: true
+      bodyFill: ["$white", "$background"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "#D8D8D8"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter1.page
+  - pages/content-concepts.page
+  - pages/content-process.page
+  - pages/content-cards.page
+  - pages/content-data.page
+  - pages/content-timeline.page
+  - pages/content-practice.page
+  - pages/ending.page

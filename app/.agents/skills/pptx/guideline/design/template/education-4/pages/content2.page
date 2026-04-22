@@ -1,0 +1,252 @@
+pageType: content
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: title-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 60
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: title-icon
+    elementType: icon
+    bounds:
+      - 24
+      - 14
+      - 32
+      - 32
+    iconName: fas:table-columns
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 70
+      - 0
+      - 1000
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:28px; color:#FFFFFF; font-family:MiSans;"><strong>对比分析：两种研究路径</strong></span></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1200
+      - 0
+      - 60
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#D9E8F5; font-family:MiSans;">05</span></p>
+  - elementId: left-card-bg
+    elementType: shape
+    bounds:
+      - 60
+      - 74
+      - 568
+      - 582
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#D9E8F5"
+    shadow:
+      blur: 10
+      color: "#2C5F8A18"
+      offset:
+        - 0
+        - 2
+  - elementId: left-card-topbar
+    elementType: shape
+    bounds:
+      - 60
+      - 74
+      - 568
+      - 8
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: left-card-title
+    elementType: text
+    bounds:
+      - 84
+      - 96
+      - 520
+      - 44
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:22px; color:#2C5F8A; font-family:MiSans;"><strong>定量研究方法</strong></span></p>
+  - elementId: left-card-subtitle
+    elementType: text
+    bounds:
+      - 84
+      - 140
+      - 520
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">Quantitative Research Approach</span></p>
+  - elementId: left-divider
+    elementType: shape
+    bounds:
+      - 84
+      - 174
+      - 520
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#2C5F8A44"
+  - elementId: left-card-content
+    elementType: text
+    bounds:
+      - 84
+      - 188
+      - 520
+      - 500
+    content:
+      lineHeight: 1.65
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 样本量：共回收有效问卷 <strong style="color:#2C5F8A;">318份</strong></span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 统计方法：描述性统计 + 回归分析</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 信度检验：Cronbach's &#945; &#8805; 0.85</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 效度验证：KMO=0.91，因子分析结构清晰</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 优势：客观、可重复、统计显著</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 局限：难以捕捉深层动因与复杂情境</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 工具：SPSS 26.0 + AMOS 结构方程模型</span></p>
+  - elementId: right-card-bg
+    elementType: shape
+    bounds:
+      - 652
+      - 74
+      - 568
+      - 583
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#D9E8F5"
+    shadow:
+      blur: 10
+      color: "#E07B5418"
+      offset:
+        - 0
+        - 2
+  - elementId: right-card-topbar
+    elementType: shape
+    bounds:
+      - 652
+      - 74
+      - 568
+      - 8
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"
+  - elementId: right-card-title
+    elementType: text
+    bounds:
+      - 676
+      - 96
+      - 520
+      - 44
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:22px; color:#E07B54; font-family:MiSans;"><strong>定性研究方法</strong></span></p>
+  - elementId: right-card-subtitle
+    elementType: text
+    bounds:
+      - 676
+      - 140
+      - 520
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">Qualitative Research Approach</span></p>
+  - elementId: right-divider
+    elementType: shape
+    bounds:
+      - 676
+      - 174
+      - 520
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E07B5444"
+  - elementId: right-card-content
+    elementType: text
+    bounds:
+      - 676
+      - 188
+      - 520
+      - 500
+    content:
+      lineHeight: 1.65
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 访谈对象：深度访谈 <strong style="color:#E07B54;">12位</strong>典型受访者</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 分析方法：主题分析法（Thematic Analysis）</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 数据来源：半结构化访谈 + 文本分析</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 编码方式：开放编码 &#8594; 轴心编码 &#8594; 选择编码</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 优势：深入探索动机与复杂情境</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 局限：样本较小，结果难以推广</span></p>
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;">&#9679; 工具：NVivo 14 质性数据分析软件</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"

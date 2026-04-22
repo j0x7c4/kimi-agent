@@ -1,0 +1,86 @@
+pageType: content
+elements:
+# --- Decorative ---
+- elementId: deco_circle
+  elementType: shape
+  bounds: [50, 800, 200, 200]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#10B98110"
+# --- Sidebar ---
+- elementId: sidebar_bg
+  elementType: shape
+  bounds: [0, 817, 50, 270]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "$light"
+- elementId: text_sidebar
+  elementType: text
+  bounds: [-23.15, 817.28, 270.16, 35.14]
+  rotation: 270
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING
+# --- Images ---
+- elementId: shape_img1
+  elementType: shape
+  bounds: [108, 110.43, 518.88, 411.62]
+  shapeName: rect
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200
+    fit:
+      mode: contain
+- elementId: shape_img2
+  elementType: shape
+  bounds: [660.08, 108, 299.92, 414.05]
+  shapeName: rect
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200
+    fit:
+      mode: contain
+- elementId: shape_img3
+  elementType: shape
+  bounds: [441.12, 560.38, 518.88, 411.62]
+  shapeName: rect
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200
+    fit:
+      mode: contain
+# --- Content ---
+- elementId: text_title
+  elementType: text
+  bounds: [1162.48, 278.35, 547.78, 108.77]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "#10B981"
+    lineHeightPx: 49.99
+    text: |
+      <p>We're so excited</p>
+      <p style="line-height:50px">to have you!</p>
+- elementId: text_body
+  elementType: text
+  bounds: [1162.48, 414.87, 547.78, 385.29]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 35.45
+    text: |
+      <p>Presentations are tools that can be used as demonstrations, lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p>It serves a variety of purposes, making presentations powerful tools for convincing and teaching.</p>
+      <p> </p>
+      <p>Start with an outline of topics and identify highlights, which can be applied to whatever subject you plan on discussing. </p>

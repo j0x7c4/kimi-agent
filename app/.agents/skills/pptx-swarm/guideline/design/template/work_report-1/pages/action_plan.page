@@ -1,0 +1,232 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部导航栏
+  - elementId: nav_bg
+    elementType: shape
+    bounds: [0, 0, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: nav1
+    elementType: text
+    bounds: [0, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>年度目标完成情况</p>
+
+  - elementId: nav2
+    elementType: text
+    bounds: [256, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>核心业务增长归因</p>
+
+  - elementId: nav3
+    elementType: text
+    bounds: [512, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>重点项目进展</p>
+
+  - elementId: nav4
+    elementType: text
+    bounds: [768, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>竞争态势分析</p>
+
+  - elementId: nav5
+    elementType: text
+    bounds: [1024, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$accent"
+      align: [center, middle]
+      text: |
+        <p><strong>2025年计划</strong></p>
+  
+  # 页面标题
+  - elementId: page_title
+    elementType: text
+    bounds: [80, 80, 1120, 50]
+    content:
+      style: "$page_title"
+      text: |
+        <p><strong>2025年目标：营收突破200亿，净利润率提升至20%</strong></p>
+  
+  # 目标卡片区 (4 cards x 250px, 40px gaps, 80-1200)
+  - elementId: target_card1
+    elementType: shape
+    bounds: [80, 155, 250, 150]
+    shapeName: rect
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: target1_icon
+    elementType: icon
+    bounds: [100, 178, 32, 32]
+    iconName: "fas:bullseye"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: target1_text
+    elementType: text
+    bounds: [150, 170, 160, 120]
+    content:
+      fontSize: 18
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p><strong>营收目标</strong></p>
+        <p><span style="font-size:28px; color:$accent;">200亿</span></p>
+        <p style="font-size:14px; color:$light_text;">同比+28%</p>
+
+  - elementId: target_card2
+    elementType: shape
+    bounds: [370, 155, 250, 150]
+    shapeName: rect
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: target2_icon
+    elementType: icon
+    bounds: [390, 178, 32, 32]
+    iconName: "fas:percentage"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: target2_text
+    elementType: text
+    bounds: [440, 170, 160, 120]
+    content:
+      fontSize: 18
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p><strong>净利润率</strong></p>
+        <p><span style="font-size:28px; color:$accent;">20%</span></p>
+        <p style="font-size:14px; color:$light_text;">提升2pp</p>
+
+  - elementId: target_card3
+    elementType: shape
+    bounds: [660, 155, 250, 150]
+    shapeName: rect
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: target3_icon
+    elementType: icon
+    bounds: [680, 178, 32, 32]
+    iconName: "fas:users"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: target3_text
+    elementType: text
+    bounds: [730, 170, 160, 120]
+    content:
+      fontSize: 18
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p><strong>客户数</strong></p>
+        <p><span style="font-size:28px; color:$accent;">4,000+</span></p>
+        <p style="font-size:14px; color:$light_text;">新增750家</p>
+
+  - elementId: target_card4
+    elementType: shape
+    bounds: [950, 155, 250, 150]
+    shapeName: rect
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: target4_icon
+    elementType: icon
+    bounds: [970, 178, 32, 32]
+    iconName: "fas:globe"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: target4_text
+    elementType: text
+    bounds: [1020, 170, 160, 120]
+    content:
+      fontSize: 18
+      color: "$text"
+      lineHeight: 1.4
+      text: |
+        <p><strong>市场份额</strong></p>
+        <p><span style="font-size:28px; color:$accent;">35%</span></p>
+        <p style="font-size:14px; color:$light_text;">行业第一</p>
+
+  # 核心举措表格
+  - elementId: action_table
+    elementType: table
+    bounds: [80, 340, 1120, 260]
+    columnWidths: [0.08, 0.25, 0.22, 0.25, 0.20]
+    rowHeights: [0.15, 0.2125, 0.2125, 0.2125, 0.2125]
+    style: "$default"
+    rows:
+      - - content: {text: "序号", align: [center, middle]}
+        - content: {text: "核心举措", align: [center, middle]}
+        - content: {text: "目标", align: [center, middle]}
+        - content: {text: "关键行动", align: [center, middle]}
+        - content: {text: "时间节点", align: [center, middle]}
+      - - content: {text: "1", align: [center, middle]}
+        - content: {text: "产品创新加速", align: [left, middle]}
+        - content: {text: "推出5条新产品线", align: [left, middle]}
+        - content: {text: "• 设立创新实验室\n• 月度创新评审", align: [left, middle]}
+        - content: {text: "Q1启动", align: [center, middle]}
+      - - content: {text: "2", align: [center, middle]}
+        - content: {text: "大客户深耕", align: [left, middle]}
+        - content: {text: "KA客户营收占比50%", align: [left, middle]}
+        - content: {text: "• 建立战略客户部\n• 定制化解决方案", align: [left, middle]}
+        - content: {text: "Q1-Q2", align: [center, middle]}
+      - - content: {text: "3", align: [center, middle]}
+        - content: {text: "数字化赋能", align: [left, middle]}
+        - content: {text: "全流程效率提升40%", align: [left, middle]}
+        - content: {text: "• AI决策系统上线\n• 自动化覆盖80%", align: [left, middle]}
+        - content: {text: "全年", align: [center, middle]}
+      - - content: {text: "4", align: [center, middle]}
+        - content: {text: "国际化布局", align: [left, middle]}
+        - content: {text: "海外营收占比15%", align: [left, middle]}
+        - content: {text: "• 东南亚3国落地\n• 本地化团队组建", align: [left, middle]}
+        - content: {text: "Q2-Q4", align: [center, middle]}
+  
+  # 底部说明
+  - elementId: footer_text
+    elementType: text
+    bounds: [80, 620, 1120, 40]
+    content:
+      style: "$footnote"
+      text: |
+        <p>* 以上目标已经董事会批准，将纳入2025年度KPI考核体系</p>

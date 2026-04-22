@@ -1,0 +1,124 @@
+pageType: unknown
+elements:
+- elementId: table0
+  elementType: table
+  bounds: [107, 600.48, 1705, 371.52]
+  columnWidths: [0.5, 0.5]
+  rowHeights: [0.2504, 0.2504, 0.2504, 0.2489]
+  rows:
+  - - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 37.33
+        text: |
+          Product overview
+    - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 37.33
+        text: |
+          Channels and tactics
+  - - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 37.33
+        text: |
+          Market research highlights
+    - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 37.33
+        text: |
+          Key assets
+  - - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 37.33
+        text: |
+          Target audience
+    - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 37.33
+        text: |
+          Launch day plan
+  - - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 37.33
+        text: |
+          Product launch goals
+    - {}
+- elementId: line1
+  elementType: shape
+  bounds: [108, 109, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: line2
+  elementType: shape
+  bounds: [965.5, 109, 0, 463.23]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: shape3
+  elementType: shape
+  bounds: [998.6, 134.99, 813.4, 434.48]
+  shapeName: custom
+  path: 1200318,641145;M9993 0L1190325 0C1195844 0 1200318 4474 1200318 9993L1200318 631152C1200318 636671 1195844 641145 1190325 641145L9993 641145C4474 641145 0 636671 0 631152L0 9993C0 4474 4474 0 9993 0Z
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200
+    fit:
+      mode: contain
+- elementId: text6
+  elementType: text
+  bounds: [94.4, 387.19, 844.2, 203.6]
+  content:
+    align: [left, top]
+    fontSize: 133.3
+    fontFamily: "Coda, deyihei"
+    color: "#0F1B3D"
+    lineHeightPx: 159.99
+    text: AGENDA
+- elementId: text7
+  elementType: text
+  bounds: [159.85, 129.42, 172.82, 71.28]
+  content:
+    align: [left, top]
+    fontSize: 30
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#0F1B3D"
+    lineHeightPx: 30.03
+    letterSpacing: -1.2
+    text: |
+      <p>Launch</p>
+      <p>Studio</p>
+- elementId: logo_diamond
+  elementType: shape
+  bounds: [108, 138.93, 52.49, 52.49]
+  shapeName: custom
+  path: 666605,666605;M333302 0L666605 333302L333302 666605L0 333302Z
+  fill:
+    type: solid
+    color: "#0F1B3D"

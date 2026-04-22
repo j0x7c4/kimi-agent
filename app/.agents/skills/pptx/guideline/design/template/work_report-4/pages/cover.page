@@ -1,0 +1,76 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 律动条纹装饰 - 顶部
+  - elementId: pattern-top
+    elementType: shape
+    bounds: [0, 0, 1280, 120]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 45
+      stops:
+        - {position: 0, color: "#5C8E8F08"}
+        - {position: 0.5, color: "#5C8E8F12"}
+        - {position: 1, color: "#5C8E8F08"}
+  
+  # 主标题
+  - elementId: main-title
+    elementType: text
+    bounds: [80, 240, 1120, 80]
+    content:
+      style: "$title"
+      fontSize: 56
+      align: [center, middle]
+      text: |
+        <p><strong>2024年度工作汇报</strong></p>
+  
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [80, 340, 1120, 40]
+    content:
+      style: "$subtitle"
+      align: [center, middle]
+      text: |
+        <p>Q4季度成果总结与下一步规划</p>
+  
+  # 装饰线
+  - elementId: divider
+    elementType: shape
+    bounds: [490, 400, 300, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+  
+  # 汇报信息
+  - elementId: info
+    elementType: text
+    bounds: [80, 470, 1120, 120]
+    content:
+      fontSize: 18
+      color: "$secondary"
+      align: [center, middle]
+      lineHeight: 1.8
+      text: |
+        <p>汇报人：XXX</p>
+        <p>部门：产品研发中心</p>
+        <p>日期：2024年12月</p>
+  
+  # 底部律动条纹
+  - elementId: pattern-bottom
+    elementType: shape
+    bounds: [0, 600, 1280, 120]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: -45
+      stops:
+        - {position: 0, color: "#5C8E8F08"}
+        - {position: 0.5, color: "#5C8E8F12"}
+        - {position: 1, color: "#5C8E8F08"}

@@ -1,0 +1,110 @@
+pageType: final
+background:
+  type: solid
+  color: "#F8F9FB"
+elements:
+  # Top dark panel
+  - elementId: final-top-panel
+    elementType: shape
+    bounds: [0, 0, 1280, 440]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  # Decorative ellipse (top-right area, very low alpha)
+  - elementId: final-deco-ellipse
+    elementType: shape
+    bounds: [980, 300, 300, 300]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B4530912"
+
+  # Decorative diamond
+  - elementId: final-deco-diamond
+    elementType: shape
+    bounds: [100, 380, 24, 24]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # Decorative line in top panel
+  - elementId: final-deco-line
+    elementType: shape
+    bounds: [80, 420, 200, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # English tagline
+  - elementId: final-tagline-en
+    elementType: text
+    bounds: [80, 160, 900, 48]
+    content:
+      fontSize: 36
+      color: "#FFFFFF90"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>Capitalize on the next decade.</p>
+
+  # Chinese main statement
+  - elementId: final-statement-cn
+    elementType: text
+    bounds: [80, 220, 900, 64]
+    content:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>把握未来十年的战略窗口期</strong></p>
+
+  # Accent bar below statement
+  - elementId: final-accent-bar
+    elementType: shape
+    bounds: [80, 300, 80, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # Contact info (bottom light area)
+  - elementId: final-contact
+    elementType: text
+    bounds: [80, 480, 600, 28]
+    content:
+      fontSize: 16
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>xxx@company.com · Confidential</p>
+
+  # Company info (bottom light area)
+  - elementId: final-company
+    elementType: text
+    bounds: [80, 516, 600, 30]
+    content:
+      fontSize: 18
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>XX科技集团 · 战略发展部</p>
+
+  # Bottom accent bar (full width)
+  - elementId: final-bottom-bar
+    elementType: shape
+    bounds: [0, 716, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"

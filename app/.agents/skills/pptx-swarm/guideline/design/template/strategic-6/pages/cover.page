@@ -1,0 +1,46 @@
+pageType: cover
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: cover-title
+    elementType: text
+    bounds: [80, 180, 780, 70]
+    content:
+      fontSize: 56
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>数字化转型三年战略规划</strong></p>
+
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [80, 264, 780, 32]
+    content:
+      fontSize: 24
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>实现年营收增长 40% 的路径、投资回报与风险管控</p>
+
+  - elementId: cover-photo-placeholder
+    elementType: shape
+    bounds: [896, 0, 384, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  - elementId: cover-bottom-info
+    elementType: text
+    bounds: [80, 660, 600, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>XX科技集团 · 战略发展部 · 2025年X月 · Confidential</p>

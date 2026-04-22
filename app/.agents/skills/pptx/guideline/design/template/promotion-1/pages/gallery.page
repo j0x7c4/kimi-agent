@@ -1,0 +1,91 @@
+pageType: final
+background:
+  type: solid
+  color: $darkbg
+elements:
+  - elementId: gallery-logo
+    elementType: text
+    bounds:
+      - 60
+      - 35
+      - 200
+      - 35
+    wrap: false
+    content:
+      fontSize: 20
+      color: $white
+      fontFamily: Oranienbaum, siyuanSongti
+      letterSpacing: 8
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>FASHION</strong></p>
+  - elementId: img-1
+    elementType: image
+    bounds:
+      - 60
+      - 90
+      - 370
+      - 280
+    src: https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80
+  - elementId: img-2
+    elementType: image
+    bounds:
+      - 450
+      - 90
+      - 370
+      - 280
+    src: https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800&q=80
+  - elementId: img-3
+    elementType: image
+    bounds:
+      - 840
+      - 90
+      - 370
+      - 280
+    src: https://images.unsplash.com/photo-1581044777550-4cfa60707998?w=800&q=80
+  - elementId: img-4
+    elementType: image
+    bounds:
+      - 60
+      - 390
+      - 370
+      - 280
+    src: https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800&q=80
+  - elementId: img-5
+    elementType: image
+    bounds:
+      - 450
+      - 390
+      - 370
+      - 280
+    src: https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&q=80
+  - elementId: img-6
+    elementType: image
+    bounds:
+      - 840
+      - 390
+      - 370
+      - 280
+    src: https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800&q=80
+  - elementId: bottom-logo
+    elementType: text
+    bounds:
+      - 440
+      - 685
+      - 400
+      - 25
+    wrap: false
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: Oranienbaum, siyuanSongti
+      letterSpacing: 8
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>MIU MIU</p>

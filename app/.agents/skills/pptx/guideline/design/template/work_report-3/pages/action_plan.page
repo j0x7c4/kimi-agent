@@ -1,0 +1,226 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 180
+  stops:
+    - {position: 0, color: "#F0F3F5"}
+    - {position: 1, color: "#F8FAFB"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p><strong>下一步行动计划 - 聚焦三大战略方向</strong></p>
+  
+  # 战略方向1
+  - elementId: strategy1-bg
+    elementType: shape
+    bounds: [80, 140, 360, 440]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 12
+      color: "#00000010"
+      offset: [0, 4]
+  
+  - elementId: strategy1-header
+    elementType: shape
+    bounds: [80, 140, 360, 60]
+    shapeName: custom
+    path: "360,60;M8 0 L352 0 Q360 0 360 8 L360 60 L0 60 L0 8 Q0 0 8 0 Z"
+    fill:
+      type: solid
+      color: "$primary"
+  
+  - elementId: strategy1-num
+    elementType: text
+    bounds: [100, 150, 40, 40]
+    content:
+      fontSize: 28
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "1"
+  
+  - elementId: strategy1-title
+    elementType: text
+    bounds: [150, 155, 270, 30]
+    content:
+      fontSize: 22
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      text: "市场拓展"
+
+  - elementId: strategy1-content
+    elementType: text
+    bounds: [100, 220, 320, 350]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      text: |
+        <p><strong>目标</strong>：新增3个海外市场</p>
+        
+        <p style="margin-top:16px;"><strong>关键举措</strong>：</p>
+        <p>• 东南亚市场调研与试点</p>
+        <p>• 建立本地化运营团队</p>
+        <p>• 产品多语言适配</p>
+        
+        <p style="margin-top:16px;"><strong>时间节点</strong>：</p>
+        <p>• Q1：市场调研完成</p>
+        <p>• Q2：首个市场试运营</p>
+        <p>• Q4：3个市场全面运营</p>
+        
+        <p style="margin-top:16px;"><strong>预期成果</strong>：</p>
+        <p>海外收入占比达到20%</p>
+  
+  # 战略方向2
+  - elementId: strategy2-bg
+    elementType: shape
+    bounds: [460, 140, 360, 440]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 12
+      color: "#00000010"
+      offset: [0, 4]
+  
+  - elementId: strategy2-header
+    elementType: shape
+    bounds: [460, 140, 360, 60]
+    shapeName: custom
+    path: "360,60;M8 0 L352 0 Q360 0 360 8 L360 60 L0 60 L0 8 Q0 0 8 0 Z"
+    fill:
+      type: solid
+      color: "$accent"
+  
+  - elementId: strategy2-num
+    elementType: text
+    bounds: [480, 150, 40, 40]
+    content:
+      fontSize: 28
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "2"
+  
+  - elementId: strategy2-title
+    elementType: text
+    bounds: [530, 155, 270, 30]
+    content:
+      fontSize: 22
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      text: "产品创新"
+
+  - elementId: strategy2-content
+    elementType: text
+    bounds: [480, 220, 320, 350]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      text: |
+        <p><strong>目标</strong>：推出AI驱动新产品线</p>
+        
+        <p style="margin-top:16px;"><strong>关键举措</strong>：</p>
+        <p>• 组建AI研发团队</p>
+        <p>• 与高校建立合作实验室</p>
+        <p>• 申请核心技术专利</p>
+        
+        <p style="margin-top:16px;"><strong>时间节点</strong>：</p>
+        <p>• Q1：团队组建完成</p>
+        <p>• Q2：原型产品发布</p>
+        <p>• Q3：正式产品上线</p>
+        
+        <p style="margin-top:16px;"><strong>预期成果</strong>：</p>
+        <p>新产品贡献收入15%</p>
+  
+  # 战略方向3
+  - elementId: strategy3-bg
+    elementType: shape
+    bounds: [840, 140, 360, 440]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 12
+      color: "#00000010"
+      offset: [0, 4]
+  
+  - elementId: strategy3-header
+    elementType: shape
+    bounds: [840, 140, 360, 60]
+    shapeName: custom
+    path: "360,60;M8 0 L352 0 Q360 0 360 8 L360 60 L0 60 L0 8 Q0 0 8 0 Z"
+    fill:
+      type: solid
+      color: "$primary"
+  
+  - elementId: strategy3-num
+    elementType: text
+    bounds: [860, 150, 40, 40]
+    content:
+      fontSize: 28
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "3"
+  
+  - elementId: strategy3-title
+    elementType: text
+    bounds: [910, 155, 270, 30]
+    content:
+      fontSize: 22
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      text: "组织升级"
+
+  - elementId: strategy3-content
+    elementType: text
+    bounds: [860, 220, 320, 350]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      text: |
+        <p><strong>目标</strong>：打造敏捷型组织</p>
+        
+        <p style="margin-top:16px;"><strong>关键举措</strong>：</p>
+        <p>• 推行OKR管理体系</p>
+        <p>• 建立内部创新机制</p>
+        <p>• 优化人才激励体系</p>
+        
+        <p style="margin-top:16px;"><strong>时间节点</strong>：</p>
+        <p>• Q1：OKR体系落地</p>
+        <p>• Q2：创新基金启动</p>
+        <p>• Q3：新激励体系实施</p>
+        
+        <p style="margin-top:16px;"><strong>预期成果</strong>：</p>
+        <p>组织效能提升30%</p>
+  
+  # 页脚
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 680, 80, 20]
+    content:
+      fontSize: 12
+      color: "$textSecondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, bottom]
+      text: "8"

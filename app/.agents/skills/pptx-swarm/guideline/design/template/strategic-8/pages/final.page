@@ -1,0 +1,58 @@
+pageType: final
+background:
+  type: solid
+  color: "#1A3632"
+elements:
+  # Subtle overlay feel - slightly lighter rectangle as "photo" area
+  - elementId: photo-overlay
+    elementType: shape
+    bounds: [0, 0, 1280, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1A363280"
+
+  - elementId: final-statement
+    elementType: text
+    bounds: [72, 360, 800, 48]
+    content:
+      fontSize: 28
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Building sustainable value for the next generation.</strong></p>
+
+  - elementId: final-vision
+    elementType: text
+    bounds: [72, 420, 800, 28]
+    content:
+      fontSize: 18
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>构建可持续价值，赋能下一代企业增长</p>
+
+  - elementId: final-accent-line
+    elementType: shape
+    bounds: [72, 470, 80, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#D97706"
+
+  - elementId: final-contact
+    elementType: text
+    bounds: [72, 500, 600, 56]
+    content:
+      fontSize: 14
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>xxx@company.com · Confidential</p>
+        <p>XX集团 · 战略发展部</p>

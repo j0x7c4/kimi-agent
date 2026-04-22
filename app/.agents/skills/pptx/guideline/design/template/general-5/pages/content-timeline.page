@@ -1,0 +1,249 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 60, 800, 50]
+    content:
+      style: "$title"
+      align: [left, middle]
+      text: |
+        <p><strong>茶叶全球传播大事记</strong></p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 120, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 时间轴主线
+  - elementId: timeline-main
+    elementType: shape
+    bounds: [100, 360, 1080, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 节点1
+  - elementId: q1-node
+    elementType: shape
+    bounds: [180, 348, 28, 28]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 4
+      color: "#FFFFFF"
+
+  - elementId: q1-label
+    elementType: text
+    bounds: [120, 390, 140, 30]
+    content:
+      fontSize: 18
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>公元前2737年</strong></p>
+
+  - elementId: q1-card
+    elementType: shape
+    bounds: [100, 180, 200, 140]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 8
+      color: "#00000006"
+      offset: [0, 2]
+
+  - elementId: q1-content
+    elementType: text
+    bounds: [120, 200, 160, 100]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>中国</strong></p>
+        <p>• 神农发现茶叶</p>
+        <p>• 饮茶文化萌芽</p>
+
+  # 节点2
+  - elementId: q2-node
+    elementType: shape
+    bounds: [440, 348, 28, 28]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 4
+      color: "#FFFFFF"
+
+  - elementId: q2-label
+    elementType: text
+    bounds: [380, 390, 140, 30]
+    content:
+      fontSize: 18
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>公元805年</strong></p>
+
+  - elementId: q2-card
+    elementType: shape
+    bounds: [360, 440, 200, 140]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 8
+      color: "#00000006"
+      offset: [0, 2]
+
+  - elementId: q2-content
+    elementType: text
+    bounds: [380, 460, 160, 100]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>日本</strong></p>
+        <p>• 禅师带回茶种</p>
+        <p>• 抹茶传统奠基</p>
+
+  # 节点3
+  - elementId: q3-node
+    elementType: shape
+    bounds: [700, 348, 28, 28]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 4
+      color: "#FFFFFF"
+
+  - elementId: q3-label
+    elementType: text
+    bounds: [660, 390, 100, 30]
+    content:
+      fontSize: 18
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>1610年</strong></p>
+
+  - elementId: q3-card
+    elementType: shape
+    bounds: [620, 180, 200, 140]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 8
+      color: "#00000006"
+      offset: [0, 2]
+
+  - elementId: q3-content
+    elementType: text
+    bounds: [640, 200, 160, 100]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>欧洲</strong></p>
+        <p>• 荷兰商人引入茶叶</p>
+        <p>• 贵族社交与贸易</p>
+
+  # 节点4
+  - elementId: q4-node
+    elementType: shape
+    bounds: [960, 348, 28, 28]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+    border:
+      style: solid
+      width: 4
+      color: "#FFFFFF"
+
+  - elementId: q4-label
+    elementType: text
+    bounds: [920, 390, 100, 30]
+    content:
+      fontSize: 18
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>1840年</strong></p>
+
+  - elementId: q4-card
+    elementType: shape
+    bounds: [880, 440, 200, 140]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "$primary"}
+        - {position: 1, color: "#2E5E8ACC"}
+
+  - elementId: q4-content
+    elementType: text
+    bounds: [900, 460, 160, 100]
+    content:
+      fontSize: 16
+      color: "#FFFFFF"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>印度</strong></p>
+        <p>• 阿萨姆茶园建立</p>
+        <p>• 全球茶业格局重塑</p>
+
+  # 顶部总结
+  - elementId: summary-text
+    elementType: text
+    bounds: [340, 140, 600, 30]
+    content:
+      fontSize: 20
+      color: "$textLight"
+      align: [center, middle]
+      text: |
+        <p>从东亚起源到全球传播，茶叶跨越千年连接世界文明</p>
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 670, 80, 30]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      text: |
+        <p>09</p>

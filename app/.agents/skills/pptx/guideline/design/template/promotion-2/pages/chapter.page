@@ -1,0 +1,98 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # Top nav bar
+  - elementId: nav-left
+    elementType: text
+    bounds: [120, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [left, top]
+      text: |
+        <p>Marketing</p>
+        <p>Approach</p>
+
+  - elementId: nav-right
+    elementType: text
+    bounds: [900, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [right, top]
+      text: |
+        <p>Bilson's</p>
+        <p>Supermarkets</p>
+
+  - elementId: nav-divider
+    elementType: shape
+    bounds: [120, 88, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Section number — large, editorial style
+  - elementId: section-num
+    elementType: text
+    bounds: [120, 158, 220, 140]
+    content:
+      fontSize: 100
+      color: "$text"
+      fontFamily: "HedvigLettersSans, MiSans"
+      lineHeight: 1.1
+      align: [left, top]
+      wrap: false
+      text: |
+        <p><strong>01</strong></p>
+
+  # Horizontal rule through the number — "01 ——————"
+  - elementId: num-rule
+    elementType: shape
+    bounds: [360, 226, 800, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Chapter title
+  - elementId: chapter-title
+    elementType: text
+    bounds: [120, 326, 1040, 180]
+    content:
+      style: "$coverTitle"
+      align: [left, top]
+      text: |
+        <p><strong>CHAPTER TITLE</strong></p>
+        <p><strong>GOES HERE</strong></p>
+
+  # Short rule under title
+  - elementId: title-rule
+    elementType: shape
+    bounds: [120, 518, 260, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$darkgreen"
+
+  # Chapter description
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [120, 536, 720, 60]
+    content:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.35
+      align: [left, top]
+      wrap: true
+      text: Brief description of what this section covers
+
+  # Arrow icon
+  - elementId: chapter-arrow
+    elementType: icon
+    bounds: [120, 618, 100, 28]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"

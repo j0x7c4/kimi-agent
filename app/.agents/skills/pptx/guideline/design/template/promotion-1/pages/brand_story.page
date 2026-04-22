@@ -1,0 +1,151 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: left-image
+    elementType: image
+    bounds:
+      - 0
+      - 0
+      - 560
+      - 720
+    src: https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1200&q=80
+  - elementId: image-fade
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 560
+      - 720
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - position: 0
+          color: "#F0EBE300"
+        - position: 0.5
+          color: "#F0EBE380"
+        - position: 1
+          color: "#F0EBE3"
+  - elementId: brand-name
+    elementType: text
+    bounds:
+      - 600
+      - 60
+      - 300
+      - 30
+    wrap: false
+    content:
+      fontSize: 18
+      color: $primary
+      fontFamily: Oranienbaum, siyuanSongti
+      letterSpacing: 8
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>FASHION</strong></p>
+  - elementId: right-divider
+    elementType: shape
+    bounds:
+      - 600
+      - 105
+      - 600
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#C4A87C60"
+  - elementId: keywords
+    elementType: text
+    bounds:
+      - 600
+      - 120
+      - 620
+      - 30
+    wrap: false
+    content:
+      fontSize: 13
+      color: $secondary
+      fontFamily: Liter, MiSans
+      letterSpacing: 1
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>Girliness　　Rebelliousness　　Vintage　　Playful　　Exquisite　　Whimsical</p>
+  - elementId: manifesto-title
+    elementType: text
+    bounds:
+      - 600
+      - 190
+      - 600
+      - 45
+    content:
+      fontSize: 14
+      color: $secondary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p>女孩精神，是叛逆与温柔并行。</p>
+  - elementId: manifesto-en
+    elementType: text
+    bounds:
+      - 600
+      - 240
+      - 600
+      - 50
+    wrap: false
+    content:
+      fontSize: 20
+      color: $primary
+      fontFamily: Oranienbaum, siyuanSongti
+      lineHeight: 1.6
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p>A girl's rebellion, youthfully unleashed.</p>
+  - elementId: story-text
+    elementType: text
+    bounds:
+      - 600
+      - 320
+      - 600
+      - 260
+    content:
+      fontSize: 14
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 2
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>不完美，才有灵魂。</strong></p>
+        <p style="margin-top:8px"><span style="color:#8B7355;">Imperfection is the real charm.</span></p>
+        <p style="margin-top:16px">MM 相信真正的优雅从不完美中诞生。每一件作品都是对传统时尚规则的温柔颠覆——用褶皱代替平整，用碰撞代替和谐，用天真代替世故。</p>
+        <p style="margin-top:12px"><strong>少女在身上的矛盾美学。</strong></p>
+        <p style="margin-top:8px"><span style="color:#8B7355;">The aesthetics of contradiction, worn on the body.</span></p>
+  - elementId: bottom-accent
+    elementType: shape
+    bounds:
+      - 600
+      - 600
+      - 100
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: $accent

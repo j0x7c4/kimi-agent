@@ -1,0 +1,107 @@
+pageType: chapter
+background:
+  type: image
+  src: https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80
+  fit:
+    mode: cover
+  mask:
+    type: solid
+    color: "#2A242099"
+elements:
+  - elementId: chapter-label
+    elementType: text
+    bounds:
+      - 60
+      - 60
+      - 300
+      - 28
+    wrap: false
+    content:
+      fontSize: 14
+      color: $accent
+      fontFamily: Liter, MiSans
+      letterSpacing: 6
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>CHAPTER</p>
+  - elementId: label-line
+    elementType: shape
+    bounds:
+      - 60
+      - 96
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#C4A87C80"
+  - elementId: chapter-num
+    elementType: text
+    bounds:
+      - 60
+      - 130
+      - 500
+      - 200
+    wrap: false
+    content:
+      fontSize: 160
+      color: "#C4A87C"
+      fontFamily: Oranienbaum, siyuanSongti
+      lineHeight: 1
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p>01</p>
+  - elementId: chapter-title
+    elementType: text
+    bounds:
+      - 60
+      - 375
+      - 800
+      - 175
+    content:
+      fontSize: 52
+      color: $white
+      fontFamily: Oranienbaum, siyuanSongti
+      lineHeight: 1.25
+      align:
+        - left
+        - top
+      text: |
+        <p>Chapter Title</p>
+        <p>Goes Here</p>
+  - elementId: title-divider
+    elementType: shape
+    bounds:
+      - 60
+      - 562
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF60"
+  - elementId: chapter-desc
+    elementType: text
+    bounds:
+      - 60
+      - 578
+      - 700
+      - 50
+    content:
+      fontSize: 18
+      color: "#FFFFFFCC"
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        Brief description of what this chapter covers

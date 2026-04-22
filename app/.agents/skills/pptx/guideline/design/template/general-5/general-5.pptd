@@ -1,0 +1,72 @@
+title: 世界茶叶历史与文化
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#2E5E8A"      # 沉静海蓝
+    secondary: "#D0D6DC"    # 柔和浅灰
+    accent: "#FF7F50"       # 活力珊瑚橙
+    background: "#F5F5F0"   # 暖白砂岩
+    card: "#FCFDFD"         # 微光珍珠白
+    text: "#3C4A5A"         # 墨灰色
+    textLight: "#6B9CBF"    # 浅海蓝
+    gradient: "#D0E0E3"     # 律动渐变
+  textStyles:
+    heroTitle:
+      fontSize: 68
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      letterSpacing: 1
+    title:
+      fontSize: 48
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+    subtitle:
+      fontSize: 28
+      color: "$textLight"
+      fontFamily: "Liter, MiSans"
+    body:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+    bodyLarge:
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+    caption:
+      fontSize: 16
+      color: "$textLight"
+      fontFamily: "Liter, MiSans"
+    dataNumber:
+      fontSize: 60
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+    chapterTitle:
+      fontSize: 60
+      color: "$card"
+      fontFamily: "Liter, MiSans"
+  tableStyles:
+    default:
+      fontSize: 18
+      fontFamily: "Liter, MiSans"
+      headerFill: "$primary"
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill: ["$card", "#FAFAFA"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$secondary"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/content-bullets.page
+  - pages/content-columns.page
+  - pages/content-data-cards.page
+  - pages/content-process.page
+  - pages/content-chart.page
+  - pages/content-timeline.page
+  - pages/final.page

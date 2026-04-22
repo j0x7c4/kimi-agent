@@ -1,0 +1,163 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 50]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p>数据分析：各班函数章节测验成绩对比</p>
+
+  # 图表容器
+  - elementId: chart-container
+    elementType: shape
+    bounds: [80, 130, 720, 420]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$white"
+    shadow:
+      blur: 8
+      color: "#00000006"
+      offset: [0, 2]
+
+  # 主图表
+  - elementId: main-chart
+    elementType: chart
+    bounds: [100, 150, 680, 380]
+    type: bar
+    data:
+      - {class: "八(1)班", avg: 78, pass: 85}
+      - {class: "八(2)班", avg: 82, pass: 90}
+      - {class: "八(3)班", avg: 75, pass: 80}
+      - {class: "八(4)班", avg: 86, pass: 94}
+      - {class: "八(5)班", avg: 80, pass: 88}
+    x: class
+    y: [avg, pass]
+    names: ["平均分", "及格率(%)"]
+    colors: ["$primary", "$accent"]
+    options:
+      barWidth: 0.6
+      fontFamily: "Liter, MiSans"
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 14
+    xAxis:
+      label:
+        fontSize: 16
+        color: "$text"
+    yAxis:
+      max: 100
+      title: "分数/百分比"
+      gridLine:
+        color: "#F0F0F0"
+    title:
+      text: "八年级函数与方程章节测验"
+      fontSize: 20
+      color: "$primary"
+    legend:
+      position: top
+      fontSize: 16
+
+  # 右侧洞察卡片
+  - elementId: insight-card
+    elementType: shape
+    bounds: [840, 130, 360, 420]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  # 洞察标题
+  - elementId: insight-title
+    elementType: text
+    bounds: [860, 160, 320, 36]
+    content:
+      style: "$emphasis"
+      text: |
+        <p>成绩分析</p>
+
+  # 洞察1
+  - elementId: insight1-num
+    elementType: text
+    bounds: [860, 215, 130, 70]
+    content:
+      style: "$numberDisplay"
+      align: [center, middle]
+      text: "86"
+
+  - elementId: insight1-text
+    elementType: text
+    bounds: [1000, 215, 180, 70]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      lineHeight: 1.4
+      text: |
+        <p>最高平均分</p>
+        <p><strong>八(4)班</strong></p>
+
+  # 洞察2
+  - elementId: insight2-icon
+    elementType: icon
+    bounds: [870, 315, 34, 34]
+    iconName: "fas:chart-line"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: insight2-text
+    elementType: text
+    bounds: [915, 305, 270, 55]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p>年级平均分 <strong>80.2分</strong></p>
+
+  # 洞察3
+  - elementId: insight3-bg
+    elementType: shape
+    bounds: [860, 385, 320, 140]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$highlightBg"
+
+  - elementId: insight3-text
+    elementType: text
+    bounds: [880, 400, 280, 110]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      lineHeight: 1.6
+      text: |
+        <p><strong>薄弱环节：</strong></p>
+        <p>一元二次方程应用题的得分率仅<span style="color:$accent;">42%</span>，需重点突破</p>
+
+  # 底部数据来源
+  - elementId: source
+    elementType: text
+    bounds: [80, 570, 600, 36]
+    content:
+      style: "$caption"
+      text: |
+        <p>数据来源：2024年秋季学期第三章单元测验</p>

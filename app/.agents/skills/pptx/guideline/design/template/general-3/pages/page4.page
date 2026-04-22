@@ -1,0 +1,252 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: linear
+  angle: 45
+  stops:
+  - position: 0
+    color: "#C7E2FFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#FFFFFFFF"
+elements:
+- elementId: text1
+  elementType: text
+  bounds: [98.4, 101.2, 727.53, 260.88]
+  content:
+    align: [left, top]
+    fontSize: 68
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 84.35
+    text: WHY SLEEP MATTERS FOR YOUR HEALTH
+- elementId: line2
+  elementType: shape
+  bounds: [671.2, 124.07, 986.44, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: line3
+  elementType: shape
+  bounds: [108, 817, 753.18, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "#004AAD"
+- elementId: shape4
+  elementType: shape
+  bounds: [916.49, 201.41, 913.51, 770.59]
+  shapeName: custom
+  path: 8701140,7339880;M0 0L8701140 0L8701140 7339880L0 7339880L0 0Z
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200
+    fit:
+      mode: contain
+- elementId: text5
+  elementType: text
+  bounds: [509.6, 287.63, 460, 65.22]
+  content:
+    align: [left, top]
+    fontSize: 41.4
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 57.95
+    text: 睡眠的重要性
+- elementId: text6
+  elementType: text
+  bounds: [1429.83, 98.2, 409.77, 49.73]
+  content:
+    align: [right, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 4.16
+    text: PART 01
+- elementId: text7
+  elementType: text
+  bounds: [98.4, 559.41, 772.38, 217.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 人的一生约有三分之一的时间在睡眠中度过。充足的睡眠是身体修复、免疫力增强和记忆巩固的重要保障。长期睡眠不足会增加高血压、糖尿病、心脏病等慢性病的风险，还会导致注意力下降、情绪波动和免疫功能减弱。
+- elementId: text8
+  elementType: text
+  bounds: [98.4, 843.33, 772.38, 133.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "#004AAD"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 对于中老年人来说，睡眠质量尤为重要。良好的睡眠有助于延缓认知功能衰退、降低跌倒风险、促进情绪稳定，是健康长寿的重要基石。
+- elementId: shape9
+  elementType: shape
+  bounds: [106.17, 377.31, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text10
+  elementType: text
+  bounds: [102.31, 383.84, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape11
+  elementType: shape
+  bounds: [145.73, 377.31, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text12
+  elementType: text
+  bounds: [141.87, 383.84, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape13
+  elementType: shape
+  bounds: [185.28, 377.31, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text14
+  elementType: text
+  bounds: [181.42, 383.84, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape15
+  elementType: shape
+  bounds: [224.83, 377.31, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text16
+  elementType: text
+  bounds: [220.97, 383.84, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape17
+  elementType: shape
+  bounds: [264.39, 377.31, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text18
+  elementType: text
+  bounds: [260.52, 383.84, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape19
+  elementType: shape
+  bounds: [303.94, 377.31, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text20
+  elementType: text
+  bounds: [300.08, 383.84, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape21
+  elementType: shape
+  bounds: [108, 471.45, 376.59, 68.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: text22
+  elementType: text
+  bounds: [103.73, 460.33, 385.12, 78.73]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape23
+  elementType: shape
+  bounds: [108, 471.85, 15.21, 68.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: text24
+  elementType: text
+  bounds: [103.73, 460.73, 23.74, 78.73]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: text25
+  elementType: text
+  bounds: [142.47, 475.12, 345.25, 55.67]
+  content:
+    align: [left, top]
+    fontSize: 34.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 48.53
+    text: 睡眠与健康的关系

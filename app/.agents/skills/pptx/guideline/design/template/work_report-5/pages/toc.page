@@ -1,0 +1,216 @@
+pageType: table_of_contents
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 页面标题
+  - elementId: toc-title
+    elementType: text
+    bounds: [80, 60, 300, 40]
+    content:
+      style: "$title"
+      text: |
+        <p>汇报内容</p>
+  
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [80, 110, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+  
+  # 目录项1
+  - elementId: toc-line1
+    elementType: shape
+    bounds: [120, 180, 4, 40]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+  
+  - elementId: toc-num1
+    elementType: text
+    bounds: [140, 175, 50, 50]
+    content:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: "01"
+
+  - elementId: toc-text1
+    elementType: text
+    bounds: [200, 180, 400, 40]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>核心成果概览</strong></p>
+  
+  - elementId: toc-desc1
+    elementType: text
+    bounds: [200, 220, 400, 30]
+    content:
+      style: "$caption"
+      text: |
+        <p>Q3关键指标达成情况与亮点</p>
+  
+  # 目录项2
+  - elementId: toc-line2
+    elementType: shape
+    bounds: [680, 180, 4, 40]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: toc-num2
+    elementType: text
+    bounds: [700, 175, 50, 50]
+    content:
+      fontSize: 24
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: "02"
+
+  - elementId: toc-text2
+    elementType: text
+    bounds: [760, 180, 400, 40]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>数据分析与洞察</strong></p>
+  
+  - elementId: toc-desc2
+    elementType: text
+    bounds: [760, 220, 400, 30]
+    content:
+      style: "$caption"
+      text: |
+        <p>业务增长趋势与用户行为分析</p>
+  
+  # 目录项3
+  - elementId: toc-line3
+    elementType: shape
+    bounds: [120, 320, 4, 40]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: toc-num3
+    elementType: text
+    bounds: [140, 315, 50, 50]
+    content:
+      fontSize: 24
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: "03"
+
+  - elementId: toc-text3
+    elementType: text
+    bounds: [200, 320, 400, 40]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>项目进度追踪</strong></p>
+  
+  - elementId: toc-desc3
+    elementType: text
+    bounds: [200, 360, 400, 30]
+    content:
+      style: "$caption"
+      text: |
+        <p>重点项目里程碑与交付状态</p>
+  
+  # 目录项4
+  - elementId: toc-line4
+    elementType: shape
+    bounds: [680, 320, 4, 40]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: toc-num4
+    elementType: text
+    bounds: [700, 315, 50, 50]
+    content:
+      fontSize: 24
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: "04"
+
+  - elementId: toc-text4
+    elementType: text
+    bounds: [760, 320, 400, 40]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>问题与解决方案</strong></p>
+  
+  - elementId: toc-desc4
+    elementType: text
+    bounds: [760, 360, 400, 30]
+    content:
+      style: "$caption"
+      text: |
+        <p>当前挑战识别与应对策略</p>
+  
+  # 目录项5
+  - elementId: toc-line5
+    elementType: shape
+    bounds: [120, 460, 4, 40]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: toc-num5
+    elementType: text
+    bounds: [140, 455, 50, 50]
+    content:
+      fontSize: 24
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: "05"
+
+  - elementId: toc-text5
+    elementType: text
+    bounds: [200, 460, 400, 40]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>下一步行动计划</strong></p>
+
+  - elementId: toc-desc5
+    elementType: text
+    bounds: [200, 500, 400, 30]
+    content:
+      style: "$caption"
+      text: |
+        <p>Q4重点工作与资源需求</p>

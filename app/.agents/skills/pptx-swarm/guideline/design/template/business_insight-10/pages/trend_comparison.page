@@ -1,0 +1,213 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # ALL CAPS page title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 18, 900, 42]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:22px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>LEADERS DIVERGE FROM LAGGARDS ON BOTH GROWTH AND PROFITABILITY</strong></span></p>
+
+  # Chinese subtitle
+  - elementId: page-subtitle
+    elementType: text
+    bounds: [50, 62, 900, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Arial, Microsoft YaHei, MiSans;">龙头与尾部企业在增长和盈利能力上双维度分化加速</span></p>
+
+  # 2px red line
+  - elementId: title-red-line
+    elementType: shape
+    bounds: [50, 88, 800, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Left chart: Revenue Growth Comparison
+  - elementId: left-chart-title
+    elementType: text
+    bounds: [50, 98, 560, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>营收增速对比：龙头 vs 行业均值 vs 尾部（%）</strong></span></p>
+
+  - elementId: left-chart
+    elementType: chart
+    bounds: [50, 122, 570, 260]
+    type: line
+    options:
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+    data:
+      - {year: "2021", leader: 28.4, avg: 14.2, laggard: 4.8}
+      - {year: "2022", leader: 24.6, avg: 12.8, laggard: 2.1}
+      - {year: "2023", leader: 22.1, avg: 11.4, laggard: -1.8}
+      - {year: "2024", leader: 23.4, avg: 12.6, laggard: -3.4}
+      - {year: "2025E", leader: 21.8, avg: 11.0, laggard: -6.2}
+    x: year
+    y: [leader, avg, laggard]
+    names: ["龙头企业", "行业均值", "尾部企业"]
+    colors: ["$primary", "$chartcolor1", "$medgray"]
+    seriesStyle:
+      leader:
+        type: line
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 6
+          fill:
+            type: solid
+            color: "$primary"
+      avg:
+        type: line
+        smooth: true
+        width: 2
+        marker:
+          shape: circle
+          size: 5
+      laggard:
+        type: line
+        smooth: true
+        width: 2
+        marker:
+          shape: circle
+          size: 5
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: false
+    xAxis:
+      label: {fontSize: 11, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 11, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      axisLine: false
+
+  # Right chart: Profitability Comparison
+  - elementId: right-chart-title
+    elementType: text
+    bounds: [640, 98, 590, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#2C2C2C; font-family:Gill Sans MT, Arial, Microsoft YaHei, MiSans;"><strong>净利率趋势对比：龙头 vs 行业均值 vs 尾部（%）</strong></span></p>
+
+  - elementId: right-chart
+    elementType: chart
+    bounds: [640, 122, 590, 260]
+    type: bar
+    options:
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+    data:
+      - {group: "龙头A", y2021: 22.4, y2023: 25.8, y2025: 28.6}
+      - {group: "龙头B", y2021: 18.2, y2023: 21.6, y2025: 24.2}
+      - {group: "行业均值", y2021: 12.4, y2023: 13.8, y2025: 14.6}
+      - {group: "挑战者C", y2021: 10.2, y2023: 13.4, y2025: 16.8}
+      - {group: "尾部均值", y2021: 6.8, y2023: 5.2, y2025: 3.8}
+    x: group
+    y: [y2021, y2023, y2025]
+    names: ["2021年", "2023年", "2025E年"]
+    colors: ["$border", "$chartcolor3", "$primary"]
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 10
+    xAxis:
+      label: {fontSize: 10, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 11, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      axisLine: false
+
+  # Analysis columns separated by 1px vertical lines
+  - elementId: analysis-col1
+    elementType: text
+    bounds: [50, 400, 375, 112]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>增速分化驱动因素</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">龙头凭借规模优势与品牌力，在需求疲软期逆势增长；尾部企业定价权弱、客户留存率低，增速持续下滑至负增长。</span></p>
+
+  - elementId: col-divider1
+    elementType: shape
+    bounds: [434, 400, 0, 112]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: analysis-col2
+    elementType: text
+    bounds: [444, 400, 375, 112]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>盈利分化关键路径</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">研发壁垒与运营效率是净利率差距的核心来源。龙头净利率5年提升6pp，尾部同期下滑3pp，剪刀差效应显著。</span></p>
+
+  - elementId: col-divider2
+    elementType: shape
+    bounds: [828, 400, 0, 112]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: analysis-col3
+    elementType: text
+    bounds: [838, 400, 392, 112]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#D91E18; font-family:Arial, Microsoft YaHei, MiSans;"><strong>战略投资建议</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">聚焦龙头A与龙头B，两者均展现出穿越周期的盈利韧性；挑战者C具备中期弹性，可适度配置；规避尾部企业。</span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Source
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 662, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：公司财报、Wind金融终端、Bain行业数据库</p>
+
+  # Page number
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 662, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>08</p>

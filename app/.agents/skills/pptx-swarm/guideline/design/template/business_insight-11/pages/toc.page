@@ -1,0 +1,334 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top primary bar
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Gold accent bar
+  - elementId: gold-accent-bar
+    elementType: shape
+    bounds: [0, 5, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Page title
+  - elementId: toc-title
+    elementType: text
+    bounds: [60, 22, 480, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#0F2647; font-family:Palatino Linotype, SimSun, MiSans;"><strong>目录</strong></span><span style="font-size:16px; color:#8899AA; font-family:Arial, Microsoft YaHei, MiSans;">  / CONTENTS</span></p>
+
+  # Divider
+  - elementId: toc-divider
+    elementType: shape
+    bounds: [60, 78, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # ─── LEFT COLUMN ENTRIES 1-3 ───
+
+  # Entry 1 number
+  - elementId: toc-num1
+    elementType: text
+    bounds: [60, 95, 90, 60]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:52px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>01</strong></span></p>
+
+  # Entry 1 title
+  - elementId: toc-title1
+    elementType: text
+    bounds: [160, 95, 480, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#0F2647; font-family:Palatino Linotype, SimSun, MiSans;"><strong>行业概览与宏观环境 / Industry Overview</strong></span></p>
+
+  # Entry 1 description
+  - elementId: toc-desc1
+    elementType: text
+    bounds: [160, 128, 480, 26]
+    content:
+      align: [left, middle]
+      fontSize: 13
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      wrap: false
+      text: |
+        <p>市场规模、增长趋势、政策驱动因素分析</p>
+
+  # Entry 1 separator
+  - elementId: toc-sep1
+    elementType: shape
+    bounds: [60, 168, 570, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Entry 2 number
+  - elementId: toc-num2
+    elementType: text
+    bounds: [60, 178, 90, 60]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:52px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>02</strong></span></p>
+
+  # Entry 2 title
+  - elementId: toc-title2
+    elementType: text
+    bounds: [160, 178, 480, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#0F2647; font-family:Palatino Linotype, SimSun, MiSans;"><strong>竞争格局与市场份额 / Competitive Landscape</strong></span></p>
+
+  # Entry 2 description
+  - elementId: toc-desc2
+    elementType: text
+    bounds: [160, 211, 480, 26]
+    content:
+      align: [left, middle]
+      fontSize: 13
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      wrap: false
+      text: |
+        <p>头部企业对比、竞争壁垒、市场集中度变化</p>
+
+  # Entry 2 separator
+  - elementId: toc-sep2
+    elementType: shape
+    bounds: [60, 252, 570, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Entry 3 number
+  - elementId: toc-num3
+    elementType: text
+    bounds: [60, 262, 90, 60]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:52px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>03</strong></span></p>
+
+  # Entry 3 title
+  - elementId: toc-title3
+    elementType: text
+    bounds: [160, 262, 480, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#0F2647; font-family:Palatino Linotype, SimSun, MiSans;"><strong>财务分析与盈利能力 / Financial Analysis</strong></span></p>
+
+  # Entry 3 description
+  - elementId: toc-desc3
+    elementType: text
+    bounds: [160, 295, 480, 26]
+    content:
+      align: [left, middle]
+      fontSize: 13
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      wrap: false
+      text: |
+        <p>营收结构、利润率趋势、现金流与资本回报</p>
+
+  # Entry 3 separator
+  - elementId: toc-sep3
+    elementType: shape
+    bounds: [60, 336, 570, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # ─── VERTICAL DIVIDER BETWEEN COLUMNS ───
+  - elementId: col-divider
+    elementType: shape
+    bounds: [660, 78, 0, 560]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # ─── RIGHT COLUMN ENTRIES 4-5 ───
+
+  # Entry 4 number
+  - elementId: toc-num4
+    elementType: text
+    bounds: [700, 95, 90, 60]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:52px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>04</strong></span></p>
+
+  # Entry 4 title
+  - elementId: toc-title4
+    elementType: text
+    bounds: [800, 95, 400, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#0F2647; font-family:Palatino Linotype, SimSun, MiSans;"><strong>核心洞察与风险评估 / Risk Assessment</strong></span></p>
+
+  # Entry 4 description
+  - elementId: toc-desc4
+    elementType: text
+    bounds: [800, 128, 370, 26]
+    content:
+      align: [left, middle]
+      fontSize: 13
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      wrap: false
+      text: |
+        <p>关键发现、潜在风险因素、情景分析</p>
+
+  # Entry 4 separator
+  - elementId: toc-sep4
+    elementType: shape
+    bounds: [700, 168, 520, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Entry 5 number
+  - elementId: toc-num5
+    elementType: text
+    bounds: [700, 178, 90, 60]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:52px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>05</strong></span></p>
+
+  # Entry 5 title
+  - elementId: toc-title5
+    elementType: text
+    bounds: [800, 178, 400, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#0F2647; font-family:Palatino Linotype, SimSun, MiSans;"><strong>投资建议与行动方案 / Investment Thesis</strong></span></p>
+
+  # Entry 5 description
+  - elementId: toc-desc5
+    elementType: text
+    bounds: [800, 211, 370, 26]
+    content:
+      align: [left, middle]
+      fontSize: 13
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      wrap: false
+      text: |
+        <p>标的筛选、估值分析、配置策略建议</p>
+
+  # Entry 5 separator
+  - elementId: toc-sep5
+    elementType: shape
+    bounds: [700, 252, 520, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # ─── RIGHT COLUMN: SUMMARY PANEL ───
+  - elementId: summary-panel-bg
+    elementType: shape
+    bounds: [700, 270, 490, 170]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: summary-panel-title
+    elementType: text
+    bounds: [720, 280, 460, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>核心结论摘要 KEY FINDINGS</strong></span></p>
+
+  - elementId: summary-panel-sep
+    elementType: shape
+    bounds: [720, 308, 200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$accent"}
+
+  - elementId: summary-panel-text
+    elementType: text
+    bounds: [720, 320, 460, 110]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">• 市场规模持续扩张，2025E达¥2.8万亿（+18.6% YoY）</span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">• 头部集中加速，CR5突破62%，竞争格局基本锁定</span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">• 建议超配龙头标的，关注技术壁垒与现金流质量</span></p>
+
+  # ─── PAGE REFERENCE INDICATORS ───
+  - elementId: page-ref1
+    elementType: text
+    bounds: [1218, 105, 56, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;">P.03</span></p>
+
+  - elementId: page-ref2
+    elementType: text
+    bounds: [1218, 188, 56, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;">P.08</span></p>
+
+  - elementId: page-ref3
+    elementType: text
+    bounds: [1218, 272, 56, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;">P.14</span></p>
+
+  # ─── BOTTOM FOOTER ───
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 660, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1140, 668, 80, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>02</p>

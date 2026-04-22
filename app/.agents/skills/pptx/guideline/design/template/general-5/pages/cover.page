@@ -1,0 +1,76 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左上角几何装饰
+  - elementId: geo-decoration-1
+    elementType: shape
+    bounds: [0, 0, 400, 300]
+    shapeName: custom
+    path: "400,300;M0 0 L400 0 L400 150 Q350 200 300 200 L100 200 Q50 200 0 150 Z"
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "$primary"}
+        - {position: 0.5, color: "$gradient"}
+        - {position: 1, color: "#D0E0E320"}
+    opacity: 0.8
+
+  # 右下角几何装饰
+  - elementId: geo-decoration-2
+    elementType: shape
+    bounds: [880, 520, 400, 200]
+    shapeName: custom
+    path: "400,200;M400 200 L0 200 L0 100 Q50 50 100 50 L300 50 Q350 50 400 100 Z"
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: -45
+      stops:
+        - {position: 0, color: "#D0E0E340"}
+        - {position: 0.5, color: "$gradient"}
+        - {position: 1, color: "$secondary"}
+    opacity: 0.6
+
+  # 主标题
+  - elementId: main-title
+    elementType: text
+    bounds: [240, 240, 800, 80]
+    content:
+      style: "$heroTitle"
+      align: [center, middle]
+      text: |
+        <p><strong>世界茶叶历史与文化</strong></p>
+
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [340, 340, 600, 40]
+    content:
+      style: "$subtitle"
+      align: [center, middle]
+      text: |
+        <p>从东亚起源 · 沿贸易之路 · 走向世界</p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [540, 400, 200, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$textLight"
+    opacity: 0.5
+
+  # 时间和作者
+  - elementId: footer-info
+    elementType: text
+    bounds: [440, 460, 400, 30]
+    content:
+      style: "$caption"
+      align: [center, middle]
+      text: |
+        <p>文化探索系列 · 2026年春季</p>

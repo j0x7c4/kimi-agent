@@ -1,0 +1,212 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: text0
+    elementType: text
+    bounds:
+      - 98.4
+      - 102.45
+      - 1595.2
+      - 128.35
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>Benefits for Businesses</strong></p>
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 98.4
+      - 258.93
+      - 1368.79
+      - 115.15
+    content:
+      fontSize: 37.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 56
+      align:
+        - left
+        - top
+      text: |
+        5G technology can support operations to improve processes, produce better results, and remain at the top of their game
+  - elementId: text2
+    elementType: text
+    bounds:
+      - 98.4
+      - 720.48
+      - 520.98
+      - 63.58
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>NO NETWORK ISSUES</strong></p>
+  - elementId: text3
+    elementType: text
+    bounds:
+      - 98.4
+      - 806.07
+      - 520.98
+      - 170.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        5G will bring a connection speed that's significantly faster than 4G, meaning more data transfer in less time, promising results without delay.
+  - elementId: text4
+    elementType: text
+    bounds:
+      - 699.51
+      - 720.48
+      - 520.98
+      - 63.81
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>LOWER LATENCY</strong></p>
+  - elementId: text5
+    elementType: text
+    bounds:
+      - 699.51
+      - 806.07
+      - 520.98
+      - 168.49
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.07
+      align:
+        - left
+        - top
+      text: |
+        <p>Lower latency will improve IoT devices' safety and functionality, allowing real-time viewing and guaranteeing zero lags </p>
+        <p>in operations.</p>
+  - elementId: text6
+    elementType: text
+    bounds:
+      - 1300.62
+      - 720.48
+      - 520.98
+      - 63.81
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>GREATER DATA CAPACITY</strong></p>
+  - elementId: text7
+    elementType: text
+    bounds:
+      - 1300.62
+      - 806.07
+      - 520.98
+      - 128.05
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.07
+      align:
+        - left
+        - top
+      text: |
+        5G can support more devices and allow simultaneous data transfer because of its larger spectrum band.
+  - elementId: image8
+    elementType: image
+    bounds:
+      - 709.11
+      - 553.61
+      - 97.36
+      - 97.36
+    src: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200
+  - elementId: shape9
+    elementType: shape
+    bounds:
+      - 745.14
+      - 580.82
+      - 25.29
+      - 42.94
+    shapeName: custom
+    path: 321222,545285;M0 0L321223 0L321223 545285L0 545285L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200
+      fit:
+        mode: fill
+  - elementId: image10
+    elementType: image
+    bounds:
+      - 130.88
+      - 553.61
+      - 97.36
+      - 97.36
+    src: https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200
+  - elementId: shape11
+    elementType: shape
+    bounds:
+      - 156.14
+      - 580.83
+      - 46.84
+      - 42.92
+    shapeName: custom
+    path: 594857,545106;M0 0L594857 0L594857 545105L0 545105L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200
+      fit:
+        mode: fill
+  - elementId: image12
+    elementType: image
+    bounds:
+      - 1310.22
+      - 553.61
+      - 97.36
+      - 97.36
+    src: https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200
+  - elementId: shape13
+    elementType: shape
+    bounds:
+      - 1335.24
+      - 580.82
+      - 47.32
+      - 42.94
+    shapeName: custom
+    path: 601015,545285;M0 0L601015 0L601015 545285L0 545285L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200
+      fit:
+        mode: fill

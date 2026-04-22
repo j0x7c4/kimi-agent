@@ -1,0 +1,65 @@
+pageType: cover
+background:
+  type: gradient
+  gradientType: radial
+  stops:
+    - {position: 0, color: "$primary"}
+    - {position: 1, color: "$dark"}
+elements:
+  # 装饰圆形元素
+  - elementId: deco-circle-1
+    elementType: shape
+    bounds: [980, 420, 400, 400]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF08"
+
+  - elementId: deco-circle-2
+    elementType: shape
+    bounds: [-100, -50, 300, 300]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF05"
+
+  # 主标题
+  - elementId: main-title
+    elementType: text
+    bounds: [240, 240, 800, 80]
+    content:
+      style: "$mainTitle"
+      align: [center, middle]
+      text: |
+        <p>初中数学·函数与方程</p>
+
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [290, 340, 700, 50]
+    content:
+      style: "$coverSubtitle"
+      align: [center, middle]
+      text: |
+        <p>八年级上册 · 第三章核心知识精讲</p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [540, 410, 200, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF40"
+
+  # 日期/机构
+  - elementId: date-info
+    elementType: text
+    bounds: [390, 570, 500, 40]
+    content:
+      fontSize: 20
+      color: "#A0A0A0"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>2024—2025学年第一学期</p>

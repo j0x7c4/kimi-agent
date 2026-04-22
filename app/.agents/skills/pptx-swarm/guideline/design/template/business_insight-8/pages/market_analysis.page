@@ -1,0 +1,200 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 顶部accent装饰线
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # lightpanel标题带
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 4, 1280, 55]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 10, 1100, 46]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#ffffff; font-family:Times New Roman, SimSun, MiSans;"><strong>市场集中度持续提升，CR5从2020年的48%上升至62%，中小企业加速出清</strong></span></p>
+
+  # 左侧饼图标题
+  - elementId: pie-title
+    elementType: text
+    bounds: [50, 72, 400, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#E8E8E8; font-family:Calibri, Microsoft YaHei, MiSans;"><strong>2025年市场份额分布</strong></span></p>
+
+  - elementId: pie-chart
+    elementType: chart
+    bounds: [50, 102, 500, 340]
+    type: pie
+    options:
+      innerRadius: 0.45
+      fontFamily: "Calibri, Microsoft YaHei, MiSans"
+    data:
+      - {segment: "企业A（龙头）", value: 28}
+      - {segment: "企业B", value: 14}
+      - {segment: "企业C", value: 10}
+      - {segment: "企业D", value: 6}
+      - {segment: "企业E", value: 4}
+      - {segment: "其他", value: 38}
+    x: segment
+    y: [value]
+    colors: ["$highlight", "$accent", "#4A7FB5", "#7BA3CC", "$border", "#1A3558"]
+    legend: {position: bottom, fontSize: 12}
+    dataLabels:
+      show: true
+      content: percentage
+      fontSize: 13
+      numberFormat: "0%"
+
+  # 左下角关键洞察
+  - elementId: pie-insight
+    elementType: text
+    bounds: [50, 452, 500, 115]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#ffffff;"><strong>集中度变化趋势：</strong></span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; CR5从2020年48%提升至2025年62%（+14pp）</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; CR10从2020年68%提升至2025年81%（+13pp）</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 尾部企业数量从320家缩减至185家（-42%）</span></p>
+
+  # 右侧竞争分析
+  - elementId: right-title
+    elementType: text
+    bounds: [590, 72, 500, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#E8E8E8; font-family:Calibri, Microsoft YaHei, MiSans;"><strong>竞争格局关键维度分析</strong></span></p>
+
+  # 维度1
+  - elementId: dim1-bar
+    elementType: shape
+    bounds: [590, 110, 4, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: dim1-text
+    elementType: text
+    bounds: [608, 110, 620, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#5BA4CF;"><strong>技术壁垒：</strong></span><span style="font-size:13px; color:#C0C0C0;">行业进入AI+阶段，技术迭代周期缩短至18个月。龙头企业A研发投入¥156亿（研发费用率18.2%），拥有专利2,800+项，技术领先优势持续扩大。</span></p>
+
+  # 维度2
+  - elementId: dim2-bar
+    elementType: shape
+    bounds: [590, 222, 4, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$highlight"
+
+  - elementId: dim2-text
+    elementType: text
+    bounds: [608, 222, 620, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#E8B931;"><strong>渠道与品牌：</strong></span><span style="font-size:13px; color:#C0C0C0;">头部企业线下渠道覆盖率超95%城市，线上渠道GMV占比提升至35%。品牌认知度方面，A品牌NPS得分87分（行业均值62分）。</span></p>
+
+  # 维度3
+  - elementId: dim3-bar
+    elementType: shape
+    bounds: [590, 334, 4, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: dim3-text
+    elementType: text
+    bounds: [608, 334, 620, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#5BA4CF;"><strong>供应链效率：</strong></span><span style="font-size:13px; color:#C0C0C0;">龙头企业库存周转天数从45天优化至32天，应收账款周转率提升至8.2次/年。供应链数字化率达92%，响应速度领先行业均值40%。</span></p>
+
+  # 维度4
+  - elementId: dim4-bar
+    elementType: shape
+    bounds: [590, 446, 4, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$highlight"
+
+  - elementId: dim4-text
+    elementType: text
+    bounds: [608, 446, 620, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#E8B931;"><strong>资本实力：</strong></span><span style="font-size:13px; color:#C0C0C0;">A账面现金¥280亿，资产负债率仅38%，具备充足的并购与扩张能力。2024年完成3起战略收购（合计¥45亿），巩固产业链控制力。</span></p>
+
+  # 底部darkpanel footer
+  - elementId: footer-bg
+    elementType: shape
+    bounds: [0, 660, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$darkpanel"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 668, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：行业协会年报、上市公司公告、第三方调研数据</p>
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 668, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$text"
+      wrap: false
+      text: |
+        <p>07</p>

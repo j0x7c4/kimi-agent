@@ -1,0 +1,270 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top full-width red bar
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Left image panel
+  - elementId: final-img
+    elementType: image
+    bounds: [0, 3, 560, 717]
+    src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+    fit:
+      mode: cover
+
+  - elementId: img-overlay
+    elementType: shape
+    bounds: [0, 3, 560, 717]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 0
+      stops:
+        - {position: 0, color: "#8C1515CC"}
+        - {position: 0.5, color: "#8C151590"}
+        - {position: 1, color: "#1A0A0A80"}
+
+  # Red vertical cut bar
+  - elementId: cut-accent
+    elementType: shape
+    bounds: [557, 3, 4, 717]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Left side content over image
+  - elementId: final-tagline
+    elementType: text
+    bounds: [50, 60, 460, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#FFFFFFaa; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:3px">BAIN &amp; COMPANY · CONFIDENTIAL</span></p>
+
+  - elementId: final-title
+    elementType: text
+    bounds: [50, 220, 460, 180]
+    content:
+      align: [left, top]
+      lineHeight: 1.2
+      wrap: true
+      text: |
+        <p><span style="font-size:40px; color:#FFFFFF; font-family:Georgia, 宋体, MiSans;"><strong>感谢</strong></span></p>
+        <p><span style="font-size:40px; color:#FFFFFF; font-family:Georgia, 宋体, MiSans;"><strong>倾听</strong></span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; color:#FFB3B3; font-family:Georgia, 宋体, MiSans;">Thank You</span></p>
+
+  - elementId: final-divider
+    elementType: shape
+    bounds: [50, 424, 160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "#FFFFFFaa"}
+
+  - elementId: final-subtitle
+    elementType: text
+    bounds: [50, 440, 460, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:15px; color:#FFFFFFcc; font-family:Arial, Microsoft YaHei, MiSans;">期待进一步深入交流</span></p>
+
+  - elementId: final-contact-label
+    elementType: text
+    bounds: [50, 490, 460, 18]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#FFFFFFaa; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:2px">CONTACT · 联系方式</span></p>
+
+  - elementId: final-contact
+    elementType: text
+    bounds: [50, 516, 460, 80]
+    content:
+      fontSize: 13
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#FFFFFFcc; font-family:Arial, Microsoft YaHei, MiSans;">姓名 / Name</span></p>
+        <p><span style="font-size:13px; color:#FFFFFFaa; font-family:Arial, Microsoft YaHei, MiSans;">职位 / Title · 部门 / Department</span></p>
+        <p><span style="font-size:13px; color:#FFFFFFaa; font-family:Arial, Microsoft YaHei, MiSans;">email@bain.com  ·  +86 XXX XXXX XXXX</span></p>
+
+  # Right panel: closing content
+  - elementId: right-panel-bg
+    elementType: shape
+    bounds: [561, 3, 719, 717]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  # Key takeaways
+  - elementId: takeaway-label
+    elementType: text
+    bounds: [600, 60, 640, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:2px"><strong>KEY TAKEAWAYS · 核心结论摘要</strong></span></p>
+
+  - elementId: takeaway-line
+    elementType: shape
+    bounds: [600, 86, 200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  - elementId: tk1-bar
+    elementType: shape
+    bounds: [600, 104, 4, 90]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: tk1-text
+    elementType: text
+    bounds: [618, 104, 640, 90]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>结论一</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">此处填写第一条核心结论，应为完整的观点句，包含关键数据支撑</span></p>
+
+  - elementId: tk1-sep
+    elementType: shape
+    bounds: [600, 204, 640, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: tk2-bar
+    elementType: shape
+    bounds: [600, 218, 4, 90]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: tk2-text
+    elementType: text
+    bounds: [618, 218, 640, 90]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>结论二</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">此处填写第二条核心结论，体现结构性变化与市场机遇</span></p>
+
+  - elementId: tk2-sep
+    elementType: shape
+    bounds: [600, 318, 640, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: tk3-bar
+    elementType: shape
+    bounds: [600, 332, 4, 90]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: tk3-text
+    elementType: text
+    bounds: [618, 332, 640, 90]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>结论三</strong></span></p>
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">此处填写第三条核心结论，聚焦战略行动建议与优先级</span></p>
+
+  - elementId: tk3-sep
+    elementType: shape
+    bounds: [600, 432, 640, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Next steps
+  - elementId: nextstep-label
+    elementType: text
+    bounds: [600, 446, 640, 18]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:2px"><strong>NEXT STEPS · 后续行动</strong></span></p>
+
+  - elementId: nextstep-text
+    elementType: text
+    bounds: [600, 472, 640, 160]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; <strong>近期（1-4周）</strong>：完成重点标的尽调，建立初始仓位</span></p>
+        <p><span style="font-size:14px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; <strong>中期（1-3个月）</strong>：持续跟踪核心指标，阶段性调仓</span></p>
+        <p><span style="font-size:14px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; <strong>长期（6-12个月）</strong>：复盘战略有效性，更新市场假设</span></p>
+
+  # QR code placeholder
+  - elementId: qr-placeholder
+    elementType: shape
+    bounds: [600, 640, 60, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: qr-label
+    elementType: text
+    bounds: [670, 644, 280, 22]
+    content:
+      fontSize: 11
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; font-family:Arial, Microsoft YaHei, MiSans;">扫码获取完整报告 / Scan for Full Report</span></p>
+
+  # Disclaimer
+  - elementId: disclaimer
+    elementType: text
+    bounds: [670, 690, 560, 20]
+    content:
+      fontSize: 10
+      color: "#BBBBBB"
+      wrap: true
+      text: |
+        <p><span style="font-size:10px; font-family:Arial, Microsoft YaHei, MiSans;">本报告仅供内部参考，数据截至2026年3月。未经书面授权，禁止对外传阅或引用。</span></p>
+
+  # Bottom red line on right
+  - elementId: bottom-bar
+    elementType: shape
+    bounds: [561, 714, 719, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"

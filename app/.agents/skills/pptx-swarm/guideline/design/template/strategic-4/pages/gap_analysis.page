@@ -1,0 +1,190 @@
+pageType: content
+background:
+  type: solid
+  color: "#F4F1EA"
+elements:
+  - elementId: breadcrumb
+    elementType: text
+    bounds: [72, 16, 400, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Market Analysis / Gap Assessment
+
+  - elementId: page-title
+    elementType: text
+    bounds: [72, 48, 1136, 36]
+    content:
+      fontSize: 28
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>中国SaaS渗透率仅10%，对比成熟市场差距6倍</strong></p>
+
+  # Left side: Where We Are
+  - elementId: left-label
+    elementType: text
+    bounds: [72, 110, 260, 28]
+    content:
+      fontSize: 22
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Where We Are</strong></p>
+
+  # White card 1
+  - elementId: card-1-bg
+    elementType: shape
+    bounds: [72, 150, 540, 110]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: card-1-text
+    elementType: text
+    bounds: [96, 162, 492, 86]
+    content:
+      fontSize: 18
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="color:#D97706;">&#9670;</span> 中国SaaS渗透率 <strong>10%</strong>，美国 62%，日本 38%</p>
+        <p><span style="color:#D97706;">&#9670;</span> 企业IT支出年增 <strong>15%</strong>，但SaaS占比不足20%</p>
+
+  # White card 2
+  - elementId: card-2-bg
+    elementType: shape
+    bounds: [72, 276, 540, 110]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: card-2-text
+    elementType: text
+    bounds: [96, 288, 492, 86]
+    content:
+      fontSize: 18
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="color:#D97706;">&#9670;</span> 头部厂商市场集中度低，CR5仅 <strong>18%</strong></p>
+        <p><span style="color:#D97706;">&#9670;</span> 客户对本土化+数据合规需求日益强烈</p>
+
+  # White card 3
+  - elementId: card-3-bg
+    elementType: shape
+    bounds: [72, 402, 540, 110]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: card-3-text
+    elementType: text
+    bounds: [96, 414, 492, 86]
+    content:
+      fontSize: 18
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="color:#D97706;">&#9670;</span> AI技术拐点降低产品开发成本 <strong>40-60%</strong></p>
+        <p><span style="color:#D97706;">&#9670;</span> 窗口期仅剩 <strong>3年</strong>，先发优势决定格局</p>
+
+  # Vertical amber gap line
+  - elementId: gap-line
+    elementType: shape
+    bounds: [640, 110, 0, 420]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D97706"
+
+  - elementId: gap-label
+    elementType: text
+    bounds: [620, 540, 40, 20]
+    content:
+      fontSize: 11
+      color: "#D97706"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: GAP
+
+  # Right side: comparison chart
+  - elementId: right-label
+    elementType: text
+    bounds: [672, 110, 260, 28]
+    content:
+      fontSize: 22
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Where We Go</strong></p>
+
+  - elementId: comparison-chart
+    elementType: chart
+    bounds: [672, 150, 520, 380]
+    type: bar
+    options:
+      fontFamily: "QuattrocentoSans, MiSans"
+    data:
+      - {market: "美国", penetration: 62}
+      - {market: "日本", penetration: 38}
+      - {market: "韩国", penetration: 28}
+      - {market: "中国(现状)", penetration: 10}
+      - {market: "中国(2027E)", penetration: 25}
+    x: market
+    y: [penetration]
+    names: ["SaaS Penetration (%)"]
+    colors: ["#1A3632"]
+    legend: false
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 14
+      color: "#292524"
+    xAxis:
+      label: {fontSize: 13, color: "#292524"}
+      gridLine: false
+      axisLine: {color: "#E1E7E5"}
+    yAxis:
+      label: {fontSize: 12, color: "#78716C"}
+      gridLine: {color: "#E1E7E5", style: dash}
+      axisLine: false
+
+  - elementId: source-text
+    elementType: text
+    bounds: [72, 668, 600, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Source: Gartner, 2024; IDC China SaaS Report, 2024</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 56, 24]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "04"

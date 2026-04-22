@@ -1,0 +1,36 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: shape0
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 456
+      - 1080
+    shapeName: custom
+    path: 4343400,10287000;M0 0L4343400 0L4343400 10287000L0 10287000L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200
+      fit:
+        mode: contain
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 618.4
+      - 376.8
+      - 1147.2
+      - 318.4
+    content:
+      fontSize: 56
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 78.4
+      align:
+        - left
+        - top
+      text: |
+        As exciting and appealing as 5G technology is, there are a few cons to it: its impact on battery life, high costs for rollout, and imbalance in upload and download speeds.

@@ -1,0 +1,330 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧侧边栏
+  - elementId: sidebar-bg
+    elementType: shape
+    bounds: [0, 0, 180, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$sidebarBg"
+
+  - elementId: sidebar-logo
+    elementType: shape
+    bounds: [14, 14, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: sidebar-active-bg
+    elementType: shape
+    bounds: [0, 80, 180, 92]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-item-1
+    elementType: text
+    bounds: [8, 80, 164, 92]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>01 研究背景</strong></p>
+
+  - elementId: sidebar-item-2
+    elementType: text
+    bounds: [8, 172, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        02 文献综述
+
+  - elementId: sidebar-item-3
+    elementType: text
+    bounds: [8, 264, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        03 研究方法
+
+  - elementId: sidebar-item-4
+    elementType: text
+    bounds: [8, 356, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        04 实验结果
+
+  - elementId: sidebar-item-5
+    elementType: text
+    bounds: [8, 448, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        05 结论展望
+
+  - elementId: sidebar-deco
+    elementType: shape
+    bounds: [84, 590, 12, 12]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+  # 顶部次级标题栏（Breadcrumb，DNA特征）
+  - elementId: breadcrumb-bg
+    elementType: shape
+    bounds: [180, 0, 1100, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: breadcrumb-text
+    elementType: text
+    bounds: [200, 0, 1010, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>01 研究背景</strong>　›　1.2 国内外研究现状</p>
+
+  - elementId: breadcrumb-page-num
+    elementType: text
+    bounds: [1230, 0, 50, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "04"
+
+  # 主内容区（右侧 + 侧边栏 = L型布局）
+  - elementId: content-title
+    elementType: text
+    bounds: [200, 68, 1040, 36]
+    content:
+      style: "$pageTitle"
+      fontSize: 24
+      wrap: false
+      text: |
+        <p><strong>国内外研究现状综述</strong></p>
+
+  - elementId: content-title-sep
+    elementType: shape
+    bounds: [200, 110, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B0BEC5"
+
+  # 内容卡片（带圆角）— 增高至260px
+  - elementId: card-1-bg
+    elementType: shape
+    bounds: [200, 124, 500, 260]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: card-1-title
+    elementType: text
+    bounds: [216, 136, 460, 26]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>国内研究现状</strong></p>
+
+  - elementId: card-1-content
+    elementType: text
+    bounds: [216, 168, 468, 200]
+    content:
+      fontSize: 17
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>近年国内已有多项高水平研究，主要集中于理论建模与工程应用两个维度，并在多个关键指标上取得了显著进展。代表性工作包括清华团队提出的轻量化蒸馏框架以及中科院在多模态融合方面的系列探索，相关成果已发表于ACL、EMNLP等顶会。</p>
+
+  - elementId: card-2-bg
+    elementType: shape
+    bounds: [720, 124, 500, 260]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: card-2-title
+    elementType: text
+    bounds: [736, 136, 460, 26]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>国际研究进展</strong></p>
+
+  - elementId: card-2-content
+    elementType: text
+    bounds: [736, 168, 468, 200]
+    content:
+      fontSize: 17
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>国际顶会持续发布突破性成果，主流方法已转向大规模预训练+微调范式，效率与泛化能力均有大幅提升。Google Research与Meta AI在参数高效微调（PEFT）方向上的工作尤为突出，推动了低资源场景下的技术边界。</p>
+
+  # 步骤箭头流程 — 整体下移80px
+  - elementId: flow-bg
+    elementType: shape
+    bounds: [200, 424, 1020, 80]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightBlue"
+    border:
+      style: solid
+      width: 1
+      color: "#B0BEC5"
+
+  - elementId: flow-step-1
+    elementType: text
+    bounds: [216, 424, 220, 80]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>传统方法</strong></p>
+        <p>规则 + 统计</p>
+
+  - elementId: flow-arrow-1
+    elementType: shape
+    bounds: [450, 456, 40, 16]
+    shapeName: rightArrow
+    adjustments: [50000, 50000]
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: flow-step-2
+    elementType: text
+    bounds: [500, 424, 220, 80]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>深度学习</strong></p>
+        <p>CNN + RNN</p>
+
+  - elementId: flow-arrow-2
+    elementType: shape
+    bounds: [732, 456, 40, 16]
+    shapeName: rightArrow
+    adjustments: [50000, 50000]
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: flow-step-3
+    elementType: text
+    bounds: [784, 424, 220, 80]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>大模型时代</strong></p>
+        <p>Transformer</p>
+
+  - elementId: flow-arrow-3
+    elementType: shape
+    bounds: [1016, 456, 40, 16]
+    shapeName: rightArrow
+    adjustments: [50000, 50000]
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: flow-step-4
+    elementType: shape
+    bounds: [1066, 424, 140, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: flow-step-4-text
+    elementType: text
+    bounds: [1066, 424, 140, 80]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>本研究</strong></p>
+        <p>创新点</p>
+
+  # 底部结论 — 下移至y=560
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [200, 560, 1020, 65]
+    content:
+      fontSize: 17
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><strong>研究空白：</strong>当前主流方法在低资源跨域场景下仍存在明显局限，尤其在标注稀缺与领域漂移并存时性能退化严重。本研究拟从自适应迁移学习方向突破，填补现有技术空白。</p>

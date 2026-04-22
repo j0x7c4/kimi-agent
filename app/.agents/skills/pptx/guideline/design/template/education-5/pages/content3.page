@@ -1,0 +1,204 @@
+pageType: content
+background:
+  type: solid
+  color: "#F9F7F4"
+elements:
+  # Top 4px navy header line
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  # Chapter name header (left)
+  - elementId: header-chapter
+    elementType: text
+    bounds: [60, 12, 700, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">第三章 · 案例研究</span></p>
+
+  # Page number
+  - elementId: header-pagenum
+    elementType: text
+    bounds: [1200, 12, 60, 22]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">06</span></p>
+
+  # CASE STUDY tag (navy background, gold text)
+  - elementId: case-tag-bg
+    elementType: shape
+    bounds: [60, 44, 180, 32]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  - elementId: case-tag-text
+    elementType: text
+    bounds: [60, 44, 180, 32]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#D4956A; font-family:SortsMillGoudy, MiSans, MiSans; letter-spacing:2px"><strong>CASE STUDY</strong></span></p>
+
+  # Page title
+  - elementId: page-title
+    elementType: text
+    bounds: [256, 44, 964, 40]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>典型案例分析：理论框架的实证检验</strong></span></p>
+
+  # Gold line under title area
+  - elementId: title-gold-line
+    elementType: shape
+    bounds: [60, 90, 400, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  # Left card - Case background (white background, navy border)
+  - elementId: left-card-bg
+    elementType: shape
+    bounds: [60, 106, 568, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#2B6777"
+
+  - elementId: left-card-header
+    elementType: text
+    bounds: [80, 116, 528, 32]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>案例背景 · Case Background</strong></span></p>
+
+  - elementId: left-card-divider
+    elementType: shape
+    bounds: [80, 152, 200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#2B6777"
+
+  - elementId: left-card-content
+    elementType: text
+    bounds: [80, 162, 530, 340]
+    content:
+      fontSize: 20
+      color: "#2C3E50"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>研究对象</strong>：【案例名称/企业/地区/政策】</span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>时间范围</strong>：XXXX年至XXXX年</span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>背景描述</strong>：该案例发生于特定制度背景下，涉及多方利益相关者，具有典型性和代表性。</span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>数据来源</strong>：政府统计报告、企业年报、实地调研访谈（N=XX）</span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>选案理由</strong>：符合典型案例标准，具有理论推广价值</span></p>
+
+  # Right card - Analysis findings (ivory background, gold border)
+  - elementId: right-card-bg
+    elementType: shape
+    bounds: [652, 106, 568, 426]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#F9F7F4"
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  - elementId: right-card-header
+    elementType: text
+    bounds: [672, 116, 528, 32]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>分析发现 · Key Findings</strong></span></p>
+
+  - elementId: right-card-divider
+    elementType: shape
+    bounds: [672, 152, 200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  - elementId: right-card-content
+    elementType: text
+    bounds: [672, 162, 530, 360]
+    content:
+      fontSize: 20
+      color: "#2C3E50"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">&#9312; <strong>发现一</strong>：案例中观察到的现象高度吻合理论框架预测，效应量为<span style="color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>β=0.64**</strong></span></span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">&#9313; <strong>发现二</strong>：制度背景起到显著调节作用，在不同情景下效果存在异质性</span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">&#9314; <strong>发现三</strong>：关键节点决策机制揭示了微观行为与宏观结果的传导路径</span></p>
+        <p style="margin-top:12px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;">&#9315; <strong>例外情形</strong>：部分子样本呈现与预期相悖的结果，值得进一步检验</span></p>
+
+  # Bottom "Insights and Reflections" rose-red bar
+  - elementId: insight-bar-bg
+    elementType: shape
+    bounds: [60, 538, 1160, 48]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#C17050"
+
+  - elementId: insight-bar-text
+    elementType: text
+    bounds: [80, 538, 1120, 48]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#FFFFFF; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>启示与反思：</strong></span><span style="font-size:20px; color:#FFFFFFcc; font-family:SortsMillGoudy, MiSans, MiSans;">该案例揭示了制度情境对理论适用性的边界条件，提醒研究者在推广时需审慎考虑背景变量的调节效应。</span></p>
+
+  # Footer reference
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 620, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D6CFC4"
+
+  - elementId: footer-ref
+    elementType: text
+    bounds: [60, 628, 1100, 28]
+    content:
+      fontSize: 13
+      color: "#5E8B9E"
+      fontFamily: "Liter, MiSans, MiSans"
+      lineHeight: 1.3
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; font-style:italic; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">案例数据来源：企业年报及政府公开数据，访谈资料经受访者授权使用。</span></p>

@@ -1,0 +1,184 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 48]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: |
+        <p><strong>下一步行动计划</strong></p>
+  
+  # 行动计划表格
+  - elementId: action-table
+    elementType: table
+    bounds: [80, 140, 1120, 320]
+    columnWidths: [0.25, 0.35, 0.15, 0.25]
+    rowHeights: [0.125, 0.175, 0.175, 0.175, 0.175, 0.175]
+    style: "$default"
+    rows:
+      - - content: {text: "<p><strong>行动项</strong></p>", align: [center, middle]}
+        - content: {text: "<p><strong>具体措施</strong></p>", align: [center, middle]}
+        - content: {text: "<p><strong>负责人</strong></p>", align: [center, middle]}
+        - content: {text: "<p><strong>完成时间</strong></p>", align: [center, middle]}
+      - - content: {text: "产品优化", align: [left, middle]}
+        - content: {text: "新手引导流程重设计，增加互动教程", align: [left, middle]}
+        - content: {text: "产品团队", align: [center, middle]}
+        - content: {text: "2025-01-31", align: [center, middle]}
+      - - content: {text: "技术升级", align: [left, middle]}
+        - content: {text: "核心模块重构，性能优化50%", align: [left, middle]}
+        - content: {text: "技术团队", align: [center, middle]}
+        - content: {text: "2025-02-28", align: [center, middle]}
+      - - content: {text: "市场拓展", align: [left, middle]}
+        - content: {text: "开拓华东市场，建立3个新渠道", align: [left, middle]}
+        - content: {text: "市场团队", align: [center, middle]}
+        - content: {text: "2025-03-15", align: [center, middle]}
+      - - content: {text: "团队建设", align: [left, middle]}
+        - content: {text: "招聘10名核心研发，建立培训体系", align: [left, middle]}
+        - content: {text: "HR团队", align: [center, middle]}
+        - content: {text: "2025-01-31", align: [center, middle]}
+      - - content: {text: "流程优化", align: [left, middle]}
+        - content: {text: "实施敏捷开发，缩短迭代周期30%", align: [left, middle]}
+        - content: {text: "PMO", align: [center, middle]}
+        - content: {text: "2025-02-15", align: [center, middle]}
+  
+  # 关键里程碑
+  - elementId: milestone-title
+    elementType: text
+    bounds: [80, 490, 400, 40]
+    content:
+      fontSize: 22
+      color: "$primary"
+      align: [left, middle]
+      text: |
+        <p><strong>Q1关键里程碑</strong></p>
+
+  # 里程碑卡片1
+  - elementId: ms1-bg
+    elementType: shape
+    bounds: [80, 545, 340, 100]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: ms1-accent
+    elementType: shape
+    bounds: [80, 545, 5, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: ms1-icon
+    elementType: icon
+    bounds: [104, 565, 28, 28]
+    iconName: "fas:pen-ruler"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: ms1-text
+    elementType: text
+    bounds: [145, 555, 260, 80]
+    content:
+      fontSize: 18
+      color: "$primary"
+      lineHeight: 1.5
+      align: [left, middle]
+      text: |
+        <p><strong>1月底</strong></p>
+        <p style="font-size:15px; color:$secondary;">完成产品2.0版本设计</p>
+
+  # 里程碑卡片2
+  - elementId: ms2-bg
+    elementType: shape
+    bounds: [470, 545, 340, 100]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: ms2-accent
+    elementType: shape
+    bounds: [470, 545, 5, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent2"
+
+  - elementId: ms2-icon
+    elementType: icon
+    bounds: [494, 565, 28, 28]
+    iconName: "fas:server"
+    fill:
+      type: solid
+      color: "$accent2"
+
+  - elementId: ms2-text
+    elementType: text
+    bounds: [535, 555, 260, 80]
+    content:
+      fontSize: 18
+      color: "$primary"
+      lineHeight: 1.5
+      align: [left, middle]
+      text: |
+        <p><strong>2月中</strong></p>
+        <p style="font-size:15px; color:$secondary;">技术架构升级上线</p>
+
+  # 里程碑卡片3
+  - elementId: ms3-bg
+    elementType: shape
+    bounds: [860, 545, 340, 100]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+
+  - elementId: ms3-accent
+    elementType: shape
+    bounds: [860, 545, 5, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: ms3-icon
+    elementType: icon
+    bounds: [884, 565, 28, 28]
+    iconName: "fas:flag-checkered"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: ms3-text
+    elementType: text
+    bounds: [925, 555, 260, 80]
+    content:
+      fontSize: 18
+      color: "$primary"
+      lineHeight: 1.5
+      align: [left, middle]
+      text: |
+        <p><strong>3月底</strong></p>
+        <p style="font-size:15px; color:$secondary;">Q1目标全面达成</p>

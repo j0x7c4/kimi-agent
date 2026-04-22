@@ -1,0 +1,278 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧细竖线
+  - elementId: toc-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题
+  - elementId: toc-header
+    elementType: text
+    bounds: [60, 50, 300, 50]
+    content:
+      fontSize: 36
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>目录</strong></p>
+
+  - elementId: toc-header-en
+    elementType: text
+    bounds: [60, 104, 300, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 4
+      wrap: false
+      text: TABLE OF CONTENTS
+
+  - elementId: toc-header-separator
+    elementType: shape
+    bounds: [60, 138, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 目录项 1
+  - elementId: toc-num-1
+    elementType: text
+    bounds: [60, 158, 60, 50]
+    content:
+      fontSize: 28
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>01</p>
+
+  - elementId: toc-item-1
+    elementType: text
+    bounds: [130, 163, 700, 28]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究背景与问题提出</strong></p>
+
+  - elementId: toc-item-1-en
+    elementType: text
+    bounds: [130, 193, 700, 20]
+    content:
+      fontSize: 13
+      color: "#AAAAAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Background and Problem Statement
+
+  - elementId: toc-sep-1
+    elementType: shape
+    bounds: [60, 224, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 目录项 2
+  - elementId: toc-num-2
+    elementType: text
+    bounds: [60, 240, 60, 50]
+    content:
+      fontSize: 28
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>02</p>
+
+  - elementId: toc-item-2
+    elementType: text
+    bounds: [130, 245, 700, 28]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>文献综述与理论基础</strong></p>
+
+  - elementId: toc-item-2-en
+    elementType: text
+    bounds: [130, 275, 700, 20]
+    content:
+      fontSize: 13
+      color: "#AAAAAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Literature Review and Theoretical Framework
+
+  - elementId: toc-sep-2
+    elementType: shape
+    bounds: [60, 306, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 目录项 3
+  - elementId: toc-num-3
+    elementType: text
+    bounds: [60, 322, 60, 50]
+    content:
+      fontSize: 28
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>03</p>
+
+  - elementId: toc-item-3
+    elementType: text
+    bounds: [130, 327, 700, 28]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究方法与实验设计</strong></p>
+
+  - elementId: toc-item-3-en
+    elementType: text
+    bounds: [130, 357, 700, 20]
+    content:
+      fontSize: 13
+      color: "#AAAAAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Methodology and Experimental Design
+
+  - elementId: toc-sep-3
+    elementType: shape
+    bounds: [60, 388, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 目录项 4
+  - elementId: toc-num-4
+    elementType: text
+    bounds: [60, 404, 60, 50]
+    content:
+      fontSize: 28
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>04</p>
+
+  - elementId: toc-item-4
+    elementType: text
+    bounds: [130, 409, 700, 28]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>实验结果与数据分析</strong></p>
+
+  - elementId: toc-item-4-en
+    elementType: text
+    bounds: [130, 439, 700, 20]
+    content:
+      fontSize: 13
+      color: "#AAAAAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Results and Data Analysis
+
+  - elementId: toc-sep-4
+    elementType: shape
+    bounds: [60, 470, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 目录项 5
+  - elementId: toc-num-5
+    elementType: text
+    bounds: [60, 486, 60, 50]
+    content:
+      fontSize: 28
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>05</p>
+
+  - elementId: toc-item-5
+    elementType: text
+    bounds: [130, 491, 700, 28]
+    content:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>结论与研究展望</strong></p>
+
+  - elementId: toc-item-5-en
+    elementType: text
+    bounds: [130, 521, 700, 20]
+    content:
+      fontSize: 13
+      color: "#AAAAAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Conclusions and Future Work
+
+  - elementId: toc-sep-5
+    elementType: shape
+    bounds: [60, 552, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 页码
+  - elementId: toc-page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "2"

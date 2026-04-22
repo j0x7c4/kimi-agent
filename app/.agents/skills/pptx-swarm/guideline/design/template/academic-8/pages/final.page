@@ -1,0 +1,183 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部白色区域（约30%）
+  - elementId: final-top-area
+    elementType: shape
+    bounds: [0, 0, 1280, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$background"
+
+  # 贯穿式湖蓝中间色带（DNA特征：封面同款结构）
+  - elementId: final-center-band
+    elementType: shape
+    bounds: [0, 108, 1280, 300]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#004060"}
+        - {position: 0.5, color: "#005C82"}
+        - {position: 1, color: "#007AA8"}
+
+  # 色带内感谢文字
+  - elementId: final-thanks
+    elementType: text
+    bounds: [80, 148, 900, 80]
+    content:
+      fontSize: 64
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>感谢聆听</strong></p>
+
+  - elementId: final-thanks-en
+    elementType: text
+    bounds: [80, 238, 900, 36]
+    content:
+      fontSize: 18
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 4
+      wrap: false
+      text: THANK YOU FOR YOUR ATTENTION
+
+  # 底部白色信息区
+  - elementId: final-info-section
+    elementType: shape
+    bounds: [0, 408, 1280, 312]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$background"
+
+  # 菱形符号+信息（DNA特征）
+  - elementId: final-diamond-1
+    elementType: shape
+    bounds: [80, 436, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: final-name
+    elementType: text
+    bounds: [108, 430, 600, 28]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>XXX</strong>　|　XX大学 · XX学院</p>
+
+  - elementId: final-diamond-2
+    elementType: shape
+    bounds: [80, 476, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: final-advisor
+    elementType: text
+    bounds: [108, 470, 600, 28]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 指导教师：XXX 教授
+
+  - elementId: final-diamond-3
+    elementType: shape
+    bounds: [80, 516, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$grayBlue"
+
+  - elementId: final-contact
+    elementType: text
+    bounds: [108, 510, 500, 28]
+    content:
+      fontSize: 16
+      color: "#666666"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: email@xx.edu.cn
+
+  - elementId: final-diamond-4
+    elementType: shape
+    bounds: [80, 556, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$grayBlue"
+
+  - elementId: final-date
+    elementType: text
+    bounds: [108, 550, 300, 28]
+    content:
+      fontSize: 14
+      color: "#888888"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 2025年X月
+
+  # Q&A 提示
+  - elementId: final-qa
+    elementType: text
+    bounds: [80, 600, 600, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>敬请各位老师批评指正  |  Q & A</p>
+
+  # 右侧重叠线框装饰（DNA特征）
+  - elementId: final-geo-outer
+    elementType: shape
+    bounds: [950, 430, 280, 250]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#005C820A"
+    border:
+      style: solid
+      width: 1
+      color: "#005C8225"
+
+  - elementId: final-geo-mid
+    elementType: shape
+    bounds: [990, 470, 200, 170]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#005C8208"
+    border:
+      style: solid
+      width: 1
+      color: "#005C8240"
+
+  - elementId: final-geo-inner
+    elementType: shape
+    bounds: [1030, 510, 120, 90]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#005C8205"
+    border:
+      style: solid
+      width: 2
+      color: "#005C8255"

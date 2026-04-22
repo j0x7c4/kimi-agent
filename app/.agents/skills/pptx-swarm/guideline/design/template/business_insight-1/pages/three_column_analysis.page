@@ -1,0 +1,324 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深青绿色带
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题区域背景
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 5, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 12, 1000, 30]
+    content:
+      fontSize: 20
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Adding to our data assets to drive financial inclusion Content is virtual</strong></p>
+  # 副标题说明
+  - elementId: page-subtitle
+    elementType: text
+    bounds: [50, 42, 1000, 22]
+    content:
+      fontSize: 14
+      color: "#FFFFFFCC"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>Experian now scores the entire "applying-for-credit" population with our full range of expanded data</p>
+
+  # ===== 栏1：Large disease areas =====
+  - elementId: num1-circle
+    elementType: shape
+    bounds: [50, 85, 32, 32]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: num1-text
+    elementType: text
+    bounds: [50, 85, 32, 32]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#ffffff;"><strong>1</strong></span></p>
+
+  - elementId: col1-title
+    elementType: text
+    bounds: [90, 80, 260, 44]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Large disease areas with high unmet needs</strong></span></p>
+
+  - elementId: col1-chart
+    elementType: chart
+    bounds: [50, 135, 280, 290]
+    type: bar
+    options:
+      stacked: true
+      barWidth: 0.5
+      fontFamily: "Liter, MiSans"
+    data:
+      - {category: "TA", nonOnco: 2, onco: 2.4}
+    x: category
+    y: [nonOnco, onco]
+    names: ["Non-oncology", "Oncology"]
+    colors: ["$primary", "$dark"]
+    legend: {position: bottom, fontSize: 11}
+    dataLabels:
+      show: true
+      content: value
+      color: "#ffffff"
+      fontSize: 14
+    xAxis:
+      label: {fontSize: 12, color: "$medgray"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      show: false
+      gridLine: false
+
+  - elementId: col1-desc1
+    elementType: text
+    bounds: [50, 435, 280, 70]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">&#9632; In hematology and Cy with superclinical support (e.g. guideline support rate the only class 1 product)</span></p>
+
+  - elementId: col1-desc2
+    elementType: text
+    bounds: [50, 510, 280, 55]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">&#9632; All products included at least 1+ large indications e.g. BC, NSCLC, GC</span></p>
+
+  # ===== 栏2：Significant commercial scale =====
+  - elementId: num2-circle
+    elementType: shape
+    bounds: [380, 85, 32, 32]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: num2-text
+    elementType: text
+    bounds: [380, 85, 32, 32]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#ffffff;"><strong>2</strong></span></p>
+
+  - elementId: col2-title
+    elementType: text
+    bounds: [420, 80, 260, 44]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Significant commercial scale</strong></span></p>
+
+  - elementId: col2-chart
+    elementType: chart
+    bounds: [380, 135, 280, 290]
+    type: bar
+    options:
+      barWidth: 0.5
+      fontFamily: "Liter, MiSans"
+    data:
+      - {category: "Biotech", value: 7}
+      - {category: "Company", value: 5}
+    x: category
+    y: [value]
+    names: ["Value"]
+    colors: ["$primary"]
+    legend: false
+    dataLabels:
+      show: true
+      content: value
+      color: "#ffffff"
+      fontSize: 16
+    xAxis:
+      label: {fontSize: 12, color: "$medgray"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      show: false
+      gridLine: false
+
+  - elementId: col2-desc1
+    elementType: text
+    bounds: [380, 435, 280, 40]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">Biotech 500.1k sales reps</span></p>
+
+  - elementId: col2-desc2
+    elementType: text
+    bounds: [380, 480, 280, 55]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">Biopharma with legacy business. 3K+ sales reps (at company level)</span></p>
+
+  # ===== 栏3：Obstacles to profitability =====
+  - elementId: num3-circle
+    elementType: shape
+    bounds: [710, 85, 32, 32]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: num3-text
+    elementType: text
+    bounds: [710, 85, 32, 32]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#ffffff;"><strong>3</strong></span></p>
+
+  - elementId: col3-title
+    elementType: text
+    bounds: [750, 80, 260, 44]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:16px; color:#0D8B7D;"><strong>Obstacles to profitability</strong></span></p>
+
+  - elementId: col3-chart
+    elementType: chart
+    bounds: [710, 135, 280, 290]
+    type: bar
+    options:
+      stacked: true
+      barWidth: 0.5
+      fontFamily: "Liter, MiSans"
+    data:
+      - {category: "Profitable", profit: 2, loss: 2.4}
+      - {category: "Loss making", profit: 0, loss: 4.3}
+    x: category
+    y: [profit, loss]
+    names: ["Profitable", "Loss making"]
+    colors: ["$primary", "$dark"]
+    legend: {position: bottom, fontSize: 11}
+    dataLabels:
+      show: true
+      content: value
+      color: "#ffffff"
+      fontSize: 14
+    xAxis:
+      label: {fontSize: 12, color: "$medgray"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      show: false
+      gridLine: false
+
+  - elementId: col3-desc1
+    elementType: text
+    bounds: [710, 435, 280, 130]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">&#9632; Complementary portfolio of biosimilars together with operations and low R&D expenditure (42% of revenue)</span></p>
+        <p style="margin-top:6px"><span style="font-size:13px;">&#9632; Specialized on NSCLC with limited R&D diversification (27% of revenue)</span></p>
+
+  # 分隔竖线
+  - elementId: vline1
+    elementType: shape
+    bounds: [355, 85, 0, 490]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: vline2
+    elementType: shape
+    bounds: [685, 85, 0, 490]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # ===== 右侧结论文本框 =====
+  - elementId: conclusion-bg
+    elementType: shape
+    bounds: [1010, 85, 240, 490]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [1025, 100, 210, 460]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.4
+      align: [left, top]
+      wrap: true
+      text: |
+        <p><span style="font-size:15px;"><strong>China-originated innovation could benefit from focusing more on assets with global commercialization potential</strong></span></p>
+        <p style="margin-top:16px"><span style="font-size:12px;">&#9632; Specialized on NSCLC with limited R&D diversification (27% of revenue)</span></p>
+        <p style="margin-top:8px"><span style="font-size:12px;">&#9632; 42% of revenue from other biotech coverage</span></p>
+        <p style="margin-top:8px"><span style="font-size:12px;">&#9632; Complementary portfolio of biosimilars</span></p>
+        <p style="margin-top:8px"><span style="font-size:12px;">&#9632; Low R&D expenditure (42% of revenue)</span></p>
+
+  # 底部来源
+  - elementId: source-line
+    elementType: shape
+    bounds: [50, 635, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 643, 600, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>Source: Company filings, industry reports, analyst estimates</p>

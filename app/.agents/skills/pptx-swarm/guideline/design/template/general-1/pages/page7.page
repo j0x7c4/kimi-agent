@@ -1,0 +1,213 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#4361EE"
+elements:
+- elementId: table0
+  elementType: table
+  bounds: [101, 406.21, 1704, 565.79]
+  columnWidths: [0.25, 0.25, 0.25, 0.25]
+  rowHeights: [0.1691, 0.3237, 0.1691, 0.1691, 0.1691]
+  rows:
+  - - content:
+        align: [center, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 37.33
+        text: Channel
+      fill:
+        type: solid
+        color: "#0F1B3D"
+      border:
+        style: solid
+        width: 0
+        color: "#CCCCCC"
+    - content:
+        align: [center, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 37.33
+        text: Tactics
+      fill:
+        type: solid
+        color: "#0F1B3D"
+      border:
+        style: solid
+        width: 0
+        color: "#CCCCCC"
+    - content:
+        align: [center, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 37.33
+        text: Goals
+      fill:
+        type: solid
+        color: "#0F1B3D"
+      border:
+        style: solid
+        width: 0
+        color: "#CCCCCC"
+    - content:
+        align: [center, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 37.33
+        text: Metrics
+      fill:
+        type: solid
+        color: "#0F1B3D"
+      border:
+        style: solid
+        width: 0
+        color: "#CCCCCC"
+  - - content:
+        align: [center, middle]
+        fontSize: 20
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 28
+        text: e.g., Public relations (PR)
+      border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - content:
+        align: [left, middle]
+        fontSize: 20
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 28
+        text: |
+          <ul>
+          <li>Circulate a press release to media outlets</li>
+          <li>Organize a launch event</li>
+          <li>Reach out to industry bloggers and journalists for product coverage</li>
+          </ul>
+      border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - content:
+        align: [left, middle]
+        fontSize: 20
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 28
+        text: |
+          <ul>
+          <li>Gain media coverage in eight publications</li>
+          <li>Build relationships with influencers</li>
+          </ul>
+      border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - content:
+        align: [left, middle]
+        fontSize: 20
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$dark"
+        lineHeightPx: 28
+        text: |
+          <ul>
+          <li>Number of press mentions</li>
+          <li>Event attendance and engagement metrics</li>
+          </ul>
+      border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+  - - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+  - - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+  - - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+    - border:
+        style: solid
+        width: 0.75
+        color: "$dark"
+- elementId: line1
+  elementType: shape
+  bounds: [108, 109, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "#0F1B3D"
+- elementId: text3
+  elementType: text
+  bounds: [159.85, 129.42, 172.82, 71.28]
+  content:
+    align: [left, top]
+    fontSize: 30
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#0F1B3D"
+    lineHeightPx: 30.03
+    letterSpacing: -1.2
+    text: |
+      <p>Launch</p>
+      <p>Studio</p>
+- elementId: logo_diamond
+  elementType: shape
+  bounds: [108, 138.93, 52.49, 52.49]
+  shapeName: custom
+  path: 666605,666605;M333302 0L666605 333302L333302 666605L0 333302Z
+  fill:
+    type: solid
+    color: "#0F1B3D"
+- elementId: text5
+  elementType: text
+  bounds: [94.4, 204.65, 1421.83, 203.6]
+  content:
+    align: [left, top]
+    fontSize: 133.3
+    fontFamily: "Coda, deyihei"
+    color: "#0F1B3D"
+    lineHeightPx: 159.99
+    text: |
+      <p>CHANNELS AND<span style="color:$light"> TACTICS</span></p>

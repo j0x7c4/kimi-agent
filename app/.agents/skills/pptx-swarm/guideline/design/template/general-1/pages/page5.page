@@ -1,0 +1,219 @@
+pageType: unknown
+elements:
+- elementId: line0
+  elementType: shape
+  bounds: [108, 109, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: line1
+  elementType: shape
+  bounds: [1252.92, 452.74, 0, 449.5]
+  flip: [true, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: line2
+  elementType: shape
+  bounds: [668.58, 452.74, 0, 449.5]
+  flip: [true, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: line3
+  elementType: shape
+  bounds: [109, 972.5, 1704, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text4
+  elementType: text
+  bounds: [159.85, 129.42, 172.82, 71.28]
+  content:
+    align: [left, top]
+    fontSize: 30
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#0F1B3D"
+    lineHeightPx: 30.03
+    letterSpacing: -1.2
+    text: |
+      <p>Launch</p>
+      <p>Studio</p>
+- elementId: logo_diamond
+  elementType: shape
+  bounds: [108, 138.93, 52.49, 52.49]
+  shapeName: custom
+  path: 666605,666605;M333302 0L666605 333302L333302 666605L0 333302Z
+  fill:
+    type: solid
+    color: "#0F1B3D"
+- elementId: shape6
+  elementType: shape
+  bounds: [333.1, 456.18, 111.18, 111.18]
+  shapeName: custom
+  path: 812800,812800;M406400 0C181951 0 0 181951 0 406400C0 630849 181951 812800 406400 812800C630849 812800 812800 630849 812800 406400C812800 181951 630849 0 406400 0Z
+  fill:
+    type: solid
+    color: "#4361EE"
+- elementId: text7
+  elementType: text
+  bounds: [339.25, 473.65, 98.87, 82.75]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 30.03
+    text: ' '
+- elementId: shape8
+  elementType: shape
+  bounds: [905.41, 456.18, 111.18, 55.59]
+  shapeName: custom
+  path: 660400,330200;M220252 19070C254000 7556 292600 0 330378 0C368157 0 404509 6476 438009 17990C438723 18350 439435 18350 440148 18710C565955 64765 658618 186379 660400 317782L660400 330200L0 330200L0 317791C1782 185660 93019 64045 220252 19070Z
+  fill:
+    type: solid
+    color: "#4361EE"
+- elementId: text9
+  elementType: text
+  bounds: [901.14, 486.11, 119.71, 25.12]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 30.03
+    text: ' '
+- elementId: shape10
+  elementType: shape
+  bounds: [905.41, 510.53, 111.18, 55.59]
+  shapeName: custom
+  path: 660400,330200;M220252 19070C254000 7556 292600 0 330378 0C368157 0 404509 6476 438009 17990C438723 18350 439435 18350 440148 18710C565955 64765 658618 186379 660400 317782L660400 330200L0 330200L0 317791C1782 185660 93019 64045 220252 19070Z
+  fill:
+    type: solid
+    color: "#4361EE"
+- elementId: text11
+  elementType: text
+  bounds: [901.14, 540.46, 119.71, 25.12]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 30.03
+    text: ' '
+- elementId: shape12
+  elementType: shape
+  bounds: [1504.89, 483.36, 111.18, 55.59]
+  rotation: 270
+  shapeName: custom
+  path: 660400,330200;M220252 19070C254000 7556 292600 0 330378 0C368157 0 404509 6476 438009 17990C438723 18350 439435 18350 440148 18710C565955 64765 658618 186379 660400 317782L660400 330200L0 330200L0 317791C1782 185660 93019 64045 220252 19070Z
+  fill:
+    type: solid
+    color: "#4361EE"
+- elementId: text13
+  elementType: text
+  bounds: [1515.32, 498.59, 119.71, 25.12]
+  rotation: 270
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 30.03
+    text: ' '
+- elementId: shape14
+  elementType: shape
+  bounds: [1450.54, 483.36, 111.18, 55.59]
+  rotation: 90
+  shapeName: custom
+  path: 660400,330200;M220252 19070C254000 7556 292600 0 330378 0C368157 0 404509 6476 438009 17990C438723 18350 439435 18350 440148 18710C565955 64765 658618 186379 660400 317782L660400 330200L0 330200L0 317791C1782 185660 93019 64045 220252 19070Z
+  fill:
+    type: solid
+    color: "#4361EE"
+- elementId: text15
+  elementType: text
+  bounds: [1431.58, 498.58, 119.71, 25.12]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 30.03
+    text: ' '
+- elementId: text16
+  elementType: text
+  bounds: [99.4, 196.11, 1723.2, 203.6]
+  content:
+    align: [center, top]
+    fontSize: 133.3
+    fontFamily: "Coda, deyihei"
+    color: "#0F1B3D"
+    lineHeightPx: 159.99
+    text: |
+      <p>TARGET <span style="color:#4361EE; font-family:Coda, deyihei">AUDIENCE</span></p>
+- elementId: text17
+  elementType: text
+  bounds: [155.7, 595.48, 465.97, 61.1]
+  content:
+    align: [center, top]
+    fontSize: 42.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 51.2
+    text: Demographics
+- elementId: text18
+  elementType: text
+  bounds: [155.7, 680.59, 465.97, 182.95]
+  content:
+    align: [center, top]
+    fontSize: 32
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 44.79
+    text: Include specific details, such as their age, gender, income level, and educational attainment.
+- elementId: text19
+  elementType: text
+  bounds: [740.05, 595.48, 465.97, 61.1]
+  content:
+    align: [center, top]
+    fontSize: 42.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 51.2
+    text: Psychographics
+- elementId: text20
+  elementType: text
+  bounds: [740.05, 680.59, 465.97, 182.95]
+  content:
+    align: [center, top]
+    fontSize: 32
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 44.79
+    text: 'Include specific details, such as their interests, hobbies, values, beliefs, and lifestyle choices. '
+- elementId: text21
+  elementType: text
+  bounds: [1300.32, 595.48, 465.97, 61.1]
+  content:
+    align: [center, top]
+    fontSize: 42.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 51.2
+    text: Behavioral traits
+- elementId: text22
+  elementType: text
+  bounds: [1300.32, 680.59, 465.97, 182.95]
+  content:
+    align: [center, top]
+    fontSize: 32
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 44.79
+    text: Include specific details, such as their purchasing habits, brand loyalty, and engagement activities.

@@ -1,0 +1,124 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#0F1B3D"
+elements:
+- elementId: table0
+  elementType: table
+  bounds: [108, 452, 1704, 526]
+  columnWidths: [0.2568, 0.4513, 0.2919]
+  rowHeights: [0.3333, 0.3333, 0.3333]
+  rows:
+  - - content:
+        align: [left, middle]
+        fontSize: 80
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 112
+        text: '01'
+    - content:
+        align: [left, middle]
+        fontSize: 53.3
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 74.65
+        text: Boost brand awareness
+    - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 37.33
+        text: Briefly elaborate on this product launch goal and its intended impact once achieved.
+  - - content:
+        align: [left, middle]
+        fontSize: 80
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 112
+        text: '02'
+    - content:
+        align: [left, middle]
+        fontSize: 53.3
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 74.65
+        text: Drive product engagement
+    - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 37.33
+        text: Briefly elaborate on this product launch goal and its intended impact once achieved.
+  - - content:
+        align: [left, middle]
+        fontSize: 80
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 112
+        text: '03'
+    - content:
+        align: [left, middle]
+        fontSize: 53.3
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 74.65
+        text: Lift customer retention
+    - content:
+        align: [left, middle]
+        fontSize: 26.7
+        fontFamily: "QuattrocentoSans, MiSans"
+        color: "$light"
+        lineHeightPx: 37.33
+        text: Briefly elaborate on this product launch goal and its intended impact once achieved.
+- elementId: text1
+  elementType: text
+  bounds: [94.4, 204.65, 1760, 203.6]
+  content:
+    align: [left, top]
+    fontSize: 133.3
+    fontFamily: "Coda, deyihei"
+    color: "$light"
+    lineHeightPx: 159.99
+    text: |
+      <p>PRODUCT <span style="color:#4361EE; font-family:Coda, deyihei">LAUNCH</span> GOALS</p>
+- elementId: line2
+  elementType: shape
+  bounds: [108, 109, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "#4361EE"
+- elementId: text3
+  elementType: text
+  bounds: [156.93, 122.62, 220.58, 53.93]
+  content:
+    align: [left, top]
+    fontSize: 24
+    fontFamily: "QuattrocentoSans, MiSans"
+    lineHeightPx: 46.65
+    text: ' '
+- elementId: text5
+  elementType: text
+  bounds: [159.85, 129.42, 172.82, 71.28]
+  content:
+    align: [left, top]
+    fontSize: 30
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#4361EE"
+    lineHeightPx: 30.03
+    letterSpacing: -1.2
+    text: |
+      <p>Launch</p>
+      <p>Studio</p>
+- elementId: logo_diamond
+  elementType: shape
+  bounds: [108, 138.93, 52.49, 52.49]
+  shapeName: custom
+  path: 666605,666605;M333302 0L666605 333302L333302 666605L0 333302Z
+  fill:
+    type: solid
+    color: "#0F1B3D"

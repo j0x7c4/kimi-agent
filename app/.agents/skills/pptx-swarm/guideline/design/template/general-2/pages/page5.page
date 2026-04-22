@@ -1,0 +1,318 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: image0
+    elementType: image
+    bounds:
+      - 128
+      - 456.79
+      - 97.36
+      - 97.36
+    src: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 98.4
+      - 102.2
+      - 1656.78
+      - 128.6
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>Mobile Networks and 5G Technology</strong></p>
+  - elementId: text2
+    elementType: text
+    bounds:
+      - 474.85
+      - 767.06
+      - 277.41
+      - 128.94
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.07
+      align:
+        - left
+        - top
+      text: |
+        GSM, GPRS, and EDGE advancements
+  - elementId: text3
+    elementType: text
+    bounds:
+      - 474.85
+      - 569.51
+      - 277.41
+      - 58.5
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        1990s
+  - elementId: text4
+    elementType: text
+    bounds:
+      - 135.07
+      - 468.89
+      - 83.22
+      - 66.16
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - center
+        - top
+      text: |
+        1G
+  - elementId: text5
+    elementType: text
+    bounds:
+      - 118.4
+      - 767.06
+      - 277.41
+      - 130.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        A network limited to only voice call capabilities.
+  - elementId: text6
+    elementType: text
+    bounds:
+      - 118.4
+      - 569.51
+      - 277.41
+      - 58.5
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        1980s
+  - elementId: text7
+    elementType: text
+    bounds:
+      - 831.3
+      - 767.06
+      - 277.41
+      - 209.74
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.07
+      align:
+        - left
+        - top
+      text: |
+        Allowed faster communication, web browsing, and video streaming in smartphones
+  - elementId: text8
+    elementType: text
+    bounds:
+      - 831.3
+      - 569.51
+      - 277.41
+      - 58.5
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        2000s
+  - elementId: text9
+    elementType: text
+    bounds:
+      - 1187.75
+      - 767.06
+      - 289.84
+      - 169.34
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.07
+      align:
+        - left
+        - top
+      text: |
+        Greatly impacted the requirements set by IMT-Advanced standards.
+  - elementId: text10
+    elementType: text
+    bounds:
+      - 1187.75
+      - 569.51
+      - 277.41
+      - 58.5
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        2010s
+  - elementId: text11
+    elementType: text
+    bounds:
+      - 1544.19
+      - 767.06
+      - 277.41
+      - 169.34
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.07
+      align:
+        - left
+        - top
+      text: |
+        Significantly faster speeds with lower requirements to support IoT devices
+  - elementId: text12
+    elementType: text
+    bounds:
+      - 1544.19
+      - 569.51
+      - 277.41
+      - 58.5
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        Current
+  - elementId: image13
+    elementType: image
+    bounds:
+      - 484.45
+      - 456.79
+      - 97.36
+      - 97.36
+    src: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200
+  - elementId: text14
+    elementType: text
+    bounds:
+      - 491.52
+      - 468.89
+      - 83.22
+      - 66.16
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - center
+        - top
+      text: |
+        2G
+  - elementId: image15
+    elementType: image
+    bounds:
+      - 840.9
+      - 456.79
+      - 97.36
+      - 97.36
+    src: https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200
+  - elementId: text16
+    elementType: text
+    bounds:
+      - 847.96
+      - 468.89
+      - 83.22
+      - 66.16
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - center
+        - top
+      text: |
+        3G
+  - elementId: image17
+    elementType: image
+    bounds:
+      - 1197.35
+      - 456.79
+      - 97.36
+      - 97.36
+    src: https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200
+  - elementId: text18
+    elementType: text
+    bounds:
+      - 1204.41
+      - 468.89
+      - 83.22
+      - 66.16
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - center
+        - top
+      text: |
+        4G
+  - elementId: image19
+    elementType: image
+    bounds:
+      - 1553.79
+      - 456.79
+      - 97.36
+      - 97.36
+    src: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200
+  - elementId: text20
+    elementType: text
+    bounds:
+      - 1560.86
+      - 468.89
+      - 83.22
+      - 66.16
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - center
+        - top
+      text: |
+        5G

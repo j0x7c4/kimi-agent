@@ -1,0 +1,329 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧侧边栏
+  - elementId: sidebar-bg
+    elementType: shape
+    bounds: [0, 0, 180, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$sidebarBg"
+
+  - elementId: sidebar-logo
+    elementType: shape
+    bounds: [14, 14, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: sidebar-active-bg
+    elementType: shape
+    bounds: [0, 172, 180, 92]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-item-1
+    elementType: text
+    bounds: [8, 80, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        01 研究背景
+
+  - elementId: sidebar-item-2
+    elementType: text
+    bounds: [8, 172, 164, 92]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>02 文献综述</strong></p>
+
+  - elementId: sidebar-item-3
+    elementType: text
+    bounds: [8, 264, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        03 研究方法
+
+  - elementId: sidebar-item-4
+    elementType: text
+    bounds: [8, 356, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        04 实验结果
+
+  - elementId: sidebar-item-5
+    elementType: text
+    bounds: [8, 448, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        05 结论展望
+
+  - elementId: sidebar-deco
+    elementType: shape
+    bounds: [84, 590, 12, 12]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+  # 顶部面包屑
+  - elementId: breadcrumb-bg
+    elementType: shape
+    bounds: [180, 0, 1100, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: breadcrumb-text
+    elementType: text
+    bounds: [200, 0, 1020, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>02 文献综述</strong>　›　2.1 研究现状与存在问题</p>
+
+  - elementId: breadcrumb-page-num
+    elementType: text
+    bounds: [1230, 0, 50, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "04"
+
+  # 标题
+  - elementId: content-title
+    elementType: text
+    bounds: [200, 68, 1040, 36]
+    content:
+      style: "$pageTitle"
+      fontSize: 24
+      wrap: false
+      text: |
+        <p><strong>现有研究综述：进展与局限</strong></p>
+
+  - elementId: content-title-sep
+    elementType: shape
+    bounds: [200, 110, 1040, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#B0BEC5"
+
+  # 4个要点（带菱形，DNA特征）
+  - elementId: d1
+    elementType: shape
+    bounds: [200, 130, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: b1-title
+    elementType: text
+    bounds: [226, 124, 1030, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>传统方法的瓶颈</strong></p>
+
+  - elementId: b1-content
+    elementType: text
+    bounds: [226, 156, 1030, 26]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>基于手工特征和规则的方法泛化能力有限，在面对多样化真实场景时召回率大幅下降，无法满足生产需求。</p>
+
+  - elementId: sep1
+    elementType: shape
+    bounds: [200, 198, 1040, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$lightBlue"
+
+  - elementId: d2
+    elementType: shape
+    bounds: [200, 218, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: b2-title
+    elementType: text
+    bounds: [226, 212, 1030, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>深度方法的数据依赖</strong></p>
+
+  - elementId: b2-content
+    elementType: text
+    bounds: [226, 244, 1030, 26]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>深度学习方法精度高，但需要数万条高质量标注样本，在标注资源匮乏的垂直场景中成本难以承受。</p>
+
+  - elementId: sep2
+    elementType: shape
+    bounds: [200, 286, 1040, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$lightBlue"
+
+  - elementId: d3
+    elementType: shape
+    bounds: [200, 306, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: b3-title
+    elementType: text
+    bounds: [226, 300, 1030, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>跨域迁移能力不足</strong></p>
+
+  - elementId: b3-content
+    elementType: text
+    bounds: [226, 332, 1030, 26]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>当源域与目标域存在分布偏移时，现有方法的性能会显著下降，每个新场景都需要重新收集数据和微调模型。</p>
+
+  - elementId: sep3
+    elementType: shape
+    bounds: [200, 374, 1040, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$lightBlue"
+
+  - elementId: d4
+    elementType: shape
+    bounds: [200, 394, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: b4-title
+    elementType: text
+    bounds: [226, 388, 1030, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>本文研究切入点</strong></p>
+
+  - elementId: b4-content
+    elementType: text
+    bounds: [226, 420, 1030, 26]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>针对标注稀缺 + 跨域泛化的双重挑战，本研究提出自适应轻量化框架，以少量标注实现高鲁棒迁移。</p>
+
+  # 总结强调（湖蓝底色，DNA特征）
+  - elementId: insight-bar
+    elementType: shape
+    bounds: [200, 470, 1040, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: insight-icon
+    elementType: shape
+    bounds: [214, 491, 12, 12]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: insight-text
+    elementType: text
+    bounds: [238, 470, 986, 60]
+    content:
+      fontSize: 15
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p>综上，现有方法在数据效率与跨域迁移两个维度上均存在明显缺口，构成本研究的核心动机。</p>

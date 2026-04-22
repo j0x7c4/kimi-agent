@@ -1,0 +1,197 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部细线
+  - elementId: top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  - elementId: section-marker
+    elementType: text
+    bounds: [80, 20, 200, 20]
+    content:
+      fontSize: 12
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: "CHAPTER 04 — 实验结果与讨论"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 35]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>4.2 消融实验与超参数分析</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 90, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  # 消融实验表格
+  - elementId: ablation-table
+    elementType: table
+    bounds: [80, 110, 1120, 260]
+    style: "$default"
+    columnWidths: [0.30, 0.14, 0.14, 0.14, 0.14, 0.14]
+    rowHeights: [0.167, 0.167, 0.167, 0.167, 0.167, 0.167]
+    rows:
+      - - content:
+            text: |
+              <p><strong>Model Variant</strong></p>
+        - content:
+            text: |
+              <p><strong>HIV</strong></p>
+        - content:
+            text: |
+              <p><strong>BBBP</strong></p>
+        - content:
+            text: |
+              <p><strong>Tox21</strong></p>
+        - content:
+            text: |
+              <p><strong>ESOL</strong></p>
+        - content:
+            text: |
+              <p><strong>Avg.</strong></p>
+      - - content:
+            text: "MolGNN (Full)"
+        - content:
+            text: |
+              <p><strong>0.821</strong></p>
+        - content:
+            text: |
+              <p><strong>0.931</strong></p>
+        - content:
+            text: |
+              <p><strong>0.863</strong></p>
+        - content:
+            text: |
+              <p><strong>0.542</strong></p>
+        - content:
+            text: |
+              <p><strong>0.842</strong></p>
+      - - content:
+            text: "  w/o Attention Readout"
+        - content:
+            text: "0.798"
+        - content:
+            text: "0.912"
+        - content:
+            text: "0.841"
+        - content:
+            text: "0.587"
+        - content:
+            text: "0.821"
+      - - content:
+            text: "  w/o Edge Features"
+        - content:
+            text: "0.785"
+        - content:
+            text: "0.905"
+        - content:
+            text: "0.832"
+        - content:
+            text: "0.613"
+        - content:
+            text: "0.810"
+      - - content:
+            text: "  w/o GRU Update"
+        - content:
+            text: "0.803"
+        - content:
+            text: "0.918"
+        - content:
+            text: "0.848"
+        - content:
+            text: "0.571"
+        - content:
+            text: "0.828"
+      - - content:
+            text: "  1-layer MPNN (vs 3)"
+        - content:
+            text: "0.762"
+        - content:
+            text: "0.889"
+        - content:
+            text: "0.815"
+        - content:
+            text: "0.645"
+        - content:
+            text: "0.792"
+
+  - elementId: table-caption
+    elementType: text
+    bounds: [80, 380, 1120, 24]
+    content:
+      style: "$caption"
+      text: |
+        <p><strong>Table 2.</strong> 消融实验结果。分类任务报告ROC-AUC（↑），回归任务报告RMSE（↓）。<strong>加粗</strong>为最优。</p>
+
+  # 分隔线
+  - elementId: mid-line
+    elementType: shape
+    bounds: [80, 420, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  # 分析文字
+  - elementId: analysis-title
+    elementType: text
+    bounds: [80, 440, 300, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>消融分析</strong></p>
+
+  - elementId: analysis-content
+    elementType: text
+    bounds: [80, 473, 1120, 174]
+    content:
+      style: "$body"
+      lineHeight: 1.7
+      text: |
+        <p><strong>注意力读出层</strong>贡献最为显著（平均+2.1%），尤其在HIV数据集上提升2.3%，表明不同原子对分子性质的贡献差异较大，自适应加权优于等权求和。</p>
+        <p style="margin-top:8px"><strong>边特征融合</strong>是第二大贡献因子（平均+3.2%），说明化学键类型和原子间距离信息对性质预测至关重要。</p>
+        <p style="margin-top:8px"><strong>MPNN层数</strong>从1层增至3层带来5.0%的平均提升，但进一步增至5层（未列出）提升不显著（+0.3%），存在过平滑风险。</p>
+
+  # 底部线
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [0, 716, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 80, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "06 / 09"

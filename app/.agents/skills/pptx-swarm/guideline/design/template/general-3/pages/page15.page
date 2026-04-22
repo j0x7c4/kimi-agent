@@ -1,0 +1,153 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: radial
+  stops:
+  - position: 0
+    color: "#FFFFFFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#C7E2FFFF"
+elements:
+- elementId: shape0
+  elementType: shape
+  bounds: [108, 623.54, 448.43, 81.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: text1
+  elementType: text
+  bounds: [103.73, 610.2, 456.96, 93.95]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape2
+  elementType: shape
+  bounds: [605.59, 623.06, 448.43, 81.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: text3
+  elementType: text
+  bounds: [601.32, 609.72, 456.96, 93.95]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape4
+  elementType: shape
+  bounds: [108, 624.01, 18.12, 81.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: text5
+  elementType: text
+  bounds: [103.73, 610.67, 26.65, 93.95]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: shape6
+  elementType: shape
+  bounds: [605.59, 623.54, 18.12, 81.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: text7
+  elementType: text
+  bounds: [601.32, 610.2, 26.65, 93.95]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 35.45
+    text: ' '
+- elementId: text10
+  elementType: text
+  bounds: [98.4, 962.2, 772, 49.73]
+  content:
+    align: [left, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 8.03
+    text: 科学 | 健康 | 睡眠 | 生活
+- elementId: text11
+  elementType: text
+  bounds: [1087.21, 962.2, 734.39, 49.73]
+  content:
+    align: [right, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 8.03
+    text: 社区健康科普系列讲座
+- elementId: text12
+  elementType: text
+  bounds: [98.4, 391.21, 1561.1, 195.68]
+  content:
+    align: [left, top]
+    fontSize: 94.1
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 131.68
+    letterSpacing: 10.53
+    text: 祝大家每晚好眠身体健康
+- elementId: text13
+  elementType: text
+  bounds: [150.88, 627.77, 470, 66.63]
+  content:
+    align: [left, top]
+    fontSize: 36
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 50.4
+    text: 主讲人：社区健康中心
+- elementId: text14
+  elementType: text
+  bounds: [643.79, 627.3, 401.02, 66.63]
+  content:
+    align: [left, top]
+    fontSize: 42
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 58.8
+    text: 咨询热线：12345
+- elementId: text15
+  elementType: text
+  bounds: [98.4, 321.04, 1561.1, 101.77]
+  content:
+    align: [left, top]
+    fontSize: 86.5
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 83.92
+    letterSpacing: 0.95
+    text: THANK YOU FOR LISTENING
+- elementId: line16
+  elementType: shape
+  bounds: [108, 947.43, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 1.5
+    color: "$dark"

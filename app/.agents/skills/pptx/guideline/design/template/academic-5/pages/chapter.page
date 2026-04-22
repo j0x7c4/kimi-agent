@@ -1,0 +1,148 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 极简主义章节页（DNA特征：大面积留白+重叠线框几何+章节数字）
+  # 中心偏左的重叠几何线框（DNA特征）
+  - elementId: chapter-geo-outer
+    elementType: shape
+    bounds: [160, 140, 380, 380]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#005C820A"
+    border:
+      style: solid
+      width: 1
+      color: "#005C8230"
+
+  - elementId: chapter-geo-mid
+    elementType: shape
+    bounds: [200, 180, 300, 300]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#005C820A"
+    border:
+      style: solid
+      width: 2
+      color: "#005C8250"
+
+  - elementId: chapter-geo-inner
+    elementType: shape
+    bounds: [240, 220, 220, 220]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 2
+      color: "#005C82"
+
+  # 章节数字（居中在最内层方框）
+  - elementId: chapter-num
+    elementType: text
+    bounds: [240, 220, 220, 220]
+    content:
+      fontSize: 80
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>01</strong></p>
+
+  # 右侧章节信息
+  - elementId: chapter-sep-line
+    elementType: shape
+    bounds: [600, 220, 1, 220]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B0BEC5"
+
+  - elementId: chapter-section-label
+    elementType: text
+    bounds: [640, 230, 560, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 4
+      wrap: false
+      text: CHAPTER ONE
+
+  - elementId: chapter-title
+    elementType: text
+    bounds: [640, 268, 580, 70]
+    content:
+      fontSize: 36
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究背景与问题提出</strong></p>
+
+  - elementId: chapter-title-en
+    elementType: text
+    bounds: [640, 348, 580, 28]
+    content:
+      fontSize: 16
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Background and Problem Statement
+
+  - elementId: chapter-deco-line
+    elementType: shape
+    bounds: [640, 396, 200, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 子章节
+  - elementId: chapter-sub-1
+    elementType: text
+    bounds: [640, 416, 580, 28]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.1　研究背景与意义
+
+  - elementId: chapter-sub-2
+    elementType: text
+    bounds: [640, 452, 580, 28]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.2　国内外研究现状
+
+  - elementId: chapter-sub-3
+    elementType: text
+    bounds: [640, 488, 580, 28]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.3　研究目标与论文结构
+
+  # 页码
+  - elementId: chapter-page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "3"

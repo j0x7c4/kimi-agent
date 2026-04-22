@@ -1,0 +1,64 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 背景律动条纹
+  - elementId: bg-pattern
+    elementType: shape
+    bounds: [0, 0, 1280, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 30
+      stops:
+        - {position: 0, color: "#5C8E8F05"}
+        - {position: 0.25, color: "#5C8E8F15"}
+        - {position: 0.5, color: "#5C8E8F05"}
+        - {position: 0.75, color: "#5C8E8F15"}
+        - {position: 1, color: "#5C8E8F05"}
+  
+  # 章节编号
+  - elementId: chapter-num
+    elementType: text
+    bounds: [80, 200, 200, 60]
+    content:
+      fontSize: 48
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>01</strong></p>
+  
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [80, 280, 800, 60]
+    content:
+      style: "$title"
+      align: [left, middle]
+      text: |
+        <p><strong>核心成果概览</strong></p>
+  
+  # 章节描述
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [80, 360, 600, 80]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p>本季度关键指标达成情况</p>
+        <p>重点项目进展与成果展示</p>
+  
+  # 装饰形状
+  - elementId: deco-circle
+    elementType: shape
+    bounds: [900, 300, 120, 120]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#5C8E8F20"

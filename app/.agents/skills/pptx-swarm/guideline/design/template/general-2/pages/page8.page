@@ -1,0 +1,34 @@
+pageType: unknown
+elements:
+  - elementId: shape0
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1920
+      - 1080
+    shapeName: custom
+    path: 18288000,10287000;M0 0L18288000 0L18288000 10287000L0 10287000L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200
+      fit:
+        mode: contain
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 1074.4
+      - 416.2
+      - 652.48
+      - 246.6
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>The Benefits of <span style="color:#7EC0DA">5G Technology</span></strong></p>

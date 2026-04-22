@@ -1,0 +1,60 @@
+title: 学术研究报告模板（经典灰版）
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#455A64"
+    secondary: "#546E7A"
+    accent: "#90A4AE"
+    background: "#F5F7F8"
+    text: "#37474F"
+    navBg: "#263238"
+    lightGray: "#ECEFF1"
+    white: "#FFFFFF"
+    darkGray: "#263238"
+  textStyles:
+    title:
+      fontSize: 40
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+    pageTitle:
+      fontSize: 28
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    subtitle:
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    body:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+    caption:
+      fontSize: 14
+      color: "#78909C"
+      fontFamily: "QuattrocentoSans, MiSans"
+    label:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+  tableStyles:
+    default:
+      headerFill: "$primary"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$lightGray"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "#CFD8DC"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/methodology.page
+  - pages/results_chart.page
+  - pages/data_analysis.page
+  - pages/discussion.page
+  - pages/conclusion.page
+  - pages/final.page

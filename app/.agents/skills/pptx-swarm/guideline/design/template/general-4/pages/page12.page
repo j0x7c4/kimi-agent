@@ -1,0 +1,168 @@
+pageType: content
+background:
+  type: solid
+  color: "#10B981"
+elements:
+# --- Decorative ---
+- elementId: deco_circle
+  elementType: shape
+  bounds: [1600, 100, 280, 280]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF08"
+# --- Sidebar ---
+- elementId: text_sidebar
+  elementType: text
+  bounds: [1647.25, 827.47, 267.94, 35.14]
+  rotation: -90
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING
+# --- Large rotated title ---
+- elementId: text_bigtitle
+  elementType: text
+  bounds: [-237.93, 439.93, 883.2, 208.94]
+  rotation: -90
+  content:
+    align: [right, top]
+    fontSize: 80
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 100
+    text: Let's Work Together!
+- elementId: text_num
+  elementType: text
+  bounds: [1427.73, 132.53, 215.7, 206.21]
+  content:
+    align: [right, top]
+    fontSize: 160
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 199.99
+    text: '12'
+# --- Team member 1 ---
+- elementId: shape_photo1
+  elementType: shape
+  bounds: [438.07, 105.31, 251.49, 251.49]
+  shapeName: ellipse
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200
+    fit:
+      mode: contain
+- elementId: text_name1
+  elementType: text
+  bounds: [724.95, 141.43, 470.14, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 41.67
+    text: Chen Wei
+- elementId: text_role1
+  elementType: text
+  bounds: [724.95, 200.68, 470.14, 41.19]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 35.45
+    text: Senior Designer
+- elementId: text_bio1
+  elementType: text
+  bounds: [724.95, 250.16, 470.14, 69.02]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 31.72
+    text: Experienced professional dedicated to delivering high-quality results and fostering team collaboration.
+# --- Team member 2 ---
+- elementId: shape_photo2
+  elementType: shape
+  bounds: [438.07, 412.91, 251.49, 251.49]
+  shapeName: ellipse
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200
+    fit:
+      mode: contain
+- elementId: text_name2
+  elementType: text
+  bounds: [724.95, 454.78, 470.14, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 41.67
+    text: Zhang Lei
+- elementId: text_role2
+  elementType: text
+  bounds: [724.95, 514.03, 470.14, 41.19]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 35.45
+    text: Tech Lead
+- elementId: text_bio2
+  elementType: text
+  bounds: [724.95, 563.51, 470.14, 69.02]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 31.72
+    text: Experienced professional dedicated to delivering high-quality results and fostering team collaboration.
+# --- Team member 3 ---
+- elementId: shape_photo3
+  elementType: shape
+  bounds: [438.07, 720.51, 251.49, 251.49]
+  shapeName: ellipse
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200
+    fit:
+      mode: contain
+- elementId: text_name3
+  elementType: text
+  bounds: [724.95, 756.63, 470.14, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 41.67
+    text: Liu Yang
+- elementId: text_role3
+  elementType: text
+  bounds: [724.95, 815.88, 470.14, 41.19]
+  content:
+    align: [left, top]
+    fontSize: 25.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 35.45
+    text: Project Manager
+- elementId: text_bio3
+  elementType: text
+  bounds: [724.95, 865.36, 470.14, 69.02]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 31.72
+    text: Experienced professional dedicated to delivering high-quality results and fostering team collaboration.

@@ -1,0 +1,131 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Large page title
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 1060, 180]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: WORK EXPERIENCE
+
+  # Column 1 — ghosted script number
+  - elementId: col1-num
+    elementType: text
+    bounds: [80, 260, 320, 110]
+    content:
+      fontSize: 100
+      color: "#9F786622"
+      fontFamily: "Oranienbaum, MiSans"
+      align: [center, top]
+      wrap: false
+      text: 04
+
+  - elementId: col1-title
+    elementType: text
+    bounds: [80, 366, 320, 80]
+    content:
+      style: "$heading"
+      align: [center, top]
+      text: |
+        <p>WORK</p>
+        <p>EXPERIENCE</p>
+
+  - elementId: col1-body
+    elementType: text
+    bounds: [80, 434, 320, 210]
+    content:
+      style: "$body"
+      align: [center, top]
+      text: |
+        <p>Presentations are</p>
+        <p>communication tools that</p>
+        <p>can be used as</p>
+        <p>demonstrations,</p>
+        <p>lectures, speeches,</p>
+        <p>reports, and more.</p>
+
+  # Column 2 — ghosted script number
+  - elementId: col2-num
+    elementType: text
+    bounds: [470, 260, 320, 110]
+    content:
+      fontSize: 100
+      color: "#9F786622"
+      fontFamily: "Oranienbaum, MiSans"
+      align: [center, top]
+      wrap: false
+      text: 05
+
+  - elementId: col2-title
+    elementType: text
+    bounds: [470, 366, 320, 60]
+    content:
+      style: "$heading"
+      align: [center, top]
+      text: |
+        <p>WORK</p>
+        <p>EXPERIENCE</p>
+
+  - elementId: col2-body
+    elementType: text
+    bounds: [470, 434, 320, 210]
+    content:
+      style: "$body"
+      align: [center, top]
+      text: |
+        <p>Presentations are</p>
+        <p>communication tools that</p>
+        <p>can be used as</p>
+        <p>demonstrations,</p>
+        <p>lectures, speeches,</p>
+        <p>reports, and more.</p>
+
+  # Column 3 — ghosted script number
+  - elementId: col3-num
+    elementType: text
+    bounds: [860, 260, 320, 110]
+    content:
+      fontSize: 100
+      color: "#9F786622"
+      fontFamily: "Oranienbaum, MiSans"
+      align: [center, top]
+      wrap: false
+      text: 06
+
+  - elementId: col3-title
+    elementType: text
+    bounds: [860, 366, 320, 60]
+    content:
+      style: "$heading"
+      align: [center, top]
+      text: |
+        <p>WORK</p>
+        <p>EXPERIENCE</p>
+
+  - elementId: col3-body
+    elementType: text
+    bounds: [860, 434, 320, 210]
+    content:
+      style: "$body"
+      align: [center, top]
+      text: |
+        <p>Presentations are</p>
+        <p>communication tools that</p>
+        <p>can be used as</p>
+        <p>demonstrations,</p>
+        <p>lectures, speeches,</p>
+        <p>reports, and more.</p>
+
+  # Page number bottom center
+  - elementId: page-num
+    elementType: text
+    bounds: [580, 662, 120, 40]
+    content:
+      style: "$pageNum"
+      align: [center, middle]
+      wrap: false
+      text: 05

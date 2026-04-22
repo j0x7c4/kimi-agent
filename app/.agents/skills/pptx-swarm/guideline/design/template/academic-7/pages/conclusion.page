@@ -1,0 +1,301 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深紫导航色带
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  - elementId: nav-left-accent
+    elementType: shape
+    bounds: [0, 0, 4, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB550"}
+
+  - elementId: nav-chapter-text
+    elementType: text
+    bounds: [20, 0, 900, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 05 结论与未来展望 / 5.1 研究总结
+
+  - elementId: nav-page-num
+    elementType: text
+    bounds: [1200, 0, 60, 50]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "09"
+
+  # 标题
+  - elementId: title-accent-mark
+    elementType: shape
+    bounds: [12, 68, 4, 40]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB5"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [24, 68, 1000, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>研究结论与未来工作展望</strong></p>
+
+  - elementId: title-sep
+    elementType: shape
+    bounds: [24, 116, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E0D4F0"
+
+  # 左侧：结论总结
+  - elementId: conclusion-section-title
+    elementType: text
+    bounds: [24, 132, 580, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>主要研究结论</strong></p>
+
+  - elementId: conclusion-1-bg
+    elementType: shape
+    bounds: [24, 168, 580, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: conclusion-1-num
+    elementType: shape
+    bounds: [24, 168, 40, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: conclusion-1-num-text
+    elementType: text
+    bounds: [24, 168, 40, 70]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "1"
+
+  - elementId: conclusion-1-text
+    elementType: text
+    bounds: [76, 178, 512, 50]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>提出的XX方法在所有基准数据集上达到SOTA，验证了方法的有效性</p>
+
+  - elementId: conclusion-2-bg
+    elementType: shape
+    bounds: [24, 252, 580, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: conclusion-2-num
+    elementType: shape
+    bounds: [24, 252, 40, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: conclusion-2-num-text
+    elementType: text
+    bounds: [24, 252, 40, 70]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "2"
+
+  - elementId: conclusion-2-text
+    elementType: text
+    bounds: [76, 262, 512, 50]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>消融实验证明各子模块的贡献互补，设计决策得到充分验证</p>
+
+  - elementId: conclusion-3-bg
+    elementType: shape
+    bounds: [24, 336, 580, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: conclusion-3-num
+    elementType: shape
+    bounds: [24, 336, 40, 70]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: conclusion-3-num-text
+    elementType: text
+    bounds: [24, 336, 40, 70]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "3"
+
+  - elementId: conclusion-3-text
+    elementType: text
+    bounds: [76, 346, 512, 50]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      text: |
+        <p>工业部署验证了研究成果的实用价值，具有广泛的推广潜力</p>
+
+  # 右侧：未来展望
+  - elementId: future-section-title
+    elementType: text
+    bounds: [660, 132, 590, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>未来研究方向</strong></p>
+
+  - elementId: future-deco-line
+    elementType: shape
+    bounds: [660, 164, 160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  - elementId: future-content
+    elementType: text
+    bounds: [660, 180, 590, 300]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 2.0
+      text: |
+        <p>◆ 探索少样本场景下的快速适应方法</p>
+        <p>◆ 引入多模态融合以提升表征能力</p>
+        <p>◆ 研究模型在更多垂直领域的迁移</p>
+        <p>◆ 优化模型轻量化以支持边缘部署</p>
+        <p>◆ 开展大规模真实场景的对比验证</p>
+
+  # 底部局限性说明
+  - elementId: limitation-bg
+    elementType: shape
+    bounds: [24, 440, 1232, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  - elementId: limitation-label
+    elementType: text
+    bounds: [40, 452, 140, 28]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>局限性说明：</strong></p>
+
+  - elementId: limitation-content
+    elementType: text
+    bounds: [186, 452, 1050, 56]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>本研究在极端噪声场景和超低分辨率输入下的性能仍有提升空间；当前方法对领域迁移的支持有限，后续将重点攻克此问题。</p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "9"

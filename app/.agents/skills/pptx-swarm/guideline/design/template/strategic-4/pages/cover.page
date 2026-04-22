@@ -1,0 +1,77 @@
+pageType: cover
+background:
+  type: solid
+  color: "#F4F1EA"
+elements:
+  # Left half: dark green
+  - elementId: cover-left-bg
+    elementType: shape
+    bounds: [0, 0, 640, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1A3632"
+
+  - elementId: cover-title
+    elementType: text
+    bounds: [72, 240, 520, 48]
+    content:
+      fontSize: 34
+      color: "#F4F1EA"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>全球化战略发展规划</strong></p>
+
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [72, 300, 520, 28]
+    content:
+      fontSize: 20
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>资源整合与可持续增长路径 2025–2028</p>
+
+  - elementId: cover-accent-line
+    elementType: shape
+    bounds: [72, 350, 80, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#D97706"
+
+  - elementId: cover-bottom-info
+    elementType: text
+    bounds: [72, 640, 500, 20]
+    content:
+      fontSize: 12
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>XX集团 · 战略发展部 · 2025年X月 · Confidential</p>
+
+  # Right half: photo placeholder (oat-colored area)
+  - elementId: cover-photo-placeholder
+    elementType: shape
+    bounds: [640, 0, 640, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E1E7E5"
+
+  - elementId: cover-photo-label
+    elementType: text
+    bounds: [640, 340, 640, 28]
+    content:
+      fontSize: 14
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>[ Panoramic Business Photo ]</p>

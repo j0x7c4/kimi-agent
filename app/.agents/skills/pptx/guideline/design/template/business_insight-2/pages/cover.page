@@ -1,0 +1,73 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 标题 - 大号衬线体
+  - elementId: cover-title
+    elementType: text
+    bounds: [80, 200, 1120, 120]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:48px; color:#263238; font-family:SortsMillGoudy, MiSans;"><strong>新能源汽车行业深度报告</strong></span></p>
+
+  # 标题下方细线
+  - elementId: cover-line
+    elementType: shape
+    bounds: [80, 340, 200, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 副标题
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [80, 360, 800, 36]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#78909C; font-family:Liter, MiSans;">产业链全景分析与投资价值评估</span></p>
+
+  # 作者与机构
+  - elementId: cover-author
+    elementType: text
+    bounds: [80, 420, 600, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;">XX证券研究所 | 新能源与汽车行业组</span></p>
+
+  # 日期
+  - elementId: cover-date
+    elementType: text
+    bounds: [80, 460, 400, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#90A4AE; font-family:Liter, MiSans;">2025年12月 | 深度研究报告</span></p>
+
+  # 底部细线
+  - elementId: cover-bottom-line
+    elementType: shape
+    bounds: [80, 640, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 底部声明
+  - elementId: cover-disclaimer
+    elementType: text
+    bounds: [80, 652, 1120, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">本报告仅供机构投资者参考，不构成投资建议</span></p>

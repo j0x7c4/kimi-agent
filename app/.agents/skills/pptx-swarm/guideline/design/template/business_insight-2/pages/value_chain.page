@@ -1,0 +1,187 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 28, 1160, 40]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:26px; color:#263238; font-family:SortsMillGoudy, MiSans;"><strong>电池环节占整车成本40%，中游利润集中度最高</strong></span></p>
+
+  # 标题下方细线
+  - elementId: title-line
+    elementType: shape
+    bounds: [60, 72, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 产业链对比表
+  - elementId: value-chain-table
+    elementType: table
+    bounds: [60, 86, 1160, 440]
+    columnWidths: [0.12, 0.22, 0.22, 0.22, 0.22]
+    rowHeights: [0.08, 0.184, 0.184, 0.184, 0.184, 0.184]
+    style: "$default"
+    rows:
+      - - content:
+            text: |
+              <p><strong>环节</strong></p>
+        - content:
+            text: |
+              <p><strong>代表企业</strong></p>
+        - content:
+            text: |
+              <p><strong>市场规模/毛利率</strong></p>
+        - content:
+            text: |
+              <p><strong>竞争格局</strong></p>
+        - content:
+            text: |
+              <p><strong>趋势判断</strong></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>上游：锂矿</strong></span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">天齐锂业、赣锋锂业、Albemarle、SQM</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">碳酸锂市场约2,800亿元；毛利率30-45%（周期波动大）</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">CR5约52%，资源壁垒高，澳矿+南美盐湖主导供给</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">产能过剩周期，锂价低位震荡；非洲新矿加速开发</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>上游：正极材料</strong></span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">容百科技、当升科技、湖南裕能、德方纳米</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">正极材料市场约3,200亿元；毛利率12-18%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">CR5约45%，磷酸铁锂与三元路线并存，铁锂份额持续提升</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">加工费压缩，向一体化延伸；钠电正极新增长点</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>中游：电池</strong></span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">宁德时代、比亚迪、LG新能源、三星SDI、中创新航</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">动力电池市场约8,500亿元；毛利率18-25%（龙头更高）</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">CR3约65%，宁德时代全球份额37%，规模效应显著</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">技术壁垒最高，固态电池为下一代竞争焦点</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>下游：整车</strong></span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">比亚迪、特斯拉、吉利、理想、蔚来、小鹏</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">新能源整车市场约4.2万亿元；毛利率8-22%（分化大）</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">CR5约38%，比亚迪市占率25%+；价格战加剧尾部出清</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">规模化盈利是核心命题，智能化成差异化关键</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>下游：充电桩</strong></span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">特来电、星星充电、国家电网、特斯拉超充</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">充电市场约1,200亿元；毛利率15-20%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">CR5约55%，公共桩超充化趋势明显，液冷技术普及</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">运营模式从亏损走向盈利，利用率是关键指标</span></p>
+
+  # 底部分析文字
+  - elementId: chain-insight
+    elementType: text
+    bounds: [60, 540, 1160, 100]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>产业链利润分配：</strong>电池环节凭借技术壁垒和规模效应，攫取产业链最大利润份额（约35%）。整车环节虽然收入规模最大，但价格战导致利润率承压，仅比亚迪、特斯拉实现规模化盈利。上游锂矿在周期下行阶段利润大幅收缩，正极材料环节利润最薄。我们判断未来2-3年，产业链利润将进一步向具备技术领先优势的电池龙头和实现规模化的整车企业集中。</span></p>
+
+  # 来源线
+  - elementId: source-line
+    elementType: shape
+    bounds: [60, 672, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 来源
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 678, 800, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">Source: GGII, 高工锂电, 公司公告, XX证券研究所</span></p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 678, 120, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">5</span></p>

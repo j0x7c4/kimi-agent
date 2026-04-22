@@ -1,0 +1,182 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: text0
+    elementType: text
+    bounds:
+      - 950.4
+      - 97.95
+      - 871.2
+      - 63.58
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>ELEVATED STREAMING EXPERIENCE</strong></p>
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 950.4
+      - 167.79
+      - 871.2
+      - 129.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        Nothing says excellent entertainment, quite like uninterrupted streaming. Thanks to 5G, we can enjoy unlimited data capacity, short lag times, and multisensory digital content.
+  - elementId: text2
+    elementType: text
+    bounds:
+      - 950.4
+      - 437.59
+      - 871.2
+      - 63.58
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>BETTER COVERAGE FOR SMARTPHONES</strong></p>
+  - elementId: text3
+    elementType: text
+    bounds:
+      - 950.4
+      - 507.43
+      - 871.2
+      - 129.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        No more difficulty getting connected -- 5G brings better signal to places that were once difficult to reach. Enjoy stronger connections and better communication with 5G.
+  - elementId: text4
+    elementType: text
+    bounds:
+      - 950.4
+      - 736.23
+      - 871.2
+      - 63.58
+    content:
+      fontSize: 41.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 57.87
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>ROAD SAFETY</strong></p>
+  - elementId: text5
+    elementType: text
+    bounds:
+      - 950.4
+      - 806.07
+      - 871.2
+      - 129.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        Self-driving cars will soon become the new norm. But motorists can also enjoy better data processing between vehicles and networks - that means safety on the road and improved traffic management.
+  - elementId: text6
+    elementType: text
+    bounds:
+      - 98.4
+      - 102.45
+      - 644.82
+      - 246.35
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.4
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>Benefits in </strong></p>
+        <p style="line-height:118.39px"><strong>Daily Life</strong></p>
+  - elementId: text7
+    elementType: text
+    bounds:
+      - 98.4
+      - 436.09
+      - 644.82
+      - 225.15
+    content:
+      fontSize: 37.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 56
+      align:
+        - left
+        - top
+      text: |
+        It may take years before we experience the full potential of 5G, but that doesn't mean we can't enjoy what it can already offer us.
+  - elementId: shape8
+    elementType: shape
+    bounds:
+      - 871.54
+      - 129.99
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape9
+    elementType: shape
+    bounds:
+      - 871.54
+      - 469.63
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape10
+    elementType: shape
+    bounds:
+      - 871.54
+      - 768.27
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"

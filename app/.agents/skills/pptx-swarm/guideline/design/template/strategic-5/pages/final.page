@@ -1,0 +1,265 @@
+pageType: final
+background:
+  type: solid
+  color: "$darkBg"
+elements:
+  # 左上角几何水印（3%透明度）
+  - elementId: final-watermark-tl
+    elementType: shape
+    bounds: [0, 0, 120, 120]
+    shapeName: rect
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF08"
+
+  # 右下角几何水印（3%透明度）
+  - elementId: final-watermark-br
+    elementType: shape
+    bounds: [1160, 600, 120, 120]
+    shapeName: rect
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF08"
+
+  # 总结标题
+  - elementId: final-title
+    elementType: text
+    bounds: [240, 48, 800, 44]
+    content:
+      fontSize: 32
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>战略总结与行动号召</strong></p>
+
+  # 铜色双线装饰 —— 上线
+  - elementId: final-ornament-top
+    elementType: shape
+    bounds: [540, 104, 200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "$accent"
+
+  # 铜色双线装饰 —— 下线（间距4px）
+  - elementId: final-ornament-bottom
+    elementType: shape
+    bounds: [540, 108, 200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "$accent"
+
+  # ===== 3个核心战略要点 =====
+  # 要点 1
+  - elementId: point1-marker
+    elementType: shape
+    bounds: [180, 140, 12, 12]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: point1-text
+    elementType: text
+    bounds: [204, 132, 800, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>全球化是集团未来三年<span style="color:#B87333;"><strong>最核心战略方向</strong></span>，海外营收目标 <span style="color:#B87333;"><strong>35%</strong></span></p>
+
+  - elementId: point1-num
+    elementType: text
+    bounds: [1060, 128, 120, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><strong>¥50B</strong></p>
+
+  # 要点 2
+  - elementId: point2-marker
+    elementType: shape
+    bounds: [180, 186, 12, 12]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: point2-text
+    elementType: text
+    bounds: [204, 178, 800, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>数字化与AI驱动效率革命，运营成本预计降低 <span style="color:#B87333;"><strong>40%</strong></span>，决策周期缩短 <span style="color:#B87333;"><strong>60%</strong></span></p>
+
+  - elementId: point2-num
+    elementType: text
+    bounds: [1060, 174, 120, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><strong>3.2x</strong></p>
+
+  # 要点 3
+  - elementId: point3-marker
+    elementType: shape
+    bounds: [180, 232, 12, 12]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: point3-text
+    elementType: text
+    bounds: [204, 224, 800, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>战略并购<span style="color:#B87333;"><strong>¥8B规模</strong></span>，补全供应链关键环节，释放协同价值 <span style="color:#B87333;"><strong>¥2B+</strong></span></p>
+
+  - elementId: point3-num
+    elementType: text
+    bounds: [1060, 220, 120, 36]
+    content:
+      fontSize: 28
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><strong>¥8B</strong></p>
+
+  # ===== 分隔线 =====
+  - elementId: divider-line
+    elementType: shape
+    bounds: [180, 280, 920, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  # ===== 待审议决议事项 =====
+  - elementId: resolution-title
+    elementType: text
+    bounds: [180, 300, 500, 32]
+    content:
+      fontSize: 20
+      color: "$lightCopper"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>待审议决议事项</strong></p>
+
+  - elementId: resolution-1
+    elementType: text
+    bounds: [180, 344, 900, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>决议一：</strong>审批2025–2028年集团战略发展规划纲要</p>
+
+  - elementId: resolution-2
+    elementType: text
+    bounds: [180, 380, 900, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>决议二：</strong>批准¥18.5B三年战略投资预算及并购授权</p>
+
+  - elementId: resolution-3
+    elementType: text
+    bounds: [180, 416, 900, 28]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Inter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>决议三：</strong>批准组织架构调整方案及全球化事业部设立</p>
+
+  # ===== 底部信息区 =====
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [180, 520, 920, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF15"
+
+  # Logo占位
+  - elementId: final-logo
+    elementType: shape
+    bounds: [610, 548, 60, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF25"
+
+  # 联系信息
+  - elementId: contact-info
+    elementType: text
+    bounds: [340, 590, 600, 24]
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>XX集团战略发展部 · strategy@xxgroup.com</p>
+
+  # 日期 + 机密标记
+  - elementId: final-date
+    elementType: text
+    bounds: [340, 618, 600, 24]
+    content:
+      fontSize: 14
+      color: "#FFFFFF55"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>2025年X月 · 机密文件 · 仅供董事会成员传阅</p>

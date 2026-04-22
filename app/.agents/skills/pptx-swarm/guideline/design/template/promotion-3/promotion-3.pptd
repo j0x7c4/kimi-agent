@@ -1,0 +1,64 @@
+title: Minimal Photography Portfolio Template
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#1A1A1A"
+    background: "#EDECED"
+    text: "#1A1A1A"
+    gray: "#C6C6C6"
+    midgray: "#888888"
+    white: "#FFFFFF"
+  textStyles:
+    heroTitle:
+      fontSize: 125
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 0.9
+    pageTitle:
+      fontSize: 60
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.0
+    sectionTitle:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.1
+    subtitle:
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+    body:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.65
+    caption:
+      fontSize: 13
+      color: "$midgray"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+  tableStyles:
+    default:
+      fontSize: 15
+      fontFamily: "QuattrocentoSans, MiSans"
+      headerFill: "$primary"
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill: ["#FFFFFF", "$background"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$gray"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/about.page
+  - pages/gallery.page
+  - pages/quote.page
+  - pages/gallery2.page
+  - pages/cv.page
+  - pages/final.page

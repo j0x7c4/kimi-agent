@@ -1,0 +1,74 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 左侧铜色竖条（48px宽，全高）
+  - elementId: ch-copper-strip
+    elementType: shape
+    bounds: [0, 0, 48, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 右侧水印章节编号（白色8%透明度）
+  - elementId: ch-watermark
+    elementType: text
+    bounds: [900, 200, 340, 120]
+    content:
+      fontSize: 80
+      color: "#FFFFFF14"
+      fontFamily: "Georgia, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><strong>CHAPTER 01</strong></p>
+
+  # 章节标题
+  - elementId: ch-title
+    elementType: text
+    bounds: [100, 280, 750, 52]
+    content:
+      fontSize: 36
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>战略背景与市场研判</strong></p>
+
+  # 铜色短线（1px，100px）
+  - elementId: ch-deco-line
+    elementType: shape
+    bounds: [100, 344, 100, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  # 战略摘要
+  - elementId: ch-summary
+    elementType: text
+    bounds: [100, 364, 700, 30]
+    content:
+      fontSize: 18
+      color: "$lightCopper"
+      fontFamily: "Inter, MiSans"
+      wrap: false
+      text: |
+        <p>全球化竞争格局重塑，抢占战略窗口期的关键三年</p>
+
+  # 底部章节进度
+  - elementId: ch-progress
+    elementType: text
+    bounds: [1080, 680, 160, 24]
+    content:
+      fontSize: 14
+      color: "$lightCopper"
+      fontFamily: "Inter, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>第一章 / 共八章</p>

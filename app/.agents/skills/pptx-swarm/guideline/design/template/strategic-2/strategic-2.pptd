@@ -1,0 +1,66 @@
+title: 战略规划模板（The Vanguard）
+size: [1280, 720]
+theme:
+  colors:
+    background: "#F8F9FB"
+    text: "#1E293B"
+    chartPrimary: "#0F172A"
+    chartSecondary: "#475569"
+    accent: "#B45309"
+    divider: "#E2E8F0"
+    caption: "#64748B"
+    zebraRow: "#F1F5F9"
+    white: "#FFFFFF"
+    panel: "#0F172A"
+  textStyles:
+    title:
+      fontSize: 56
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+    pageTitle:
+      fontSize: 32
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+    subtitle:
+      fontSize: 24
+      color: "$caption"
+      fontFamily: "QuattrocentoSans, MiSans"
+    body:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+    caption:
+      fontSize: 12
+      color: "$caption"
+      fontFamily: "QuattrocentoSans, MiSans"
+    bignum:
+      fontSize: 60
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+  tableStyles:
+    default:
+      fontSize: 14
+      fontFamily: "QuattrocentoSans, MiSans"
+      headerFill: "$white"
+      headerColor: "$text"
+      headerBold: true
+      bodyFill: ["$white", "$zebraRow"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 0.5
+        color: "$divider"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/exec_summary.page
+  - pages/tam_analysis.page
+  - pages/roadmap.page
+  - pages/financial_roi.page
+  - pages/competitive_matrix.page
+  - pages/swot_analysis.page
+  - pages/process_flow.page
+  - pages/growth_flywheel.page
+  - pages/final.page

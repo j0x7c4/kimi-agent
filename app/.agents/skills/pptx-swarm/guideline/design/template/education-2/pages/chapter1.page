@@ -1,0 +1,60 @@
+pageType: chapter
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "$primary"}
+    - {position: 1, color: "$dark"}
+elements:
+  # 章节编号
+  - elementId: chapter-number
+    elementType: text
+    bounds: [80, 200, 200, 80]
+    content:
+      fontSize: 80
+      color: "#FFFFFF20"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: "01"
+
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [340, 280, 600, 60]
+    content:
+      style: "$chapterTitle"
+      align: [center, middle]
+      text: |
+        <p>一次函数的概念与图像</p>
+
+  # 章节副标题
+  - elementId: chapter-subtitle
+    elementType: text
+    bounds: [340, 355, 600, 45]
+    content:
+      fontSize: 22
+      color: "#D8D8D8"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>理解 y = kx + b 的本质与图像特征</p>
+
+  # 装饰线条
+  - elementId: deco-line-1
+    elementType: shape
+    bounds: [490, 420, 300, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#FFFFFF30"
+
+  # 装饰圆形
+  - elementId: deco-circle
+    elementType: shape
+    bounds: [880, 380, 300, 300]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF05"

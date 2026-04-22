@@ -1,0 +1,146 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top nav bar
+  - elementId: nav-left
+    elementType: text
+    bounds: [120, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [left, top]
+      text: |
+        <p>Marketing</p>
+        <p>Approach</p>
+
+  - elementId: nav-right
+    elementType: text
+    bounds: [900, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [right, top]
+      text: |
+        <p>Bilson's</p>
+        <p>Supermarkets</p>
+
+  - elementId: nav-divider
+    elementType: shape
+    bounds: [120, 88, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Left photo
+  - elementId: toc-photo
+    elementType: image
+    bounds: [120, 280, 460, 400]
+    src: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80"
+    fit:
+      mode: cover
+
+  # Right: title + bullets
+  - elementId: toc-title
+    elementType: text
+    bounds: [620, 140, 580, 200]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p><strong>POINTS OF</strong></p>
+        <p><strong>DISCUSSION</strong></p>
+
+  - elementId: toc-subtitle
+    elementType: text
+    bounds: [620, 340, 560, 36]
+    content:
+      style: "$subtitle"
+      align: [left, middle]
+      text: Agenda for today's meeting
+
+  # Arrow icon bullets
+  - elementId: arrow-1
+    elementType: icon
+    bounds: [620, 410, 60, 18]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"
+
+  - elementId: item-1
+    elementType: text
+    bounds: [696, 398, 500, 34]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: Major campaign points
+
+  - elementId: arrow-2
+    elementType: icon
+    bounds: [620, 452, 60, 18]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"
+
+  - elementId: item-2
+    elementType: text
+    bounds: [696, 440, 500, 34]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: Target market/s
+
+  - elementId: arrow-3
+    elementType: icon
+    bounds: [620, 496, 60, 18]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"
+
+  - elementId: item-3
+    elementType: text
+    bounds: [696, 484, 500, 34]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: SWOT analysis
+
+  - elementId: arrow-4
+    elementType: icon
+    bounds: [620, 538, 60, 18]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"
+
+  - elementId: item-4
+    elementType: text
+    bounds: [696, 526, 500, 34]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: Unique selling points
+
+  - elementId: arrow-5
+    elementType: icon
+    bounds: [620, 580, 60, 18]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"
+
+  - elementId: item-5
+    elementType: text
+    bounds: [696, 568, 500, 34]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: Proposed timeline

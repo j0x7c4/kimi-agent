@@ -1,0 +1,170 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 60, 800, 50]
+    content:
+      style: "$title"
+      align: [left, middle]
+      text: |
+        <p><strong>三大经典茶道传统</strong></p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 120, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 左列 - 中国茶道
+  - elementId: col1-bg
+    elementType: shape
+    bounds: [100, 160, 360, 440]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+
+  - elementId: col1-icon
+    elementType: icon
+    bounds: [230, 190, 48, 48]
+    iconName: "fas:yin-yang"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: col1-title
+    elementType: text
+    bounds: [130, 260, 300, 40]
+    content:
+      fontSize: 24
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>中国茶道</strong></p>
+
+  - elementId: col1-content
+    elementType: text
+    bounds: [130, 310, 300, 250]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>• 讲究 <span style="color:$accent;"><strong>天人合一</strong></span></p>
+        <p>• 以和为贵的哲学理念</p>
+        <p>• 注重水质与器具和谐</p>
+        <p style="margin-top:20px;">核心精髓：</p>
+        <p>• 工夫茶艺，六大茶类</p>
+
+  # 中列 - 日本茶道
+  - elementId: col2-bg
+    elementType: shape
+    bounds: [490, 160, 360, 440]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+
+  - elementId: col2-icon
+    elementType: icon
+    bounds: [620, 190, 48, 48]
+    iconName: "fas:torii-gate"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: col2-title
+    elementType: text
+    bounds: [520, 260, 300, 40]
+    content:
+      fontSize: 24
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p><strong>日本茶道</strong></p>
+
+  - elementId: col2-content
+    elementType: text
+    bounds: [520, 310, 300, 250]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>• 源于禅宗 <span style="color:$accent;"><strong>"和敬清寂"</strong></span></p>
+        <p>• 饮茶升华为精神修行</p>
+        <p>• 抹茶道与煎茶道并行</p>
+        <p style="margin-top:20px;">核心特征：</p>
+        <p>• 千利休集大成，极简美学</p>
+
+  # 右列 - 英式下午茶
+  - elementId: col3-bg
+    elementType: shape
+    bounds: [880, 160, 300, 440]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "$accent"}
+        - {position: 1, color: "#FF7F50CC"}
+
+  - elementId: col3-icon
+    elementType: icon
+    bounds: [1006, 190, 48, 48]
+    iconName: "fas:star"
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: col3-title
+    elementType: text
+    bounds: [910, 260, 240, 40]
+    content:
+      fontSize: 24
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p><strong>英式下午茶</strong></p>
+
+  - elementId: col3-content
+    elementType: text
+    bounds: [910, 310, 240, 250]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p><strong>公爵夫人开创传统</strong></p>
+        <p style="margin-top:15px;">文化特色：</p>
+        <p>• 19世纪社交传统</p>
+        <p>• 三层塔与骨瓷茶具</p>
+        <p style="margin-top:20px;">全球影响力</p>
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 670, 80, 30]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      text: |
+        <p>05</p>

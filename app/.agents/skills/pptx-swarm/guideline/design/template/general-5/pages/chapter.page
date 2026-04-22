@@ -1,0 +1,52 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 背景几何装饰
+  - elementId: bg-decoration
+    elementType: shape
+    bounds: [0, 200, 1280, 320]
+    shapeName: custom
+    path: "1280,320;M0 160 Q320 0 640 0 Q960 0 1280 160 L1280 320 L0 320 Z"
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "$gradient"}
+        - {position: 0.5, color: "#D0E0E350"}
+        - {position: 1, color: "#2E5E8A30"}
+    opacity: 0.3
+
+  # 章节编号
+  - elementId: chapter-number
+    elementType: text
+    bounds: [100, 250, 200, 80]
+    content:
+      fontSize: 72
+      color: "$accent"
+      align: [left, middle]
+      text: |
+        <p><strong>01</strong></p>
+
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [340, 240, 800, 80]
+    content:
+      style: "$chapterTitle"
+      align: [left, middle]
+      text: |
+        <p>茶的起源与早期历史</p>
+
+  # 副标题
+  - elementId: chapter-subtitle
+    elementType: text
+    bounds: [340, 340, 600, 40]
+    content:
+      fontSize: 22
+      color: "$card"
+      align: [left, middle]
+      text: |
+        <p>从神农尝百草到唐代茶经的千年演变</p>

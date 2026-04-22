@@ -1,0 +1,1130 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: header-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 52
+    shapeName: rect
+    fill:
+      type: solid
+      color: $primary
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 64
+      - 10
+      - 1050
+      - 32
+    wrap: false
+    content:
+      fontSize: 22
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>财务分析：当前状况与三年预测对照</strong></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1190
+      - 10
+      - 60
+      - 32
+    wrap: false
+    content:
+      fontSize: 13
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        05
+  - elementId: kpi1-bg
+    elementType: shape
+    bounds:
+      - 64
+      - 64
+      - 276
+      - 64
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: kpi1-bar
+    elementType: shape
+    bounds:
+      - 64
+      - 64
+      - 276
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: kpi1-num
+    elementType: text
+    bounds:
+      - 76
+      - 72
+      - 160
+      - 30
+    wrap: false
+    content:
+      fontSize: 24
+      color: $secondary
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>+12.4%</strong></p>
+  - elementId: kpi1-label
+    elementType: text
+    bounds:
+      - 76
+      - 102
+      - 160
+      - 18
+    wrap: false
+    content:
+      fontSize: 12
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        营收同比增速
+  - elementId: kpi2-bg
+    elementType: shape
+    bounds:
+      - 356
+      - 64
+      - 276
+      - 64
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: kpi2-bar
+    elementType: shape
+    bounds:
+      - 356
+      - 64
+      - 276
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: kpi2-num
+    elementType: text
+    bounds:
+      - 368
+      - 72
+      - 160
+      - 30
+    wrap: false
+    content:
+      fontSize: 24
+      color: $secondary
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>42.3%</strong></p>
+  - elementId: kpi2-label
+    elementType: text
+    bounds:
+      - 368
+      - 102
+      - 160
+      - 18
+    wrap: false
+    content:
+      fontSize: 12
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        综合毛利率
+  - elementId: kpi3-bg
+    elementType: shape
+    bounds:
+      - 648
+      - 64
+      - 276
+      - 64
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: kpi3-bar
+    elementType: shape
+    bounds:
+      - 648
+      - 64
+      - 276
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: kpi3-num
+    elementType: text
+    bounds:
+      - 660
+      - 72
+      - 160
+      - 30
+    wrap: false
+    content:
+      fontSize: 24
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>18.2%</strong></p>
+  - elementId: kpi3-label
+    elementType: text
+    bounds:
+      - 660
+      - 102
+      - 160
+      - 18
+    wrap: false
+    content:
+      fontSize: 12
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        EBITDA利润率
+  - elementId: kpi4-bg
+    elementType: shape
+    bounds:
+      - 940
+      - 64
+      - 276
+      - 64
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: kpi4-bar
+    elementType: shape
+    bounds:
+      - 940
+      - 64
+      - 276
+      - 3
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: kpi4-num
+    elementType: text
+    bounds:
+      - 952
+      - 72
+      - 160
+      - 30
+    wrap: false
+    content:
+      fontSize: 24
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>9.8%</strong></p>
+  - elementId: kpi4-label
+    elementType: text
+    bounds:
+      - 952
+      - 102
+      - 160
+      - 18
+    wrap: false
+    content:
+      fontSize: 12
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        自由现金流率
+  - elementId: left-title
+    elementType: text
+    bounds:
+      - 64
+      - 142
+      - 560
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $secondary
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>当前财务状况</strong></p>
+  - elementId: left-table
+    elementType: table
+    bounds:
+      - 64
+      - 178
+      - 560
+      - 224
+    columnWidths:
+      - 0.4
+      - 0.3
+      - 0.3
+    rowHeights:
+      - 0.143
+      - 0.143
+      - 0.143
+      - 0.143
+      - 0.143
+      - 0.143
+      - 0.143
+    style: $default
+    rows:
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              <p><strong>指标</strong></p>
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              <p><strong>FY2024</strong></p>
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              <p><strong>同比变化</strong></p>
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              营业收入
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥28.6B
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              +12.4%
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              毛利率
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              42.3%
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              +1.8pp
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              EBITDA
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥5.2B
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              +8.6%
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              净利润
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥3.1B
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              +6.2%
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              自由现金流
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥2.8B
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              +15.3%
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              资产负债率
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              38.5%
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              -2.1pp
+  - elementId: left-chart-bg
+    elementType: shape
+    bounds:
+      - 64
+      - 414
+      - 560
+      - 166
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: left-chart-title
+    elementType: text
+    bounds:
+      - 80
+      - 420
+      - 300
+      - 18
+    wrap: false
+    content:
+      fontSize: 12
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>营收趋势（¥B）</strong></p>
+  - elementId: left-chart-baseline
+    elementType: shape
+    bounds:
+      - 100
+      - 554
+      - 500
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: left-bar1
+    elementType: shape
+    bounds:
+      - 130
+      - 470
+      - 80
+      - 84
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: left-bar1-val
+    elementType: text
+    bounds:
+      - 130
+      - 452
+      - 80
+      - 18
+    wrap: false
+    content:
+      fontSize: 11
+      color: $secondary
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        20.2
+  - elementId: left-bar1-label
+    elementType: text
+    bounds:
+      - 130
+      - 556
+      - 80
+      - 16
+    wrap: false
+    content:
+      fontSize: 10
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        FY21
+  - elementId: left-bar2
+    elementType: shape
+    bounds:
+      - 250
+      - 462
+      - 80
+      - 92
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: left-bar2-val
+    elementType: text
+    bounds:
+      - 250
+      - 444
+      - 80
+      - 18
+    wrap: false
+    content:
+      fontSize: 11
+      color: $secondary
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        22.0
+  - elementId: left-bar2-label
+    elementType: text
+    bounds:
+      - 250
+      - 556
+      - 80
+      - 16
+    wrap: false
+    content:
+      fontSize: 10
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        FY22
+  - elementId: left-bar3
+    elementType: shape
+    bounds:
+      - 370
+      - 448
+      - 80
+      - 106
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: left-bar3-val
+    elementType: text
+    bounds:
+      - 370
+      - 430
+      - 80
+      - 18
+    wrap: false
+    content:
+      fontSize: 11
+      color: $secondary
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        25.4
+  - elementId: left-bar3-label
+    elementType: text
+    bounds:
+      - 370
+      - 556
+      - 80
+      - 16
+    wrap: false
+    content:
+      fontSize: 10
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        FY23
+  - elementId: left-bar4
+    elementType: shape
+    bounds:
+      - 490
+      - 432
+      - 80
+      - 122
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: left-bar4-val
+    elementType: text
+    bounds:
+      - 490
+      - 414
+      - 80
+      - 18
+    wrap: false
+    content:
+      fontSize: 11
+      color: $secondary
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        28.6
+  - elementId: left-bar4-label
+    elementType: text
+    bounds:
+      - 490
+      - 556
+      - 80
+      - 16
+    wrap: false
+    content:
+      fontSize: 10
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        FY24
+  - elementId: center-divider
+    elementType: shape
+    bounds:
+      - 640
+      - 142
+      - 0
+      - 438
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: right-title
+    elementType: text
+    bounds:
+      - 656
+      - 142
+      - 560
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>三年预测（FY2025–2028）</strong></p>
+  - elementId: right-table
+    elementType: table
+    bounds:
+      - 656
+      - 178
+      - 560
+      - 224
+    columnWidths:
+      - 0.4
+      - 0.3
+      - 0.3
+    rowHeights:
+      - 0.143
+      - 0.143
+      - 0.143
+      - 0.143
+      - 0.143
+      - 0.143
+      - 0.143
+    style: $default
+    rows:
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              <p><strong>指标</strong></p>
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              <p><strong>FY2026E</strong></p>
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              <p><strong>FY2028E</strong></p>
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              营业收入
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥35.2B
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥50.0B
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              毛利率
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              44.5%
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              48.0%
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              EBITDA
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥7.4B
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥12.5B
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              净利润
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥4.8B
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥9.0B
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              自由现金流
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥4.2B
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              ¥8.5B
+      - - content:
+            align:
+              - center
+              - middle
+            text: |
+              资产负债率
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              35.0%
+        - content:
+            align:
+              - center
+              - middle
+            text: |
+              30.0%
+  - elementId: right-chart-bg
+    elementType: shape
+    bounds:
+      - 656
+      - 414
+      - 560
+      - 166
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: right-chart-title
+    elementType: text
+    bounds:
+      - 672
+      - 420
+      - 300
+      - 18
+    wrap: false
+    content:
+      fontSize: 12
+      color: $text
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>增长预测（¥B）</strong></p>
+  - elementId: right-chart-baseline
+    elementType: shape
+    bounds:
+      - 692
+      - 554
+      - 500
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $warmGray
+  - elementId: right-bar1
+    elementType: shape
+    bounds:
+      - 722
+      - 466
+      - 80
+      - 88
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: right-bar1-val
+    elementType: text
+    bounds:
+      - 722
+      - 448
+      - 80
+      - 18
+    wrap: false
+    content:
+      fontSize: 11
+      color: $accent
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        32.0
+  - elementId: right-bar1-label
+    elementType: text
+    bounds:
+      - 722
+      - 556
+      - 80
+      - 16
+    wrap: false
+    content:
+      fontSize: 10
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        FY25E
+  - elementId: right-bar2
+    elementType: shape
+    bounds:
+      - 842
+      - 456
+      - 80
+      - 98
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: right-bar2-val
+    elementType: text
+    bounds:
+      - 842
+      - 438
+      - 80
+      - 18
+    wrap: false
+    content:
+      fontSize: 11
+      color: $accent
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        35.2
+  - elementId: right-bar2-label
+    elementType: text
+    bounds:
+      - 842
+      - 556
+      - 80
+      - 16
+    wrap: false
+    content:
+      fontSize: 10
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        FY26E
+  - elementId: right-bar3
+    elementType: shape
+    bounds:
+      - 962
+      - 432
+      - 80
+      - 122
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: right-bar3-val
+    elementType: text
+    bounds:
+      - 962
+      - 414
+      - 80
+      - 18
+    wrap: false
+    content:
+      fontSize: 11
+      color: $accent
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        44.0
+  - elementId: right-bar3-label
+    elementType: text
+    bounds:
+      - 962
+      - 556
+      - 80
+      - 16
+    wrap: false
+    content:
+      fontSize: 10
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        FY27E
+  - elementId: right-bar4
+    elementType: shape
+    bounds:
+      - 1082
+      - 414
+      - 80
+      - 140
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: right-bar4-val
+    elementType: text
+    bounds:
+      - 1082
+      - 396
+      - 80
+      - 18
+    wrap: false
+    content:
+      fontSize: 11
+      color: $accent
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        50.0
+  - elementId: right-bar4-label
+    elementType: text
+    bounds:
+      - 1082
+      - 556
+      - 80
+      - 16
+    wrap: false
+    content:
+      fontSize: 10
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        FY28E
+  - elementId: assumption-bar
+    elementType: shape
+    bounds:
+      - 64
+      - 588
+      - 1152
+      - 52
+    shapeName: rect
+    fill:
+      type: solid
+      color: $cardBg
+  - elementId: assumption-text
+    elementType: text
+    bounds:
+      - 80
+      - 594
+      - 1120
+      - 40
+    content:
+      fontSize: 13
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>关键假设：</strong>&#9632; GDP增速维持在5%以上 &#9632; 行业复合增长率15%，集团增速高于行业均值 &#9632; 并购标的估值倍数控制在12x EBITDA以内</p>
+  - elementId: source-text
+    elementType: text
+    bounds:
+      - 64
+      - 680
+      - 600
+      - 20
+    wrap: false
+    content:
+      fontSize: 12
+      color: $warmGray
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p>Source: 集团财务部, FY2024年报; 战略规划部三年预测模型</p>

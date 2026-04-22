@@ -1,0 +1,68 @@
+title: 工作汇报 - 晨曦渐变
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#4C7F8C"      # 深海蓝灰
+    secondary: "#A3B5B8"    # 薄雾灰绿
+    accent: "#D8A66C"       # 暖煦金
+    background: "#F5F8F7"   # 云白
+    darkBg: "#2E4D54"       # 沉稳深蓝
+    text: "#333333"         # 深炭灰
+    textSecondary: "#666666" # 中性灰
+    border: "#E0E0E0"       # 边框灰
+  textStyles:
+    coverTitle:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      fontStyle: "normal"
+    coverSubtitle:
+      fontSize: 24
+      color: "#F5F8F7"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+    chapterTitle:
+      fontSize: 40
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+    pageTitle:
+      fontSize: 28
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+    bodyText:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+    kpiNumber:
+      fontSize: 64
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+    caption:
+      fontSize: 14
+      color: "$textSecondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+  tableStyles:
+    default:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans, MiSans"
+      headerFill: "$secondary"
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill: ["#FFFFFF", "$background"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$border"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter1.page
+  - pages/kpi_overview.page
+  - pages/data_analysis.page
+  - pages/timeline.page
+  - pages/comparison.page
+  - pages/action_plan.page
+  - pages/chapter2.page
+  - pages/final.page

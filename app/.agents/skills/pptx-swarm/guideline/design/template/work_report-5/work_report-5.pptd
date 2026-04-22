@@ -1,0 +1,70 @@
+title: 工作汇报-效能脉络
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#2A3B4C"      # 商务深蓝
+    secondary: "#5C6F7E"    # 沉稳灰
+    tertiary: "#ABB9C3"     # 温和浅灰
+    accent: "#6AC06F"       # 活力绿
+    background: "#F8F9FA"   # 雅致灰白
+    light: "#FDFDFD"        # 柔和米白
+    dark: "#1F2833"         # 暗夜蓝灰
+    text: "#333333"         # 文本深灰
+    border: "#E0E0E0"       # 边框灰
+  textStyles:
+    cover_title:
+      fontSize: 48
+      color: "#FDFDFD"
+      fontFamily: "Liter, MiSans"
+    cover_subtitle:
+      fontSize: 20
+      color: "#ABB9C3"
+      fontFamily: "Liter, MiSans"
+    title:
+      fontSize: 28
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+    subtitle:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+    body:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+    caption:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+    kpi_number:
+      fontSize: 48
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+    kpi_label:
+      fontSize: 16
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+  tableStyles:
+    default:
+      fontSize: 14
+      fontFamily: "Liter, MiSans"
+      headerFill: "$primary"
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill: ["#FFFFFF", "#F8F9FA"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$border"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter1.page
+  - pages/kpi_overview.page
+  - pages/data_analysis.page
+  - pages/timeline.page
+  - pages/problem_solution.page
+  - pages/action_plan.page
+  - pages/final.page

@@ -1,0 +1,111 @@
+pageType: final
+background:
+  type: solid
+  color: $primary
+elements:
+  - elementId: bg-circle1
+    elementType: shape
+    bounds:
+      - -100
+      - -100
+      - 400
+      - 400
+    opacity: 0.05
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: bg-circle2
+    elementType: shape
+    bounds:
+      - 980
+      - 420
+      - 400
+      - 400
+    opacity: 0.03
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: thank-you
+    elementType: text
+    bounds:
+      - 140
+      - 200
+      - 1000
+      - 80
+    content:
+      fontSize: 56
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>下一步：巩固与深化</p>
+  - elementId: subtitle
+    elementType: text
+    bounds:
+      - 240
+      - 300
+      - 800
+      - 40
+    content:
+      fontSize: 24
+      color: "#E0E0E0"
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>学习是一场没有终点的旅程</p>
+  - elementId: action-container
+    elementType: shape
+    bounds:
+      - 340
+      - 370
+      - 600
+      - 220
+    opacity: 0.1
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: action-text
+    elementType: text
+    bounds:
+      - 380
+      - 400
+      - 520
+      - 160
+    content:
+      fontSize: 18
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      lineHeight: 1.8
+      align:
+        - center
+        - middle
+      text: |
+        <p>• 回顾今天学到的核心概念</p>
+        <p>• 选择一个具体场景开始实践</p>
+        <p>• 记录你的学习收获与困惑</p>
+        <p>• 与他人分享交流，共同成长</p>
+  - elementId: footer
+    elementType: text
+    bounds:
+      - 140
+      - 620
+      - 1000
+      - 30
+    content:
+      fontSize: 16
+      color: $textGray
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>灵感方舟 · 持续学习，持续成长</p>

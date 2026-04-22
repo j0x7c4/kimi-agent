@@ -1,0 +1,389 @@
+pageType: content
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 56
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 24
+      - 0
+      - 900
+      - 56
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:32px; color:#FFFFFF; font-family:MiSans;"><strong>关键数据与统计图表</strong></span></p>
+  - elementId: data-tag-bg
+    elementType: shape
+    bounds:
+      - 1096
+      - 12
+      - 160
+      - 32
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: data-tag-text
+    elementType: text
+    bounds:
+      - 1096
+      - 12
+      - 160
+      - 32
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#FFFFFF; font-family:MiSans;"><strong>DATA · 数据</strong></span></p>
+  - elementId: card1-bg
+    elementType: shape
+    bounds:
+      - 32
+      - 76
+      - 376
+      - 200
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#E3F2FD"
+    border:
+      style: solid
+      width: 1
+      color: "#BBDEFB"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: card1-top-bar
+    elementType: shape
+    bounds:
+      - 32
+      - 76
+      - 376
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: card1-number
+    elementType: text
+    bounds:
+      - 32
+      - 88
+      - 376
+      - 100
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:64px; color:#FF8F00; font-family:MiSans;"><strong>72%</strong></span></p>
+  - elementId: card1-unit
+    elementType: text
+    bounds:
+      - 32
+      - 188
+      - 376
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#546E7A; font-family:MiSans;">知识掌握率</span></p>
+  - elementId: card1-desc
+    elementType: text
+    bounds:
+      - 48
+      - 220
+      - 344
+      - 44
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans;">学生对核心概念的平均掌握程度</span></p>
+  - elementId: card2-bg
+    elementType: shape
+    bounds:
+      - 452
+      - 76
+      - 376
+      - 200
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#E3F2FD"
+    border:
+      style: solid
+      width: 1
+      color: "#BBDEFB"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: card2-top-bar
+    elementType: shape
+    bounds:
+      - 452
+      - 76
+      - 376
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: card2-number
+    elementType: text
+    bounds:
+      - 452
+      - 88
+      - 376
+      - 100
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:64px; color:#FF8F00; font-family:MiSans;"><strong>3.5x</strong></span></p>
+  - elementId: card2-unit
+    elementType: text
+    bounds:
+      - 452
+      - 188
+      - 376
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#546E7A; font-family:MiSans;">效率倍增</span></p>
+  - elementId: card2-desc
+    elementType: text
+    bounds:
+      - 468
+      - 220
+      - 344
+      - 44
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans;">图解学习相比纯文字的理解效率</span></p>
+  - elementId: card3-bg
+    elementType: shape
+    bounds:
+      - 872
+      - 76
+      - 376
+      - 200
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#E3F2FD"
+    border:
+      style: solid
+      width: 1
+      color: "#BBDEFB"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: card3-top-bar
+    elementType: shape
+    bounds:
+      - 872
+      - 76
+      - 376
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: card3-number
+    elementType: text
+    bounds:
+      - 872
+      - 88
+      - 376
+      - 100
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:64px; color:#FF8F00; font-family:MiSans;"><strong>15′</strong></span></p>
+  - elementId: card3-unit
+    elementType: text
+    bounds:
+      - 872
+      - 188
+      - 376
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#546E7A; font-family:MiSans;">黄金学习时长</span></p>
+  - elementId: card3-desc
+    elementType: text
+    bounds:
+      - 888
+      - 220
+      - 344
+      - 44
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans;">每个知识点的最佳专注学习时间</span></p>
+  - elementId: chart-title
+    elementType: text
+    bounds:
+      - 32
+      - 296
+      - 600
+      - 32
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;"><strong>各章节学习效果对比（折线图）</strong></span></p>
+  - elementId: chart1
+    elementType: chart
+    bounds:
+      - 32
+      - 332
+      - 1216
+      - 340
+    type: line
+    x: chapter
+    "y":
+      - 掌握率
+      - 及格率
+    colors:
+      - "#1565C0"
+      - "#FF8F00"
+    data:
+      - chapter: 第一章
+        掌握率: 65
+        及格率: 88
+      - chapter: 第二章
+        掌握率: 72
+        及格率: 91
+      - chapter: 第三章
+        掌握率: 58
+        及格率: 82
+      - chapter: 第四章
+        掌握率: 80
+        及格率: 95
+      - chapter: 第五章
+        掌握率: 75
+        及格率: 93
+    options:
+      fontFamily: Liter, MiSans
+    seriesStyle:
+      "*":
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 8
+    xAxis:
+      gridLine:
+        style: solid
+        color: "#E3F2FD"
+        width: 1
+    yAxis:
+      gridLine:
+        style: solid
+        color: "#E3F2FD"
+        width: 1
+      min: 40
+      max: 100
+      numberFormat: 0%
+    legend:
+      position: top
+    dataLabels:
+      show: true
+      color: "#263238"
+      fontSize: 14
+  - elementId: progress-done
+    elementType: shape
+    bounds:
+      - 0
+      - 708
+      - 995
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: progress-rest
+    elementType: shape
+    bounds:
+      - 995
+      - 708
+      - 285
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#CFD8DC"

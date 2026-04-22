@@ -1,0 +1,123 @@
+pageType: cover
+background:
+  type: solid
+  color: "#F8F9FB"
+elements:
+  # ── Left dark panel ──
+  - elementId: cover-left-panel
+    elementType: shape
+    bounds: [0, 0, 580, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  # ── Decorative ellipse on left panel ──
+  - elementId: cover-deco-ellipse
+    elementType: shape
+    bounds: [300, 400, 400, 320]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#B4530910"
+
+  # ── Accent line (diagonal rect) on left panel ──
+  - elementId: cover-accent-line
+    elementType: shape
+    bounds: [100, 580, 300, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # ── "STRATEGIC PLAN" label ──
+  - elementId: cover-label
+    elementType: text
+    bounds: [80, 240, 420, 24]
+    content:
+      fontSize: 14
+      color: "#FFFFFF60"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      letterSpacing: 4
+      text: |
+        <p>STRATEGIC PLAN</p>
+
+  # ── Accent bar below label ──
+  - elementId: cover-label-bar
+    elementType: shape
+    bounds: [80, 274, 80, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # ── Main title ──
+  - elementId: cover-title
+    elementType: text
+    bounds: [80, 296, 440, 110]
+    content:
+      fontSize: 44
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><strong>数字化转型三年战略规划</strong></p>
+
+  # ── Subtitle ──
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [80, 420, 440, 36]
+    content:
+      fontSize: 20
+      color: "#FFFFFF99"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>实现年营收增长 40% 的路径与回报</p>
+
+  # ── Right area: company info ──
+  - elementId: cover-company-info
+    elementType: text
+    bounds: [620, 650, 600, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>XX科技集团 · 战略发展部 · 2025年X月</p>
+
+  # ── Right area: Confidential badge ──
+  - elementId: cover-confidential-bg
+    elementType: shape
+    bounds: [1100, 680, 120, 28]
+    shapeName: roundRect
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  - elementId: cover-confidential
+    elementType: text
+    bounds: [1100, 680, 120, 28]
+    content:
+      fontSize: 11
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Confidential</p>
+
+  # ── Decorative diamond on right side ──
+  - elementId: cover-deco-diamond
+    elementType: shape
+    bounds: [1100, 100, 40, 40]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "#B4530918"

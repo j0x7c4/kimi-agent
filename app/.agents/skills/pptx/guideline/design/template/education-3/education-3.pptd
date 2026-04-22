@@ -1,0 +1,72 @@
+title: 中学课堂教学模板
+size:
+  - 1280
+  - 720
+theme:
+  colors:
+    primary: "#1565C0"
+    secondary: "#546E7A"
+    accent: "#FF8F00"
+    iceblue: "#E3F2FD"
+    background: "#FFFFFF"
+    text: "#263238"
+    lightyellow: "#FFF8E1"
+    darkblue: "#0D47A1"
+    border: "#CFD8DC"
+    lightgray: "#F5F5F5"
+  textStyles:
+    coverTitle:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: Liter, MiSans
+      lineHeight: 1.2
+    pageTitle:
+      fontSize: 32
+      color: "#FFFFFF"
+      fontFamily: Liter, MiSans
+      lineHeight: 1.2
+    sectionTitle:
+      fontSize: 44
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.2
+    body:
+      fontSize: 24
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+    caption:
+      fontSize: 16
+      color: $secondary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+    accent:
+      fontSize: 24
+      color: $accent
+      fontFamily: Liter, MiSans
+  tableStyles:
+    default:
+      fontSize: 18
+      fontFamily: Liter, MiSans
+      headerFill: $primary
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill:
+        - "#FFFFFF"
+        - $iceblue
+      bodyColor: $text
+      firstColumnBold: true
+      border:
+        style: solid
+        width: 1
+        color: $border
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/section.page
+  - pages/content1.page
+  - pages/content2.page
+  - pages/content3.page
+  - pages/content4.page
+  - pages/content5.page
+  - pages/final.page

@@ -1,0 +1,269 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部导航条（各章节标题均匀分布）
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  - elementId: nav-active
+    elementType: shape
+    bounds: [256, 0, 256, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 01 研究背景
+
+  - elementId: nav-div1
+    elementType: shape
+    bounds: [256, 6, 0, 32]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [256, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 02 文献综述
+
+  - elementId: nav-div2
+    elementType: shape
+    bounds: [512, 6, 0, 32]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [512, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 03 研究方法
+
+  - elementId: nav-div3
+    elementType: shape
+    bounds: [768, 6, 0, 32]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [768, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 04 实验结果
+
+  - elementId: nav-div4
+    elementType: shape
+    bounds: [1024, 6, 0, 32]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+
+  - elementId: nav-ch5
+    elementType: text
+    bounds: [1024, 0, 256, 44]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 05 结论展望
+
+  # 标题
+  - elementId: title-deco-line
+    elementType: shape
+    bounds: [50, 62, 0, 36]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [68, 60, 900, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>核心理论对比分析</strong></p>
+
+  - elementId: title-gold-line
+    elementType: shape
+    bounds: [50, 108, 1180, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#B8860B60"
+
+  # 左栏标题
+  - elementId: left-col-header
+    elementType: shape
+    bounds: [50, 122, 580, 48]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: left-col-title
+    elementType: text
+    bounds: [50, 122, 580, 48]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>传统方法</strong></p>
+
+  # 左栏内容
+  - elementId: left-col-bg
+    elementType: shape
+    bounds: [50, 170, 580, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightRed"
+
+  - elementId: left-content
+    elementType: text
+    bounds: [70, 188, 540, 380]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• 基于规则的特征工程</p>
+        <p>• 依赖大量人工标注数据</p>
+        <p>• 模型可解释性较强</p>
+        <p>• 跨领域迁移能力有限</p>
+        <p>• 计算效率高，部署成本低</p>
+        <p>• 在特定场景已有成熟应用</p>
+
+  # 右栏标题
+  - elementId: right-col-header
+    elementType: shape
+    bounds: [650, 122, 580, 48]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$gold"
+
+  - elementId: right-col-title
+    elementType: text
+    bounds: [650, 122, 580, 48]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>深度学习方法</strong></p>
+
+  # 右栏内容
+  - elementId: right-col-bg
+    elementType: shape
+    bounds: [650, 170, 580, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFF8E6"
+
+  - elementId: right-content
+    elementType: text
+    bounds: [670, 188, 540, 380]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• 端到端特征自动学习</p>
+        <p>• 支持弱监督/自监督训练</p>
+        <p>• 可解释性相对较弱</p>
+        <p>• 跨域迁移能力强</p>
+        <p>• 计算资源需求较高</p>
+        <p>• 在多个基准数据集达到SOTA</p>
+
+  # 对比总结框
+  - elementId: comparison-summary-bg
+    elementType: shape
+    bounds: [50, 604, 1180, 56]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFF5F5"
+    border:
+      style: solid
+      width: 2
+      color: "#B8860B"
+
+  - elementId: comparison-summary
+    elementType: text
+    bounds: [70, 608, 1140, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><strong>本研究策略：</strong>融合传统方法的可解释性与深度学习的高精度优势，提出轻量级混合框架，在保持SOTA性能的同时降低部署门槛。</p>
+
+  # 底部金线
+  - elementId: bottom-gold-line
+    elementType: shape
+    bounds: [0, 706, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#B8860B"

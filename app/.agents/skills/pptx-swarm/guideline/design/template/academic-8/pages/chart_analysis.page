@@ -1,0 +1,217 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧侧边栏
+  - elementId: sidebar-bg
+    elementType: shape
+    bounds: [0, 0, 180, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$sidebarBg"
+
+  - elementId: sidebar-logo
+    elementType: shape
+    bounds: [14, 14, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: sidebar-active-bg
+    elementType: shape
+    bounds: [0, 356, 180, 92]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-item-1
+    elementType: text
+    bounds: [8, 80, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        01 研究背景
+
+  - elementId: sidebar-item-2
+    elementType: text
+    bounds: [8, 172, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        02 文献综述
+
+  - elementId: sidebar-item-3
+    elementType: text
+    bounds: [8, 264, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        03 研究方法
+
+  - elementId: sidebar-item-4
+    elementType: text
+    bounds: [8, 356, 164, 92]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04 实验结果</strong></p>
+
+  - elementId: sidebar-item-5
+    elementType: text
+    bounds: [8, 448, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        05 结论展望
+
+  - elementId: sidebar-deco
+    elementType: shape
+    bounds: [84, 590, 12, 12]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+  # 顶部次级标题栏
+  - elementId: breadcrumb-bg
+    elementType: shape
+    bounds: [180, 0, 1100, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: breadcrumb-text
+    elementType: text
+    bounds: [200, 0, 1060, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>04 实验结果与讨论</strong>　›　4.1 主要实验结果</p>
+
+  - elementId: breadcrumb-page-num
+    elementType: text
+    bounds: [1230, 0, 50, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "06"
+
+  # 主内容区（上图下洞察结构，DNA特征）
+  - elementId: content-title
+    elementType: text
+    bounds: [200, 68, 1040, 36]
+    content:
+      style: "$pageTitle"
+      fontSize: 24
+      wrap: false
+      text: |
+        <p><strong>主要实验结果与性能分析</strong></p>
+
+  - elementId: content-title-sep
+    elementType: shape
+    bounds: [200, 110, 1040, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#B0BEC5"
+
+  # 图表区（上方）
+  - elementId: chart-area
+    elementType: shape
+    bounds: [200, 124, 1040, 340]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+    border:
+      style: solid
+      width: 1
+      color: "#B0BEC5"
+
+  - elementId: chart-label
+    elementType: text
+    bounds: [200, 124, 1040, 340]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Figure 4. 与SOTA方法的性能对比（折线图 / 柱状图）</p>
+
+  # 下方洞察条（DNA特征：底部结论强调）
+  - elementId: insight-bar-bg
+    elementType: shape
+    bounds: [200, 484, 1040, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: insight-bar-icon
+    elementType: shape
+    bounds: [214, 506, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: insight-bar-title
+    elementType: text
+    bounds: [244, 490, 240, 28]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>核心发现</strong></p>
+
+  - elementId: insight-bar-text
+    elementType: text
+    bounds: [244, 520, 980, 50]
+    content:
+      fontSize: 15
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p>本方法在5/5数据集上均优于所有对比基线，平均Acc提升+5.4%，推理速度提升2.8×，且模型参数量仅增加8%，达到精度-效率帕累托最优。</p>

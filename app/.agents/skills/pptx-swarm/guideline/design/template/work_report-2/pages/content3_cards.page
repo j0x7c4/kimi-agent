@@ -1,0 +1,227 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 导航栏背景
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 56]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 1
+      color: "#EAE8E3"
+
+  # 选中项指示条
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [310, 52, 170, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: nav-item1
+    elementType: text
+    bounds: [100, 10, 190, 36]
+    content:
+      text: "Performance Overview"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item2
+    elementType: text
+    bounds: [310, 10, 170, 36]
+    content:
+      text: |
+        <p><strong>Strategic Initiatives</strong></p>
+      fontSize: 15
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item3
+    elementType: text
+    bounds: [500, 10, 195, 36]
+    content:
+      text: "Organization & Talent"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item4
+    elementType: text
+    bounds: [715, 10, 175, 36]
+    content:
+      text: "Reflection & Forward"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 90, 900, 50]
+    content:
+      text: |
+        <p><strong>Strategic Focus Areas: Three Pillars of Growth</strong></p>
+      fontSize: 32
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 分割线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 155, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 卡片1
+  - elementId: card1-bg
+    elementType: shape
+    bounds: [100, 200, 350, 340]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: card1-accent
+    elementType: shape
+    bounds: [100, 200, 350, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card1-title
+    elementType: text
+    bounds: [130, 230, 290, 36]
+    content:
+      text: |
+        <p><strong>Customer Excellence</strong></p>
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  - elementId: card1-content
+    elementType: text
+    bounds: [130, 280, 290, 240]
+    content:
+      text: |
+        <p>• NPS score improved to <strong>72</strong></p>
+        <p>• Customer lifetime value up <strong>35%</strong></p>
+        <p>• Support response time reduced to <strong>2hrs</strong></p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      align: [left, top]
+
+  # 卡片2
+  - elementId: card2-bg
+    elementType: shape
+    bounds: [470, 200, 350, 340]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: card2-accent
+    elementType: shape
+    bounds: [470, 200, 350, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card2-title
+    elementType: text
+    bounds: [500, 230, 290, 36]
+    content:
+      text: |
+        <p><strong>Digital Transformation</strong></p>
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  - elementId: card2-content
+    elementType: text
+    bounds: [500, 280, 290, 240]
+    content:
+      text: |
+        <p>• Cloud migration <strong>85%</strong> complete</p>
+        <p>• API response time improved <strong>60%</strong></p>
+        <p>• New mobile app adoption at <strong>45%</strong></p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      align: [left, top]
+
+  # 卡片3
+  - elementId: card3-bg
+    elementType: shape
+    bounds: [840, 200, 350, 340]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: card3-accent
+    elementType: shape
+    bounds: [840, 200, 350, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card3-title
+    elementType: text
+    bounds: [870, 230, 290, 36]
+    content:
+      text: |
+        <p><strong>Talent Development</strong></p>
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  - elementId: card3-content
+    elementType: text
+    bounds: [870, 280, 290, 240]
+    content:
+      text: |
+        <p>• Employee engagement at <strong>82%</strong></p>
+        <p>• Leadership pipeline filled <strong>90%</strong></p>
+        <p>• Learning hours per employee: <strong>48</strong></p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      align: [left, top]
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 660, 80, 30]
+    content:
+      text: "06"
+      style: "$caption"
+      align: [right, bottom]

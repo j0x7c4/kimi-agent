@@ -1,0 +1,50 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Left photo — tall, left side
+  - elementId: photo-left
+    elementType: image
+    bounds: [0, 57, 540, 605]
+    src: "https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?w=800&q=80"
+    fit:
+      mode: cover
+
+  # Top-right photo
+  - elementId: photo-top-right
+    elementType: image
+    bounds: [577, 57, 703, 245]
+    src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=800&q=80"
+    fit:
+      mode: cover
+
+  # Bottom-right photo
+  - elementId: photo-bottom-right
+    elementType: image
+    bounds: [869, 335, 380, 328]
+    src: "https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=500&q=80"
+    fit:
+      mode: cover
+
+  # Project title — middle area
+  - elementId: project-title
+    elementType: text
+    bounds: [577, 335, 256, 78]
+    content:
+      style: "$sectionTitle"
+      align: [left, top]
+      text: |
+        <p>EXPLORING</p>
+        <p>THE CITY</p>
+
+  # Project caption — below title
+  - elementId: project-caption
+    elementType: text
+    bounds: [577, 430, 256, 103]
+    content:
+      style: "$body"
+      align: [left, top]
+      wrap: true
+      text: |
+        <p>Quick shots taken while exploring the architecture around Venston Bay</p>

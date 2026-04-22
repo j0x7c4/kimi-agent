@@ -1,0 +1,133 @@
+pageType: chapter
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#2D1B55"}
+    - {position: 0.6, color: "#432879"}
+    - {position: 1, color: "#614F96"}
+elements:
+  # 中心区域大号半透明章节数字
+  - elementId: chapter-big-num
+    elementType: text
+    bounds: [80, 150, 600, 300]
+    content:
+      fontSize: 240
+      color: "#FFFFFF0A"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>01</p>
+
+  # 左侧章节信息（实际显示）
+  - elementId: chapter-label
+    elementType: text
+    bounds: [80, 180, 500, 28]
+    content:
+      fontSize: 16
+      color: "#8A7BB5"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 4
+      wrap: false
+      text: CHAPTER ONE
+
+  - elementId: chapter-title
+    elementType: text
+    bounds: [80, 220, 900, 70]
+    content:
+      fontSize: 40
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究背景与问题提出</strong></p>
+
+  - elementId: chapter-title-en
+    elementType: text
+    bounds: [80, 302, 800, 28]
+    content:
+      fontSize: 18
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Background and Problem Statement
+
+  - elementId: chapter-sep-line
+    elementType: shape
+    bounds: [80, 350, 300, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#8A7BB5"
+
+  # 子章节列表
+  - elementId: chapter-sub-1
+    elementType: text
+    bounds: [80, 376, 700, 26]
+    content:
+      fontSize: 16
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.1　研究动机与现实问题
+
+  - elementId: chapter-sub-2
+    elementType: text
+    bounds: [80, 412, 700, 26]
+    content:
+      fontSize: 16
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.2　研究目标与核心挑战
+
+  - elementId: chapter-sub-3
+    elementType: text
+    bounds: [80, 448, 700, 26]
+    content:
+      fontSize: 16
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 1.3　论文组织结构
+
+  # 右侧几何装饰叠加
+  - elementId: chapter-deco-circle
+    elementType: shape
+    bounds: [880, 160, 360, 360]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF15"
+
+  - elementId: chapter-deco-rect
+    elementType: shape
+    bounds: [960, 220, 280, 280]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#8A7BB50A"
+    border:
+      style: solid
+      width: 1
+      color: "#8A7BB530"
+
+  # 页码
+  - elementId: chapter-page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "3"

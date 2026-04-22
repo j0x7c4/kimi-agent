@@ -1,0 +1,186 @@
+pageType: chapter
+background:
+  type: solid
+  color: "#1A3632"
+elements:
+  - elementId: breadcrumb
+    elementType: text
+    bounds: [72, 16, 400, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Strategic Vision
+
+  - elementId: vision-statement
+    elementType: text
+    bounds: [72, 80, 1136, 40]
+    content:
+      fontSize: 28
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>构建可持续增长引擎，三年实现全球化布局</strong></p>
+
+  - elementId: vision-sub
+    elementType: text
+    bounds: [72, 130, 800, 24]
+    content:
+      fontSize: 18
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>基于三大核心支柱驱动资源整合与规模效应</p>
+
+  # Pillar 1
+  - elementId: pillar-1-bg
+    elementType: shape
+    bounds: [72, 200, 360, 400]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1E3F3A"
+
+  - elementId: pillar-1-title
+    elementType: text
+    bounds: [96, 224, 312, 32]
+    content:
+      fontSize: 22
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Pillar 1</strong></p>
+
+  - elementId: pillar-1-name
+    elementType: text
+    bounds: [96, 264, 312, 28]
+    content:
+      fontSize: 20
+      color: "#F4F1EA"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>产品技术壁垒</strong></p>
+
+  - elementId: pillar-1-body
+    elementType: text
+    bounds: [96, 304, 312, 260]
+    content:
+      fontSize: 16
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>&#8226; AI原生架构，部署效率提升10x</p>
+        <p>&#8226; 500+行业模型持续迭代</p>
+        <p>&#8226; SOC2/等保三级双认证</p>
+        <p>&#8226; 年研发投入占比30%</p>
+
+  # Pillar 2
+  - elementId: pillar-2-bg
+    elementType: shape
+    bounds: [460, 200, 360, 400]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1E3F3A"
+
+  - elementId: pillar-2-title
+    elementType: text
+    bounds: [484, 224, 312, 32]
+    content:
+      fontSize: 22
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Pillar 2</strong></p>
+
+  - elementId: pillar-2-name
+    elementType: text
+    bounds: [484, 264, 312, 28]
+    content:
+      fontSize: 20
+      color: "#F4F1EA"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>市场渠道扩张</strong></p>
+
+  - elementId: pillar-2-body
+    elementType: text
+    bounds: [484, 304, 312, 260]
+    content:
+      fontSize: 16
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>&#8226; 30+ISV生态合作伙伴</p>
+        <p>&#8226; 东南亚市场优先布局</p>
+        <p>&#8226; 渠道复购贡献40%收入</p>
+        <p>&#8226; NRR目标128%+</p>
+
+  # Pillar 3
+  - elementId: pillar-3-bg
+    elementType: shape
+    bounds: [848, 200, 360, 400]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1E3F3A"
+
+  - elementId: pillar-3-title
+    elementType: text
+    bounds: [872, 224, 312, 32]
+    content:
+      fontSize: 22
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>Pillar 3</strong></p>
+
+  - elementId: pillar-3-name
+    elementType: text
+    bounds: [872, 264, 312, 28]
+    content:
+      fontSize: 20
+      color: "#F4F1EA"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>组织效能升级</strong></p>
+
+  - elementId: pillar-3-body
+    elementType: text
+    bounds: [872, 304, 312, 260]
+    content:
+      fontSize: 16
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>&#8226; 核心管理团队到位</p>
+        <p>&#8226; OKR驱动的绩效体系</p>
+        <p>&#8226; 全球化人才梯队建设</p>
+        <p>&#8226; 客户成功体系标准化</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 56, 24]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "03"

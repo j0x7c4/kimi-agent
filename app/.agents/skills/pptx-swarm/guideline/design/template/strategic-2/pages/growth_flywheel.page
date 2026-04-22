@@ -1,0 +1,321 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: accent-stripe
+    elementType: shape
+    bounds: [0, 4, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: title-accent-mark
+    elementType: shape
+    bounds: [80, 28, 4, 32]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [96, 24, 1100, 40]
+    content:
+      fontSize: 28
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>增长飞轮：数据驱动的自增强循环</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 70, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  # ===== Center flywheel =====
+  - elementId: flywheel-center-bg
+    elementType: shape
+    bounds: [490, 285, 300, 130]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: flywheel-center-text
+    elementType: text
+    bounds: [490, 300, 300, 100]
+    content:
+      fontSize: 22
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>数据飞轮</strong></p>
+        <p><span style="font-size:13px; color:#FFFFFF80;">Data Flywheel</span></p>
+
+  # ===== Card 1: Top center — 客户获取与使用 =====
+  - elementId: card-1-bg
+    elementType: shape
+    bounds: [390, 90, 500, 80]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  - elementId: card-1-accent
+    elementType: shape
+    bounds: [390, 98, 4, 64]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: card-1-title
+    elementType: text
+    bounds: [406, 94, 470, 28]
+    content:
+      fontSize: 16
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>1. 客户获取与使用</strong></p>
+
+  - elementId: card-1-desc
+    elementType: text
+    bounds: [406, 126, 470, 30]
+    content:
+      fontSize: 14
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: "精准获客 → 深度使用 → 行为数据持续沉淀"
+
+  # ===== Card 2: Right — 数据采集与积累 =====
+  - elementId: card-2-bg
+    elementType: shape
+    bounds: [870, 220, 340, 80]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  - elementId: card-2-accent
+    elementType: shape
+    bounds: [870, 228, 4, 64]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: card-2-title
+    elementType: text
+    bounds: [886, 224, 310, 28]
+    content:
+      fontSize: 16
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>2. 数据采集与积累</strong></p>
+
+  - elementId: card-2-desc
+    elementType: text
+    bounds: [886, 256, 310, 30]
+    content:
+      fontSize: 14
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: "多维数据采集 → 数据湖 → 特征工程"
+
+  # ===== Card 3: Bottom-right — AI模型迭代 (HIGHLIGHT) =====
+  - elementId: card-3-bg
+    elementType: shape
+    bounds: [770, 420, 340, 80]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: card-3-accent
+    elementType: shape
+    bounds: [770, 428, 4, 64]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: card-3-title
+    elementType: text
+    bounds: [786, 424, 310, 28]
+    content:
+      fontSize: 16
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>3. AI模型迭代升级</strong></p>
+
+  - elementId: card-3-desc
+    elementType: text
+    bounds: [786, 456, 310, 30]
+    content:
+      fontSize: 14
+      color: "#FFFFFFcc"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: "模型训练 → 效果验证 → 自动优化"
+
+  # ===== Card 4: Bottom-left — 产品体验提升 =====
+  - elementId: card-4-bg
+    elementType: shape
+    bounds: [170, 420, 340, 80]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  - elementId: card-4-accent
+    elementType: shape
+    bounds: [170, 428, 4, 64]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: card-4-title
+    elementType: text
+    bounds: [186, 424, 310, 28]
+    content:
+      fontSize: 16
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>4. 产品体验提升</strong></p>
+
+  - elementId: card-4-desc
+    elementType: text
+    bounds: [186, 456, 310, 30]
+    content:
+      fontSize: 14
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: "智能推荐 → 个性化服务 → 满意度提升"
+
+  # ===== Card 5: Left — 口碑传播裂变 =====
+  - elementId: card-5-bg
+    elementType: shape
+    bounds: [70, 220, 340, 80]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  - elementId: card-5-accent
+    elementType: shape
+    bounds: [70, 228, 4, 64]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: card-5-title
+    elementType: text
+    bounds: [86, 224, 310, 28]
+    content:
+      fontSize: 16
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>5. 口碑传播裂变</strong></p>
+
+  - elementId: card-5-desc
+    elementType: text
+    bounds: [86, 256, 310, 30]
+    content:
+      fontSize: 14
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: "NPS提升 → 客户推荐 → 获客成本下降"
+
+  # ===== Bottom insight =====
+  - elementId: insight-bg
+    elementType: shape
+    bounds: [80, 540, 1120, 60]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: insight-text
+    elementType: text
+    bounds: [100, 540, 1080, 60]
+    content:
+      fontSize: 15
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="color:#B45309;"><strong>飞轮核心：</strong></span>每一轮循环使数据资产增值 15-20%，模型精度提升 3-5%，客户获取成本下降 10%，形成竞争对手难以复制的壁垒</p>
+
+  # Source
+  - elementId: source-text
+    elementType: text
+    bounds: [80, 668, 600, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Source: 内部数据分析, 增长模型推演, 2024Q4</p>
+
+  # Page number
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "11"

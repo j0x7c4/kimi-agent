@@ -1,0 +1,152 @@
+pageType: cover
+background:
+  type: solid
+  color: $darkBg
+elements:
+  - elementId: cover-watermark-tl
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 120
+      - 120
+    shapeName: rect
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF08"
+  - elementId: cover-watermark-br
+    elementType: shape
+    bounds:
+      - 1160
+      - 600
+      - 120
+      - 120
+    shapeName: rect
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF08"
+  - elementId: cover-logo
+    elementType: shape
+    bounds:
+      - 616
+      - 120
+      - 48
+      - 48
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF30"
+  - elementId: cover-ornament-top
+    elementType: shape
+    bounds:
+      - 540
+      - 192
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: $accent
+  - elementId: cover-ornament-bottom
+    elementType: shape
+    bounds:
+      - 540
+      - 196
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: $accent
+  - elementId: cover-title
+    elementType: text
+    bounds:
+      - 140
+      - 230
+      - 1000
+      - 60
+    wrap: false
+    content:
+      fontSize: 44
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>2025–2028 集团战略发展规划</strong></p>
+  - elementId: cover-subtitle
+    elementType: text
+    bounds:
+      - 240
+      - 300
+      - 800
+      - 36
+    wrap: false
+    content:
+      fontSize: 22
+      color: $lightCopper
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>—— 迈向全球化的新十年</p>
+  - elementId: cover-bottom-line
+    elementType: shape
+    bounds:
+      - 490
+      - 560
+      - 300
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $accent
+  - elementId: cover-presenter
+    elementType: text
+    bounds:
+      - 340
+      - 580
+      - 600
+      - 24
+    wrap: false
+    content:
+      fontSize: 14
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>汇报人：XX集团战略发展部 · XXX</p>
+  - elementId: cover-date
+    elementType: text
+    bounds:
+      - 340
+      - 610
+      - 600
+      - 24
+    wrap: false
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>2025年X月 · 机密文件</p>

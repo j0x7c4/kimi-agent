@@ -1,0 +1,241 @@
+pageType: content
+background:
+  type: solid
+  color: "#F4F1EA"
+elements:
+  - elementId: breadcrumb
+    elementType: text
+    bounds: [72, 16, 400, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Governance / Organization Structure
+
+  - elementId: page-title
+    elementType: text
+    bounds: [72, 48, 1136, 36]
+    content:
+      fontSize: 28
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>扁平化治理架构，驱动高效执行与快速决策</strong></p>
+
+  # Top: CEO box
+  - elementId: ceo-box
+    elementType: shape
+    bounds: [460, 120, 360, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1A3632"
+
+  - elementId: ceo-text
+    elementType: text
+    bounds: [460, 132, 360, 56]
+    content:
+      fontSize: 18
+      color: "#F4F1EA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>CEO / 战略委员会</strong></p>
+        <p style="font-size:14px;">全局战略决策 · 资源配置</p>
+
+  # Connector lines (vertical from CEO to 4 departments)
+  - elementId: conn-center
+    elementType: shape
+    bounds: [640, 200, 0, 40]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D97706"
+
+  - elementId: conn-h
+    elementType: shape
+    bounds: [210, 240, 860, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D97706"
+
+  # 4 department boxes
+  # Dept 1: CTO
+  - elementId: dept-1-box
+    elementType: shape
+    bounds: [72, 270, 270, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: dept-1-title
+    elementType: text
+    bounds: [88, 284, 238, 28]
+    content:
+      fontSize: 18
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>CTO / 技术</strong></p>
+
+  - elementId: dept-1-body
+    elementType: text
+    bounds: [88, 320, 238, 110]
+    content:
+      fontSize: 14
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>&#8226; AI引擎研发</p>
+        <p>&#8226; 平台架构</p>
+        <p>&#8226; 数据安全合规</p>
+        <p>&#8226; 团队规模: 45人</p>
+
+  # Dept 2: CMO
+  - elementId: dept-2-box
+    elementType: shape
+    bounds: [366, 270, 270, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: dept-2-title
+    elementType: text
+    bounds: [382, 284, 238, 28]
+    content:
+      fontSize: 18
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>CMO / 市场</strong></p>
+
+  - elementId: dept-2-body
+    elementType: text
+    bounds: [382, 320, 238, 110]
+    content:
+      fontSize: 14
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>&#8226; 品牌与获客</p>
+        <p>&#8226; 渠道合作伙伴</p>
+        <p>&#8226; 客户成功</p>
+        <p>&#8226; 团队规模: 30人</p>
+
+  # Dept 3: CFO
+  - elementId: dept-3-box
+    elementType: shape
+    bounds: [660, 270, 270, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: dept-3-title
+    elementType: text
+    bounds: [676, 284, 238, 28]
+    content:
+      fontSize: 18
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>CFO / 财务</strong></p>
+
+  - elementId: dept-3-body
+    elementType: text
+    bounds: [676, 320, 238, 110]
+    content:
+      fontSize: 14
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>&#8226; 财务规划与分析</p>
+        <p>&#8226; 投资者关系</p>
+        <p>&#8226; 合规与审计</p>
+        <p>&#8226; 团队规模: 12人</p>
+
+  # Dept 4: COO
+  - elementId: dept-4-box
+    elementType: shape
+    bounds: [954, 270, 254, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: dept-4-title
+    elementType: text
+    bounds: [970, 284, 222, 28]
+    content:
+      fontSize: 18
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>COO / 运营</strong></p>
+
+  - elementId: dept-4-body
+    elementType: text
+    bounds: [970, 320, 222, 110]
+    content:
+      fontSize: 14
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p>&#8226; 产品交付</p>
+        <p>&#8226; 供应链管理</p>
+        <p>&#8226; 国际化运营</p>
+        <p>&#8226; 团队规模: 25人</p>
+
+  # Key metrics at bottom
+  - elementId: metric-bg
+    elementType: shape
+    bounds: [72, 490, 1136, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: metric-text
+    elementType: text
+    bounds: [96, 502, 1088, 56]
+    content:
+      fontSize: 18
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p>全员 <span style="color:#D97706;"><strong>112人</strong></span> · 研发占比 <span style="color:#D97706;"><strong>40%</strong></span> · 人均创收 <span style="color:#D97706;"><strong>$110K</strong></span> · 核心管理层平均从业 <span style="color:#D97706;"><strong>15年+</strong></span></p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 56, 24]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "07"

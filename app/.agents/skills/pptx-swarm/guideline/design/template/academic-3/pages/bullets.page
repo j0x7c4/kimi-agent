@@ -1,0 +1,281 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: content-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: content-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: content-section-name
+    elementType: text
+    bounds: [900, 16, 340, 22]
+    content:
+      fontSize: 12
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: 02 文献综述与理论基础
+
+  - elementId: page-title
+    elementType: text
+    bounds: [40, 24, 840, 36]
+    content:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>相关工作综述与研究空白分析</strong></p>
+
+  - elementId: title-separator
+    elementType: shape
+    bounds: [40, 68, 1200, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  # Bullet 1
+  - elementId: bullet-1-num
+    elementType: shape
+    bounds: [40, 88, 30, 30]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bullet-1-num-text
+    elementType: text
+    bounds: [40, 88, 30, 30]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "1"
+
+  - elementId: bullet-1-title
+    elementType: text
+    bounds: [86, 88, 1154, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>传统方法回顾</strong></p>
+
+  - elementId: bullet-1-content
+    elementType: text
+    bounds: [86, 122, 1154, 60]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p>早期研究以规则驱动和统计建模为主，在封闭场景中取得了一定成效，但泛化能力受限，难以应对真实分布偏移。代表性工作包括基于 HMM 的序列建模方法（Smith et al., 2015）以及 SVM 分类框架（Lee et al., 2017）。</p>
+
+  - elementId: sep-1
+    elementType: shape
+    bounds: [40, 194, 1200, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  # Bullet 2
+  - elementId: bullet-2-num
+    elementType: shape
+    bounds: [40, 212, 30, 30]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: bullet-2-num-text
+    elementType: text
+    bounds: [40, 212, 30, 30]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "2"
+
+  - elementId: bullet-2-title
+    elementType: text
+    bounds: [86, 212, 1154, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>深度学习方法进展</strong></p>
+
+  - elementId: bullet-2-content
+    elementType: text
+    bounds: [86, 246, 1154, 60]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p>基于 CNN/Transformer 的方法在多个基准上达到 SOTA，尤其在大规模预训练范式下效果显著提升。BERT 及其变体（Devlin et al., 2019）开创了预训练-微调范式，GPT 系列则推动了生成式方法的快速发展。</p>
+
+  - elementId: sep-2
+    elementType: shape
+    bounds: [40, 318, 1200, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  # Bullet 3
+  - elementId: bullet-3-num
+    elementType: shape
+    bounds: [40, 336, 30, 30]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: bullet-3-num-text
+    elementType: text
+    bounds: [40, 336, 30, 30]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "3"
+
+  - elementId: bullet-3-title
+    elementType: text
+    bounds: [86, 336, 1154, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>现有方法的局限性</strong></p>
+
+  - elementId: bullet-3-content
+    elementType: text
+    bounds: [86, 370, 1154, 60]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p>现有方法普遍存在数据依赖重、计算成本高、跨域迁移弱等问题，在低资源场景下表现大幅下降。此外，模型可解释性不足已成为制约其在关键领域（如医疗、金融）应用的核心障碍。</p>
+
+  - elementId: sep-3
+    elementType: shape
+    bounds: [40, 442, 1200, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  # Bullet 4
+  - elementId: bullet-4-num
+    elementType: shape
+    bounds: [40, 460, 30, 30]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: bullet-4-num-text
+    elementType: text
+    bounds: [40, 460, 30, 30]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "4"
+
+  - elementId: bullet-4-title
+    elementType: text
+    bounds: [86, 460, 1154, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>本研究切入点与创新</strong></p>
+
+  - elementId: bullet-4-content
+    elementType: text
+    bounds: [86, 494, 1154, 60]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p>针对以上研究空白，本文提出基于 [核心机制] 的轻量化框架，通过引入 [创新模块] 有效解决效率与泛化之间的矛盾，在保持精度的同时将推理速度提升 3 倍以上。</p>
+
+  # 结论强调框
+  - elementId: conclusion-bg
+    elementType: shape
+    bounds: [40, 580, 1200, 60]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#E3F0FA"
+
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [60, 580, 1160, 60]
+    content:
+      fontSize: 15
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.5
+      text: |
+        <p><strong>研究定位：</strong>本文在充分调研现有工作的基础上，识别关键研究空白——缺乏兼顾效率与泛化能力的统一框架——提出具有针对性的轻量化技术方案。</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "5"

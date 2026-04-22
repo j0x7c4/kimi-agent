@@ -1,0 +1,90 @@
+# ============================================================
+# kimi-agent-gateway Dockerfile
+# ============================================================
+# 构建步骤:
+#   docker build -f Dockerfile.gateway -t kimi-agent-gateway:latest .
+# ============================================================
+
+# -----------------------------------------------------------
+# Stage 1: Build frontend (React/Vite)
+# -----------------------------------------------------------
+FROM node:20-slim AS web-builder
+WORKDIR /build
+
+# Install dependencies
+COPY kimi-cli/web/package.json kimi-cli/web/package-lock.json ./
+RUN npm ci
+
+# Copy source and build
+COPY kimi-cli/web/ ./
+RUN npm run build
+
+# -----------------------------------------------------------
+# Stage 2: Install Python dependencies
+# -----------------------------------------------------------
+FROM python:3.12-slim-bookworm AS deps
+WORKDIR /deps
+
+# Copy package files
+COPY kimi-cli/pyproject.toml kimi-cli/uv.lock ./
+COPY kimi-cli/packages/ ./packages/
+COPY kimi-cli/sdks/ ./sdks/
+
+# Install uv and project dependencies (including workspace packages)
+RUN pip install --no-cache-dir uv \
+    && uv pip install --system -r pyproject.toml \
+    && uv pip install --system --no-deps \
+        ./packages/kosong \
+        ./packages/kaos
+
+# Install Docker SDK for container orchestration
+RUN pip install --no-cache-dir docker>=7.0.0
+
+# -----------------------------------------------------------
+# Stage 3: Final gateway image
+# -----------------------------------------------------------
+FROM python:3.12-slim-bookworm
+WORKDIR /app
+
+# Install runtime system dependencies (git + docker CLI for container orchestration)
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git curl ca-certificates \
+    && rm -rf /var/lib/apt/lists/* \
+    && DOCKER_ARCH=$(dpkg --print-architecture) \
+    && if [ "$DOCKER_ARCH" = "arm64" ]; then DOCKER_ARCH="aarch64"; fi \
+    && curl -fsSL "https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-27.3.1.tgz" \
+       | tar xz -C /tmp --strip-components=1 docker/docker \
+    && mv /tmp/docker /usr/local/bin/docker \
+    && chmod +x /usr/local/bin/docker
+
+# Copy Python packages from deps stage
+COPY --from=deps /usr/local/lib/python3.12/site-packages /usr/local/lib/python3.12/site-packages
+COPY --from=deps /usr/local/bin /usr/local/bin
+
+# Copy frontend build output to the static directory app.py expects
+COPY --from=web-builder /build/dist /app/src/kimi_cli/web/static
+
+# Copy source code
+COPY kimi-cli/src/ /app/src/
+COPY kimi-cli/packages/ /app/packages/
+
+# Register kimi-cli package metadata so importlib.metadata works
+RUN mkdir -p /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info \
+    && printf 'Name: kimi-cli\nVersion: 1.37.0\n' > /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info/METADATA \
+    && touch /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info/INSTALLER \
+    && touch /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info/RECORD
+
+# Create sessions data directory
+RUN mkdir -p /data/sessions
+
+# Copy and setup entry script
+COPY scripts/start-gateway.sh /start-gateway.sh
+RUN chmod +x /start-gateway.sh
+
+EXPOSE 5494
+
+# Healthcheck
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:5494/healthz')" || exit 1
+
+CMD ["/start-gateway.sh"]

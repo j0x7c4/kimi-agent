@@ -1,0 +1,308 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 50]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p>学习规划：三周攻克函数与方程</p>
+
+  # 时间轴主线
+  - elementId: timeline-main
+    elementType: shape
+    bounds: [120, 340, 1040, 4]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "$primary"}
+        - {position: 0.5, color: "$accent"}
+        - {position: 1, color: "$primary"}
+
+  # 第1周
+  - elementId: week1-circle
+    elementType: shape
+    bounds: [180, 320, 44, 44]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+    border:
+      style: solid
+      width: 4
+      color: "$white"
+
+  - elementId: week1-text
+    elementType: text
+    bounds: [180, 320, 44, 44]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "1"
+
+  - elementId: week1-card
+    elementType: shape
+    bounds: [110, 170, 180, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    shadow:
+      blur: 12
+      color: "#00000008"
+      offset: [0, 4]
+
+  - elementId: week1-title
+    elementType: text
+    bounds: [125, 190, 150, 30]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>第1周</strong></p>
+
+  - elementId: week1-content
+    elementType: text
+    bounds: [125, 225, 150, 65]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+      text: |
+        <p>一次函数基础</p>
+        <p><span style="font-size:14px; color:$lightText;">概念 + 图像</span></p>
+
+  # 第2周
+  - elementId: week2-circle
+    elementType: shape
+    bounds: [480, 320, 44, 44]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 4
+      color: "$white"
+
+  - elementId: week2-text
+    elementType: text
+    bounds: [480, 320, 44, 44]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "2"
+
+  - elementId: week2-card
+    elementType: shape
+    bounds: [415, 385, 180, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    shadow:
+      blur: 12
+      color: "#00000008"
+      offset: [0, 4]
+
+  - elementId: week2-title
+    elementType: text
+    bounds: [430, 405, 150, 30]
+    content:
+      fontSize: 20
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>第2周</strong></p>
+
+  - elementId: week2-content
+    elementType: text
+    bounds: [430, 440, 150, 65]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+      text: |
+        <p>一元二次方程</p>
+        <p><span style="font-size:14px; color:$lightText;">四种解法</span></p>
+
+  # 第3周
+  - elementId: week3-circle
+    elementType: shape
+    bounds: [780, 320, 44, 44]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+    border:
+      style: solid
+      width: 4
+      color: "$white"
+
+  - elementId: week3-text
+    elementType: text
+    bounds: [780, 320, 44, 44]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "3"
+
+  - elementId: week3-card
+    elementType: shape
+    bounds: [715, 170, 180, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    shadow:
+      blur: 12
+      color: "#00000008"
+      offset: [0, 4]
+
+  - elementId: week3-title
+    elementType: text
+    bounds: [730, 190, 150, 30]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>第3周</strong></p>
+
+  - elementId: week3-content
+    elementType: text
+    bounds: [730, 225, 150, 65]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+      text: |
+        <p>综合应用</p>
+        <p><span style="font-size:14px; color:$lightText;">真题 + 模拟</span></p>
+
+  # 成果展示
+  - elementId: result-circle
+    elementType: shape
+    bounds: [1080, 320, 44, 44]
+    shapeName: star5
+    adjustments: [19098, 105146, 110557]
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: result-card
+    elementType: shape
+    bounds: [1010, 385, 180, 130]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "$accent"}
+        - {position: 1, color: "#FFD54F"}
+    shadow:
+      blur: 16
+      color: "#FFC10720"
+      offset: [0, 4]
+
+  - elementId: result-icon
+    elementType: icon
+    bounds: [1085, 405, 30, 30]
+    iconName: "fas:trophy"
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: result-text
+    elementType: text
+    bounds: [1030, 445, 140, 50]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>单元满分！</strong></p>
+
+  # 关键提示
+  - elementId: tips-bg
+    elementType: shape
+    bounds: [80, 540, 1120, 140]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 1
+      color: "$primary"
+
+  - elementId: tips-title
+    elementType: text
+    bounds: [120, 558, 200, 34]
+    content:
+      style: "$emphasis"
+      text: |
+        <p>复习要诀</p>
+
+  - elementId: tip1
+    elementType: text
+    bounds: [120, 595, 340, 80]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      text: |
+        <p>&#10003; 每天做3道计算题保持手感</p>
+        <p>&#10003; 整理错题本归类易错点</p>
+
+  - elementId: tip2
+    elementType: text
+    bounds: [480, 595, 340, 80]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      text: |
+        <p>&#10003; 画函数图像加深直观理解</p>
+        <p>&#10003; 与同学讨论不同解题思路</p>
+
+  - elementId: tip3
+    elementType: text
+    bounds: [840, 595, 340, 80]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      text: |
+        <p>&#10003; 限时训练提高解题速度</p>
+        <p>&#10003; 周末做一套综合模拟卷</p>

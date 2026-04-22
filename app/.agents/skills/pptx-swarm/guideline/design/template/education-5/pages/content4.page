@@ -1,0 +1,185 @@
+pageType: content
+background:
+  type: solid
+  color: "#F9F7F4"
+elements:
+  # Top 4px navy header line
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  # Chapter name header (left)
+  - elementId: header-chapter
+    elementType: text
+    bounds: [60, 12, 700, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">第四章 · 学术论辩与争议焦点</span></p>
+
+  # Page number
+  - elementId: header-pagenum
+    elementType: text
+    bounds: [1200, 12, 60, 22]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">07</span></p>
+
+  # Main title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 50, 1160, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>Debate · 争议焦点：理论模型的适用边界</strong></span></p>
+
+  # Gold line under title
+  - elementId: title-gold-line
+    elementType: shape
+    bounds: [400, 100, 480, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  # Center vertical gray divider
+  - elementId: center-divider
+    elementType: shape
+    bounds: [636, 116, 0, 410]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D6CFC4"
+
+  # Left column header - Supporting views (navy left border)
+  - elementId: left-header-border
+    elementType: shape
+    bounds: [60, 116, 4, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  - elementId: left-header-text
+    elementType: text
+    bounds: [74, 116, 540, 44]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:24px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>支持观点 · Pro Arguments</strong></span></p>
+
+  # Left column - Supporting arguments
+  - elementId: left-arg-border
+    elementType: shape
+    bounds: [60, 176, 4, 340]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2B6777"
+
+  - elementId: left-arg-text
+    elementType: text
+    bounds: [76, 176, 542, 340]
+    content:
+      fontSize: 20
+      color: "#2C3E50"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>论据一</strong>：大量实证研究（N&gt;50项）表明，在经济发展水平较高的地区，该理论模型的解释力达<span style="color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>R²=0.72</strong></span>，具有较强统计稳健性。</span></p>
+        <p style="margin-top:16px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>论据二</strong>：跨国比较研究显示，模型预测方向在 OECD 国家中高度一致，支持普适性假设。</span></p>
+        <p style="margin-top:16px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>论据三</strong>：元分析（Meta-analysis）结果综合效应量为 d=0.58，属于中等至强效应，结论可靠。</span></p>
+
+  # Right column header - Critical views (rose-red left border)
+  - elementId: right-header-border
+    elementType: shape
+    bounds: [654, 116, 4, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#C17050"
+
+  - elementId: right-header-text
+    elementType: text
+    bounds: [668, 116, 558, 44]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:24px; color:#C17050; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>批判观点 · Critical Arguments</strong></span></p>
+
+  # Right column - Critical arguments
+  - elementId: right-arg-border
+    elementType: shape
+    bounds: [654, 176, 4, 340]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#C17050"
+
+  - elementId: right-arg-text
+    elementType: text
+    bounds: [670, 176, 570, 340]
+    content:
+      fontSize: 20
+      color: "#2C3E50"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>批判一</strong>：该模型高度依赖西方制度背景，在新兴经济体的适用性存疑，样本选择偏差可能导致高估效应。</span></p>
+        <p style="margin-top:16px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>批判二</strong>：内生性问题未得到有效解决，因果推断的可靠性受到质疑，需要准实验方法加以验证。</span></p>
+        <p style="margin-top:16px"><span style="font-size:20px; font-family:SortsMillGoudy, MiSans, MiSans; color:#2C3E50;"><strong>批判三</strong>：测量工具的跨文化效度不足，概念操作化存在分歧，限制了跨地区比较的有效性。</span></p>
+
+  # Bottom gold "Integrated Position" bar
+  - elementId: synthesis-bar-bg
+    elementType: shape
+    bounds: [60, 534, 1160, 52]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#D4956A"
+
+  - elementId: synthesis-bar-text
+    elementType: text
+    bounds: [80, 534, 1120, 52]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#2B6777; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>综合立场：</strong></span><span style="font-size:20px; color:#2C3E50; font-family:SortsMillGoudy, MiSans, MiSans;">理论模型在特定条件下成立，适用性受制度背景与测量效度双重约束，未来研究应聚焦于情境化改进与跨文化验证。</span></p>
+
+  # Footer reference
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 620, 1160, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D6CFC4"
+
+  - elementId: footer-ref
+    elementType: text
+    bounds: [60, 628, 1100, 28]
+    content:
+      fontSize: 13
+      color: "#5E8B9E"
+      fontFamily: "Liter, MiSans, MiSans"
+      lineHeight: 1.3
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; font-style:italic; color:#5E8B9E; font-family:SortsMillGoudy, MiSans, MiSans;">主要争议来源：Smith (2022), Journal of X; 李明等（2023），《学报》；综合立场参见 IPCC (2024) 综述。</span></p>

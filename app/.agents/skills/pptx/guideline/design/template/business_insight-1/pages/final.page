@@ -1,0 +1,110 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧大色块
+  - elementId: left-block
+    elementType: shape
+    bounds: [0, 0, 480, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 左侧大标题
+  - elementId: final-title
+    elementType: text
+    bounds: [60, 220, 360, 80]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:44px; color:#ffffff;"><strong>Thank You</strong></span></p>
+
+  # 左侧装饰线
+  - elementId: final-line
+    elementType: shape
+    bounds: [60, 320, 140, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "#ffffff80"}
+
+  # 左侧副标题
+  - elementId: final-subtitle
+    elementType: text
+    bounds: [60, 340, 360, 80]
+    content:
+      align: [left, top]
+      fontSize: 18
+      color: "#ffffffcc"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p>For questions and further discussion, please reach out to the team</p>
+
+  # 右侧内容区域
+  # 标题
+  - elementId: contact-title
+    elementType: text
+    bounds: [560, 200, 600, 35]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#333333;"><strong>Next Steps & Contact</strong></span></p>
+
+  # 分隔线
+  - elementId: contact-line
+    elementType: shape
+    bounds: [560, 245, 300, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # 下一步行动
+  - elementId: next-steps
+    elementType: text
+    bounds: [560, 270, 650, 200]
+    content:
+      fontSize: 15
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:15px;"><strong>1. Review & Alignment</strong></span></p>
+        <p><span style="font-size:14px; color:#666666;">Schedule follow-up meeting with stakeholders to discuss findings</span></p>
+        <p style="margin-top:10px"><span style="font-size:15px;"><strong>2. Deep Dive Analysis</strong></span></p>
+        <p><span style="font-size:14px; color:#666666;">Conduct detailed due diligence on top 3 opportunity areas</span></p>
+        <p style="margin-top:10px"><span style="font-size:15px;"><strong>3. Action Plan</strong></span></p>
+        <p><span style="font-size:14px; color:#666666;">Develop 90-day implementation roadmap with clear ownership</span></p>
+
+  # 联系信息区域
+  - elementId: contact-bg
+    elementType: shape
+    bounds: [560, 480, 650, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: contact-info
+    elementType: text
+    bounds: [580, 492, 610, 84]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px;"><strong>Project Lead:</strong> XXX | xxx@company.com</span></p>
+        <p><span style="font-size:14px;"><strong>Analytics Team:</strong> analytics@company.com</span></p>
+        <p><span style="font-size:14px;"><strong>Document Classification:</strong> Confidential</span></p>
+
+  # 底部装饰条
+  - elementId: bottom-bar
+    elementType: shape
+    bounds: [480, 714, 800, 6]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"

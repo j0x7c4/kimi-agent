@@ -1,0 +1,105 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 60, 800, 50]
+    content:
+      style: "$title"
+      align: [left, middle]
+      text: |
+        <p><strong>茶叶发展的关键里程碑</strong></p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 120, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 左侧内容区
+  - elementId: left-content
+    elementType: text
+    bounds: [100, 160, 500, 400]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p><strong>神农时代</strong></p>
+        <p>• 传说始于公元前 <span style="color:$accent; font-size:24px;"><strong>2737年</strong></span></p>
+        <p>• 茶作为药用植物被发现</p>
+        <p>• 最早的饮茶记录</p>
+        <p style="margin-top:30px;"><strong>唐代（618–907）</strong></p>
+        <p>• 陆羽《茶经》问世，茶文化 <span style="color:$accent;"><strong>正式形成</strong></span></p>
+        <p>• 饼茶流行，煎茶法盛行</p>
+        <p>• 茶叶贸易开始繁荣</p>
+
+  # 右侧数据卡片
+  - elementId: data-card-bg
+    elementType: shape
+    bounds: [680, 180, 480, 360]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 12
+      color: "#00000008"
+      offset: [0, 4]
+
+  # 数据可视化
+  - elementId: chart-area
+    elementType: chart
+    bounds: [720, 220, 400, 280]
+    type: line
+    data:
+      - {era: "汉代", production: 0.5, trade: 0.1}
+      - {era: "唐代", production: 2.0, trade: 0.8}
+      - {era: "宋代", production: 4.5, trade: 2.0}
+      - {era: "明代", production: 8.0, trade: 5.0}
+    x: era
+    y: [production, trade]
+    names: ["茶叶产量", "贸易规模"]
+    colors: ["$accent", "$textLight"]
+    options:
+      fontFamily: "Liter, MiSans"
+    seriesStyle:
+      "*":
+        smooth: true
+        width: 3
+      production:
+        marker:
+          size: 8
+          fill: {type: solid, color: "$accent"}
+      trade:
+        line: dash
+        marker:
+          shape: square
+          size: 6
+    xAxis:
+      label:
+        fontSize: 14
+        color: "$textLight"
+    yAxis:
+      title: "相对规模（万担）"
+      gridLine:
+        color: "#F0F0F0"
+    legend:
+      position: bottom
+      fontSize: 14
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 670, 80, 30]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      text: |
+        <p>04</p>

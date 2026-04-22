@@ -1,0 +1,59 @@
+pageType: chapter
+background:
+  type: solid
+  color: "#10B981"
+elements:
+# --- Decorative ---
+- elementId: deco_gradient
+  elementType: shape
+  bounds: [0, 0, 1920, 1080]
+  shapeName: rect
+  fill:
+    type: gradient
+    gradientType: linear
+    angle: 225
+    stops:
+      - {position: 0, color: "#10B98100"}
+      - {position: 1, color: "#1A1A1A25"}
+- elementId: deco_ellipse1
+  elementType: shape
+  bounds: [1550, 700, 300, 300]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF10"
+- elementId: deco_ellipse2
+  elementType: shape
+  bounds: [50, 50, 200, 200]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#FFFFFF08"
+- elementId: deco_line
+  elementType: shape
+  bounds: [204, 470, 1512, 3]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#FFFFFF30"
+# --- Content ---
+- elementId: text_subtitle
+  elementType: text
+  bounds: [204.2, 375.36, 1511.59, 58.93]
+  content:
+    align: [center, top]
+    fontSize: 40
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 50
+    text: Our Mission
+- elementId: text_title
+  elementType: text
+  bounds: [204.2, 495.2, 1511.59, 207.94]
+  content:
+    align: [center, top]
+    fontSize: 80
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 100
+    text: Company growth through the use of research, marketing, and sales.

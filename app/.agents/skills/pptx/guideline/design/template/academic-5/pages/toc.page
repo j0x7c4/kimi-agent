@@ -1,0 +1,269 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧深蓝色块（DNA特征：左侧1/3+超大水印）
+  - elementId: toc-left-bg
+    elementType: shape
+    bounds: [0, 0, 380, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 180
+      stops:
+        - {position: 0, color: "#004060"}
+        - {position: 1, color: "#005C82"}
+
+  # 半透明大字水印（DNA特征）
+  - elementId: toc-watermark
+    elementType: text
+    bounds: [0, 380, 380, 160]
+    content:
+      fontSize: 72
+      color: "#FFFFFF08"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: CONTENT
+
+  # 左侧校标区
+  - elementId: toc-logo-circle
+    elementType: shape
+    bounds: [30, 30, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "#00ACC1"
+
+  # 左侧标题
+  - elementId: toc-title-cn
+    elementType: text
+    bounds: [30, 280, 320, 60]
+    content:
+      fontSize: 46
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>目录</strong></p>
+
+  - elementId: toc-title-en
+    elementType: text
+    bounds: [30, 346, 320, 24]
+    content:
+      fontSize: 14
+      color: "#00ACC1"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 3
+      wrap: false
+      text: CONTENTS
+
+  - elementId: toc-left-deco-line
+    elementType: shape
+    bounds: [30, 272, 80, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#00ACC1"
+
+  # 右侧目录项（DNA特征：菱形引导符 + 英文副标题）
+  - elementId: toc-diamond-1
+    elementType: shape
+    bounds: [414, 120, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: toc-item-1
+    elementType: text
+    bounds: [440, 110, 700, 28]
+    content:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究背景与问题提出</strong></p>
+
+  - elementId: toc-item-1-en
+    elementType: text
+    bounds: [440, 141, 700, 20]
+    content:
+      fontSize: 14
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Background and Problem Statement
+
+  - elementId: toc-sep-1
+    elementType: shape
+    bounds: [400, 172, 840, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0F4FA"
+
+  - elementId: toc-diamond-2
+    elementType: shape
+    bounds: [414, 198, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: toc-item-2
+    elementType: text
+    bounds: [440, 188, 700, 28]
+    content:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>文献综述与理论基础</strong></p>
+
+  - elementId: toc-item-2-en
+    elementType: text
+    bounds: [440, 219, 700, 20]
+    content:
+      fontSize: 14
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Literature Review and Theoretical Foundation
+
+  - elementId: toc-sep-2
+    elementType: shape
+    bounds: [400, 250, 840, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0F4FA"
+
+  - elementId: toc-diamond-3
+    elementType: shape
+    bounds: [414, 276, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: toc-item-3
+    elementType: text
+    bounds: [440, 266, 700, 28]
+    content:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究方法与技术路线</strong></p>
+
+  - elementId: toc-item-3-en
+    elementType: text
+    bounds: [440, 297, 700, 20]
+    content:
+      fontSize: 14
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Methodology and Technical Roadmap
+
+  - elementId: toc-sep-3
+    elementType: shape
+    bounds: [400, 328, 840, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0F4FA"
+
+  - elementId: toc-diamond-4
+    elementType: shape
+    bounds: [414, 354, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: toc-item-4
+    elementType: text
+    bounds: [440, 344, 700, 28]
+    content:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>实验结果与讨论</strong></p>
+
+  - elementId: toc-item-4-en
+    elementType: text
+    bounds: [440, 375, 700, 20]
+    content:
+      fontSize: 14
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Experimental Results and Discussion
+
+  - elementId: toc-sep-4
+    elementType: shape
+    bounds: [400, 406, 840, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E0F4FA"
+
+  - elementId: toc-diamond-5
+    elementType: shape
+    bounds: [414, 432, 14, 14]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: toc-item-5
+    elementType: text
+    bounds: [440, 422, 700, 28]
+    content:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>结论与研究展望</strong></p>
+
+  - elementId: toc-item-5-en
+    elementType: text
+    bounds: [440, 453, 700, 20]
+    content:
+      fontSize: 14
+      color: "$grayBlue"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Conclusions and Future Work
+
+  # 页码
+  - elementId: toc-page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "2"

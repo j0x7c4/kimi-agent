@@ -1,0 +1,82 @@
+pageType: cover
+elements:
+# --- Decorative: semi-transparent geometric accents ---
+- elementId: deco_circle1
+  elementType: shape
+  bounds: [1400, 500, 380, 380]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#10B98118"
+- elementId: deco_circle2
+  elementType: shape
+  bounds: [1550, 650, 260, 260]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#1A1A1A12"
+- elementId: deco_hline
+  elementType: shape
+  bounds: [1300, 750, 500, 3]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B98140"
+- elementId: deco_vline
+  elementType: shape
+  bounds: [1200, 600, 3, 300]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#1A1A1A20"
+# --- Logo badge ---
+- elementId: logo_bg
+  elementType: shape
+  bounds: [108, 140, 200, 80]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B981"
+- elementId: text_logo
+  elementType: text
+  bounds: [137.12, 169.04, 172.59, 64.89]
+  content:
+    align: [center, top]
+    fontSize: 42.7
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 59.73
+    text: A/X
+# --- Content ---
+- elementId: text_num
+  elementType: text
+  bounds: [1531.57, 106.9, 290.03, 206.21]
+  content:
+    align: [right, top]
+    fontSize: 160
+    fontFamily: "Liter, deyihei"
+    color: "#10B981"
+    lineHeightPx: 199.99
+    text: '01'
+- elementId: text_title
+  elementType: text
+  bounds: [1003.14, 670.44, 818.46, 306.36]
+  content:
+    align: [right, top]
+    fontSize: 120
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 150
+    text: New Hire Onboarding
+- elementId: text_sidebar
+  elementType: text
+  bounds: [-21.18, 829.7, 262.23, 35.14]
+  rotation: 270
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING

@@ -1,0 +1,499 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 80
+      - 60
+      - 800
+      - 50
+    content:
+      style: $title
+      align:
+        - left
+        - middle
+      text: |
+        <p>案例分析：从理论到实践的转化</p>
+  - elementId: case-bg
+    elementType: shape
+    bounds:
+      - 80
+      - 140
+      - 480
+      - 200
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset:
+        - 0
+        - 2
+  - elementId: case-title
+    elementType: text
+    bounds:
+      - 110
+      - 160
+      - 420
+      - 40
+    content:
+      fontSize: 22
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>案例：构建个人知识管理系统</strong></p>
+  - elementId: case-desc
+    elementType: text
+    bounds:
+      - 110
+      - 200
+      - 420
+      - 140
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>张明是一位产品经理，面对海量的行业信息和快速变化的技术趋势，他需要建立一套高效的知识管理体系。让我们看看他如何运用系统化方法解决这个挑战。</p>
+  - elementId: case-image-container
+    elementType: shape
+    bounds:
+      - 600
+      - 140
+      - 600
+      - 200
+    opacity: 0.1
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - position: 0
+          color: $accent
+        - position: 1
+          color: $accent2
+  - elementId: km-center
+    elementType: shape
+    bounds:
+      - 850
+      - 210
+      - 100
+      - 60
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $primary
+  - elementId: km-center-text
+    elementType: text
+    bounds:
+      - 850
+      - 210
+      - 100
+      - 60
+    content:
+      fontSize: 14
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>知识库</p>
+  - elementId: input1
+    elementType: shape
+    bounds:
+      - 680
+      - 160
+      - 80
+      - 40
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: input1-text
+    elementType: text
+    bounds:
+      - 680
+      - 160
+      - 80
+      - 40
+    content:
+      fontSize: 12
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        文章
+  - elementId: input2
+    elementType: shape
+    bounds:
+      - 680
+      - 240
+      - 80
+      - 40
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: input2-text
+    elementType: text
+    bounds:
+      - 680
+      - 240
+      - 80
+      - 40
+    content:
+      fontSize: 12
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        课程
+  - elementId: output1
+    elementType: shape
+    bounds:
+      - 1040
+      - 160
+      - 80
+      - 40
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: output1-text
+    elementType: text
+    bounds:
+      - 1040
+      - 160
+      - 80
+      - 40
+    content:
+      fontSize: 12
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        方案
+  - elementId: output2
+    elementType: shape
+    bounds:
+      - 1040
+      - 240
+      - 80
+      - 40
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: output2-text
+    elementType: text
+    bounds:
+      - 1040
+      - 240
+      - 80
+      - 40
+    content:
+      fontSize: 12
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        分享
+  - elementId: connect1
+    elementType: shape
+    bounds:
+      - 760
+      - 180
+      - 90
+      - 30
+    shapeName: straightConnector1
+    arrow:
+      - none
+      - arrow
+    border:
+      style: solid
+      width: 2
+      color: $secondary
+  - elementId: connect2
+    elementType: shape
+    bounds:
+      - 760
+      - 240
+      - 90
+      - 0
+    shapeName: straightConnector1
+    arrow:
+      - none
+      - arrow
+    border:
+      style: solid
+      width: 2
+      color: $secondary
+  - elementId: connect3
+    elementType: shape
+    bounds:
+      - 950
+      - 210
+      - 90
+      - -30
+    shapeName: straightConnector1
+    arrow:
+      - none
+      - arrow
+    border:
+      style: solid
+      width: 2
+      color: $secondary
+  - elementId: connect4
+    elementType: shape
+    bounds:
+      - 950
+      - 240
+      - 90
+      - 0
+    shapeName: straightConnector1
+    arrow:
+      - none
+      - arrow
+    border:
+      style: solid
+      width: 2
+      color: $secondary
+  - elementId: solution-area
+    elementType: shape
+    bounds:
+      - 80
+      - 360
+      - 1120
+      - 240
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset:
+        - 0
+        - 2
+  - elementId: solution-title
+    elementType: text
+    bounds:
+      - 110
+      - 380
+      - 300
+      - 40
+    content:
+      fontSize: 20
+      color: $primary
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>实施步骤与成果</strong></p>
+  - elementId: timeline
+    elementType: shape
+    bounds:
+      - 110
+      - 450
+      - 1060
+      - 2
+    shapeName: rect
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: time1
+    elementType: shape
+    bounds:
+      - 200
+      - 440
+      - 20
+      - 20
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: time1-text
+    elementType: text
+    bounds:
+      - 150
+      - 470
+      - 120
+      - 60
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - top
+      text: |
+        <p><strong>第1周</strong></p>
+        <p>搭建框架</p>
+  - elementId: time2
+    elementType: shape
+    bounds:
+      - 480
+      - 440
+      - 20
+      - 20
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: time2-text
+    elementType: text
+    bounds:
+      - 430
+      - 470
+      - 120
+      - 60
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - top
+      text: |
+        <p><strong>第2-3周</strong></p>
+        <p>内容填充</p>
+  - elementId: time3
+    elementType: shape
+    bounds:
+      - 760
+      - 440
+      - 20
+      - 20
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent
+  - elementId: time3-text
+    elementType: text
+    bounds:
+      - 710
+      - 470
+      - 120
+      - 60
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - top
+      text: |
+        <p><strong>第4周</strong></p>
+        <p>优化迭代</p>
+  - elementId: time4
+    elementType: shape
+    bounds:
+      - 1040
+      - 440
+      - 20
+      - 20
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: time4-text
+    elementType: text
+    bounds:
+      - 990
+      - 470
+      - 120
+      - 60
+    content:
+      fontSize: 14
+      color: $text
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - top
+      text: |
+        <p><strong>持续</strong></p>
+        <p>应用改进</p>
+  - elementId: question-box
+    elementType: shape
+    bounds:
+      - 600
+      - 360
+      - 280
+      - 60
+    opacity: 0.1
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent
+    border:
+      style: solid
+      width: 2
+      color: $accent
+  - elementId: question-icon
+    elementType: icon
+    bounds:
+      - 620
+      - 375
+      - 30
+      - 30
+    iconName: fas:question-circle
+    fill:
+      type: solid
+      color: $accent
+  - elementId: question-text
+    elementType: text
+    bounds:
+      - 660
+      - 365
+      - 210
+      - 50
+    content:
+      fontSize: 16
+      color: $accent
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>思考：你的知识管理痛点是什么？</strong></p>

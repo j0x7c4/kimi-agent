@@ -1,0 +1,96 @@
+pageType: final
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 背景装饰
+  - elementId: bg-shape-1
+    elementType: shape
+    bounds: [0, 0, 640, 360]
+    shapeName: custom
+    path: "640,360;M0 0 L640 0 L640 180 Q480 360 320 360 L160 360 Q0 360 0 180 Z"
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "#2E5E8A40"}
+        - {position: 1, color: "$gradient"}
+    opacity: 0.3
+
+  - elementId: bg-shape-2
+    elementType: shape
+    bounds: [640, 360, 640, 360]
+    shapeName: custom
+    path: "640,360;M640 360 L0 360 L0 180 Q160 0 320 0 L480 0 Q640 0 640 180 Z"
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: -45
+      stops:
+        - {position: 0, color: "$gradient"}
+        - {position: 1, color: "#FF7F5020"}
+    opacity: 0.3
+
+  # 感谢文字
+  - elementId: thank-you
+    elementType: text
+    bounds: [240, 200, 800, 100]
+    content:
+      fontSize: 72
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p><strong>茶，连接世界的桥梁</strong></p>
+    shadow:
+      blur: 8
+      color: "#00000040"
+      offset: [0, 4]
+
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [240, 320, 800, 40]
+    content:
+      fontSize: 28
+      color: "#FFFFFFCC"
+      align: [center, middle]
+      text: |
+        <p>一片树叶，跨越千年，连接世界</p>
+
+  # 联系信息
+  - elementId: contact-info
+    elementType: text
+    bounds: [440, 420, 400, 80]
+    content:
+      fontSize: 18
+      color: "#FFFFFFAA"
+      lineHeight: 1.8
+      align: [center, middle]
+      text: |
+        <p>探索更多茶文化故事</p>
+        <p>www.teaculture.com</p>
+
+  # Logo占位
+  - elementId: logo-placeholder
+    elementType: shape
+    bounds: [590, 520, 100, 40]
+    shapeName: roundRect
+    adjustments: [20000]
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF40"
+
+  - elementId: logo-text
+    elementType: text
+    bounds: [590, 520, 100, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      align: [center, middle]
+      text: |
+        <p>LOGO</p>

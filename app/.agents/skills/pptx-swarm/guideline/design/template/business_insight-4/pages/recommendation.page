@@ -1,0 +1,187 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 28, 1160, 40]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:26px; color:#263238; font-family:Georgia, MiSans;"><strong>首次覆盖给予"强烈推荐"评级，目标价388元</strong></span></p>
+
+  # 标题下方细线
+  - elementId: title-line
+    elementType: shape
+    bounds: [60, 72, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 投资论点
+  - elementId: thesis-title
+    elementType: text
+    bounds: [60, 86, 560, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#263238; font-family:Georgia, MiSans;"><strong>核心投资逻辑</strong></span></p>
+
+  - elementId: thesis-text
+    elementType: text
+    bounds: [60, 118, 560, 400]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>1. 规模壁垒不可逾越：</strong>年销450万辆+的规模带来采购、制造、研发的全面成本优势。垂直整合模式（电池、芯片、电驱）使BOM成本较竞品低15-20%，价格战中攻守兼备。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>2. 技术迭代引领行业：</strong>第五代DM-i混动系统百公里油耗2.9L，刀片电池安全性标杆，智能驾驶"天神之眼"系统已覆盖80%车型。技术输出（向丰田供应电池）进一步验证技术实力。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>3. 全球化打开增长天花板：</strong>2025年海外销量预计突破80万辆（+55% YoY），东南亚、中东、南美三大区域工厂投产。长期海外收入占比有望从当前的18%提升至30%+。</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>4. 品牌力持续上移：</strong>仰望、方程豹高端品牌突破30万元+市场，腾势D9稳居MPV销冠，品牌矩阵从"性价比"向"技术豪华"跃迁。</span></p>
+
+  # 右侧：风险因素
+  - elementId: risk-title
+    elementType: text
+    bounds: [660, 86, 560, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#263238; font-family:Georgia, MiSans;"><strong>风险因素</strong></span></p>
+
+  - elementId: risk-text
+    elementType: text
+    bounds: [660, 118, 560, 186]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>下行风险：</strong></span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;">&#8226; 价格战超预期恶化，毛利率低于预期</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;">&#8226; 海外贸易壁垒（欧盟关税、美国受限）</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;">&#8226; 原材料价格反弹、补贴退坡超预期</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;">&#8226; 智能驾驶技术进展不及预期</span></p>
+
+  # 目标价推导表
+  - elementId: target-title
+    elementType: text
+    bounds: [660, 310, 560, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:20px; color:#263238; font-family:Georgia, MiSans;"><strong>目标价推导</strong></span></p>
+
+  - elementId: target-table
+    elementType: table
+    bounds: [660, 342, 560, 180]
+    columnWidths: [0.45, 0.275, 0.275]
+    rowHeights: [0.18, 0.205, 0.205, 0.205, 0.205]
+    style: "$default"
+    rows:
+      - - content:
+            text: |
+              <p><strong>估值方法</strong></p>
+        - content:
+            text: |
+              <p><strong>权重</strong></p>
+        - content:
+            text: |
+              <p><strong>目标价</strong></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">PE估值法（2026E, 25x）</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;">60%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;">402元</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">DCF估值法（WACC 9.5%）</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;">40%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;">367元</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>综合目标价</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>100%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px; color:#37474F;"><strong>388元</strong></span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;">较当前价上涨空间</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;">-</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px; color:#37474F;"><strong>24.4%</strong></span></p>
+
+  # 底部总结
+  - elementId: summary-line
+    elementType: shape
+    bounds: [60, 540, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: summary-text
+    elementType: text
+    bounds: [60, 552, 1160, 100]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Arial, MiSans;"><strong>投资建议：</strong>我们首次覆盖比亚迪，给予"强烈推荐"评级，12个月目标价388元（+24.4%）。公司作为全球新能源汽车龙头，规模优势、垂直整合和全球化布局构成长期核心竞争壁垒。2025-2027年盈利CAGR达29.8%，当前22.8x PE处于历史估值中位数以下，具备较高安全边际。建议投资者在当前价位积极建仓，中长期配置价值突出。</span></p>
+
+  # 来源线
+  - elementId: source-line
+    elementType: shape
+    bounds: [60, 672, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 来源
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 678, 800, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Arial, MiSans;">Source: 公司公告, Wind, Bloomberg, XX证券研究所</span></p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 678, 120, 20]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Arial, MiSans;">9</span></p>

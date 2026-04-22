@@ -1,0 +1,311 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: linear
+  angle: 45
+  stops:
+  - position: 0
+    color: "#C7E2FFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#FFFFFFFF"
+elements:
+- elementId: line1
+  elementType: shape
+  bounds: [1078.27, 124.07, 579.36, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: shape2
+  elementType: shape
+  bounds: [108, 401.94, 145.82, 145.82]
+  shapeName: custom
+  path: 365810,365810;M0 0L365810 0L365810 365810L0 365810Z
+  fill:
+    type: solid
+    color: "#63B1E9"
+- elementId: text3
+  elementType: text
+  bounds: [103.73, 383.48, 154.35, 163.73]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape4
+  elementType: shape
+  bounds: [706.29, 401.94, 145.82, 145.82]
+  shapeName: custom
+  path: 365810,365810;M0 0L365810 0L365810 365810L0 365810Z
+  fill:
+    type: solid
+    color: "#B8D4E8"
+- elementId: text5
+  elementType: text
+  bounds: [702.02, 383.48, 154.35, 163.73]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape6
+  elementType: shape
+  bounds: [1304.59, 401.94, 145.82, 145.82]
+  shapeName: custom
+  path: 365810,365810;M0 0L365810 0L365810 365810L0 365810Z
+  fill:
+    type: solid
+    color: "#5B9BD5"
+- elementId: text7
+  elementType: text
+  bounds: [1300.32, 383.48, 154.35, 163.73]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape8
+  elementType: shape
+  bounds: [138.19, 430.75, 85.44, 88.19]
+  shapeName: custom
+  path: 813794,840046;M0 0L813794 0L813794 840046L0 840046L0 0Z
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200
+    fit:
+      mode: fill
+- elementId: shape9
+  elementType: shape
+  bounds: [734.66, 433.86, 92.12, 83.08]
+  shapeName: custom
+  path: 877478,791326;M0 0L877478 0L877478 791326L0 791326L0 0Z
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200
+    fit:
+      mode: fill
+- elementId: shape10
+  elementType: shape
+  bounds: [1335.11, 432.01, 84.93, 84.93]
+  shapeName: custom
+  path: 808964,808964;M0 0L808964 0L808964 808964L0 808964L0 0Z
+  fill:
+    type: image
+    src: https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200
+    fit:
+      mode: fill
+- elementId: text11
+  elementType: text
+  bounds: [98.4, 101.2, 974.84, 176.88]
+  content:
+    align: [left, top]
+    fontSize: 68
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 84.35
+    text: PRACTICAL TIPS FOR BETTER SLEEP
+- elementId: text12
+  elementType: text
+  bounds: [684.78, 201.8, 460, 65.22]
+  content:
+    align: [left, top]
+    fontSize: 41.4
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 57.95
+    text: 改善睡眠实用技巧
+- elementId: text13
+  elementType: text
+  bounds: [1429.83, 98.2, 409.77, 49.73]
+  content:
+    align: [right, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 4.16
+    text: PART 03
+- elementId: text14
+  elementType: text
+  bounds: [98.4, 642.49, 526.61, 301.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 每天固定时间上床和起床，即使周末也要保持一致。建立睡前仪式，如泡脚、听轻音乐、做简单拉伸运动，帮助身体进入放松状态，逐步培养入睡信号。
+- elementId: text15
+  elementType: text
+  bounds: [696.69, 642.49, 526.61, 301.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 卧室保持安静、黑暗、凉爽（18-22°C为宜）。选择软硬适中的床垫和合适高度的枕头。睡前1小时避免使用手机等电子屏幕，蓝光会抑制褪黑素分泌。
+- elementId: text16
+  elementType: text
+  bounds: [1294.99, 642.49, 526.61, 301.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 下午2点后避免饮用咖啡和浓茶。晚餐不要过饱，睡前可喝一杯温牛奶。适量运动有助睡眠，但睡前3小时内避免剧烈运动。午睡控制在20-30分钟以内。
+- elementId: text17
+  elementType: text
+  bounds: [98.4, 574.96, 345.25, 62.6]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 55.99
+    text: 规律作息
+- elementId: text18
+  elementType: text
+  bounds: [699.28, 574.96, 345.25, 62.6]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 55.99
+    text: 优化环境
+- elementId: text19
+  elementType: text
+  bounds: [1300.16, 574.96, 345.25, 62.6]
+  content:
+    align: [left, top]
+    fontSize: 40
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 55.99
+    text: 饮食与运动
+- elementId: shape20
+  elementType: shape
+  bounds: [106.17, 305.53, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text21
+  elementType: text
+  bounds: [102.31, 312.05, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape22
+  elementType: shape
+  bounds: [145.73, 305.53, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text23
+  elementType: text
+  bounds: [141.87, 312.05, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape24
+  elementType: shape
+  bounds: [185.28, 305.53, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text25
+  elementType: text
+  bounds: [181.42, 312.05, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape26
+  elementType: shape
+  bounds: [224.83, 305.53, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text27
+  elementType: text
+  bounds: [220.97, 312.05, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape28
+  elementType: shape
+  bounds: [264.39, 305.53, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text29
+  elementType: text
+  bounds: [260.52, 312.05, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape30
+  elementType: shape
+  bounds: [303.94, 305.53, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text31
+  elementType: text
+  bounds: [300.08, 312.05, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '

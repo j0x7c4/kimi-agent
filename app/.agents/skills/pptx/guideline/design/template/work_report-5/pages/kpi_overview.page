@@ -1,0 +1,287 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$title"
+      text: |
+        <p><strong>Q3完成率达112%，超额完成核心目标</strong></p>
+  
+  # KPI卡片1 - 营收
+  - elementId: kpi-card1
+    elementType: shape
+    bounds: [80, 140, 280, 180]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: kpi-icon1
+    elementType: icon
+    bounds: [100, 160, 32, 32]
+    iconName: "fas:chart-line"
+    fill:
+      type: solid
+      color: "$accent"
+  
+  - elementId: kpi-value1
+    elementType: text
+    bounds: [100, 200, 240, 55]
+    content:
+      style: "$kpi_number"
+      align: [left, middle]
+      text: |
+        <p>96.3<span style="font-size:24px">亿元</span></p>
+  
+  - elementId: kpi-label1
+    elementType: text
+    bounds: [100, 258, 240, 25]
+    content:
+      style: "$kpi_label"
+      text: |
+        <p>营业收入</p>
+
+  - elementId: kpi-trend1
+    elementType: text
+    bounds: [100, 288, 240, 25]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p>↑ 16.7% 同比增长</p>
+  
+  # KPI卡片2 - 用户
+  - elementId: kpi-card2
+    elementType: shape
+    bounds: [380, 140, 280, 180]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: kpi-icon2
+    elementType: icon
+    bounds: [400, 160, 32, 32]
+    iconName: "fas:users"
+    fill:
+      type: solid
+      color: "$primary"
+  
+  - elementId: kpi-value2
+    elementType: text
+    bounds: [400, 200, 240, 55]
+    content:
+      style: "$kpi_number"
+      align: [left, middle]
+      text: |
+        <p>2.1<span style="font-size:24px">百万</span></p>
+  
+  - elementId: kpi-label2
+    elementType: text
+    bounds: [400, 258, 240, 25]
+    content:
+      style: "$kpi_label"
+      text: |
+        <p>月活跃用户</p>
+
+  - elementId: kpi-trend2
+    elementType: text
+    bounds: [400, 288, 240, 25]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p>↑ 23.5% 环比增长</p>
+  
+  # KPI卡片3 - 满意度
+  - elementId: kpi-card3
+    elementType: shape
+    bounds: [680, 140, 280, 180]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: kpi-icon3
+    elementType: icon
+    bounds: [700, 160, 32, 32]
+    iconName: "fas:star"
+    fill:
+      type: solid
+      color: "$accent"
+  
+  - elementId: kpi-value3
+    elementType: text
+    bounds: [700, 200, 240, 55]
+    content:
+      style: "$kpi_number"
+      align: [left, middle]
+      text: |
+        <p>4.8<span style="font-size:24px">/5.0</span></p>
+  
+  - elementId: kpi-label3
+    elementType: text
+    bounds: [700, 258, 240, 25]
+    content:
+      style: "$kpi_label"
+      text: |
+        <p>客户满意度</p>
+
+  - elementId: kpi-trend3
+    elementType: text
+    bounds: [700, 288, 240, 25]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p>↑ 0.3 较上季度</p>
+  
+  # KPI卡片4 - 项目
+  - elementId: kpi-card4
+    elementType: shape
+    bounds: [980, 140, 220, 180]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: kpi-icon4
+    elementType: icon
+    bounds: [1000, 160, 32, 32]
+    iconName: "fas:tasks"
+    fill:
+      type: solid
+      color: "$primary"
+  
+  - elementId: kpi-value4
+    elementType: text
+    bounds: [1000, 200, 180, 55]
+    content:
+      style: "$kpi_number"
+      align: [left, middle]
+      text: |
+        <p>15<span style="font-size:24px">个</span></p>
+  
+  - elementId: kpi-label4
+    elementType: text
+    bounds: [1000, 258, 180, 25]
+    content:
+      style: "$kpi_label"
+      text: |
+        <p>完成项目</p>
+
+  - elementId: kpi-trend4
+    elementType: text
+    bounds: [1000, 288, 180, 25]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p>100% 按期交付</p>
+  
+  # 进度条可视化（全宽）
+  - elementId: progress-bg
+    elementType: shape
+    bounds: [80, 355, 1120, 40]
+    shapeName: roundRect
+    adjustments: [20000]
+    fill:
+      type: solid
+      color: "$border"
+
+  - elementId: progress-fill
+    elementType: shape
+    bounds: [80, 355, 1120, 40]
+    shapeName: roundRect
+    adjustments: [20000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 0
+      stops:
+        - {position: 0, color: "$primary"}
+        - {position: 1, color: "$accent"}
+
+  - elementId: progress-text
+    elementType: text
+    bounds: [80, 355, 1120, 40]
+    content:
+      fontSize: 16
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>年度目标完成率：112%</strong></p>
+
+  # 核心成果说明（全宽，在进度条下方）
+  - elementId: results-title
+    elementType: text
+    bounds: [80, 420, 300, 30]
+    content:
+      style: "$subtitle"
+      text: |
+        <p>核心驱动因素</p>
+
+  - elementId: results-list
+    elementType: text
+    bounds: [80, 460, 1120, 180]
+    content:
+      style: "$body"
+      text: |
+        <p>• <strong>产品创新突破</strong>：新功能上线带来用户增长23.5%，日活跃度提升15%</p>
+        <p>• <strong>市场策略优化</strong>：精准营销ROI提升2.3倍，获客成本降低35%</p>
+        <p>• <strong>运营效率提升</strong>：自动化流程覆盖率达78%，人效提升40%</p>
+        <p>• <strong>团队协作增强</strong>：跨部门项目完成率100%，平均交付周期缩短20%</p>
+  
+  # 底部导航
+  - elementId: nav-line
+    elementType: shape
+    bounds: [80, 660, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+  
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 670, 100, 30]
+    content:
+      fontSize: 12
+      color: "$tertiary"
+      fontFamily: "Liter, MiSans"
+      align: [right, middle]
+      text: |
+        <p>4</p>

@@ -1,0 +1,390 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深青绿色带
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题区域背景
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 5, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 12, 1100, 40]
+    content:
+      fontSize: 20
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Strategic roadmap outlines four-phase transformation over 24-month horizon</strong></p>
+  # ===== 时间轴主线 =====
+  - elementId: timeline-line
+    elementType: shape
+    bounds: [100, 200, 1080, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$primary"}
+    arrow: [null, "arrow"]
+
+  # ===== Phase 1 =====
+  - elementId: p1-dot
+    elementType: shape
+    bounds: [140, 190, 20, 20]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: p1-label-bg
+    elementType: shape
+    bounds: [90, 155, 120, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: p1-label-text
+    elementType: text
+    bounds: [90, 155, 120, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#ffffff;"><strong>Phase 1</strong></span></p>
+
+  - elementId: p1-time
+    elementType: text
+    bounds: [90, 215, 120, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#0D8B7D;"><strong>Q1-Q2 2024</strong></span></p>
+
+  - elementId: p1-title
+    elementType: text
+    bounds: [55, 245, 190, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Foundation</strong></span></p>
+
+  - elementId: p1-content
+    elementType: text
+    bounds: [55, 278, 190, 120]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">&#9632; Data infrastructure setup</span></p>
+        <p><span style="font-size:13px;">&#9632; Team restructuring</span></p>
+        <p><span style="font-size:13px;">&#9632; Vendor evaluation & selection</span></p>
+        <p><span style="font-size:13px;">&#9632; Baseline KPI definition</span></p>
+
+  # ===== Phase 2 =====
+  - elementId: p2-dot
+    elementType: shape
+    bounds: [390, 190, 20, 20]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: p2-label-bg
+    elementType: shape
+    bounds: [340, 155, 120, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: p2-label-text
+    elementType: text
+    bounds: [340, 155, 120, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#ffffff;"><strong>Phase 2</strong></span></p>
+
+  - elementId: p2-time
+    elementType: text
+    bounds: [340, 215, 120, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#0D8B7D;"><strong>Q3-Q4 2024</strong></span></p>
+
+  - elementId: p2-title
+    elementType: text
+    bounds: [305, 245, 190, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Pilot Launch</strong></span></p>
+
+  - elementId: p2-content
+    elementType: text
+    bounds: [305, 278, 190, 120]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">&#9632; MVP deployment in 2 markets</span></p>
+        <p><span style="font-size:13px;">&#9632; User feedback collection</span></p>
+        <p><span style="font-size:13px;">&#9632; Performance monitoring</span></p>
+        <p><span style="font-size:13px;">&#9632; Iterative optimization</span></p>
+
+  # ===== Phase 3 =====
+  - elementId: p3-dot
+    elementType: shape
+    bounds: [640, 190, 20, 20]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: p3-label-bg
+    elementType: shape
+    bounds: [590, 155, 120, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: p3-label-text
+    elementType: text
+    bounds: [590, 155, 120, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#ffffff;"><strong>Phase 3</strong></span></p>
+
+  - elementId: p3-time
+    elementType: text
+    bounds: [590, 215, 120, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#0D8B7D;"><strong>Q1-Q2 2025</strong></span></p>
+
+  - elementId: p3-title
+    elementType: text
+    bounds: [555, 245, 190, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Scale Up</strong></span></p>
+
+  - elementId: p3-content
+    elementType: text
+    bounds: [555, 278, 190, 120]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">&#9632; Global market rollout</span></p>
+        <p><span style="font-size:13px;">&#9632; Partner ecosystem build</span></p>
+        <p><span style="font-size:13px;">&#9632; Advanced analytics deployment</span></p>
+        <p><span style="font-size:13px;">&#9632; Talent acquisition</span></p>
+
+  # ===== Phase 4 =====
+  - elementId: p4-dot
+    elementType: shape
+    bounds: [890, 190, 20, 20]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: p4-label-bg
+    elementType: shape
+    bounds: [840, 155, 120, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: p4-label-text
+    elementType: text
+    bounds: [840, 155, 120, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#ffffff;"><strong>Phase 4</strong></span></p>
+
+  - elementId: p4-time
+    elementType: text
+    bounds: [840, 215, 120, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#0D8B7D;"><strong>Q3-Q4 2025</strong></span></p>
+
+  - elementId: p4-title
+    elementType: text
+    bounds: [805, 245, 190, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Optimization</strong></span></p>
+
+  - elementId: p4-content
+    elementType: text
+    bounds: [805, 278, 190, 120]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px;">&#9632; AI-driven personalization</span></p>
+        <p><span style="font-size:13px;">&#9632; Profitability optimization</span></p>
+        <p><span style="font-size:13px;">&#9632; M&A opportunities</span></p>
+        <p><span style="font-size:13px;">&#9632; IPO preparation</span></p>
+
+  # ===== 右侧目标数字 =====
+  - elementId: target-bg
+    elementType: shape
+    bounds: [1040, 245, 200, 155]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: target-label
+    elementType: text
+    bounds: [1055, 255, 170, 24]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#0D8B7D;"><strong>Target by 2025</strong></span></p>
+
+  - elementId: target-num1
+    elementType: text
+    bounds: [1055, 285, 170, 35]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#0D8B7D;"><strong>$20B</strong></span></p>
+
+  - elementId: target-desc1
+    elementType: text
+    bounds: [1055, 322, 170, 20]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#666666;">Revenue Target</span></p>
+
+  - elementId: target-num2
+    elementType: text
+    bounds: [1055, 345, 170, 32]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#0D8B7D;"><strong>40%</strong></span></p>
+
+  - elementId: target-desc2
+    elementType: text
+    bounds: [1055, 378, 170, 20]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#666666;">Gross Margin Target</span></p>
+
+  # ===== 底部关键里程碑 =====
+  - elementId: milestone-line
+    elementType: shape
+    bounds: [50, 430, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: milestone-title
+    elementType: text
+    bounds: [50, 445, 300, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Critical Success Factors</strong></span></p>
+
+  - elementId: csf-1
+    elementType: text
+    bounds: [50, 480, 380, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px;"><strong>1. Executive Sponsorship</strong></span></p>
+        <p><span style="font-size:13px;">C-suite alignment and dedicated transformation office with clear governance structure</span></p>
+
+  - elementId: csf-2
+    elementType: text
+    bounds: [460, 480, 380, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px;"><strong>2. Technology Investment</strong></span></p>
+        <p><span style="font-size:13px;">Cloud-native architecture with AI/ML capabilities for real-time decision making</span></p>
+
+  - elementId: csf-3
+    elementType: text
+    bounds: [870, 480, 380, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:14px;"><strong>3. Talent Strategy</strong></span></p>
+        <p><span style="font-size:13px;">Aggressive hiring in data science, product management and growth marketing</span></p>
+
+  # 底部来源
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 580, 600, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>Source: Strategic planning committee, Board-approved roadmap</p>

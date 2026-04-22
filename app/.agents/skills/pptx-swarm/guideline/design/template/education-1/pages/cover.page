@@ -1,0 +1,94 @@
+pageType: cover
+background:
+  type: solid
+  color: $primary
+elements:
+  - elementId: grid-pattern
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 720
+    shapeName: rect
+    fill:
+      type: image
+      src: data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Cpath d='M0 0v60M20 0v60M40 0v60M60 0v60M0 0h60M0 20h60M0 40h60M0 60h60' stroke='%23ffffff' stroke-width='0.1' opacity='0.1'/%3E%3C/svg%3E
+      fit:
+        mode: fill
+      opacity: 0.3
+  - elementId: main-title
+    elementType: text
+    bounds:
+      - 140
+      - 240
+      - 1000
+      - 80
+    wrap: false
+    content:
+      style: $mainTitle
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>探索核心概念：从理论到实践</p>
+  - elementId: subtitle
+    elementType: text
+    bounds:
+      - 240
+      - 340
+      - 800
+      - 40
+    content:
+      style: $subtitle
+      align:
+        - center
+        - middle
+      text: |
+        <p>成人学习者的知识架构与技能提升指南</p>
+  - elementId: highlight
+    elementType: shape
+    bounds:
+      - 440
+      - 420
+      - 400
+      - 40
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: highlight-text
+    elementType: text
+    bounds:
+      - 440
+      - 420
+      - 400
+      - 40
+    content:
+      fontSize: 18
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>结构化路径 · 启发式引导</p>
+  - elementId: footer-info
+    elementType: text
+    bounds:
+      - 140
+      - 620
+      - 1000
+      - 30
+    content:
+      fontSize: 16
+      color: $textGray
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>灵感方舟学习平台 · 2024</p>

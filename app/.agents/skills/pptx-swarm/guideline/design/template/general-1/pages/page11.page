@@ -1,0 +1,44 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#0F1B3D"
+elements:
+- elementId: text0
+  elementType: text
+  bounds: [235.81, 304.95, 1448.37, 323.85]
+  content:
+    align: [center, top]
+    fontSize: 225.3
+    fontFamily: "Coda, deyihei"
+    color: "$light"
+    lineHeightPx: 270.39
+    text: |
+      <p>THANK <span style="font-family:Coda, deyihei">YOU</span>!</p>
+- elementId: text1
+  elementType: text
+  bounds: [324.07, 619.2, 1271.85, 111.6]
+  content:
+    align: [center, top]
+    fontSize: 42.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$light"
+    lineHeightPx: 51.2
+    text: Drop us an email at hello@reallygreatsite.com for questions.
+- elementId: line2
+  elementType: shape
+  bounds: [325.78, 819.46, 1268.44, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "#4361EE"
+- elementId: line3
+  elementType: shape
+  bounds: [325.78, 260.54, 1268.44, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "#4361EE"

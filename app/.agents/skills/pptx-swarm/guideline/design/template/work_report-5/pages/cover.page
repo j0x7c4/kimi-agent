@@ -1,0 +1,88 @@
+pageType: cover
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 深色主视觉区域
+  - elementId: main-visual
+    elementType: shape
+    bounds: [0, 0, 1280, 400]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$dark"
+  
+  # 装饰性几何线条
+  - elementId: deco-line1
+    elementType: shape
+    bounds: [100, 350, 300, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FDFDFD20"
+
+  - elementId: deco-line2
+    elementType: shape
+    bounds: [880, 350, 300, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FDFDFD20"
+  
+  # 主标题
+  - elementId: main-title
+    elementType: text
+    bounds: [240, 160, 800, 80]
+    content:
+      style: "$cover_title"
+      align: [center, middle]
+      text: |
+        <p><strong>Q3 工作汇报与成果展示</strong></p>
+  
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [340, 250, 600, 40]
+    content:
+      style: "$cover_subtitle"
+      align: [center, middle]
+      text: |
+        <p>项目进度 | 数据分析 | 行动计划</p>
+  
+  # 公司名称
+  - elementId: company
+    elementType: text
+    bounds: [440, 480, 400, 40]
+    content:
+      fontSize: 18
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>产品研发部</p>
+  
+  # 汇报人信息
+  - elementId: reporter
+    elementType: text
+    bounds: [440, 530, 400, 30]
+    content:
+      fontSize: 14
+      color: "$tertiary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>汇报人：XXX | 2024年10月</p>
+  
+  # Logo占位
+  - elementId: logo-placeholder
+    elementType: shape
+    bounds: [80, 620, 120, 40]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "#FFFFFF10"

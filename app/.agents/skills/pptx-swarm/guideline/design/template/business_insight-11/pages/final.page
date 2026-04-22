@@ -1,0 +1,234 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Left dark navy background (55% width)
+  - elementId: left-panel
+    elementType: shape
+    bounds: [0, 0, 704, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # Top gold bar
+  - elementId: top-gold-bar
+    elementType: shape
+    bounds: [0, 0, 704, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Large thank you title
+  - elementId: thankyou-title
+    elementType: text
+    bounds: [70, 180, 560, 130]
+    content:
+      align: [left, middle]
+      wrap: true
+      lineHeight: 1.2
+      text: |
+        <p><span style="font-size:54px; color:#ffffff; font-family:Palatino Linotype, SimSun, MiSans;"><strong>谢谢</strong></span></p>
+        <p><span style="font-size:36px; color:#ffffffbb; font-family:Palatino Linotype, SimSun, MiSans;">/ Thank You</span></p>
+
+  # Gold accent line
+  - elementId: gold-accent-line
+    elementType: shape
+    bounds: [70, 326, 160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$accent"}
+
+  # Subtitle text
+  - elementId: closing-subtitle
+    elementType: text
+    bounds: [70, 344, 560, 50]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:18px; color:#ffffffcc; font-family:Arial, Microsoft YaHei, MiSans;">本报告由战略研究部行业研究团队出具</span></p>
+
+  # Supporting text
+  - elementId: closing-body
+    elementType: text
+    bounds: [70, 400, 560, 80]
+    content:
+      fontSize: 14
+      color: "#ffffff88"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#ffffff88; font-family:Arial, Microsoft YaHei, MiSans;">深度研究 · 独立判断 · 价值发现</span></p>
+        <p><span style="font-size:14px; color:#ffffff88; font-family:Arial, Microsoft YaHei, MiSans;">Deep Research · Independent Judgment · Value Discovery</span></p>
+
+  # Bottom disclaimer on left panel
+  - elementId: left-disclaimer
+    elementType: text
+    bounds: [70, 660, 560, 36]
+    content:
+      fontSize: 11
+      color: "#ffffff44"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p><span style="font-size:11px; color:#ffffff44; font-family:Arial, Microsoft YaHei, MiSans;">本报告仅供内部参考，不构成投资建议。版权归战略研究部所有，未经授权不得转载</span></p>
+
+  # ─── RIGHT PANEL: NEXT STEPS + CONTACT ───
+
+  # Right panel section header
+  - elementId: right-header-bg
+    elementType: shape
+    bounds: [724, 30, 506, 30]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: right-header-accent
+    elementType: shape
+    bounds: [724, 30, 3, 30]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: right-header-text
+    elementType: text
+    bounds: [732, 30, 490, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>后续行动建议 NEXT STEPS</strong></span></p>
+
+  # Next steps content
+  - elementId: next-steps-text
+    elementType: text
+    bounds: [732, 72, 490, 230]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.7
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;"><strong>1. 深入尽调</strong></span></p>
+        <p><span style="font-size:12px; color:#555555; font-family:Arial, Microsoft YaHei, MiSans;">安排与龙头企业管理层一对一交流，重点核实产能扩张计划与技术路线</span></p>
+        <p style="margin-top:6px"><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;"><strong>2. 模型更新</strong></span></p>
+        <p><span style="font-size:12px; color:#555555; font-family:Arial, Microsoft YaHei, MiSans;">待Q1季报数据发布后，更新盈利预测及目标价区间</span></p>
+        <p style="margin-top:6px"><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;"><strong>3. 催化剂跟踪</strong></span></p>
+        <p><span style="font-size:12px; color:#555555; font-family:Arial, Microsoft YaHei, MiSans;">重点关注2026年固态电池量产进度及欧盟关税裁决结果</span></p>
+        <p style="margin-top:6px"><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;"><strong>4. 投资组合优化</strong></span></p>
+        <p><span style="font-size:12px; color:#555555; font-family:Arial, Microsoft YaHei, MiSans;">建议超配比亚迪与宁德时代，同时配置理想汽车作为弹性仓位</span></p>
+
+  # Divider before contact
+  - elementId: contact-divider
+    elementType: shape
+    bounds: [724, 318, 506, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Contact info section header
+  - elementId: contact-header-bg
+    elementType: shape
+    bounds: [724, 326, 506, 30]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: contact-header-accent
+    elementType: shape
+    bounds: [724, 326, 3, 30]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: contact-header-text
+    elementType: text
+    bounds: [732, 326, 490, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>联系方式 CONTACT</strong></span></p>
+
+  # Contact details
+  - elementId: contact-text
+    elementType: text
+    bounds: [732, 366, 270, 200]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>首席行业分析师</strong></span></p>
+        <p><span style="font-size:13px; color:#2D2D2D; font-family:Arial, Microsoft YaHei, MiSans;">张明远  |  首席新能源行业分析师</span></p>
+        <p><span style="font-size:12px; color:#8899AA; font-family:Arial, Microsoft YaHei, MiSans;">zhang.mingyuan@research.com</span></p>
+        <p><span style="font-size:12px; color:#8899AA; font-family:Arial, Microsoft YaHei, MiSans;">+86 (10) 6600-XXXX  |  Bloomberg: ZMY</span></p>
+        <p style="margin-top:10px"><span style="font-size:13px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>战略研究部</strong></span></p>
+        <p><span style="font-size:12px; color:#8899AA; font-family:Arial, Microsoft YaHei, MiSans;">北京市西城区金融街 | strategy-research@firm.com</span></p>
+
+  # Gold accent line below contact
+  - elementId: contact-gold-line
+    elementType: shape
+    bounds: [724, 576, 200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$accent"}
+
+  # QR Code placeholder
+  - elementId: qr-placeholder
+    elementType: shape
+    bounds: [1010, 376, 100, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: qr-label
+    elementType: text
+    bounds: [1010, 480, 100, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8899AA; font-family:Arial, Microsoft YaHei, MiSans;">扫码获取报告</span></p>
+
+  # Right panel disclaimer
+  - elementId: right-disclaimer
+    elementType: text
+    bounds: [724, 590, 506, 56]
+    content:
+      fontSize: 11
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:11px; color:#8899AA; font-family:Arial, Microsoft YaHei, MiSans;">本报告中的信息均来自公开资料，我们力求准确可靠，但不保证其完整性与准确性，亦不对因使用本报告引起的损失承担任何责任。本报告不构成任何投资建议。</span></p>
+
+  # Footer line
+  - elementId: footer-line
+    elementType: shape
+    bounds: [724, 656, 506, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1170, 664, 60, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>10</p>

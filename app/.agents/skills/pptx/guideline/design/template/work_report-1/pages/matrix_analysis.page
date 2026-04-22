@@ -1,0 +1,302 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部导航栏
+  - elementId: nav_bg
+    elementType: shape
+    bounds: [0, 0, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: nav1
+    elementType: text
+    bounds: [0, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>年度目标完成情况</p>
+
+  - elementId: nav2
+    elementType: text
+    bounds: [256, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>核心业务增长归因</p>
+
+  - elementId: nav3
+    elementType: text
+    bounds: [512, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>重点项目进展</p>
+
+  - elementId: nav4
+    elementType: text
+    bounds: [768, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$accent"
+      align: [center, middle]
+      text: |
+        <p><strong>竞争态势分析</strong></p>
+
+  - elementId: nav5
+    elementType: text
+    bounds: [1024, 0, 256, 60]
+    content:
+      fontSize: 16
+      color: "$light_text"
+      align: [center, middle]
+      text: |
+        <p>2025年计划</p>
+  
+  # 页面标题
+  - elementId: page_title
+    elementType: text
+    bounds: [80, 80, 1120, 50]
+    content:
+      style: "$page_title"
+      text: |
+        <p><strong>在高增长-高毛利象限占据优势地位，但需警惕新进入者威胁</strong></p>
+  
+  # 矩阵背景
+  - elementId: matrix_bg
+    elementType: shape
+    bounds: [340, 170, 600, 400]
+    shapeName: rect
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+  
+  # 横轴
+  - elementId: x_axis
+    elementType: shape
+    bounds: [340, 370, 600, 1]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$text"
+  
+  # 纵轴
+  - elementId: y_axis
+    elementType: shape
+    bounds: [640, 170, 1, 400]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$text"
+  
+  # 轴标签
+  - elementId: x_label
+    elementType: text
+    bounds: [540, 580, 200, 30]
+    content:
+      fontSize: 16
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p>市场增长率 →</p>
+  
+  - elementId: y_label
+    elementType: text
+    bounds: [290, 340, 40, 60]
+    content:
+      fontSize: 16
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p>毛</p>
+        <p>利</p>
+        <p>率</p>
+  
+  # 象限标签
+  - elementId: q1_label
+    elementType: text
+    bounds: [740, 190, 180, 30]
+    content:
+      fontSize: 14
+      color: "$light_text"
+      align: [right, top]
+      text: |
+        <p>明星业务</p>
+  
+  - elementId: q2_label
+    elementType: text
+    bounds: [360, 190, 180, 30]
+    content:
+      fontSize: 14
+      color: "$light_text"
+      align: [left, top]
+      text: |
+        <p>问题业务</p>
+  
+  - elementId: q3_label
+    elementType: text
+    bounds: [360, 520, 180, 30]
+    content:
+      fontSize: 14
+      color: "$light_text"
+      align: [left, bottom]
+      text: |
+        <p>瘦狗业务</p>
+  
+  - elementId: q4_label
+    elementType: text
+    bounds: [740, 520, 180, 30]
+    content:
+      fontSize: 14
+      color: "$light_text"
+      align: [right, bottom]
+      text: |
+        <p>现金牛</p>
+  
+  # 业务点 - 我们的位置
+  - elementId: our_position
+    elementType: shape
+    bounds: [760, 250, 80, 80]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 2
+      color: "$white"
+  
+  - elementId: our_label
+    elementType: text
+    bounds: [730, 220, 140, 30]
+    content:
+      fontSize: 14
+      color: "$accent"
+      align: [center, bottom]
+      text: |
+        <p><strong>我们</strong></p>
+  
+  # 竞争对手A
+  - elementId: comp_a
+    elementType: shape
+    bounds: [680, 290, 50, 50]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$danger"
+    opacity: 0.7
+  
+  - elementId: comp_a_label
+    elementType: text
+    bounds: [670, 345, 70, 25]
+    content:
+      fontSize: 12
+      color: "$text"
+      align: [center, top]
+      text: A公司
+  
+  # 竞争对手B
+  - elementId: comp_b
+    elementType: shape
+    bounds: [520, 420, 60, 60]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$light_text"
+    opacity: 0.7
+  
+  - elementId: comp_b_label
+    elementType: text
+    bounds: [520, 485, 60, 20]
+    content:
+      fontSize: 12
+      color: "$text"
+      align: [center, top]
+      text: B公司
+  
+  # 竞争对手C
+  - elementId: comp_c
+    elementType: shape
+    bounds: [450, 240, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$light_text"
+    opacity: 0.7
+  
+  - elementId: comp_c_label
+    elementType: text
+    bounds: [440, 285, 60, 25]
+    content:
+      fontSize: 12
+      color: "$text"
+      align: [center, top]
+      text: C公司
+  
+  # 左侧洞察
+  - elementId: insight_title
+    elementType: text
+    bounds: [80, 190, 220, 40]
+    content:
+      fontSize: 20
+      color: "$text"
+      text: |
+        <p><strong>关键洞察</strong></p>
+  
+  - elementId: insight_content
+    elementType: text
+    bounds: [80, 240, 200, 200]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.6
+      text: |
+        <p>• 处于高增长高毛利象限</p>
+        <p>• 市场份额领先第二名15pp</p>
+        <p>• A公司正快速逼近</p>
+        <p>• B/C公司增长乏力</p>
+  
+  # 右侧行动建议
+  - elementId: action_bg
+    elementType: shape
+    bounds: [980, 190, 220, 300]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+  
+  - elementId: action_title
+    elementType: text
+    bounds: [990, 200, 200, 40]
+    content:
+      fontSize: 20
+      color: "$text"
+      text: |
+        <p><strong>战略建议</strong></p>
+  
+  - elementId: action_content
+    elementType: text
+    bounds: [990, 250, 200, 220]
+    content:
+      fontSize: 16
+      color: "$text"
+      lineHeight: 1.5
+      text: |
+        <p><strong>1. 构建护城河</strong></p>
+        <p style="font-size:14px; color:$light_text;">加速技术专利布局</p>
+        <p style="margin-top:16px;"><strong>2. 阻击A公司</strong></p>
+        <p style="font-size:14px; color:$light_text;">针对性价格策略</p>
+        <p style="margin-top:16px;"><strong>3. 开拓新赛道</strong></p>
+        <p style="font-size:14px; color:$light_text;">避免单一市场依赖</p>

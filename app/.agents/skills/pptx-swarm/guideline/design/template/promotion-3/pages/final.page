@@ -1,0 +1,50 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Title — large display
+  - elementId: final-title
+    elementType: text
+    bounds: [31, 56, 1219, 85]
+    content:
+      fontSize: 72
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.0
+      align: [left, top]
+      text: GET IN TOUCH
+
+  # Contact info — address (left)
+  - elementId: contact-address
+    elementType: text
+    bounds: [31, 241, 804, 30]
+    content:
+      style: "$subtitle"
+      align: [left, middle]
+      text: XX Street, XX City, ST XXXXX
+
+  # Contact info — email (right)
+  - elementId: contact-email
+    elementType: text
+    bounds: [873, 241, 378, 30]
+    content:
+      style: "$subtitle"
+      align: [left, middle]
+      text: hello@example.com
+
+  # Photo left — lower area
+  - elementId: photo-left
+    elementType: image
+    bounds: [31, 291, 804, 428]
+    src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80"
+    fit:
+      mode: cover
+
+  # Photo right — lower area
+  - elementId: photo-right
+    elementType: image
+    bounds: [873, 291, 378, 428]
+    src: "https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=500&q=80"
+    fit:
+      mode: cover

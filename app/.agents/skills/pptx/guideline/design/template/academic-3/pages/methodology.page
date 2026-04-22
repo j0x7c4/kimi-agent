@@ -1,0 +1,335 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: content-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: content-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: content-section-name
+    elementType: text
+    bounds: [900, 16, 340, 22]
+    content:
+      fontSize: 12
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: 03 研究方法与实验设计
+
+  - elementId: page-title
+    elementType: text
+    bounds: [40, 24, 840, 36]
+    content:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究方法论框架与实验流程</strong></p>
+
+  - elementId: title-separator
+    elementType: shape
+    bounds: [40, 68, 1200, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  # 流程步骤1
+  - elementId: step-1-bg
+    elementType: shape
+    bounds: [40, 88, 220, 380]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: step-1-num
+    elementType: text
+    bounds: [40, 100, 220, 50]
+    content:
+      fontSize: 32
+      color: "#FFFFFF50"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: false
+      text: |
+        <p>01</p>
+
+  - elementId: step-1-title
+    elementType: text
+    bounds: [50, 160, 200, 24]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>数据收集与预处理</strong></p>
+
+  - elementId: step-1-content
+    elementType: text
+    bounds: [52, 196, 196, 250]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>• 原始数据清洗</p>
+        <p>• 标准化与归一化</p>
+        <p>• 数据增强策略</p>
+        <p>• 训练/验证/测试集划分</p>
+        <p>• 类别平衡采样</p>
+        <p>• 特征工程与选择</p>
+
+  # 步骤箭头1
+  - elementId: arrow-1
+    elementType: shape
+    bounds: [268, 268, 36, 20]
+    shapeName: rightArrow
+    adjustments: [50000, 50000]
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 流程步骤2
+  - elementId: step-2-bg
+    elementType: shape
+    bounds: [312, 88, 220, 380]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: step-2-num
+    elementType: text
+    bounds: [312, 100, 220, 50]
+    content:
+      fontSize: 32
+      color: "#FFFFFF50"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: false
+      text: |
+        <p>02</p>
+
+  - elementId: step-2-title
+    elementType: text
+    bounds: [322, 160, 200, 24]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>模型设计与构建</strong></p>
+
+  - elementId: step-2-content
+    elementType: text
+    bounds: [324, 196, 196, 250]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>• 基础架构设计</p>
+        <p>• 创新模块 A 集成</p>
+        <p>• 注意力机制引入</p>
+        <p>• 损失函数设计</p>
+        <p>• 超参数配置</p>
+        <p>• 模型复杂度分析</p>
+
+  # 步骤箭头2
+  - elementId: arrow-2
+    elementType: shape
+    bounds: [540, 268, 36, 20]
+    shapeName: rightArrow
+    adjustments: [50000, 50000]
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 流程步骤3
+  - elementId: step-3-bg
+    elementType: shape
+    bounds: [584, 88, 220, 380]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: step-3-num
+    elementType: text
+    bounds: [584, 100, 220, 50]
+    content:
+      fontSize: 32
+      color: "#FFFFFF50"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: false
+      text: |
+        <p>03</p>
+
+  - elementId: step-3-title
+    elementType: text
+    bounds: [594, 160, 200, 24]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>实验训练与优化</strong></p>
+
+  - elementId: step-3-content
+    elementType: text
+    bounds: [596, 196, 196, 250]
+    content:
+      fontSize: 13
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>• 端到端训练流程</p>
+        <p>• 学习率余弦调度</p>
+        <p>• 正则化策略组合</p>
+        <p>• 早停与检查点</p>
+        <p>• 收敛性监控</p>
+        <p>• 梯度裁剪与稳定</p>
+
+  # 步骤箭头3
+  - elementId: arrow-3
+    elementType: shape
+    bounds: [812, 268, 36, 20]
+    shapeName: rightArrow
+    adjustments: [50000, 50000]
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 流程步骤4
+  - elementId: step-4-bg
+    elementType: shape
+    bounds: [856, 88, 384, 380]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+    border:
+      style: solid
+      width: 2
+      color: "$primary"
+
+  - elementId: step-4-num
+    elementType: text
+    bounds: [856, 100, 384, 50]
+    content:
+      fontSize: 32
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: false
+      text: |
+        <p>04</p>
+
+  - elementId: step-4-title
+    elementType: text
+    bounds: [866, 160, 364, 24]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><strong>评估与消融实验</strong></p>
+
+  - elementId: step-4-content
+    elementType: text
+    bounds: [876, 196, 344, 250]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>• 多指标定量评估</p>
+        <p>• 消融实验设计</p>
+        <p>• 与 SOTA 基线方法对比</p>
+        <p>• 统计显著性检验 (p-value)</p>
+        <p>• 可视化结果分析</p>
+        <p>• 错误案例深入分析</p>
+
+  # 实验环境说明
+  - elementId: env-bg
+    elementType: shape
+    bounds: [40, 500, 1200, 135]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#E3F0FA"
+
+  - elementId: env-title
+    elementType: text
+    bounds: [60, 510, 300, 28]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>实验环境配置</strong></p>
+
+  - elementId: env-content
+    elementType: text
+    bounds: [60, 545, 1160, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p>• <strong>硬件环境</strong>：NVIDIA A100 (80GB) x 4, 512GB RAM, AMD EPYC 7742 Processor</p>
+        <p>• <strong>软件框架</strong>：PyTorch 2.0, CUDA 11.8, Python 3.10, Transformers 4.30</p>
+        <p>• <strong>训练配置</strong>：Batch Size 64, Learning Rate 1e-4 (cosine decay), Epochs 100, AdamW optimizer</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "6"

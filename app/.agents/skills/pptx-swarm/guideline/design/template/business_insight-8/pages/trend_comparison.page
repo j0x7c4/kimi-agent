@@ -1,0 +1,244 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 顶部accent装饰线
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # lightpanel标题带
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 4, 1280, 55]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 10, 1100, 46]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#ffffff; font-family:Times New Roman, SimSun, MiSans;"><strong>国内市场增速放缓但海外市场爆发式增长，出海战略成效显著</strong></span></p>
+
+  # 左侧图表标题
+  - elementId: chart1-title
+    elementType: text
+    bounds: [50, 72, 400, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#E8E8E8; font-family:Calibri, Microsoft YaHei, MiSans;"><strong>国内市场营收与增速</strong></span></p>
+
+  - elementId: chart1
+    elementType: chart
+    bounds: [50, 102, 570, 280]
+    type: combo
+    options:
+      fontFamily: "Calibri, Microsoft YaHei, MiSans"
+    data:
+      - {year: "2021", revenue: 380, growth: 0.32}
+      - {year: "2022", revenue: 468, growth: 0.23}
+      - {year: "2023", revenue: 552, growth: 0.18}
+      - {year: "2024", revenue: 630, growth: 0.14}
+      - {year: "2025E", revenue: 698, growth: 0.108}
+    x: year
+    y: [revenue, growth]
+    names: ["营收（亿元）", "同比增速"]
+    colors: ["$accent", "$highlight"]
+    seriesStyle:
+      revenue: {type: bar}
+      growth:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        fill:
+          type: solid
+          color: "$highlight"
+        marker:
+          shape: circle
+          size: 5
+          fill:
+            type: solid
+            color: "$highlight"
+          border: {style: solid, width: 2, color: "$highlight"}
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 10
+    xAxis:
+      label: {fontSize: 11, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 11, color: "$border"}
+      gridLine: {color: "#1A3558", style: dash}
+      axisLine: false
+    secondaryAxis:
+      label: {fontSize: 11, color: "$highlight"}
+      numberFormat: "0%"
+
+  # 右侧图表标题
+  - elementId: chart2-title
+    elementType: text
+    bounds: [660, 72, 400, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#E8E8E8; font-family:Calibri, Microsoft YaHei, MiSans;"><strong>海外市场营收与增速</strong></span></p>
+
+  - elementId: chart2
+    elementType: chart
+    bounds: [660, 102, 570, 280]
+    type: combo
+    options:
+      fontFamily: "Calibri, Microsoft YaHei, MiSans"
+    data:
+      - {year: "2021", revenue: 42, growth: 0.85}
+      - {year: "2022", revenue: 78, growth: 0.86}
+      - {year: "2023", revenue: 136, growth: 0.74}
+      - {year: "2024", revenue: 226, growth: 0.66}
+      - {year: "2025E", revenue: 352, growth: 0.56}
+    x: year
+    y: [revenue, growth]
+    names: ["营收（亿元）", "同比增速"]
+    colors: ["$highlight", "$accent"]
+    seriesStyle:
+      revenue: {type: bar}
+      growth:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        fill:
+          type: solid
+          color: "$accent"
+        marker:
+          shape: circle
+          size: 5
+          fill:
+            type: solid
+            color: "$accent"
+          border: {style: solid, width: 2, color: "$accent"}
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 10
+    xAxis:
+      label: {fontSize: 11, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 11, color: "$border"}
+      gridLine: {color: "#1A3558", style: dash}
+      axisLine: false
+    secondaryAxis:
+      label: {fontSize: 11, color: "$accent"}
+      numberFormat: "0%"
+
+  # 分隔线
+  - elementId: analysis-line
+    elementType: shape
+    bounds: [50, 397, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 分析标题
+  - elementId: analysis-title
+    elementType: text
+    bounds: [50, 407, 400, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#5BA4CF; font-family:Times New Roman, SimSun, MiSans;"><strong>国内外市场对比分析</strong></span></p>
+
+  # 三列分析
+  - elementId: bullet-col1
+    elementType: text
+    bounds: [50, 440, 380, 195]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#5BA4CF;"><strong>国内市场（占比66%）</strong></span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 增速从32%降至10.8%，市场进入成熟期</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 存量竞争加剧，价格战频发</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 利润率承压，国内毛利率降至24.5%</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 下沉市场仍有结构性机会</span></p>
+
+  - elementId: bullet-col2
+    elementType: text
+    bounds: [460, 440, 380, 195]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#E8B931;"><strong>海外市场（占比34%）</strong></span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 营收CAGR 73%，远超国内增速</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 东南亚贡献45%海外收入，增长最快</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 海外毛利率35.2%，显著高于国内</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 欧洲市场刚进入，2026年有望突破¥100亿</span></p>
+
+  - elementId: bullet-col3
+    elementType: text
+    bounds: [870, 440, 360, 195]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#5BA4CF;"><strong>战略启示</strong></span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 海外占比从2021年10%提升至2025E 34%</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 预计2027年海外收入占比突破50%</span></p>
+        <p><span style="font-size:13px; color:#C0C0C0;">&#9632; 出海战略是未来3年核心增长引擎</span></p>
+        <p><span style="font-size:13px; color:#E8B931;"><strong>&#9632; 维持"强烈推荐"，出海逻辑持续强化</strong></span></p>
+
+  # 底部darkpanel footer
+  - elementId: footer-bg
+    elementType: shape
+    bounds: [0, 660, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$darkpanel"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 668, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：公司财报、海关总署、各国统计局，2025E为一致预期</p>
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 668, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$text"
+      wrap: false
+      text: |
+        <p>08</p>

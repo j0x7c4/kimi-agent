@@ -1,0 +1,305 @@
+pageType: content
+background:
+  type: solid
+  color: "#F8F9FB"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: accent-stripe
+    elementType: shape
+    bounds: [0, 4, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # ── Title accent bar (gold vertical) ──
+  - elementId: title-accent-bar
+    elementType: shape
+    bounds: [80, 24, 4, 32]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # ── Page title ──
+  - elementId: page-title
+    elementType: text
+    bounds: [96, 24, 1100, 32]
+    content:
+      fontSize: 28
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>SWOT 分析：战略定位评估</strong></p>
+
+  # ── Title separator line ──
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 68, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  # ════════════════════════════════════════
+  #  TOP-LEFT: S 优势 / Strengths
+  # ════════════════════════════════════════
+
+  # Card background
+  - elementId: s-card-bg
+    elementType: shape
+    bounds: [80, 92, 560, 260]
+    shapeName: roundRect
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  # Left accent bar
+  - elementId: s-accent-bar
+    elementType: shape
+    bounds: [80, 92, 4, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  # Title
+  - elementId: s-title
+    elementType: text
+    bounds: [104, 104, 520, 28]
+    content:
+      fontSize: 18
+      color: "#0F172A"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>S 优势 / Strengths</strong></p>
+
+  # Bullet items
+  - elementId: s-bullets
+    elementType: text
+    bounds: [104, 142, 520, 196]
+    content:
+      fontSize: 15
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p>&#x25CF;  技术壁垒深厚，核心算法自主可控</p>
+        <p>&#x25CF;  数据飞轮效应，模型精度持续领先</p>
+        <p>&#x25CF;  垂直行业know-how，深耕场景理解</p>
+        <p>&#x25CF;  团队研发能力领先，人才密度高</p>
+
+  # ════════════════════════════════════════
+  #  TOP-RIGHT: W 劣势 / Weaknesses
+  # ════════════════════════════════════════
+
+  # Card background
+  - elementId: w-card-bg
+    elementType: shape
+    bounds: [640, 92, 560, 260]
+    shapeName: roundRect
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  # Left accent bar
+  - elementId: w-accent-bar
+    elementType: shape
+    bounds: [640, 92, 4, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#64748B"
+
+  # Title
+  - elementId: w-title
+    elementType: text
+    bounds: [664, 104, 520, 28]
+    content:
+      fontSize: 18
+      color: "#64748B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>W 劣势 / Weaknesses</strong></p>
+
+  # Bullet items
+  - elementId: w-bullets
+    elementType: text
+    bounds: [664, 142, 520, 196]
+    content:
+      fontSize: 15
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p>&#x25CF;  品牌知名度不足，市场认知待提升</p>
+        <p>&#x25CF;  销售团队规模有限，覆盖能力受限</p>
+        <p>&#x25CF;  海外市场经验欠缺，国际化路径不清</p>
+        <p>&#x25CF;  现金流储备偏紧，抗风险余量不足</p>
+
+  # ════════════════════════════════════════
+  #  BOTTOM-LEFT: O 机会 / Opportunities
+  # ════════════════════════════════════════
+
+  # Card background
+  - elementId: o-card-bg
+    elementType: shape
+    bounds: [80, 372, 560, 260]
+    shapeName: roundRect
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  # Left accent bar
+  - elementId: o-accent-bar
+    elementType: shape
+    bounds: [80, 372, 4, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # Title
+  - elementId: o-title
+    elementType: text
+    bounds: [104, 384, 520, 28]
+    content:
+      fontSize: 18
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>O 机会 / Opportunities</strong></p>
+
+  # Bullet items
+  - elementId: o-bullets
+    elementType: text
+    bounds: [104, 422, 520, 196]
+    content:
+      fontSize: 15
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p>&#x25CF;  $340B中国SaaS市场，渗透率加速提升</p>
+        <p>&#x25CF;  政策支持数字化转型，行业红利释放</p>
+        <p>&#x25CF;  竞品整合窗口期，市场格局重塑中</p>
+        <p>&#x25CF;  AI技术降本增效，产品价值跃迁</p>
+
+  # ════════════════════════════════════════
+  #  BOTTOM-RIGHT: T 威胁 / Threats
+  # ════════════════════════════════════════
+
+  # Card background
+  - elementId: t-card-bg
+    elementType: shape
+    bounds: [640, 372, 560, 260]
+    shapeName: roundRect
+    fill:
+      type: solid
+      color: "#F1F5F9"
+
+  # Left accent bar
+  - elementId: t-accent-bar
+    elementType: shape
+    bounds: [640, 372, 4, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#475569"
+
+  # Title
+  - elementId: t-title
+    elementType: text
+    bounds: [664, 384, 520, 28]
+    content:
+      fontSize: 18
+      color: "#475569"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>T 威胁 / Threats</strong></p>
+
+  # Bullet items
+  - elementId: t-bullets
+    elementType: text
+    bounds: [664, 422, 520, 196]
+    content:
+      fontSize: 15
+      color: "#1E293B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.8
+      wrap: true
+      text: |
+        <p>&#x25CF;  国际巨头进入中国，竞争烈度升级</p>
+        <p>&#x25CF;  价格战压缩利润，行业毛利承压</p>
+        <p>&#x25CF;  人才竞争加剧，核心团队稳定性风险</p>
+        <p>&#x25CF;  数据安全监管趋严，合规成本上升</p>
+
+  # ════════════════════════════════════════
+  #  CENTER: Diamond with "SWOT" label
+  # ════════════════════════════════════════
+
+  # Diamond shape
+  - elementId: center-diamond
+    elementType: shape
+    bounds: [615, 337, 50, 50]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "#B45309"
+
+  # SWOT text overlay
+  - elementId: center-swot-text
+    elementType: text
+    bounds: [610, 337, 60, 50]
+    content:
+      fontSize: 12
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>SWOT</strong></p>
+
+  # ── Source line ──
+  - elementId: source-text
+    elementType: text
+    bounds: [80, 668, 600, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Source: 内部战略评估, 行业调研, 2025Q1</p>
+
+  # ── Page number ──
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "09"

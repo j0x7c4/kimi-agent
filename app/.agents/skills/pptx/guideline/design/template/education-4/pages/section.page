@@ -1,0 +1,108 @@
+pageType: chapter
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: top-block
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 216
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: part-label
+    elementType: text
+    bounds:
+      - 80
+      - 60
+      - 400
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#D9E8F5; font-family:MiSans; letter-spacing:4px">PART  02</span></p>
+  - elementId: part-subtitle-top
+    elementType: text
+    bounds:
+      - 80
+      - 110
+      - 800
+      - 30
+    content:
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#D9E8F5; font-family:MiSans;">研究方法与数据收集</span></p>
+  - elementId: accent-line
+    elementType: shape
+    bounds:
+      - 80
+      - 270
+      - 4
+      - 120
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"
+  - elementId: chapter-title
+    elementType: text
+    bounds:
+      - 104
+      - 268
+      - 1080
+      - 130
+    content:
+      lineHeight: 1.25
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:48px; color:#2C5F8A; font-family:MiSans;"><strong>研究方法</strong></span></p>
+  - elementId: chapter-desc
+    elementType: text
+    bounds:
+      - 104
+      - 420
+      - 900
+      - 60
+    content:
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:20px; color:#8D8D8D; font-family:MiSans;">通过文献梳理与问卷调查相结合的混合研究方法，系统收集并分析数据</span></p>
+  - elementId: chapter-hint
+    elementType: text
+    bounds:
+      - 80
+      - 630
+      - 1120
+      - 30
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans; font-style:italic;">* 本章将介绍研究设计思路与数据来源，确保研究的科学性与可重复性</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"

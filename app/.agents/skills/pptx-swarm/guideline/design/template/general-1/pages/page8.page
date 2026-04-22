@@ -1,0 +1,91 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#0F1B3D"
+elements:
+- elementId: image0
+  elementType: image
+  bounds: [108, 424.45, 847.21, 563.77]
+  src: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200
+  fit:
+    mode: cover
+  crop:
+    top: 0.0009
+    bottom: 0.0009
+- elementId: image1
+  elementType: image
+  bounds: [964.79, 424.45, 847.21, 278.18]
+  src: https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200
+  fit:
+    mode: cover
+  crop:
+    top: 0.2537
+    bottom: 0.2537
+- elementId: image2
+  elementType: image
+  bounds: [964.79, 710.03, 847.21, 278.18]
+  src: https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200
+  fit:
+    mode: cover
+  crop:
+    top: 0.1495
+    bottom: 0.358
+- elementId: shape3
+  elementType: shape
+  bounds: [964.79, 228.18, 847.21, 108.45]
+  shapeName: custom
+  path: 11962837,1531313;M9594 0L11953243 0C11955788 0 11958228 1011 11960027 2810C11961826 4609 11962837 7049 11962837 9594L11962837 1521720C11962837 1527018 11958542 1531313 11953243 1531313L9594 1531313C4295 1531313 0 1527018 0 1521720L0 9594C0 4295 4295 0 9594 0Z
+  fill:
+    type: solid
+    color: "#4361EE"
+- elementId: text4
+  elementType: text
+  bounds: [981.86, 248.02, 813.08, 66.74]
+  content:
+    align: [left, middle]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "$dark"
+    lineHeightPx: 28
+    text: Drag and drop your photo or video! Click the sample photo or video and delete. Select yours from the uploads tab, drag, and then drop inside the frame!
+- elementId: line5
+  elementType: shape
+  bounds: [108, 109, 1704, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "#4361EE"
+- elementId: text6
+  elementType: text
+  bounds: [159.85, 129.42, 172.82, 71.28]
+  content:
+    align: [left, top]
+    fontSize: 30
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#4361EE"
+    lineHeightPx: 30.03
+    letterSpacing: -1.2
+    text: |
+      <p>Launch</p>
+      <p>Studio</p>
+- elementId: logo_diamond
+  elementType: shape
+  bounds: [108, 138.93, 52.49, 52.49]
+  shapeName: custom
+  path: 666605,666605;M333302 0L666605 333302L333302 666605L0 333302Z
+  fill:
+    type: solid
+    color: "#0F1B3D"
+- elementId: text9
+  elementType: text
+  bounds: [94.4, 204.65, 1421.83, 203.6]
+  content:
+    align: [left, top]
+    fontSize: 133.3
+    fontFamily: "Coda, deyihei"
+    color: "$light"
+    lineHeightPx: 159.99
+    text: |
+      <p>KEY <span style="color:#4361EE; font-family:Coda, deyihei">ASSETS</span></p>

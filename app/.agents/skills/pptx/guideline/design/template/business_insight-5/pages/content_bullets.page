@@ -1,0 +1,226 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Action title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 12, 1100, 58]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>市场领导者的竞争优势已构筑护城河，后来者进入成本在三年内上升40% — 窗口期正在关闭</strong></span></p>
+
+  - elementId: title-underline
+    elementType: shape
+    bounds: [60, 76, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Left column - Two bullet groups
+  - elementId: left-group1-title
+    elementType: text
+    bounds: [60, 86, 550, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:1px"><strong>竞争壁垒构建 · COMPETITIVE MOATS</strong></span></p>
+
+  - elementId: left-bullets1
+    elementType: text
+    bounds: [60, 114, 560, 240]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; font-family:Liter, MiSans;">&#9632; <strong>规模效应</strong>：领先者单位成本较行业均值低<span style="color:#8C1515;"><strong>28%</strong></span>，并以年均3-5pp持续扩大优势，形成难以复制的成本护城河</span></p>
+        <p style="margin-top:6px"><span style="font-size:14px; font-family:Liter, MiSans;">&#9632; <strong>数据飞轮</strong>：累积用户行为数据超<span style="color:#8C1515;"><strong>50亿条</strong></span>，算法迭代速度是后进者的3.2倍，构成技术壁垒</span></p>
+        <p style="margin-top:6px"><span style="font-size:14px; font-family:Liter, MiSans;">&#9632; <strong>生态锁定</strong>：合作伙伴迁移成本平均<span style="color:#8C1515;"><strong>¥1,800万</strong></span>，客户续约率维持在<span style="color:#8C1515;"><strong>94%</strong></span>以上</span></p>
+        <p style="margin-top:6px"><span style="font-size:14px; font-family:Liter, MiSans;">&#9632; <strong>品牌溢价</strong>：消费者愿意为头部品牌支付<span style="color:#8C1515;"><strong>15-22%</strong></span>的溢价，且该差距近两年持续扩大</span></p>
+
+  - elementId: left-divider
+    elementType: shape
+    bounds: [60, 370, 560, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: left-group2-title
+    elementType: text
+    bounds: [60, 380, 550, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:1px"><strong>后进者困境 · LATE-MOVER DISADVANTAGES</strong></span></p>
+
+  - elementId: left-bullets2
+    elementType: text
+    bounds: [60, 408, 560, 240]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; font-family:Liter, MiSans;">&#9632; <strong>获客成本飙升</strong>：平台流量红利消退，2023-2025年CAC年均上涨<span style="color:#8C1515;"><strong>35%</strong></span></span></p>
+        <p style="margin-top:6px"><span style="font-size:14px; font-family:Liter, MiSans;">&#9632; <strong>融资环境收紧</strong>：一级市场估值倍数从2021年峰值下降<span style="color:#8C1515;"><strong>62%</strong></span>，新进者融资窗口收窄</span></p>
+        <p style="margin-top:6px"><span style="font-size:14px; font-family:Liter, MiSans;">&#9632; <strong>人才溢价</strong>：核心技术人才薪酬中位数已达行业均值的<span style="color:#8C1515;"><strong>2.4倍</strong></span>，领先者掌握大量优质人才</span></p>
+
+  # Vertical divider
+  - elementId: col-divider
+    elementType: shape
+    bounds: [650, 76, 0, 580]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Right column - chart + summary
+  - elementId: right-chart-label
+    elementType: text
+    bounds: [668, 86, 570, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#1A1A1A; font-family:Liter, MiSans;"><strong>进入成本指数对比（2020-2026E，以2020年=100为基准）</strong></span></p>
+
+  - elementId: right-chart
+    elementType: chart
+    bounds: [668, 112, 564, 280]
+    type: line
+    options:
+      fontFamily: "Liter, MiSans"
+    data:
+      - {year: "2020", leader: 100, follower: 100, newentry: 100}
+      - {year: "2021", leader: 108, follower: 118, newentry: 125}
+      - {year: "2022", leader: 114, follower: 138, newentry: 158}
+      - {year: "2023", leader: 119, follower: 162, newentry: 198}
+      - {year: "2024", leader: 122, follower: 188, newentry: 245}
+      - {year: "2025E", leader: 126, follower: 218, newentry: 298}
+      - {year: "2026E", leader: 130, follower: 252, newentry: 352}
+    x: year
+    y: [leader, follower, newentry]
+    names: ["市场领先者", "跟随者", "新进入者"]
+    colors: ["#8C1515", "#555555", "#CCCCCC"]
+    seriesStyle:
+      "*":
+        smooth: true
+        width: 2
+        marker: false
+      leader:
+        width: 3
+      newentry:
+        line: dash
+    legend: {position: top, fontSize: 11}
+    xAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      gridLine: false
+    yAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      axisLine: false
+      min: 80
+
+  - elementId: right-key-insight
+    elementType: shape
+    bounds: [668, 402, 564, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: insight-box
+    elementType: shape
+    bounds: [668, 406, 564, 100]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: insight-label
+    elementType: text
+    bounds: [682, 414, 540, 18]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:1px"><strong>BOTTOM LINE · 核心结论</strong></span></p>
+
+  - elementId: insight-text
+    elementType: text
+    bounds: [682, 436, 536, 60]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">新进者进入成本已是市场领先者的<strong>2.7倍</strong>，且差距以年均<strong>18%</strong>的速度扩大。对于尚在观望的潜在进入者而言，战略窗口正在以前所未有的速度关闭。</span></p>
+
+  # Bottom implication
+  - elementId: impl-divider
+    elementType: shape
+    bounds: [668, 516, 564, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: impl-title
+    elementType: text
+    bounds: [668, 524, 564, 18]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Liter, MiSans; letter-spacing:1px"><strong>STRATEGIC IMPLICATIONS · 战略启示</strong></span></p>
+
+  - elementId: impl-text
+    elementType: text
+    bounds: [668, 546, 564, 108]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 对于<strong>现有玩家</strong>：加速巩固护城河，重点投入数据飞轮和生态建设</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 对于<strong>潜在进入者</strong>：寻找细分赛道的差异化切入点，避免正面竞争</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 对于<strong>投资人</strong>：优先支持已建立领先优势的头部标的，谨慎对待追赶型投资</span></p>
+
+  # Footer
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 658, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 662, 960, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：<a href="https://www.mckinsey.com">McKinsey Global Institute, 2025</a>；Bain Market Entry Index 2025；公司年报及自有研究模型</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 666, 60, 18]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>04</p>

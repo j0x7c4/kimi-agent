@@ -1,0 +1,99 @@
+pageType: content
+elements:
+  # Left: full portrait photo
+  - elementId: photo-bg
+    elementType: shape
+    bounds: [0, 0, 479, 720]
+    shapeName: rect
+    fill:
+      type: image
+      src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80"
+      fit:
+        mode: cover
+
+  # Right panel: white background
+  - elementId: right-panel
+    elementType: shape
+    bounds: [479, 0, 801, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  # Page number (top right)
+  - elementId: page-num
+    elementType: text
+    bounds: [1160, 46, 80, 48]
+    content:
+      style: "$pageNum"
+      align: [right, middle]
+      wrap: false
+      text: 02
+
+  # Name ghosted watermark (sits behind page-num — positioned to not overlap it)
+  - elementId: name-watermark
+    elementType: text
+    bounds: [495, 56, 640, 80]
+    content:
+      fontSize: 64
+      color: "#EFD9D5"
+      fontFamily: "Oranienbaum, MiSans"
+      align: [left, top]
+      lineHeight: 1.0
+      wrap: false
+      text: CAHAYA DEWI
+
+  # Script subtitle
+  - elementId: script-subtitle
+    elementType: text
+    bounds: [530, 126, 680, 90]
+    content:
+      fontSize: 48
+      color: "$primary"
+      fontFamily: "Oranienbaum, MiSans"
+      align: [left, top]
+      lineHeight: 1.15
+      text: |
+        <p><em>Creative Professional</em></p>
+
+  # Section 1
+  - elementId: section1-title
+    elementType: text
+    bounds: [520, 330, 680, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: YEAR OF EXPERIENCE
+
+  - elementId: section1-body
+    elementType: text
+    bounds: [520, 372, 700, 110]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Presentations are communication tools that can be</p>
+        <p>used as demonstrations, lectures, speeches,</p>
+        <p>reports, and more.</p>
+
+  # Section 2
+  - elementId: section2-title
+    elementType: text
+    bounds: [520, 500, 680, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: NOTABLE ACHIEVEMENTS
+
+  - elementId: section2-body
+    elementType: text
+    bounds: [520, 542, 700, 110]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Presentations are communication tools that can be</p>
+        <p>used as demonstrations, lectures, speeches,</p>
+        <p>reports, and more.</p>

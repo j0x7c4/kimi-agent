@@ -1,0 +1,359 @@
+pageType: final
+background:
+  type: solid
+  color: $darkBg
+elements:
+  - elementId: final-watermark-tl
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 120
+      - 120
+    shapeName: rect
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF08"
+  - elementId: final-watermark-br
+    elementType: shape
+    bounds:
+      - 1160
+      - 600
+      - 120
+      - 120
+    shapeName: rect
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF08"
+  - elementId: final-title
+    elementType: text
+    bounds:
+      - 240
+      - 48
+      - 800
+      - 44
+    wrap: false
+    content:
+      fontSize: 32
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>战略总结与行动号召</strong></p>
+  - elementId: final-ornament-top
+    elementType: shape
+    bounds:
+      - 540
+      - 104
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: $accent
+  - elementId: final-ornament-bottom
+    elementType: shape
+    bounds:
+      - 540
+      - 108
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: $accent
+  - elementId: point1-marker
+    elementType: shape
+    bounds:
+      - 140
+      - 148
+      - 12
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: point1-text
+    elementType: text
+    bounds:
+      - 164
+      - 140
+      - 840
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>全球化是集团未来三年<span style="color:#B87333;"><strong>最核心战略方向</strong></span>，海外营收目标 <span style="color:#B87333;"><strong>35%</strong></span></p>
+  - elementId: point1-num
+    elementType: text
+    bounds:
+      - 1060
+      - 136
+      - 120
+      - 36
+    wrap: false
+    content:
+      fontSize: 28
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><strong>¥50B</strong></p>
+  - elementId: point2-marker
+    elementType: shape
+    bounds:
+      - 140
+      - 198
+      - 12
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: point2-text
+    elementType: text
+    bounds:
+      - 164
+      - 190
+      - 840
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>数字化与AI驱动效率革命，运营成本预计降低 <span style="color:#B87333;"><strong>40%</strong></span>，决策周期缩短 <span style="color:#B87333;"><strong>60%</strong></span></p>
+  - elementId: point2-num
+    elementType: text
+    bounds:
+      - 1060
+      - 186
+      - 120
+      - 36
+    wrap: false
+    content:
+      fontSize: 28
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><strong>3.2x</strong></p>
+  - elementId: point3-marker
+    elementType: shape
+    bounds:
+      - 140
+      - 248
+      - 12
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: point3-text
+    elementType: text
+    bounds:
+      - 164
+      - 240
+      - 840
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p>战略并购<span style="color:#B87333;"><strong>¥8B规模</strong></span>，补全供应链关键环节，释放协同价值 <span style="color:#B87333;"><strong>¥2B+</strong></span></p>
+  - elementId: point3-num
+    elementType: text
+    bounds:
+      - 1060
+      - 236
+      - 120
+      - 36
+    wrap: false
+    content:
+      fontSize: 28
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><strong>¥8B</strong></p>
+  - elementId: divider-line
+    elementType: shape
+    bounds:
+      - 140
+      - 290
+      - 1000
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+  - elementId: resolution-title
+    elementType: text
+    bounds:
+      - 140
+      - 316
+      - 500
+      - 32
+    wrap: false
+    content:
+      fontSize: 20
+      color: $lightCopper
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>待审议决议事项</strong></p>
+  - elementId: resolution-1
+    elementType: text
+    bounds:
+      - 140
+      - 362
+      - 1000
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>决议一：</strong>审批2025–2028年集团战略发展规划纲要</p>
+  - elementId: resolution-2
+    elementType: text
+    bounds:
+      - 140
+      - 400
+      - 1000
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>决议二：</strong>批准¥18.5B三年战略投资预算及并购授权</p>
+  - elementId: resolution-3
+    elementType: text
+    bounds:
+      - 140
+      - 438
+      - 1000
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>决议三：</strong>批准组织架构调整方案及全球化事业部设立</p>
+  - elementId: bottom-line
+    elementType: shape
+    bounds:
+      - 140
+      - 500
+      - 1000
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF15"
+  - elementId: final-logo
+    elementType: shape
+    bounds:
+      - 610
+      - 524
+      - 60
+      - 28
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF25"
+  - elementId: contact-info
+    elementType: text
+    bounds:
+      - 340
+      - 564
+      - 600
+      - 24
+    wrap: false
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>XX集团战略发展部 · strategy@xxgroup.com</p>
+  - elementId: final-date
+    elementType: text
+    bounds:
+      - 340
+      - 592
+      - 600
+      - 24
+    wrap: false
+    content:
+      fontSize: 14
+      color: "#FFFFFF55"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>2025年X月 · 机密文件 · 仅供董事会成员传阅</p>

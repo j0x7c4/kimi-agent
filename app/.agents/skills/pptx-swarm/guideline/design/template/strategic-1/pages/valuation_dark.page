@@ -1,0 +1,410 @@
+pageType: content
+background:
+  type: solid
+  color: $primary
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 64
+      - 32
+      - 1100
+      - 40
+    wrap: false
+    content:
+      fontSize: 24
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>目标企业估值分析：$2.8B–$3.2B 合理区间</strong></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1190
+      - 36
+      - 60
+      - 32
+    wrap: false
+    content:
+      fontSize: 13
+      color: "#FFFFFF55"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        09
+  - elementId: valuation-number
+    elementType: text
+    bounds:
+      - 340
+      - 90
+      - 600
+      - 80
+    wrap: false
+    content:
+      fontSize: 64
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>$3.0B</strong></p>
+  - elementId: valuation-label
+    elementType: text
+    bounds:
+      - 440
+      - 172
+      - 400
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: "#FFFFFFCC"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>综合估值中位数（三法平均）</p>
+  - elementId: col1-title
+    elementType: text
+    bounds:
+      - 64
+      - 230
+      - 370
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>DCF 现金流折现法</strong></p>
+  - elementId: col1-number
+    elementType: text
+    bounds:
+      - 64
+      - 268
+      - 370
+      - 50
+    wrap: false
+    content:
+      fontSize: 40
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>$2.8B – $3.1B</strong></p>
+  - elementId: col1-assumptions
+    elementType: text
+    bounds:
+      - 84
+      - 330
+      - 330
+      - 120
+    content:
+      fontSize: 14
+      color: $lightCopper
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.7
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; WACC: 9.5%–10.5%</p>
+        <p>&#9632; 永续增长率: 2.5%</p>
+        <p>&#9632; 预测期: 10年</p>
+        <p>&#9632; 终值占比: 62%</p>
+  - elementId: col-divider-1
+    elementType: shape
+    bounds:
+      - 454
+      - 230
+      - 0
+      - 240
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: $accent
+  - elementId: col2-title
+    elementType: text
+    bounds:
+      - 474
+      - 230
+      - 330
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>可比公司法</strong></p>
+  - elementId: col2-number
+    elementType: text
+    bounds:
+      - 474
+      - 268
+      - 330
+      - 50
+    wrap: false
+    content:
+      fontSize: 40
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>$2.9B – $3.3B</strong></p>
+  - elementId: col2-assumptions
+    elementType: text
+    bounds:
+      - 494
+      - 330
+      - 290
+      - 120
+    content:
+      fontSize: 14
+      color: $lightCopper
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.7
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; EV/EBITDA: 14x–16x</p>
+        <p>&#9632; P/E: 22x–26x</p>
+        <p>&#9632; 可比公司: 6家</p>
+        <p>&#9632; 流动性折价: 15%</p>
+  - elementId: col-divider-2
+    elementType: shape
+    bounds:
+      - 824
+      - 230
+      - 0
+      - 240
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: $accent
+  - elementId: col3-title
+    elementType: text
+    bounds:
+      - 844
+      - 230
+      - 372
+      - 28
+    wrap: false
+    content:
+      fontSize: 18
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>可比交易法</strong></p>
+  - elementId: col3-number
+    elementType: text
+    bounds:
+      - 844
+      - 268
+      - 372
+      - 50
+    wrap: false
+    content:
+      fontSize: 40
+      color: $accent
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>$2.7B – $3.2B</strong></p>
+  - elementId: col3-assumptions
+    elementType: text
+    bounds:
+      - 864
+      - 330
+      - 332
+      - 120
+    content:
+      fontSize: 14
+      color: $lightCopper
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.7
+      align:
+        - left
+        - top
+      text: |
+        <p>&#9632; 近3年同行业交易: 8宗</p>
+        <p>&#9632; 交易溢价: 25%–35%</p>
+        <p>&#9632; 控制权溢价: 20%</p>
+        <p>&#9632; 中位数倍数: 15.2x</p>
+  - elementId: range-label
+    elementType: text
+    bounds:
+      - 64
+      - 490
+      - 400
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>推荐估值区间</strong></p>
+  - elementId: range-bar-bg
+    elementType: shape
+    bounds:
+      - 64
+      - 524
+      - 1152
+      - 24
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+  - elementId: range-bar-fill
+    elementType: shape
+    bounds:
+      - 525
+      - 524
+      - 346
+      - 24
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: range-low
+    elementType: text
+    bounds:
+      - 64
+      - 552
+      - 100
+      - 20
+    wrap: false
+    content:
+      fontSize: 12
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        $2.0B
+  - elementId: range-start
+    elementType: text
+    bounds:
+      - 500
+      - 552
+      - 100
+      - 20
+    wrap: false
+    content:
+      fontSize: 13
+      color: $accent
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>$2.8B</strong></p>
+  - elementId: range-end
+    elementType: text
+    bounds:
+      - 820
+      - 552
+      - 100
+      - 20
+    wrap: false
+    content:
+      fontSize: 13
+      color: $accent
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>$3.2B</strong></p>
+  - elementId: range-high
+    elementType: text
+    bounds:
+      - 1116
+      - 552
+      - 100
+      - 20
+    wrap: false
+    content:
+      fontSize: 12
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        $4.0B
+  - elementId: assumption-line
+    elementType: shape
+    bounds:
+      - 64
+      - 600
+      - 1152
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF20"
+  - elementId: assumption-text
+    elementType: text
+    bounds:
+      - 64
+      - 614
+      - 1152
+      - 48
+    content:
+      fontSize: 13
+      color: "#FFFFFF88"
+      fontFamily: QuattrocentoSans, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>关键假设：</strong>&#9632; 标的公司FY2024 EBITDA $200M，YoY +22% &#9632; 行业平均EV/EBITDA 15x &#9632; 协同效应预计释放 $50M/年（第3年起） &#9632; 交易结构：70%现金 + 30%换股</p>

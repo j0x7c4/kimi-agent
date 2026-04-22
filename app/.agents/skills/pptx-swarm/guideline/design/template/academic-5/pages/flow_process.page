@@ -1,0 +1,458 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧侧边栏
+  - elementId: sidebar-bg
+    elementType: shape
+    bounds: [0, 0, 180, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$sidebarBg"
+
+  - elementId: sidebar-logo
+    elementType: shape
+    bounds: [14, 14, 36, 36]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: sidebar-active-bg
+    elementType: shape
+    bounds: [0, 264, 180, 92]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: sidebar-item-1
+    elementType: text
+    bounds: [8, 80, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        01 研究背景
+
+  - elementId: sidebar-item-2
+    elementType: text
+    bounds: [8, 172, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        02 文献综述
+
+  - elementId: sidebar-item-3
+    elementType: text
+    bounds: [8, 264, 164, 92]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>03 研究方法</strong></p>
+
+  - elementId: sidebar-item-4
+    elementType: text
+    bounds: [8, 356, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        04 实验结果
+
+  - elementId: sidebar-item-5
+    elementType: text
+    bounds: [8, 448, 164, 92]
+    content:
+      fontSize: 16
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        05 结论展望
+
+  - elementId: sidebar-deco
+    elementType: shape
+    bounds: [84, 590, 12, 12]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "$accent"
+  # 顶部次级标题栏
+  - elementId: breadcrumb-bg
+    elementType: shape
+    bounds: [180, 0, 1100, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+
+  - elementId: breadcrumb-text
+    elementType: text
+    bounds: [200, 0, 1010, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>03 研究方法</strong>　›　3.2 技术路线图</p>
+
+  - elementId: breadcrumb-page-num
+    elementType: text
+    bounds: [1230, 0, 50, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "07"
+
+  # 标题
+  - elementId: content-title
+    elementType: text
+    bounds: [200, 68, 1040, 36]
+    content:
+      style: "$pageTitle"
+      fontSize: 24
+      wrap: false
+      text: |
+        <p><strong>研究技术路线与方法流程</strong></p>
+
+  - elementId: content-title-sep
+    elementType: shape
+    bounds: [200, 110, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B0BEC5"
+
+  # DNA特征：圆环进度链式流程（均匀铺满内容区）
+  # 步骤1
+  - elementId: step-circle-1
+    elementType: shape
+    bounds: [210, 148, 60, 60]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+    border:
+      style: solid
+      width: 3
+      color: "$primary"
+
+  - elementId: step-num-1
+    elementType: text
+    bounds: [210, 148, 60, 60]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "1"
+
+  - elementId: step-connector-1
+    elementType: shape
+    bounds: [270, 176, 183, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 步骤2
+  - elementId: step-circle-2
+    elementType: shape
+    bounds: [453, 148, 60, 60]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$secondary"
+    border:
+      style: solid
+      width: 3
+      color: "$secondary"
+
+  - elementId: step-num-2
+    elementType: text
+    bounds: [453, 148, 60, 60]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "2"
+
+  - elementId: step-connector-2
+    elementType: shape
+    bounds: [513, 176, 182, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 步骤3
+  - elementId: step-circle-3
+    elementType: shape
+    bounds: [695, 148, 60, 60]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 3
+      color: "$accent"
+
+  - elementId: step-num-3
+    elementType: text
+    bounds: [695, 148, 60, 60]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "3"
+
+  - elementId: step-connector-3
+    elementType: shape
+    bounds: [755, 176, 182, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 步骤4
+  - elementId: step-circle-4
+    elementType: shape
+    bounds: [937, 148, 60, 60]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#007AA8"
+    border:
+      style: solid
+      width: 3
+      color: "#007AA8"
+
+  - elementId: step-num-4
+    elementType: text
+    bounds: [937, 148, 60, 60]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "4"
+
+  - elementId: step-connector-4
+    elementType: shape
+    bounds: [997, 176, 183, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#007AA8"
+
+  # 步骤5
+  - elementId: step-circle-5
+    elementType: shape
+    bounds: [1180, 148, 60, 60]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$sidebarBg"
+    border:
+      style: solid
+      width: 3
+      color: "$sidebarBg"
+
+  - elementId: step-num-5
+    elementType: text
+    bounds: [1180, 148, 60, 60]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: "5"
+
+  # 步骤标签（与圆心对齐）
+  - elementId: step-label-1
+    elementType: text
+    bounds: [185, 218, 110, 50]
+    content:
+      fontSize: 14
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: true
+      text: |
+        <p><strong>数据收集</strong></p>
+        <p>与预处理</p>
+
+  - elementId: step-label-2
+    elementType: text
+    bounds: [428, 218, 110, 50]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: true
+      text: |
+        <p><strong>特征提取</strong></p>
+        <p>模型设计</p>
+
+  - elementId: step-label-3
+    elementType: text
+    bounds: [670, 218, 110, 50]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: true
+      text: |
+        <p><strong>模型训练</strong></p>
+        <p>优化调参</p>
+
+  - elementId: step-label-4
+    elementType: text
+    bounds: [912, 218, 110, 50]
+    content:
+      fontSize: 14
+      color: "#007AA8"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: true
+      text: |
+        <p><strong>实验验证</strong></p>
+        <p>消融分析</p>
+
+  - elementId: step-label-5
+    elementType: text
+    bounds: [1155, 218, 100, 50]
+    content:
+      fontSize: 14
+      color: "$sidebarBg"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      wrap: true
+      text: |
+        <p><strong>工程部署</strong></p>
+        <p>结论总结</p>
+
+  # 下方详细说明（图文混排，铺满内容区）
+  - elementId: detail-bg
+    elementType: shape
+    bounds: [200, 300, 1060, 340]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightBlue"
+    border:
+      style: solid
+      width: 1
+      color: "#B0BEC5"
+
+  - elementId: detail-chart
+    elementType: chart
+    bounds: [216, 316, 600, 308]
+    type: line
+    title:
+      text: "Figure 3. 训练收敛曲线对比"
+      fontSize: 13
+      color: "#005C82"
+    data:
+      - {epoch: "10", ours: 72.1, baseline: 65.3}
+      - {epoch: "20", ours: 81.5, baseline: 74.2}
+      - {epoch: "30", ours: 87.3, baseline: 80.1}
+      - {epoch: "40", ours: 90.8, baseline: 83.6}
+      - {epoch: "50", ours: 92.4, baseline: 85.9}
+      - {epoch: "60", ours: 93.2, baseline: 87.2}
+      - {epoch: "70", ours: 93.8, baseline: 88.1}
+      - {epoch: "80", ours: 94.1, baseline: 88.6}
+      - {epoch: "90", ours: 94.2, baseline: 88.9}
+      - {epoch: "100", ours: 94.3, baseline: 89.1}
+    x: epoch
+    y: [ours, baseline]
+    names: ["Ours", "Baseline"]
+    colors: ["#005C82", "#B0BEC5"]
+    options:
+      fontFamily: "QuattrocentoSans, MiSans"
+    seriesStyle:
+      "*":
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 5
+    xAxis:
+      title: "Epoch"
+      label:
+        fontSize: 11
+        color: "#666666"
+    yAxis:
+      title: "Accuracy (%)"
+      min: 60
+      max: 100
+      label:
+        fontSize: 11
+        color: "#666666"
+      gridLine:
+        color: "#B0BEC5"
+        style: dot
+    legend:
+      show: true
+      position: top
+      fontSize: 11
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "#B0BEC5"
+
+  - elementId: detail-right-text
+    elementType: text
+    bounds: [836, 324, 400, 276]
+    content:
+      fontSize: 17
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>• 完整流程覆盖数据到部署</p>
+        <p>• 各模块独立可替换</p>
+        <p>• 支持增量学习与在线更新</p>
+        <p>• 端到端优化，避免次优解</p>
+        <p>• 已在3个实际系统中验证</p>

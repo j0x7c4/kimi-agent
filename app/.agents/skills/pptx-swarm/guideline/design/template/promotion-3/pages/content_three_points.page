@@ -1,0 +1,117 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top nav bar
+  - elementId: nav-left
+    elementType: text
+    bounds: [120, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [left, top]
+      text: |
+        <p>Marketing</p>
+        <p>Approach</p>
+
+  - elementId: nav-right
+    elementType: text
+    bounds: [900, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [right, top]
+      text: |
+        <p>Bilson's</p>
+        <p>Supermarkets</p>
+
+  - elementId: nav-divider
+    elementType: shape
+    bounds: [120, 88, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Page title (left-aligned, bold, large)
+  - elementId: page-title
+    elementType: text
+    bounds: [120, 120, 760, 180]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p><strong>OUR MARKETING</strong></p>
+        <p><strong>STRATEGY</strong></p>
+
+  # Three columns
+  - elementId: col1-title
+    elementType: text
+    bounds: [120, 360, 330, 36]
+    content:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "HedvigLettersSans"
+      align: [left, middle]
+      text: Brand Awareness
+
+  - elementId: col1-body
+    elementType: text
+    bounds: [120, 402, 330, 240]
+    content:
+      style: "$body"
+      align: [left, top]
+      lineHeight: 1.6
+      text: |
+        <p>Build strong brand recognition</p>
+        <p>through consistent messaging,</p>
+        <p>visual identity, and cross-channel</p>
+        <p>campaigns that resonate with</p>
+        <p>our target audience.</p>
+
+  - elementId: col2-title
+    elementType: text
+    bounds: [500, 360, 330, 36]
+    content:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "HedvigLettersSans"
+      align: [left, middle]
+      text: Customer Engagement
+
+  - elementId: col2-body
+    elementType: text
+    bounds: [500, 402, 330, 290]
+    content:
+      style: "$body"
+      align: [left, top]
+      lineHeight: 1.6
+      text: |
+        <p>Foster loyalty through personalized</p>
+        <p>communication, exclusive rewards,</p>
+        <p>and community-building initiatives</p>
+        <p>that turn customers into long-term</p>
+        <p>brand advocates.</p>
+
+  - elementId: col3-title
+    elementType: text
+    bounds: [880, 360, 280, 36]
+    content:
+      fontSize: 24
+      color: "$primary"
+      fontFamily: "HedvigLettersSans"
+      align: [left, middle]
+      text: Revenue Growth
+
+  - elementId: col3-body
+    elementType: text
+    bounds: [880, 402, 280, 290]
+    content:
+      style: "$body"
+      align: [left, top]
+      lineHeight: 1.6
+      text: |
+        <p>Drive measurable sales growth</p>
+        <p>through data-driven promotions,</p>
+        <p>strategic partnerships, and</p>
+        <p>conversion-optimized digital</p>
+        <p>touchpoints.</p>

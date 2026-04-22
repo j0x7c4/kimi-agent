@@ -1,0 +1,314 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 80
+      - 60
+      - 800
+      - 50
+    content:
+      style: $title
+      align:
+        - left
+        - middle
+      text: |
+        <p>理解核心概念：知识的本质</p>
+  - elementId: main-content
+    elementType: shape
+    bounds:
+      - 80
+      - 140
+      - 480
+      - 380
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset:
+        - 0
+        - 2
+  - elementId: content-text
+    elementType: text
+    bounds:
+      - 110
+      - 170
+      - 420
+      - 320
+    content:
+      style: $body
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>什么是深度学习？</strong></p>
+        <p style="margin-top:12px">深度学习不仅是记忆信息，更是建立知识之间的联系，形成可迁移的认知模式。</p>
+        <p style="margin-top:16px"><span style="color:$accent">• 关联性思考</span>：将新知识与已有经验连接</p>
+        <p style="margin-top:8px"><span style="color:$accent">• 结构化理解</span>：构建知识的层级关系</p>
+        <p style="margin-top:8px"><span style="color:$accent">• 实践性应用</span>：在真实场景中验证理解</p>
+        <p style="margin-top:8px"><span style="color:$accent">• 反思性总结</span>：定期回顾和优化认知</p>
+  - elementId: diagram-container
+    elementType: shape
+    bounds:
+      - 600
+      - 140
+      - 600
+      - 380
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset:
+        - 0
+        - 2
+  - elementId: center-node
+    elementType: shape
+    bounds:
+      - 840
+      - 270
+      - 120
+      - 120
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: $primary
+  - elementId: center-text
+    elementType: text
+    bounds:
+      - 840
+      - 270
+      - 120
+      - 120
+    content:
+      fontSize: 18
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>核心概念</strong></p>
+  - elementId: node1
+    elementType: shape
+    bounds:
+      - 680
+      - 180
+      - 120
+      - 56
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: node1-text
+    elementType: text
+    bounds:
+      - 680
+      - 180
+      - 120
+      - 56
+    content:
+      fontSize: 14
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>理论基础</p>
+  - elementId: line1
+    elementType: shape
+    bounds:
+      - 800
+      - 208
+      - 50
+      - 72
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: $secondary
+  - elementId: node2
+    elementType: shape
+    bounds:
+      - 1000
+      - 180
+      - 120
+      - 56
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: node2-text
+    elementType: text
+    bounds:
+      - 1000
+      - 180
+      - 120
+      - 56
+    content:
+      fontSize: 14
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>实践方法</p>
+  - elementId: line2
+    elementType: shape
+    bounds:
+      - 950
+      - 208
+      - 50
+      - 72
+    flip:
+      - true
+      - false
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: $secondary
+  - elementId: node3
+    elementType: shape
+    bounds:
+      - 680
+      - 420
+      - 120
+      - 56
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: node3-text
+    elementType: text
+    bounds:
+      - 680
+      - 420
+      - 120
+      - 56
+    content:
+      fontSize: 14
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>案例分析</p>
+  - elementId: line3
+    elementType: shape
+    bounds:
+      - 800
+      - 380
+      - 50
+      - 68
+    flip:
+      - true
+      - false
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: $secondary
+  - elementId: node4
+    elementType: shape
+    bounds:
+      - 1000
+      - 420
+      - 120
+      - 56
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: node4-text
+    elementType: text
+    bounds:
+      - 1000
+      - 420
+      - 120
+      - 56
+    content:
+      fontSize: 14
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>评估反馈</p>
+  - elementId: line4
+    elementType: shape
+    bounds:
+      - 950
+      - 380
+      - 50
+      - 68
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: $secondary
+  - elementId: memory-card
+    elementType: shape
+    bounds:
+      - 80
+      - 560
+      - 1120
+      - 80
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: memory-icon
+    elementType: icon
+    bounds:
+      - 120
+      - 580
+      - 40
+      - 40
+    iconName: fas:lightbulb
+    fill:
+      type: solid
+      color: $textWhite
+  - elementId: memory-text
+    elementType: text
+    bounds:
+      - 180
+      - 570
+      - 980
+      - 60
+    content:
+      fontSize: 18
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>关键洞察：</strong>有效学习 = 理解 + 联系 + 应用 + 反思。知识不是孤立的碎片，而是相互连接的网络。</p>

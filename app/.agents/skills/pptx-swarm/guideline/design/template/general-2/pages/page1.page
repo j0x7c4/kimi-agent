@@ -1,0 +1,58 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: text0
+    elementType: text
+    bounds:
+      - 98.4
+      - 121.53
+      - 1186.01
+      - 423.27
+    content:
+      fontSize: 186.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 205.32
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>5TH GENERATION <span style="color:#7EC0DA">TECHNOLOGY</span></strong></p>
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 1509.18
+      - 819.86
+      - 337.62
+      - 160.8
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        Learn how 5G is changing the world of communication
+  - elementId: text2
+    elementType: text
+    bounds:
+      - 98.4
+      - 907
+      - 997.1
+      - 69.8
+    content:
+      fontSize: 44
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 61.6
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>The latest breakthrough explained</strong></p>

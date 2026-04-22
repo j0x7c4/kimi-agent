@@ -1,0 +1,372 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深青绿色带
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题区域背景
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 5, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 10, 1100, 30]
+    content:
+      fontSize: 20
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Customer Segmentation & Business Group Analysis</strong></p>
+  - elementId: page-subtitle
+    elementType: text
+    bounds: [50, 40, 1100, 22]
+    content:
+      align: [left, middle]
+      fontSize: 14
+      color: "#FFFFFFCC"
+      wrap: false
+      text: |
+        <p>Luxury consumers tend to be younger as they want to improve life quality and reflect own achievement</p>
+
+  # ===== 上半部分：三个图表区域 =====
+
+  # 中部标题框
+  - elementId: comp-title-border
+    elementType: shape
+    bounds: [420, 78, 280, 28]
+    shapeName: rect
+    border: {style: solid, width: 1, color: "$primary"}
+
+  - elementId: comp-title-text
+    elementType: text
+    bounds: [420, 78, 280, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0D8B7D;"><strong>Composition of Consumer Group</strong></span></p>
+
+  # === 左侧：City Level Distribution ===
+  - elementId: city-icon
+    elementType: icon
+    bounds: [50, 118, 18, 18]
+    iconName: "fas:city"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: city-title
+    elementType: text
+    bounds: [74, 115, 300, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#333333;"><strong>City Level Distribution in 2019&2020</strong></span></p>
+
+  - elementId: city-chart
+    elementType: chart
+    bounds: [50, 145, 360, 130]
+    type: bar
+    options:
+      stacked: "100%"
+      direction: horizontal
+      barWidth: 0.6
+      fontFamily: "Liter, MiSans"
+    data:
+      - {year: "2019", first: 12, second: 27, third: 28, fourth: 34}
+      - {year: "2020", first: 9, second: 28, third: 29, fourth: 33}
+    x: year
+    y: [first, second, third, fourth]
+    names: ["First-tier", "Second-tier", "Third-tier", "Fourth-tier"]
+    colors: ["$dark", "$primary", "#66B2A8", "#B8DDD8"]
+    legend: {position: bottom, fontSize: 10}
+    dataLabels:
+      show: true
+      content: value
+      color: "#ffffff"
+      fontSize: 10
+      numberFormat: "0'%'"
+    xAxis:
+      show: false
+      gridLine: false
+    yAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      gridLine: false
+      axisLine: false
+
+  - elementId: city-callout
+    elementType: text
+    bounds: [90, 282, 280, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#0D8B7D;"><strong>Low-tier city has large potential sales growth</strong></span></p>
+
+  # === 中部：Age Distribution ===
+  - elementId: age-icon
+    elementType: icon
+    bounds: [440, 118, 18, 18]
+    iconName: "fas:users"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: age-title
+    elementType: text
+    bounds: [464, 115, 300, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#333333;"><strong>Age Distribution in 2019&2020</strong></span></p>
+
+  - elementId: age-chart
+    elementType: chart
+    bounds: [440, 145, 360, 130]
+    type: bar
+    options:
+      stacked: "100%"
+      direction: horizontal
+      barWidth: 0.6
+      fontFamily: "Liter, MiSans"
+    data:
+      - {year: "2019", a1824: 14, a2534: 32, a3544: 26, a4554: 26}
+      - {year: "2020", a1824: 12, a2534: 37, a3544: 29, a4554: 22}
+    x: year
+    y: [a1824, a2534, a3544, a4554]
+    names: ["Age 18-24", "Age 25-34", "Age 35-44", "Age 45-54"]
+    colors: ["$dark", "$primary", "#66B2A8", "#B8DDD8"]
+    legend: {position: bottom, fontSize: 10}
+    dataLabels:
+      show: true
+      content: value
+      color: "#ffffff"
+      fontSize: 10
+      numberFormat: "0'%'"
+    xAxis:
+      show: false
+      gridLine: false
+    yAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      gridLine: false
+      axisLine: false
+
+  - elementId: age-callout
+    elementType: text
+    bounds: [470, 282, 300, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#0D8B7D;"><strong>Younger generation is the key engines for growth</strong></span></p>
+
+  # === 右侧：Top 5 reasons ===
+  - elementId: reasons-title-border
+    elementType: shape
+    bounds: [840, 78, 240, 28]
+    shapeName: rect
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: reasons-title
+    elementType: text
+    bounds: [840, 78, 240, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#333333;"><strong>Top 5 reasons to buy luxury goods</strong></span></p>
+
+  - elementId: reasons-chart
+    elementType: chart
+    bounds: [830, 112, 420, 195]
+    type: bar
+    options:
+      direction: horizontal
+      barWidth: 0.5
+      fontFamily: "Liter, MiSans"
+    data:
+      - {reason: "To improve life quality", pct: 52}
+      - {reason: "To reflect my achievement", pct: 38}
+      - {reason: "To reflect my taste", pct: 33}
+      - {reason: "To feel more confident", pct: 29}
+      - {reason: "To feel more attractive", pct: 28}
+    x: reason
+    y: [pct]
+    colors: ["$primary"]
+    legend: false
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 11
+      numberFormat: "0'%'"
+    xAxis:
+      show: false
+      gridLine: false
+    yAxis:
+      label: {fontSize: 10, color: "$text"}
+      gridLine: false
+      axisLine: false
+
+  # ===== 下半部分：Business Group Selection Analysis =====
+
+  - elementId: mid-line
+    elementType: shape
+    bounds: [50, 318, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: dash, width: 1, color: "$border"}
+
+  - elementId: table-title-border
+    elementType: shape
+    bounds: [440, 326, 300, 28]
+    shapeName: rect
+    border: {style: solid, width: 1, color: "$primary"}
+
+  - elementId: table-title-text
+    elementType: text
+    bounds: [440, 326, 300, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0D8B7D;"><strong>Business Group Selection Analysis</strong></span></p>
+
+  - elementId: score-table
+    elementType: table
+    bounds: [50, 366, 1180, 310]
+    columnWidths: [0.10, 0.28, 0.28, 0.24, 0.10]
+    rowHeights: [0.09, 0.30, 0.30, 0.31]
+    style: "$default"
+    rows:
+      - - content:
+            text: ""
+        - content:
+            text: |
+              <p><strong>Price</strong></p>
+        - content:
+            text: |
+              <p><strong>Sales Volume</strong></p>
+        - content:
+            text: |
+              <p><strong>Structure</strong></p>
+        - content:
+            text: |
+              <p><strong>Score</strong></p>
+      - - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>Jewelries</strong></span></p>
+          fill:
+            type: solid
+            color: "$lightgray"
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 2.5/3</strong></span></p>
+              <p><span style="font-size:12px;">1.Natural Jewels: Through rarity, high product value and production cost, premium pricing.</span></p>
+              <p><span style="font-size:12px;">2.Synthesis Jewels: Lower cost, larger output, lower price.</span></p>
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 1.1/3</strong></span></p>
+              <p><span style="font-size:12px;">1.Natural: High price limits sales volume.</span></p>
+              <p><span style="font-size:12px;">2.Synthesis: Higher volume through lower price.</span></p>
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 1/3</strong></span></p>
+              <p><span style="font-size:12px;">Limited cost control due to labor, design, raw materials extraction costs.</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:20px; color:#0D8B7D;"><strong>4.6</strong></span></p>
+      - - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>Fashion</strong></span></p>
+              <p><span style="font-size:11px;">(Apparel)</span></p>
+          fill:
+            type: solid
+            color: "$lightgray"
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 1.5/3</strong></span></p>
+              <p><span style="font-size:12px;">1. Apparel: Moderate premium through quality and brand.</span></p>
+              <p><span style="font-size:12px;">2. Haute couture: High price but limited customer base.</span></p>
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 1.5/3</strong></span></p>
+              <p><span style="font-size:12px;">1.Apparel: Average sales volume.</span></p>
+              <p><span style="font-size:12px;">2.Haute couture: Less sales due to premium price.</span></p>
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 2.3/3</strong></span></p>
+              <p><span style="font-size:12px;">Lower raw material difficulty than jewelry, more options to select.</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:20px; color:#0D8B7D;"><strong>5.3</strong></span></p>
+      - - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>Cosmetics</strong></span></p>
+          fill:
+            type: solid
+            color: "$lightgray"
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 1/3</strong></span></p>
+              <p><span style="font-size:12px;">Premium pricing not as high as jewelry, relies on attractive pricing for volume.</span></p>
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 2.6/3</strong></span></p>
+              <p><span style="font-size:12px;">High volume due to acceptable price, brand value and daily necessity.</span></p>
+        - content:
+            align: [left, top]
+            fontSize: 12
+            lineHeight: 1.3
+            text: |
+              <p><span style="font-size:12px; color:#0D8B7D;"><strong>Score: 2.3/3</strong></span></p>
+              <p><span style="font-size:12px;">More options for raw materials and suppliers selection.</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:20px; color:#0D8B7D;"><strong>5.9</strong></span></p>

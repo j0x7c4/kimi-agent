@@ -1,0 +1,184 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 50]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p>知识检测：测试你的掌握程度</p>
+
+  # 说明文字
+  - elementId: instruction
+    elementType: text
+    bounds: [80, 105, 800, 35]
+    content:
+      style: "$caption"
+      text: |
+        <p>翻转卡片查看答案，检验你对函数与方程的理解</p>
+
+  # 卡片1 - 问题面
+  - elementId: card1-bg
+    elementType: shape
+    bounds: [80, 165, 540, 210]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    shadow:
+      blur: 20
+      color: "#00000012"
+      offset: [0, 6]
+    border:
+      style: solid
+      width: 1
+      color: "#E8E8E8"
+
+  - elementId: card1-q-icon
+    elementType: icon
+    bounds: [120, 195, 34, 34]
+    iconName: "fas:question-circle"
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card1-question
+    elementType: text
+    bounds: [120, 240, 460, 100]
+    content:
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      text: |
+        <p><strong>一次函数 y = 2x − 3 的图像过哪个象限？</strong></p>
+        <p><span style="font-size:16px; color:$lightText;">提示：分析 k 和 b 的正负</span></p>
+
+  # 卡片2 - 答案面
+  - elementId: card2-bg
+    elementType: shape
+    bounds: [660, 165, 540, 210]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "$primary"}
+        - {position: 1, color: "#0A8B91"}
+    shadow:
+      blur: 20
+      color: "#0A6B7020"
+      offset: [0, 6]
+
+  - elementId: card2-a-icon
+    elementType: icon
+    bounds: [700, 195, 34, 34]
+    iconName: "fas:check-circle"
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: card2-answer
+    elementType: text
+    bounds: [700, 240, 460, 100]
+    content:
+      fontSize: 22
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      text: |
+        <p><strong>过一、三、四象限</strong></p>
+        <p><span style="font-size:18px;">k=2>0 递增，b=−3<0 交 y 轴负半轴</span></p>
+
+  # 卡片3
+  - elementId: card3-bg
+    elementType: shape
+    bounds: [80, 400, 540, 210]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    shadow:
+      blur: 20
+      color: "#00000012"
+      offset: [0, 6]
+    border:
+      style: solid
+      width: 1
+      color: "#E8E8E8"
+
+  - elementId: card3-q-icon
+    elementType: icon
+    bounds: [120, 430, 34, 34]
+    iconName: "fas:question-circle"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: card3-question
+    elementType: text
+    bounds: [120, 475, 460, 100]
+    content:
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      text: |
+        <p><strong>方程 x² − 5x + 6 = 0 的两根之和等于多少？</strong></p>
+        <p><span style="font-size:16px; color:$lightText;">运用韦达定理思考</span></p>
+
+  # 卡片4
+  - elementId: card4-bg
+    elementType: shape
+    bounds: [660, 400, 540, 210]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    shadow:
+      blur: 20
+      color: "#00000012"
+      offset: [0, 6]
+    border:
+      style: solid
+      width: 1
+      color: "#E8E8E8"
+
+  - elementId: card4-q-icon
+    elementType: icon
+    bounds: [700, 430, 34, 34]
+    iconName: "fas:brain"
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: card4-question
+    elementType: text
+    bounds: [700, 475, 460, 100]
+    content:
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      text: |
+        <p><strong>判别式 Δ = 0 时，方程有几个实数根？</strong></p>
+        <p><span style="font-size:16px; color:$lightText;">结合公式法理解</span></p>
+
+  # 底部提示
+  - elementId: bottom-tip
+    elementType: text
+    bounds: [80, 640, 1120, 44]
+    content:
+      style: "$caption"
+      align: [center, middle]
+      text: |
+        <p>学习建议：每学完一节内容后做一次自测，及时发现薄弱知识点</p>

@@ -1,0 +1,62 @@
+title: 学术研究报告模板（蓝白极简版）
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#1A4A7A"
+    secondary: "#5B9BD5"
+    accent: "#2E86C1"
+    background: "#FFFFFF"
+    text: "#2C2C2C"
+    navBg: "#1A4A7A"
+    lightGray: "#F5F5F5"
+    white: "#FFFFFF"
+    midBlue: "#5B9BD5"
+    borderGray: "#E0E0E0"
+  textStyles:
+    title:
+      fontSize: 42
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    pageTitle:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    subtitle:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+    body:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.7
+    caption:
+      fontSize: 14
+      color: "#888888"
+      fontFamily: "QuattrocentoSans, MiSans"
+    label:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+  tableStyles:
+    default:
+      headerFill: "$primary"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$lightGray"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$borderGray"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/bullets.page
+  - pages/two_column.page
+  - pages/content_grid.page
+  - pages/methodology.page
+  - pages/data_table.page
+  - pages/insight_highlight.page
+  - pages/final.page

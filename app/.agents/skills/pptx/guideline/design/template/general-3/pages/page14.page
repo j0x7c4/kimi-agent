@@ -1,0 +1,111 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: linear
+  angle: 45
+  stops:
+  - position: 0
+    color: "#C7E2FFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#FFFFFFFF"
+elements:
+- elementId: text1
+  elementType: text
+  bounds: [98.4, 101.2, 924.98, 176.88]
+  content:
+    align: [left, top]
+    fontSize: 68
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 84.35
+    text: SUMMARY AND Q&A
+- elementId: line2
+  elementType: shape
+  bounds: [981.67, 124.07, 675.97, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text3
+  elementType: text
+  bounds: [98.4, 275.12, 460, 65.22]
+  content:
+    align: [left, top]
+    fontSize: 41.4
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 57.95
+    text: 总结与互动答疑
+- elementId: text4
+  elementType: text
+  bounds: [1429.83, 98.2, 409.77, 49.73]
+  content:
+    align: [right, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 4.16
+    text: PART 04
+- elementId: shape5
+  elementType: shape
+  bounds: [108, 380.84, 1722, 591.17]
+  shapeName: custom
+  path: 4319882,1483021;M0 0L4319882 0L4319882 1483021L0 1483021Z
+  fill:
+    type: solid
+    color: "#BFE4FF"
+- elementId: text6
+  elementType: text
+  bounds: [103.73, 362.38, 1730.53, 609.08]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: text7
+  elementType: text
+  bounds: [787.38, 427.54, 345.25, 67.07]
+  content:
+    align: [center, top]
+    fontSize: 42.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 59.72
+    text: 互动答疑
+- elementId: text8
+  elementType: text
+  bounds: [179.23, 540.13, 1604.86, 133.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 欢迎大家提问！无论是关于睡眠时间、助眠方法、还是睡眠障碍的疑问，我都会尽力为大家解答。记住，好的睡眠是最简单、最有效的健康投资！
+- elementId: text9
+  elementType: text
+  bounds: [179.23, 697.27, 1604.86, 217.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 您也可以关注社区健康中心公众号，获取更多睡眠科普文章和免费睡眠质量评估。让我们一起关注睡眠、守护健康。感谢大家今天的积极参与，祝每位听众都能拥有高质量的睡眠！
+- elementId: line10
+  elementType: shape
+  bounds: [918.86, 504.93, 82.29, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 6
+    color: "#7EC8E3"

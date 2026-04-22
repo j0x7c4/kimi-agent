@@ -1,0 +1,423 @@
+pageType: content
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 56
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 24
+      - 0
+      - 900
+      - 56
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:32px; color:#FFFFFF; font-family:MiSans;"><strong>概念关系图谱</strong></span></p>
+  - elementId: concept-tag-bg
+    elementType: shape
+    bounds:
+      - 1096
+      - 12
+      - 160
+      - 32
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: concept-tag-text
+    elementType: text
+    bounds:
+      - 1096
+      - 12
+      - 160
+      - 32
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#FFFFFF; font-family:MiSans;"><strong>CONCEPT MAP</strong></span></p>
+  - elementId: center-node-bg
+    elementType: shape
+    bounds:
+      - 464
+      - 248
+      - 352
+      - 100
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#1565C0"
+    shadow:
+      blur: 16
+      color: "#1565C040"
+      offset:
+        - 0
+        - 4
+  - elementId: center-node-text
+    elementType: text
+    bounds:
+      - 464
+      - 248
+      - 352
+      - 100
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:26px; color:#FFFFFF; font-family:MiSans;"><strong>核心概念</strong></span></p>
+  - elementId: line-lu
+    elementType: shape
+    bounds:
+      - 300
+      - 176
+      - 164
+      - 72
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#FF8F00"
+  - elementId: line-ru
+    elementType: shape
+    bounds:
+      - 816
+      - 176
+      - 164
+      - 72
+    flip:
+      - false
+      - true
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#FF8F00"
+  - elementId: line-ld
+    elementType: shape
+    bounds:
+      - 300
+      - 348
+      - 164
+      - 96
+    flip:
+      - false
+      - true
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#FF8F00"
+  - elementId: line-rd
+    elementType: shape
+    bounds:
+      - 816
+      - 348
+      - 164
+      - 96
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#FF8F00"
+  - elementId: sub-lu-bg
+    elementType: shape
+    bounds:
+      - 80
+      - 140
+      - 220
+      - 72
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#E3F2FD"
+    border:
+      style: solid
+      width: 2
+      color: "#1565C0"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: sub-lu-text
+    elementType: text
+    bounds:
+      - 80
+      - 140
+      - 220
+      - 72
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#1565C0; font-family:MiSans;"><strong>性质 A</strong></span></p>
+  - elementId: sub-lu-desc
+    elementType: text
+    bounds:
+      - 60
+      - 220
+      - 240
+      - 60
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans;">描述性质A与核心概念的关系，简明扼要</span></p>
+  - elementId: sub-ru-bg
+    elementType: shape
+    bounds:
+      - 980
+      - 140
+      - 220
+      - 72
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#E3F2FD"
+    border:
+      style: solid
+      width: 2
+      color: "#1565C0"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: sub-ru-text
+    elementType: text
+    bounds:
+      - 980
+      - 140
+      - 220
+      - 72
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#1565C0; font-family:MiSans;"><strong>性质 B</strong></span></p>
+  - elementId: sub-ru-desc
+    elementType: text
+    bounds:
+      - 980
+      - 220
+      - 220
+      - 60
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans;">描述性质B与核心概念的关系，简明扼要</span></p>
+  - elementId: sub-ld-bg
+    elementType: shape
+    bounds:
+      - 80
+      - 408
+      - 220
+      - 72
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#E3F2FD"
+    border:
+      style: solid
+      width: 2
+      color: "#1565C0"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: sub-ld-text
+    elementType: text
+    bounds:
+      - 80
+      - 408
+      - 220
+      - 72
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#1565C0; font-family:MiSans;"><strong>推论 C</strong></span></p>
+  - elementId: sub-ld-desc
+    elementType: text
+    bounds:
+      - 60
+      - 490
+      - 260
+      - 60
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans;">由性质A和B推导出的重要推论，解题关键</span></p>
+  - elementId: sub-rd-bg
+    elementType: shape
+    bounds:
+      - 980
+      - 408
+      - 220
+      - 72
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#E3F2FD"
+    border:
+      style: solid
+      width: 2
+      color: "#1565C0"
+    shadow:
+      blur: 8
+      color: "#1565C01A"
+      offset:
+        - 0
+        - 2
+  - elementId: sub-rd-text
+    elementType: text
+    bounds:
+      - 980
+      - 408
+      - 220
+      - 72
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#1565C0; font-family:MiSans;"><strong>应用 D</strong></span></p>
+  - elementId: sub-rd-desc
+    elementType: text
+    bounds:
+      - 960
+      - 490
+      - 260
+      - 60
+    content:
+      lineHeight: 1.5
+      align:
+        - center
+        - top
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans;">核心概念在实际问题中的典型应用场景</span></p>
+  - elementId: think-bg
+    elementType: shape
+    bounds:
+      - 200
+      - 580
+      - 880
+      - 80
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FFF8E1"
+    border:
+      style: dash
+      width: 2
+      color: "#FF8F00"
+  - elementId: think-icon
+    elementType: text
+    bounds:
+      - 220
+      - 580
+      - 60
+      - 80
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:32px; color:#FF8F00; font-family:MiSans;"><strong>?</strong></span></p>
+  - elementId: think-text
+    elementType: text
+    bounds:
+      - 284
+      - 590
+      - 780
+      - 60
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;"><strong style="color:#FF8F00;">课堂思考：</strong>性质A和推论C之间存在怎样的逻辑关系？你能用自己的话解释吗？</span></p>
+  - elementId: progress-done
+    elementType: shape
+    bounds:
+      - 0
+      - 708
+      - 1138
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: progress-rest
+    elementType: shape
+    bounds:
+      - 1138
+      - 708
+      - 142
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#CFD8DC"

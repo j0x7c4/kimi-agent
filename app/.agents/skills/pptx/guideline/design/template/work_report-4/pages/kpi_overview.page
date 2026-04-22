@@ -1,0 +1,178 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 48]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: |
+        <p><strong>Q4季度核心KPI达成情况</strong></p>
+  
+  # KPI卡片1 - 销售额
+  - elementId: kpi-card-1-bg
+    elementType: shape
+    bounds: [80, 160, 360, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 4]
+  
+  - elementId: kpi-1-label
+    elementType: text
+    bounds: [100, 180, 320, 30]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      align: [left, middle]
+      text: |
+        <p>季度销售额</p>
+  
+  - elementId: kpi-1-value
+    elementType: text
+    bounds: [100, 220, 320, 50]
+    content:
+      style: "$emphasis"
+      color: "$primary"
+      align: [left, middle]
+      text: |
+        <p><strong>3.2亿</strong></p>
+  
+  - elementId: kpi-1-change
+    elementType: text
+    bounds: [100, 280, 320, 30]
+    content:
+      fontSize: 14
+      color: "$accent"
+      align: [left, middle]
+      text: |
+        <p>↑ 同比增长 23.5%</p>
+  
+  # KPI卡片2 - 用户增长
+  - elementId: kpi-card-2-bg
+    elementType: shape
+    bounds: [460, 160, 360, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 4]
+  
+  - elementId: kpi-2-label
+    elementType: text
+    bounds: [480, 180, 320, 30]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      align: [left, middle]
+      text: |
+        <p>新增用户数</p>
+  
+  - elementId: kpi-2-value
+    elementType: text
+    bounds: [480, 220, 320, 50]
+    content:
+      style: "$emphasis"
+      color: "$primary"
+      align: [left, middle]
+      text: |
+        <p><strong>125万</strong></p>
+  
+  - elementId: kpi-2-change
+    elementType: text
+    bounds: [480, 280, 320, 30]
+    content:
+      fontSize: 14
+      color: "$accent"
+      align: [left, middle]
+      text: |
+        <p>↑ 环比增长 18.2%</p>
+  
+  # KPI卡片3 - 完成率
+  - elementId: kpi-card-3-bg
+    elementType: shape
+    bounds: [840, 160, 360, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 4]
+  
+  - elementId: kpi-3-label
+    elementType: text
+    bounds: [860, 180, 320, 30]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      align: [left, middle]
+      text: |
+        <p>目标完成率</p>
+  
+  - elementId: kpi-3-value
+    elementType: text
+    bounds: [860, 220, 320, 50]
+    content:
+      style: "$emphasis"
+      color: "$accent"
+      align: [left, middle]
+      text: |
+        <p><strong>108%</strong></p>
+  
+  - elementId: kpi-3-progress-bg
+    elementType: shape
+    bounds: [860, 280, 320, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "#DCDCDA"
+  
+  - elementId: kpi-3-progress
+    elementType: shape
+    bounds: [860, 280, 320, 8]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill:
+      type: solid
+      color: "$accent"
+  
+  # 总结文本
+  - elementId: summary-title
+    elementType: text
+    bounds: [80, 380, 1120, 40]
+    content:
+      fontSize: 24
+      color: "$primary"
+      align: [left, middle]
+      text: |
+        <p><strong>关键成果总结</strong></p>
+  
+  - elementId: summary-content
+    elementType: text
+    bounds: [80, 440, 1120, 180]
+    content:
+      style: "$body"
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>• <strong>销售业绩</strong>：Q4季度销售额达3.2亿元，超额完成年度目标，主要得益于新产品线的成功推出</p>
+        <p>• <strong>用户增长</strong>：通过精准营销和产品优化，新增用户125万，用户留存率提升至78%</p>
+        <p>• <strong>市场份额</strong>：在核心市场份额提升2.3个百分点，达到18.5%，位居行业第二</p>
+        <p>• <strong>运营效率</strong>：通过流程优化和自动化改造，运营成本降低15%，人效提升22%</p>

@@ -1,0 +1,121 @@
+pageType: cover
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top 2px red line
+  - elementId: top-red-line
+    elementType: shape
+    bounds: [0, 0, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Main title ALL CAPS
+  - elementId: cover-title
+    elementType: text
+    bounds: [160, 200, 960, 120]
+    content:
+      align: [center, middle]
+      wrap: true
+      lineHeight: 1.25
+      text: |
+        <p><span style="font-size:48px; color:#2C2C2C; font-family:Liter, MiSans;"><strong>INDUSTRY DEEP DIVE</strong></span></p>
+        <p><span style="font-size:28px; color:#2C2C2C; font-family:Liter, MiSans;">行业深度研究报告</span></p>
+
+  # Red separator line
+  - elementId: cover-red-separator
+    elementType: shape
+    bounds: [560, 332, 160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Subtitle
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [160, 350, 960, 32]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#888888; font-family:Liter, MiSans;">Market Strategy &amp; Competitive Intelligence | 商业战略与市场洞察</span></p>
+
+  # Date / org
+  - elementId: cover-date
+    elementType: text
+    bounds: [160, 395, 960, 26]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#888888; font-family:Liter, MiSans;">March 2026 | Strategy Research Division · 战略研究部</span></p>
+
+  # Stat 1 number
+  - elementId: stat1-num
+    elementType: text
+    bounds: [110, 450, 320, 64]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:38px; color:#2C2C2C; font-family:Liter, MiSans;"><strong>¥2.8T / 万亿</strong></span></p>
+
+  # Stat 1 label
+  - elementId: stat1-label
+    elementType: text
+    bounds: [110, 516, 320, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#888888; font-family:Liter, MiSans;">Market Size 市场规模</span></p>
+
+  # Stat 2 number
+  - elementId: stat2-num
+    elementType: text
+    bounds: [490, 450, 300, 64]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:38px; color:#D91E18; font-family:Liter, MiSans;"><strong>+18.6%</strong></span></p>
+
+  # Stat 2 label
+  - elementId: stat2-label
+    elementType: text
+    bounds: [490, 516, 300, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#888888; font-family:Liter, MiSans;">YoY Growth 同比增长</span></p>
+
+  # Stat 3 number
+  - elementId: stat3-num
+    elementType: text
+    bounds: [870, 450, 300, 64]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:38px; color:#2C2C2C; font-family:Liter, MiSans;"><strong>CR5 62%</strong></span></p>
+
+  # Stat 3 label
+  - elementId: stat3-label
+    elementType: text
+    bounds: [870, 516, 300, 22]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#888888; font-family:Liter, MiSans;">Concentration 集中度</span></p>
+
+  # Bottom 2px red line
+  - elementId: bottom-red-line
+    elementType: shape
+    bounds: [0, 718, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"

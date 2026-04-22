@@ -1,0 +1,39 @@
+pageType: chapter
+background:
+  type: gradient
+  gradientType: linear
+  angle: -45
+  stops:
+    - {position: 0, color: "$secondary"}
+    - {position: 1, color: "$primary"}
+elements:
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [140, 280, 1000, 50]
+    content:
+      style: "$chapterTitle"
+      align: [center, middle]
+      text: |
+        <p><strong>未来展望</strong></p>
+  
+  # 章节描述
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [240, 350, 800, 40]
+    content:
+      fontSize: 18
+      color: "#F5F8F7"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      text: |
+        <p>把握机遇，创造更大价值</p>
+  
+  # 装饰性形状
+  - elementId: deco-shape
+    elementType: shape
+    bounds: [540, 420, 200, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"

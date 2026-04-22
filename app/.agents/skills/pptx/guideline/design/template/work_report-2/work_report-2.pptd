@@ -1,0 +1,58 @@
+title: Nordic Corporate Work Report Template
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#6B8E7D"      # 莫兰迪鼠尾草绿
+    secondary: "#EAE8E3"    # 柔和沙灰
+    accent: "#2C2C2C"       # 暖炭黑
+    background: "#F7F7F5"   # 极简米白
+    text: "#2C2C2C"         # 暖炭黑
+    lightText: "#9CA3AF"    # 雾灰
+    white: "#FFFFFF"        # 纯净白
+  textStyles:
+    title:
+      fontSize: 32
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.2
+    subtitle:
+      fontSize: 24
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.4
+    body:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+    caption:
+      fontSize: 14
+      color: "$lightText"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.4
+    bigNumber:
+      fontSize: 60
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1
+  tableStyles:
+    default:
+      fontSize: 16
+      fontFamily: "Liter, MiSans"
+      headerFill: "$white"
+      headerColor: "$text"
+      headerBold: false
+      bodyFill: ["$white", "$white"]
+      bodyColor: "$text"
+      border: null
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter1.page
+  - pages/content1_numbers.page
+  - pages/content2_chart.page
+  - pages/content3_cards.page
+  - pages/content4_timeline.page
+  - pages/content5_reflection.page
+  - pages/chapter2.page
+  - pages/ending.page

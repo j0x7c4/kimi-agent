@@ -1,0 +1,259 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 60, 800, 50]
+    content:
+      style: "$title"
+      align: [left, middle]
+      text: |
+        <p><strong>全球茶产业核心数据</strong></p>
+
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 120, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 数据卡片1 - 饮茶人口
+  - elementId: card1-bg
+    elementType: shape
+    bounds: [100, 180, 260, 180]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 10
+      color: "#00000008"
+      offset: [0, 4]
+
+  - elementId: card1-number
+    elementType: text
+    bounds: [100, 200, 260, 70]
+    content:
+      style: "$dataNumber"
+      align: [center, middle]
+      text: |
+        <p>73亿</p>
+
+  - elementId: card1-label
+    elementType: text
+    bounds: [100, 280, 260, 30]
+    content:
+      fontSize: 18
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p>全球饮茶人口</p>
+
+  - elementId: card1-growth
+    elementType: text
+    bounds: [100, 315, 260, 25]
+    content:
+      style: "$caption"
+      align: [center, middle]
+      text: |
+        <p>↑ 3.2% YoY</p>
+
+  # 数据卡片2 - 年产量
+  - elementId: card2-bg
+    elementType: shape
+    bounds: [390, 180, 260, 180]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 10
+      color: "#00000008"
+      offset: [0, 4]
+
+  - elementId: card2-number
+    elementType: text
+    bounds: [390, 200, 260, 70]
+    content:
+      style: "$dataNumber"
+      align: [center, middle]
+      text: |
+        <p>630万吨</p>
+
+  - elementId: card2-label
+    elementType: text
+    bounds: [390, 280, 260, 30]
+    content:
+      fontSize: 18
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p>年产量</p>
+
+  - elementId: card2-growth
+    elementType: text
+    bounds: [390, 315, 260, 25]
+    content:
+      style: "$caption"
+      align: [center, middle]
+      text: |
+        <p>↑ 5.8% YoY</p>
+
+  # 数据卡片3 - 市场规模
+  - elementId: card3-bg
+    elementType: shape
+    bounds: [680, 180, 260, 180]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 10
+      color: "#00000008"
+      offset: [0, 4]
+
+  - elementId: card3-number
+    elementType: text
+    bounds: [680, 200, 260, 70]
+    content:
+      fontSize: 48
+      color: "$accent"
+      align: [center, middle]
+      text: |
+        <p>2000亿</p>
+
+  - elementId: card3-label
+    elementType: text
+    bounds: [680, 280, 260, 30]
+    content:
+      fontSize: 18
+      color: "$text"
+      align: [center, middle]
+      text: |
+        <p>全球市场规模（美元）</p>
+
+  - elementId: card3-growth
+    elementType: text
+    bounds: [680, 315, 260, 25]
+    content:
+      style: "$caption"
+      align: [center, middle]
+      text: |
+        <p>↑ 8.1% YoY</p>
+
+  # 数据卡片4 - 中国占比
+  - elementId: card4-bg
+    elementType: shape
+    bounds: [970, 180, 210, 180]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "$primary"}
+        - {position: 1, color: "#2E5E8ACC"}
+
+  - elementId: card4-number
+    elementType: text
+    bounds: [970, 200, 210, 70]
+    content:
+      fontSize: 60
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p><strong>49%</strong></p>
+
+  - elementId: card4-label
+    elementType: text
+    bounds: [970, 280, 210, 30]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: |
+        <p>中国全球产量占比</p>
+
+  - elementId: card4-growth
+    elementType: text
+    bounds: [970, 315, 210, 25]
+    content:
+      fontSize: 16
+      color: "#FFFFFFCC"
+      align: [center, middle]
+      text: |
+        <p>世界第一</p>
+
+  # 底部趋势图
+  - elementId: trend-bg
+    elementType: shape
+    bounds: [100, 400, 1080, 200]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    border:
+      style: solid
+      width: 1
+      color: "$secondary"
+
+  - elementId: trend-chart
+    elementType: chart
+    bounds: [140, 420, 1000, 150]
+    type: bar
+    data:
+      - {year: "2015", value: 520}
+      - {year: "2016", value: 535}
+      - {year: "2017", value: 548}
+      - {year: "2018", value: 562}
+      - {year: "2019", value: 578}
+      - {year: "2020", value: 590}
+      - {year: "2021", value: 598}
+      - {year: "2022", value: 610}
+      - {year: "2023", value: 618}
+      - {year: "2024", value: 625}
+      - {year: "2025", value: 630}
+    x: year
+    y: [value]
+    names: ["全球茶叶年产量（万吨）"]
+    colors: ["$accent"]
+    options:
+      fontFamily: "Liter, MiSans"
+      barWidth: 0.6
+    seriesStyle:
+      "*":
+        fill:
+          type: gradient
+          gradientType: linear
+          angle: -90
+          stops:
+            - {position: 0, color: "$accent"}
+            - {position: 1, color: "#FF7F5060"}
+    xAxis:
+      label:
+        fontSize: 11
+        color: "$textLight"
+    yAxis:
+      show: false
+      min: 450
+    legend: false
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 670, 80, 30]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      text: |
+        <p>06</p>

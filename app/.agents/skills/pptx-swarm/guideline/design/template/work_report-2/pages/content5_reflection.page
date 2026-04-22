@@ -1,0 +1,226 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 导航栏背景
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 56]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+    border:
+      style: solid
+      width: 1
+      color: "#EAE8E3"
+
+  # 选中项指示条
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [715, 52, 175, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: nav-item1
+    elementType: text
+    bounds: [100, 10, 190, 36]
+    content:
+      text: "Performance Overview"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item2
+    elementType: text
+    bounds: [310, 10, 170, 36]
+    content:
+      text: "Strategic Initiatives"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item3
+    elementType: text
+    bounds: [500, 10, 195, 36]
+    content:
+      text: "Organization & Talent"
+      fontSize: 15
+      color: "#C8C8C4"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  - elementId: nav-item4
+    elementType: text
+    bounds: [715, 10, 175, 36]
+    content:
+      text: |
+        <p><strong>Reflection & Forward</strong></p>
+      fontSize: 15
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 90, 900, 50]
+    content:
+      text: |
+        <p><strong>Reflection & Improvement Paths</strong></p>
+      fontSize: 32
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 分割线
+  - elementId: divider
+    elementType: shape
+    bounds: [100, 155, 1080, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  # 核心反思 - 引用框
+  - elementId: quote-bar
+    elementType: shape
+    bounds: [100, 190, 4, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: main-reflection
+    elementType: text
+    bounds: [120, 190, 1060, 76]
+    content:
+      text: |
+        <p><em>"The challenge of scaling innovation while maintaining operational excellence remains our core strategic tension."</em></p>
+      fontSize: 22
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.4
+      align: [left, middle]
+
+  # 左栏：Challenges
+  - elementId: left-title
+    elementType: text
+    bounds: [100, 290, 500, 36]
+    content:
+      text: |
+        <p><strong>Key Challenges Identified</strong></p>
+      fontSize: 22
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  - elementId: left-content
+    elementType: text
+    bounds: [100, 336, 500, 240]
+    content:
+      text: |
+        <p>• Cross-functional alignment slowed decision cycles by <strong>20%</strong></p>
+        <p>• Talent acquisition in emerging tech fell <strong>15%</strong> short of target</p>
+        <p>• Legacy system migration caused <strong>3-week</strong> delivery delays</p>
+      fontSize: 20
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+      align: [left, top]
+
+  # 右栏：Improvement Paths
+  - elementId: right-title
+    elementType: text
+    bounds: [660, 290, 520, 36]
+    content:
+      text: |
+        <p><strong>Improvement Paths for 2025</strong></p>
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 改进卡片1
+  - elementId: path1-bg
+    elementType: shape
+    bounds: [660, 336, 520, 84]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: path1-text
+    elementType: text
+    bounds: [680, 338, 480, 80]
+    content:
+      text: |
+        <p><strong>Innovation Labs</strong></p>
+        <p style="color:#9CA3AF">Dedicated space for experimentation and rapid prototyping</p>
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.4
+      align: [left, middle]
+
+  # 改进卡片2
+  - elementId: path2-bg
+    elementType: shape
+    bounds: [660, 424, 520, 84]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: path2-text
+    elementType: text
+    bounds: [680, 426, 480, 80]
+    content:
+      text: |
+        <p><strong>Agile Governance</strong></p>
+        <p style="color:#9CA3AF">Adaptive frameworks to accelerate cross-team decisions</p>
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.4
+      align: [left, middle]
+
+  # 改进卡片3
+  - elementId: path3-bg
+    elementType: shape
+    bounds: [660, 526, 520, 84]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  - elementId: path3-text
+    elementType: text
+    bounds: [680, 528, 480, 80]
+    content:
+      text: |
+        <p><strong>Talent Pipeline</strong></p>
+        <p style="color:#9CA3AF">Build university partnerships and internal upskilling programs</p>
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.4
+      align: [left, middle]
+
+  # 页码
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 660, 80, 30]
+    content:
+      text: "08"
+      style: "$caption"
+      align: [right, bottom]

@@ -1,0 +1,299 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 顶部accent装饰线
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # lightpanel标题带
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 4, 1280, 55]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 10, 1100, 46]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#ffffff; font-family:Times New Roman, SimSun, MiSans;"><strong>头部六家企业财务对比显示龙头在盈利能力与研发投入上具备显著优势</strong></span></p>
+
+  # 数据表格
+  - elementId: data-table
+    elementType: table
+    bounds: [50, 72, 1180, 480]
+    columnWidths: [0.14, 0.12, 0.12, 0.12, 0.12, 0.12, 0.26]
+    rowHeights: [0.08, 0.115, 0.115, 0.115, 0.115, 0.115, 0.115, 0.115, 0.115]
+    style: "$default"
+    rows:
+      - - content:
+            text: |
+              <p><strong>指标/企业</strong></p>
+        - content:
+            text: |
+              <p><strong>企业A（龙头）</strong></p>
+        - content:
+            text: |
+              <p><strong>企业B</strong></p>
+        - content:
+            text: |
+              <p><strong>企业C</strong></p>
+        - content:
+            text: |
+              <p><strong>企业D</strong></p>
+        - content:
+            text: |
+              <p><strong>企业E</strong></p>
+        - content:
+            text: |
+              <p><strong>核心分析结论</strong></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>营收（亿元）</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#E8B931;"><strong>856</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">623</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">518</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">412</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">387</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#5BA4CF;">A营收为E的2.2倍，规模优势显著</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>营收增速</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#E8B931;"><strong>+23.4%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">+15.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">+12.3%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">+8.6%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">+18.2%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#5BA4CF;">A增速领先，E增速回升值得关注</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>毛利率</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#E8B931;"><strong>28.6%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">24.1%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">31.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">19.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">22.5%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#5BA4CF;">C毛利率最高，产品差异化定价能力强</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>净利率</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#E8B931;"><strong>16.6%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">11.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">14.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">6.3%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">9.1%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#5BA4CF;">A净利率领先，费用控制与规模效应双优</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>研发费用率</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#E8B931;"><strong>18.2%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">12.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">15.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">8.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">14.6%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#5BA4CF;">A研发投入绝对值与占比均为最高</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>ROE</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px; color:#E8B931;"><strong>24.8%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">16.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">19.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">10.8%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">13.4%</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#5BA4CF;">A的ROE远超同业，资本回报效率突出</span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:13px;"><strong>PE（TTM）</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">32.5x</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">25.8x</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">28.2x</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">18.6x</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="font-size:14px;">22.1x</span></p>
+        - content:
+            align: [left, middle]
+            text: |
+              <p><span style="font-size:12px; color:#5BA4CF;">A估值溢价合理，PEG仅1.4x</span></p>
+
+  # 表格结论
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [50, 567, 1180, 70]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:14px;"><strong>综合评估：</strong>企业A在营收规模、增速、盈利能力、研发投入四个维度均处于行业领先地位。尽管当前PE估值（32.5x）高于行业均值（25.4x），但考虑到其23.4%的增速，PEG仅为1.4x，估值溢价具备合理性。建议维持"强烈推荐"评级，12个月目标价上调至¥185（对应2025E PE 35x）。</span></p>
+
+  # 底部darkpanel footer
+  - elementId: footer-bg
+    elementType: shape
+    bounds: [0, 660, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$darkpanel"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 668, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：各公司2024年报、Wind金融终端，截至2025年3月</p>
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 668, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$text"
+      wrap: false
+      text: |
+        <p>06</p>

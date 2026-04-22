@@ -1,0 +1,63 @@
+title: 商业洞察报告模板（华泰风 · 深色数据屏）
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#0C2340"
+    secondary: "#FFFFFF"
+    accent: "#5BA4CF"
+    highlight: "#E8B931"
+    background: "#0C2340"
+    text: "#E8E8E8"
+    darkpanel: "#0A1C33"
+    lightpanel: "#163A5F"
+    border: "#2A5080"
+    medgray: "#2A5080"
+  textStyles:
+    title:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Times New Roman, SimSun, MiSans"
+      lineHeight: 1.3
+    subtitle:
+      fontSize: 14
+      color: "$border"
+      fontFamily: "Calibri, Microsoft YaHei, MiSans"
+      lineHeight: 1.3
+    body:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Calibri, Microsoft YaHei, MiSans"
+      lineHeight: 1.5
+    caption:
+      fontSize: 12
+      color: "$border"
+      fontFamily: "Calibri, Microsoft YaHei, MiSans"
+      lineHeight: 1.2
+    bignum:
+      fontSize: 40
+      color: "$accent"
+      fontFamily: "Calibri Light, Arial, MiSans"
+  tableStyles:
+    default:
+      fontSize: 13
+      fontFamily: "Calibri, Microsoft YaHei, MiSans"
+      headerFill: "$lightpanel"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["$primary", "$darkpanel"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$border"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/action_title_chart.page
+  - pages/kpi_dashboard.page
+  - pages/data_table.page
+  - pages/market_analysis.page
+  - pages/trend_comparison.page
+  - pages/process_flow.page
+  - pages/final.page

@@ -1,0 +1,109 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 免责声明标题
+  - elementId: disclaimer-title
+    elementType: text
+    bounds: [60, 60, 1160, 40]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:26px; color:#263238; font-family:SortsMillGoudy, MiSans;"><strong>免责声明与法律信息</strong></span></p>
+
+  # 标题下方细线
+  - elementId: title-line
+    elementType: shape
+    bounds: [60, 105, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 分析师信息
+  - elementId: analyst-title
+    elementType: text
+    bounds: [60, 120, 400, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>分析师信息</strong></span></p>
+
+  - elementId: analyst-info
+    elementType: text
+    bounds: [60, 152, 560, 100]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>首席分析师：</strong>XXX SAC执业证书编号：SXXXXXXXXXX</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>联合分析师：</strong>XXX SAC执业证书编号：SXXXXXXXXXX</span></p>
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>联系方式：</strong>xxx@xxsec.com | +86-XX-XXXX-XXXX</span></p>
+
+  # 评级说明
+  - elementId: rating-title
+    elementType: text
+    bounds: [660, 120, 560, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:Liter, MiSans;"><strong>评级体系说明</strong></span></p>
+
+  - elementId: rating-info
+    elementType: text
+    bounds: [660, 152, 560, 112]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:14px; color:#333333; font-family:Liter, MiSans;"><strong>强烈推荐：</strong>预期未来12个月涨幅超过20%　|　<strong>推荐：</strong>涨幅10%-20%</span></p>
+        <p><span style="font-size:14px; color:#333333; font-family:Liter, MiSans;"><strong>中性：</strong>涨幅-10%至10%　|　<strong>回避：</strong>预期跌幅超过10%</span></p>
+
+  # 分隔线
+  - elementId: middle-line
+    elementType: shape
+    bounds: [60, 275, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 免责声明
+  - elementId: disclaimer-text
+    elementType: text
+    bounds: [60, 290, 1160, 360]
+    content:
+      align: [left, top]
+      wrap: true
+      lineHeight: 1.6
+      text: |
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;"><strong>重要声明</strong></span></p>
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;">本报告由XX证券股份有限公司（以下简称"本公司"）制作。本报告中的信息均来源于已公开的资料，本公司对这些信息的准确性及完整性不作任何保证。本报告所载的资料、意见及推测仅反映本公司于发布本报告当日的判断，本报告所指的证券或投资标的的价格、价值及投资收入可能会波动。在不同时期，本公司可发出与本报告所载资料、意见及推测不一致的报告。</span></p>
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;">本报告所载的信息、材料或分析工具仅提供给客户作参考之用，不构成对任何人的投资建议或招揽。本报告中所指的投资及服务可能不适合阁下，建议阁下如有任何疑问应咨询独立投资顾问。本报告不构成投资、法律、会计或税务建议，且不担保任何投资及策略适合阁下。</span></p>
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;">本公司及其关联机构可能会持有报告中提到的公司所发行的证券头寸并进行交易，还可能为这些公司提供或争取提供投资银行业务服务。本公司的销售人员、交易人员或其关联机构人员可能会向客户提供与本报告中的意见不一致的口头或书面市场评论或交易策略。</span></p>
+        <p><span style="font-size:14px; color:#78909C; font-family:Liter, MiSans;">本报告版权仅为本公司所有，未经书面许可任何机构和个人不得以任何形式翻版、复制、刊登、发表或引用。如征得本公司同意进行引用、刊发的，需在允许的范围内使用并注明出处为"XX证券研究所"，且不得对本报告进行任何有悖原意的引用、删节和修改。</span></p>
+
+  # 底部细线
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [60, 668, 1160, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+
+  # 底部信息
+  - elementId: bottom-info
+    elementType: text
+    bounds: [60, 676, 1160, 20]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#90A4AE; font-family:Liter, MiSans;">XX证券股份有限公司 | XX市XX区XX路XXX号 | 总机：XXX-XXXX-XXXX | www.xxsec.com</span></p>

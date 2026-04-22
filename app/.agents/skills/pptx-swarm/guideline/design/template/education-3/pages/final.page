@@ -1,0 +1,380 @@
+pageType: final
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: left-panel
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 768
+      - 720
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: left-geo1
+    elementType: shape
+    bounds:
+      - 600
+      - 580
+      - 160
+      - 120
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF08"
+  - elementId: left-geo2
+    elementType: shape
+    bounds:
+      - 700
+      - 0
+      - 80
+      - 80
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FFFFFF06"
+  - elementId: summary-label
+    elementType: text
+    bounds:
+      - 48
+      - 60
+      - 400
+      - 32
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#90CAF9; font-family:MiSans; letter-spacing:3px">LESSON SUMMARY · 本课小结</span></p>
+  - elementId: summary-line
+    elementType: shape
+    bounds:
+      - 48
+      - 100
+      - 80
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 3
+      color: "#FF8F00"
+  - elementId: summary-title
+    elementType: text
+    bounds:
+      - 48
+      - 112
+      - 680
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:32px; color:#FFFFFF; font-family:MiSans;"><strong>今日学习要点回顾</strong></span></p>
+  - elementId: point1-circle
+    elementType: shape
+    bounds:
+      - 48
+      - 200
+      - 40
+      - 40
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: point1-num
+    elementType: text
+    bounds:
+      - 48
+      - 200
+      - 40
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#FFFFFF; font-family:MiSans;"><strong>1</strong></span></p>
+  - elementId: point1-text
+    elementType: text
+    bounds:
+      - 104
+      - 200
+      - 620
+      - 80
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:24px; color:#FFFFFF; font-family:MiSans;"><strong>核心概念的定义与性质</strong></span></p>
+        <p><span style="font-size:18px; color:#B3D9FF; font-family:MiSans;">掌握概念A和B的本质区别，理解适用条件</span></p>
+  - elementId: point2-circle
+    elementType: shape
+    bounds:
+      - 48
+      - 300
+      - 40
+      - 40
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: point2-num
+    elementType: text
+    bounds:
+      - 48
+      - 300
+      - 40
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#FFFFFF; font-family:MiSans;"><strong>2</strong></span></p>
+  - elementId: point2-text
+    elementType: text
+    bounds:
+      - 104
+      - 300
+      - 620
+      - 80
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:24px; color:#FFFFFF; font-family:MiSans;"><strong>解题方法与思路框架</strong></span></p>
+        <p><span style="font-size:18px; color:#B3D9FF; font-family:MiSans;">灵活运用勾股定理与三角函数解决综合问题</span></p>
+  - elementId: point3-circle
+    elementType: shape
+    bounds:
+      - 48
+      - 400
+      - 40
+      - 40
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: point3-num
+    elementType: text
+    bounds:
+      - 48
+      - 400
+      - 40
+      - 40
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#FFFFFF; font-family:MiSans;"><strong>3</strong></span></p>
+  - elementId: point3-text
+    elementType: text
+    bounds:
+      - 104
+      - 400
+      - 620
+      - 80
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:24px; color:#FFFFFF; font-family:MiSans;"><strong>知识迁移与实际应用</strong></span></p>
+        <p><span style="font-size:18px; color:#B3D9FF; font-family:MiSans;">将本节知识联系生活实例，形成完整知识体系</span></p>
+  - elementId: next-lesson
+    elementType: text
+    bounds:
+      - 48
+      - 500
+      - 680
+      - 48
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#64B5F6; font-family:MiSans;">下节课预告：第四章 综合应用拓展 · 重点推荐预习例4.1-4.3</span></p>
+  - elementId: right-title
+    elementType: text
+    bounds:
+      - 800
+      - 60
+      - 432
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#FF8F00; font-family:MiSans;"><strong>课后思考</strong></span></p>
+  - elementId: right-sub
+    elementType: text
+    bounds:
+      - 800
+      - 100
+      - 432
+      - 24
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans; letter-spacing:1px">AFTER CLASS · 课后练习</span></p>
+  - elementId: think1-bg
+    elementType: shape
+    bounds:
+      - 800
+      - 140
+      - 440
+      - 140
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: dash
+      width: 2
+      color: "#1565C0"
+  - elementId: think1-label
+    elementType: text
+    bounds:
+      - 820
+      - 148
+      - 120
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#1565C0; font-family:MiSans;"><strong>思考题 1</strong></span></p>
+  - elementId: think1-text
+    elementType: text
+    bounds:
+      - 820
+      - 180
+      - 400
+      - 92
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;">若直角三角形斜边长为13，一直角边为5，求另一直角边及两个锐角的大小。</span></p>
+  - elementId: think2-bg
+    elementType: shape
+    bounds:
+      - 800
+      - 300
+      - 440
+      - 140
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: dash
+      width: 2
+      color: "#1565C0"
+  - elementId: think2-label
+    elementType: text
+    bounds:
+      - 820
+      - 308
+      - 120
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#1565C0; font-family:MiSans;"><strong>思考题 2</strong></span></p>
+  - elementId: think2-text
+    elementType: text
+    bounds:
+      - 820
+      - 340
+      - 400
+      - 92
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#263238; font-family:MiSans;">生活中哪些场景用到了勾股定理？请举两个例子，并写出计算过程。</span></p>
+  - elementId: thanks-text
+    elementType: text
+    bounds:
+      - 800
+      - 460
+      - 440
+      - 56
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:32px; color:#FF8F00; font-family:MiSans;"><strong>谢谢大家！</strong></span></p>
+  - elementId: thanks-sub
+    elementType: text
+    bounds:
+      - 800
+      - 524
+      - 440
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#546E7A; font-family:MiSans;">认真学习 · 勇于思考 · 不断进步</span></p>
+  - elementId: progress-full
+    elementType: shape
+    bounds:
+      - 0
+      - 708
+      - 1280
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"

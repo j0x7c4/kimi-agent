@@ -1,0 +1,100 @@
+pageType: chapter
+background:
+  type: solid
+  color: $primary
+elements:
+  - elementId: ch-copper-strip
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 48
+      - 720
+    shapeName: rect
+    fill:
+      type: solid
+      color: $accent
+  - elementId: ch-watermark
+    elementType: text
+    bounds:
+      - 900
+      - 200
+      - 340
+      - 120
+    wrap: false
+    content:
+      fontSize: 80
+      color: "#FFFFFF14"
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><strong>CHAPTER 01</strong></p>
+  - elementId: ch-title
+    elementType: text
+    bounds:
+      - 100
+      - 280
+      - 750
+      - 52
+    wrap: false
+    content:
+      fontSize: 36
+      color: $white
+      fontFamily: Oranienbaum, MiSans
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>战略背景与市场研判</strong></p>
+  - elementId: ch-deco-line
+    elementType: shape
+    bounds:
+      - 100
+      - 344
+      - 100
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: $accent
+  - elementId: ch-summary
+    elementType: text
+    bounds:
+      - 100
+      - 364
+      - 700
+      - 30
+    wrap: false
+    content:
+      fontSize: 18
+      color: $lightCopper
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p>全球化竞争格局重塑，抢占战略窗口期的关键三年</p>
+  - elementId: ch-progress
+    elementType: text
+    bounds:
+      - 1080
+      - 680
+      - 160
+      - 24
+    wrap: false
+    content:
+      fontSize: 14
+      color: $lightCopper
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p>第一章 / 共八章</p>

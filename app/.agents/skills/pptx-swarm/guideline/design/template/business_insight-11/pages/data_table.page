@@ -1,0 +1,424 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top structural bar
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Gold vertical accent bar left of title
+  - elementId: title-accent-bar
+    elementType: shape
+    bounds: [50, 10, 4, 54]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Page action title
+  - elementId: page-title
+    elementType: text
+    bounds: [62, 12, 1150, 50]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#0F2647; font-family:Palatino Linotype, SimSun, MiSans;"><strong>头部企业财务比较：盈利能力与估值分化显著，龙头溢价有据可依</strong></span></p>
+
+  # Horizontal divider
+  - elementId: title-divider
+    elementType: shape
+    bounds: [50, 68, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Table section header
+  - elementId: table-header-bg
+    elementType: shape
+    bounds: [50, 76, 1180, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: table-header-accent
+    elementType: shape
+    bounds: [50, 76, 3, 22]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: table-header-text
+    elementType: text
+    bounds: [58, 76, 1170, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#0F2647; font-family:Arial, Microsoft YaHei, MiSans;"><strong>行业龙头企业关键财务指标对比（2024A / 2025E）</strong></span></p>
+
+  # Main data table
+  - elementId: main-table
+    elementType: table
+    bounds: [50, 102, 1180, 420]
+    columnWidths: [0.16, 0.10, 0.10, 0.10, 0.09, 0.09, 0.09, 0.09, 0.09, 0.09]
+    rowHeights: [0.167, 0.1333, 0.1333, 0.1333, 0.1333, 0.1333, 0.1665]
+    style: "$default"
+    rows:
+      - - content:
+            text: |
+              <p><strong>公司</strong></p>
+        - content:
+            text: |
+              <p><strong>营收(亿)</strong></p>
+        - content:
+            text: |
+              <p><strong>YoY%</strong></p>
+        - content:
+            text: |
+              <p><strong>毛利率</strong></p>
+        - content:
+            text: |
+              <p><strong>净利润</strong></p>
+        - content:
+            text: |
+              <p><strong>净利率</strong></p>
+        - content:
+            text: |
+              <p><strong>ROE</strong></p>
+        - content:
+            text: |
+              <p><strong>PE(24A)</strong></p>
+        - content:
+            text: |
+              <p><strong>PE(25E)</strong></p>
+        - content:
+            text: |
+              <p><strong>评级</strong></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p><strong>比亚迪</strong></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>6,023</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#C9963B;"><strong>+42%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>19.8%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>300</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>4.98%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>17.2%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>25.1x</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#1B3A6B;"><strong>18.5x</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#C9963B;"><strong>强推</strong></span></p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>宁德时代</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>4,009</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#C9963B;">+22%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>24.1%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>441</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>11.0%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>21.5%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>19.8x</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>15.2x</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>推荐</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>理想汽车</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>1,438</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#C9963B;">+33%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>22.3%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>80</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>5.6%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>12.8%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>32.4x</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>22.1x</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>推荐</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>蔚来</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>556</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>+15%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>11.2%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#8899AA;">-207</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#8899AA;">-37.2%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>N/A</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>N/A</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>N/A</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>中性</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>小鹏汽车</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>307</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>+14%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>14.6%</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#8899AA;">-103</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#8899AA;">-33.5%</span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>N/A</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>N/A</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>N/A</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>中性</p>
+      - - content:
+            align: [left, middle]
+            text: |
+              <p>行业均值</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#1B3A6B;"><strong>2,467</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#1B3A6B;"><strong>+25%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p><span style="color:#1B3A6B;"><strong>18.4%</strong></span></p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>—</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>—</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>—</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>—</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>—</p>
+        - content:
+            align: [center, middle]
+            text: |
+              <p>—</p>
+
+  # Conclusion panel background
+  - elementId: conclusion-bg
+    elementType: shape
+    bounds: [50, 530, 1180, 115]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  # Conclusion accent
+  - elementId: conclusion-accent
+    elementType: shape
+    bounds: [50, 530, 3, 115]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Conclusion title
+  - elementId: conclusion-title
+    elementType: text
+    bounds: [68, 538, 400, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>核心投资结论</strong></span></p>
+
+  # Conclusion text
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [68, 566, 1145, 70]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 龙头集中度持续提升，比亚迪与宁德时代合计市占率超40%，护城河加深；&#9632; 盈利分化显著，盈利标的PE压缩空间有限，建议关注现金流质量与研发壁垒；&#9632; 新势力亏损收窄是核心催化剂，理想汽车盈亏平衡已过，具备估值重评机会</span></p>
+
+  # ─── FOOTER ───
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 664, 440, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：Wind金融终端、公司年报、Bloomberg一致预期，截至2025年Q1</p>
+
+  - elementId: disclaimer-text
+    elementType: text
+    bounds: [500, 664, 560, 22]
+    content:
+      align: [right, middle]
+      fontSize: 11
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      wrap: false
+      text: |
+        <p>分析仅供参考，不构成投资建议</p>
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1200, 664, 60, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>06</p>

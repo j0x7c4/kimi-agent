@@ -1,0 +1,172 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深红色带（约页面上方35%）
+  - elementId: final-top-band
+    elementType: shape
+    bounds: [0, 0, 1280, 252]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 180
+      stops:
+        - {position: 0, color: "#5A0A0A"}
+        - {position: 0.5, color: "#8B1A1A"}
+        - {position: 1, color: "#A52020"}
+
+  # 感谢标题
+  - elementId: final-thanks-title
+    elementType: text
+    bounds: [80, 60, 800, 80]
+    content:
+      fontSize: 60
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>感谢聆听</strong></p>
+
+  - elementId: final-thanks-en
+    elementType: text
+    bounds: [80, 152, 800, 36]
+    content:
+      fontSize: 22
+      color: "#FFFFFFAA"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 4
+      wrap: false
+      text: THANK YOU FOR YOUR ATTENTION
+
+  # 金色分隔线
+  - elementId: final-gold-line
+    elementType: shape
+    bounds: [80, 266, 400, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#B8860B"
+
+  # 汇报人信息块
+  - elementId: final-info-block
+    elementType: shape
+    bounds: [80, 284, 560, 140]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightRed"
+
+  - elementId: final-name-label
+    elementType: text
+    bounds: [100, 300, 120, 22]
+    content:
+      fontSize: 13
+      color: "#999999"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 答辩人
+
+  - elementId: final-name
+    elementType: text
+    bounds: [100, 322, 300, 30]
+    content:
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>XXX</strong></p>
+
+  - elementId: final-dept
+    elementType: text
+    bounds: [100, 358, 520, 24]
+    content:
+      fontSize: 16
+      color: "#555555"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: XX大学 · XX学院 · XX专业
+
+  - elementId: final-date
+    elementType: text
+    bounds: [100, 390, 300, 22]
+    content:
+      fontSize: 14
+      color: "#888888"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: 2025年X月
+
+  # 右侧装饰几何
+  - elementId: final-deco-rect-1
+    elementType: shape
+    bounds: [980, 284, 260, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#8B1A1A08"
+    border:
+      style: solid
+      width: 2
+      color: "#8B1A1A20"
+
+  - elementId: final-deco-rect-2
+    elementType: shape
+    bounds: [1010, 314, 200, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B8860B08"
+    border:
+      style: solid
+      width: 2
+      color: "#B8860B30"
+
+  - elementId: final-deco-text
+    elementType: text
+    bounds: [1010, 364, 200, 100]
+    content:
+      fontSize: 40
+      color: "#8B1A1A18"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: Q & A
+
+  # Q&A 提示文字
+  - elementId: final-qa-text
+    elementType: text
+    bounds: [80, 450, 800, 36]
+    content:
+      fontSize: 22
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>敬请各位老师批评指正</p>
+
+  # 底部金线
+  - elementId: final-bottom-gold-line
+    elementType: shape
+    bounds: [0, 700, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 3
+      color: "#B8860B"
+
+  # 校训
+  - elementId: final-motto
+    elementType: text
+    bounds: [900, 668, 340, 24]
+    content:
+      fontSize: 14
+      color: "#B8860B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: 自强不息，厚德载物

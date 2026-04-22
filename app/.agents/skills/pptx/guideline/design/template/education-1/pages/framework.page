@@ -1,0 +1,334 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 80
+      - 60
+      - 800
+      - 50
+    content:
+      style: $title
+      align:
+        - left
+        - middle
+      text: |
+        <p>学习框架：LEARN 模型的五个维度</p>
+  - elementId: framework-container
+    elementType: shape
+    bounds:
+      - 176
+      - 139
+      - 1000
+      - 480
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 12
+      color: "#00000012"
+      offset:
+        - 0
+        - 4
+  - elementId: center-circle
+    elementType: shape
+    bounds:
+      - 590
+      - 320
+      - 140
+      - 140
+    shapeName: ellipse
+    fill:
+      type: gradient
+      gradientType: radial
+      angle: 0
+      stops:
+        - position: 0
+          color: $primary
+        - position: 1
+          color: $accent
+  - elementId: center-text
+    elementType: text
+    bounds:
+      - 590
+      - 320
+      - 140
+      - 140
+    content:
+      fontSize: 28
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>LEARN</strong></p>
+        <p style="font-size:16px">学习模型</p>
+  - elementId: node-l
+    elementType: shape
+    bounds:
+      - 240
+      - 200
+      - 160
+      - 100
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: node-l-text
+    elementType: text
+    bounds:
+      - 240
+      - 200
+      - 160
+      - 100
+    content:
+      fontSize: 20
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>L - Listen</strong></p>
+        <p style="font-size:16px">聆听与接收</p>
+        <p style="font-size:14px">开放心态</p>
+  - elementId: node-e
+    elementType: shape
+    bounds:
+      - 480
+      - 160
+      - 160
+      - 100
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: node-e-text
+    elementType: text
+    bounds:
+      - 480
+      - 160
+      - 160
+      - 100
+    content:
+      fontSize: 20
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>E - Engage</strong></p>
+        <p style="font-size:16px">主动参与</p>
+        <p style="font-size:14px">深度互动</p>
+  - elementId: node-a
+    elementType: shape
+    bounds:
+      - 720
+      - 160
+      - 160
+      - 100
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $primary
+  - elementId: node-a-text
+    elementType: text
+    bounds:
+      - 720
+      - 160
+      - 160
+      - 100
+    content:
+      fontSize: 20
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>A - Apply</strong></p>
+        <p style="font-size:16px">实践应用</p>
+        <p style="font-size:14px">知行合一</p>
+  - elementId: node-r
+    elementType: shape
+    bounds:
+      - 960
+      - 200
+      - 160
+      - 100
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: node-r-text
+    elementType: text
+    bounds:
+      - 960
+      - 200
+      - 160
+      - 100
+    content:
+      fontSize: 20
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>R - Reflect</strong></p>
+        <p style="font-size:16px">反思总结</p>
+        <p style="font-size:14px">经验萃取</p>
+  - elementId: node-n
+    elementType: shape
+    bounds:
+      - 579
+      - 479
+      - 160
+      - 100
+    shapeName: roundRect
+    adjustments:
+      - 10000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: node-n-text
+    elementType: text
+    bounds:
+      - 580
+      - 480
+      - 160
+      - 100
+    content:
+      fontSize: 20
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>N - Network</strong></p>
+        <p style="font-size:16px">构建网络</p>
+        <p style="font-size:14px">知识连接</p>
+  - elementId: line-l
+    elementType: shape
+    bounds:
+      - 394
+      - 297
+      - 190
+      - 70
+    opacity: 0.6
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: $secondary
+  - elementId: line-e
+    elementType: shape
+    bounds:
+      - 560
+      - 260
+      - 36
+      - 59
+    opacity: 0.6
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: $secondary
+  - elementId: line-a
+    elementType: shape
+    bounds:
+      - 730
+      - 260
+      - -30
+      - 60
+    opacity: 0.6
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: $secondary
+  - elementId: line-r
+    elementType: shape
+    bounds:
+      - 730
+      - 390
+      - 230
+      - -140
+    opacity: 0.6
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: $secondary
+  - elementId: line-n
+    elementType: shape
+    bounds:
+      - 640
+      - 460
+      - 0
+      - 20
+    opacity: 0.6
+    shapeName: straightConnector1
+    border:
+      style: dash
+      width: 2
+      color: $secondary
+  - elementId: data-box
+    elementType: shape
+    bounds:
+      - 191
+      - 493
+      - 280
+      - 100
+    opacity: 0.1
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent2
+    border:
+      style: solid
+      width: 1
+      color: $accent2
+  - elementId: data-text
+    elementType: text
+    bounds:
+      - 209
+      - 501
+      - 240
+      - 86
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>研究显示</strong></p>
+        <p>使用LEARN模型的学习者</p>
+        <p>知识保留率提升<span style="color:$accent; font-size:20px"> 65%</span></p>

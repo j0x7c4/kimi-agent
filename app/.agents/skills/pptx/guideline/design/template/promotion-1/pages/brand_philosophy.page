@@ -1,0 +1,90 @@
+pageType: content
+background:
+  type: image
+  src: https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80
+  fit:
+    mode: cover
+  mask:
+    type: gradient
+    gradientType: linear
+    angle: 0
+    stops:
+      - position: 0
+        color: "#2A242080"
+      - position: 0.4
+        color: "#2A2420B0"
+      - position: 1
+        color: "#2A2420E0"
+elements:
+  - elementId: quote-en
+    elementType: text
+    bounds:
+      - 80
+      - 160
+      - 700
+      - 50
+    wrap: false
+    content:
+      fontSize: 22
+      color: "#FFFFFFAA"
+      fontFamily: Oranienbaum, siyuanSongti
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><em>Innocence is a daring adventure.</em></p>
+  - elementId: quote-cn
+    elementType: text
+    bounds:
+      - 80
+      - 220
+      - 700
+      - 80
+    wrap: false
+    content:
+      fontSize: 48
+      color: $white
+      fontFamily: Oranienbaum, siyuanSongti
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>天真是一种冒险。</strong></p>
+  - elementId: narrative
+    elementType: text
+    bounds:
+      - 80
+      - 340
+      - 550
+      - 180
+    content:
+      fontSize: 14
+      color: "#FFFFFF99"
+      fontFamily: Liter, MiSans
+      lineHeight: 2
+      align:
+        - left
+        - top
+      text: |
+        <p>MM captures the essence of a daring spirit. Where others seek conformity, MM embraces the radical innocence of youth — its awkwardness, its beauty, its power. Fashion is not mere adornment; it is a declaration of selfhood, a rebellion whispered through pleats and prints, buttons and bows.</p>
+  - elementId: logo-bottom
+    elementType: text
+    bounds:
+      - 900
+      - 580
+      - 300
+      - 60
+    wrap: false
+    content:
+      fontSize: 44
+      color: $white
+      fontFamily: Oranienbaum, siyuanSongti
+      letterSpacing: 10
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><strong>FASHION</strong></p>

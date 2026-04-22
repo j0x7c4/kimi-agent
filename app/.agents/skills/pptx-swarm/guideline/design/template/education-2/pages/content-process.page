@@ -1,0 +1,303 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 50]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p>解一元二次方程的四种方法</p>
+
+  # 流程容器背景
+  - elementId: process-bg
+    elementType: shape
+    bounds: [80, 130, 1120, 320]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill:
+      type: solid
+      color: "$white"
+    shadow:
+      blur: 8
+      color: "#00000006"
+      offset: [0, 2]
+
+  # 步骤1
+  - elementId: step1-circle
+    elementType: shape
+    bounds: [140, 180, 90, 90]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: step1-num
+    elementType: text
+    bounds: [140, 180, 90, 90]
+    content:
+      fontSize: 36
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "1"
+
+  - elementId: step1-title
+    elementType: text
+    bounds: [115, 280, 140, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>直接开方</strong></p>
+
+  - elementId: step1-desc
+    elementType: text
+    bounds: [100, 318, 170, 70]
+    content:
+      fontSize: 16
+      color: "$lightText"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+      text: |
+        <p>适用于 x² = a 的简单形式</p>
+
+  # 连接线1-2
+  - elementId: arrow1-2
+    elementType: shape
+    bounds: [230, 225, 90, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border:
+      style: solid
+      width: 2
+      color: "$secondary"
+
+  # 步骤2
+  - elementId: step2-circle
+    elementType: shape
+    bounds: [350, 180, 90, 90]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: step2-num
+    elementType: text
+    bounds: [350, 180, 90, 90]
+    content:
+      fontSize: 36
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "2"
+
+  - elementId: step2-title
+    elementType: text
+    bounds: [325, 280, 140, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>配方法</strong></p>
+
+  - elementId: step2-desc
+    elementType: text
+    bounds: [310, 318, 170, 70]
+    content:
+      fontSize: 16
+      color: "$lightText"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+      text: |
+        <p>化为 (x+m)² = n 的形式</p>
+
+  # 连接线2-3
+  - elementId: arrow2-3
+    elementType: shape
+    bounds: [440, 225, 90, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border:
+      style: solid
+      width: 2
+      color: "$secondary"
+
+  # 步骤3
+  - elementId: step3-circle
+    elementType: shape
+    bounds: [560, 180, 90, 90]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: step3-num
+    elementType: text
+    bounds: [560, 180, 90, 90]
+    content:
+      fontSize: 36
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "3"
+
+  - elementId: step3-title
+    elementType: text
+    bounds: [535, 280, 140, 36]
+    content:
+      fontSize: 20
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>公式法</strong></p>
+
+  - elementId: step3-desc
+    elementType: text
+    bounds: [520, 318, 170, 70]
+    content:
+      fontSize: 16
+      color: "$lightText"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+      text: |
+        <p>万能公式，适用于所有情况</p>
+
+  # 连接线3-4
+  - elementId: arrow3-4
+    elementType: shape
+    bounds: [650, 225, 90, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border:
+      style: solid
+      width: 2
+      color: "$secondary"
+
+  # 步骤4
+  - elementId: step4-circle
+    elementType: shape
+    bounds: [770, 180, 90, 90]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: step4-num
+    elementType: text
+    bounds: [770, 180, 90, 90]
+    content:
+      fontSize: 36
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "4"
+
+  - elementId: step4-title
+    elementType: text
+    bounds: [745, 280, 140, 36]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p><strong>因式分解</strong></p>
+
+  - elementId: step4-desc
+    elementType: text
+    bounds: [730, 318, 170, 70]
+    content:
+      fontSize: 16
+      color: "$lightText"
+      fontFamily: "Liter, MiSans"
+      align: [center, top]
+      text: |
+        <p>分解为两个一次式相乘</p>
+
+  # 右侧提示
+  - elementId: tip-circle
+    elementType: shape
+    bounds: [980, 170, 180, 180]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$highlightBg"
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  - elementId: tip-star
+    elementType: icon
+    bounds: [1045, 195, 50, 50]
+    iconName: "fas:star"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: tip-text-inner
+    elementType: text
+    bounds: [995, 250, 150, 80]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      lineHeight: 1.4
+      text: |
+        <p><strong>优先选择</strong></p>
+        <p>因式分解法</p>
+
+  # 底部重点提示
+  - elementId: key-point-bg
+    elementType: shape
+    bounds: [80, 470, 1120, 220]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$cardBg"
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  - elementId: key-point-icon
+    elementType: icon
+    bounds: [120, 495, 40, 40]
+    iconName: "fas:star"
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: key-point-text
+    elementType: text
+    bounds: [180, 490, 980, 50]
+    content:
+      style: "$bodyText"
+      align: [left, middle]
+      text: |
+        <p><strong>核心公式：</strong>x = (−b ± √(b²−4ac)) / 2a，其中判别式 Δ = b²−4ac 决定根的情况</p>
+
+  - elementId: key-point-detail
+    elementType: text
+    bounds: [120, 550, 1040, 130]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, top]
+      lineHeight: 1.8
+      text: |
+        <p>· Δ > 0：方程有两个不相等的实数根</p>
+        <p>· Δ = 0：方程有两个相等的实数根（一个根）</p>
+        <p>· Δ < 0：方程没有实数根</p>

@@ -1,0 +1,194 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: linear
+  angle: 45
+  stops:
+  - position: 0
+    color: "#C7E2FFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#FFFFFFFF"
+elements:
+- elementId: shape0
+  elementType: shape
+  bounds: [108, 410.21, 525.83, 561.79]
+  shapeName: custom
+  path: 1319121,1409337;M0 0L1319121 0L1319121 1409337L0 1409337Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: text1
+  elementType: text
+  bounds: [103.73, 391.75, 534.36, 579.71]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape3
+  elementType: shape
+  bounds: [697.08, 410.21, 525.83, 561.79]
+  shapeName: custom
+  path: 1319121,1409337;M0 0L1319121 0L1319121 1409337L0 1409337Z
+  fill:
+    type: solid
+    color: "#BFE4FF"
+- elementId: text4
+  elementType: text
+  bounds: [692.81, 391.75, 534.36, 579.71]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape5
+  elementType: shape
+  bounds: [1286.17, 410.21, 525.83, 561.79]
+  shapeName: custom
+  path: 1319121,1409337;M0 0L1319121 0L1319121 1409337L0 1409337Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: text6
+  elementType: text
+  bounds: [1281.9, 391.75, 534.36, 579.71]
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: text7
+  elementType: text
+  bounds: [98.4, 101.2, 816.28, 260.88]
+  content:
+    align: [left, top]
+    fontSize: 68
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 84.35
+    text: WHY SLEEP MATTERS FOR YOUR HEALTH
+- elementId: line8
+  elementType: shape
+  bounds: [671.2, 124.07, 986.44, 0]
+  flip: [false, true]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text9
+  elementType: text
+  bounds: [509.6, 287.63, 460, 65.22]
+  content:
+    align: [left, top]
+    fontSize: 41.4
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 57.95
+    text: 睡眠的重要性
+- elementId: text10
+  elementType: text
+  bounds: [1429.83, 98.2, 409.77, 49.73]
+  content:
+    align: [right, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 4.16
+    text: PART 01
+- elementId: text11
+  elementType: text
+  bounds: [198.29, 444.64, 345.25, 55.67]
+  content:
+    align: [center, top]
+    fontSize: 34.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 48.53
+    text: 身体修复功能
+- elementId: text12
+  elementType: text
+  bounds: [787.38, 444.64, 345.25, 55.67]
+  content:
+    align: [center, top]
+    fontSize: 34.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 48.53
+    text: 大脑记忆巩固
+- elementId: text13
+  elementType: text
+  bounds: [1376.46, 444.64, 345.25, 55.67]
+  content:
+    align: [center, top]
+    fontSize: 34.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 48.53
+    text: 免疫系统调节
+- elementId: text14
+  elementType: text
+  bounds: [155.92, 537.13, 429.98, 385.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 睡眠时身体会分泌生长激素，促进细胞修复和组织再生。深度睡眠阶段是心脏、血管和肌肉恢复的关键时期，缺乏深度睡眠会加速身体衰老。
+- elementId: text15
+  elementType: text
+  bounds: [745.01, 537.13, 429.98, 385.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 大脑在睡眠中整理白天获取的信息，将短期记忆转化为长期记忆。充足的睡眠能提高学习能力、反应速度和判断力，预防老年认知功能下降。
+- elementId: text16
+  elementType: text
+  bounds: [1334.09, 537.13, 429.98, 385.47]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 睡眠不足会降低免疫细胞的活性，使人更容易感冒和感染疾病。研究表明，每晚睡眠不足6小时的人，感冒风险增加4倍以上。
+- elementId: line17
+  elementType: shape
+  bounds: [330.4, 510.36, 82.29, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 6
+    color: "#48B2FF"
+- elementId: line18
+  elementType: shape
+  bounds: [1506.92, 510.36, 82.29, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 6
+    color: "#48B2FF"
+- elementId: line19
+  elementType: shape
+  bounds: [918.86, 510.36, 82.29, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 6
+    color: "#7EC8E3"

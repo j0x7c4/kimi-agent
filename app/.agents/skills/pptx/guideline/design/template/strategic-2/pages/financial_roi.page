@@ -1,0 +1,255 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: accent-stripe
+    elementType: shape
+    bounds: [0, 4, 1280, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: title-accent
+    elementType: shape
+    bounds: [56, 32, 4, 36]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 40, 1120, 40]
+    content:
+      fontSize: 32
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>单位经济模型健康，18个月达成盈亏平衡</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 86, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  # Big number 1
+  - elementId: num-1
+    elementType: text
+    bounds: [80, 110, 360, 64]
+    content:
+      fontSize: 60
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>$150</p>
+
+  - elementId: label-1
+    elementType: text
+    bounds: [80, 180, 360, 24]
+    content:
+      fontSize: 14
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Customer Acquisition Cost</p>
+
+  # Big number 2
+  - elementId: num-2
+    elementType: text
+    bounds: [460, 110, 360, 64]
+    content:
+      fontSize: 60
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>$1,200</p>
+
+  - elementId: label-2
+    elementType: text
+    bounds: [460, 180, 360, 24]
+    content:
+      fontSize: 14
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Lifetime Value per Customer</p>
+
+  # Big number 3
+  - elementId: num-3
+    elementType: text
+    bounds: [840, 110, 360, 64]
+    content:
+      fontSize: 60
+      color: "#B45309"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>8x</p>
+
+  - elementId: label-3
+    elementType: text
+    bounds: [840, 180, 360, 24]
+    content:
+      fontSize: 14
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>LTV / CAC Ratio</p>
+
+  # Divider
+  - elementId: mid-line
+    elementType: shape
+    bounds: [80, 224, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E2E8F0"
+
+  # Financial forecast table
+  - elementId: forecast-table
+    elementType: table
+    bounds: [80, 244, 1120, 360]
+    style: "$default"
+    columnWidths: [0.28, 0.144, 0.144, 0.144, 0.144, 0.144]
+    rowHeights: [0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
+    rows:
+      - - content:
+            text: |
+              <p><strong>Metric</strong></p>
+        - content:
+            text: |
+              <p><strong>2024A</strong></p>
+        - content:
+            text: |
+              <p><strong>2025E</strong></p>
+        - content:
+            text: |
+              <p><strong>2026E</strong></p>
+        - content:
+            text: |
+              <p><strong>2027E</strong></p>
+        - content:
+            text: |
+              <p><strong>2028E</strong></p>
+      - - content:
+            text: "Revenue ($M)"
+        - content:
+            text: "3.8"
+        - content:
+            text: "8.5"
+        - content:
+            text: "16.2"
+        - content:
+            text: "25.0"
+        - content:
+            text: "38.0"
+      - - content:
+            text: "Gross Margin"
+        - content:
+            text: "55%"
+        - content:
+            text: "60%"
+        - content:
+            text: "65%"
+        - content:
+            text: "70%"
+        - content:
+            text: "72%"
+      - - content:
+            text: "Operating Expense ($M)"
+        - content:
+            text: "5.2"
+        - content:
+            text: "8.0"
+        - content:
+            text: "12.4"
+        - content:
+            text: "17.5"
+        - content:
+            text: "24.0"
+      - - content:
+            text: "Net Margin"
+        - content:
+            text: "-25%"
+        - content:
+            text: "-8%"
+        - content:
+            text: "12%"
+        - content:
+            text: "22%"
+        - content:
+            text: "30%"
+      - - content:
+            text: "Customers"
+        - content:
+            text: "200"
+        - content:
+            text: "350"
+        - content:
+            text: "520"
+        - content:
+            text: "800"
+        - content:
+            text: "1,200"
+      - - content:
+            text: "NRR"
+        - content:
+            text: "115%"
+        - content:
+            text: "120%"
+        - content:
+            text: "125%"
+        - content:
+            text: "128%"
+        - content:
+            text: "130%"
+
+  # Assumptions
+  - elementId: assumptions
+    elementType: text
+    bounds: [80, 624, 1120, 44]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><strong>Key Assumptions:</strong> Annual customer growth 40-60% · Gross margin improvement from 55% to 72% · Sales efficiency (Magic Number) > 1.0 by Year 2 · R&D maintained at 25-30% of revenue</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "07"

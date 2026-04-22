@@ -1,0 +1,479 @@
+pageType: content
+background:
+  type: solid
+  color: "#F6F9FC"
+elements:
+  - elementId: title-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 60
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: title-icon
+    elementType: icon
+    bounds:
+      - 24
+      - 14
+      - 32
+      - 32
+    iconName: fas:list-check
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 70
+      - 0
+      - 1000
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:28px; color:#FFFFFF; font-family:MiSans;"><strong>研究背景与问题提出</strong></span></p>
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1200
+      - 0
+      - 60
+      - 60
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#D9E8F5; font-family:MiSans;">04</span></p>
+  - elementId: bullet1-dot
+    elementType: shape
+    bounds:
+      - 60
+      - 100
+      - 12
+      - 12
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: bullet1-text
+    elementType: text
+    bounds:
+      - 86
+      - 88
+      - 520
+      - 48
+    content:
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;"><strong style="color:#2C5F8A;">研究问题</strong>：当前XX领域存在哪些亟待解决的核心问题？</span></p>
+  - elementId: bullet2-dot
+    elementType: shape
+    bounds:
+      - 60
+      - 200
+      - 12
+      - 12
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: bullet2-text
+    elementType: text
+    bounds:
+      - 86
+      - 188
+      - 520
+      - 60
+    content:
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;"><strong style="color:#2C5F8A;">研究意义</strong>：本研究对学术领域及实践应用具有重要参考价值</span></p>
+  - elementId: bullet3-dot
+    elementType: shape
+    bounds:
+      - 60
+      - 300
+      - 12
+      - 12
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: bullet3-text
+    elementType: text
+    bounds:
+      - 86
+      - 288
+      - 520
+      - 60
+    content:
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;"><strong style="color:#2C5F8A;">文献综述</strong>：已有研究揭示了XX规律，但在YY方面仍存在研究空白</span></p>
+  - elementId: bullet4-dot
+    elementType: shape
+    bounds:
+      - 60
+      - 400
+      - 12
+      - 12
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: bullet4-text
+    elementType: text
+    bounds:
+      - 86
+      - 388
+      - 520
+      - 60
+    content:
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;"><strong style="color:#2C5F8A;">研究假设</strong>：我们推测XX因素与YY结果之间存在显著正相关关系</span></p>
+  - elementId: bullet5-dot
+    elementType: shape
+    bounds:
+      - 60
+      - 500
+      - 12
+      - 12
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2C5F8A"
+  - elementId: bullet5-text
+    elementType: text
+    bounds:
+      - 86
+      - 488
+      - 520
+      - 60
+    content:
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#333333; font-family:MiSans;"><strong style="color:#2C5F8A;">研究范围</strong>：本研究聚焦于XX群体，时间范围为2023-2025年</span></p>
+  - elementId: summary-box
+    elementType: shape
+    bounds:
+      - 60
+      - 570
+      - 546
+      - 110
+    shapeName: roundRect
+    adjustments:
+      - 5000
+    fill:
+      type: solid
+      color: "#D9E8F5"
+    border:
+      style: solid
+      width: 1
+      color: "#2C5F8A22"
+  - elementId: summary-text
+    elementType: text
+    bounds:
+      - 80
+      - 580
+      - 506
+      - 90
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#333333; font-family:MiSans;"><strong style="color:#2C5F8A;">核心目标：</strong>通过系统研究，揭示XX与YY之间的内在关联，为实践提供循证依据</span></p>
+  - elementId: flow-step1-bg
+    elementType: shape
+    bounds:
+      - 680
+      - 90
+      - 260
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#2C5F8A"
+    shadow:
+      blur: 6
+      color: "#2C5F8A33"
+      offset:
+        - 0
+        - 2
+  - elementId: flow-step1-icon
+    elementType: icon
+    bounds:
+      - 700
+      - 105
+      - 32
+      - 32
+    iconName: fas:circle-question
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: flow-step1-text
+    elementType: text
+    bounds:
+      - 740
+      - 90
+      - 180
+      - 70
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#FFFFFF; font-family:MiSans;"><strong>提出问题</strong></span></p>
+  - elementId: flow-arrow1
+    elementType: icon
+    bounds:
+      - 790
+      - 168
+      - 28
+      - 36
+    iconName: fas:arrow-down
+    fill:
+      type: solid
+      color: "#E07B54"
+  - elementId: flow-step2-bg
+    elementType: shape
+    bounds:
+      - 680
+      - 218
+      - 260
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#2C5F8A"
+    shadow:
+      blur: 6
+      color: "#2C5F8A33"
+      offset:
+        - 0
+        - 2
+  - elementId: flow-step2-icon
+    elementType: icon
+    bounds:
+      - 700
+      - 233
+      - 32
+      - 32
+    iconName: fas:database
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: flow-step2-text
+    elementType: text
+    bounds:
+      - 740
+      - 218
+      - 180
+      - 70
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#FFFFFF; font-family:MiSans;"><strong>数据收集</strong></span></p>
+  - elementId: flow-arrow2
+    elementType: icon
+    bounds:
+      - 790
+      - 296
+      - 28
+      - 36
+    iconName: fas:arrow-down
+    fill:
+      type: solid
+      color: "#E07B54"
+  - elementId: flow-step3-bg
+    elementType: shape
+    bounds:
+      - 680
+      - 346
+      - 260
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: "#2C5F8A"
+    shadow:
+      blur: 6
+      color: "#2C5F8A33"
+      offset:
+        - 0
+        - 2
+  - elementId: flow-step3-icon
+    elementType: icon
+    bounds:
+      - 700
+      - 361
+      - 32
+      - 32
+    iconName: fas:chart-line
+    fill:
+      type: solid
+      color: "#FFFFFF"
+  - elementId: flow-step3-text
+    elementType: text
+    bounds:
+      - 740
+      - 346
+      - 180
+      - 70
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:20px; color:#FFFFFF; font-family:MiSans;"><strong>分析验证</strong></span></p>
+  - elementId: flow-detail1
+    elementType: text
+    bounds:
+      - 960
+      - 105
+      - 280
+      - 36
+    content:
+      lineHeight: 1.4
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">文献调研、确定研究方向</span></p>
+  - elementId: flow-detail2
+    elementType: text
+    bounds:
+      - 960
+      - 233
+      - 280
+      - 36
+    content:
+      lineHeight: 1.4
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">问卷调查、深度访谈</span></p>
+  - elementId: flow-detail3
+    elementType: text
+    bounds:
+      - 960
+      - 361
+      - 280
+      - 36
+    content:
+      lineHeight: 1.4
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#8D8D8D; font-family:MiSans;">统计分析、假设检验</span></p>
+  - elementId: flow-caption
+    elementType: text
+    bounds:
+      - 680
+      - 430
+      - 560
+      - 28
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:14px; color:#8D8D8D; font-family:MiSans; font-style:italic;">图1：研究框架示意图</span></p>
+  - elementId: right-info-bg
+    elementType: shape
+    bounds:
+      - 680
+      - 480
+      - 560
+      - 200
+    shapeName: roundRect
+    adjustments:
+      - 5000
+    fill:
+      type: solid
+      color: "#D9E8F5"
+    border:
+      style: solid
+      width: 1
+      color: "#2C5F8A22"
+  - elementId: right-info-title
+    elementType: text
+    bounds:
+      - 704
+      - 494
+      - 512
+      - 36
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:18px; color:#2C5F8A; font-family:MiSans;"><strong>研究方法概览</strong></span></p>
+  - elementId: right-info-content
+    elementType: text
+    bounds:
+      - 704
+      - 534
+      - 512
+      - 130
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:17px; color:#333333; font-family:MiSans;">采用混合研究法，定量部分通过问卷收集318份有效数据，定性部分对12位受访者进行深度访谈，确保结论的全面性与可靠性</span></p>
+  - elementId: bottom-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 716
+      - 1280
+      - 4
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#E07B54"

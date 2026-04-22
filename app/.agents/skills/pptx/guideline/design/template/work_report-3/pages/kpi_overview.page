@@ -1,0 +1,168 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 180
+  stops:
+    - {position: 0, color: "#F0F3F5"}
+    - {position: 1, color: "#F8FAFB"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p><strong>Q4 核心成果速览 - 全面超越预期目标</strong></p>
+  
+  # KPI卡片1 - 销售额
+  - elementId: kpi-card1
+    elementType: shape
+    bounds: [200, 160, 280, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: kpi1-title
+    elementType: text
+    bounds: [220, 180, 240, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: "销售额"
+
+  - elementId: kpi1-number
+    elementType: text
+    bounds: [220, 220, 240, 70]
+    content:
+      style: "$kpiNumber"
+      align: [center, middle]
+      text: "1.2亿"
+  
+  - elementId: kpi1-trend
+    elementType: text
+    bounds: [220, 290, 240, 30]
+    content:
+      style: "$caption"
+      align: [center, middle]
+      text: |
+        <p>同比增长 <span style="color:$accent;">+23%</span></p>
+  
+  # KPI卡片2 - 客户满意度
+  - elementId: kpi-card2
+    elementType: shape
+    bounds: [500, 160, 280, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: kpi2-title
+    elementType: text
+    bounds: [520, 180, 240, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: "客户满意度"
+
+  - elementId: kpi2-number
+    elementType: text
+    bounds: [520, 220, 240, 70]
+    content:
+      style: "$kpiNumber"
+      align: [center, middle]
+      text: "96%"
+  
+  - elementId: kpi2-trend
+    elementType: text
+    bounds: [520, 290, 240, 30]
+    content:
+      style: "$caption"
+      align: [center, middle]
+      text: |
+        <p>提升 <span style="color:$accent;">+8pp</span></p>
+  
+  # KPI卡片3 - 项目完成率
+  - elementId: kpi-card3
+    elementType: shape
+    bounds: [800, 160, 280, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: kpi3-title
+    elementType: text
+    bounds: [820, 180, 240, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: "项目完成率"
+
+  - elementId: kpi3-number
+    elementType: text
+    bounds: [820, 220, 240, 70]
+    content:
+      style: "$kpiNumber"
+      align: [center, middle]
+      text: "112%"
+  
+  - elementId: kpi3-trend
+    elementType: text
+    bounds: [820, 290, 240, 30]
+    content:
+      style: "$caption"
+      align: [center, middle]
+      text: |
+        <p>超额完成 <span style="color:$accent;">12%</span></p>
+  
+  # 关键洞察
+  - elementId: insights-title
+    elementType: text
+    bounds: [200, 380, 300, 30]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: "关键洞察"
+
+  - elementId: insights-content
+    elementType: text
+    bounds: [200, 420, 880, 180]
+    content:
+      style: "$bodyText"
+      text: |
+        <p>• <strong>销售业绩创新高</strong>：通过优化销售策略和扩展新市场，实现历史最佳季度业绩</p>
+        <p>• <strong>客户体验显著提升</strong>：NPS评分达到72分，客户留存率提升15%</p>
+        <p>• <strong>运营效率持续优化</strong>：项目平均交付周期缩短20%，成本降低18%</p>
+  
+  # 页脚
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 680, 80, 20]
+    content:
+      fontSize: 12
+      color: "$textSecondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, bottom]
+      text: "4"

@@ -1,0 +1,207 @@
+pageType: content
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 40, 1120, 40]
+    content:
+      fontSize: 32
+      color: "#1E293B"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>全球SaaS市场$2,320亿，中国可触达市场$86亿</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 86, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E2E8F0"
+
+  # TAM bar
+  - elementId: tam-bar
+    elementType: shape
+    bounds: [120, 140, 280, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0F172A"
+
+  - elementId: tam-number
+    elementType: text
+    bounds: [120, 160, 280, 56]
+    content:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>$2,320B</p>
+
+  - elementId: tam-label
+    elementType: text
+    bounds: [120, 224, 280, 28]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>TAM</strong></p>
+
+  - elementId: tam-desc
+    elementType: text
+    bounds: [120, 256, 280, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p>全球企业级SaaS市场</p>
+        <p>CAGR 14.2%</p>
+
+  # SAM bar
+  - elementId: sam-bar
+    elementType: shape
+    bounds: [460, 240, 280, 320]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#475569"
+
+  - elementId: sam-number
+    elementType: text
+    bounds: [460, 260, 280, 56]
+    content:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>$340B</p>
+
+  - elementId: sam-label
+    elementType: text
+    bounds: [460, 324, 280, 28]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>SAM</strong></p>
+
+  - elementId: sam-desc
+    elementType: text
+    bounds: [460, 356, 280, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p>中国企业级SaaS市场</p>
+        <p>CAGR 28.5%</p>
+
+  # SOM bar
+  - elementId: som-bar
+    elementType: shape
+    bounds: [800, 360, 280, 200]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#B45309"
+
+  - elementId: som-number
+    elementType: text
+    bounds: [800, 380, 280, 56]
+    content:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>$8.6B</p>
+
+  - elementId: som-label
+    elementType: text
+    bounds: [800, 444, 280, 28]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>SOM</strong></p>
+
+  - elementId: som-desc
+    elementType: text
+    bounds: [800, 476, 280, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFF"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, top]
+      lineHeight: 1.4
+      wrap: true
+      text: |
+        <p>目标垂直行业可触达市场</p>
+        <p>CAGR 35%</p>
+
+  # Connector arrows (thin lines between bars)
+  - elementId: arrow-1
+    elementType: shape
+    bounds: [400, 350, 60, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E2E8F0"
+
+  - elementId: arrow-2
+    elementType: shape
+    bounds: [740, 460, 60, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E2E8F0"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [80, 668, 600, 20]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Source: Gartner, 2024; IDC China SaaS Market Report, 2024</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 50, 24]
+    content:
+      fontSize: 12
+      color: "#64748B"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "05"

@@ -1,0 +1,236 @@
+pageType: content
+background:
+  type: solid
+  color: "#0A0A0A"
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 80
+      - 40
+      - 1120
+      - 48
+    wrap: false
+    content:
+      fontSize: 34
+      color: "#F8FAFC"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>One platform. Zero friction.</strong></p>
+  - elementId: card-1-bg
+    elementType: shape
+    bounds:
+      - 80
+      - 130
+      - 360
+      - 280
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#171717"
+  - elementId: card-1-label
+    elementType: text
+    bounds:
+      - 80
+      - 240
+      - 360
+      - 28
+    wrap: false
+    content:
+      fontSize: 16
+      color: "#A3A3A3"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>[ AI Engine ]</p>
+  - elementId: metric-1-num
+    elementType: text
+    bounds:
+      - 80
+      - 440
+      - 360
+      - 56
+    wrap: false
+    content:
+      fontSize: 50
+      color: "#10B981"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>10x</strong></p>
+  - elementId: metric-1-label
+    elementType: text
+    bounds:
+      - 80
+      - 500
+      - 360
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: "#F8FAFC"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        Deployment Speed
+  - elementId: card-2-bg
+    elementType: shape
+    bounds:
+      - 460
+      - 130
+      - 360
+      - 280
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#171717"
+  - elementId: card-2-label
+    elementType: text
+    bounds:
+      - 460
+      - 240
+      - 360
+      - 28
+    wrap: false
+    content:
+      fontSize: 16
+      color: "#A3A3A3"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>[ Integration Hub ]</p>
+  - elementId: metric-2-num
+    elementType: text
+    bounds:
+      - 460
+      - 440
+      - 360
+      - 56
+    wrap: false
+    content:
+      fontSize: 50
+      color: "#10B981"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>-80%</strong></p>
+  - elementId: metric-2-label
+    elementType: text
+    bounds:
+      - 460
+      - 500
+      - 360
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: "#F8FAFC"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        Integration Cost
+  - elementId: card-3-bg
+    elementType: shape
+    bounds:
+      - 840
+      - 130
+      - 360
+      - 280
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#171717"
+  - elementId: card-3-label
+    elementType: text
+    bounds:
+      - 840
+      - 240
+      - 360
+      - 28
+    wrap: false
+    content:
+      fontSize: 16
+      color: "#A3A3A3"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>[ Analytics Suite ]</p>
+  - elementId: metric-3-num
+    elementType: text
+    bounds:
+      - 840
+      - 440
+      - 360
+      - 56
+    wrap: false
+    content:
+      fontSize: 50
+      color: "#10B981"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>99.7%</strong></p>
+  - elementId: metric-3-label
+    elementType: text
+    bounds:
+      - 840
+      - 500
+      - 360
+      - 24
+    wrap: false
+    content:
+      fontSize: 16
+      color: "#F8FAFC"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        Prediction Accuracy
+  - elementId: page-num
+    elementType: text
+    bounds:
+      - 1150
+      - 680
+      - 50
+      - 24
+    wrap: false
+    content:
+      fontSize: 13
+      color: "#A3A3A3"
+      fontFamily: QuattrocentoSans, MiSans
+      wrap: false
+      align:
+        - right
+        - middle
+      text: |
+        05

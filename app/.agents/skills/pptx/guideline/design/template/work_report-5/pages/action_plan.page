@@ -1,0 +1,270 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$title"
+      text: |
+        <p><strong>Q4行动计划：聚焦三大核心任务</strong></p>
+  
+  # 任务卡片1
+  - elementId: task1-card
+    elementType: shape
+    bounds: [80, 140, 360, 200]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: task1-num
+    elementType: shape
+    bounds: [100, 160, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+  
+  - elementId: task1-num-text
+    elementType: text
+    bounds: [100, 160, 40, 40]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>1</p>
+  
+  - elementId: task1-title
+    elementType: text
+    bounds: [160, 165, 260, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p><strong>技术架构升级</strong></p>
+  
+  - elementId: task1-content
+    elementType: text
+    bounds: [100, 210, 320, 110]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      text: |
+        <p>• 完成微服务架构设计方案</p>
+        <p>• 搭建容器化部署环境</p>
+        <p>• 首批3个核心服务改造</p>
+        <p><span style="color:$accent">负责人：技术部 | 截止：12月31日</span></p>
+  
+  # 任务卡片2
+  - elementId: task2-card
+    elementType: shape
+    bounds: [460, 140, 360, 200]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: task2-num
+    elementType: shape
+    bounds: [480, 160, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+  
+  - elementId: task2-num-text
+    elementType: text
+    bounds: [480, 160, 40, 40]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>2</p>
+  
+  - elementId: task2-title
+    elementType: text
+    bounds: [540, 165, 260, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p><strong>产品功能迭代</strong></p>
+  
+  - elementId: task2-content
+    elementType: text
+    bounds: [480, 210, 320, 110]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      text: |
+        <p>• AI智能推荐功能上线</p>
+        <p>• 用户个性化配置优化</p>
+        <p>• 移动端性能提升30%</p>
+        <p><span style="color:$accent">负责人：产品部 | 截止：11月30日</span></p>
+  
+  # 任务卡片3
+  - elementId: task3-card
+    elementType: shape
+    bounds: [840, 140, 360, 200]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "$light"
+    shadow:
+      blur: 8
+      color: "#00000008"
+      offset: [0, 2]
+  
+  - elementId: task3-num
+    elementType: shape
+    bounds: [860, 160, 40, 40]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+  
+  - elementId: task3-num-text
+    elementType: text
+    bounds: [860, 160, 40, 40]
+    content:
+      fontSize: 18
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>3</p>
+  
+  - elementId: task3-title
+    elementType: text
+    bounds: [920, 165, 260, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p><strong>市场拓展计划</strong></p>
+  
+  - elementId: task3-content
+    elementType: text
+    bounds: [860, 210, 320, 110]
+    content:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+      text: |
+        <p>• B端客户拓展20家</p>
+        <p>• 渠道合作伙伴5家</p>
+        <p>• 品牌活动3场</p>
+        <p><span style="color:$accent">负责人：市场部 | 截止：12月15日</span></p>
+  
+  # 资源需求
+  - elementId: resource-title
+    elementType: text
+    bounds: [80, 380, 300, 30]
+    content:
+      style: "$subtitle"
+      text: |
+        <p>资源需求</p>
+  
+  - elementId: resource-table
+    elementType: table
+    bounds: [80, 420, 560, 160]
+    columnWidths: [0.3, 0.35, 0.35]
+    rowHeights: [0.25, 0.25, 0.25, 0.25]
+    style: "$default"
+    rows:
+      - - content: {text: "资源类型", align: [center, middle]}
+        - content: {text: "需求说明", align: [center, middle]}
+        - content: {text: "预算（万元）", align: [center, middle]}
+      - - content: {text: "人力资源"}
+        - content: {text: "新增高级工程师5名"}
+        - content: {text: "300", align: [center, middle]}
+      - - content: {text: "技术资源"}
+        - content: {text: "云服务器扩容"}
+        - content: {text: "150", align: [center, middle]}
+      - - content: {text: "市场推广"}
+        - content: {text: "品牌活动及广告投放"}
+        - content: {text: "200", align: [center, middle]}
+  
+  # 预期成果
+  - elementId: result-bg
+    elementType: shape
+    bounds: [680, 380, 520, 200]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 45
+      stops:
+        - {position: 0, color: "#6AC06F10"}
+        - {position: 1, color: "#2A3B4C10"}
+  
+  - elementId: result-title
+    elementType: text
+    bounds: [700, 400, 300, 30]
+    content:
+      style: "$subtitle"
+      text: |
+        <p>预期成果</p>
+  
+  - elementId: result-content
+    elementType: text
+    bounds: [700, 440, 480, 135]
+    content:
+      style: "$body"
+      text: |
+        <p>• <strong>技术能力</strong>：系统响应速度提升50%，可用性达99.9%</p>
+        <p>• <strong>产品体验</strong>：用户满意度提升至4.9分，NPS达到45</p>
+        <p>• <strong>业务增长</strong>：Q4营收环比增长25%，新增客户200家</p>
+        <p>• <strong>团队建设</strong>：核心人才流失率降至5%以下</p>
+  
+  # 底部导航
+  - elementId: nav-line
+    elementType: shape
+    bounds: [80, 660, 1120, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$border"
+  
+  - elementId: page-num
+    elementType: text
+    bounds: [1100, 670, 100, 30]
+    content:
+      fontSize: 12
+      color: "$tertiary"
+      fontFamily: "Liter, MiSans"
+      align: [right, middle]
+      text: |
+        <p>8</p>

@@ -1,0 +1,336 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 80
+      - 60
+      - 800
+      - 50
+    content:
+      style: $title
+      align:
+        - left
+        - middle
+      text: |
+        <p>实践挑战：将所学应用于真实情境</p>
+  - elementId: challenge-container
+    elementType: shape
+    bounds:
+      - 80
+      - 140
+      - 1120
+      - 400
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 10
+      color: "#00000010"
+      offset:
+        - 0
+        - 3
+  - elementId: challenge-header
+    elementType: shape
+    bounds:
+      - 80
+      - 140
+      - 1120
+      - 80
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - position: 0
+          color: $accent
+        - position: 1
+          color: $accent2
+  - elementId: challenge-icon
+    elementType: icon
+    bounds:
+      - 120
+      - 160
+      - 40
+      - 40
+    iconName: fas:rocket
+    fill:
+      type: solid
+      color: $textWhite
+  - elementId: challenge-title
+    elementType: text
+    bounds:
+      - 180
+      - 150
+      - 900
+      - 60
+    content:
+      fontSize: 26
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>30天学习挑战：构建你的专业知识体系</strong></p>
+  - elementId: challenge-grid
+    elementType: shape
+    bounds:
+      - 110
+      - 250
+      - 1060
+      - 260
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF00"
+  - elementId: week1-card
+    elementType: shape
+    bounds:
+      - 130
+      - 270
+      - 240
+      - 220
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $background
+    border:
+      style: solid
+      width: 2
+      color: $accent
+  - elementId: week1-title
+    elementType: text
+    bounds:
+      - 150
+      - 290
+      - 200
+      - 40
+    content:
+      fontSize: 20
+      color: $accent
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>第1周：基础</strong></p>
+  - elementId: week1-content
+    elementType: text
+    bounds:
+      - 150
+      - 340
+      - 200
+      - 130
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>✓ 确定学习领域</p>
+        <p>✓ 收集核心资源</p>
+        <p>✓ 制定学习计划</p>
+        <p>✓ 搭建知识框架</p>
+  - elementId: week2-card
+    elementType: shape
+    bounds:
+      - 390
+      - 270
+      - 240
+      - 220
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $background
+    border:
+      style: solid
+      width: 2
+      color: $accent
+  - elementId: week2-title
+    elementType: text
+    bounds:
+      - 410
+      - 290
+      - 200
+      - 40
+    content:
+      fontSize: 20
+      color: $accent
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>第2周：深化</strong></p>
+  - elementId: week2-content
+    elementType: text
+    bounds:
+      - 410
+      - 340
+      - 200
+      - 130
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>✓ 深入核心概念</p>
+        <p>✓ 完成基础练习</p>
+        <p>✓ 记录学习笔记</p>
+        <p>✓ 建立概念联系</p>
+  - elementId: week3-card
+    elementType: shape
+    bounds:
+      - 650
+      - 270
+      - 240
+      - 220
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $background
+    border:
+      style: solid
+      width: 2
+      color: $accent2
+  - elementId: week3-title
+    elementType: text
+    bounds:
+      - 670
+      - 290
+      - 200
+      - 40
+    content:
+      fontSize: 20
+      color: $accent2
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>第3周：应用</strong></p>
+  - elementId: week3-content
+    elementType: text
+    bounds:
+      - 670
+      - 340
+      - 200
+      - 130
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>✓ 实践项目启动</p>
+        <p>✓ 解决实际问题</p>
+        <p>✓ 获取反馈改进</p>
+        <p>✓ 优化工作流程</p>
+  - elementId: week4-card
+    elementType: shape
+    bounds:
+      - 910
+      - 270
+      - 240
+      - 220
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $background
+    border:
+      style: solid
+      width: 2
+      color: $accent2
+  - elementId: week4-title
+    elementType: text
+    bounds:
+      - 930
+      - 290
+      - 200
+      - 40
+    content:
+      fontSize: 20
+      color: $accent2
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>第4周：分享</strong></p>
+  - elementId: week4-content
+    elementType: text
+    bounds:
+      - 930
+      - 340
+      - 200
+      - 130
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p>✓ 总结经验教训</p>
+        <p>✓ 输出学习成果</p>
+        <p>✓ 分享给他人</p>
+        <p>✓ 规划下一步</p>
+  - elementId: cta-box
+    elementType: shape
+    bounds:
+      - 340
+      - 570
+      - 600
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 35000
+    fill:
+      type: solid
+      color: $primary
+  - elementId: cta-text
+    elementType: text
+    bounds:
+      - 340
+      - 570
+      - 600
+      - 70
+    content:
+      fontSize: 22
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p>开始你的学习之旅，成为更好的自己</p>

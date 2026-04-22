@@ -1,0 +1,165 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: toc-title
+    elementType: text
+    bounds: [80, 50, 400, 50]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p>本章学习路径</p>
+
+  # 目录项容器背景
+  - elementId: toc-bg
+    elementType: shape
+    bounds: [80, 130, 600, 500]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$white"
+    shadow:
+      blur: 12
+      color: "#00000008"
+      offset: [0, 4]
+
+  # 章节1
+  - elementId: chapter1-num
+    elementType: shape
+    bounds: [120, 170, 48, 48]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: chapter1-num-text
+    elementType: text
+    bounds: [120, 170, 48, 48]
+    content:
+      fontSize: 24
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "1"
+
+  - elementId: chapter1-title
+    elementType: text
+    bounds: [186, 170, 460, 48]
+    content:
+      style: "$emphasis"
+      align: [left, middle]
+      text: |
+        <p>一次函数的概念与图像</p>
+
+  # 章节2
+  - elementId: chapter2-num
+    elementType: shape
+    bounds: [120, 260, 48, 48]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: chapter2-num-text
+    elementType: text
+    bounds: [120, 260, 48, 48]
+    content:
+      fontSize: 24
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "2"
+
+  - elementId: chapter2-title
+    elementType: text
+    bounds: [186, 260, 460, 48]
+    content:
+      style: "$bodyText"
+      align: [left, middle]
+      text: |
+        <p>一元二次方程的解法</p>
+
+  # 章节3
+  - elementId: chapter3-num
+    elementType: shape
+    bounds: [120, 350, 48, 48]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: chapter3-num-text
+    elementType: text
+    bounds: [120, 350, 48, 48]
+    content:
+      fontSize: 24
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "3"
+
+  - elementId: chapter3-title
+    elementType: text
+    bounds: [186, 350, 460, 48]
+    content:
+      style: "$bodyText"
+      align: [left, middle]
+      text: |
+        <p>函数与方程的综合应用</p>
+
+  # 章节4
+  - elementId: chapter4-num
+    elementType: shape
+    bounds: [120, 440, 48, 48]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: chapter4-num-text
+    elementType: text
+    bounds: [120, 440, 48, 48]
+    content:
+      fontSize: 24
+      color: "$white"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: "4"
+
+  - elementId: chapter4-title
+    elementType: text
+    bounds: [186, 440, 460, 48]
+    content:
+      style: "$bodyText"
+      align: [left, middle]
+      text: |
+        <p>典型例题与课堂练习</p>
+
+  # 右侧装饰图形
+  - elementId: right-deco
+    elementType: shape
+    bounds: [760, 200, 400, 400]
+    shapeName: custom
+    path: "100,100;M50,0 L75,25 L100,0 L100,50 L75,75 L100,100 L50,100 L25,75 L0,100 L0,50 L25,25 L0,0 Z"
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "$primary"}
+        - {position: 1, color: "$accent"}
+    opacity: 0.1
+
+  # 当前章节高亮条
+  - elementId: current-highlight
+    elementType: shape
+    bounds: [100, 170, 560, 48]
+    shapeName: roundRect
+    adjustments: [20000]
+    fill:
+      type: solid
+      color: "$accent"
+    opacity: 0.1

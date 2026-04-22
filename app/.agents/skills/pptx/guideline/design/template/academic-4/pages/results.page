@@ -1,0 +1,314 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深紫导航色带
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  - elementId: nav-left-accent
+    elementType: shape
+    bounds: [0, 0, 4, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB550"}
+
+  - elementId: nav-chapter-text
+    elementType: text
+    bounds: [20, 0, 900, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 04 实验设计与结果分析 / 4.2 主要实验结果
+
+  - elementId: nav-page-num
+    elementType: text
+    bounds: [1200, 0, 60, 50]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "08"
+
+  # 标题
+  - elementId: title-accent-mark
+    elementType: shape
+    bounds: [12, 68, 4, 40]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB5"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [24, 68, 1000, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>主要实验结果与性能分析</strong></p>
+
+  - elementId: title-sep
+    elementType: shape
+    bounds: [24, 116, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#E0D4F0"
+
+  # 顶部四个核心指标（紫色主题）
+  - elementId: kpi-1-bg
+    elementType: shape
+    bounds: [24, 130, 280, 130]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "#2D1B55"}
+        - {position: 1, color: "#432879"}
+
+  - elementId: kpi-1-num
+    elementType: text
+    bounds: [24, 148, 280, 60]
+    content:
+      fontSize: 44
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>94.3%</strong></p>
+
+  - elementId: kpi-1-label
+    elementType: text
+    bounds: [24, 212, 280, 28]
+    content:
+      fontSize: 14
+      color: "#C8BEE0"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: Top-1 Accuracy
+
+  - elementId: kpi-2-bg
+    elementType: shape
+    bounds: [328, 130, 280, 130]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#614F96"}
+
+  - elementId: kpi-2-num
+    elementType: text
+    bounds: [328, 148, 280, 60]
+    content:
+      fontSize: 44
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>+6.8%</strong></p>
+
+  - elementId: kpi-2-label
+    elementType: text
+    bounds: [328, 212, 280, 28]
+    content:
+      fontSize: 14
+      color: "#C8BEE0"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 相对基线提升
+
+  - elementId: kpi-3-bg
+    elementType: shape
+    bounds: [632, 130, 280, 130]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "#614F96"}
+        - {position: 1, color: "#8A7BB5"}
+
+  - elementId: kpi-3-num
+    elementType: text
+    bounds: [632, 148, 280, 60]
+    content:
+      fontSize: 44
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>0.967</strong></p>
+
+  - elementId: kpi-3-label
+    elementType: text
+    bounds: [632, 212, 280, 28]
+    content:
+      fontSize: 14
+      color: "#C8BEE0"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: AUC-ROC Score
+
+  - elementId: kpi-4-bg
+    elementType: shape
+    bounds: [936, 130, 320, 130]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  - elementId: kpi-4-num
+    elementType: text
+    bounds: [936, 148, 320, 60]
+    content:
+      fontSize: 44
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>31.2M</strong></p>
+
+  - elementId: kpi-4-label
+    elementType: text
+    bounds: [936, 212, 320, 28]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 模型参数量
+
+  # 图表区 — 实际图表
+  - elementId: sota-chart
+    elementType: chart
+    bounds: [24, 280, 780, 330]
+    type: bar
+    data:
+      - {dataset: "Dataset A", ours: 94.2, resnet: 88.1, vit: 90.5, dino: 91.8}
+      - {dataset: "Dataset B", ours: 95.1, resnet: 86.5, vit: 89.2, dino: 92.0}
+      - {dataset: "Dataset C", ours: 92.8, resnet: 87.3, vit: 88.6, dino: 90.4}
+      - {dataset: "Dataset D", ours: 96.3, resnet: 90.1, vit: 91.8, dino: 93.2}
+      - {dataset: "Dataset E", ours: 93.5, resnet: 88.7, vit: 89.9, dino: 91.6}
+    x: dataset
+    y: [ours, resnet, vit, dino]
+    names: ["Ours", "ResNet-50", "ViT", "DINOv2"]
+    colors: ["$primary", "$secondary", "$accent", "#C8BEE0"]
+    options:
+      barWidth: 0.7
+      fontFamily: "QuattrocentoSans, MiSans"
+    xAxis:
+      label:
+        fontSize: 13
+        color: "$text"
+    yAxis:
+      title: "Accuracy (%)"
+      min: 80
+      max: 100
+      gridLine:
+        color: "#E0D4F0"
+        style: dash
+      label:
+        fontSize: 12
+        color: "#666666"
+    legend:
+      position: top
+      fontSize: 13
+    fill:
+      type: solid
+      color: "$lightPurple"
+    border:
+      style: solid
+      width: 1
+      color: "$midPurple"
+
+  # 右侧分析总结
+  - elementId: analysis-bg
+    elementType: shape
+    bounds: [830, 280, 426, 330]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 135
+      stops:
+        - {position: 0, color: "#2D1B55"}
+        - {position: 1, color: "#432879"}
+
+  - elementId: analysis-title
+    elementType: text
+    bounds: [846, 298, 394, 28]
+    content:
+      fontSize: 16
+      color: "#C8BEE0"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>HIGHLIGHTS</strong></p>
+
+  - elementId: analysis-content
+    elementType: text
+    bounds: [846, 334, 394, 256]
+    content:
+      fontSize: 15
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• 在5/5基准上超越所有对比方法</p>
+        <p>• Dataset-C上最大提升 +8.3%</p>
+        <p>• 参数量仅为ViT-L的1/4</p>
+        <p>• 推理速度提升3.2×</p>
+        <p>• 统计显著性 p &lt; 0.001</p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "8"

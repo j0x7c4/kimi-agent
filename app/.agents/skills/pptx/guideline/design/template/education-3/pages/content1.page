@@ -1,0 +1,329 @@
+pageType: content
+background:
+  type: solid
+  color: "#FFFFFF"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 1280
+      - 56
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 24
+      - 0
+      - 900
+      - 56
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:32px; color:#FFFFFF; font-family:MiSans;"><strong>知识要点梳理</strong></span></p>
+  - elementId: subject-tag-bg
+    elementType: shape
+    bounds:
+      - 1096
+      - 12
+      - 160
+      - 32
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: subject-tag-text
+    elementType: text
+    bounds:
+      - 1096
+      - 12
+      - 160
+      - 32
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#FFFFFF; font-family:MiSans;"><strong>MATH · 数学</strong></span></p>
+  - elementId: left-accent-line
+    elementType: shape
+    bounds:
+      - 40
+      - 76
+      - 4
+      - 612
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: bullet1-box
+    elementType: shape
+    bounds:
+      - 64
+      - 88
+      - 8
+      - 8
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: bullet1-text
+    elementType: text
+    bounds:
+      - 86
+      - 78
+      - 1100
+      - 32
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#263238; font-family:MiSans;"><strong style="color:#1565C0;">定义：</strong>此处填写知识点核心定义，用简洁明确的语言表达</span></p>
+  - elementId: bullet2-box
+    elementType: shape
+    bounds:
+      - 64
+      - 164
+      - 8
+      - 8
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: bullet2-text
+    elementType: text
+    bounds:
+      - 86
+      - 154
+      - 1100
+      - 32
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#263238; font-family:MiSans;"><strong style="color:#FF8F00;">性质一：</strong>知识点的第一条基本性质，重点词汇<strong style="color:#FF8F00;">加粗橙色</strong>突出显示</span></p>
+  - elementId: bullet3-box
+    elementType: shape
+    bounds:
+      - 64
+      - 240
+      - 8
+      - 8
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: bullet3-text
+    elementType: text
+    bounds:
+      - 86
+      - 230
+      - 1100
+      - 32
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#263238; font-family:MiSans;"><strong style="color:#FF8F00;">性质二：</strong>知识点的第二条基本性质，配合图示或公式理解更直观</span></p>
+  - elementId: bullet4-box
+    elementType: shape
+    bounds:
+      - 64
+      - 316
+      - 8
+      - 8
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: bullet4-text
+    elementType: text
+    bounds:
+      - 86
+      - 306
+      - 1100
+      - 32
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#263238; font-family:MiSans;"><strong style="color:#FF8F00;">推论：</strong>由以上性质推导出的重要结论，是解题的关键依据</span></p>
+  - elementId: bullet5-box
+    elementType: shape
+    bounds:
+      - 64
+      - 392
+      - 8
+      - 8
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: bullet5-text
+    elementType: text
+    bounds:
+      - 86
+      - 382
+      - 1100
+      - 32
+    content:
+      lineHeight: 1.5
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#263238; font-family:MiSans;"><strong style="color:#FF8F00;">注意事项：</strong>常见易错点，请同学们特别留意并加以区分</span></p>
+  - elementId: note-bg
+    elementType: shape
+    bounds:
+      - 50
+      - 456
+      - 1190
+      - 88
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#E3F2FD"
+  - elementId: note-left-bar
+    elementType: shape
+    bounds:
+      - 40
+      - 456
+      - 4
+      - 88
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#1565C0"
+  - elementId: note-icon
+    elementType: text
+    bounds:
+      - 56
+      - 456
+      - 40
+      - 88
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:24px; color:#1565C0; font-family:MiSans;"><strong>💡</strong></span></p>
+  - elementId: note-text
+    elementType: text
+    bounds:
+      - 104
+      - 464
+      - 1120
+      - 72
+    content:
+      lineHeight: 1.6
+      align:
+        - left
+        - top
+      text: |
+        <p><span style="font-size:18px; color:#1565C0; font-family:MiSans;"><strong>知识链接：</strong>本知识点与前置知识「xxx」密切相关，建议同学们结合之前所学的内容来理解。</span></p>
+  - elementId: sep-line
+    elementType: shape
+    bounds:
+      - 40
+      - 560
+      - 1200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+  - elementId: formula-bg
+    elementType: shape
+    bounds:
+      - 50
+      - 576
+      - 1190
+      - 64
+    shapeName: roundRect
+    adjustments:
+      - 6000
+    fill:
+      type: solid
+      color: "#F5F5F5"
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+  - elementId: formula-label
+    elementType: text
+    bounds:
+      - 97
+      - 583
+      - 120
+      - 52
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - left
+        - middle
+      text: |
+        <p><span style="font-size:16px; color:#546E7A; font-family:MiSans;">核心公式</span></p>
+  - elementId: formula-text
+    elementType: text
+    bounds:
+      - 180
+      - 582
+      - 900
+      - 52
+    wrap: false
+    content:
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><span style="font-size:22px; color:#1565C0; font-family:MiSans;">\(a^2 + b^2 = c^2\)  （此处替换为实际公式）</span></p>
+  - elementId: progress-done
+    elementType: shape
+    bounds:
+      - 0
+      - 708
+      - 569
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FF8F00"
+  - elementId: progress-rest
+    elementType: shape
+    bounds:
+      - 569
+      - 708
+      - 711
+      - 12
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#CFD8DC"

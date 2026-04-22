@@ -1,0 +1,55 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: shape0
+    elementType: shape
+    bounds:
+      - 0
+      - 0
+      - 880
+      - 1080
+    shapeName: custom
+    path: 8382000,10287000;M0 0L8382000 0L8382000 10287000L0 10287000L0 0Z
+    fill:
+      type: image
+      src: https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200
+      fit:
+        mode: contain
+  - elementId: text1
+    elementType: text
+    bounds:
+      - 1062.35
+      - 467.07
+      - 639.25
+      - 246.35
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.4
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>Do you have </strong></p>
+        <p style="line-height:118.39px"><strong>any questions?</strong></p>
+  - elementId: text2
+    elementType: text
+    bounds:
+      - 1062.35
+      - 761.75
+      - 534.97
+      - 107.05
+    content:
+      fontSize: 32
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 51.2
+      align:
+        - left
+        - top
+      text: |
+        Send it to us! We hope you learned something new.

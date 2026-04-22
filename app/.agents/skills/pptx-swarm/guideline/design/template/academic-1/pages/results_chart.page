@@ -1,0 +1,154 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部细线
+  - elementId: top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  - elementId: section-marker
+    elementType: text
+    bounds: [80, 20, 200, 20]
+    content:
+      fontSize: 12
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: "CHAPTER 04 — 实验结果与讨论"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 35]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>4.1 不同GNN变体的性能对比</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 90, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  # 左侧图表
+  - elementId: chart-left-bg
+    elementType: shape
+    bounds: [80, 110, 540, 290]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: chart-left-placeholder
+    elementType: text
+    bounds: [80, 110, 540, 30]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      text: |
+        <p>[Figure 3: 各模型在MoleculeNet各数据集上的ROC-AUC对比]</p>
+
+  # 右侧图表
+  - elementId: chart-right-bg
+    elementType: shape
+    bounds: [660, 110, 540, 290]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: chart-right-placeholder
+    elementType: text
+    bounds: [660, 110, 540, 30]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      text: |
+        <p>[Figure 4: 各模型在回归任务上的RMSE对比]</p>
+
+  # 结论区（线在caption之前，避免遮挡）
+  - elementId: conclusion-line
+    elementType: shape
+    bounds: [80, 470, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  - elementId: chart-left-caption
+    elementType: text
+    bounds: [80, 410, 540, 58]
+    content:
+      style: "$caption"
+      lineHeight: 1.4
+      text: |
+        <p><strong>Figure 3.</strong> 各GNN变体在MoleculeNet 8个分类数据集上的平均ROC-AUC。误差棒表示3次独立运行的标准差。</p>
+
+  - elementId: chart-right-caption
+    elementType: text
+    bounds: [660, 410, 540, 58]
+    content:
+      style: "$caption"
+      lineHeight: 1.4
+      text: |
+        <p><strong>Figure 4.</strong> 各模型在ESOL、FreeSolv、Lipophilicity数据集上的RMSE（越低越好）。</p>
+
+  - elementId: conclusion-title
+    elementType: text
+    bounds: [80, 490, 300, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>实验结论</strong></p>
+
+  - elementId: conclusion-content
+    elementType: text
+    bounds: [80, 522, 1120, 122]
+    content:
+      style: "$body"
+      lineHeight: 1.7
+      text: |
+        <p><strong>1.</strong> MolGNN在8个分类数据集中的6个上取得最优ROC-AUC，平均ROC-AUC达到0.842，较基线GCN提升5.3%。</p>
+        <p><strong>2.</strong> 在回归任务上，MolGNN的RMSE在3个数据集上均为最低，尤其在FreeSolv数据集上RMSE降低22%。</p>
+        <p><strong>3.</strong> 注意力读出层相比简单求和池化，平均提升2.1% ROC-AUC，验证了自适应加权的必要性。</p>
+
+  # 底部线
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [0, 716, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 80, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "05 / 09"

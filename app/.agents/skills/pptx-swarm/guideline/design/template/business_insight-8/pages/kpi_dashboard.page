@@ -1,0 +1,459 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 顶部accent装饰线
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # lightpanel标题带
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 4, 1280, 55]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  # Action Title
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 10, 1100, 46]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#ffffff; font-family:Times New Roman, SimSun, MiSans;"><strong>核心经营指标全面超预期，营收与利润实现双位数增长验证战略有效性</strong></span></p>
+
+  # KPI 1
+  - elementId: kpi1-bg
+    elementType: shape
+    bounds: [50, 72, 370, 120]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  - elementId: kpi1-accent
+    elementType: shape
+    bounds: [50, 72, 370, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: kpi1-number
+    elementType: text
+    bounds: [70, 84, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:36px; color:#5BA4CF; font-family:Calibri Light, Arial, MiSans;"><strong>¥856亿</strong></span></p>
+
+  - elementId: kpi1-label
+    elementType: text
+    bounds: [70, 137, 160, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#E8E8E8;"><strong>营业收入</strong></span></p>
+
+  - elementId: kpi1-change
+    elementType: text
+    bounds: [70, 160, 160, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#E8B931;"><strong>+23.4% YoY</strong></span></p>
+
+  - elementId: kpi1-vs
+    elementType: text
+    bounds: [280, 137, 130, 50]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$border"
+      wrap: true
+      text: |
+        <p><span style="font-size:12px;">预期¥820亿</span></p>
+        <p><span style="font-size:12px; color:#E8B931;">超预期4.4%</span></p>
+
+  # KPI 2
+  - elementId: kpi2-bg
+    elementType: shape
+    bounds: [455, 72, 370, 120]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  - elementId: kpi2-accent
+    elementType: shape
+    bounds: [455, 72, 370, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: kpi2-number
+    elementType: text
+    bounds: [475, 84, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:36px; color:#5BA4CF; font-family:Calibri Light, Arial, MiSans;"><strong>28.6%</strong></span></p>
+
+  - elementId: kpi2-label
+    elementType: text
+    bounds: [475, 137, 160, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#E8E8E8;"><strong>毛利率</strong></span></p>
+
+  - elementId: kpi2-change
+    elementType: text
+    bounds: [475, 160, 160, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#E8B931;"><strong>+3.2pp YoY</strong></span></p>
+
+  - elementId: kpi2-vs
+    elementType: text
+    bounds: [685, 137, 130, 50]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$border"
+      wrap: true
+      text: |
+        <p><span style="font-size:12px;">预期27.0%</span></p>
+        <p><span style="font-size:12px; color:#E8B931;">超预期1.6pp</span></p>
+
+  # KPI 3
+  - elementId: kpi3-bg
+    elementType: shape
+    bounds: [860, 72, 370, 120]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  - elementId: kpi3-accent
+    elementType: shape
+    bounds: [860, 72, 370, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$highlight"
+
+  - elementId: kpi3-number
+    elementType: text
+    bounds: [880, 84, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:36px; color:#E8B931; font-family:Calibri Light, Arial, MiSans;"><strong>¥142亿</strong></span></p>
+
+  - elementId: kpi3-label
+    elementType: text
+    bounds: [880, 137, 160, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#E8E8E8;"><strong>净利润</strong></span></p>
+
+  - elementId: kpi3-change
+    elementType: text
+    bounds: [880, 160, 160, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#E8B931;"><strong>+31.2% YoY</strong></span></p>
+
+  - elementId: kpi3-vs
+    elementType: text
+    bounds: [1090, 137, 130, 50]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$border"
+      wrap: true
+      text: |
+        <p><span style="font-size:12px;">预期¥128亿</span></p>
+        <p><span style="font-size:12px; color:#E8B931;">超预期10.9%</span></p>
+
+  # KPI 4
+  - elementId: kpi4-bg
+    elementType: shape
+    bounds: [50, 207, 370, 120]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  - elementId: kpi4-accent
+    elementType: shape
+    bounds: [50, 207, 370, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: kpi4-number
+    elementType: text
+    bounds: [70, 219, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:36px; color:#5BA4CF; font-family:Calibri Light, Arial, MiSans;"><strong>3,280万</strong></span></p>
+
+  - elementId: kpi4-label
+    elementType: text
+    bounds: [70, 272, 160, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#E8E8E8;"><strong>活跃用户数</strong></span></p>
+
+  - elementId: kpi4-change
+    elementType: text
+    bounds: [70, 295, 160, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#E8B931;"><strong>+45% YoY</strong></span></p>
+
+  # KPI 5
+  - elementId: kpi5-bg
+    elementType: shape
+    bounds: [455, 207, 370, 120]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  - elementId: kpi5-accent
+    elementType: shape
+    bounds: [455, 207, 370, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: kpi5-number
+    elementType: text
+    bounds: [475, 219, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:36px; color:#5BA4CF; font-family:Calibri Light, Arial, MiSans;"><strong>¥2,614</strong></span></p>
+
+  - elementId: kpi5-label
+    elementType: text
+    bounds: [475, 272, 160, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#E8E8E8;"><strong>客单价ARPU</strong></span></p>
+
+  - elementId: kpi5-change
+    elementType: text
+    bounds: [475, 295, 160, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#E8B931;"><strong>+12.8% YoY</strong></span></p>
+
+  # KPI 6
+  - elementId: kpi6-bg
+    elementType: shape
+    bounds: [860, 207, 370, 120]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  - elementId: kpi6-accent
+    elementType: shape
+    bounds: [860, 207, 370, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: kpi6-number
+    elementType: text
+    bounds: [880, 219, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:36px; color:#5BA4CF; font-family:Calibri Light, Arial, MiSans;"><strong>18.2%</strong></span></p>
+
+  - elementId: kpi6-label
+    elementType: text
+    bounds: [880, 272, 160, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#E8E8E8;"><strong>研发费用率</strong></span></p>
+
+  - elementId: kpi6-change
+    elementType: text
+    bounds: [880, 295, 160, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#5BA4CF;"><strong>+1.5pp YoY</strong></span></p>
+
+  # 趋势图标题
+  - elementId: trend-title
+    elementType: text
+    bounds: [50, 342, 500, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#E8E8E8; font-family:Calibri, Microsoft YaHei, MiSans;"><strong>季度营收趋势与利润率变化</strong></span></p>
+
+  - elementId: trend-chart
+    elementType: chart
+    bounds: [50, 372, 780, 260]
+    type: combo
+    options:
+      fontFamily: "Calibri, Microsoft YaHei, MiSans"
+    data:
+      - {quarter: "Q1'24", revenue: 186, margin: 0.245}
+      - {quarter: "Q2'24", revenue: 205, margin: 0.262}
+      - {quarter: "Q3'24", revenue: 218, margin: 0.278}
+      - {quarter: "Q4'24", revenue: 247, margin: 0.286}
+      - {quarter: "Q1'25", revenue: 198, margin: 0.268}
+      - {quarter: "Q2'25", revenue: 232, margin: 0.295}
+      - {quarter: "Q3'25E", revenue: 250, margin: 0.302}
+      - {quarter: "Q4'25E", revenue: 276, margin: 0.315}
+    x: quarter
+    y: [revenue, margin]
+    names: ["营收（亿元）", "净利率"]
+    colors: ["$accent", "$highlight"]
+    seriesStyle:
+      revenue: {type: bar}
+      margin:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        fill:
+          type: solid
+          color: "$highlight"
+        marker:
+          shape: circle
+          size: 5
+          fill:
+            type: solid
+            color: "$highlight"
+          border: {style: solid, width: 2, color: "$highlight"}
+    legend: {position: top, fontSize: 11}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 10
+    xAxis:
+      label: {fontSize: 10, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 10, color: "$border"}
+      gridLine: {color: "#1A3558", style: dash}
+      axisLine: false
+    secondaryAxis:
+      label: {fontSize: 10, color: "$highlight"}
+      numberFormat: "0%"
+
+  # 右侧分析要点
+  - elementId: insight-bg
+    elementType: shape
+    bounds: [860, 342, 370, 318]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  - elementId: insight-title
+    elementType: text
+    bounds: [880, 352, 330, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#5BA4CF; font-family:Times New Roman, SimSun, MiSans;"><strong>业绩驱动因素分析</strong></span></p>
+
+  - elementId: insight-text
+    elementType: text
+    bounds: [880, 384, 330, 270]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; color:#ffffff;"><strong>1. 收入端</strong></span></p>
+        <p><span style="font-size:12px; color:#C0C0C0;">核心业务增长22%，新业务贡献收入占比提升至18%，海外市场收入同比增长67%</span></p>
+        <p style="margin-top:8px"><span style="font-size:13px; color:#ffffff;"><strong>2. 成本端</strong></span></p>
+        <p><span style="font-size:12px; color:#C0C0C0;">规模效应显现，单位成本下降8.5%；供应链优化节省成本约¥12亿</span></p>
+        <p style="margin-top:8px"><span style="font-size:13px; color:#ffffff;"><strong>3. 前瞻指引</strong></span></p>
+        <p><span style="font-size:12px; color:#C0C0C0;">管理层上调全年收入指引至¥950-980亿，净利率目标30%+</span></p>
+        <p style="margin-top:8px"><span style="font-size:13px; color:#E8B931;"><strong>评级：强烈推荐 | 目标价上调15%</strong></span></p>
+
+  # 底部darkpanel footer
+  - elementId: footer-bg
+    elementType: shape
+    bounds: [0, 660, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$darkpanel"
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 668, 700, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：公司财报、Wind金融终端、一致预期数据</p>
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1130, 668, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$text"
+      wrap: false
+      text: |
+        <p>05</p>

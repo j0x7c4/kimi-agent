@@ -1,0 +1,239 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 180
+  stops:
+    - {position: 0, color: "#F0F3F5"}
+    - {position: 1, color: "#F8FAFB"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p><strong>2024年度项目里程碑 - 按计划稳步推进</strong></p>
+  
+  # 时间轴主线
+  - elementId: timeline-main
+    elementType: shape
+    bounds: [140, 300, 1000, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+  
+  # Q1里程碑
+  - elementId: q1-point
+    elementType: shape
+    bounds: [200, 288, 28, 28]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+    border:
+      style: solid
+      width: 3
+      color: "#FFFFFF"
+  
+  - elementId: q1-card
+    elementType: shape
+    bounds: [140, 140, 200, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 8
+      color: "#00000010"
+      offset: [0, 2]
+
+  - elementId: q1-title
+    elementType: text
+    bounds: [150, 150, 180, 30]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: "Q1 - 战略规划"
+
+  - elementId: q1-content
+    elementType: text
+    bounds: [150, 185, 180, 65]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      text: |
+        <p>• 完成年度规划</p>
+        <p>• 组建核心团队</p>
+  
+  # Q2里程碑
+  - elementId: q2-point
+    elementType: shape
+    bounds: [440, 288, 28, 28]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 3
+      color: "#FFFFFF"
+  
+  - elementId: q2-card
+    elementType: shape
+    bounds: [380, 340, 200, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 8
+      color: "#00000010"
+      offset: [0, 2]
+
+  - elementId: q2-title
+    elementType: text
+    bounds: [390, 350, 180, 30]
+    content:
+      fontSize: 20
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      text: "Q2 - 产品上线"
+
+  - elementId: q2-content
+    elementType: text
+    bounds: [390, 385, 180, 65]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      text: |
+        <p>• 核心功能发布</p>
+        <p>• 获得种子用户</p>
+  
+  # Q3里程碑
+  - elementId: q3-point
+    elementType: shape
+    bounds: [680, 288, 28, 28]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+    border:
+      style: solid
+      width: 3
+      color: "#FFFFFF"
+  
+  - elementId: q3-card
+    elementType: shape
+    bounds: [620, 140, 200, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 8
+      color: "#00000010"
+      offset: [0, 2]
+
+  - elementId: q3-title
+    elementType: text
+    bounds: [630, 150, 180, 30]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: "Q3 - 规模扩张"
+
+  - elementId: q3-content
+    elementType: text
+    bounds: [630, 185, 180, 65]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      text: |
+        <p>• 用户破百万</p>
+        <p>• 完成A轮融资</p>
+  
+  # Q4里程碑
+  - elementId: q4-point
+    elementType: shape
+    bounds: [920, 288, 28, 28]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 3
+      color: "#FFFFFF"
+  
+  - elementId: q4-card
+    elementType: shape
+    bounds: [860, 340, 200, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+    shadow:
+      blur: 8
+      color: "#00000010"
+      offset: [0, 2]
+
+  - elementId: q4-title
+    elementType: text
+    bounds: [870, 350, 180, 30]
+    content:
+      fontSize: 20
+      color: "$accent"
+      fontFamily: "Liter, MiSans"
+      text: "Q4 - 商业闭环"
+
+  - elementId: q4-content
+    elementType: text
+    bounds: [870, 385, 180, 65]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      text: |
+        <p>• 实现盈亏平衡</p>
+        <p>• 国际化布局</p>
+  
+  # 底部说明
+  - elementId: summary
+    elementType: text
+    bounds: [140, 500, 1000, 80]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.6
+      align: [center, middle]
+      text: |
+        <p><strong>年度总结</strong>：4个季度全部里程碑按期达成，团队执行力获得董事会高度认可</p>
+        <p style="margin-top:12px;"><span style="color:$accent;">关键成功因素</span>：敏捷迭代 + 数据驱动 + 用户中心</p>
+  
+  # 页脚
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 680, 80, 20]
+    content:
+      fontSize: 12
+      color: "$textSecondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, bottom]
+      text: "6"

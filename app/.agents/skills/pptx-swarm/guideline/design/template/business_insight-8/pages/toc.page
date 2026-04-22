@@ -1,0 +1,278 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 顶部accent装饰线
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # lightpanel标题背景带
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 4, 1280, 55]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightpanel"
+
+  # 页面标题
+  - elementId: toc-title
+    elementType: text
+    bounds: [80, 10, 400, 46]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:28px; color:#ffffff; font-family:Times New Roman, SimSun, MiSans;"><strong>目录 CONTENTS</strong></span></p>
+
+  # 分隔线
+  - elementId: toc-divider
+    elementType: shape
+    bounds: [80, 80, 1120, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # 条目1
+  - elementId: toc-num1
+    elementType: text
+    bounds: [80, 105, 80, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#5BA4CF; font-family:Times New Roman, SimSun, MiSans;"><strong>01</strong></span></p>
+
+  - elementId: toc-item1-title
+    elementType: text
+    bounds: [170, 105, 400, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#E8E8E8; font-family:Times New Roman, SimSun, MiSans;"><strong>行业概览与宏观环境</strong></span></p>
+
+  - elementId: toc-item1-desc
+    elementType: text
+    bounds: [170, 138, 500, 22]
+    content:
+      align: [left, middle]
+      fontSize: 14
+      color: "$border"
+      wrap: false
+      text: |
+        <p>市场规模、增长趋势、政策驱动因素分析</p>
+
+  - elementId: toc-page1
+    elementType: text
+    bounds: [1100, 115, 100, 30]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#5BA4CF;"><strong>P.03</strong></span></p>
+
+  - elementId: toc-line1
+    elementType: shape
+    bounds: [80, 178, 1120, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "#1A3558"}
+
+  # 条目2
+  - elementId: toc-num2
+    elementType: text
+    bounds: [80, 195, 80, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#5BA4CF; font-family:Times New Roman, SimSun, MiSans;"><strong>02</strong></span></p>
+
+  - elementId: toc-item2-title
+    elementType: text
+    bounds: [170, 195, 400, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#E8E8E8; font-family:Times New Roman, SimSun, MiSans;"><strong>竞争格局与市场份额</strong></span></p>
+
+  - elementId: toc-item2-desc
+    elementType: text
+    bounds: [170, 228, 500, 22]
+    content:
+      align: [left, middle]
+      fontSize: 14
+      color: "$border"
+      wrap: false
+      text: |
+        <p>头部企业对比、竞争壁垒、市场集中度变化</p>
+
+  - elementId: toc-page2
+    elementType: text
+    bounds: [1100, 205, 100, 30]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#5BA4CF;"><strong>P.08</strong></span></p>
+
+  - elementId: toc-line2
+    elementType: shape
+    bounds: [80, 268, 1120, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "#1A3558"}
+
+  # 条目3
+  - elementId: toc-num3
+    elementType: text
+    bounds: [80, 285, 80, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#5BA4CF; font-family:Times New Roman, SimSun, MiSans;"><strong>03</strong></span></p>
+
+  - elementId: toc-item3-title
+    elementType: text
+    bounds: [170, 285, 400, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#E8E8E8; font-family:Times New Roman, SimSun, MiSans;"><strong>财务分析与盈利能力</strong></span></p>
+
+  - elementId: toc-item3-desc
+    elementType: text
+    bounds: [170, 318, 500, 22]
+    content:
+      align: [left, middle]
+      fontSize: 14
+      color: "$border"
+      wrap: false
+      text: |
+        <p>营收结构、利润率趋势、现金流与资本回报分析</p>
+
+  - elementId: toc-page3
+    elementType: text
+    bounds: [1100, 295, 100, 30]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#5BA4CF;"><strong>P.14</strong></span></p>
+
+  - elementId: toc-line3
+    elementType: shape
+    bounds: [80, 358, 1120, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "#1A3558"}
+
+  # 条目4
+  - elementId: toc-num4
+    elementType: text
+    bounds: [80, 375, 80, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#5BA4CF; font-family:Times New Roman, SimSun, MiSans;"><strong>04</strong></span></p>
+
+  - elementId: toc-item4-title
+    elementType: text
+    bounds: [170, 375, 400, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#E8E8E8; font-family:Times New Roman, SimSun, MiSans;"><strong>核心洞察与风险评估</strong></span></p>
+
+  - elementId: toc-item4-desc
+    elementType: text
+    bounds: [170, 408, 500, 22]
+    content:
+      align: [left, middle]
+      fontSize: 14
+      color: "$border"
+      wrap: false
+      text: |
+        <p>关键发现、潜在风险因素、情景分析</p>
+
+  - elementId: toc-page4
+    elementType: text
+    bounds: [1100, 385, 100, 30]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#5BA4CF;"><strong>P.20</strong></span></p>
+
+  - elementId: toc-line4
+    elementType: shape
+    bounds: [80, 448, 1120, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "#1A3558"}
+
+  # 条目5
+  - elementId: toc-num5
+    elementType: text
+    bounds: [80, 465, 80, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#5BA4CF; font-family:Times New Roman, SimSun, MiSans;"><strong>05</strong></span></p>
+
+  - elementId: toc-item5-title
+    elementType: text
+    bounds: [170, 465, 400, 30]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#E8E8E8; font-family:Times New Roman, SimSun, MiSans;"><strong>投资建议与行动方案</strong></span></p>
+
+  - elementId: toc-item5-desc
+    elementType: text
+    bounds: [170, 498, 500, 22]
+    content:
+      align: [left, middle]
+      fontSize: 14
+      color: "$border"
+      wrap: false
+      text: |
+        <p>标的筛选、估值分析、配置策略建议</p>
+
+  - elementId: toc-page5
+    elementType: text
+    bounds: [1100, 475, 100, 30]
+    content:
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#5BA4CF;"><strong>P.25</strong></span></p>
+
+  # 底部footer darkpanel带
+  - elementId: footer-bg
+    elementType: shape
+    bounds: [0, 660, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$darkpanel"
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1100, 668, 100, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$text"
+      wrap: false
+      text: |
+        <p>02</p>

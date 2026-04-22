@@ -1,0 +1,72 @@
+title: Bain & Company Style Template
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#8C1515"
+    secondary: "#1A1A1A"
+    accent: "#CC2222"
+    background: "#FFFFFF"
+    text: "#2C2C2C"
+    lightgray: "#F5F5F5"
+    border: "#DEDEDE"
+    medgray: "#8A8A8A"
+    darkred: "#6B0F0F"
+  textStyles:
+    coverTitle:
+      fontSize: 46
+      color: "#FFFFFF"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.2
+    chapterTitle:
+      fontSize: 36
+      color: "$secondary"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.2
+    actionTitle:
+      fontSize: 22
+      color: "$secondary"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+      lineHeight: 1.25
+    subtitle:
+      fontSize: 14
+      color: "$medgray"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.4
+    body:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.6
+    caption:
+      fontSize: 11
+      color: "$medgray"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.3
+    bignum:
+      fontSize: 52
+      color: "$primary"
+      fontFamily: "SortsMillGoudy, siyuanSongti, MiSans"
+  tableStyles:
+    default:
+      fontSize: 13
+      fontFamily: "Liter, MiSans"
+      headerFill: "$secondary"
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill: ["#FFFFFF", "$lightgray"]
+      bodyColor: "$text"
+      firstColumnBold: true
+      border:
+        style: solid
+        width: 1
+        color: "$border"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/section.page
+  - pages/content_bullets.page
+  - pages/content_two_col.page
+  - pages/content_chart.page
+  - pages/content_data.page
+  - pages/content_big_visual.page
+  - pages/final.page

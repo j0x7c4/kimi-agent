@@ -1,0 +1,71 @@
+title: 学生课堂汇报模板
+size:
+  - 1280
+  - 720
+theme:
+  colors:
+    primary: "#2C5F8A"
+    secondary: "#8D8D8D"
+    accent: "#E07B54"
+    lightblue: "#D9E8F5"
+    background: "#F6F9FC"
+    text: "#333333"
+    darkblue: "#1E4A6E"
+    lightgray: "#F5F5F5"
+    border: "#DADADA"
+  textStyles:
+    coverTitle:
+      fontSize: 48
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.25
+    pageTitle:
+      fontSize: 28
+      color: "#FFFFFF"
+      fontFamily: Liter, MiSans
+      lineHeight: 1.2
+    sectionTitle:
+      fontSize: 48
+      color: $primary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.2
+    body:
+      fontSize: 20
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.6
+    caption:
+      fontSize: 14
+      color: $secondary
+      fontFamily: Liter, MiSans
+      lineHeight: 1.4
+    bignum:
+      fontSize: 56
+      color: $accent
+      fontFamily: Liter, MiSans
+  tableStyles:
+    default:
+      fontSize: 18
+      fontFamily: Liter, MiSans
+      headerFill: $primary
+      headerColor: "#FFFFFF"
+      headerBold: true
+      bodyFill:
+        - "#FFFFFF"
+        - $lightblue
+      bodyColor: $text
+      firstColumnBold: true
+      border:
+        style: solid
+        width: 1
+        color: $border
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/section.page
+  - pages/content1.page
+  - pages/content2.page
+  - pages/content3.page
+  - pages/content4.page
+  - pages/content5.page
+  - pages/final.page

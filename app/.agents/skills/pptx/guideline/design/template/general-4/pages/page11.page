@@ -1,0 +1,141 @@
+pageType: content
+elements:
+# --- Decorative ---
+- elementId: deco_circle
+  elementType: shape
+  bounds: [100, 600, 250, 250]
+  shapeName: ellipse
+  fill:
+    type: solid
+    color: "#10B98110"
+- elementId: deco_hline1
+  elementType: shape
+  bounds: [466, 280, 1326, 2]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#1A1A1A10"
+# --- Logo badge ---
+- elementId: logo_bg
+  elementType: shape
+  bounds: [120, 130, 200, 75]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "#10B981"
+- elementId: text_logo
+  elementType: text
+  bounds: [157.25, 153.6, 133.41, 49.62]
+  content:
+    align: [center, top]
+    fontSize: 30.7
+    fontFamily: "Liter, deyihei"
+    color: "$light"
+    lineHeightPx: 42.92
+    text: A/X
+# --- Sidebar ---
+- elementId: sidebar_bg
+  elementType: shape
+  bounds: [0, 822, 50, 270]
+  shapeName: rect
+  fill:
+    type: solid
+    color: "$light"
+- elementId: text_sidebar
+  elementType: text
+  bounds: [1.84, 822.13, 272.19, 35.14]
+  rotation: 270
+  content:
+    align: [left, top]
+    fontSize: 20
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 28
+    letterSpacing: 1
+    text: NEW HIRE ONBOARDING
+# --- Content ---
+- elementId: text_title
+  elementType: text
+  bounds: [466.24, 144.89, 1325.93, 109.27]
+  content:
+    align: [left, top]
+    fontSize: 80
+    fontFamily: "Liter, deyihei"
+    color: "#1A1A1A"
+    lineHeightPx: 100
+    text: Frequently Asked Questions
+- elementId: text_q1_title
+  elementType: text
+  bounds: [466.24, 716.61, 350.14, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 41.67
+    text: Holiday Pay
+- elementId: text_q1_body
+  elementType: text
+  bounds: [466.24, 774.68, 350.14, 192.42]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 31.73
+    text: |
+      <p>Experienced professional dedicated to delivering high-quality results and fostering team collaboration.</p>
+      <p> </p>
+      <p>t is mostly presented before</p>
+      <p style="line-height:31.72px">an audience.</p>
+- elementId: text_q2_title
+  elementType: text
+  bounds: [954.13, 613.38, 350.14, 92.49]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 41.65
+    text: |
+      <p>Paid and</p>
+      <p style="line-height:41.67px">Unpaid Leaves</p>
+- elementId: text_q2_body
+  elementType: text
+  bounds: [954.13, 712.98, 350.14, 254.12]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 31.73
+    text: |
+      <p>Presentations are tools that can be used as lectures, speeches, reports, and more.</p>
+      <p> </p>
+      <p>It is mostly presented before</p>
+      <p style="line-height:31.72px">an audience. To create a stunning presentation, it's best to simplify your thoughts.</p>
+- elementId: text_q3_title
+  elementType: text
+  bounds: [1442.03, 500.66, 350.14, 50.96]
+  content:
+    align: [left, top]
+    fontSize: 33.3
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#10B981"
+    lineHeightPx: 41.67
+    text: Holiday Pay
+- elementId: text_q3_body
+  elementType: text
+  bounds: [1442.03, 558.73, 350.14, 408.37]
+  content:
+    align: [left, top]
+    fontSize: 22.7
+    fontFamily: "QuattrocentoSans, MiSans"
+    color: "#1A1A1A"
+    lineHeightPx: 31.73
+    text: |
+      <p>Experienced professional dedicated to delivering high-quality results and fostering team collaboration.</p>
+      <p> </p>
+      <p>It serves a variety of purposes, making presentations powerful tools for convincing and teaching. </p>
+      <p> </p>
+      <p style="line-height:31.72px">Start with an outline of topics and identify highlights, which can be applied to whatever subject you plan on discussing.</p>

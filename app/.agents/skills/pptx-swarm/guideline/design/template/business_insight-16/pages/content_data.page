@@ -1,0 +1,313 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Action title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 12, 1100, 60]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>数据验证核心假设成立：三项关键指标同步印证消费结构转型进入不可逆阶段</strong></span></p>
+
+  - elementId: title-underline
+    elementType: shape
+    bounds: [60, 78, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Three KPI big number cards (top row)
+  # KPI 1
+  - elementId: kpi1-top-border
+    elementType: shape
+    bounds: [60, 94, 370, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kpi1-bg
+    elementType: shape
+    bounds: [60, 97, 370, 160]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: kpi1-label
+    elementType: text
+    bounds: [80, 107, 330, 18]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:2px"><strong>MARKET SIZE · 市场规模</strong></span></p>
+
+  - elementId: kpi1-value
+    elementType: text
+    bounds: [80, 130, 330, 68]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:58px; color:#8C1515; font-family:Georgia, 宋体, MiSans;"><strong>¥4.7万亿</strong></span></p>
+
+  - elementId: kpi1-desc
+    elementType: text
+    bounds: [80, 200, 330, 48]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">同比增长 <strong>+22%</strong>，较2022年翻倍，占据全球市场<strong>38%</strong>份额（2024年）</span></p>
+
+  # KPI 2
+  - elementId: kpi2-top-border
+    elementType: shape
+    bounds: [455, 94, 370, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: kpi2-bg
+    elementType: shape
+    bounds: [455, 97, 370, 160]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: kpi2-label
+    elementType: text
+    bounds: [475, 107, 330, 18]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#1A1A1A; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:2px"><strong>PENETRATION RATE · 渗透率</strong></span></p>
+
+  - elementId: kpi2-value
+    elementType: text
+    bounds: [475, 130, 330, 68]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:58px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>67.3%</strong></span></p>
+
+  - elementId: kpi2-desc
+    elementType: text
+    bounds: [475, 200, 330, 48]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">较上年提升 <strong>+8.4pp</strong>，三线以下城市渗透率增速领先一线<strong>2.3倍</strong></span></p>
+
+  # KPI 3
+  - elementId: kpi3-top-border
+    elementType: shape
+    bounds: [850, 94, 370, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kpi3-bg
+    elementType: shape
+    bounds: [850, 97, 370, 160]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightgray"
+
+  - elementId: kpi3-label
+    elementType: text
+    bounds: [870, 107, 330, 18]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:2px"><strong>GROWTH DELTA · 增长差距</strong></span></p>
+
+  - elementId: kpi3-value
+    elementType: text
+    bounds: [870, 130, 330, 68]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:58px; color:#8C1515; font-family:Georgia, 宋体, MiSans;"><strong>+23pp</strong></span></p>
+
+  - elementId: kpi3-desc
+    elementType: text
+    bounds: [870, 200, 330, 48]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Arial, Microsoft YaHei, MiSans;">头部vs尾部增速差距创近五年新高，行业<strong>马太效应</strong>持续强化</span></p>
+
+  # Middle divider
+  - elementId: mid-divider
+    elementType: shape
+    bounds: [60, 272, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Bottom: Multi-year trend + supporting analysis (left chart + right table)
+  - elementId: trend-label
+    elementType: text
+    bounds: [60, 282, 580, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#1A1A1A; font-family:Arial, Microsoft YaHei, MiSans;"><strong>核心指标五年趋势：市场规模（万亿元）× 渗透率增速（ppts）</strong></span></p>
+
+  - elementId: trend-chart
+    elementType: chart
+    bounds: [60, 306, 600, 320]
+    type: combo
+    options:
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+    data:
+      - {year: "2020", size: 1.8, penetration: 2.1}
+      - {year: "2021", size: 2.4, penetration: 3.8}
+      - {year: "2022", size: 2.9, penetration: 4.5}
+      - {year: "2023", size: 3.6, penetration: 6.2}
+      - {year: "2024", size: 4.7, penetration: 8.4}
+    x: year
+    y: [size, penetration]
+    names: ["市场规模（万亿元）", "渗透率变化（ppts）"]
+    colors: ["#8C1515", "#AAAAAA"]
+    seriesStyle:
+      size:
+        type: bar
+        fill: {type: solid, color: "#8C1515"}
+      penetration:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 6
+          fill: {type: solid, color: "#1A1A1A"}
+          border: {style: solid, width: 2, color: "#1A1A1A"}
+    legend: {position: top, fontSize: 11}
+    xAxis:
+      label: {fontSize: 11, color: "$medgray"}
+      gridLine: false
+    yAxis:
+      label: {fontSize: 10, color: "#8C1515"}
+      gridLine: {color: "#F0F0F0", style: dash}
+      axisLine: false
+      title: {text: "规模（万亿元）", fontSize: 10, color: "#8C1515"}
+    secondaryAxis:
+      label: {fontSize: 10, color: "$medgray"}
+      title: {text: "渗透率ppts", fontSize: 10, color: "$medgray"}
+
+  # Right: supporting data table
+  - elementId: table-label
+    elementType: text
+    bounds: [690, 282, 550, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#1A1A1A; font-family:Arial, Microsoft YaHei, MiSans;"><strong>分细分赛道数据拆解（2024年，单位：亿元）</strong></span></p>
+
+  - elementId: segment-table
+    elementType: table
+    bounds: [690, 306, 550, 240]
+    style: "$default"
+    columnWidths: [0.28, 0.18, 0.18, 0.2, 0.16]
+    rowHeights: [0.17, 0.17, 0.17, 0.17, 0.16, 0.16]
+    rows:
+      - - content: {text: "细分赛道"}
+        - content: {text: "规模（亿）"}
+        - content: {text: "增速（%）"}
+        - content: {text: "头部市占"}
+        - content: {text: "评级"}
+      - - content: {text: "超高端品类", align: [left, middle]}
+        - content: {text: "8,420"}
+        - content: {text: "+25%"}
+          fill: {type: solid, color: "#FFF5F5"}
+        - content: {text: "CR5: 78%"}
+        - content: {text: "超配", align: [center, middle]}
+          fill: {type: solid, color: "#FFF5F5"}
+      - - content: {text: "高端成熟品类", align: [left, middle]}
+        - content: {text: "12,600"}
+        - content: {text: "+8%"}
+        - content: {text: "CR5: 62%"}
+        - content: {text: "标配", align: [center, middle]}
+      - - content: {text: "中高端传统", align: [left, middle]}
+        - content: {text: "18,200"}
+        - content: {text: "-4%"}
+          fill: {type: solid, color: "#FFF5F5"}
+        - content: {text: "CR5: 41%"}
+        - content: {text: "低配", align: [center, middle]}
+          fill: {type: solid, color: "#FFF5F5"}
+      - - content: {text: "平价替代", align: [left, middle]}
+        - content: {text: "6,800"}
+        - content: {text: "+30%"}
+          fill: {type: solid, color: "#FFF5F5"}
+        - content: {text: "CR5: 52%"}
+        - content: {text: "超配", align: [center, middle]}
+          fill: {type: solid, color: "#FFF5F5"}
+      - - content: {text: "<strong>合计</strong>", align: [left, middle]}
+          fill: {type: solid, color: "#F0F0F0"}
+        - content: {text: "<strong>46,020</strong>"}
+          fill: {type: solid, color: "#F0F0F0"}
+        - content: {text: "<strong>+14%</strong>"}
+          fill: {type: solid, color: "#F0F0F0"}
+        - content: {text: "CR5: 56%"}
+          fill: {type: solid, color: "#F0F0F0"}
+        - content: {text: ""}
+          fill: {type: solid, color: "#F0F0F0"}
+
+  # Footer
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 654, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 660, 960, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>数据来源：<a href="https://www.bain.com">Bain Market Monitor, Q4 2024</a>；国家统计局；第三方调研机构Euromonitor；公司公告数据整合</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 662, 60, 18]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>07</p>

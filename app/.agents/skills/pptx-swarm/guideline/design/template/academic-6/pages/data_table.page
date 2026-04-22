@@ -1,0 +1,204 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧细竖线
+  - elementId: content-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 顶部细蓝线
+  - elementId: content-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 章节名右上角
+  - elementId: content-section-name
+    elementType: text
+    bounds: [900, 16, 340, 22]
+    content:
+      fontSize: 12
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: 04 实验结果与数据分析
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [40, 24, 840, 36]
+    content:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>消融实验：各模块贡献分析</strong></p>
+
+  - elementId: title-separator
+    elementType: shape
+    bounds: [40, 68, 1200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$borderGray"
+
+  # 表格标题
+  - elementId: table-caption
+    elementType: text
+    bounds: [40, 80, 700, 24]
+    content:
+      fontSize: 14
+      color: "#888888"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Table 2. 消融实验结果（加粗为最优值）
+
+  # 表格
+  - elementId: table-1
+    elementType: table
+    bounds: [40, 110, 780, 360]
+    style: "$default"
+    rows:
+      - - content:
+            text: <p><strong>方法变体</strong></p>
+        - content:
+            text: <p><strong>Acc (%)</strong></p>
+        - content:
+            text: <p><strong>F1 (%)</strong></p>
+        - content:
+            text: <p><strong>AUC</strong></p>
+        - content:
+            text: <p><strong>Params (M)</strong></p>
+      - - content:
+            text: <p>Baseline</p>
+        - content:
+            text: <p>87.2</p>
+        - content:
+            text: <p>85.1</p>
+        - content:
+            text: <p>0.912</p>
+        - content:
+            text: <p>24.5</p>
+      - - content:
+            text: <p>+ Module A</p>
+        - content:
+            text: <p>89.4</p>
+        - content:
+            text: <p>87.6</p>
+        - content:
+            text: <p>0.928</p>
+        - content:
+            text: <p>26.1</p>
+      - - content:
+            text: <p>+ Module B</p>
+        - content:
+            text: <p>91.0</p>
+        - content:
+            text: <p>89.3</p>
+        - content:
+            text: <p>0.941</p>
+        - content:
+            text: <p>27.8</p>
+      - - content:
+            text: <p>+ Module C</p>
+        - content:
+            text: <p>92.8</p>
+        - content:
+            text: <p>91.2</p>
+        - content:
+            text: <p>0.956</p>
+        - content:
+            text: <p>29.3</p>
+      - - content:
+            text: <p><strong>Full Model</strong></p>
+        - content:
+            text: <p><strong>94.3</strong></p>
+        - content:
+            text: <p><strong>92.7</strong></p>
+        - content:
+            text: <p><strong>0.967</strong></p>
+        - content:
+            text: <p><strong>31.2</strong></p>
+
+  # 右侧分析
+  - elementId: analysis-block-title
+    elementType: text
+    bounds: [860, 90, 380, 28]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>逐步消融分析</strong></p>
+
+  - elementId: analysis-sep
+    elementType: shape
+    bounds: [860, 122, 200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$secondary"
+
+  - elementId: analysis-content
+    elementType: text
+    bounds: [860, 138, 380, 300]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.8
+      text: |
+        <p>• <strong>Module A</strong> 带来约2.2%的Acc提升，验证了特征提取模块的有效性</p>
+        <p>• <strong>Module B</strong> 进一步贡献1.6%，证明注意力机制的价值</p>
+        <p>• <strong>Module C</strong> 贡献最大（+1.8%），表明损失函数改进是关键</p>
+        <p>• 三个模块协同工作，效果优于各模块单独叠加之和</p>
+
+  # 底部结论强调
+  - elementId: conclusion-bg
+    elementType: shape
+    bounds: [40, 492, 1200, 52]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "#E3F0FA"
+
+  - elementId: conclusion-text
+    elementType: text
+    bounds: [60, 492, 1160, 52]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><strong>核心结论：</strong>完整模型（Full Model）在所有指标上均优于消融版本，各模块贡献显著且互补，设计合理性得到充分验证。</p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "8"

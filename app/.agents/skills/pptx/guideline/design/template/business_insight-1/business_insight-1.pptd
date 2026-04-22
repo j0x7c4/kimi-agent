@@ -1,0 +1,61 @@
+title: Business Insight Template
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#0D8B7D"
+    secondary: "#333333"
+    accent: "#E8B44A"
+    background: "#F4FAFA"
+    text: "#333333"
+    lightgray: "#F5F5F5"
+    medgray: "#999999"
+    border: "#DDDDDD"
+    dark: "#1A1A2E"
+  textStyles:
+    title:
+      fontSize: 20
+      color: "$secondary"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.3
+    subtitle:
+      fontSize: 14
+      color: "$medgray"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.3
+    body:
+      fontSize: 14
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.5
+    caption:
+      fontSize: 12
+      color: "$medgray"
+      fontFamily: "Liter, MiSans"
+      lineHeight: 1.2
+    bignum:
+      fontSize: 40
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+  tableStyles:
+    default:
+      fontSize: 13
+      fontFamily: "Liter, MiSans"
+      headerFill: "$primary"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$lightgray"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$border"
+pages:
+  - pages/cover.page
+  - pages/chapter.page
+  - pages/three_column_analysis.page
+  - pages/customer_segmentation.page
+  - pages/kpi_dashboard.page
+  - pages/investment_waterfall.page
+  - pages/market_comparison.page
+  - pages/process_timeline.page
+  - pages/final.page

@@ -1,0 +1,177 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$navBg"
+
+  - elementId: nav-left-accent
+    elementType: shape
+    bounds: [0, 0, 4, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB550"}
+
+  - elementId: nav-chapter-text
+    elementType: text
+    bounds: [20, 0, 900, 50]
+    content:
+      fontSize: 14
+      color: "#FFFFFFCC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: 03 模型设计与方法论 / 3.2 方法对比
+
+  - elementId: nav-page-num
+    elementType: text
+    bounds: [1200, 0, 60, 50]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "07"
+
+  - elementId: title-accent-mark
+    elementType: shape
+    bounds: [12, 68, 4, 40]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 90
+      stops:
+        - {position: 0, color: "#432879"}
+        - {position: 1, color: "#8A7BB5"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [24, 68, 1000, 40]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>定性对比：本文方法 vs 现有方法</strong></p>
+
+  - elementId: title-sep
+    elementType: shape
+    bounds: [24, 116, 1232, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#C8BEE0"
+
+  # 左栏
+  - elementId: left-header-bg
+    elementType: shape
+    bounds: [24, 130, 590, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#614F96"
+
+  - elementId: left-header-text
+    elementType: text
+    bounds: [24, 130, 590, 44]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>现有 SOTA 方法</strong></p>
+
+  - elementId: left-body-bg
+    elementType: shape
+    bounds: [24, 174, 590, 430]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightPurple"
+
+  - elementId: left-content
+    elementType: text
+    bounds: [44, 194, 550, 390]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>• 参数量 100M+，显存占用高</p>
+        <p>• 需要完整标注数据集</p>
+        <p>• 单域训练，跨域需重训练</p>
+        <p>• 推理延迟 50–200ms</p>
+        <p>• 黑盒特征，可解释性差</p>
+
+  # 右栏
+  - elementId: right-header-bg
+    elementType: shape
+    bounds: [666, 130, 590, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#432879"
+
+  - elementId: right-header-text
+    elementType: text
+    bounds: [666, 130, 590, 44]
+    content:
+      fontSize: 16
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>本文提出方法（Ours）</strong></p>
+
+  - elementId: right-body-bg
+    elementType: shape
+    bounds: [666, 174, 590, 430]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#F0EBF8"
+
+  - elementId: right-content
+    elementType: text
+    bounds: [686, 194, 550, 390]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.9
+      text: |
+        <p>• 参数量 &lt; 32M，轻量高效</p>
+        <p>• 支持弱监督/自监督训练</p>
+        <p>• 内置域自适应，零样本迁移</p>
+        <p>• 推理延迟 &lt; 8ms（实时）</p>
+        <p>• 梯度可视化，结果可解释</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "7"

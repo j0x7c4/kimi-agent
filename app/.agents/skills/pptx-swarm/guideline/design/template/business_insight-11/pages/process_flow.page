@@ -1,0 +1,461 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top structural bar
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Gold vertical accent bar left of title
+  - elementId: title-accent-bar
+    elementType: shape
+    bounds: [50, 10, 4, 54]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # Page action title
+  - elementId: page-title
+    elementType: text
+    bounds: [62, 12, 1150, 50]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#0F2647; font-family:Palatino Linotype, SimSun, MiSans;"><strong>从宏观到微观：五步研究框架助力系统性把握行业投资机会</strong></span></p>
+
+  # Horizontal divider
+  - elementId: title-divider
+    elementType: shape
+    bounds: [50, 68, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # ─── 5-STEP HORIZONTAL FLOW ───
+
+  # Step 1 circle
+  - elementId: step1-circle
+    elementType: shape
+    bounds: [55, 92, 44, 44]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: step1-num
+    elementType: text
+    bounds: [55, 92, 44, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#ffffff; font-family:Georgia, SimSun, MiSans;"><strong>01</strong></span></p>
+
+  # Arrow 1→2
+  - elementId: arrow1
+    elementType: shape
+    bounds: [99, 113, 156, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$border"}
+
+  # Step 2 circle
+  - elementId: step2-circle
+    elementType: shape
+    bounds: [255, 92, 44, 44]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: step2-num
+    elementType: text
+    bounds: [255, 92, 44, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#ffffff; font-family:Georgia, SimSun, MiSans;"><strong>02</strong></span></p>
+
+  # Arrow 2→3
+  - elementId: arrow2
+    elementType: shape
+    bounds: [299, 113, 156, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$border"}
+
+  # Step 3 circle (accent color — center step)
+  - elementId: step3-circle
+    elementType: shape
+    bounds: [455, 92, 44, 44]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: step3-num
+    elementType: text
+    bounds: [455, 92, 44, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#ffffff; font-family:Georgia, SimSun, MiSans;"><strong>03</strong></span></p>
+
+  # Arrow 3→4
+  - elementId: arrow3
+    elementType: shape
+    bounds: [499, 113, 156, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$border"}
+
+  # Step 4 circle
+  - elementId: step4-circle
+    elementType: shape
+    bounds: [655, 92, 44, 44]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: step4-num
+    elementType: text
+    bounds: [655, 92, 44, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#ffffff; font-family:Georgia, SimSun, MiSans;"><strong>04</strong></span></p>
+
+  # Arrow 4→5
+  - elementId: arrow4
+    elementType: shape
+    bounds: [699, 113, 156, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$border"}
+
+  # Step 5 circle
+  - elementId: step5-circle
+    elementType: shape
+    bounds: [855, 92, 44, 44]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: step5-num
+    elementType: text
+    bounds: [855, 92, 44, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#ffffff; font-family:Georgia, SimSun, MiSans;"><strong>05</strong></span></p>
+
+  # Step labels above circles
+  - elementId: step1-label
+    elementType: text
+    bounds: [30, 74, 94, 16]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#1B3A6B; font-family:Arial, Microsoft YaHei, MiSans;">宏观环境</span></p>
+
+  - elementId: step2-label
+    elementType: text
+    bounds: [230, 74, 94, 16]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#1B3A6B; font-family:Arial, Microsoft YaHei, MiSans;">行业格局</span></p>
+
+  - elementId: step3-label
+    elementType: text
+    bounds: [430, 74, 94, 16]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;">企业分析</span></p>
+
+  - elementId: step4-label
+    elementType: text
+    bounds: [630, 74, 94, 16]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#1B3A6B; font-family:Arial, Microsoft YaHei, MiSans;">估值定价</span></p>
+
+  - elementId: step5-label
+    elementType: text
+    bounds: [830, 74, 94, 16]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#0F2647; font-family:Arial, Microsoft YaHei, MiSans;">投资建议</span></p>
+
+  # ─── DESCRIPTION CARDS ───
+
+  # Card 1
+  - elementId: card1-bg
+    elementType: shape
+    bounds: [50, 150, 220, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: card1-top
+    elementType: shape
+    bounds: [50, 150, 220, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card1-title
+    elementType: text
+    bounds: [62, 162, 196, 28]
+    content:
+      align: [left, top]
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>宏观经济与政策分析</strong></span></p>
+
+  - elementId: card1-text
+    elementType: text
+    bounds: [62, 196, 196, 360]
+    content:
+      fontSize: 12
+      color: "$text"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; GDP增速与消费信心</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 利率与信贷环境</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 产业政策导向</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 碳达峰路径影响</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 贸易摩擦风险</span></p>
+        <p style="margin-top:8px"><span style="font-size:11px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;">工具：PMI、CPI、PPI追踪</span></p>
+
+  # Card 2
+  - elementId: card2-bg
+    elementType: shape
+    bounds: [280, 150, 220, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: card2-top
+    elementType: shape
+    bounds: [280, 150, 220, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card2-title
+    elementType: text
+    bounds: [292, 162, 196, 28]
+    content:
+      align: [left, top]
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>行业竞争格局扫描</strong></span></p>
+
+  - elementId: card2-text
+    elementType: text
+    bounds: [292, 196, 196, 360]
+    content:
+      fontSize: 12
+      color: "$text"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 市场规模测算</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 竞争者定位地图</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 进入壁垒评估</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 行业集中度变化</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 商业模式创新</span></p>
+        <p style="margin-top:8px"><span style="font-size:11px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;">工具：Porter五力模型</span></p>
+
+  # Card 3 (accent card)
+  - elementId: card3-bg
+    elementType: shape
+    bounds: [510, 150, 220, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FEF6E8"
+
+  - elementId: card3-top
+    elementType: shape
+    bounds: [510, 150, 220, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: card3-title
+    elementType: text
+    bounds: [522, 162, 196, 28]
+    content:
+      align: [left, top]
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#C9963B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>目标企业深度分析</strong></span></p>
+
+  - elementId: card3-text
+    elementType: text
+    bounds: [522, 196, 196, 360]
+    content:
+      fontSize: 12
+      color: "$text"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 商业模式拆解</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 三表财务分析</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 管理层质量评估</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 技术护城河验证</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 草根调研数据</span></p>
+        <p style="margin-top:8px"><span style="font-size:11px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;">工具：SWOT、杜邦分析</span></p>
+
+  # Card 4
+  - elementId: card4-bg
+    elementType: shape
+    bounds: [740, 150, 220, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightblue"
+
+  - elementId: card4-top
+    elementType: shape
+    bounds: [740, 150, 220, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card4-title
+    elementType: text
+    bounds: [752, 162, 196, 28]
+    content:
+      align: [left, top]
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#1B3A6B; font-family:Palatino Linotype, SimSun, MiSans;"><strong>估值与定价模型</strong></span></p>
+
+  - elementId: card4-text
+    elementType: text
+    bounds: [752, 196, 196, 360]
+    content:
+      fontSize: 12
+      color: "$text"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; DCF现金流折现</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 可比公司分析</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; PE/PB历史区间</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 情景分析敏感度</span></p>
+        <p><span style="font-size:12px; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 目标价区间设定</span></p>
+        <p style="margin-top:8px"><span style="font-size:11px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;">工具：Bloomberg模型</span></p>
+
+  # Card 5
+  - elementId: card5-bg
+    elementType: shape
+    bounds: [970, 150, 258, 420]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: card5-top
+    elementType: shape
+    bounds: [970, 150, 258, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: card5-title
+    elementType: text
+    bounds: [982, 162, 234, 28]
+    content:
+      align: [left, top]
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; color:#ffffff; font-family:Palatino Linotype, SimSun, MiSans;"><strong>投资建议与策略</strong></span></p>
+
+  - elementId: card5-text
+    elementType: text
+    bounds: [982, 196, 234, 360]
+    content:
+      fontSize: 12
+      color: "#ffffffcc"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:12px; color:#ffffffcc; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 评级：强烈推荐/推荐/中性/减持</span></p>
+        <p><span style="font-size:12px; color:#ffffffcc; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 目标价与上行空间</span></p>
+        <p><span style="font-size:12px; color:#ffffffcc; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 核心催化剂时间表</span></p>
+        <p><span style="font-size:12px; color:#ffffffcc; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 主要风险提示</span></p>
+        <p><span style="font-size:12px; color:#ffffffcc; font-family:Arial, Microsoft YaHei, MiSans;">&#9632; 配置权重建议</span></p>
+        <p style="margin-top:8px"><span style="font-size:11px; color:#C9963B; font-family:Arial, Microsoft YaHei, MiSans;"><strong>最终输出研究报告</strong></span></p>
+
+  # ─── FOOTER ───
+  - elementId: footer-line
+    elementType: shape
+    bounds: [50, 656, 1180, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 664, 400, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>研究方法论：基于CICC标准研究框架，结合行业最佳实践</p>
+
+  - elementId: disclaimer-text
+    elementType: text
+    bounds: [460, 664, 600, 22]
+    content:
+      align: [right, middle]
+      fontSize: 11
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      wrap: false
+      text: |
+        <p>分析仅供参考，不构成投资建议</p>
+
+  - elementId: page-number
+    elementType: text
+    bounds: [1200, 664, 60, 22]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>09</p>

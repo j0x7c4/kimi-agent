@@ -1,0 +1,120 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Big CONTENTS title — upper left
+  - elementId: toc-title
+    elementType: text
+    bounds: [17, 6, 580, 200]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p>TABLE OF</p>
+        <p>CONTENTS</p>
+
+  # Chapter items
+  - elementId: item-1
+    elementType: text
+    bounds: [31, 280, 560, 32]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-family:Liter, MiSans; font-size:20px;">01</span>   Chapter Title One</p>
+
+  - elementId: rule-1
+    elementType: shape
+    bounds: [31, 316, 560, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$gray"
+
+  - elementId: item-2
+    elementType: text
+    bounds: [31, 322, 560, 32]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-family:Liter, MiSans; font-size:20px;">02</span>   Chapter Title Two</p>
+
+  - elementId: rule-2
+    elementType: shape
+    bounds: [31, 358, 560, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$gray"
+
+  - elementId: item-3
+    elementType: text
+    bounds: [31, 364, 560, 32]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-family:Liter, MiSans; font-size:20px;">03</span>   Chapter Title Three</p>
+
+  - elementId: rule-3
+    elementType: shape
+    bounds: [31, 400, 560, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$gray"
+
+  - elementId: item-4
+    elementType: text
+    bounds: [31, 406, 560, 32]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-family:Liter, MiSans; font-size:20px;">04</span>   Chapter Title Four</p>
+
+  - elementId: rule-4
+    elementType: shape
+    bounds: [31, 442, 560, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$gray"
+
+  - elementId: item-5
+    elementType: text
+    bounds: [31, 448, 560, 32]
+    content:
+      style: "$body"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-family:Liter, MiSans; font-size:20px;">05</span>   Chapter Title Five</p>
+
+  # Right: photo
+  - elementId: photo-right
+    elementType: image
+    bounds: [640, 82, 609, 556]
+    src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80"
+    fit:
+      mode: cover
+
+  # Bottom rule
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [31, 703, 1219, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$gray"

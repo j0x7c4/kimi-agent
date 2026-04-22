@@ -1,0 +1,122 @@
+pageType: final
+background:
+  type: solid
+  color: "#2B6777"
+elements:
+  # Gold border rectangle frame (matching cover)
+  - elementId: gold-border
+    elementType: shape
+    bounds: [24, 24, 1232, 672]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#00000000"
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  # Q&A gold rounded tag
+  - elementId: qa-tag-bg
+    elementType: shape
+    bounds: [500, 80, 280, 40]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "#D4956A"
+
+  - elementId: qa-tag-text
+    elementType: text
+    bounds: [500, 80, 280, 40]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#2B6777; font-family:SortsMillGoudy, MiSans, MiSans; letter-spacing:1px"><strong>Questions &amp; Discussion</strong></span></p>
+
+  # Main thank you text
+  - elementId: thankyou-text
+    elementType: text
+    bounds: [200, 148, 880, 100]
+    content:
+      align: [center, middle]
+      lineHeight: 1.2
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:40px; color:#FFFFFF; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>Thank You · 谢谢</strong></span></p>
+
+  # Gold divider under main text
+  - elementId: thankyou-divider
+    elementType: shape
+    bounds: [490, 258, 300, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#D4956A"
+
+  # Takeaways title
+  - elementId: takeaway-label
+    elementType: text
+    bounds: [200, 278, 880, 28]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p style="text-align:center"><span style="font-size:14px; color:#D4956A99; font-family:SortsMillGoudy, MiSans, MiSans; letter-spacing:3px">CORE TAKEAWAYS · 核心收获</span></p>
+
+  # Takeaway 1
+  - elementId: takeaway-1
+    elementType: text
+    bounds: [160, 316, 960, 50]
+    content:
+      align: [center, middle]
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:22px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>①</strong></span><span style="font-size:20px; color:#FFFFFFcc; font-family:SortsMillGoudy, MiSans, MiSans;">  理论框架在经验数据的验证下具有较强解释力，适用边界已得到初步厘清</span></p>
+
+  # Takeaway 2
+  - elementId: takeaway-2
+    elementType: text
+    bounds: [160, 378, 960, 50]
+    content:
+      align: [center, middle]
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:22px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>②</strong></span><span style="font-size:20px; color:#FFFFFFcc; font-family:SortsMillGoudy, MiSans, MiSans;">  案例研究揭示了微观机制与宏观结果之间的传导路径，丰富了现有理论</span></p>
+
+  # Takeaway 3
+  - elementId: takeaway-3
+    elementType: text
+    bounds: [160, 440, 960, 50]
+    content:
+      align: [center, middle]
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:22px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>③</strong></span><span style="font-size:20px; color:#FFFFFFcc; font-family:SortsMillGoudy, MiSans, MiSans;">  未来研究应引入跨文化比较视角与准实验方法，提升因果推断的可靠性</span></p>
+
+  # Divider before contact
+  - elementId: contact-divider
+    elementType: shape
+    bounds: [400, 510, 480, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A50"
+
+  # Contact information
+  - elementId: contact-info
+    elementType: text
+    bounds: [160, 524, 960, 80]
+    content:
+      align: [center, top]
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p style="text-align:center"><span style="font-size:18px; color:#D4956A; font-family:SortsMillGoudy, MiSans, MiSans;">presenter@university.edu.cn  |  scholar.university.edu.cn/presenter</span></p>
+        <p style="text-align:center"><span style="font-size:18px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">所属院系 · Department of XXXX, University Name</span></p>

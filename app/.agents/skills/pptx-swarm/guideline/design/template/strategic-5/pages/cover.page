@@ -1,0 +1,119 @@
+pageType: cover
+background:
+  type: solid
+  color: "$darkBg"
+elements:
+  # 左上角几何水印（3%透明度）
+  - elementId: cover-watermark-tl
+    elementType: shape
+    bounds: [0, 0, 120, 120]
+    shapeName: rect
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF08"
+
+  # 右下角几何水印（3%透明度）
+  - elementId: cover-watermark-br
+    elementType: shape
+    bounds: [1160, 600, 120, 120]
+    shapeName: rect
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF08"
+
+  # 顶部居中 Logo 占位
+  - elementId: cover-logo
+    elementType: shape
+    bounds: [616, 120, 48, 48]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF15"
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF30"
+
+  # 铜色双线装饰 —— 上线
+  - elementId: cover-ornament-top
+    elementType: shape
+    bounds: [540, 192, 200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "$accent"
+
+  # 铜色双线装饰 —— 下线（间距4px）
+  - elementId: cover-ornament-bottom
+    elementType: shape
+    bounds: [540, 196, 200, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "$accent"
+
+  # 主标题
+  - elementId: cover-title
+    elementType: text
+    bounds: [140, 230, 1000, 60]
+    content:
+      fontSize: 44
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>2025–2028 集团战略发展规划</strong></p>
+
+  # 副标题
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [240, 300, 800, 36]
+    content:
+      fontSize: 22
+      color: "$lightCopper"
+      fontFamily: "Georgia, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>—— 迈向全球化的新十年</p>
+
+  # 底部分隔线（铜色，居中300px）
+  - elementId: cover-bottom-line
+    elementType: shape
+    bounds: [490, 560, 300, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "$accent"
+
+  # 底部信息：汇报人
+  - elementId: cover-presenter
+    elementType: text
+    bounds: [340, 580, 600, 24]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>汇报人：XX集团战略发展部 · 张XX</p>
+
+  # 底部信息：日期 + 机密标记
+  - elementId: cover-date
+    elementType: text
+    bounds: [340, 610, 600, 24]
+    content:
+      fontSize: 14
+      color: "#FFFFFF88"
+      fontFamily: "Inter, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>2025年X月 · 机密文件</p>

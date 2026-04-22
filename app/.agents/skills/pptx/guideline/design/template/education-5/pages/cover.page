@@ -1,0 +1,81 @@
+pageType: cover
+background:
+  type: solid
+  color: "#2B6777"
+elements:
+  # Border rectangle frame (24px from edges)
+  - elementId: gold-border
+    elementType: shape
+    bounds: [24, 24, 1232, 672]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#00000000"
+    border:
+      style: solid
+      width: 1
+      color: "#D4956A"
+
+  # Institution label
+  - elementId: institution-label
+    elementType: text
+    bounds: [300, 170, 680, 24]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#D4956A99; font-family:SortsMillGoudy, MiSans, MiSans; letter-spacing:3px">UNIVERSITY LECTURE · 学术讲座</span></p>
+
+  # Main title
+  - elementId: cover-title
+    elementType: text
+    bounds: [200, 210, 880, 120]
+    content:
+      align: [center, top]
+      lineHeight: 1.2
+      wrap: true
+      text: |
+        <p><span style="font-size:44px; color:#FFFFFF; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>学术讲座主标题</strong></span></p>
+        <p><span style="font-size:22px; color:#D4956A; font-family:SortsMillGoudy, siyuanSongti, MiSans;">Academic Lecture Title</span></p>
+
+  # Divider line under title
+  - elementId: title-divider
+    elementType: shape
+    bounds: [500, 344, 280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "#D4956A"
+
+  # Subtitle / research direction
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [320, 360, 640, 40]
+    content:
+      align: [center, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#D4956A99; font-family:SortsMillGoudy, siyuanSongti, MiSans;">副标题 / 研究方向 · Research Direction</span></p>
+
+  # Speaker info
+  - elementId: speaker-info
+    elementType: text
+    bounds: [320, 430, 640, 90]
+    content:
+      align: [center, top]
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:20px; color:#FFFFFF; font-family:SortsMillGoudy, MiSans, MiSans;">演讲者姓名 · Prof. Presenter Name</span></p>
+        <p><span style="font-size:18px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">所属院系 / 研究机构 · Department, University</span></p>
+
+  # Date and venue
+  - elementId: cover-date
+    elementType: text
+    bounds: [320, 540, 640, 26]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:18px; color:#8CA3AD; font-family:SortsMillGoudy, MiSans, MiSans;">2026年3月 · March 2026</span></p>

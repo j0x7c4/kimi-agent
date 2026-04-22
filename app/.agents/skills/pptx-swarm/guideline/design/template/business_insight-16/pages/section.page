@@ -1,0 +1,296 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Left red panel (40%)
+  - elementId: left-red-panel
+    elementType: shape
+    bounds: [0, 0, 480, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Background texture on left panel - subtle grid overlay
+  - elementId: panel-accent-top
+    elementType: shape
+    bounds: [0, 0, 480, 4]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$darkred"
+
+  # Chapter label
+  - elementId: chapter-label
+    elementType: text
+    bounds: [50, 60, 380, 24]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:12px; color:#FFFFFFaa; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:3px">CHAPTER · 章节</span></p>
+
+  # Large chapter number
+  - elementId: chapter-num
+    elementType: text
+    bounds: [40, 100, 400, 200]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:160px; color:#FFFFFF26; font-family:Georgia, 宋体, MiSans;"><strong>01</strong></span></p>
+
+  # Chapter title (white on red)
+  - elementId: chapter-title
+    elementType: text
+    bounds: [50, 340, 400, 120]
+    content:
+      align: [left, top]
+      lineHeight: 1.2
+      wrap: true
+      text: |
+        <p><span style="font-size:30px; color:#FFFFFF; font-family:Georgia, 宋体, MiSans;"><strong>章节标题</strong></span></p>
+        <p><span style="font-size:18px; color:#FFB3B3; font-family:Georgia, 宋体, MiSans;">Section Title</span></p>
+
+  # Red divider line
+  - elementId: title-divider
+    elementType: shape
+    bounds: [50, 476, 160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "#FFFFFFaa"}
+
+  # Chapter description
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [50, 492, 400, 60]
+    content:
+      fontSize: 14
+      color: "#FFFFFFcc"
+      lineHeight: 1.55
+      wrap: true
+      text: |
+        <p><span style="font-size:14px; font-family:Arial, Microsoft YaHei, MiSans;">章节简要描述，概括本章核心研究内容及主要结论方向</span></p>
+
+  # Right panel content area
+  # Section overview title
+  - elementId: overview-label
+    elementType: text
+    bounds: [530, 60, 690, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:2px"><strong>SECTION OVERVIEW · 章节概览</strong></span></p>
+
+  - elementId: overview-line
+    elementType: shape
+    bounds: [530, 86, 200, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Three key points in this chapter
+  - elementId: kp1-num-bg
+    elementType: shape
+    bounds: [530, 110, 38, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kp1-num-txt
+    elementType: text
+    bounds: [530, 110, 38, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#FFFFFF; font-family:Georgia, 宋体, MiSans;"><strong>1</strong></span></p>
+
+  - elementId: kp1-text
+    elementType: text
+    bounds: [578, 106, 650, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>关键论点一</strong></span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Arial, Microsoft YaHei, MiSans;">此处填写该章节第一个关键论点的详细描述，应包含具体数据或案例支撑</span></p>
+
+  - elementId: kp1-sep
+    elementType: shape
+    bounds: [530, 200, 700, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: kp2-num-bg
+    elementType: shape
+    bounds: [530, 218, 38, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: kp2-num-txt
+    elementType: text
+    bounds: [530, 218, 38, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#FFFFFF; font-family:Georgia, 宋体, MiSans;"><strong>2</strong></span></p>
+
+  - elementId: kp2-text
+    elementType: text
+    bounds: [578, 214, 650, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>关键论点二</strong></span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Arial, Microsoft YaHei, MiSans;">此处填写该章节第二个关键论点，体现市场结构或竞争态势的变化逻辑</span></p>
+
+  - elementId: kp2-sep
+    elementType: shape
+    bounds: [530, 308, 700, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: kp3-num-bg
+    elementType: shape
+    bounds: [530, 326, 38, 44]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kp3-num-txt
+    elementType: text
+    bounds: [530, 326, 38, 44]
+    content:
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:22px; color:#FFFFFF; font-family:Georgia, 宋体, MiSans;"><strong>3</strong></span></p>
+
+  - elementId: kp3-text
+    elementType: text
+    bounds: [578, 322, 650, 80]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.6
+      wrap: true
+      text: |
+        <p><span style="font-size:15px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>关键论点三</strong></span></p>
+        <p><span style="font-size:13px; color:#555555; font-family:Arial, Microsoft YaHei, MiSans;">此处填写该章节第三个关键论点，指向战略建议或投资启示</span></p>
+
+  - elementId: kp3-sep
+    elementType: shape
+    bounds: [530, 416, 700, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  # Key data preview
+  - elementId: data-preview-label
+    elementType: text
+    bounds: [530, 432, 700, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:11px; color:#8C1515; font-family:Arial, Microsoft YaHei, MiSans; letter-spacing:2px"><strong>KEY METRICS · 核心数据</strong></span></p>
+
+  - elementId: kpi1-val
+    elementType: text
+    bounds: [530, 460, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#8C1515; font-family:Georgia, 宋体, MiSans;"><strong>$XX%</strong></span></p>
+
+  - elementId: kpi1-desc
+    elementType: text
+    bounds: [530, 510, 220, 18]
+    content:
+      align: [left, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>核心指标一</p>
+
+  - elementId: kpi-vdiv
+    elementType: shape
+    bounds: [754, 456, 0, 80]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: kpi2-val
+    elementType: text
+    bounds: [770, 460, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#1A1A1A; font-family:Georgia, 宋体, MiSans;"><strong>+XX</strong></span></p>
+
+  - elementId: kpi2-desc
+    elementType: text
+    bounds: [770, 510, 220, 18]
+    content:
+      align: [left, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>核心指标二</p>
+
+  - elementId: kpi-vdiv2
+    elementType: shape
+    bounds: [994, 456, 0, 80]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: kpi3-val
+    elementType: text
+    bounds: [1010, 460, 220, 50]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:32px; color:#8C1515; font-family:Georgia, 宋体, MiSans;"><strong>XX个</strong></span></p>
+
+  - elementId: kpi3-desc
+    elementType: text
+    bounds: [1010, 510, 220, 18]
+    content:
+      align: [left, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>核心指标三</p>
+
+  # Footer
+  - elementId: footer-line
+    elementType: shape
+    bounds: [530, 658, 700, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 666, 60, 20]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>03</p>

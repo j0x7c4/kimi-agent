@@ -1,0 +1,156 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部细线
+  - elementId: top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  - elementId: section-marker
+    elementType: text
+    bounds: [80, 20, 200, 20]
+    content:
+      fontSize: 12
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: "CHAPTER 04 — 实验结果与讨论"
+
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 50, 800, 35]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: |
+        <p><strong>4.3 可视化分析与案例研究</strong></p>
+
+  - elementId: title-line
+    elementType: shape
+    bounds: [80, 90, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  # 左侧可视化图
+  - elementId: vis-1-bg
+    elementType: shape
+    bounds: [80, 110, 540, 250]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: vis-1-placeholder
+    elementType: text
+    bounds: [80, 110, 540, 50]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      text: |
+        <p>[Figure 5: 分子注意力权重可视化]</p>
+        <p>原子节点颜色深浅表示注意力权重大小</p>
+
+  # 右侧可视化图
+  - elementId: vis-2-bg
+    elementType: shape
+    bounds: [660, 110, 540, 250]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: vis-2-placeholder
+    elementType: text
+    bounds: [660, 110, 540, 50]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      text: |
+        <p>[Figure 6: t-SNE分子表示可视化]</p>
+        <p>不同颜色表示不同活性类别</p>
+
+  # 讨论区（线在caption之前，避免遮挡）
+  - elementId: disc-line
+    elementType: shape
+    bounds: [80, 430, 1120, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#CFD8DC"
+
+  - elementId: vis-1-caption
+    elementType: text
+    bounds: [80, 370, 540, 58]
+    content:
+      style: "$caption"
+      lineHeight: 1.4
+      text: |
+        <p><strong>Figure 5.</strong> 阿司匹林分子的注意力权重热力图。羧基和酯基的原子获得较高权重，与已知药效团一致。</p>
+
+  - elementId: vis-2-caption
+    elementType: text
+    bounds: [660, 370, 540, 58]
+    content:
+      style: "$caption"
+      lineHeight: 1.4
+      text: |
+        <p><strong>Figure 6.</strong> HIV数据集分子隐藏表示的t-SNE降维可视化。MolGNN学到的表示呈现清晰的活性/非活性聚类。</p>
+
+  - elementId: disc-title
+    elementType: text
+    bounds: [80, 450, 300, 26]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>讨论与启示</strong></p>
+
+  - elementId: disc-content
+    elementType: text
+    bounds: [80, 483, 1120, 140]
+    content:
+      style: "$body"
+      lineHeight: 1.7
+      text: |
+        <p><strong>可解释性：</strong>注意力权重可视化表明模型能自动识别药效团（pharmacophore），这与领域专家知识高度一致，增强了模型的可信度。</p>
+        <p style="margin-top:8px"><strong>表示学习质量：</strong>t-SNE可视化显示活性/非活性分子在隐空间中形成清晰边界，证明MolGNN学到了有区分力的分子表示。</p>
+        <p style="margin-top:8px"><strong>局限性：</strong>当前模型对大环分子（>50个原子）的预测精度下降约8%，可能与消息传递距离受限有关，需要引入长程交互机制。</p>
+
+  # 底部线
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [0, 716, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$primary"
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 80, 24]
+    content:
+      fontSize: 14
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "07 / 09"

@@ -1,0 +1,276 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧细竖线
+  - elementId: content-left-line
+    elementType: shape
+    bounds: [0, 0, 6, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 顶部细蓝线
+  - elementId: content-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 章节名右上角小字
+  - elementId: content-section-name
+    elementType: text
+    bounds: [900, 16, 340, 22]
+    content:
+      fontSize: 12
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: 01 研究背景与问题提出
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [40, 24, 840, 36]
+    content:
+      fontSize: 26
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>研究背景：问题的提出与意义</strong></p>
+
+  - elementId: title-separator
+    elementType: shape
+    bounds: [40, 68, 1200, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$borderGray"
+
+  # 四格网格布局
+  # 卡片1（左上）
+  - elementId: card-1-bg
+    elementType: shape
+    bounds: [40, 82, 580, 270]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: card-1-label
+    elementType: shape
+    bounds: [40, 82, 90, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: card-1-label-text
+    elementType: text
+    bounds: [40, 82, 90, 28]
+    content:
+      fontSize: 12
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 现实问题
+
+  - elementId: card-1-title
+    elementType: text
+    bounds: [56, 122, 548, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>现实驱动背景</strong></p>
+
+  - elementId: card-1-content
+    elementType: text
+    bounds: [56, 158, 548, 170]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>随着XX领域的快速发展，传统方法在应对YY挑战时暴露出明显不足，迫切需要提出新的解决方案。</p>
+
+  # 卡片2（右上）
+  - elementId: card-2-bg
+    elementType: shape
+    bounds: [660, 82, 580, 270]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: card-2-label
+    elementType: shape
+    bounds: [660, 82, 90, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: card-2-label-text
+    elementType: text
+    bounds: [660, 82, 90, 28]
+    content:
+      fontSize: 12
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 理论意义
+
+  - elementId: card-2-title
+    elementType: text
+    bounds: [676, 122, 548, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>理论创新意义</strong></p>
+
+  - elementId: card-2-content
+    elementType: text
+    bounds: [676, 158, 548, 170]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>本研究从理论层面提出了新的模型框架，丰富了XX领域的方法体系，具有重要的学术价值。</p>
+
+  # 卡片3（左下）
+  - elementId: card-3-bg
+    elementType: shape
+    bounds: [40, 372, 580, 270]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: card-3-label
+    elementType: shape
+    bounds: [40, 372, 90, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  - elementId: card-3-label-text
+    elementType: text
+    bounds: [40, 372, 90, 28]
+    content:
+      fontSize: 12
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 应用价值
+
+  - elementId: card-3-title
+    elementType: text
+    bounds: [56, 412, 548, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>工程应用价值</strong></p>
+
+  - elementId: card-3-content
+    elementType: text
+    bounds: [56, 448, 548, 170]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>研究成果可直接应用于AA、BB等实际场景，有望在CC领域产生直接的工程落地效益。</p>
+
+  # 卡片4（右下）
+  - elementId: card-4-bg
+    elementType: shape
+    bounds: [660, 372, 580, 270]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill:
+      type: solid
+      color: "$lightGray"
+
+  - elementId: card-4-label
+    elementType: shape
+    bounds: [660, 372, 90, 28]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#455A64"
+
+  - elementId: card-4-label-text
+    elementType: text
+    bounds: [660, 372, 90, 28]
+    content:
+      fontSize: 12
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: 研究目标
+
+  - elementId: card-4-title
+    elementType: text
+    bounds: [676, 412, 548, 30]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>本研究核心目标</strong></p>
+
+  - elementId: card-4-content
+    elementType: text
+    bounds: [676, 448, 548, 170]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: true
+      lineHeight: 1.7
+      text: |
+        <p>设计并验证一套能有效解决YY问题的方法，在保证精度的前提下显著提升效率。</p>
+
+  # 页码
+  - elementId: page-num
+    elementType: text
+    bounds: [1200, 680, 50, 24]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "4"

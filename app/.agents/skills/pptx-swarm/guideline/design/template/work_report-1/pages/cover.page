@@ -1,0 +1,37 @@
+pageType: cover
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # 主标题
+  - elementId: main_title
+    elementType: text
+    bounds: [0, 280, 1280, 60]
+    content:
+      style: "$cover_title"
+      align: [center, middle]
+      text: |
+        <p>2024年度工作总结与规划</p>
+  
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [0, 350, 1280, 40]
+    content:
+      fontSize: 24
+      color: "$light_blue"
+      align: [center, middle]
+      text: |
+        <p>Q1-Q4 核心业务复盘与下一步行动计划</p>
+  
+  # 汇报人信息
+  - elementId: reporter_info
+    elementType: text
+    bounds: [80, 580, 400, 80]
+    content:
+      fontSize: 20
+      color: "$light_blue"
+      align: [left, bottom]
+      text: |
+        <p>汇报人：XXX</p>
+        <p>2024年12月</p>

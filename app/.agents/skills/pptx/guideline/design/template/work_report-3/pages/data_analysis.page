@@ -1,0 +1,136 @@
+pageType: content
+background:
+  type: gradient
+  gradientType: linear
+  angle: 180
+  stops:
+    - {position: 0, color: "#F0F3F5"}
+    - {position: 1, color: "#F8FAFB"}
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 40]
+    content:
+      style: "$pageTitle"
+      text: |
+        <p><strong>用户增长趋势分析 - 持续突破新高</strong></p>
+  
+  # 图表区域
+  - elementId: chart-main
+    elementType: chart
+    bounds: [80, 140, 720, 380]
+    type: combo
+    data:
+      - {month: "1月", users: 120, growth: 0.05}
+      - {month: "2月", users: 135, growth: 0.125}
+      - {month: "3月", users: 150, growth: 0.111}
+      - {month: "4月", users: 168, growth: 0.12}
+      - {month: "5月", users: 185, growth: 0.101}
+      - {month: "6月", users: 210, growth: 0.135}
+      - {month: "7月", users: 235, growth: 0.119}
+      - {month: "8月", users: 260, growth: 0.106}
+      - {month: "9月", users: 288, growth: 0.108}
+      - {month: "10月", users: 320, growth: 0.111}
+      - {month: "11月", users: 355, growth: 0.109}
+      - {month: "12月", users: 395, growth: 0.113}
+    x: month
+    y: [users, growth]
+    names: ["月活用户(万)", "环比增长率"]
+    colors: ["$primary", "$accent"]
+    seriesStyle:
+      users: 
+        type: bar
+        fill:
+          type: solid
+          color: "$primary"
+      growth:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        marker:
+          shape: circle
+          size: 8
+          fill:
+            type: solid
+            color: "$accent"
+    options:
+      barWidth: 0.6
+      fontFamily: "QuattrocentoSans, MiSans"
+    yAxis:
+      title: "月活用户（万）"
+      numberFormat: "#,##0"
+      gridLine:
+        color: "$border"
+        style: solid
+    secondaryAxis:
+      title: "环比增长率"
+      numberFormat: "0%"
+      min: 0
+      max: 0.15
+    xAxis:
+      label:
+        fontSize: 14
+        color: "$textSecondary"
+    legend:
+      position: top
+      fontSize: 14
+    fill:
+      type: solid
+      color: "#FFFFFF"
+    border:
+      style: solid
+      width: 1
+      color: "$border"
+  
+  # 右侧分析区域
+  - elementId: analysis-bg
+    elementType: shape
+    bounds: [840, 140, 360, 380]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$background"
+  
+  - elementId: analysis-title
+    elementType: text
+    bounds: [860, 160, 320, 30]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "Liter, MiSans"
+      text: "关键发现"
+  
+  - elementId: analysis-content
+    elementType: text
+    bounds: [860, 200, 320, 310]
+    content:
+      fontSize: 16
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      text: |
+        <p><span style="color:$primary;">▪</span> <strong>全年增长229%</strong></p>
+        <p style="margin-top:8px;">从年初120万增至395万用户</p>
+        
+        <p style="margin-top:16px;"><span style="color:$primary;">▪</span> <strong>Q2增长最快</strong></p>
+        <p style="margin-top:8px;">产品迭代带来爆发式增长</p>
+        
+        <p style="margin-top:16px;"><span style="color:$primary;">▪</span> <strong>增速保持稳定</strong></p>
+        <p style="margin-top:8px;">月均增长率维持在10%以上</p>
+        
+        <p style="margin-top:16px;"><span style="color:$primary;">▪</span> <strong>预测突破500万</strong></p>
+        <p style="margin-top:8px;">按当前趋势，Q1末可达标</p>
+  
+  # 页脚
+  - elementId: page-number
+    elementType: text
+    bounds: [1180, 680, 80, 20]
+    content:
+      fontSize: 12
+      color: "$textSecondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, bottom]
+      text: "5"

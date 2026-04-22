@@ -1,0 +1,268 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [80, 60, 800, 48]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: |
+        <p><strong>重点项目进度时间轴</strong></p>
+  
+  # 时间轴主线
+  - elementId: timeline-line
+    elementType: shape
+    bounds: [140, 180, 1000, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+  
+  # 节点1
+  - elementId: node-1
+    elementType: shape
+    bounds: [130, 170, 24, 24]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 3
+      color: "$background"
+  
+  - elementId: node-1-date
+    elementType: text
+    bounds: [100, 130, 80, 30]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      align: [center, middle]
+      text: |
+        <p>7月</p>
+  
+  - elementId: node-1-card
+    elementType: shape
+    bounds: [80, 220, 180, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 6
+      color: "#00000010"
+      offset: [0, 2]
+  
+  - elementId: node-1-content
+    elementType: text
+    bounds: [90, 230, 160, 100]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>项目启动</strong></p>
+        <p style="color:$secondary;">• 需求调研完成</p>
+        <p style="color:$secondary;">• 团队组建到位</p>
+  
+  # 节点2
+  - elementId: node-2
+    elementType: shape
+    bounds: [380, 170, 24, 24]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 3
+      color: "$background"
+  
+  - elementId: node-2-date
+    elementType: text
+    bounds: [350, 130, 80, 30]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      align: [center, middle]
+      text: |
+        <p>9月</p>
+  
+  - elementId: node-2-card
+    elementType: shape
+    bounds: [330, 220, 180, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 6
+      color: "#00000010"
+      offset: [0, 2]
+  
+  - elementId: node-2-content
+    elementType: text
+    bounds: [340, 230, 160, 100]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>原型开发</strong></p>
+        <p style="color:$secondary;">• MVP版本完成</p>
+        <p style="color:$secondary;">• 内测反馈收集</p>
+  
+  # 节点3
+  - elementId: node-3
+    elementType: shape
+    bounds: [630, 170, 24, 24]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent"
+    border:
+      style: solid
+      width: 3
+      color: "$background"
+  
+  - elementId: node-3-date
+    elementType: text
+    bounds: [600, 130, 80, 30]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      align: [center, middle]
+      text: |
+        <p>11月</p>
+  
+  - elementId: node-3-card
+    elementType: shape
+    bounds: [580, 220, 180, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 6
+      color: "#00000010"
+      offset: [0, 2]
+  
+  - elementId: node-3-content
+    elementType: text
+    bounds: [590, 230, 160, 100]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>正式上线</strong></p>
+        <p style="color:$secondary;">• 全量发布完成</p>
+        <p style="color:$secondary;">• 市场反馈良好</p>
+  
+  # 节点4
+  - elementId: node-4
+    elementType: shape
+    bounds: [880, 170, 24, 24]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$accent2"
+    border:
+      style: solid
+      width: 3
+      color: "$background"
+  
+  - elementId: node-4-date
+    elementType: text
+    bounds: [850, 130, 80, 30]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      align: [center, middle]
+      text: |
+        <p>12月</p>
+  
+  - elementId: node-4-card
+    elementType: shape
+    bounds: [830, 220, 180, 120]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: solid
+      color: "$card"
+    shadow:
+      blur: 6
+      color: "#00000010"
+      offset: [0, 2]
+  
+  - elementId: node-4-content
+    elementType: text
+    bounds: [840, 230, 160, 100]
+    content:
+      fontSize: 16
+      color: "$primary"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p><strong>优化迭代</strong></p>
+        <p style="color:$secondary;">• 性能提升30%</p>
+        <p style="color:$secondary;">• 新功能规划中</p>
+  
+  # 未来节点
+  - elementId: node-5
+    elementType: shape
+    bounds: [1130, 170, 24, 24]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "$border"
+    border:
+      style: dash
+      width: 2
+      color: "$secondary"
+  
+  - elementId: node-5-date
+    elementType: text
+    bounds: [1100, 130, 80, 30]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      align: [center, middle]
+      text: |
+        <p>Q1 2025</p>
+  
+  # 项目总结
+  - elementId: summary-bg
+    elementType: shape
+    bounds: [80, 380, 1120, 140]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 0
+      stops:
+        - {position: 0, color: "#5C8E8F10"}
+        - {position: 1, color: "#5C8E8F05"}
+  
+  - elementId: summary-content
+    elementType: text
+    bounds: [120, 400, 1040, 100]
+    content:
+      fontSize: 18
+      color: "$primary"
+      lineHeight: 1.6
+      align: [left, middle]
+      text: |
+        <p><strong>项目成果</strong>：产品按计划成功上线，用户活跃度超预期25%，获得管理层高度认可</p>
+        <p><strong>下阶段重点</strong>：基于用户反馈进行功能优化，计划Q1推出2.0版本，预计新增用户50万</p>

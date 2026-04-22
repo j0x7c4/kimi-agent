@@ -1,0 +1,79 @@
+pageType: chapter
+background:
+  type: solid
+  color: $primary
+elements:
+  - elementId: deco-line-top
+    elementType: shape
+    bounds:
+      - 140
+      - 200
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 3
+      color: $accent
+  - elementId: chapter-number
+    elementType: text
+    bounds:
+      - 140
+      - 220
+      - 300
+      - 80
+    content:
+      fontSize: 64
+      color: $accent
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p>01</p>
+  - elementId: chapter-title
+    elementType: text
+    bounds:
+      - 140
+      - 310
+      - 1000
+      - 80
+    content:
+      fontSize: 48
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - left
+        - middle
+      text: |
+        <p><strong>核心概念构建</strong></p>
+  - elementId: chapter-desc
+    elementType: text
+    bounds:
+      - 140
+      - 410
+      - 700
+      - 100
+    content:
+      fontSize: 22
+      color: "#D0D0D0"
+      fontFamily: Liter, MiSans
+      lineHeight: 1.8
+      align:
+        - left
+        - top
+      text: |
+        <p>深入理解基础理论框架</p>
+        <p>建立系统化的知识体系</p>
+  - elementId: deco-line-bottom
+    elementType: shape
+    bounds:
+      - 140
+      - 520
+      - 200
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 3
+      color: $accent

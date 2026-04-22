@@ -1,0 +1,109 @@
+# ============================================================
+# kimi-agent-sandbox Dockerfile
+# ============================================================
+# Session 沙箱容器镜像，包含:
+#   - KimiCLI Worker (agent 执行)
+#   - Jupyter Kernel (Python 沙箱执行)
+#   - Chromium + Playwright (浏览器自动化)
+#   - KAOS 文件系统接口
+# ============================================================
+
+FROM python:3.12-slim-bookworm
+
+# -----------------------------------------------------------
+# 安装系统依赖
+# -----------------------------------------------------------
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        chromium \
+        chromium-driver \
+        xvfb \
+        x11-utils \
+        x11-xserver-utils \
+        fonts-liberation \
+        fonts-noto-cjk \
+        git \
+        ripgrep \
+        curl \
+        wget \
+        ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# -----------------------------------------------------------
+# 安装 Python 依赖
+# -----------------------------------------------------------
+WORKDIR /deps
+
+# Copy package files and install dependencies
+COPY kimi-cli/pyproject.toml kimi-cli/uv.lock ./
+COPY kimi-cli/packages/ ./packages/
+COPY kimi-cli/sdks/ ./sdks/
+
+RUN pip install --no-cache-dir uv \
+    && uv pip install --system -r pyproject.toml \
+    && uv pip install --system --no-deps \
+        ./packages/kosong \
+        ./packages/kaos
+
+# 安装 Jupyter kernel 和 matplotlib 等科学计算包
+RUN pip install --no-cache-dir \
+    ipykernel \
+    jupyter-client \
+    matplotlib \
+    numpy \
+    psutil \
+    pillow \
+    playwright \
+    brotli
+
+# 安装 Playwright 浏览器驱动
+RUN playwright install chromium \
+    && playwright install-deps chromium
+
+# -----------------------------------------------------------
+# 复制应用代码
+# -----------------------------------------------------------
+WORKDIR /app
+
+# 复制 app/ 目录代码 (browser_guard, jupyter_kernel, kernel_server, utils)
+COPY app/ /app/
+
+# 复制 kimi-cli 源码 (作为 editable install)
+COPY kimi-cli/src/ /usr/local/lib/python3.12/site-packages/
+
+# Register kimi-cli package metadata so importlib.metadata works
+RUN mkdir -p /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info \
+    && printf 'Name: kimi-cli\nVersion: 1.37.0\n' > /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info/METADATA \
+    && touch /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info/INSTALLER \
+    && touch /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info/RECORD
+
+# 创建必要的目录
+RUN mkdir -p /app/data/chrome_data /app/logs /tmp/chromium_user_data
+
+# -----------------------------------------------------------
+# 复制启动脚本
+# -----------------------------------------------------------
+COPY scripts/start-sandbox.sh /start-sandbox.sh
+RUN chmod +x /start-sandbox.sh
+
+# -----------------------------------------------------------
+# 环境变量默认值
+# -----------------------------------------------------------
+ENV DISPLAY=:99 \
+    SCREEN_RESOLUTION=1920x1080 \
+    CHROME_LOCALE=zh-CN \
+    TZ=Asia/Shanghai \
+    CHROME_INIT_URL=chrome://newtab/ \
+    PYTHONUNBUFFERED=1 \
+    KIMI_WORK_DIR=/app \
+    JUPYTER_KERNEL_PORT=8888 \
+    WORKER_PORT=8080
+
+# 暴露端口
+EXPOSE 8080 8888
+
+# 健康检查
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8888/health')" || exit 1
+
+CMD ["/start-sandbox.sh"]

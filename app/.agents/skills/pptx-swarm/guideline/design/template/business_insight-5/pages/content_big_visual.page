@@ -1,0 +1,300 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # Action title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 12, 1100, 60]
+    content:
+      align: [left, middle]
+      wrap: true
+      text: |
+        <p><span style="font-size:22px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>战略布局建议：基于竞争优势评估与市场吸引力矩阵，差异化锁定三类核心投资机遇</strong></span></p>
+
+  - elementId: title-underline
+    elementType: shape
+    bounds: [60, 78, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$primary"}
+
+  # Matrix visual - 2x2 grid layout (big visual)
+  - elementId: matrix-label
+    elementType: text
+    bounds: [60, 88, 900, 20]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:13px; color:#1A1A1A; font-family:Liter, MiSans;"><strong>战略布局矩阵：竞争优势 × 市场吸引力</strong></span><span style="font-size:12px; color:#8A8A8A; font-family:Liter, MiSans;">（气泡大小=建议配置权重）</span></p>
+
+  # Y-axis label
+  - elementId: y-axis-label
+    elementType: text
+    bounds: [60, 335, 24, 80]
+    content:
+      align: [center, middle]
+      textDirection: vertical
+      fontSize: 12
+      color: "$medgray"
+      wrap: true
+      text: |
+        <p>市场吸引力</p>
+
+  # Matrix background - 4 quadrants
+  - elementId: q1-bg
+    elementType: shape
+    bounds: [88, 114, 480, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFF8F8"
+
+  - elementId: q2-bg
+    elementType: shape
+    bounds: [574, 114, 480, 260]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#F5F5F5"
+
+  - elementId: q3-bg
+    elementType: shape
+    bounds: [88, 386, 480, 250]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#F5F5F5"
+
+  - elementId: q4-bg
+    elementType: shape
+    bounds: [574, 386, 480, 250]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FAFAFA"
+
+  # Matrix borders
+  - elementId: h-divider
+    elementType: shape
+    bounds: [88, 380, 966, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$border"}
+
+  - elementId: v-divider
+    elementType: shape
+    bounds: [568, 114, 0, 522]
+    shapeName: straightConnector1
+    border: {style: solid, width: 2, color: "$border"}
+
+  # Q1 - High attractiveness, High competitive advantage (Stars/超配)
+  - elementId: q1-tag
+    elementType: shape
+    bounds: [88, 114, 80, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: q1-tag-text
+    elementType: text
+    bounds: [88, 114, 80, 24]
+    content:
+      align: [center, middle]
+      fontSize: 11
+      wrap: false
+      text: |
+        <p><span style="color:#FFFFFF; font-family:Liter, MiSans;">超 配</span></p>
+
+  - elementId: q1-title
+    elementType: text
+    bounds: [100, 148, 450, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#8C1515; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>明星赛道：高吸引力 × 强竞争优势</strong></span></p>
+
+  - elementId: q1-content
+    elementType: text
+    bounds: [100, 180, 456, 188]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; <strong>超奢侈品类</strong>（爱马仕、万亿表业等）：稀缺性护城河+资产化需求，超额收益可期</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; <strong>极致平替龙头</strong>（拼多多生态/名创优品）：规模优势已形成，消费降级红利持续释放</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 建议配置权重：<strong>40-50%</strong>，持仓时间：<strong>12-36个月</strong></span></p>
+
+  # Q2 - High attractiveness, Low competitive advantage (Question marks/观察)
+  - elementId: q2-tag
+    elementType: shape
+    bounds: [574, 114, 80, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$secondary"
+
+  - elementId: q2-tag-text
+    elementType: text
+    bounds: [574, 114, 80, 24]
+    content:
+      align: [center, middle]
+      fontSize: 11
+      wrap: false
+      text: |
+        <p><span style="color:#FFFFFF; font-family:Liter, MiSans;">谨慎观察</span></p>
+
+  - elementId: q2-title
+    elementType: text
+    bounds: [586, 148, 450, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#1A1A1A; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>潜力赛道：高吸引力 × 弱竞争优势</strong></span></p>
+
+  - elementId: q2-content
+    elementType: text
+    bounds: [586, 180, 456, 188]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 赛道空间大但竞争格局未定，等待确定性信号后入场</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; <strong>新兴国货品牌</strong>：品牌力尚未形成，需观察2-3个季度的复购率验证</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 建议配置权重：<strong>15-20%</strong>，持续跟踪，适时加仓</span></p>
+
+  # Q3 - Low attractiveness, High competitive advantage (Cash cows/标配)
+  - elementId: q3-tag
+    elementType: shape
+    bounds: [88, 386, 60, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#888888"
+
+  - elementId: q3-tag-text
+    elementType: text
+    bounds: [88, 386, 60, 24]
+    content:
+      align: [center, middle]
+      fontSize: 11
+      wrap: false
+      text: |
+        <p><span style="color:#FFFFFF; font-family:Liter, MiSans;">标配</span></p>
+
+  - elementId: q3-title
+    elementType: text
+    bounds: [100, 420, 450, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:15px; color:#555555; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>稳健标配：低吸引力 × 强竞争优势</strong></span></p>
+
+  - elementId: q3-content
+    elementType: text
+    bounds: [100, 450, 456, 180]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 市场增速放缓但头部玩家具备稳定现金流，可作为底仓配置</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 建议标准配置，重点挑选股息率高且具备分红能力的标的</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 建议配置权重：<strong>25-30%</strong></span></p>
+
+  # Q4 - Low attractiveness, Low competitive advantage (Dogs/规避)
+  - elementId: q4-tag
+    elementType: shape
+    bounds: [574, 386, 60, 24]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#CCCCCC"
+
+  - elementId: q4-tag-text
+    elementType: text
+    bounds: [574, 386, 60, 24]
+    content:
+      align: [center, middle]
+      fontSize: 11
+      wrap: false
+      text: |
+        <p><span style="color:#666666; font-family:Liter, MiSans;">规避</span></p>
+
+  - elementId: q4-title
+    elementType: text
+    bounds: [586, 420, 450, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:15px; color:#888888; font-family:SortsMillGoudy, siyuanSongti, MiSans;"><strong>出清赛道：低吸引力 × 弱竞争优势</strong></span></p>
+
+  - elementId: q4-content
+    elementType: text
+    bounds: [586, 450, 456, 180]
+    content:
+      fontSize: 13
+      color: "$medgray"
+      lineHeight: 1.65
+      wrap: true
+      text: |
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 中高端传统品类尾部玩家，面临双重挤压，出清概率高</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 建议积极减仓或清仓，避免陷入价值陷阱</span></p>
+        <p><span style="font-size:13px; font-family:Liter, MiSans;">&#9632; 建议配置权重：<strong>0-5%</strong>（已持仓逐步退出）</span></p>
+
+  # X-axis label
+  - elementId: x-axis-label
+    elementType: text
+    bounds: [88, 636, 966, 20]
+    content:
+      align: [center, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>← 弱竞争优势                    竞争优势维度                    强竞争优势 →</p>
+
+  # Footer
+  - elementId: footer-line
+    elementType: shape
+    bounds: [60, 658, 1160, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$border"}
+
+  - elementId: source-text
+    elementType: text
+    bounds: [60, 662, 960, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>框架来源：<a href="https://www.bain.com">Bain Strategic Portfolio Analysis Framework</a>；竞争优势评分基于市占率/ROIC/品牌溢价综合测算；市场吸引力基于增速/规模/集中度综合评估</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 666, 60, 18]
+    content:
+      align: [right, middle]
+      fontSize: 12
+      color: "$medgray"
+      wrap: false
+      text: |
+        <p>08</p>

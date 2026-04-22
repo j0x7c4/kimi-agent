@@ -1,0 +1,87 @@
+pageType: final
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#F8F9FA"}
+    - {position: 1, color: "#F2F5F8"}
+elements:
+  # 深色背景块
+  - elementId: main-bg
+    elementType: shape
+    bounds: [240, 180, 800, 360]
+    shapeName: roundRect
+    adjustments: [20000]
+    fill:
+      type: solid
+      color: "$primary"
+    shadow:
+      blur: 20
+      color: "#00000020"
+      offset: [0, 10]
+  
+  # 感谢语
+  - elementId: thank-you
+    elementType: text
+    bounds: [240, 260, 800, 80]
+    content:
+      fontSize: 48
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>感谢聆听</p>
+  
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [340, 350, 600, 40]
+    content:
+      fontSize: 20
+      color: "#FFFFFF90"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      text: |
+        <p>期待与您共创辉煌</p>
+  
+  # 联系信息
+  - elementId: contact-info
+    elementType: text
+    bounds: [440, 440, 400, 60]
+    content:
+      fontSize: 16
+      color: "#FFFFFF80"
+      fontFamily: "Liter, MiSans"
+      align: [center, middle]
+      lineHeight: 1.5
+      text: |
+        <p>联系邮箱：xxx@example.com</p>
+        <p>内部分机：XXXX</p>
+  
+  # 装饰元素
+  - elementId: deco-circle1
+    elementType: shape
+    bounds: [180, 120, 120, 120]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#2A3B4C10"
+  
+  - elementId: deco-circle2
+    elementType: shape
+    bounds: [980, 480, 180, 180]
+    shapeName: ellipse
+    fill:
+      type: solid
+      color: "#6AC06F10"
+  
+  # Logo占位
+  - elementId: logo-placeholder
+    elementType: shape
+    bounds: [580, 100, 120, 40]
+    shapeName: roundRect
+    adjustments: [10000]
+    fill:
+      type: solid
+      color: "#FFFFFF10"

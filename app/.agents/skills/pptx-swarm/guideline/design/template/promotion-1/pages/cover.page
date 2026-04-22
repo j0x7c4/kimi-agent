@@ -1,0 +1,89 @@
+pageType: cover
+background:
+  type: image
+  src: https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80
+  fit:
+    mode: cover
+  mask:
+    type: solid
+    color: "#1A1A1A99"
+elements:
+  - elementId: logo-text
+    elementType: text
+    bounds:
+      - -1
+      - 89
+      - 1280
+      - 120
+    wrap: false
+    content:
+      fontSize: 96
+      color: $white
+      fontFamily: Oranienbaum, siyuanSongti
+      letterSpacing: 16
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p><b>FASHION</b></p>
+  - elementId: center-divider
+    elementType: shape
+    bounds:
+      - 440
+      - 380
+      - 400
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 1
+      color: "#FFFFFF60"
+  - elementId: slogan-en
+    elementType: text
+    bounds:
+      - 200
+      - 400
+      - 880
+      - 50
+    wrap: false
+    content:
+      fontSize: 32
+      color: $white
+      fontFamily: Oranienbaum, siyuanSongti
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>Irreverent, Insouciant</p>
+  - elementId: slogan-cn
+    elementType: text
+    bounds:
+      - 300
+      - 460
+      - 680
+      - 45
+    wrap: false
+    content:
+      fontSize: 24
+      color: "#FFFFFFCC"
+      fontFamily: Oranienbaum, siyuanSongti
+      wrap: false
+      align:
+        - center
+        - middle
+      text: |
+        <p>"叛逆不羁、无忧无虑"</p>
+  - elementId: bottom-line
+    elementType: shape
+    bounds:
+      - 60
+      - 680
+      - 1160
+      - 0
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 0.5
+      color: "#FFFFFF30"

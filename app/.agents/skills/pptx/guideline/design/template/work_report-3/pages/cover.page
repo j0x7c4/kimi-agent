@@ -1,0 +1,81 @@
+pageType: cover
+background:
+  type: gradient
+  gradientType: linear
+  angle: 180
+  stops:
+    - {position: 0, color: "$darkBg"}
+    - {position: 0.7, color: "$primary"}
+    - {position: 1, color: "#4C7F8C99"}
+elements:
+  # 装饰性几何形状
+  - elementId: deco-shape1
+    elementType: shape
+    bounds: [0, 0, 200, 200]
+    shapeName: triangle
+    adjustments: [30000]
+    fill:
+      type: solid
+      color: "#FFFFFF10"
+    rotation: 45
+  
+  - elementId: deco-shape2
+    elementType: shape
+    bounds: [1040, 480, 240, 240]
+    shapeName: triangle
+    adjustments: [70000]
+    fill:
+      type: solid
+      color: "#FFFFFF08"
+    rotation: -30
+  
+  # Logo占位
+  - elementId: logo
+    elementType: shape
+    bounds: [60, 40, 120, 32]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF20"
+  
+  # 主标题
+  - elementId: main-title
+    elementType: text
+    bounds: [140, 220, 1000, 80]
+    content:
+      style: "$coverTitle"
+      align: [center, middle]
+      text: |
+        <p><strong>2024年度工作汇报</strong></p>
+  
+  # 副标题
+  - elementId: subtitle
+    elementType: text
+    bounds: [240, 320, 800, 40]
+    content:
+      style: "$coverSubtitle"
+      align: [center, middle]
+      text: |
+        <p><strong>核心成果与未来展望</strong></p>
+  
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [440, 380, 400, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+  
+  # 汇报信息
+  - elementId: presenter-info
+    elementType: text
+    bounds: [700, 640, 300, 50]
+    content:
+      fontSize: 16
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, bottom]
+      text: |
+        <p>汇报人：XXX</p>
+        <p>2024年12月</p>

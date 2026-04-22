@@ -1,0 +1,73 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [100, 100, 400, 50]
+    content:
+      text: |
+        <p><strong>AGENDA</strong></p>
+      fontSize: 36
+      color: "$accent"
+      fontFamily: "Oranienbaum, MiSans"
+      align: [left, middle]
+
+  # 分割线
+  - elementId: title-line
+    elementType: shape
+    bounds: [100, 168, 1080, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 目录项1
+  - elementId: toc-1
+    elementType: text
+    bounds: [100, 230, 700, 50]
+    content:
+      text: |
+        <p><span style="color:#6B8E7D; font-size:32px"><strong>01</strong></span>    <span style="font-size:26px">Performance Overview</span></p>
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 目录项2
+  - elementId: toc-2
+    elementType: text
+    bounds: [100, 300, 700, 50]
+    content:
+      text: |
+        <p><span style="color:#6B8E7D; font-size:32px"><strong>02</strong></span>    <span style="font-size:26px">Strategic Initiatives</span></p>
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 目录项3
+  - elementId: toc-3
+    elementType: text
+    bounds: [100, 370, 700, 50]
+    content:
+      text: |
+        <p><span style="color:#6B8E7D; font-size:32px"><strong>03</strong></span>    <span style="font-size:26px">Organization & Talent</span></p>
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+
+  # 目录项4
+  - elementId: toc-4
+    elementType: text
+    bounds: [100, 440, 700, 50]
+    content:
+      text: |
+        <p><span style="color:#6B8E7D; font-size:32px"><strong>04</strong></span>    <span style="font-size:26px">Reflection & Forward</span></p>
+      fontSize: 26
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]

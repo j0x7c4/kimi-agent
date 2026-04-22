@@ -1,0 +1,80 @@
+pageType: final
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部律动条纹
+  - elementId: pattern-top
+    elementType: shape
+    bounds: [0, 0, 1280, 180]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: 45
+      stops:
+        - {position: 0, color: "#5C8E8F05"}
+        - {position: 0.25, color: "#5C8E8F10"}
+        - {position: 0.5, color: "#5C8E8F05"}
+        - {position: 0.75, color: "#5C8E8F10"}
+        - {position: 1, color: "#5C8E8F05"}
+  
+  # 感谢语
+  - elementId: thank-you
+    elementType: text
+    bounds: [80, 260, 1120, 60]
+    content:
+      style: "$title"
+      align: [center, middle]
+      text: |
+        <p><strong>谢谢聆听</strong></p>
+  
+  # 分隔线
+  - elementId: divider
+    elementType: shape
+    bounds: [490, 340, 300, 2]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+  
+  # 联系信息
+  - elementId: contact-info
+    elementType: text
+    bounds: [80, 370, 1120, 140]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      lineHeight: 1.8
+      align: [center, middle]
+      text: |
+        <p>产品研发中心</p>
+        <p>联系邮箱：xxx@company.com</p>
+        <p>内线：XXXX</p>
+  
+  # 底部律动条纹
+  - elementId: pattern-bottom
+    elementType: shape
+    bounds: [0, 540, 1280, 180]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: -45
+      stops:
+        - {position: 0, color: "#5C8E8F05"}
+        - {position: 0.25, color: "#5C8E8F10"}
+        - {position: 0.5, color: "#5C8E8F05"}
+        - {position: 0.75, color: "#5C8E8F10"}
+        - {position: 1, color: "#5C8E8F05"}
+  
+  # 公司标识（装饰）
+  - elementId: company-mark
+    elementType: text
+    bounds: [540, 620, 200, 30]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      align: [center, middle]
+      text: |
+        <p>2024 © Company Name</p>

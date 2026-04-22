@@ -1,0 +1,64 @@
+title: 午夜蓝铜 · 集团战略规划（Board-Level）
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#0C1B33"
+    secondary: "#1B3A5C"
+    accent: "#B87333"
+    background: "#FAFAF7"
+    text: "#1A1A1A"
+    cardBg: "#F0EDE8"
+    lightCopper: "#D4A76A"
+    warmGray: "#8B8C89"
+    darkBg: "#07101E"
+    white: "#FFFFFF"
+  textStyles:
+    title:
+      fontSize: 44
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+    pageTitle:
+      fontSize: 24
+      color: "$white"
+      fontFamily: "Georgia, MiSans"
+    subtitle:
+      fontSize: 22
+      color: "$lightCopper"
+      fontFamily: "Georgia, MiSans"
+    body:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "Inter, MiSans"
+      lineHeight: 1.5
+    caption:
+      fontSize: 13
+      color: "$warmGray"
+      fontFamily: "Inter, MiSans"
+    bignum:
+      fontSize: 48
+      color: "$accent"
+      fontFamily: "Georgia, MiSans"
+  tableStyles:
+    default:
+      fontSize: 14
+      fontFamily: "Inter, MiSans"
+      headerFill: "$secondary"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$cardBg"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 0.5
+        color: "$warmGray"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/strategic_framework.page
+  - pages/financial_dual_column.page
+  - pages/org_structure.page
+  - pages/risk_matrix.page
+  - pages/milestone_roadmap.page
+  - pages/valuation_dark.page
+  - pages/final.page

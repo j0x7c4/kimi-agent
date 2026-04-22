@@ -1,0 +1,68 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$darkGray"
+elements:
+  # 顶部线
+  - elementId: ch-top-line
+    elementType: shape
+    bounds: [0, 0, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$accent"
+
+  # 章节编号 - 大号透明
+  - elementId: ch-num
+    elementType: text
+    bounds: [80, 200, 420, 80]
+    content:
+      fontSize: 64
+      color: "#FFFFFF15"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: "CHAPTER 01"
+
+  # 分隔线
+  - elementId: ch-divider
+    elementType: shape
+    bounds: [80, 310, 80, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$accent"
+
+  # 章节标题
+  - elementId: ch-title
+    elementType: text
+    bounds: [80, 330, 800, 50]
+    content:
+      fontSize: 36
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p><strong>研究背景与意义</strong></p>
+
+  - elementId: ch-subtitle
+    elementType: text
+    bounds: [80, 390, 600, 26]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      letterSpacing: 2
+      wrap: false
+      text: Background and Significance
+
+  # 底部线
+  - elementId: ch-bottom-line
+    elementType: shape
+    bounds: [0, 716, 1280, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 4
+      color: "$accent"

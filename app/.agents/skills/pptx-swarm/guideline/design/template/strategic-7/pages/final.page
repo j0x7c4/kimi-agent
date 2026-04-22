@@ -1,0 +1,60 @@
+pageType: final
+background:
+  type: solid
+  color: "#0A0A0A"
+elements:
+  - elementId: final-cta
+    elementType: text
+    bounds: [340, 240, 600, 36]
+    content:
+      fontSize: 24
+      color: "#10B981"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>Let's build.</strong></p>
+
+  - elementId: final-box
+    elementType: shape
+    bounds: [390, 300, 500, 140]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#0A0A0A"
+    border:
+      style: solid
+      width: 2
+      color: "#F8FAFC"
+
+  - elementId: final-url
+    elementType: text
+    bounds: [390, 330, 500, 28]
+    content:
+      fontSize: 20
+      color: "#F8FAFC"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p><strong>www.xxtech.com</strong></p>
+
+  - elementId: final-email
+    elementType: text
+    bounds: [390, 368, 500, 28]
+    content:
+      fontSize: 16
+      color: "#A3A3A3"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>invest@xxtech.com</p>
+
+  - elementId: final-logo-placeholder
+    elementType: shape
+    bounds: [590, 520, 100, 32]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#171717"

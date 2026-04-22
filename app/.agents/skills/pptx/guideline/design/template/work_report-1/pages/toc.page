@@ -1,0 +1,115 @@
+pageType: table_of_contents
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 左侧装饰色块
+  - elementId: left_accent_block
+    elementType: shape
+    bounds: [0, 0, 8, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 左侧留白装饰线
+  - elementId: left_line
+    elementType: shape
+    bounds: [280, 100, 1, 520]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$secondary"
+
+  # 页面标题
+  - elementId: page_title
+    elementType: text
+    bounds: [340, 100, 700, 60]
+    content:
+      fontSize: 36
+      color: "$text"
+      fontFamily: "Liter, MiSans"
+      text: |
+        <p><strong>内容概览</strong></p>
+
+  # 标题下装饰线
+  - elementId: title_underline
+    elementType: shape
+    bounds: [340, 170, 80, 3]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$accent"
+
+  # 章节列表
+  - elementId: chapter1
+    elementType: text
+    bounds: [340, 210, 700, 70]
+    content:
+      text: |
+        <p><span style="font-size:40px; color:$accent; font-family:MiSans;">01</span>  <span style="font-size:28px; font-family:MiSans;">年度目标完成情况</span></p>
+
+  - elementId: sep1
+    elementType: shape
+    bounds: [340, 290, 600, 1]
+    shapeName: straightConnector1
+    border:
+      style: dot
+      width: 1
+      color: "$secondary"
+
+  - elementId: chapter2
+    elementType: text
+    bounds: [340, 310, 700, 70]
+    content:
+      text: |
+        <p><span style="font-size:40px; color:$accent; font-family:MiSans;">02</span>  <span style="font-size:28px; font-family:MiSans;">核心业务增长归因</span></p>
+
+  - elementId: sep2
+    elementType: shape
+    bounds: [340, 390, 600, 1]
+    shapeName: straightConnector1
+    border:
+      style: dot
+      width: 1
+      color: "$secondary"
+
+  - elementId: chapter3
+    elementType: text
+    bounds: [340, 410, 700, 70]
+    content:
+      text: |
+        <p><span style="font-size:40px; color:$accent; font-family:MiSans;">03</span>  <span style="font-size:28px; font-family:MiSans;">重点项目进展复盘</span></p>
+
+  - elementId: sep3
+    elementType: shape
+    bounds: [340, 490, 600, 1]
+    shapeName: straightConnector1
+    border:
+      style: dot
+      width: 1
+      color: "$secondary"
+
+  - elementId: chapter4
+    elementType: text
+    bounds: [340, 510, 700, 70]
+    content:
+      text: |
+        <p><span style="font-size:40px; color:$accent; font-family:MiSans;">04</span>  <span style="font-size:28px; font-family:MiSans;">竞争态势与机会分析</span></p>
+
+  - elementId: sep4
+    elementType: shape
+    bounds: [340, 590, 600, 1]
+    shapeName: straightConnector1
+    border:
+      style: dot
+      width: 1
+      color: "$secondary"
+
+  - elementId: chapter5
+    elementType: text
+    bounds: [340, 610, 700, 70]
+    content:
+      text: |
+        <p><span style="font-size:40px; color:$accent; font-family:MiSans;">05</span>  <span style="font-size:28px; font-family:MiSans;">2025年行动计划</span></p>

@@ -1,0 +1,64 @@
+pageType: chapter
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 背景律动条纹
+  - elementId: bg-pattern
+    elementType: shape
+    bounds: [0, 0, 1280, 720]
+    shapeName: rect
+    fill:
+      type: gradient
+      gradientType: linear
+      angle: -30
+      stops:
+        - {position: 0, color: "#E09F7D05"}
+        - {position: 0.25, color: "#E09F7D15"}
+        - {position: 0.5, color: "#E09F7D05"}
+        - {position: 0.75, color: "#E09F7D15"}
+        - {position: 1, color: "#E09F7D05"}
+  
+  # 章节编号
+  - elementId: chapter-num
+    elementType: text
+    bounds: [80, 200, 200, 60]
+    content:
+      fontSize: 48
+      color: "$accent2"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      text: |
+        <p><strong>02</strong></p>
+  
+  # 章节标题
+  - elementId: chapter-title
+    elementType: text
+    bounds: [80, 280, 800, 60]
+    content:
+      style: "$title"
+      align: [left, middle]
+      text: |
+        <p><strong>下一步工作规划</strong></p>
+  
+  # 章节描述
+  - elementId: chapter-desc
+    elementType: text
+    bounds: [80, 360, 600, 80]
+    content:
+      fontSize: 20
+      color: "$secondary"
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p>2025年Q1重点工作部署</p>
+        <p>确保年度目标顺利达成</p>
+  
+  # 装饰形状
+  - elementId: deco-shape
+    elementType: shape
+    bounds: [900, 300, 120, 120]
+    shapeName: diamond
+    fill:
+      type: solid
+      color: "#E09F7D20"

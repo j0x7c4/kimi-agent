@@ -1,0 +1,86 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Top nav bar
+  - elementId: nav-left
+    elementType: text
+    bounds: [120, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [left, top]
+      text: |
+        <p>Marketing</p>
+        <p>Approach</p>
+
+  - elementId: nav-right
+    elementType: text
+    bounds: [900, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [right, top]
+      text: |
+        <p>Bilson's</p>
+        <p>Supermarkets</p>
+
+  - elementId: nav-divider
+    elementType: shape
+    bounds: [120, 88, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Left: large photo
+  - elementId: left-photo
+    elementType: image
+    bounds: [120, 116, 520, 566]
+    src: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=700&q=80"
+    fit:
+      mode: cover
+
+  # Right: bold title + body text
+  - elementId: page-title
+    elementType: text
+    bounds: [700, 116, 480, 200]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p><strong>TARGET</strong></p>
+        <p><strong>MARKET</strong></p>
+
+  - elementId: page-body
+    elementType: text
+    bounds: [700, 340, 460, 240]
+    content:
+      style: "$body"
+      align: [left, top]
+      lineHeight: 1.65
+      text: |
+        <p>Our primary audience consists of</p>
+        <p>health-conscious families and young</p>
+        <p>professionals aged 25-45, who value</p>
+        <p>convenience, quality ingredients, and</p>
+        <p>sustainable sourcing in their grocery</p>
+        <p>shopping experience.</p>
+
+  - elementId: stat-block
+    elementType: shape
+    bounds: [700, 580, 460, 80]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+    opacity: 0.12
+
+  - elementId: stat-text
+    elementType: text
+    bounds: [716, 588, 440, 64]
+    content:
+      fontSize: 20
+      color: "$primary"
+      fontFamily: "HedvigLettersSans"
+      align: [left, middle]
+      text: 72% of shoppers aged 25-45 prefer online grocery ordering

@@ -1,0 +1,83 @@
+pageType: final
+background:
+  type: solid
+  color: "$primary"
+elements:
+  # Top nav bar
+  - elementId: nav-left
+    elementType: text
+    bounds: [120, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [left, top]
+      text: |
+        <p>Marketing</p>
+        <p>Approach</p>
+
+  - elementId: nav-right
+    elementType: text
+    bounds: [900, 28, 260, 52]
+    content:
+      style: "$nav"
+      align: [right, top]
+      text: |
+        <p>Bilson's</p>
+        <p>Supermarkets</p>
+
+  - elementId: nav-divider
+    elementType: shape
+    bounds: [120, 88, 1040, 1]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$text"
+
+  # Large bold closing title
+  - elementId: final-title
+    elementType: text
+    bounds: [100, 160, 760, 300]
+    content:
+      style: "$coverTitle"
+      align: [left, top]
+      text: |
+        <p><strong>THANK YOU FOR</strong></p>
+        <p><strong>YOUR TIME!</strong></p>
+
+  # Arrow icon
+  - elementId: arrow
+    elementType: icon
+    bounds: [100, 468, 100, 28]
+    iconName: "fas:arrow-right"
+    fill:
+      type: solid
+      color: "$text"
+
+  # Contact body
+  - elementId: contact-body
+    elementType: text
+    bounds: [100, 510, 600, 80]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Contact us at <strong>hello@example.com</strong></p>
+        <p>for any questions or comments.</p>
+
+  # Right: photo
+  - elementId: final-photo
+    elementType: image
+    bounds: [720, 360, 440, 300]
+    src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600&q=80"
+    fit:
+      mode: cover
+
+  # Email badge
+  - elementId: email-badge
+    elementType: text
+    bounds: [860, 310, 320, 40]
+    content:
+      fontSize: 18
+      color: "$text"
+      fontFamily: "HedvigLettersSans, MiSans"
+      align: [right, middle]
+      text: hello@example.com

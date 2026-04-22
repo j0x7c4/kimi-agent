@@ -1,0 +1,48 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Large photo — left, upper area
+  - elementId: photo-large
+    elementType: image
+    bounds: [0, 115, 1006, 342]
+    src: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80"
+    fit:
+      mode: cover
+
+  # Small photo — right column, full height
+  - elementId: photo-right
+    elementType: image
+    bounds: [1041, 115, 239, 604]
+    src: "https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=400&q=80"
+    fit:
+      mode: cover
+
+  # Bottom-right photo
+  - elementId: photo-bottom
+    elementType: image
+    bounds: [503, 492, 503, 226]
+    src: "https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=600&q=80"
+    fit:
+      mode: cover
+
+  # Project title — lower left
+  - elementId: project-title
+    elementType: text
+    bounds: [31, 492, 440, 78]
+    content:
+      style: "$sectionTitle"
+      align: [left, top]
+      text: THE FORT LEBURG SPACE MUSEUM
+
+  # Project caption — below title
+  - elementId: project-caption
+    elementType: text
+    bounds: [31, 589, 440, 68]
+    content:
+      style: "$body"
+      align: [left, top]
+      wrap: true
+      text: |
+        <p>Black and white shots of the façade of the Space Museum's main building</p>

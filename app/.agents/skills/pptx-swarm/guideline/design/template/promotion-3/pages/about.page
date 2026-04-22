@@ -1,0 +1,44 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # Left: heading
+  - elementId: page-title
+    elementType: text
+    bounds: [31, 160, 525, 230]
+    content:
+      style: "$pageTitle"
+      align: [left, top]
+      text: |
+        <p>BACKGROUND</p>
+        <p>+ ARTISTIC PHILOSOPHY</p>
+
+  # Left: body text
+  - elementId: page-body
+    elementType: text
+    bounds: [31, 410, 525, 230]
+    content:
+      style: "$body"
+      align: [left, top]
+      wrap: true
+      text: |
+        <p>Working in the field of Architectural Photography for the past five years, I aim to see the beauty in modernity. Beauty is present everywhere, but I find it especially in concrete jungles and industrial behemoths. I don't capture buildings; I capture space, lines, contrasts, and forms as they all come together into one great structure.</p>
+
+  # Right: portrait photo
+  - elementId: photo-right
+    elementType: image
+    bounds: [640, 82, 609, 556]
+    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80"
+    fit:
+      mode: cover
+
+  # Bottom rule
+  - elementId: bottom-line
+    elementType: shape
+    bounds: [31, 703, 1219, 0]
+    shapeName: straightConnector1
+    border:
+      style: solid
+      width: 2
+      color: "$gray"

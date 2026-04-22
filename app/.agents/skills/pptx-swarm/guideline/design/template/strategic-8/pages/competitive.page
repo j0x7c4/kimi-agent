@@ -1,0 +1,179 @@
+pageType: content
+background:
+  type: solid
+  color: "#F4F1EA"
+elements:
+  - elementId: breadcrumb
+    elementType: text
+    bounds: [72, 16, 400, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: Competitive Landscape / Moat
+
+  - elementId: page-title
+    elementType: text
+    bounds: [72, 48, 1136, 36]
+    content:
+      fontSize: 28
+      color: "#1A3632"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>差异化定位：兼具行业深度与全球化平台能力</strong></p>
+
+  - elementId: comp-table
+    elementType: table
+    bounds: [72, 100, 1136, 360]
+    style: "$default"
+    columnWidths: [0.24, 0.19, 0.19, 0.19, 0.19]
+    rowHeights: [0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
+    rows:
+      - - content:
+            text: |
+              <p><strong>竞争维度</strong></p>
+        - content:
+            text: |
+              <p><strong>我们</strong></p>
+        - content:
+            text: |
+              <p><strong>国际巨头A</strong></p>
+        - content:
+            text: |
+              <p><strong>本土大厂B</strong></p>
+        - content:
+            text: |
+              <p><strong>垂直厂商C</strong></p>
+      - - content:
+            text: "行业Know-How深度"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★☆☆"
+        - content:
+            text: "★★☆☆☆"
+        - content:
+            text: "★★★★☆"
+      - - content:
+            text: "端到端平台能力"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★☆☆☆"
+      - - content:
+            text: "本土化合规"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★☆☆☆"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★★☆☆"
+      - - content:
+            text: "AI原生集成"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★☆☆☆"
+      - - content:
+            text: "定价竞争力"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★★☆☆"
+        - content:
+            text: "★★☆☆☆"
+        - content:
+            text: "★★★★☆"
+      - - content:
+            text: "客户成功体系"
+        - content:
+            text: "★★★★★"
+        - content:
+            text: "★★★☆☆"
+        - content:
+            text: "★★★★☆"
+        - content:
+            text: "★★☆☆☆"
+
+  # Moat summary
+  - elementId: moat-title
+    elementType: text
+    bounds: [72, 490, 300, 28]
+    content:
+      fontSize: 20
+      color: "#D97706"
+      fontFamily: "Liter, MiSans"
+      wrap: false
+      text: |
+        <p><strong>核心竞争壁垒</strong></p>
+
+  - elementId: moat-1
+    elementType: text
+    bounds: [72, 530, 360, 60]
+    content:
+      fontSize: 16
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="color:#D97706;">&#9670;</span> <strong>数据飞轮</strong>：500+客户数据反哺模型精度持续提升</p>
+
+  - elementId: moat-2
+    elementType: text
+    bounds: [452, 530, 360, 60]
+    content:
+      fontSize: 16
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="color:#D97706;">&#9670;</span> <strong>切换成本</strong>：深度嵌入工作流，年留存率98%</p>
+
+  - elementId: moat-3
+    elementType: text
+    bounds: [832, 530, 376, 60]
+    content:
+      fontSize: 16
+      color: "#292524"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      wrap: true
+      text: |
+        <p><span style="color:#D97706;">&#9670;</span> <strong>生态网络</strong>：30+ ISV合作伙伴，渠道贡献40%收入</p>
+
+  - elementId: source-text
+    elementType: text
+    bounds: [72, 668, 600, 20]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      wrap: false
+      text: |
+        <p>Source: 内部竞品分析, 客户调研 N=200, 2024Q4</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1150, 680, 56, 24]
+    content:
+      fontSize: 12
+      color: "#78716C"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [right, middle]
+      wrap: false
+      text: "08"

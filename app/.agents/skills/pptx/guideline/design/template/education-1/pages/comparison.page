@@ -1,0 +1,247 @@
+pageType: content
+background:
+  type: solid
+  color: $background
+elements:
+  - elementId: page-title
+    elementType: text
+    bounds:
+      - 80
+      - 50
+      - 1120
+      - 50
+    content:
+      style: $title
+      align:
+        - center
+        - middle
+      text: |
+        <p>学习方法对比：找到适合你的路径</p>
+  - elementId: card1
+    elementType: shape
+    bounds:
+      - 80
+      - 120
+      - 360
+      - 560
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 10
+      color: "#00000010"
+      offset:
+        - 0
+        - 3
+  - elementId: card1-header
+    elementType: shape
+    bounds:
+      - 80
+      - 120
+      - 360
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $secondary
+  - elementId: card1-title
+    elementType: text
+    bounds:
+      - 80
+      - 120
+      - 360
+      - 70
+    content:
+      fontSize: 22
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>传统学习模式</strong></p>
+  - elementId: card1-content
+    elementType: text
+    bounds:
+      - 100
+      - 200
+      - 320
+      - 460
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>特点：</strong></p>
+        <p style="margin-top:8px">• 线性推进</p>
+        <p>• 被动接收</p>
+        <p>• 记忆为主</p>
+        <p>• 标准化路径</p>
+        <p style="margin-top:14px"><strong>适用场景：</strong></p>
+        <p style="margin-top:8px">• 基础知识学习</p>
+        <p>• 考试准备</p>
+        <p>• 规范性内容</p>
+        <p style="margin-top:14px"><strong>效果：</strong></p>
+        <p style="margin-top:8px"><span style="color:$accent">短期记忆 60%</span></p>
+        <p><span style="color:$accent2">长期保持 20%</span></p>
+  - elementId: card2
+    elementType: shape
+    bounds:
+      - 460
+      - 120
+      - 360
+      - 560
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 10
+      color: "#00000010"
+      offset:
+        - 0
+        - 3
+  - elementId: card2-header
+    elementType: shape
+    bounds:
+      - 460
+      - 120
+      - 360
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent
+  - elementId: card2-title
+    elementType: text
+    bounds:
+      - 460
+      - 120
+      - 360
+      - 70
+    content:
+      fontSize: 22
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>主动学习模式</strong></p>
+  - elementId: card2-content
+    elementType: text
+    bounds:
+      - 480
+      - 200
+      - 320
+      - 460
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>特点：</strong></p>
+        <p style="margin-top:8px">• 探索式推进</p>
+        <p>• 主动构建</p>
+        <p>• 理解为主</p>
+        <p>• 个性化路径</p>
+        <p style="margin-top:14px"><strong>适用场景：</strong></p>
+        <p style="margin-top:8px">• 技能提升</p>
+        <p>• 创新思维</p>
+        <p>• 复杂问题解决</p>
+        <p style="margin-top:14px"><strong>效果：</strong></p>
+        <p style="margin-top:8px"><span style="color:$accent">短期记忆 80%</span></p>
+        <p><span style="color:$accent2">长期保持 70%</span></p>
+  - elementId: card3
+    elementType: shape
+    bounds:
+      - 840
+      - 120
+      - 360
+      - 560
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $card
+    shadow:
+      blur: 10
+      color: "#00000010"
+      offset:
+        - 0
+        - 3
+  - elementId: card3-header
+    elementType: shape
+    bounds:
+      - 840
+      - 120
+      - 360
+      - 70
+    shapeName: roundRect
+    adjustments:
+      - 8000
+    fill:
+      type: solid
+      color: $accent2
+  - elementId: card3-title
+    elementType: text
+    bounds:
+      - 840
+      - 120
+      - 360
+      - 70
+    content:
+      fontSize: 22
+      color: $textWhite
+      fontFamily: Liter, MiSans
+      align:
+        - center
+        - middle
+      text: |
+        <p><strong>混合学习模式</strong></p>
+  - elementId: card3-content
+    elementType: text
+    bounds:
+      - 860
+      - 200
+      - 320
+      - 460
+    content:
+      fontSize: 16
+      color: $text
+      fontFamily: Liter, MiSans
+      lineHeight: 1.5
+      align:
+        - left
+        - top
+      text: |
+        <p><strong>特点：</strong></p>
+        <p style="margin-top:8px">• 灵活切换</p>
+        <p>• 多元整合</p>
+        <p>• 平衡深广</p>
+        <p>• 适应性强</p>
+        <p style="margin-top:14px"><strong>适用场景：</strong></p>
+        <p style="margin-top:8px">• 综合能力培养</p>
+        <p>• 长期发展</p>
+        <p>• 跨领域学习</p>
+        <p style="margin-top:14px"><strong>效果：</strong></p>
+        <p style="margin-top:8px"><span style="color:$accent">短期记忆 85%</span></p>
+        <p><span style="color:$accent2">长期保持 80%</span></p>

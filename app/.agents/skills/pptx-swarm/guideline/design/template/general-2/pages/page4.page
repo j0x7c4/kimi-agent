@@ -1,0 +1,215 @@
+pageType: unknown
+background:
+  type: solid
+  color: "#292929"
+elements:
+  - elementId: shape0
+    elementType: shape
+    bounds:
+      - 834.26
+      - 184.63
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape1
+    elementType: shape
+    bounds:
+      - 834.26
+      - 304.93
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape2
+    elementType: shape
+    bounds:
+      - 834.26
+      - 427.16
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape3
+    elementType: shape
+    bounds:
+      - 834.26
+      - 655.43
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape4
+    elementType: shape
+    bounds:
+      - 834.26
+      - 771.13
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: shape5
+    elementType: shape
+    bounds:
+      - 834.26
+      - 891.43
+      - 17.01
+      - 17.01
+    shapeName: custom
+    path: 6350000,6350000;M3175000 0C1421496 0 0 1421496 0 3175000C0 4928504 1421496 6350000 3175000 6350000C4928504 6350000 6350000 4928504 6350000 3175000C6350000 1421496 4928504 0 3175000 0Z
+    fill:
+      type: solid
+      color: "#7EC0DA"
+  - elementId: text6
+    elementType: text
+    bounds:
+      - 913.12
+      - 139.73
+      - 843.68
+      - 89.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        The pre-5G internet experience was slower and limited to certain spectrum types.
+  - elementId: text7
+    elementType: text
+    bounds:
+      - 913.12
+      - 260.03
+      - 843.68
+      - 89.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        Previous mobile network generations did not entirely support new services that rely heavily on communications.
+  - elementId: text8
+    elementType: text
+    bounds:
+      - 913.12
+      - 382.27
+      - 843.68
+      - 89.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        There were significantly more issues and limitations to availability and reliability.
+  - elementId: text9
+    elementType: text
+    bounds:
+      - 98.4
+      - 142.73
+      - 537.11
+      - 246.6
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>Before 5G Technology</strong></p>
+  - elementId: text10
+    elementType: text
+    bounds:
+      - 913.12
+      - 610.53
+      - 843.68
+      - 89.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        The pre-5G internet experience was slower and limited to certain spectrum types.
+  - elementId: text11
+    elementType: text
+    bounds:
+      - 913.12
+      - 726.23
+      - 843.68
+      - 89.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        Previous mobile network generations did not entirely support new services that rely heavily on communications.
+  - elementId: text12
+    elementType: text
+    bounds:
+      - 913.12
+      - 846.53
+      - 843.68
+      - 89.73
+    content:
+      fontSize: 29.3
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 41.05
+      align:
+        - left
+        - top
+      text: |
+        There were significantly more issues and limitations to availability and reliability.
+  - elementId: text13
+    elementType: text
+    bounds:
+      - 98.4
+      - 613.53
+      - 537.11
+      - 246.6
+    content:
+      fontSize: 98.7
+      color: $light
+      fontFamily: "Liter, MiSans"
+      lineHeightPx: 118.39
+      align:
+        - left
+        - top
+      letterSpacing: -1.2
+      text: |
+        <p><strong>With 5G Technology</strong></p>

@@ -1,0 +1,328 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  # 顶部深青绿色带
+  - elementId: top-bar
+    elementType: shape
+    bounds: [0, 0, 1280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题区域背景
+  - elementId: title-bg
+    elementType: shape
+    bounds: [0, 5, 1280, 60]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  # 页面标题
+  - elementId: page-title
+    elementType: text
+    bounds: [50, 12, 1100, 40]
+    content:
+      fontSize: 20
+      color: "#FFFFFF"
+      fontFamily: "Liter, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Key performance indicators show strong growth trajectory across all business segments</strong></p>
+  # ===== 4个KPI卡片 =====
+  # KPI 1 背景
+  - elementId: kpi1-bg
+    elementType: shape
+    bounds: [50, 85, 270, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: kpi1-accent
+    elementType: shape
+    bounds: [50, 85, 270, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kpi1-number
+    elementType: text
+    bounds: [70, 105, 230, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#0D8B7D;"><strong>$12.8B</strong></span></p>
+
+  - elementId: kpi1-label
+    elementType: text
+    bounds: [70, 165, 230, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Total Revenue</strong></span></p>
+
+  - elementId: kpi1-change
+    elementType: text
+    bounds: [70, 195, 230, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#0D8B7D;"><strong>+18.3% YoY</strong></span></p>
+
+  - elementId: kpi1-desc
+    elementType: text
+    bounds: [70, 222, 230, 42]
+    content:
+      fontSize: 12
+      color: "$medgray"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:12px;">Driven by strong consumer demand across Asia-Pacific</span></p>
+
+  # KPI 2
+  - elementId: kpi2-bg
+    elementType: shape
+    bounds: [350, 85, 270, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: kpi2-accent
+    elementType: shape
+    bounds: [350, 85, 270, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kpi2-number
+    elementType: text
+    bounds: [370, 105, 230, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#0D8B7D;"><strong>34.2%</strong></span></p>
+
+  - elementId: kpi2-label
+    elementType: text
+    bounds: [370, 165, 230, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Gross Margin</strong></span></p>
+
+  - elementId: kpi2-change
+    elementType: text
+    bounds: [370, 195, 230, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#0D8B7D;"><strong>+2.1pp vs prior year</strong></span></p>
+
+  - elementId: kpi2-desc
+    elementType: text
+    bounds: [370, 222, 230, 42]
+    content:
+      fontSize: 12
+      color: "$medgray"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:12px;">Improved through supply chain optimization</span></p>
+
+  # KPI 3
+  - elementId: kpi3-bg
+    elementType: shape
+    bounds: [650, 85, 270, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: kpi3-accent
+    elementType: shape
+    bounds: [650, 85, 270, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kpi3-number
+    elementType: text
+    bounds: [670, 105, 230, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#0D8B7D;"><strong>2.4M</strong></span></p>
+
+  - elementId: kpi3-label
+    elementType: text
+    bounds: [670, 165, 230, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Active Users</strong></span></p>
+
+  - elementId: kpi3-change
+    elementType: text
+    bounds: [670, 195, 230, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#0D8B7D;"><strong>+42% QoQ</strong></span></p>
+
+  - elementId: kpi3-desc
+    elementType: text
+    bounds: [670, 222, 230, 42]
+    content:
+      fontSize: 12
+      color: "$medgray"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:12px;">New market expansion contributed 60% of growth</span></p>
+
+  # KPI 4
+  - elementId: kpi4-bg
+    elementType: shape
+    bounds: [950, 85, 280, 180]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "#FFFFFF"
+
+  - elementId: kpi4-accent
+    elementType: shape
+    bounds: [950, 85, 280, 5]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$primary"
+
+  - elementId: kpi4-number
+    elementType: text
+    bounds: [970, 105, 240, 55]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:44px; color:#0D8B7D;"><strong>87</strong></span></p>
+
+  - elementId: kpi4-label
+    elementType: text
+    bounds: [970, 165, 240, 26]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>NPS Score</strong></span></p>
+
+  - elementId: kpi4-change
+    elementType: text
+    bounds: [970, 195, 240, 22]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:14px; color:#0D8B7D;"><strong>+5 pts vs benchmark</strong></span></p>
+
+  - elementId: kpi4-desc
+    elementType: text
+    bounds: [970, 222, 240, 42]
+    content:
+      fontSize: 12
+      color: "$medgray"
+      lineHeight: 1.3
+      wrap: true
+      text: |
+        <p><span style="font-size:12px;">Industry-leading customer satisfaction</span></p>
+
+  # ===== 下半部分：趋势图 =====
+  - elementId: trend-title
+    elementType: text
+    bounds: [50, 285, 400, 28]
+    content:
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><span style="font-size:16px; color:#333333;"><strong>Quarterly Revenue Trend ($B)</strong></span></p>
+
+  - elementId: trend-chart
+    elementType: chart
+    bounds: [50, 318, 1180, 300]
+    type: combo
+    options:
+      fontFamily: "Liter, MiSans"
+    data:
+      - {quarter: "Q1'22", revenue: 2.1, growth: 0.12}
+      - {quarter: "Q2'22", revenue: 2.4, growth: 0.14}
+      - {quarter: "Q3'22", revenue: 2.6, growth: 0.15}
+      - {quarter: "Q4'22", revenue: 2.8, growth: 0.17}
+      - {quarter: "Q1'23", revenue: 2.9, growth: 0.16}
+      - {quarter: "Q2'23", revenue: 3.1, growth: 0.18}
+      - {quarter: "Q3'23", revenue: 3.3, growth: 0.19}
+      - {quarter: "Q4'23", revenue: 3.5, growth: 0.18}
+    x: quarter
+    y: [revenue, growth]
+    names: ["Revenue ($B)", "YoY Growth"]
+    colors: ["$primary", "$medgray"]
+    seriesStyle:
+      revenue: {type: bar}
+      growth:
+        type: line
+        axis: secondary
+        smooth: true
+        width: 3
+        fill:
+          type: solid
+          color: "$medgray"
+        marker:
+          shape: circle
+          size: 6
+          fill:
+            type: solid
+            color: "$medgray"
+          border: {style: solid, width: 2, color: "$medgray"}
+    legend: {position: top, fontSize: 12}
+    dataLabels:
+      show: true
+      content: value
+      fontSize: 11
+    xAxis:
+      label: {fontSize: 11, color: "$text"}
+      gridLine: false
+      axisLine: {color: "$border"}
+    yAxis:
+      label: {fontSize: 11, color: "$medgray"}
+      gridLine: {color: "#EEEEEE", style: dash}
+      axisLine: false
+    secondaryAxis:
+      label: {fontSize: 11, color: "$accent"}
+      numberFormat: "0%"
+
+  # 底部来源
+  - elementId: source-text
+    elementType: text
+    bounds: [50, 658, 600, 22]
+    content:
+      style: "$caption"
+      wrap: false
+      text: |
+        <p>Source: Internal financial data, Q4 2023 earnings report</p>

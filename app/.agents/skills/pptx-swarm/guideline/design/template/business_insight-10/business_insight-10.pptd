@@ -1,0 +1,69 @@
+title: 商业洞察报告模板（贝恩Bain风格）
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#D91E18"
+    secondary: "#2C2C2C"
+    accent: "#D91E18"
+    background: "#FFFFFF"
+    text: "#2C2C2C"
+    lightgray: "#F4F4F4"
+    border: "#DDDDDD"
+    medgray: "#888888"
+    chartcolor1: "#E8762B"
+    chartcolor2: "#00A3A1"
+    chartcolor3: "#5B9BD5"
+  textStyles:
+    title:
+      fontSize: 22
+      color: "$secondary"
+      fontFamily: "Gill Sans MT, Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.3
+    subtitle:
+      fontSize: 14
+      color: "$medgray"
+      fontFamily: "Gill Sans MT, Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.3
+    body:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "Gill Sans MT, Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.5
+    caption:
+      fontSize: 12
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.2
+    bignum:
+      fontSize: 52
+      color: "$primary"
+      fontFamily: "Gill Sans MT, Arial Black, Microsoft YaHei, MiSans"
+    sidebarLabel:
+      fontSize: 11
+      color: "$medgray"
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      lineHeight: 1.2
+  tableStyles:
+    default:
+      fontSize: 13
+      fontFamily: "Arial, Microsoft YaHei, MiSans"
+      headerFill: "$secondary"
+      headerColor: "#ffffff"
+      headerBold: true
+      bodyFill: ["#ffffff", "$lightgray"]
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$border"
+pages:
+  - pages/cover.page
+  - pages/toc.page
+  - pages/chapter.page
+  - pages/action_title_chart.page
+  - pages/kpi_dashboard.page
+  - pages/data_table.page
+  - pages/market_analysis.page
+  - pages/trend_comparison.page
+  - pages/process_flow.page
+  - pages/final.page

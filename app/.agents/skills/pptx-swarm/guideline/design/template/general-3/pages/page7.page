@@ -1,0 +1,310 @@
+pageType: unknown
+background:
+  type: gradient
+  gradientType: radial
+  stops:
+  - position: 0
+    color: "#FFFFFFFF"
+  - position: 0.5
+    color: "#EAF4FFFF"
+  - position: 1
+    color: "#C7E2FFFF"
+elements:
+- elementId: text1
+  elementType: text
+  bounds: [98.4, 101.2, 816.28, 176.88]
+  content:
+    align: [left, top]
+    fontSize: 68
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 84.35
+    text: COMMON MYTHS ABOUT SLEEP
+- elementId: line2
+  elementType: shape
+  bounds: [887.16, 124.07, 770.47, 0]
+  flip: [false, false]
+  shapeName: line
+  border:
+    style: solid
+    width: 0.75
+    color: "$dark"
+- elementId: text34
+  elementType: text
+  bounds: [648.67, 201.8, 366.85, 65.22]
+  content:
+    align: [left, top]
+    fontSize: 41.4
+    fontFamily: QuattrocentoSans, alimamashuheiti
+    color: "$dark"
+    lineHeightPx: 57.95
+    text: 常见睡眠误区
+- elementId: text35
+  elementType: text
+  bounds: [1429.83, 98.2, 409.77, 49.73]
+  content:
+    align: [right, top]
+    fontSize: 29.3
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 41.05
+    letterSpacing: 4.16
+    text: PART 02
+- elementId: shape3
+  elementType: shape
+  bounds: [106.17, 301.72, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text4
+  elementType: text
+  bounds: [102.31, 308.25, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape5
+  elementType: shape
+  bounds: [145.73, 301.72, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text6
+  elementType: text
+  bounds: [141.87, 308.25, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape7
+  elementType: shape
+  bounds: [185.28, 301.72, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text8
+  elementType: text
+  bounds: [181.42, 308.25, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape9
+  elementType: shape
+  bounds: [224.83, 301.72, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text10
+  elementType: text
+  bounds: [220.97, 308.25, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape11
+  elementType: shape
+  bounds: [264.39, 301.72, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text12
+  elementType: text
+  bounds: [260.52, 308.25, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+- elementId: shape13
+  elementType: shape
+  bounds: [303.94, 301.72, 29.24, 25.58]
+  rotation: 90
+  shapeName: custom
+  path: 812800,711200;M406400 0L812800 711200L0 711200L406400 0Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: text14
+  elementType: text
+  bounds: [300.08, 308.25, 28.63, 12.52]
+  rotation: 90
+  content:
+    align: [center, middle]
+    fontSize: 24
+    fontFamily: Liter, MiSans
+    lineHeightPx: 41.05
+    text: ' '
+# Card 1 - 误区一
+- elementId: card1-bar
+  elementType: shape
+  bounds: [108, 380, 525.83, 68.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: card1-accent
+  elementType: shape
+  bounds: [108, 380, 15.21, 68.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: card1-title
+  elementType: text
+  bounds: [142, 383, 480, 56]
+  content:
+    align: [left, top]
+    fontSize: 34.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 48.53
+    text: 误区一：老年人不需要多睡
+- elementId: card1-body
+  elementType: text
+  bounds: [142, 468, 480, 170]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 老年人同样需要7-8小时的睡眠。深度睡眠比例减少、夜间觉醒增多属于正常生理变化，但总睡眠需求并未减少。白天犯困恰恰说明夜间睡眠质量不足。
+# Card 2 - 误区二
+- elementId: card2-bar
+  elementType: shape
+  bounds: [697, 380, 525.83, 68.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#BFE4FF"
+- elementId: card2-accent
+  elementType: shape
+  bounds: [697, 380, 15.21, 68.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: card2-title
+  elementType: text
+  bounds: [731, 383, 480, 56]
+  content:
+    align: [left, top]
+    fontSize: 34.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 48.53
+    text: 误区二：打鼾说明睡得香
+- elementId: card2-body
+  elementType: text
+  bounds: [731, 468, 480, 170]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 严重打鼾可能是睡眠呼吸暂停综合征的信号，会导致夜间反复缺氧、血压升高，增加心脑血管疾病风险。伴有白天嗜睡、晨起头痛时应尽早就医。
+# Card 3 - 误区三
+- elementId: card3-bar
+  elementType: shape
+  bounds: [1286, 380, 525.83, 68.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#7EC8E3"
+- elementId: card3-accent
+  elementType: shape
+  bounds: [1286, 380, 15.21, 68.15]
+  shapeName: custom
+  path: 49781,222990;M0 0L49781 0L49781 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#48B2FF"
+- elementId: card3-title
+  elementType: text
+  bounds: [1320, 383, 480, 56]
+  content:
+    align: [left, top]
+    fontSize: 34.7
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$dark"
+    lineHeightPx: 48.53
+    text: 误区三：睡前喝酒助眠
+- elementId: card3-body
+  elementType: text
+  bounds: [1320, 468, 480, 170]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 酒精虽能加速入睡，但会严重破坏睡眠结构——减少深度睡眠和REM睡眠，导致后半夜频繁醒来。长期依赖反而加重失眠，建议用温牛奶或泡脚替代。
+# Bottom highlight bar
+- elementId: highlight-bar
+  elementType: shape
+  bounds: [108, 700, 1704, 68.15]
+  shapeName: custom
+  path: 1232169,222990;M0 0L1232169 0L1232169 222990L0 222990Z
+  fill:
+    type: solid
+    color: "#004AAD"
+- elementId: highlight-text
+  elementType: text
+  bounds: [142, 703, 1650, 56]
+  content:
+    align: [left, middle]
+    fontSize: 28
+    fontFamily: QuattrocentoSans, alimamashuheiti Bold
+    color: "$light"
+    lineHeightPx: 42.12
+    text: 科学认知睡眠误区，是改善睡眠质量的第一步
+- elementId: bottom-body
+  elementType: text
+  bounds: [108, 800, 1704, 170]
+  content:
+    align: [justify, top]
+    fontSize: 26.7
+    fontFamily: Liter, MiSans
+    color: "$dark"
+    lineHeightPx: 42.12
+    letterSpacing: 1.08
+    text: 以上三个误区在中老年群体中尤为普遍。正确认识睡眠规律，才能有针对性地改善睡眠习惯。如果长期受睡眠问题困扰，建议前往正规医院睡眠门诊进行专业评估和治疗。

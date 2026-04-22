@@ -1,0 +1,81 @@
+pageType: content
+elements:
+  # Left: white background
+  - elementId: left-bg
+    elementType: shape
+    bounds: [0, 0, 640, 720]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$white"
+
+  # Right: photo
+  - elementId: right-photo
+    elementType: image
+    bounds: [640, 0, 640, 720]
+    src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80"
+    fit:
+      mode: cover
+
+  # Page number (top right)
+  - elementId: page-num
+    elementType: text
+    bounds: [1140, 46, 100, 48]
+    content:
+      fontSize: 28
+      color: "$white"
+      fontFamily: "Oranienbaum"
+      align: [right, middle]
+      wrap: false
+      text: 07
+
+  # Left content: large italic script title
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 100, 540, 240]
+    content:
+      fontSize: 60
+      color: "$primary"
+      fontFamily: "Oranienbaum"
+      lineHeight: 1.1
+      align: [left, top]
+      text: |
+        <p><strong>PORTFOLIO</strong></p>
+        <p><strong>HIGHLIGHTS</strong></p>
+
+  # Description sections
+  - elementId: desc-head-1
+    elementType: text
+    bounds: [60, 372, 540, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: CLIENT WORK
+
+  - elementId: desc-body-1
+    elementType: text
+    bounds: [60, 412, 540, 110]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Selected campaigns and brand identity</p>
+        <p>projects for local and international clients.</p>
+
+  - elementId: desc-head-2
+    elementType: text
+    bounds: [60, 540, 540, 36]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      text: PERSONAL PROJECTS
+
+  - elementId: desc-body-2
+    elementType: text
+    bounds: [60, 580, 540, 100]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Self-initiated series exploring identity,</p>
+        <p>culture, and contemporary aesthetics.</p>
