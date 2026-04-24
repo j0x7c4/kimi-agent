@@ -100,7 +100,16 @@ docker-compose up -d
 
 浏览器打开 http://localhost:5494
 
-如果启用了认证，请在 URL 中附加 token：
+#### 默认管理员账号
+
+| 字段 | 值 |
+|------|----|
+| 用户名 | `admin` |
+| 密码 | `admin123` |
+
+> **重要：** 首次登录后请立即在管理后台（`/admin`）修改默认密码。
+
+如果同时启用了 Bearer Token 认证，请在 URL 中附加 token：
 ```
 http://localhost:5494/?token=<你的token>
 ```

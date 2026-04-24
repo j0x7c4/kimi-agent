@@ -100,7 +100,16 @@ docker-compose up -d
 
 Open http://localhost:5494 in your browser.
 
-If authentication is enabled, append your token:
+#### Default Admin Account
+
+| Field | Value |
+|-------|-------|
+| Username | `admin` |
+| Password | `admin123` |
+
+> **Important:** Change the default password immediately after first login via the admin panel at `/admin`.
+
+If Bearer token authentication is also enabled, append your token to the URL:
 ```
 http://localhost:5494/?token=<your-token>
 ```
