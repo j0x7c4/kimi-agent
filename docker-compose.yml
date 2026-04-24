@@ -11,7 +11,7 @@ services:
       - "${KIMI_WEB_PORT:-5494}:5494"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - session-data:/data/sessions
+      - ${KIMI_SESSION_DATA_DIR:-./data/sessions}:/data/sessions
     environment:
       # LLM Configuration (at least one provider is required)
       - KIMI_API_KEY=${KIMI_API_KEY:-}
@@ -56,6 +56,9 @@ services:
       # Container Mode
       - KIMI_USE_CONTAINERS=true
       - KIMI_SHARE_DIR=/data/sessions
+      # Host-side path for session data, forwarded so container.py can bind-mount
+      # the same directory into each sandbox container via the Docker socket.
+      - KIMI_SESSION_DATA_DIR=${KIMI_SESSION_DATA_DIR:-./data/sessions}
 
       # Custom Skills
       - CUSTOM_SKILLS_HOST_PATH=${CUSTOM_SKILLS_HOST_PATH:-}
@@ -76,7 +79,3 @@ networks:
     driver: bridge
     name: kimi-agent-network
 
-volumes:
-  session-data:
-    driver: local
-    name: session-data
