@@ -62,12 +62,12 @@ RUN apt-get update \
 COPY --from=deps /usr/local/lib/python3.12/site-packages /usr/local/lib/python3.12/site-packages
 COPY --from=deps /usr/local/bin /usr/local/bin
 
-# Copy frontend build output to the static directory app.py expects
-COPY --from=web-builder /build/dist /app/src/kimi_cli/web/static
-
-# Copy source code
+# Copy source code first (includes stale pre-built web/static that we overwrite next)
 COPY kimi-cli/src/ /app/src/
 COPY kimi-cli/packages/ /app/packages/
+
+# Copy frontend build output AFTER source code so it overwrites the pre-built static
+COPY --from=web-builder /build/dist /app/src/kimi_cli/web/static
 
 # Register kimi-cli package metadata so importlib.metadata works
 RUN mkdir -p /usr/local/lib/python3.12/site-packages/kimi_cli-1.37.0.dist-info \
