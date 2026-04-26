@@ -12,6 +12,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ${KIMI_SESSION_DATA_DIR:-./data/sessions}:/data/sessions
+      # Local UI plugins — drop .js files here, access at /plugins/<filename>
+      - ${UI_PLUGINS_DIR:-./plugins}:/app/src/kimi_cli/web/static/plugins
     environment:
       # LLM Configuration (at least one provider is required)
       - KIMI_API_KEY=${KIMI_API_KEY:-}
