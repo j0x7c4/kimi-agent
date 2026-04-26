@@ -1,4 +1,4 @@
-# Kimi Agent
+# OpenKIMO
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Docker](https://img.shields.io/badge/Docker-Compose-blue?logo=docker)](https://www.docker.com/)
@@ -56,8 +56,8 @@ The host machine only needs Docker Engine installed. No Python, Node.js, or othe
 ### 1. Clone & Configure
 
 ```bash
-git clone --recurse-submodules git@github.com:j0x7c4/kimi-agent.git
-cd kimi-agent
+git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
+cd openkimo
 
 cp .env.example .env
 # Edit .env and set at least one LLM API key

@@ -1,4 +1,4 @@
-# Kimi Agent
+# OpenKIMO
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Docker](https://img.shields.io/badge/Docker-Compose-blue?logo=docker)](https://www.docker.com/)
@@ -8,7 +8,7 @@
 ## 工作原理
 
 1. **用户在浏览器中打开 Web UI**，创建一个新的 Session。
-2. **Gateway 容器** (`kimi-gateway`) 收到请求后，通过挂载的 Docker Socket 为该 Session 启动一个专用的 Docker 容器。
+2. **Gateway 容器** (`gateway`) 收到请求后，通过挂载的 Docker Socket 为该 Session 启动一个专用的 Docker 容器。
 3. **Session 沙箱容器** 内启动 Agent Worker、Jupyter Kernel 和无头 Chromium 浏览器。
 4. **所有用户消息** 通过 Gateway 的 WebSocket 代理转发到沙箱容器内的 Worker。
 5. **工具执行**（Shell、Python、浏览器访问）完全在沙箱容器内进行，宿主机不受影响。
@@ -21,7 +21,7 @@
 
 ```
 ┌─────────────┐     ┌──────────────────┐     ┌─────────────────────┐
-│   Browser   │────▶│  kimi-gateway    │────▶│  Session Sandbox    │
+│   Browser   │────▶│       gateway    │────▶│  Session Sandbox    │
 │  (Web UI)   │◀────│  (FastAPI + WS)  │◀────│  (Docker per sess)  │
 └─────────────┘     └──────────────────┘     └─────────────────────┘
                              │
@@ -56,8 +56,8 @@
 ### 1. 克隆与配置
 
 ```bash
-git clone --recurse-submodules git@github.com:j0x7c4/kimi-agent.git
-cd kimi-agent
+git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
+cd openkimo
 
 cp .env.example .env
 # 编辑 .env，至少配置一个 LLM API Key
