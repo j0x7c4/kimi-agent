@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   gateway:
+    image: ghcr.io/j0x7c4/kimi-agent-gateway:${KIMI_IMAGE_TAG:-latest}
     build:
       context: .
       dockerfile: Dockerfile.gateway
@@ -38,7 +39,7 @@ services:
 
       # Container Orchestration
       - DOCKER_NETWORK=kimi-agent-network
-      - SANDBOX_IMAGE=${SANDBOX_IMAGE:-kimi-agent-sandbox:latest}
+      - SANDBOX_IMAGE=${SANDBOX_IMAGE:-ghcr.io/j0x7c4/kimi-agent-sandbox:latest}
       - SANDBOX_WORK_DIR=${SANDBOX_WORK_DIR:-/app}
       - MAX_SESSION_CONTAINERS=${MAX_SESSION_CONTAINERS:-50}
 

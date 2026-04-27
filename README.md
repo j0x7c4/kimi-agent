@@ -56,53 +56,48 @@ flowchart LR
 ## Quick Start
 
 > **Only Docker Engine is required.** No Python, Node.js, or other build tools on the host.
+> Pre-built images are hosted on GitHub Container Registry — no local build needed.
 
 ### Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-### 1. Clone & Configure
+### Option A — No Git Clone Required (Fastest)
+
+```bash
+# 1. Download config files
+curl -O https://raw.githubusercontent.com/j0x7c4/OpenKimo/main/docker-compose.yml
+curl -O https://raw.githubusercontent.com/j0x7c4/OpenKimo/main/.env.example
+cp .env.example .env
+
+# 2. Edit .env — set at least one LLM API key
+# 3. Pull images and start
+docker compose up -d
+```
+
+### Option B — Clone & Deploy Wizard
 
 ```bash
 git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
 cd OpenKimo
+./scripts/deploy.sh
+```
 
+The wizard configures your `.env` and pulls pre-built images automatically.
+
+### Option C — Local Build (Developers)
+
+```bash
+git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
+cd OpenKimo
 cp .env.example .env
 # Edit .env and set at least one LLM API key
-```
-
-### 2. Build Images
-
-**Build both images at once (recommended):**
-
-```bash
 docker-compose build
-```
-
-**Build individually:**
-
-```bash
-# Gateway image (FastAPI server + React frontend)
-docker build -f Dockerfile.gateway -t kimi-agent-gateway:latest .
-
-# Sandbox image (agent worker + Jupyter + Chromium)
-docker build -f Dockerfile.sandbox -t kimi-agent-sandbox:latest .
-```
-
-**Rebuild after code changes:**
-
-```bash
-docker-compose up -d --build
-```
-
-### 3. Start the Stack
-
-```bash
 docker-compose up -d
 ```
 
-### 4. Access Web UI
+### Access Web UI
 
 Open http://localhost:5494 in your browser.
 

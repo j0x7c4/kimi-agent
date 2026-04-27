@@ -56,53 +56,48 @@ flowchart LR
 ## 快速开始
 
 > **宿主机仅需 Docker Engine。** 无需安装 Python、Node.js 或其他构建工具。
+> 预构建镜像已托管在 GitHub Container Registry，无需本地编译。
 
 ### 前置要求
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-### 1. 克隆与配置
+### 方式 A — 无需克隆仓库（最快）
+
+```bash
+# 1. 下载配置文件
+curl -O https://raw.githubusercontent.com/j0x7c4/OpenKimo/main/docker-compose.yml
+curl -O https://raw.githubusercontent.com/j0x7c4/OpenKimo/main/.env.example
+cp .env.example .env
+
+# 2. 编辑 .env，至少填入一个 LLM API Key
+# 3. 拉取镜像并启动
+docker compose up -d
+```
+
+### 方式 B — 克隆后使用部署向导
 
 ```bash
 git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
 cd OpenKimo
+./scripts/deploy.sh
+```
 
+向导会引导配置 `.env` 并自动拉取预构建镜像。
+
+### 方式 C — 本地构建（开发者）
+
+```bash
+git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
+cd OpenKimo
 cp .env.example .env
 # 编辑 .env，至少配置一个 LLM API Key
-```
-
-### 2. 构建镜像
-
-**同时构建两个镜像（推荐）：**
-
-```bash
 docker-compose build
-```
-
-**分别构建：**
-
-```bash
-# Gateway 镜像（FastAPI 服务器 + React 前端）
-docker build -f Dockerfile.gateway -t kimi-agent-gateway:latest .
-
-# Sandbox 镜像（Agent Worker + Jupyter + Chromium）
-docker build -f Dockerfile.sandbox -t kimi-agent-sandbox:latest .
-```
-
-**修改代码后重新构建：**
-
-```bash
-docker-compose up -d --build
-```
-
-### 3. 启动服务
-
-```bash
 docker-compose up -d
 ```
 
-### 4. 访问 Web UI
+### 访问 Web UI
 
 浏览器打开 http://localhost:5494。
 

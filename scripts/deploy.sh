@@ -327,16 +327,19 @@ EOF
 
 # ---------------- Build & Up ----------------
 build_and_up() {
-  section "构建与启动"
+  section "获取镜像与启动"
 
-  local _build _up
-  ask_yn _build "现在执行 ${C_BOLD}$COMPOSE_CMD build${C_RESET}？" "y"
-  if [ "$_build" = "true" ]; then
-    info "开始构建镜像（首次构建可能需要较长时间）…"
+  local _use_prebuilt _up
+  ask_yn _use_prebuilt "使用预构建镜像（从 ghcr.io 拉取，无需本地编译）？${C_DIM} 选 N 则本地构建${C_RESET}" "y"
+
+  if [ "$_use_prebuilt" = "true" ]; then
+    info "拉取预构建镜像…"
+    $COMPOSE_CMD --env-file "$ENV_FILE" -f "$COMPOSE_FILE" pull
+    ok "镜像拉取完成"
+  else
+    info "开始本地构建镜像（首次构建可能需要较长时间）…"
     $COMPOSE_CMD --env-file "$ENV_FILE" -f "$COMPOSE_FILE" build
     ok "镜像构建完成"
-  else
-    info "跳过构建"
   fi
 
   ask_yn _up "现在执行 ${C_BOLD}$COMPOSE_CMD up -d${C_RESET}？" "y"

@@ -1,0 +1,87 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  GATEWAY_IMAGE: ghcr.io/j0x7c4/kimi-agent-gateway
+  SANDBOX_IMAGE: ghcr.io/j0x7c4/kimi-agent-sandbox
+
+jobs:
+  release:
+    name: Build & Push Images
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # create GitHub Release
+      packages: write   # push to ghcr.io
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to ghcr.io
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # ---- Gateway ----
+      - name: Build and push gateway
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.gateway
+          push: true
+          tags: |
+            ${{ env.GATEWAY_IMAGE }}:latest
+            ${{ env.GATEWAY_IMAGE }}:${{ github.ref_name }}
+          cache-from: type=gha,scope=gateway
+          cache-to: type=gha,mode=max,scope=gateway
+
+      # ---- Sandbox ----
+      - name: Build and push sandbox
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.sandbox
+          push: true
+          tags: |
+            ${{ env.SANDBOX_IMAGE }}:latest
+            ${{ env.SANDBOX_IMAGE }}:${{ github.ref_name }}
+          cache-from: type=gha,scope=sandbox
+          cache-to: type=gha,mode=max,scope=sandbox
+
+      # ---- GitHub Release ----
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          body: |
+            ## Docker Images
+
+            Pull pre-built images (no local build required):
+
+            ```bash
+            docker pull ${{ env.GATEWAY_IMAGE }}:${{ github.ref_name }}
+            docker pull ${{ env.SANDBOX_IMAGE }}:${{ github.ref_name }}
+            ```
+
+            ## Quick Start
+
+            ```bash
+            # 1. Download config files
+            curl -O https://raw.githubusercontent.com/j0x7c4/OpenKimo/${{ github.ref_name }}/docker-compose.yml
+            curl -O https://raw.githubusercontent.com/j0x7c4/OpenKimo/${{ github.ref_name }}/.env.example
+            cp .env.example .env
+
+            # 2. Set your API key in .env
+            # 3. Start (pulls images automatically)
+            docker compose up -d
+            ```
