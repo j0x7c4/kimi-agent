@@ -3,6 +3,7 @@ version: "3.9"
 services:
   gateway:
     image: ghcr.io/j0x7c4/kimi-agent-gateway:${KIMI_IMAGE_TAG:-latest}
+    pull_policy: if_not_present
     build:
       context: .
       dockerfile: Dockerfile.gateway
