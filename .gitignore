@@ -109,6 +109,6 @@ tmp/
 temp/
 *.tmp
 
-docs/
+notes/
 CLAUDE.md
 custom-skills/
