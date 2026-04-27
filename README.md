@@ -1,52 +1,61 @@
-# OpenKIMO
+<p align="center">
+  <h1 align="center">OpenKimo</h1>
+  <p align="center"><strong>One Docker. Zero Worries.</strong></p>
+  <p align="center">A containerized server-side agent platform that runs in one command.<br>Fully isolated sessions. Multi-LLM ready.</p>
+  <p align="center">
+    🚀 One-Command Deploy &nbsp;|&nbsp; 🛡️ Secure by Default &nbsp;|&nbsp; 🔌 Multi-LLM
+  </p>
+</p>
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Docker](https://img.shields.io/badge/Docker-Compose-blue?logo=docker)](https://www.docker.com/)
+<p align="center">
+  <a href="https://opensource.org/licenses/Apache-2.0">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License">
+  </a>
+  <a href="https://www.docker.com/">
+    <img src="https://img.shields.io/badge/Docker%20Compose-ready-blue?logo=docker" alt="Docker Compose">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Python-3.12-blue?logo=python" alt="Python">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/React-18-blue?logo=react" alt="React">
+  </a>
+  <a href="https://github.com/j0x7c4/OpenKimo">
+    <img src="https://img.shields.io/github/stars/j0x7c4/OpenKimo?style=social" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/j0x7c4/OpenKimo/releases">
+    <img src="https://img.shields.io/github/v/release/j0x7c4/OpenKimo?label=release" alt="Release">
+  </a>
+</p>
 
-A containerized server-side agent framework built on top of [kimi-cli](https://github.com/j0x7c4/kimi-cli). Users operate the agent through a web browser, while all code execution tasks run inside sandboxed Docker containers — nothing executes on the host machine.
+---
 
-## How It Works
+## What is OpenKimo?
 
-1. **User opens the Web UI** in a browser and creates a new session.
-2. **The gateway container** (`kimi-gateway`) receives the request and spawns a dedicated Docker container for that session via the Docker socket.
-3. **The session sandbox** starts the agent worker, Jupyter kernel, and headless Chromium browser inside the container.
-4. **All user prompts** flow through the gateway's WebSocket proxy into the sandbox container.
-5. **Tool execution** (Shell, Python, Browser) happens entirely inside the sandbox — the host machine is never touched.
-6. **Results** stream back through the WebSocket to the browser in real time.
-7. **When the session ends**, the gateway stops and removes the sandbox container automatically.
+OpenKimo is a **containerized server-side agent platform**. You operate the agent through a web browser, while all code execution tasks run inside sandboxed Docker containers — nothing executes on the host machine.
 
-The host machine only needs Docker Engine installed. No Python, Node.js, or other build tools are required on the host.
+- **One command** to deploy the entire stack (`docker-compose up -d`).
+- **One browser tab** to create sessions, chat with the agent, and review outputs.
+- **Zero host dependencies** — the machine only needs Docker Engine installed.
 
-## Architecture
-
+```mermaid
+flowchart LR
+  U[👤 User Browser] -->|WebSocket| G[kimi-gateway]
+  G -->|spawn| S1[🛡️ Session Sandbox 1]
+  G -->|spawn| S2[🛡️ Session Sandbox 2]
+  S1 -->|results| U
+  S2 -->|results| U
 ```
-┌─────────────┐     ┌──────────────────┐     ┌─────────────────────┐
-│   Browser   │────▶│  kimi-gateway    │────▶│  Session Sandbox    │
-│  (Web UI)   │◀────│  (FastAPI + WS)  │◀────│  (Docker per sess)  │
-└─────────────┘     └──────────────────┘     └─────────────────────┘
-                             │
-                             ▼
-                     ┌───────────────┐
-                     │ Docker Engine │
-                     │  (Host only)  │
-                     └───────────────┘
-```
 
-- **kimi-gateway** — FastAPI web server, WebSocket session proxy, container orchestration
-- **Session Sandbox** — One Docker container per session. Runs the agent worker, Jupyter kernel, and headless Chromium browser
-- **Host** — Only needs Docker Engine. No Python, Node.js, or other runtimes required
+## Demos
 
-## Features
-
-- **Full Containerization** — Every session runs in its own isolated Docker container
-- **Sandboxed Execution** — Shell, Python, and browser tasks execute inside containers, never on the host
-- **Web UI** — React-based SPA for managing sessions, chatting with the agent, and reviewing outputs
-- **Multi-LLM Support** — Kimi (Moonshot), OpenAI, and Anthropic (Claude) via environment variables
-- **Browser Automation** — Headless Chromium with Playwright for web scraping and interaction
-- **Jupyter Kernel** — Python code execution via isolated IPython kernel
-- **Resource Limits** — Per-container CPU, memory, disk, and PID limits via cgroup
+- 🎬 [Quick Start Demo] (coming soon)
+- 🔒 [Sandbox Security Demo] (coming soon)
+- 🔌 [Multi-LLM Switch Demo] (coming soon)
 
 ## Quick Start
+
+> **Only Docker Engine is required.** No Python, Node.js, or other build tools on the host.
 
 ### Prerequisites
 
@@ -57,7 +66,7 @@ The host machine only needs Docker Engine installed. No Python, Node.js, or othe
 
 ```bash
 git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
-cd openkimo
+cd OpenKimo
 
 cp .env.example .env
 # Edit .env and set at least one LLM API key
@@ -65,27 +74,24 @@ cp .env.example .env
 
 ### 2. Build Images
 
-#### Build both images at once (recommended)
+**Build both images at once (recommended):**
 
 ```bash
 docker-compose build
 ```
 
-#### Build individually
+**Build individually:**
 
-**Gateway image** (FastAPI server + React frontend):
 ```bash
+# Gateway image (FastAPI server + React frontend)
 docker build -f Dockerfile.gateway -t kimi-agent-gateway:latest .
-```
 
-**Sandbox image** (agent worker + Jupyter + Chromium):
-```bash
+# Sandbox image (agent worker + Jupyter + Chromium)
 docker build -f Dockerfile.sandbox -t kimi-agent-sandbox:latest .
 ```
 
-#### Rebuild after code changes
+**Rebuild after code changes:**
 
-If you modify `kimi-cli/` source or frontend code:
 ```bash
 docker-compose up -d --build
 ```
@@ -96,22 +102,100 @@ docker-compose up -d --build
 docker-compose up -d
 ```
 
-### 3. Access Web UI
+### 4. Access Web UI
 
 Open http://localhost:5494 in your browser.
 
 #### Default Admin Account
 
-| Field | Value |
-|-------|-------|
-| Username | `admin` |
+| Field    | Value     |
+|----------|-----------|
+| Username | `admin`   |
 | Password | `admin123` |
 
 > **Important:** Change the default password immediately after first login via the admin panel at `/admin`.
 
 If Bearer token authentication is also enabled, append your token to the URL:
+
 ```
 http://localhost:5494/?token=<your-token>
+```
+
+## Who is this for?
+
+- **Solo developers** who want to deploy an AI Agent backend in minutes, not hours.
+- **Small teams** that need a shared agent infrastructure without managing Python/Node.js runtimes on every machine.
+- **Security-sensitive environments** where code must never run on the host filesystem.
+- **Teams doing OEM or private deployments** who need to white-label the platform with their own branding.
+- **Kimi / Moonshot users** looking for a native, containerized integration with their existing workflow.
+
+## Features
+
+### 🚀 One-Command Deploy
+`docker-compose up -d` brings up the entire platform. No runtime installation, no dependency hell.
+
+### 🛡️ Secure by Default
+Every session is **forced** to run in its own isolated Docker container — not an optional plugin, not a configuration toggle. It is the architecture.
+
+### 🌐 Web-Native
+A single browser tab handles session creation, chat, file review, and admin. No WhatsApp bots, no Telegram channels, no desktop apps to install.
+
+### 🔌 Multi-LLM
+Switch between Kimi (Moonshot), OpenAI, and Anthropic (Claude) with a single environment variable.
+
+### 📊 Resource Limits
+Per-container CPU, memory, disk, and PID caps via cgroup — your host stays protected even under heavy agent workloads.
+
+### 🧪 Built-in Tools
+Jupyter Kernel + Headless Chromium + Shell execution ready out of the box. No extra plugin installations.
+
+### 👥 Multi-User & Access Control
+Built-in user management with role-based access control. Each user sees only their own sessions. Admin dashboard for user lifecycle management.
+
+### 🎨 White-Label Branding
+Customize logo, brand name, page title, and favicon directly from the admin panel — no code changes or rebuilds required. Perfect for OEM and private deployments.
+
+### 🔌 Extensible UI Plugins
+Inject custom React components into the agent lifecycle via an event-driven plugin system. Visualize thinking processes, sub-agent clusters, or any custom overlay without touching core code.
+
+## Architecture
+
+OpenKimo uses a two-container architecture: a **gateway** that proxies traffic and orchestrates sandboxes, and a **sandbox** template that is cloned per session.
+
+- **kimi-gateway** — FastAPI web server, WebSocket session proxy, container orchestration.
+- **Session Sandbox** — One Docker container per session. Runs the agent worker, Jupyter kernel, and headless Chromium browser.
+- **Host** — Only needs Docker Engine. No Python, Node.js, or other runtimes required.
+
+```mermaid
+flowchart TB
+  subgraph Host["Host Machine (Docker Engine only)"]
+    direction TB
+    G["kimi-gateway<br/>(FastAPI + WebSocket Proxy)"]
+    D["Docker Daemon"]
+  end
+
+  subgraph Sandbox1["Session Sandbox 1"]
+    direction TB
+    A1["Agent Worker"]
+    J1["Jupyter Kernel"]
+    C1["Headless Chromium"]
+  end
+
+  subgraph Sandbox2["Session Sandbox 2"]
+    direction TB
+    A2["Agent Worker"]
+    J2["Jupyter Kernel"]
+    C2["Headless Chromium"]
+  end
+
+  B["👤 Browser (Web UI)"]
+
+  B <-->|WebSocket| G
+  G <-->|spawn / stop| D
+  D -->|creates| Sandbox1
+  D -->|creates| Sandbox2
+  G <-->|proxy| A1
+  G <-->|proxy| A2
 ```
 
 ## Configuration
@@ -125,42 +209,35 @@ All configuration is done via environment variables in `.env`:
 | `ANTHROPIC_API_KEY` | Yes* | Anthropic API key |
 | `LLM_PROVIDER` | No | Default provider (`kimi` / `openai` / `anthropic`) |
 | `KIMI_WEB_SESSION_TOKEN` | No | Bearer token for web UI auth |
-| `KIMI_WEB_PORT` | No | Web server port (default: 5494) |
-| `SANDBOX_CPU_LIMIT` | No | Per-session CPU limit (default: 2) |
-| `SANDBOX_MEMORY_LIMIT` | No | Per-session memory limit (default: 4g) |
+| `KIMI_WEB_PORT` | No | Web server port (default: `5494`) |
+| `SANDBOX_CPU_LIMIT` | No | Per-session CPU limit (default: `2`) |
+| `SANDBOX_MEMORY_LIMIT` | No | Per-session memory limit (default: `4g`) |
 
 \* At least one API key is required.
 
 See [`.env.example`](.env.example) for the full list.
 
-## Project Structure
+## OpenKimo vs Others
 
-```
-.
-├── kimi-cli/              # CLI agent source (FastAPI web, agent loop, tools)
-│   ├── src/kimi_cli/
-│   └── web/               # React frontend
-├── app/                   # Browser automation + Jupyter runtime
-│   ├── browser_guard.py
-│   ├── jupyter_kernel.py
-│   └── kernel_server.py
-├── Dockerfile.gateway     # Gateway container image
-├── Dockerfile.sandbox     # Session sandbox container image
-├── docker-compose.yml     # Docker Compose orchestration
-├── scripts/
-│   ├── start-gateway.sh
-│   └── start-sandbox.sh
-└── docs/                  # Documentation & fix records
-```
+**OpenKimo is NOT trying to be your personal chat companion.** If you want an AI that lives in WhatsApp or Telegram, check out other projects in that space.
 
-## Security
+**OpenKimo IS for you if:**
 
-- Each session runs in a dedicated container with `--privileged=false`
-- Resource limits: CPU, memory, disk, and PID cgroup restrictions
-- Host filesystem is not mounted into sandboxes (only shared session volume)
-- No privilege escalation or host network access by default
-- Dangerous shell commands can be blocked via `BLOCK_DANGEROUS_COMMANDS`
+- You need a **server-side agent** that runs 24/7 and is accessed via a browser.
+- You want **zero host contamination** — every code execution happens inside a throwaway container.
+- You prefer **infrastructure as code** — deploy, scale, and upgrade with Docker Compose.
+- You use **Kimi / Moonshot** and want a native containerized integration rather than a wrapper script.
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [Apache License 2.0](LICENSE).
+
+---
+
+<p align="center">
+  If OpenKimo saves you time, please consider giving us a ⭐ on <a href="https://github.com/j0x7c4/OpenKimo">GitHub</a>!
+</p>
