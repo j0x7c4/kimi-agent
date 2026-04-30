@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [v0.1.1] — 2026-04-30
+
+post-v0.1.0 patch — README + lint fixes only, no behavior change.
+
+### Added
+
+- README "Option D" 介绍统一启动脚本 `scripts/start.sh`：自动探测 Docker / 本地模式，支持 `--mode`、`--port`、`--host` 参数。
+
+### Fixed
+
+- `web/api/memory.py` 适配 `session.work_dir: str | None`，并对 `json.loads` 的解析结果显式 `cast` 为 `dict[str, Any]`，消除 pyright 报错。
+- `memory-panel.tsx` 移除 `void refresh()` 的 `noVoid` 违规，按 biome 建议简化逻辑表达式。
+- `sessions.tsx` 给 `MemoryStatusDot` 的 `<span>` 加 `role="img"`，使 `aria-label` 在该角色下合法。
+
 ## [v0.1.0] — 2026-04-30
 
 跨会话记忆系统首次上线，是本次发布的最大亮点。同时优化了本地启动体验和镜像分发链路。
@@ -110,5 +124,6 @@ this project adheres to [Semantic Versioning](https://semver.org/).
 - 资源限额（CPU / 内存 / 磁盘 / PID cgroups）。
 - 危险命令拦截。
 
+[v0.1.1]: https://github.com/j0x7c4/OpenKimo/releases/tag/v0.1.1
 [v0.1.0]: https://github.com/j0x7c4/OpenKimo/releases/tag/v0.1.0
 [v0.0.1]: https://github.com/j0x7c4/OpenKimo/releases/tag/v0.0.1

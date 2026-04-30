@@ -97,6 +97,24 @@ docker-compose build
 docker-compose up -d
 ```
 
+### 方式 D — 统一启动脚本（Docker 或 本地模式）
+
+`scripts/start.sh` 会自动检测 Docker；不可用时回退到直接在宿主机运行。适合 Docker 不可用、macOS 下嫌 Docker Desktop 太重，或本地快速调试的场景。
+
+```bash
+git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
+cd OpenKimo
+cp .env.example .env
+# 编辑 .env，至少配置一个 LLM API Key
+
+./scripts/start.sh                       # 自动探测：有 Docker 走 Docker，否则本地
+./scripts/start.sh --mode=docker         # 强制使用 docker compose
+./scripts/start.sh --mode=local          # 强制本地模式（无 Docker）
+./scripts/start.sh --mode=local --port=8080 --host=127.0.0.1
+```
+
+本地模式需要 Python 3.10+ 并安装 `kimi-cli`（`pip install -e ./kimi-cli`）；为了无 Docker 也能跑通，会禁用每会话 sandbox、浏览器、Jupyter，因此仅推荐用于开发。详见 [`docs/LOCAL-MODE.md`](docs/LOCAL-MODE.md)。
+
 ### 访问 Web UI
 
 浏览器打开 http://localhost:5494。

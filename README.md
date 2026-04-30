@@ -97,6 +97,24 @@ docker-compose build
 docker-compose up -d
 ```
 
+### Option D — Unified Launcher (Docker or Local)
+
+`scripts/start.sh` auto-detects Docker and falls back to running directly on the host. Useful when Docker is unavailable, on macOS where Docker Desktop has high overhead, or for quick local dev iterations.
+
+```bash
+git clone --recurse-submodules git@github.com:j0x7c4/OpenKimo.git
+cd OpenKimo
+cp .env.example .env
+# Edit .env and set at least one LLM API key
+
+./scripts/start.sh                       # auto-detect: docker if available, else local
+./scripts/start.sh --mode=docker         # force docker compose
+./scripts/start.sh --mode=local          # force local mode (no Docker)
+./scripts/start.sh --mode=local --port=8080 --host=127.0.0.1
+```
+
+Local mode requires Python 3.10+ with `kimi-cli` installed (`pip install -e ./kimi-cli`); it disables the per-session sandbox, browser, and Jupyter, so use it only for development. See [`docs/LOCAL-MODE.md`](docs/LOCAL-MODE.md) for prerequisites and limitations.
+
 ### Access Web UI
 
 Open http://localhost:5494 in your browser.
